@@ -1,4 +1,9 @@
-package clientes;
+
+/**
+ * @file Clientela.java
+ * @author Imanol Badiola
+ * @brief This file contains the table model for client visualization
+ */package clientes;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -90,11 +95,20 @@ public class Clientela extends AbstractTableModel{
 		}
 	}
 	
+	/**
+	 * Gets option list for client selection 
+	 * @return Array of strings of option
+	 */
 	public String[] getListaOpciones() {
 		Set<String> clientela = agrupacion.keySet();
 		return clientela.toArray(new String [0]);
 	}
-
+	
+	/**
+	 * Gets list of clients according to an option
+	 * @param opcion Option to get clients
+	 * @return Array of clients
+	 */
 	public void getListaClientesOpcion(String opcion) {
 		List<Cliente> seleccionClientes;
 		seleccionClientes = agrupacion.get(opcion);
@@ -102,10 +116,12 @@ public class Clientela extends AbstractTableModel{
 		lista = seleccionClientes;
 	}
 
+	/**
+	 * Resets selected client Arraylist with all clients list as default
+	 */
 	public void volverACargar(){
 		lista = listaEntera;
 	}
-
 	@Override
 	public int getColumnCount() {
 		return columnas.getColumnCount();

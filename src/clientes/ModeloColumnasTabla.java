@@ -1,3 +1,9 @@
+/**
+ * @file ModeloColumnasTabla.java
+ * @author Imanol Badiola
+ * @brief This file contains the table column model for clients
+ */
+
 package clientes;
 
 import javax.swing.table.DefaultTableColumnModel;
@@ -7,6 +13,10 @@ public class ModeloColumnasTabla extends DefaultTableColumnModel {
 	
 	TrazadorTabla trazador;
 	
+	/**
+	 * Constructor of the class, adds columns for each needed field for client information
+	 * @param trazador Adapter for visualization style
+	 */
 	public ModeloColumnasTabla(TrazadorTabla trazador){
 		super();
 		this.trazador = trazador;
@@ -25,6 +35,13 @@ public class ModeloColumnasTabla extends DefaultTableColumnModel {
 		this.addColumn(crearColumna("Número vivienda",12,50));
 	}
 	
+	/**
+	 * Creates columns with given text, index, size and style
+	 * @param text Text for the column
+	 * @param indice Index for column positioning
+	 * @param ancho Width of the column
+	 * @return Column created to insert into table
+	 */
 	private TableColumn crearColumna(String texto, int indice, int ancho) {
 		TableColumn columna = new TableColumn(indice,ancho);
 		
