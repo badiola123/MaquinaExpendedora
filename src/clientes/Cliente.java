@@ -1,3 +1,9 @@
+/**
+ * @file Cliente.java
+ * @author Imanol Badiola
+ * @brief This file contains client's variables and methods to have access to them
+ */
+
 package clientes;
 
 public class Cliente {
@@ -22,7 +28,22 @@ public class Cliente {
 	int codigoPostal;
 	String calle;
 	int numVivienda;
-	
+	/**
+	 * Constructor of the class Cliente, which creates the object of the client with all the needed information
+	 * @param id ID of client
+	 * @param nombre Name of client
+	 * @param apellido Surname of client
+	 * @param dni Identity card number
+	 * @param fechaNacimiento Birth date
+	 * @param telefono Telephone number
+	 * @param correo Email account
+	 * @param numCuenta Bank account number
+	 * @param provincia Province
+	 * @param pueblo City 
+	 * @param codigoPostal Postal code 
+	 * @param calle Street
+	 * @param numVivienda House number
+	 */
 	public Cliente(String id, String nombre, String apellido, String dni, String fechaNacimiento,
 			int telefono, String correo, String numCuenta, String provincia, 
 			String pueblo,	int codigoPostal, String calle, int numVivienda){
@@ -42,6 +63,12 @@ public class Cliente {
 		this.numVivienda = numVivienda;
 	}
 	
+	/**
+	 * Returns the type of the variables of the object in reference to an index
+	 *
+	 * @param indice Index to identify variable
+	 * @return Class of the variable
+	 */
 	public Class<?> getFieldClass(int indice){
 		switch (indice){
 		case 5: return Integer.class;
@@ -51,7 +78,13 @@ public class Cliente {
 		}
 		
 	}
-
+	
+	/**
+	 * Method to get object of the variable of a client in reference to an index
+	 *
+	 * @param columna Index of column to identify variable
+	 * @return Object of the variable
+	 */
 	public Object getFieldAt(int columna) {
 		switch (columna){
 		case 0: return id;
@@ -70,27 +103,57 @@ public class Cliente {
 		default: return null; 
 		}	
 	}
-
+	
+	/**
+	 * Getter of the name of the client
+	 *
+	 * @return Name as a string
+	 */
 	public String getNombre() {
 		return nombre;
 	}
-
+	
+	/**
+	 * Getter of the surname of the client
+	 *
+	 * @return Surname as a string
+	 */
 	public String getApellido() {
 		return apellido;
 	}
-
+	
+	/**
+	 * Getter of the postal code of the client
+	 *
+	 * @return Postal code as an integer
+	 */
 	public int getCodigoPostal() {
 		return codigoPostal;
 	}
-
+	
+	/**
+	 * Getter of the birth date of the client
+	 *
+	 * @return Birthdate as a string
+	 */
 	public String getFechaNacimiento() {
 		return fechaNacimiento;
 	}
-
+	
+	/**
+	 * Getter of the ID of the client
+	 *
+	 * @return ID as a string
+	 */
 	public String getId() {
 		return id;
 	}
 	
+	/**
+	 * Getter of all the information of the client
+	 *
+	 * @return Array of strings with all the information
+	 */
 	public String[] getDatos(){
 		String[] datos = {this.id, this.nombre, this.apellido, this.dni,
 				this.fechaNacimiento, String.valueOf(this.telefono), this.correo, this.numCuenta,
@@ -98,23 +161,47 @@ public class Cliente {
 		
 		return datos;
 	}
-
+	
+	/**
+	 * Getter of the constant of all the client information fields for database queries
+	 *
+	 * @return Fields of information as array of strings
+	 */
 	public static String[] getNombreColumnas() {
 		return nombreColumnas;
 	}
-
+	
+	/**
+	 * Getter of the constant of the format of columns for database queries
+	 *
+	 * @return Columns as array of strings
+	 */
 	public static boolean[] getFormatoColumnas() {
 		return formatoColumnas;
 	}
-
+	
+	/**
+	 * Getter of the constant of client options for database queries
+	 *
+	 * @return Array of strings of client options
+	 */
 	public static String[] getOpcionescliente() {
 		return opcionesCliente;
 	}
 	
+	/**
+	 * Method to get primary key in the database
+	 *
+	 * @return String of primary key
+	 */
 	public String getPrimaryKey(){
 		return nombreColumnas[0] + " = " + (formatoColumnas[0] ? "'" + this.id + "'" : this.id);
 	}
-
+	
+	/**
+	 * Override of the "toString" method
+	 * @return String of client information
+	 */
 	@Override
 	public String toString() {
 		return "ID: " + this.id + ", nombre: " + this.nombre + ", apellido: " + this.apellido + ", DNI: " + this.dni;
