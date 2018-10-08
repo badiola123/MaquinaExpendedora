@@ -1,3 +1,9 @@
+/**
+ * @file Inventario.java
+ * @author Ainhoa Arruabarrena
+ * @brief This file contains the table model for product visualization
+ */
+
 package Productos;
 
 import java.sql.ResultSet;
@@ -27,7 +33,11 @@ public class Inventario extends AbstractTableModel{
 	MyDataAccess conexion;
 	
 	private static final String IM_ERROR = "img/error.png";
-	
+	/**
+	 * Constructor of Inventario, which establishes the connection to the database
+     * @param columnas Columns of table
+	 * @param conexion Database connection instance
+	 */
 	public Inventario (ModeloColumnasTablaProducto columnas, MyDataAccess conexion){
 		super();
 		lista = new ArrayList<>();
@@ -36,7 +46,11 @@ public class Inventario extends AbstractTableModel{
 		listaEntera = lista;
 		this.columnas = columnas;
 	}
-	
+	/**
+	 * Loads data of products to create a machine list
+	 * @param conexion The instance of connection to the database
+	 * @return List of products
+	 */
 	static public List<Producto> cargarDatos(MyDataAccess conexion, int maquinaID) {
 		Producto producto;
 		List<Producto> lista = new ArrayList<>();
@@ -84,28 +98,51 @@ public class Inventario extends AbstractTableModel{
 	    return lista;
 	}
 
+	/**
+	 * Column number getter
+	 * @return Number of columns
+	 */
 	@Override
 	public int getColumnCount() {
 		return columnas.getColumnCount();
 	}
 
+	/**
+	 * Row number getter
+	 * @return Number of rows
+	 */
 	@Override
 	public int getRowCount() {
 		return lista.size();
 	}
 
+	/**
+	 * Method to get an information field of a product from table position 
+	 * @param fila row coordinate
+	 * @param columna columns coordinate
+	 * @return Selected product's information field
+	 */
 	@Override
 	public Object getValueAt(int fila, int columna) {
 		Producto producto = lista.get(fila);
 		return producto.getFieldAt(columna);
 	}
-
+	/**
+	 * Gets the class of the field of a column
+	 * @param columnIndex number of the column
+	 * @return Class of the column
+	 */
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		return getValueAt(0, columnIndex).getClass();
 	}
-	
-	public Producto getProducto(int pos){
+
+	/**
+	 * Gets a product from the list of products
+	 * @param pos Position of the product
+	 * @return Product selected
+	 */
+	 public Producto getProducto(int pos){
 		return lista.get(pos);
 	}
 }
