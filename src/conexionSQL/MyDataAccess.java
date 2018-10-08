@@ -1,3 +1,9 @@
+/**
+ * @file MyDataAccess.java
+ * @author Ainhoa Arruabarrena
+ * @brief Class to get data from the data base
+ */
+
 package conexionSQL;
 
 import java.sql.Connection;
@@ -22,43 +28,48 @@ public class MyDataAccess {
    try{
      Class.forName("com.mysql.jdbc.Connection");
      conn = (Connection)DriverManager.getConnection(_url, _usuario, _pwd);
-     if(conn != null)
-     {
+     if(conn != null) {
        System.out.println("Conexión a base de datos "+_url+" . . . Ok");
      }
    }
-   catch(SQLException ex)
-   {
+   catch(SQLException ex) {
       System.out.println("Hubo un problema al intentar conecarse a la base de datos"+_url);
    }
-   catch(ClassNotFoundException ex)
-   {
+   catch(ClassNotFoundException ex) {
       System.out.println(ex);
    }  
  }
- 
- public ResultSet getQuery(String _query)
- {
+ /**
+   * Takes the SQL query result
+   * @param _query The SQL query to be executed
+   * @return ResultSet of the query 
+   */
+ public ResultSet getQuery(String _query) {
     Statement state = null;
     ResultSet resultado = null;
     try{
       state = (Statement) conn.createStatement();
       resultado = state.executeQuery(_query);
     }
-    catch(SQLException e)
-    {
+    catch(SQLException e) {
       e.printStackTrace();
     }
     return resultado;
  }
- 
+ /**
+   * Sets the query to execute it
+   * @param _query The SQL query to be executed
+   * @throws SQLException
+   */
  public void setQuery(String _query) throws SQLException{
 	 Statement state = null;   
 	 state=(Statement) conn.createStatement();
 	 state.execute(_query);
-	 }
- 
+ }
+  /**
+   * @return The SQL connexion
+   */
  public Connection getConn() {
 	 return conn;
-	 } 
+ } 
 }
