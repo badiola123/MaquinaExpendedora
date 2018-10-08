@@ -1,3 +1,9 @@
+/**
+ * @file Recepcion.java
+ * @author Edgar Azpiazu
+ * @brief File that receives the data sent from one XBee to another
+ */
+
 package comunicacion;
 
 import java.awt.event.ActionEvent;
@@ -26,6 +32,10 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 	int hello = 0;
 	Timer timer= null;
 	
+	/**
+	 * Constructor of the class which initializes the timer and sets the CBee module
+	 * @param moduleXBee Used XBee module
+	 */
 	public Recepcion(ModuloXBee moduloXBee) {
 		this.moduloXBee = moduloXBee;
 		timer = new Timer (2000,this);
@@ -33,6 +43,10 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 		timer.start();
 	}
 
+	/**
+	 * Overridden method to receive data
+	 * @param data The received message
+	 */
 	@Override
 	public void dataReceived(XBeeMessage data) {
 		String tipoDato;
@@ -78,6 +92,10 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 		System.out.println(tipoDato);
 		}
 
+	/**
+	 * Reads the received data information and checks it to give an answer
+	 * @param data The received message
+	 */
 	private void leerDatos(XBeeMessage data) {
 		maquinaID = Character.toString((char) data.getData()[1]);
 		if(data.getData()[2] == PRODUCTO_ID){
@@ -89,6 +107,10 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 		moduloXBee.comprobarDatos(maquinaID, husilloID, usuarioID);
 		}
 
+	/**
+	 * Gets the received new user's ID and notifies the observers
+	 * @param data The received message
+	 */
 	private void leerNuevoUsuario(XBeeMessage data) {
 		leerUsuario(1, data);
 		numActualizacion = 1;
@@ -96,6 +118,11 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 		this.notifyObservers(this);
 	}
 	
+	/**
+	 * Reads the received new user's ID from the received data
+	 * @param offset The offset from which the function starts reading
+	 * @param data The received message
+	 */
 	private void leerUsuario(int offset, XBeeMessage data) {
 		usuarioID = "";
 		
@@ -104,22 +131,42 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 		}
 	}
 
+	/**
+	 * Getter of the machine ID
+	 * @return The ID of the machine involved
+	 */
 	public String getMaquinaID() {
 		return maquinaID;
 	}
 
+	/**
+	 * Getter of the spindle ID
+	 * @return The ID of the spindle involved
+	 */
 	public String getHusilloID() {
 		return husilloID;
 	}
 
+	/**
+	 * Getter of the user ID
+	 * @return The ID of the user involved
+	 */
 	public String getUsuarioID() {
 		return usuarioID;
 	}
 
+	/**
+	 * Getter of the actualization number which specifies the executed change
+	 * @return The value of numActualizacion
+	 */
 	public int getNumActualizacion() {
 		return numActualizacion;
 	}
 
+	/**
+	 * Overridden method of the ActionListener
+	 * @param e the identifier of the performed action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("timer")){
