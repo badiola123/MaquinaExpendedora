@@ -44,7 +44,6 @@ public class ListaStock extends AbstractTableModel{
 	 * @param conexion The instance of connection to the database
 	 * @return List of stock
 	 */
-	
 	static public List<Stock> cargarDatos(MyDataAccess conexion) {
 		Stock stock;
 		List<Stock> lista = new ArrayList<>();

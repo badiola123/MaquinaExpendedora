@@ -1,3 +1,8 @@
+/**
+ * @file ListaVenta.java
+ * @author Ainhoa Arruabarrena
+ * @brief This file contains the table model for sales' visualization
+ */
 package venta;
 
 import java.sql.ResultSet;
@@ -23,7 +28,11 @@ public class ListaVentas extends AbstractTableModel{
 	MyDataAccess conexion;
 	
 	private static final String IM_ERROR = "img/error.png";
-	
+	/**
+	 * Constructor of ListaVenta, which establishes the connection to the database
+     * @param columnas Columns of table
+	 * @param conexion Database connection instance
+	 */
 	public ListaVentas (ModeloColumnasTablaVenta columnas, MyDataAccess conexion){
 		super();
 		lista = new ArrayList<>();
@@ -32,7 +41,11 @@ public class ListaVentas extends AbstractTableModel{
 		listaEntera = lista;
 		this.columnas = columnas;
 	}
-	
+	/**
+	 * Loads data of sale to create a machine list
+	 * @param conexion The instance of connection to the database
+	 * @return List of sale
+	 */
 	static public List<Venta> cargarDatos(MyDataAccess conexion) {
 		Venta venta;
 		List<Venta> lista = new ArrayList<>();
@@ -68,28 +81,47 @@ public class ListaVentas extends AbstractTableModel{
 	     } 
 	    return lista;
 	}
-
+	/**
+	 * Column number getter
+	 * @return Number of columns
+	 */
 	@Override
 	public int getColumnCount() {
 		return columnas.getColumnCount();
 	}
-
+	/**
+	 * Row number getter
+	 * @return Number of rows
+	 */
 	@Override
 	public int getRowCount() {
 		return lista.size();
 	}
-
+	/**
+	 * Method to get an information field of a sale from table position 
+	 * @param fila row coordinate
+	 * @param columna columns coordinate
+	 * @return Selected sales' information field
+	 */
 	@Override
 	public Object getValueAt(int fila, int columna) {
 		Venta venta = lista.get(fila);
 		return venta.getFieldAt(columna);
 	}
-
+	/**
+	 * Gets the class of the field of a column
+	 * @param columnIndex number of the column
+	 * @return Class of the column
+	 */
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		return getValueAt(0, columnIndex).getClass();
 	}
-	
+	/**
+	 * Gets a sale from the list of sales
+	 * @param pos Position of the sale
+	 * @return sale selected
+	 */
 	public Venta getVenta(int pos){
 		return lista.get(pos);
 	}
