@@ -1,3 +1,10 @@
+/**
+ * @file ModeloColumnasTablaMaquina.java
+ * @author Imanol Badiola
+ * @brief This file contains the table column model for machines
+ */
+
+
 package maquinas;
 
 import javax.swing.table.DefaultTableColumnModel;
@@ -7,6 +14,10 @@ public class ModeloColumnasTablaMaquina extends DefaultTableColumnModel {
 
 	TrazadorTablaMaquina trazador;
 	
+	/**
+	 * Constructor of the class, adds columns for each needed field for machine information
+	 * @param trazador Adapter for visualization style
+	 */
 	public ModeloColumnasTablaMaquina(TrazadorTablaMaquina trazador){
 		super();
 		this.trazador = trazador;
@@ -17,6 +28,13 @@ public class ModeloColumnasTablaMaquina extends DefaultTableColumnModel {
 		this.addColumn(crearColumna("Calle",4,100));
 	}
 	
+	/**
+	 * Creates columns with given text, index, size and style
+	 * @param text Text for the column
+	 * @param indice Index for column positioning
+	 * @param ancho Width of the column
+	 * @return Column created to insert into table
+	 */
 	private TableColumn crearColumna(String texto, int indice, int ancho) {
 		TableColumn columna = new TableColumn(indice,ancho);
 		

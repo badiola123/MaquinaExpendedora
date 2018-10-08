@@ -34,6 +34,8 @@ public class Clientela extends AbstractTableModel{
 	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of Clientela, which establishes the connection to the database
+	 * @param columnas Columns of table
+	 * @param conexion Database connection instance
 	 */
 	public Clientela (ModeloColumnasTabla columnas, MyDataAccess conexion){
 		super();

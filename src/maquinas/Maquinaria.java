@@ -1,3 +1,9 @@
+/**
+ * @file Maquinaria.java
+ * @author Imanol Badiola
+ * @brief This file contains the table model for machine visualization
+ */
+
 package maquinas;
 
 import java.sql.ResultSet;
@@ -27,6 +33,11 @@ public class Maquinaria extends AbstractTableModel{
 	
 	private static final String IM_ERROR = "img/error.png";
 	
+	/**
+	 * Constructor of Maquinaria, which establishes the connection to the database
+     * @param columnas Columns of table
+	 * @param conexion Database connection instance
+	 */
 	public Maquinaria (ModeloColumnasTablaMaquina columnas, MyDataAccess conexion){
 		super();
 		this.conexion = conexion;
@@ -36,6 +47,11 @@ public class Maquinaria extends AbstractTableModel{
 		this.columnas = columnas;
 	}
 	
+	/**
+	 * Loads data of machines to create a machine list
+	 * @param conexion The instance of connection to the database
+	 * @return List of machines
+	 */
 	static public List<Maquina> cargarDatos(MyDataAccess conexion) {
 		Maquina maquina;
 		List<Maquina> lista = new ArrayList<>();
@@ -73,27 +89,51 @@ public class Maquinaria extends AbstractTableModel{
 	    return lista;
 	}
 
+	/**
+	 * Column number getter
+	 * @return Number of columns
+	 */
 	@Override
 	public int getColumnCount() {
 		return columnas.getColumnCount();
 	}
 
+	/**
+	 * Row number getter
+	 * @return Number of rows
+	 */
 	@Override
 	public int getRowCount() {
 		return lista.size();
 	}
 
+	/**
+	 * Method to get an information field of a machine from table position 
+	 * @param fila row coordinate
+	 * @param columna columns coordinate
+	 * @return Selected machine's information field
+	 */
 	@Override
 	public Object getValueAt(int fila, int columna) {
 		Maquina maquina = lista.get(fila);
 		return maquina.getFieldAt(columna);
 	}
 
+	/**
+	 * Gets the class of the field of a column
+	 * @param columnIndex number of the column
+	 * @return Class of the column
+	 */
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		return getValueAt(0, columnIndex).getClass();
 	}
 	
+	/**
+	 * Gets a machine from the list of machines
+	 * @param pos Position of the machine
+	 * @return Machine selected
+	 */
 	public Maquina getMaquina(int pos){
 		return lista.get(pos);
 	}
