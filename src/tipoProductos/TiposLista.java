@@ -1,3 +1,9 @@
+/**
+ * @file TiposLista.java
+ * @author Edgar Azpiazu
+ * @brief This file contains the table model for product type visualization
+ */
+
 package tipoProductos;
 
 import java.sql.ResultSet;
@@ -28,6 +34,11 @@ public class TiposLista extends AbstractTableModel{
 	
 	private static final String IM_ERROR = "img/error.png";
 	
+  /**
+	 * Constructor of TiposLista, which establishes the connection to the database
+	 * @param columnas Columns of table
+	 * @param conexion Database connection instance
+	 */
 	public TiposLista (ModeloColumnasTablaTipoProductos columnas, MyDataAccess conexion){
 		super();
 		lista = new ArrayList<>();
@@ -37,6 +48,11 @@ public class TiposLista extends AbstractTableModel{
 		this.columnas = columnas;
 	}
 	
+  /**
+	 * Loads data of product types to create a product type list
+	 * @param conexion The instance of connection to the database
+	 * @return List of product types
+	 */
 	static public List<TipoProducto> cargarDatos(MyDataAccess conexion) {
 		TipoProducto tipoProducto;
 		List<TipoProducto> lista = new ArrayList<>();
@@ -73,27 +89,51 @@ public class TiposLista extends AbstractTableModel{
 	    return lista;
 	}
 
+  /**
+	 * Column number getter
+	 * @return Number of columns
+	 */
 	@Override
 	public int getColumnCount() {
 		return columnas.getColumnCount();
 	}
 
+  /**
+	 * Row number getter
+	 * @return Number of rows
+	 */
 	@Override
 	public int getRowCount() {
 		return lista.size();
 	}
-
+  
+  /**
+	 * Method to get an information field of a product type from table position 
+	 * @param fila row coordinate
+	 * @param columna columns coordinate
+	 * @return Selected product type's information field
+	 */
 	@Override
 	public Object getValueAt(int fila, int columna) {
 		TipoProducto tipoProducto = lista.get(fila);
 		return tipoProducto.getFieldAt(columna);
 	}
 
+  /**
+	 * Gets the class of the field of a column
+	 * @param columnIndex number of the column
+	 * @return Class of the column
+	 */
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		return getValueAt(0, columnIndex).getClass();
 	}
 	
+  /**
+	 * Gets a product type from the list of product types
+	 * @param pos Position of the product type
+	 * @return Product type selected
+	 */
 	public TipoProducto getTipoP(int pos){
 		return lista.get(pos);
 	}
