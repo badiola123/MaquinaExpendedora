@@ -1,3 +1,10 @@
+/**
+ * @file DialogoContraseña.java
+ * @author Imanol Badiola
+ * @brief This file manages the password dialog of the login
+ */
+
+
 package Dialogos;
 
 import java.awt.BorderLayout;
@@ -27,6 +34,12 @@ public class DialogoContrasena extends JDialog implements ActionListener {
 	JLabel labelPass;
 	JPasswordField password;
 	
+	/**
+	  * Constructor of the class which sets size, closing operation and specifies the panel that will be put inside
+	  * @param ventana Parent windows
+	  * @param titulo Title of the dialog
+      * @param modo Parameter that blocks any interaction with the parent window
+	  */
 	public DialogoContrasena(JFrame ventana, String titulo, boolean modo){
 		super(ventana, titulo, modo);
 		toolkit = Toolkit.getDefaultToolkit();
@@ -37,6 +50,10 @@ public class DialogoContrasena extends JDialog implements ActionListener {
 		this.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
 	}
 
+	/**
+	  * Creates the panel inside the dialog 
+	  * @return The panel object to put inside dialog
+	  */
 	private Container crearPanelVentana() {
 		JPanel panel = new JPanel (new BorderLayout(0,20));
 		panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
@@ -46,6 +63,10 @@ public class DialogoContrasena extends JDialog implements ActionListener {
 		return panel;
 	}
 
+	/**
+	  * Creates the password input field
+	  * @return The password field object
+	  */
 	private Component crearCampoPass() {
 		JPanel panel = new JPanel (new BorderLayout(10, 10));
 		
@@ -61,7 +82,12 @@ public class DialogoContrasena extends JDialog implements ActionListener {
 		panel.add(password, BorderLayout.CENTER);
 		return panel;
 	}
-
+	
+	/**
+	  * Creates a button 
+	  * @param titulo Title of the button
+	  * @return Created button object
+	  */
 	private Component crearBoton(String titulo) {
 		JButton boton;
 		boton = new JButton (titulo);
@@ -70,10 +96,18 @@ public class DialogoContrasena extends JDialog implements ActionListener {
 		return boton;
 	}
 	
+	/**
+	  * Getter of the password written
+	  * @return The password as a string
+	  */
 	public String getPassword() {
 		return new String(password.getPassword());
 	}
 
+	/**
+	  * Method called by the Button class when pressed, overridden to close dialog
+	  * @param e Event occurred
+	  */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("OK")){

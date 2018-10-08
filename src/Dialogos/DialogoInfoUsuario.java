@@ -1,3 +1,10 @@
+/**
+ * @file DialogoInfoUsuario.java
+ * @author Imanol Badiola
+ * @brief This file manages the dialog of the information of a user
+ */
+
+
 package Dialogos;
 
 import java.awt.BorderLayout;
@@ -40,6 +47,15 @@ public class DialogoInfoUsuario extends JDialog {
 	
 	JLabel labelMaquina, labelTipo, labelProducto;	
 	
+	/**
+	  * Constructor of the class, sets size, closing operation, specifies the panel 
+	  * that will be put inside and the data to show
+	  * @param ventana Parent windows
+	  * @param titulo Title of the dialog
+      * @param modo Parameter that blocks any interaction with the parent window
+      * @param conexion Database connection instance
+      * @param cliente Client to show at dialog
+	  */
 	public DialogoInfoUsuario(JFrame ventana, String titulo, boolean modo, MyDataAccess conexion, Cliente cliente){
 		super(ventana, titulo, modo);
 		this.conexion = conexion;
@@ -53,6 +69,10 @@ public class DialogoInfoUsuario extends JDialog {
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	}
 
+	/**
+	  * Creates the panel inside the dialog  
+	  * @return The dialog panel object
+	  */
 	private Container crearPanelVentana() {
 		JPanel panel = new JPanel (new GridLayout(3, 1, 10, 10));
 		panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
@@ -63,6 +83,10 @@ public class DialogoInfoUsuario extends JDialog {
 		return panel;
 	}
 
+	/**
+	  * Loads from database user's most used vending machine
+	  * @return Panel with information of the machine
+	  */
 	private Component cargarMaquina() {
 		labelMaquina = new JLabel();
 		JPanel panel = crearLabel(labelMaquina, "Máquina mas frecuentada");
@@ -104,6 +128,10 @@ public class DialogoInfoUsuario extends JDialog {
 		return panel;
 	}
 
+	/**
+	  * Loads from database user's most bought product type
+	  * @return Panel with information of the product type
+	  */
 	private Component cargarTipo() {
 		labelTipo = new JLabel();
 		JPanel panel = crearLabel(labelTipo, "Tipo de producto más comprado");
@@ -147,6 +175,10 @@ public class DialogoInfoUsuario extends JDialog {
 		return panel;
 	}
 
+	/**
+	  * Loads from database user's most bought product
+	  * @return Panel with information of the product
+	  */
 	private Component cargarProducto() {
 		labelProducto = new JLabel();
 		JPanel panel = crearLabel(labelProducto, "Producto favorito");
@@ -190,6 +222,10 @@ public class DialogoInfoUsuario extends JDialog {
 		return panel;
 	}
 
+	/**
+	  * Creates a panel with a label
+	  * @return The panel object
+	  */
 	private JPanel crearLabel(JLabel label, String titulo) {
 		JPanel panel = new JPanel(new GridLayout(1,1));
 		panel.setBorder(BorderFactory.createTitledBorder(

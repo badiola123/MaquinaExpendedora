@@ -1,3 +1,11 @@
+/**
+ * @file DialogoEdicion.java
+ * @author Imanol Badiola
+ * @brief This file manages the dialog created when editing a client, 
+ * machine, product, type of product, offer, sale or stock.
+ */
+
+
 package Dialogos;
 
 import java.awt.BorderLayout;
@@ -61,6 +69,15 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 	int clase = -1;
 	String primaryKey;
 	
+	/**
+	  * Constructor of the class, sets size, closing operation, specifies the panel 
+	  * that will be put inside and the options to include
+	  * @param ventana Parent windows
+	  * @param titulo Title of the dialog
+      * @param modo Parameter that blocks any interaction with the parent window
+      * @param conexion Database connection instance
+      * @param xBee XBee connection instance
+	  */
 	public DialogoEdicion(JFrame ventana, String titulo, boolean modo, T dato, MyDataAccess conexion, ModuloXBee xBee){
 		super(ventana, titulo, modo);
 		this.conexion = conexion;
@@ -74,6 +91,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	}
 	
+	/**
+	  * Loads options to include in the dialog, depending on the editing element's class
+	  * @param dato Object of element to edit
+	  */
 	private void cargarOpciones(T dato) {
 		
 		if(dato.getClass().equals(Cliente.class)){
@@ -136,6 +157,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		}
 	}
 
+	/**
+	  * Creates the panel inside the dialog 
+	  * @return The panel object to put inside dialog
+	  */
 	private Container crearPanelVentana() {
 		JPanel panel = new JPanel (new BorderLayout(0,10));
 		panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
@@ -144,6 +169,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		return panel;
 	}
 	
+	/**
+	  * Creates the panel in which data is displayed
+	  * @return The panel object 
+	  */
 	private Component crearPanelDatos() {
 		panelDatos = new JPanel (new GridLayout(opcion.length,1,20,20));
 		
@@ -156,7 +185,12 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		
 		return panelDatos;
 	}
-	
+	/**
+	  * Creates a text field with a text and title
+	  * @param text Text to put inside field
+	  * @param titulo Title of the text field
+	  * @return The text field object
+	  */
 	private Component crearTextField(JTextField text, String titulo) {
 		JPanel panel = new JPanel(new GridLayout(1,1));
 		panel.setBorder(BorderFactory.createTitledBorder(
@@ -166,6 +200,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		return panel;
 	}
 	
+	/**
+	  * Creates the panel in which buttons are put
+	  * @return The panel object 
+	  */
 	private Component crearPanelBotones() {
 		JPanel panel = new JPanel (new GridLayout(1,2,20,0));
 		JButton bOk = new JButton ("OK");
@@ -181,6 +219,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		return panel;
 	}
 
+	/**
+	  * Method called by the Button class when pressed, to react to different button's pulsation
+	  * @param e Event occurred
+	  */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("ok")){
@@ -189,17 +231,19 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		else if(e.getActionCommand().equals("cancel")){
 			this.dispose();
 			if(clase == 0 && xBee != null) xBee.mandarTramaDatosNuevoUsuarioCancelado();
-			System.out.println("mandando nuuevo usuario cancelado");
+			System.out.println("mandando nuevo usuario cancelado");
 		}
 	}
 
+	/**
+	  * Saves the data introduced in the dialog
+	  */
 	private void guardarDatos() {
 		String nombreTabla = null;
 		String[] nombreColumnas = null;
 		boolean[] formatoColumnas = null;
 		String[] datosUpdate = cargarDatosTF();
 		Comandos comandos = new Comandos(conexion);
-		
 		
 		try {
 		switch(clase){
@@ -251,6 +295,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		}
 	}
 
+	/**
+	  * Loads the data introduced in the fields in an array of strings, to afterwards store in the method "guardarDatos()"
+	  * @return Array of strings with the data of the fields
+	  */
 	private String[] cargarDatosTF() {
 		String[] textos = new String[datos.length];
 		
@@ -261,6 +309,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		return textos;
 	}
 
+	/**
+	  * Overridden method called for Observable-Observer pattern, to update when user detection is reported by the XBee receiver
+	  * @param e Event occurred
+	  */
 	@Override
 	public void update(Observable o, Object obj) {
 		if (obj instanceof Recepcion) {
