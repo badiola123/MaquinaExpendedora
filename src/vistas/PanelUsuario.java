@@ -1,3 +1,9 @@
+/**
+ * @file PanelUsuario.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to recharge different products into machines
+ */
+
 package vistas;
 
 import java.awt.BorderLayout;
@@ -61,6 +67,11 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 	static final String IMAGEN_ATRAS = "img/back.png";
 	static final String IMAGEN_INFO = "img/info.png";
 
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+	 */
 	public PanelUsuario(JFrame v, MyDataAccess conexion){
 		
 		super(new BorderLayout());
@@ -83,11 +94,18 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 		this.add(crearPanelCentral(),BorderLayout.CENTER);
 	}
 	
+  /**
+	 * Updates the client list from the database and the displayed panel
+	 */
 	public void actualizar(){
 		clientela.actualizar();
 		this.add(crearPanelCentral(),BorderLayout.CENTER);
 	}
 	
+  /**
+	 * Creates a toolbar with different buttons to sort clients and another one for additional information of them
+	 * @return The created tool bar
+	 */
 	private JToolBar crearToolBar() {
 		JToolBar toolBar = new JToolBar();
 		JButton boton;
@@ -121,6 +139,10 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 		return toolBar;
 	}
 	
+  /**
+	 * Creates a splitted panel where users can be sorted and filtered following different criteria
+	 * @return The created panel
+	 */
 	private Component crearPanelCentral() {
 		JSplitPane panel = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true);
 		panel.setLeftComponent(crearPanelOpciones());
@@ -129,6 +151,10 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 		return panelCentral;
 	}
 	
+  /**
+	 * Creates the left component of the splitted panel with a list of the different values to filter clients
+	 * @return The created panel
+	 */
 	private Component crearPanelOpciones() {
 		listaAgregados = new JList<>(clientela.getListaOpciones());
 		listaAgregados.setSelectedIndex(0);
@@ -140,6 +166,10 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 		
 	}
 	
+  /**
+	 * Creates the right component of the splitted panel with a list of sorted clients that pass the applied filter
+	 * @return An scroll bar to which a panel has been asignated
+	 */
 	private Component crearPanelClientes() {
 		clientela.volverACargar();
 		clientela.getListaClientesOpcion(listaAgregados.getSelectedValue());
@@ -148,6 +178,11 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 		return panelScrollTabla;
 	}
 	
+  /**
+	 * Creates a table with the different clients' information
+   * @param dm The tablo model to follow
+   * @param cm The table column model to follow
+	 */
 	private void crearTabla() {
 		vTabla = new JTable(clientela,columnas);
 		vTabla.setFillsViewportHeight(true);
@@ -155,6 +190,9 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 		panelScrollTabla.setViewportView(vTabla);
 	}
 
+  /**
+	 * Creates the different sorting methods
+	 */
 	private void crearAcciones() {
 		accAgregarID = new AccionAgregarID ("ID",new ImageIcon(IMAGEN_ID),"Agregar por ID",KeyEvent.VK_I);
 		accAgregarApellido= new AccionAgregarApellido ("Apellido",new ImageIcon(IMAGEN_APELLIDO),"Agregar por apellido",KeyEvent.VK_N);
@@ -164,17 +202,34 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 	
 	public class AccionAgregarID extends AbstractAction{
 		String texto;
+    
+    /**
+	   * Creates the sorting method by ID
+     * @param texto The text that describes the sorting method
+     * @param image The image that is displayed inside the button
+     * @param descrip A short descripton of the method
+     * @param nemonic Shortcut key
+	   */
 		public AccionAgregarID (String texto, Icon imagen, String descrip, Integer nemonic){
 			super(texto,imagen);
 			this.texto = texto;
 			this.putValue( Action.SHORT_DESCRIPTION ,descrip);
 			this.putValue(Action.MNEMONIC_KEY, nemonic);
 		}
+    
+    /**
+	   * Overridden method to specify the action when the buttons with an action listener are pressed 
+	   * @param e The event which contains information about the action
+	   */
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
 
+        /**
+	       * Overridden method to specify the parameter that is taken into account when sorting 
+	       * @param cliente The client to be sorted
+	       */
 				@Override
 				public String map(Cliente cliente) {
 					return String.valueOf(cliente.getId());
@@ -189,17 +244,34 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 	
 	public class AccionAgregarApellido extends AbstractAction{
 		String texto;
+    
+    /**
+	   * Creates the sorting method by surname
+     * @param texto The text that describes the sorting method
+     * @param image The image that is displayed inside the button
+     * @param descrip A short descripton of the method
+     * @param nemonic Shortcut key
+	   */
 		public AccionAgregarApellido (String texto, Icon imagen, String descrip, Integer nemonic){
 			super(texto,imagen);
 			this.texto = texto;
 			this.putValue( Action.SHORT_DESCRIPTION ,descrip);
 			this.putValue(Action.MNEMONIC_KEY, nemonic);
 		}
+    
+    /**
+	   * Overridden method to specify the action when the buttons with an action listener are pressed 
+	   * @param e The event which contains information about the action
+	   */
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
 
+        /**
+	       * Overridden method to specify the parameter that is taken into account when sorting 
+	       * @param cliente The client to be sorted
+	       */
 				@Override
 				public String map(Cliente cliente) {
 					return cliente.getApellido();
@@ -214,16 +286,34 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 	
 	public class AccionAgregarEdad extends AbstractAction{
 		String texto;
+    
+    /**
+	   * Creates the sorting method by age
+     * @param texto The text that describes the sorting method
+     * @param image The image that is displayed inside the button
+     * @param descrip A short descripton of the method
+     * @param nemonic Shortcut key
+	   */
 		public AccionAgregarEdad (String texto, Icon imagen, String descrip, Integer nemonic){
 			super(texto,imagen);
 			this.texto = texto;
 			this.putValue( Action.SHORT_DESCRIPTION ,descrip);
 			this.putValue(Action.MNEMONIC_KEY, nemonic);
 		}
+    
+    /**
+	   * Overridden method to specify the action when the buttons with an action listener are pressed 
+	   * @param e The event which contains information about the action
+	   */
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
+        
+        /**
+	       * Overridden method to specify the parameter that is taken into account when sorting 
+	       * @param cliente The client to be sorted
+	       */
 				@Override
 				public String map(Cliente cliente) {
 					String edad = cliente.getFechaNacimiento();
@@ -240,17 +330,34 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 	
 	public class AccionAgregarCP extends AbstractAction{
 		String texto;
+    
+    /**
+	   * Creates the sorting method by postal code
+     * @param texto The text that describes the sorting method
+     * @param image The image that is displayed inside the button
+     * @param descrip A short descripton of the method
+     * @param nemonic Shortcut key
+	   */
 		public AccionAgregarCP (String texto, Icon imagen, String descrip, Integer nemonic){
 			super(texto,imagen);
 			this.texto = texto;
 			this.putValue( Action.SHORT_DESCRIPTION ,descrip);
 			this.putValue(Action.MNEMONIC_KEY, nemonic);
 		}
+    
+    /**
+	   * Overridden method to specify the action when the buttons with an action listener are pressed 
+	   * @param e The event which contains information about the action
+	   */
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
 
+        /**
+	       * Overridden method to specify the parameter that is taken into account when sorting 
+	       * @param cliente The client to be sorted
+	       */
 				@Override
 				public String map(Cliente cliente) {
 					return String.valueOf(cliente.getCodigoPostal());
@@ -262,6 +369,10 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 			}
 		}
 
+  /**
+	 * Overridden method called whenever the value of the selection changes 
+	 * @param e The event that characterizes the change
+	 */
 	@Override
 	public void valueChanged(ListSelectionEvent evento) {
 		if (evento.getValueIsAdjusting()) return;

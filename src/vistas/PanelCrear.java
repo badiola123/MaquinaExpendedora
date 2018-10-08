@@ -1,3 +1,9 @@
+/**
+ * @file PanelCrear.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to create new different objects
+ */
+
 package vistas;
 
 import java.awt.BorderLayout;
@@ -76,6 +82,13 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
 	
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+	 * @param principal Main class where different parameters are defined
+   * @param xBee Instance of the XBee module
+	 */
 	public PanelCrear(JPanel v, MyDataAccess conexion, Principal principal, ModuloXBee xBee){
 		super(new BorderLayout());
 		this.principal = principal;
@@ -90,6 +103,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		this.add(crearPanelBotones(),BorderLayout.SOUTH);
 	}
 
+  /**
+	 * Loads the necessary fields to create a client
+	 * @return The scroll pane to which this fields has been asigned
+	 */
 	private Component crearCamposClientes() {		
 		datosItem = Cliente.getOpcionescliente();
 		datosLabel = new JLabel[datosItem.length];
@@ -100,6 +117,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return panelScrollCampos;
 	}
 	
+  /**
+	 * Loads the necessary fields to create a machine
+	 * @return The scroll pane to which this fields has been asigned
+	 */
 	private Component crearCamposMaquinas() {		
 		datosItem = Maquina.getOpcionesmaquina();
 		datosLabel = new JLabel[datosItem.length];
@@ -110,6 +131,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return panelScrollCampos;
 	}
 	
+  /**
+	 * Loads the necessary fields to create a product
+	 * @return The scroll pane to which this fields has been asigned
+	 */
 	private Component crearCamposProductos() {		
 		datosItem = Producto.getOpcionesproducto();
 		datosLabel = new JLabel[datosItem.length];
@@ -120,6 +145,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return panelScrollCampos;
 	}
 	
+  /**
+	 * Loads the necessary fields to create a product type
+	 * @return The scroll pane to which this fields has been asigned
+	 */
 	private Component crearCamposTipoProductos() {		
 		datosItem = TipoProducto.getOpcionestipop();
 		datosLabel = new JLabel[datosItem.length];
@@ -130,6 +159,9 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return panelScrollCampos;
 	}
 
+  /**
+	 * Sets the necessary fields to create a new input on a layout and styles it
+	 */
 	private void crearCampos() {
 		JPanel panel = new JPanel(new GridLayout(datosItem.length,1,0,25));
 		
@@ -145,6 +177,12 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		panelScrollCampos.setViewportView(panel);
 	}
 
+  /**
+	 * Creates the panel where a field for the new input is added
+   * @param tituloLabel Label for the input
+	 * @param i The number from the total labels
+	 * @return The created panel
+	 */
 	private JPanel crearPanelCampo(String tituloLabel, int i) {
 		JPanel panel = new JPanel(new GridLayout(1,2,20,25));
 		datosLabel[i]= new JLabel(tituloLabel);
@@ -155,6 +193,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return panel;
 	}
 	
+  /**
+	 * Creates the panel for the OK and cancel buttons
+	 * @return The created panel
+	 */
 	private Component crearPanelBotones() {
 		JPanel panel = new JPanel();
 		panel.setLayout(new BorderLayout());
@@ -165,6 +207,12 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return panel;
 	}
 	
+  /**
+	 * Creates a transparent button without background
+   * @param i The file from where the image is loaded
+	 * @param c The text the button includes
+	 * @return The created button
+	 */
 	private Component botonTransparente(String i, String c){
 		JButton b = new JButton(new ImageIcon(i));
 		b.setActionCommand(c);
@@ -175,6 +223,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return b;
 	}
 
+  /**
+	 * Creates the panel to choose between the different input types
+	 * @return The created panel
+	 */
 	private Component crearPanelOpciones() {
 		panelOpciones = new JPanel (new GridLayout(1,2,60,60));
 		panelOpciones.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
@@ -220,6 +272,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return panelOpciones;
 	}
 
+  /**
+	 * Overridden method to specify the action when a different radio button is selected 
+	 * @param e The event which contains information about the radio buttons' status
+	 */
 	@Override
 	public void itemStateChanged(ItemEvent e) {
 		
@@ -252,6 +308,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		
 	}
 
+  /**
+	 * Overridden method to specify the action when the buttons with an action listener are pressed 
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("cancel")){
@@ -290,12 +350,20 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		}
 	}
 
+  /**
+	 * Clears the text fields where the new input information was written
+	 */
 	private void limpiarTextField() {
 		for(int i = 0; i < datosTextField.length; i++){
 			datosTextField[i].setText("");
 		}
 	}
 
+  /**
+	 * Cleates a new product type
+   * @param comandos Instance of the class Comandos to create commands for the database
+   * @param datos Data from the input fields to create the new object
+	 */
 	private void crearTipoP(Comandos comandos, String[] datos) throws SQLException {
 		boolean[] formatoColumnas = null;
 		formatoColumnas = TipoProducto.getFormatoColumnas();
@@ -303,6 +371,11 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		comandos.insertar(formatoColumnas, datos, Principal.getTablatipop());
 	}
 
+  /**
+	 * Cleates a new product
+   * @param comandos Instance of the class Comandos to create commands for the database
+   * @param datos Data from the input fields to create the new object
+	 */
 	private void crearProducto(Comandos comandos, String[] datos) throws SQLException {
 		boolean[] formatoColumnas = null;
 		formatoColumnas = Producto.getFormatoColumnas();
@@ -310,6 +383,11 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		comandos.insertar(formatoColumnas, datos, Principal.getTablaproducto());
 	}
 
+  /**
+	 * Cleates a new machine
+   * @param comandos Instance of the class Comandos to create commands for the database
+   * @param datos Data from the input fields to create the new object
+	 */
 	private void crearMaquina(Comandos comandos, String[] datos) throws SQLException {
 		boolean[] formatoColumnas = null;
 		formatoColumnas = Maquina.getFormatoColumnas();
@@ -317,6 +395,11 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		comandos.insertar(formatoColumnas, datos, Principal.getTablamaquina());
 	}
 
+  /**
+	 * Cleates a new client
+   * @param comandos Instance of the class Comandos to create commands for the database
+   * @param datos Data from the input fields to create the new object
+	 */
 	private void crearCliente(Comandos comandos, String[] datos) throws SQLException {
 		boolean[] formatoColumnas = null;
 		formatoColumnas = Cliente.getFormatoColumnas();
@@ -324,6 +407,10 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		comandos.insertar(formatoColumnas, datos, Principal.getTablacliente());
 	}
 	
+  /**
+	 * Loads the data from the input fields into an array of Strings
+   * @return An array of Strings with the data from the input fields
+	 */
 	private String[] cargarDatosTF() {
 		String[] textos = new String[datosTextField.length];
 		
@@ -334,6 +421,11 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		return textos;
 	}
 
+  /**
+	 * This method is called whenever the observer object is changed
+   * @param o The observable object
+   * @param obj An argument passed to the notifyObservers method
+	 */
 	@Override
 	public void update(Observable o, Object obj) {
 		if (obj instanceof Recepcion) {

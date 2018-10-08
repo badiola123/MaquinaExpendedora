@@ -1,3 +1,9 @@
+/**
+ * @file PanelEditar.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to edit different existing objects
+ */
+
 package vistas;
 
 import java.awt.BorderLayout;
@@ -115,6 +121,13 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
 	
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+	 * @param principal Main class where different parameters are defined
+   * @param xBee Instance of the XBee module
+	 */
 	public PanelEditar(JPanel v, MyDataAccess conexion, Principal principal, ModuloXBee xBee){
 		super(new BorderLayout());
 		this.principal = principal;
@@ -130,6 +143,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		this.add(crearPanelBotones(),BorderLayout.SOUTH);
 	}
 
+  /**
+	 * Creates the panel for the OK, cancel and delete buttons
+	 * @return The created panel
+	 */
 	private Component crearPanelBotones() {
 		JPanel panel = new JPanel();
 		panel.setLayout(new BorderLayout());
@@ -141,6 +158,12 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panel;
 	}
 	
+  /**
+	 * Creates a transparent button without background
+   * @param i The file from where the image is loaded
+	 * @param c The text the button includes
+	 * @return The created button
+	 */
 	private Component botonTransparente(String i, String c){
 		JButton b = new JButton(new ImageIcon(i));
 		b.setActionCommand(c);
@@ -151,6 +174,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return b;
 	}
 
+  /**
+	 * Creates the panel to choose between the different input types
+	 * @return The created panel
+	 */
 	private Component crearPanelOpciones() {
 		panelOpciones = new JPanel (new GridLayout(1,2,60,60));
 		panelOpciones.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
@@ -186,6 +213,11 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panelOpciones;
 	}
 	
+  /**
+	 * Creates a radio button with the specified design
+   * @param titulo Text that the radio button will display
+	 * @return The created radio button
+	 */
 	public JRadioButton crearRadioButton(String titulo){
 		JRadioButton boton = new JRadioButton(titulo);
 		boton.setHorizontalAlignment(JLabel.LEFT);
@@ -195,6 +227,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return boton;
 	}
 
+  /**
+	 * Creates a table with the different clients' information
+	 * @return The scroll pane to which this table has been asigned
+	 */
 	private Component crearPanelClientes() {
 		trazador = new TrazadorTabla();
 		columnas = new ModeloColumnasTabla (trazador);
@@ -205,6 +241,11 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panelScrollTabla;
 	}
 	
+  /**
+	 * Creates a table with the different clients' information
+   * @param dm The tablo model to follow
+   * @param cm The table column model to follow
+	 */
 	private void crearTabla(TableModel dm, TableColumnModel cm) {
 		vTabla = new JTable(dm, cm);
 		vTabla.setFillsViewportHeight(true);
@@ -212,6 +253,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		panelScrollTabla.setViewportView(vTabla);
 	}
 	
+  /**
+	 * Creates a table with the different machines' information
+	 * @return The scroll pane to which this table has been asigned
+	 */
 	private Component crearPanelMaquinas() {
 		trazadorMaquina = new TrazadorTablaMaquina();
 		columnasMaquina = new ModeloColumnasTablaMaquina (trazadorMaquina);
@@ -221,7 +266,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 	
 		return panelScrollTabla;
 	}
-	
+	/**
+	 * Creates a table with the different products' information
+	 * @return The scroll pane to which this table has been asigned
+	 */
 	private Component crearPanelProductos() {
 		trazadorProducto = new TrazadorTablaProducto();
 		columnasProducto = new ModeloColumnasTablaProducto (trazadorProducto);
@@ -232,6 +280,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panelScrollTabla;
 	}
 	
+  /**
+	 * Creates a table with the different product types' information
+	 * @return The scroll pane to which this table has been asigned
+	 */
 	private Component crearPanelTipoProductos() {
 		trazadorTipoP = new TrazadorTablaTipoProductos();
 		columnasTipoP = new ModeloColumnasTablaTipoProductos (trazadorTipoP);
@@ -242,6 +294,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panelScrollTabla;
 	}
 	
+  /**
+	 * Creates a table with the different offers' information
+	 * @return The scroll pane to which this table has been asigned
+	 */
 	private Component crearPanelOferta() {
 		trazadorOferta = new TrazadorTablaOferta();
 		columnasOferta = new ModeloColumnasTablaOferta (trazadorOferta);
@@ -252,6 +308,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panelScrollTabla;
 	}
 	
+  /**
+	 * Creates a table with the different sales' information
+	 * @return The scroll pane to which this table has been asigned
+	 */
 	private Component crearPanelVenta() {
 		trazadorVenta = new TrazadorTablaVenta();
 		columnasVenta = new ModeloColumnasTablaVenta (trazadorVenta);
@@ -262,6 +322,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panelScrollTabla;
 	}
 	
+  /**
+	 * Creates a table with the different stocks' information
+	 * @return The scroll pane to which this table has been asigned
+	 */
 	private Component crearPanelStock() {
 		trazadorStock = new TrazadorTablaStock();
 		columnasStock = new ModeloColumnasTablaStock (trazadorStock);
@@ -272,6 +336,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		return panelScrollTabla;
 	}
 
+  /**
+	 * Overridden method to specify the action when a different radio button is selected 
+	 * @param e The event which contains information about the radio buttons' status
+	 */
 	@Override
 	public void itemStateChanged(ItemEvent e) {
 		
@@ -301,6 +369,10 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		
 	}
 
+  /**
+	 * Overridden method to specify the action when the buttons with an action listener are pressed 
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("cancel")){
@@ -383,6 +455,11 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		actualizar();
 	}
 	
+  /**
+	 * Removes the entry with the specified primary key from the given table name
+	 * @param nombreTabla Table name to search for
+   * @param primaryKey Primary key to search for
+	 */
 	private void borrar(String nombreTabla, String primaryKey) {
 		String comandoSQL;
 		try {
@@ -399,6 +476,9 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 			}
 	}
 
+  /**
+	 * Recharges the panel assigned to the selected radio button
+	 */
 	public void actualizar(){
 		if(rbCliente.isSelected()){
 			this.add(crearPanelClientes(),BorderLayout.CENTER);
@@ -423,6 +503,11 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 		}
 	}
 
+  /**
+	* This method is called whenever the observer object is changed
+  * @param o The observable object
+  * @param obj An argument passed to the notifyObservers method
+	*/
 	@Override
 	public void update(Observable o, Object obj) {
 		if (obj instanceof Recepcion) {

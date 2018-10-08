@@ -1,3 +1,9 @@
+/**
+ * @file PanelVentas.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to register new sales
+ */
+
 package vistas;
 
 import java.awt.BorderLayout;
@@ -68,6 +74,11 @@ public class PanelVentas extends JPanel implements ActionListener{
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
 	
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+	 */
 	public PanelVentas(JFrame v, MyDataAccess conexion){
 		super(new BorderLayout(0, 0));
 		this.principal = (Principal) v;
@@ -88,10 +99,17 @@ public class PanelVentas extends JPanel implements ActionListener{
 		this.add(crearPanelOpciones(),BorderLayout.SOUTH);
 	}
 
+  /**
+	 * Updates the displayed panel
+	 */
 	public void actualizar(){
 		this.add(crearPanelSeleccion(),BorderLayout.NORTH);
 	}
 	
+  /**
+	 * Creates a panel to register sales and with buttons to navigate
+	 * @return The created panel
+	 */
 	private Component crearPanelOpciones() {
 		JPanel panel = new JPanel(new BorderLayout());
 		
@@ -101,6 +119,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return panel;
 	}
 	
+  /**
+	 * Creates a panel with the fields that define a sale
+	 * @return The created panel
+	 */
 	private Component crearPanelDatos() {
 		JPanel panel = new JPanel(new BorderLayout(25, 25));
 		panel.setBackground(Color.WHITE);
@@ -111,6 +133,12 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return panel;
 	}
 	
+  /**
+	 * Includes a label inside a panel with the desired style as well as a text field
+   * @param label Label to give style
+   * @param text Text field to write down the information specified in the label
+	 * @return The created panel
+	 */
 	private JPanel crearPanelCampo(JLabel label, JTextField text) {
 		JPanel panel = new JPanel(new GridLayout(1,2,20,25));
 		panel.setBackground(Color.WHITE);
@@ -121,6 +149,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return panel;
 	}
 
+  /**
+	 * Creates the panel for the OK and cancel buttons
+	 * @return The created panel
+	 */
 	private Component crearPanelBotones() {
 		JPanel panel = new JPanel();
 		panel.setLayout(new BorderLayout());
@@ -131,6 +163,12 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return panel;
 	}
 	
+  /**
+	 * Creates a transparent button without background
+   * @param i The file from where the image is loaded
+	 * @param c The text the button includes
+	 * @return The created button
+	 */
 	private Component botonTransparente(String i, String c){
 		JButton b = new JButton(new ImageIcon(i));
 		b.setActionCommand(c);
@@ -141,6 +179,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return b;
 	}
 
+  /**
+	 * Creates a panel with combo boxes for different elements that take part in a sale to register a new one
+	 * @return The created panel
+	 */
 	private Component crearPanelSeleccion() {
 		panel.removeAll();
 		panel.add(crearPanelMaquinas());
@@ -150,6 +192,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return panel;
 	}
 	
+  /**
+	 * Creates a panel with a combo box of products to specify a sale
+	 * @return The created panel
+	 */
 	private Component crearPanelProductos() {
 		JPanel pCombo = new JPanel();
 		cProductos = new JComboBox<>(cargarProductos());
@@ -160,6 +206,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return cProductos;
 	}
 
+  /**
+	 * Creates a panel with a combo box of machines to specify a sale
+	 * @return The created panel
+	 */
 	private Component crearPanelMaquinas() {		
 		JPanel pCombo = new JPanel();
 		cMaquinas = new JComboBox<>(cargarMaquinas());
@@ -179,6 +229,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return cMaquinas;
 	}
 	
+  /**
+	 * Creates a panel with a combo box of clients to specify a sale
+	 * @return The created panel
+	 */
 	private Component crearPanelClientes() {
 		JPanel pCombo = new JPanel();
 		cClientes = new JComboBox<>(cargarClientes());
@@ -189,6 +243,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return cClientes;
 	}
 
+  /**
+	 * Loads the different machines from the database
+	 * @return An array with the different machines
+	 */
 	private Maquina[] cargarMaquinas() {
 		List<Maquina> listaMaquinas = Maquinaria.cargarDatos(conexion);
 		Maquina[] maquinaria = new Maquina [listaMaquinas.size()];
@@ -198,6 +256,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return maquinaria;
 	}
 	
+  /**
+	 * Loads the different products from the database
+	 * @return An array with the different products
+	 */
 	private Producto[] cargarProductos() {
 		Maquina maquina = (Maquina) cMaquinas.getSelectedItem();
 		int maquinaSeleccionadaID = maquina.getId();
@@ -209,6 +271,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return inventario;
 	}
 	
+  /**
+	 * Loads the different clients from the database
+	 * @return An array with the different clients
+	 */
 	private Cliente[] cargarClientes() {
 		List<Cliente> listaClientes = Clientela.cargarDatos(conexion);
 		Cliente[] clientela = new Cliente [listaClientes.size()];
@@ -218,6 +284,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		return clientela;
 	}
 
+  /**
+	 * Overridden method to specify the action when the buttons with an action listener are pressed 
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("cancel")){
@@ -259,6 +329,9 @@ public class PanelVentas extends JPanel implements ActionListener{
 			}
 	}
 	
+    /**
+	   * Effects the sale introducing a new input in the database and updating the stock
+	   */
     private void crearVenta() throws ArrayIndexOutOfBoundsException, NumberFormatException, SQLException, OutOfStockException, NullPointerException{
     	String[] datos = new String[Venta.getNombreColumnas().length];
     	
@@ -287,6 +360,10 @@ public class PanelVentas extends JPanel implements ActionListener{
     	conexion.setQuery("commit");
 	}
     
+  /**
+	 * Updates the stock in the database after the recharge
+	 * @param datos The data to use to update the stock
+   */
 	private void actualizarStock(String maquinaID, String productoID, String fecha) throws SQLException, OutOfStockException{
 		ResultSet cantidadActual;
 		int total = -1;
@@ -312,6 +389,10 @@ public class PanelVentas extends JPanel implements ActionListener{
 		comandos.update(Stock.getFormatoColumnas(), datos, Stock.getNombreColumnas(), Principal.getTablastock(), primaryKey);
 	}
 
+  /**
+	 * Checks if a date is correct or not 
+	 * @return true if the date is correct and false if it is incorrect
+	 */
 	private boolean comprobarFecha() throws FechaIncorrecta, NumberFormatException{
         if(!textFecha.getText().toString().equals("") && !textHora.getText().toString().equals("")){
 
@@ -350,6 +431,10 @@ public class PanelVentas extends JPanel implements ActionListener{
         }
     }
 
+    /**
+	   * Checks if the specified days for a month are correct 
+	   * @return true if it is correct and false if it is incorrect
+	   */
     private boolean comprobarDiaMeses(int dia, int mes, int ano) {
         int numdias = 31;
         switch (mes){

@@ -1,3 +1,9 @@
+/**
+ * @file PanelTrabajador.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to work on the database which gives acces to three different functionalities
+ */
+
 package vistas;
 
 import java.awt.CardLayout;
@@ -31,6 +37,12 @@ public class PanelTrabajador extends JPanel implements ActionListener {
 	static final String IMAGEN_EDITAR = "img/editar.png";
 	static final String IMAGEN_ATRAS = "img/volver.png";
 	
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+   * @param xBee Instance of the XBee module
+	 */
 	public PanelTrabajador(JFrame v, MyDataAccess conexion, ModuloXBee xBee) {
 		super(new CardLayout());
 		principal = (Principal) v;
@@ -39,6 +51,10 @@ public class PanelTrabajador extends JPanel implements ActionListener {
 		this.add(crearPanelPrincipal(), PANEL_OPCIONES);
 	}
 
+  /**
+	 * Creates a panel with the other three different options available inside this panel
+	 * @return The created panel
+	 */
 	private Component crearPanelPrincipal() {
 		ImagenFondo panel = new ImagenFondo(FONDO_PANEL_TRABAJADOR, new GridBagLayout());
 		panel.setBorder(BorderFactory.createEtchedBorder());
@@ -48,6 +64,13 @@ public class PanelTrabajador extends JPanel implements ActionListener {
 		return panel;
 	}
 
+  /**
+	 * Creates a transparent button without background
+   * @param i The file from where the image is loaded
+	 * @param c The text the button includes
+   * @param titulo Hint for the button
+	 * @return The created button
+	 */
 	private Component botonTransparente(String i, String c, String titulo){
 		JButton b = new JButton(new ImageIcon(i));
 		b.setBorder(BorderFactory.createEmptyBorder(40, 40, 40, 40));
@@ -60,6 +83,10 @@ public class PanelTrabajador extends JPanel implements ActionListener {
 		return b;
 	}
 
+  /**
+	 * Overridden method to specify the action when the buttons with an action listener are pressed 
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		CardLayout panel = (CardLayout) this.getLayout();
@@ -76,6 +103,9 @@ public class PanelTrabajador extends JPanel implements ActionListener {
 		}
 	}
 	
+  /**
+	 * Allows the user to go back to the previous panel
+	 */
 	public void volver(){
 		CardLayout panel = (CardLayout) this.getLayout();
 		panel.show(this, PANEL_OPCIONES);
