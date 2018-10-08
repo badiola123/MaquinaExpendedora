@@ -1,3 +1,8 @@
+/**
+ * @file ListaStock.java
+ * @author Ainhoa Arruabarrena
+ * @brief This file contains the table model for stock visualization
+ */
 package Stock;
 
 import java.sql.ResultSet;
@@ -21,7 +26,11 @@ public class ListaStock extends AbstractTableModel{
 	MyDataAccess conexion;
 	
 	private static final String IM_ERROR = "img/error.png";
-	
+	/**
+	 * Constructor of ListaStock, which establishes the connection to the database
+     * @param columnas Columns of table
+	 * @param conexion Database connection instance
+	 */
 	public ListaStock (ModeloColumnasTablaStock columnas, MyDataAccess conexion){
 		super();
 		lista = new ArrayList<>();
@@ -30,6 +39,11 @@ public class ListaStock extends AbstractTableModel{
 		listaEntera = lista;
 		this.columnas = columnas;
 	}
+	/**
+	 * Loads data of stock to create a machine list
+	 * @param conexion The instance of connection to the database
+	 * @return List of stock
+	 */
 	
 	static public List<Stock> cargarDatos(MyDataAccess conexion) {
 		Stock stock;
@@ -68,28 +82,47 @@ public class ListaStock extends AbstractTableModel{
 	     } 
 	    return lista;
 	}
-
+	/**
+	 * Column number getter
+	 * @return Number of columns
+	 */
 	@Override
 	public int getColumnCount() {
 		return columnas.getColumnCount();
 	}
-
+	/**
+	 * Row number getter
+	 * @return Number of rows
+	 */
 	@Override
 	public int getRowCount() {
 		return lista.size();
 	}
-
+	/**
+	 * Method to get an information field of a stock from table position 
+	 * @param fila row coordinate
+	 * @param columna columns coordinate
+	 * @return Selected stock's information field
+	 */
 	@Override
 	public Object getValueAt(int fila, int columna) {
 		Stock stock = lista.get(fila);
 		return stock.getFieldAt(columna);
 	}
-
+	/**
+	 * Gets the class of the field of a column
+	 * @param columnIndex number of the column
+	 * @return Class of the column
+	 */
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		return getValueAt(0, columnIndex).getClass();
 	}
-	
+	/**
+	 * Gets a stock from the list of stocks
+	 * @param pos Position of the stock
+	 * @return Product selected
+	 */
 	public Stock getStock(int pos){
 		return lista.get(pos);
 	}

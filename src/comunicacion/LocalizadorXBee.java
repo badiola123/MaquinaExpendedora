@@ -1,3 +1,9 @@
+/**
+ * @file LocalizadorXBee.java
+ * @author Edgar Azpiazu
+ * @brief File that locates the port at which the XBee module is connected
+ */
+
 package comunicacion;
 
 import java.util.Enumeration;
@@ -13,19 +19,26 @@ public class LocalizadorXBee {
 	Enumeration<?> puertos;
 	String puertoConectado;
 	
+	/**
+	 * Contructor of the class
+	 */
 	public LocalizadorXBee() {
 		puertos = CommPortIdentifier.getPortIdentifiers();  
 		puertoConectado = null;
 	}
 	
-	
+	/**
+	 * Searches for the por where the XBee is connected
+	 * @return The name of the port
+	 */
 	public String getPuertoConectado() {
 		buscarPuertoConectado();
 		return puertoConectado;
 	}
 
-	
-	// Intenta abrir una xbee por cada puerto conectado. Si, no ha conseguido abrirla salta la xbee exception
+	/**
+	 * Tries to open a XBee for each available port and stores the port it opens in a global variable
+	 */
 	private void buscarPuertoConectado() { 
 		XBeeDevice xBee;
 	    

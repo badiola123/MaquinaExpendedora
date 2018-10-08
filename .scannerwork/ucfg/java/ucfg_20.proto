@@ -1,0 +1,90 @@
+
+bDialogos.DialogoInfoUsuario#crearLabel(Ljavax/swing/JLabel;Ljava/lang/String;)Ljavax/swing/JPanel;
+__unknown_file (labeltitulo"1*Ô
+1™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÂ+ Â(,º·
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÂ  Â(*
+%0"java.awt.GridLayoutÞ
+Û
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÂ Â(/
+%1"java.awt.GridLayout#<init>(II)V*
+
+%0*
+""*
+""¹¶
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÂ Â(
+%2"javax.swing.JPanelë
+è
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÂ Â(0
+%3"4javax.swing.JPanel#<init>(Ljava/awt/LayoutManager;)V*
+
+%2*
+
+%0¶
+³
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÂ Â(1
+panel"__id*
+
+%2É
+Æ
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÄ# Ä(-
+%4"__id**
+java.awt.Color"
+blue¥
+¢
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÄ Ä(.
+%5"Wjavax.swing.BorderFactory#createLineBorder(Ljava/awt/Color;)Ljavax/swing/border/Border;*"
+javax.swing.BorderFactory*
+
+%4Ö
+Ó
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÃ Ä(7
+%6"|javax.swing.BorderFactory#createTitledBorder(Ljavax/swing/border/Border;Ljava/lang/String;)Ljavax/swing/border/TitledBorder;*"
+javax.swing.BorderFactory*
+
+%5*
+
+
+tituloø
+õ
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÃ Ä(8
+%7">javax.swing.JComponent#setBorder(Ljavax/swing/border/Border;)V*	
+
+panel*
+
+%6ý
+ú
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÆ Æ(
+%8"@java.awt.Container#add(Ljava/awt/Component;)Ljava/awt/Component;*	
+
+panel*	
+
+labelÊ
+Ç
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÇ Ç(!
+%9"__id**
+java.awt.Color"
+WHITEò
+ï
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÇ Ç("
+%10"7javax.swing.JComponent#setBackground(Ljava/awt/Color;)V*	
+
+panel*
+
+%9"§
+™
+ŒC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoInfoUsuario.javaÈ È(	
+
+panel

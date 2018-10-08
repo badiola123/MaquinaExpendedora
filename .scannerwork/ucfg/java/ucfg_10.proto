@@ -1,0 +1,76 @@
+
+fDialogos.DialogoEdicion#crearTextField(Ljavax/swing/JTextField;Ljava/lang/String;)Ljava/awt/Component;
+__unknown_file (texttitulo"1*á
+1•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¡+ ¡(,¶³
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¡  ¡(*
+%0"java.awt.GridLayoutÚ
+×
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¡ ¡(/
+%1"java.awt.GridLayout#<init>(II)V*
+
+%0*
+""*
+""µ²
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¡ ¡(
+%2"javax.swing.JPanelç
+ä
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¡ ¡(0
+%3"4javax.swing.JPanel#<init>(Ljava/awt/LayoutManager;)V*
+
+%2*
+
+%0²
+¯
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¡ ¡(1
+panel"__id*
+
+%2Å
+Â
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java£# £(-
+%4"__id**
+java.awt.Color"
+blue¡
+ž
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java£ £(.
+%5"Wjavax.swing.BorderFactory#createLineBorder(Ljava/awt/Color;)Ljavax/swing/border/Border;*"
+javax.swing.BorderFactory*
+
+%4Ò
+Ï
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¢ £(7
+%6"|javax.swing.BorderFactory#createTitledBorder(Ljavax/swing/border/Border;Ljava/lang/String;)Ljavax/swing/border/TitledBorder;*"
+javax.swing.BorderFactory*
+
+%5*
+
+
+tituloô
+ñ
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¢ £(8
+%7">javax.swing.JComponent#setBorder(Ljavax/swing/border/Border;)V*	
+
+panel*
+
+%6ø
+õ
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¥ ¥(
+%8"@java.awt.Container#add(Ljava/awt/Component;)Ljava/awt/Component;*	
+
+panel*
+
+text"£
+•
+ˆC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\Dialogos\DialogoEdicion.java¦ ¦(	
+
+panel
