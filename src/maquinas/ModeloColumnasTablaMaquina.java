@@ -30,7 +30,7 @@ public class ModeloColumnasTablaMaquina extends DefaultTableColumnModel {
 	
 	/**
 	 * Creates columns with given text, index, size and style
-	 * @param text Text for the column
+	 * @param texto Text for the column
 	 * @param indice Index for column positioning
 	 * @param ancho Width of the column
 	 * @return Column created to insert into table

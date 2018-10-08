@@ -1,3 +1,10 @@
+/**
+ * @file ListaOfertas.java
+ * @author Imanol Badiola
+ * @brief This file contains the table model for offer visualization
+ */
+
+
 package oferta;
 
 import java.sql.ResultSet;
@@ -28,6 +35,11 @@ public class ListaOfertas extends AbstractTableModel{
 	
 	private static final String IM_ERROR = "img/error.png";
 	
+	/**
+	 * Constructor of ListaOfertas, which establishes the connection to the database
+     * @param columnas Columns of table
+	 * @param conexion Database connection instance
+	 */
 	public ListaOfertas (ModeloColumnasTablaOferta columnas, MyDataAccess conexion){
 		super();
 		lista = new ArrayList<>();
@@ -37,6 +49,11 @@ public class ListaOfertas extends AbstractTableModel{
 		this.columnas = columnas;
 	}
 	
+	/**
+	 * Loads data of offers to create a offer list
+	 * @param conexion The instance of connection to the database
+	 * @return List of offers
+	 */
 	static public List<Oferta> cargarDatos(MyDataAccess conexion) {
 		Oferta oferta;
 		List<Oferta> lista = new ArrayList<>();
@@ -73,27 +90,51 @@ public class ListaOfertas extends AbstractTableModel{
 	    return lista;
 	}
 
+	/**
+	 * Column number getter
+	 * @return Number of columns
+	 */
 	@Override
 	public int getColumnCount() {
 		return columnas.getColumnCount();
 	}
 
+	/**
+	 * Row number getter
+	 * @return Number of rows
+	 */
 	@Override
 	public int getRowCount() {
 		return lista.size();
 	}
 
+	/**
+	 * Method to get an information field of an offer from table position 
+	 * @param fila row coordinate
+	 * @param columna columns coordinate
+	 * @return Selected offer's information field
+	 */
 	@Override
 	public Object getValueAt(int fila, int columna) {
 		Oferta oferta = lista.get(fila);
 		return oferta.getFieldAt(columna);
 	}
 
+	/**
+	 * Gets the class of the field of a column
+	 * @param columnIndex number of the column
+	 * @return Class of the column
+	 */
 	@Override
 	public Class<?> getColumnClass(int columnIndex) {
 		return getValueAt(0, columnIndex).getClass();
 	}
 	
+	/**
+	 * Gets an offer from the list of offers
+	 * @param pos Position of the offer
+	 * @return Offer selected
+	 */
 	public Oferta getOferta(int pos){
 		return lista.get(pos);
 	}
