@@ -1,3 +1,9 @@
+/**
+ * @file ModuloXBee.java
+ * @author Edgar Azpiazu
+ * @brief File that creates the diferent frames which are sent and carries out different actions on the database
+ */
+
 package comunicacion;
 
 import java.sql.ResultSet;
@@ -32,6 +38,11 @@ public class ModuloXBee extends XBeeDevice {
 	MyDataAccess conexion;
 	Comandos comandos;
 	
+	/**
+	 * Constructor of the class which initializes the XBee device on the other side and the needed elements for the communication
+	 * @param puerto Port at which the local XBee is connected
+	 * @param conexion Connection to the database
+	 */
 	public ModuloXBee(String puerto, MyDataAccess conexion) {
 		super(puerto, BAUD_RATE);
 		this.conexion = conexion;
@@ -41,6 +52,9 @@ public class ModuloXBee extends XBeeDevice {
 		abrirModulo();
 	}
 
+	/**
+	 * Opens the local XBee module
+	 */
 	public void abrirModulo() {
 		try {
 			this.open();
@@ -52,36 +66,55 @@ public class ModuloXBee extends XBeeDevice {
 		this.addDataListener(recibir);
 	}
 
+	/**
+	 * Prepares the sale accepted frame
+	 */
 	public void mandarTramaVentaAceptada(){
 		int dato = emitir.crearTramaVentaAceptada();
 		mandarTrama(dato);
 		System.out.println("Se ha mandado trama venta aceptada");
 	}
 	
+	/**
+	 * Prepares the data accepted frame
+	 */
 	public void mandarTramaDatosAceptados(){
 		int dato = emitir.crearTramaDatosAceptados();
 		mandarTrama(dato);
 		System.out.println("Se ha mandado la trama datos aceptados");
 	}
 	
+	/**
+	 * Prepares the data rejected frame
+	 */
 	public void mandarTramaDatosRechazados(){
 		int dato = emitir.crearTramaDatosRechazados();
 		mandarTrama(dato);
 		System.out.println("Se ha mandado la trama datos rechazados");
 	}
 	
+	/**
+	 * Prepares the new user frame
+	 */
 	public void mandarTramaDatosNuevoUsuario(){
 		int dato = emitir.crearTramaNuevoUsuario();
 		mandarTrama(dato);
 		System.out.println("Se ha mandado la trama nuevo usuario");
 	}
 	
+	/**
+	 * Prepares the new user cancelled frame
+	 */
 	public void mandarTramaDatosNuevoUsuarioCancelado(){
 		int dato = emitir.crearTramaNuevoUsuarioCancelado();
 		mandarTrama(dato);
 		System.out.println("Se ha mandado la trama nuevo usuario cancelado");
 	}
 
+	/**
+	 * Prepares the different frames
+	 * * @param dato Int nunber asigned to the frame
+	 */
 	private void mandarTrama(int dato) {
 		byte[] trama = new byte[1];
 		trama[0] = (byte) dato;
@@ -95,14 +128,27 @@ public class ModuloXBee extends XBeeDevice {
 		
 	}
 	
+	/**
+	 * Getter of the Recepcion class
+	 * @return the Recepcion instance of the class
+	 */
 	public Recepcion getRecibir() {
 		return recibir;
 	}
 
+	/**
+	 * Closes the XBee module
+	 */
 	public void cerrarModulo() {
 		this.close();
 	}
 
+	/**
+	 * Confirms a sale by updating the stock and adding a new sale in the database
+	 * @param maquinaID ID of the machine where the sale has been done
+	 * @param husilloID ID of the spindle where the product of the sale was
+	 * @param usuarioID ID of the user that has purchased the product
+	 */
 	public void confirmarVenta(String maquinaID, String husilloID, String usuarioID) {
 		String[] datos = new String[Venta.getNombreColumnas().length];
 		datos[0] = usuarioID;
@@ -119,6 +165,12 @@ public class ModuloXBee extends XBeeDevice {
 		}	
 	}
 
+	/**
+	 * Updates the stock of a machine
+	 * @param maquinaID ID of the machine where the product was
+	 * @param husilloID ID of the spindle where the product was
+	 * @param fecha Date when the sale was carried out
+	 */
 	private void actualizarStock(String maquinaID, String husilloID, String fecha) throws SQLException {
 		ResultSet cantidadActual;
 		int total = -1;
@@ -141,6 +193,12 @@ public class ModuloXBee extends XBeeDevice {
 		comandos.update(Stock.getFormatoColumnas(), datos, Stock.getNombreColumnas(), Principal.getTablastock(), primaryKey);
 	}
 
+	/**
+	 * Calculates the price of a product located in a certain machine at a specific spindle
+	 * @param husilloID ID of the spindle where the product is
+	 * @param maquinaID ID of the machine where the product is
+	 * @return The price of the required product
+	 */
 	private String calcularPrecio(String husilloID, String maquinaID) throws SQLException {
 		String precio = null;
 		String[] nombreColumnas = new String[1];
@@ -159,6 +217,10 @@ public class ModuloXBee extends XBeeDevice {
 		return precio;
 	}
 
+	/**
+	 * Calculates the current date and time
+	 * @return The current date and time
+	 */
 	private String calcularFecha() {
 		int ano, mes, dia, horas, mins, segs;
     	Calendar cal;
@@ -174,6 +236,12 @@ public class ModuloXBee extends XBeeDevice {
         return ano + "-" + mes + "-" + dia + "  " + horas + ":" + mins + ":" + segs;
 	}
 
+	/**
+	 * Checks that the desired product is available and that the user exists
+	 * @param maquinaID ID of the machine where the product is
+	 * @param husilloID ID of the spindle where the product is
+	 * @param usuarioID ID of the user that has to be checked
+	 */
 	public void comprobarDatos(String maquinaID, String husilloID, String usuarioID) {
 		int valido = 1;
 		String[] nombreColumnas = new String[1];
@@ -199,6 +267,12 @@ public class ModuloXBee extends XBeeDevice {
 		}
 	}
 
+	/**
+	 * Checks if the passed parameters are created in the database
+	 * @param nombreColumnas Columns that are selected in the database
+	 * @param tabla Table that is checked in the databse
+	 * @param primaryKey Condition that is checked in the database
+	 */
 	private int comprobar(String[] nombreColumnas, String tabla, String primaryKey) throws SQLException {
 		ResultSet datos = comandos.select(nombreColumnas, tabla, primaryKey, null, null, false, 0);
 		

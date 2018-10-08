@@ -1,0 +1,111 @@
+
+ovistas.PanelEstadisticas#crearLabel(Ljavax/swing/JLabel;Ljava/lang/String;Ljava/awt/Color;)Ljavax/swing/JPanel;
+__unknown_file (labeltitulocolor"1*Ä
+1–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaº+ º(,·´
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaº  º(*
+%0"java.awt.GridLayoutÛ
+Ø
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaº º(/
+%1"java.awt.GridLayout#<init>(II)V*
+
+%0*
+""*
+""¶³
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaº º(
+%2"javax.swing.JPanelè
+å
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaº º(0
+%3"4javax.swing.JPanel#<init>(Ljava/awt/LayoutManager;)V*
+
+%2*
+
+%0³
+°
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaº º(1
+panel"__id*
+
+%2Æ
+Ã
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java»" »(,
+%4"__id**
+java.awt.Font"
+PLAIN±®
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java» »(
+%5"java.awt.Fontò
+ï
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java» »(1
+%6"+java.awt.Font#<init>(Ljava/lang/String;II)V*
+
+%5*	
+Arial*
+
+%4*
+""ç
+ä
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java» »(2
+%7"0javax.swing.JComponent#setFont(Ljava/awt/Font;)V*	
+
+label*
+
+%5¥
+¢
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java½ ½()
+%8"Wjavax.swing.BorderFactory#createLineBorder(Ljava/awt/Color;)Ljavax/swing/border/Border;*"
+javax.swing.BorderFactory*	
+
+colorÓ
+Ð
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java¼ ½(2
+%9"|javax.swing.BorderFactory#createTitledBorder(Ljavax/swing/border/Border;Ljava/lang/String;)Ljavax/swing/border/TitledBorder;*"
+javax.swing.BorderFactory*
+
+%8*
+
+
+tituloö
+ó
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java¼ ½(3
+%10">javax.swing.JComponent#setBorder(Ljavax/swing/border/Border;)V*	
+
+panel*
+
+%9û
+ø
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.java¿ ¿(
+%11"@java.awt.Container#add(Ljava/awt/Component;)Ljava/awt/Component;*	
+
+panel*	
+
+labelÈ
+Å
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaÀ À(!
+%12"__id**
+java.awt.Color"
+WHITEð
+í
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaÀ À("
+%13"7javax.swing.JComponent#setBackground(Ljava/awt/Color;)V*	
+
+panel*
+
+%12"¤
+–
+‰C:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelEstadisticas.javaÁ Á(	
+
+panel
