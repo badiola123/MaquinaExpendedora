@@ -1,3 +1,9 @@
+/**
+ * @file PanelRecargas.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to recharge different products into machines
+ */
+
 package vistas;
 
 import java.awt.BorderLayout;
@@ -68,6 +74,12 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
 	
+  
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+	 */
 	public PanelRecargas(JFrame v, MyDataAccess conexion){
 		super(new BorderLayout(0, 15));
 		this.principal = (Principal) v;
@@ -88,6 +100,9 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		this.add(crearPanelOpciones(),BorderLayout.SOUTH);
 	}
 
+  /**
+	 * Updates the different elements displayed
+	 */
 	public void actualizar(){
 		this.add(crearPanelMaquinas(),BorderLayout.NORTH);
 		this.add(crearPanelProductos(),BorderLayout.CENTER);
@@ -97,6 +112,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		labelTotalActual.setText("Cantidad actual: ");
 	}
 	
+  /**
+	 * Creates a panel with different options to recharge a product
+	 * @return The created panel
+	 */
 	private Component crearPanelOpciones() {
 		JPanel panel = new JPanel(new BorderLayout());
 		
@@ -106,6 +125,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return panel;
 	}
 	
+  /**
+	 * Creates a panel with the fields that have to be filled to fulfill the recharge
+	 * @return The created panel
+	 */
 	private Component crearPanelDatos() {
 		JPanel panel = new JPanel(new GridLayout(1, 4, 10, 10));
 		panel.setBackground(Color.WHITE);
@@ -117,6 +140,11 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return panel;
 	}
 
+  /**
+	 * Includes a label inside a panel with the desired style
+   * @param label Label to give style
+	 * @return The created panel
+	 */
 	private Component crearLabel(JLabel label) {
 		JPanel panel = new JPanel(new GridLayout(1,1,20,25));
 		panel.setBackground(Color.WHITE);
@@ -125,6 +153,12 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return panel;
 	}
 
+  /**
+	 * Includes a label inside a panel with the desired style as well as a text field
+   * @param label Label to give style
+   * @param text Text field to write down the information specified in the label
+	 * @return The created panel
+	 */
 	private JPanel crearPanelCampo(JLabel label, JTextField text) {
 		JPanel panel = new JPanel(new GridLayout(1,2,20,25));
 		panel.setBackground(Color.WHITE);
@@ -135,6 +169,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return panel;
 	}
 
+  /**
+	 * Creates the panel for the OK and cancel buttons
+	 * @return The created panel
+	 */
 	private Component crearPanelBotones() {
 		JPanel panel = new JPanel();
 		panel.setLayout(new BorderLayout());
@@ -145,6 +183,12 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return panel;
 	}
 	
+  /**
+	 * Creates a transparent button without background
+   * @param i The file from where the image is loaded
+	 * @param c The text the button includes
+	 * @return The created button
+	 */
 	private Component botonTransparente(String i, String c){
 		JButton b = new JButton(new ImageIcon(i));
 		b.setActionCommand(c);
@@ -154,7 +198,11 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		b.setBorderPainted(false);
 		return b;
 	}
-
+  
+  /**
+	 * Creates a panel with a list of the available products to recharge
+	 * @return The created panel
+	 */
 	private Component crearPanelProductos() {
 		inventario = new JList<>();
 		inventario.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -171,6 +219,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return panelScroll;
 	}
 
+  /**
+	 * Creates a panel with a list of the available machines to be recharged
+	 * @return The created panel
+	 */
 	private Component crearPanelMaquinas() {		
 		cMaquinas = new JComboBox<>(cargarMaquinas());
 		cMaquinas.setFont(new Font("Arial", Font.BOLD, 25));
@@ -183,6 +235,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return pCombo;
 	}
 
+  /**
+	 * Loads the different machines from the database
+	 * @return An array with the different machines
+	 */
 	private Maquina[] cargarMaquinas() {
 		List<Maquina> listaMaquinas = Maquinaria.cargarDatos(conexion);
 		Maquina[] maquinaria = new Maquina [listaMaquinas.size()];
@@ -192,6 +248,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		return maquinaria;
 	}
 
+  /**
+	 * Overridden method to specify the action when the buttons with an action listener are pressed 
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("cancel")){
@@ -236,6 +296,9 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		}
 	}
 	
+  /**
+	 * Effects the recharge of a product into a machine introducing a new input in the database
+	 */
     private void crearOferta() throws ArrayIndexOutOfBoundsException, NumberFormatException, SQLException, OutOfStockException{
 		ResultSet numRecargas;
 		String[] nombreColumnas = new String[1];
@@ -266,6 +329,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
     	}
 	}
 
+  /**
+	 * Updates the stock in the database after the recharge
+	 * @param datos The data to use to update the stock
+   */
 	private void actualizarStock(String[] datos) throws SQLException {
 		ResultSet cantidadActual;
 		String[] nombreColumnas = new String[1];
@@ -279,6 +346,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		comandos.update(Stock.getFormatoColumnas(), datos, Stock.getNombreColumnas(), Principal.getTablastock(), primaryKey);
 	}
 
+  /**
+	 * Checks if a date is correct or not 
+	 * @return true if the date is correct and false if it is incorrect
+	 */
 	private boolean comprobarFecha() {
         if(!textFecha.getText().toString().equals("") && !textHora.getText().toString().equals("")){
 
@@ -321,6 +392,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
         return false;
     }
 
+    /**
+	   * Checks if the specified days for a month are correct 
+	   * @return true if it is correct and false if it is incorrect
+	   */
     private boolean comprobarDiaMeses(int dia, int mes, int ano) {
         int numdias = 31;
         switch (mes){
@@ -336,6 +411,9 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
         return true;
     }
 
+  /**
+	 * Calculates the current amount of a given product in a machine
+	 */
 	private void calcularCantidadActual() {
 		int maquinaID, productoID;
     	Maquina maquina =(Maquina) cMaquinas.getSelectedItem();
@@ -363,6 +441,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
     	labelTotalActual.setText("Cantidad actual: " + total);
 	}
     
+  /**
+	 * Overridden method called whenever the value of the selection changes
+	 * @param evento The event that characterizes the change
+	 */
 	@Override
 	public void valueChanged(ListSelectionEvent evento) {
 		if (evento.getValueIsAdjusting()) return;

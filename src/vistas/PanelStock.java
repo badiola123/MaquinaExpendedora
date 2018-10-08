@@ -1,3 +1,9 @@
+/**
+ * @file PanelStock.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to create stocks of products in the machines
+ */
+
 package vistas;
 
 import java.awt.BorderLayout;
@@ -69,7 +75,12 @@ public class PanelStock extends JPanel implements ActionListener{
 	static final String IMAGEN_ATRAS = "img/atras.png";
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
-	
+  
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+	 */
 	public PanelStock(JFrame v, MyDataAccess conexion){
 		super(new BorderLayout(0, 15));
 		this.principal = (Principal) v;
@@ -89,6 +100,9 @@ public class PanelStock extends JPanel implements ActionListener{
 		this.add(crearPanelOpciones(),BorderLayout.SOUTH);
 	}
 
+  /**
+	 * Updates the different elements displayed
+	 */
 	public void actualizar(){
 		this.add(crearPanelMaquinas(),BorderLayout.NORTH);
 		this.add(crearPanelProductos(),BorderLayout.CENTER);
@@ -97,6 +111,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		textHora.setText("");
 	}
 	
+  /**
+	 * Creates a panel with different options to create a stock
+	 * @return The created panel
+	 */
 	private Component crearPanelOpciones() {
 		panelOpciones.removeAll();
 		panelOpciones.add(crearPanelDatos(), BorderLayout.CENTER);
@@ -105,6 +123,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return panelOpciones;
 	}
 	
+  /**
+	 * Creates a panel with the fields that have to be filled to fulfill the stock creation
+	 * @return The created panel
+	 */
 	private Component crearPanelDatos() {
 		JPanel panel = new JPanel(new GridLayout(1, 3, 10, 10));
 		panel.setBackground(Color.WHITE);
@@ -115,6 +137,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return panel;
 	}
 
+  /**
+	 * Creates a panel with a combo box representing the available spindles to create the stock
+	 * @return The created panel
+	 */
 	private Component crearPanelPos(JLabel label) {
 		JPanel pComboPos = new JPanel(new GridLayout(1,2,20,25));
 		pComboPos.setBackground(Color.WHITE);
@@ -128,6 +154,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return pComboPos;		
 	}
 
+  /**
+	 * Charges the free positions of a machine from the database
+	 * @return An array of Strings with the free positions
+	 */
 	private String[] cargarPos() {
 		String primaryKey = Maquina.getNombreColumnas()[0] + " = " + ((Maquina) cMaquinas.getSelectedItem()).getId();
 		List<String> listaPos = new ArrayList<>();
@@ -155,6 +185,12 @@ public class PanelStock extends JPanel implements ActionListener{
 		return posLibre;		
 	}
 
+  /**
+	 * Checkes wheter a spindle position from a machine is free
+   * @param num The spindle number that is going to be checked
+   * @param listaPos A list with the occupied spindle positions
+	 * @return True if the checked position is free, false if not
+	 */
 	private boolean comprobarPosLibre(int num, List<String> listaPos) {
 		
 		for(int i = 0; i < listaPos.size(); i++){
@@ -163,6 +199,12 @@ public class PanelStock extends JPanel implements ActionListener{
 		return true;
 	}
 
+  /**
+	 * Includes a label inside a panel with the desired style as well as a text field
+   * @param label Label to give style
+   * @param text Text field to write down the information specified in the label
+	 * @return The created panel
+	 */
 	private JPanel crearPanelCampo(JLabel label, JTextField text) {
 		JPanel panel = new JPanel(new GridLayout(1,2,20,25));
 		panel.setBackground(Color.WHITE);
@@ -173,6 +215,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return panel;
 	}
 
+  /**
+	 * Creates the panel for the OK and cancel buttons
+	 * @return The created panel
+	 */
 	private Component crearPanelBotones() {
 		JPanel panel = new JPanel();
 		panel.setLayout(new BorderLayout());
@@ -183,6 +229,12 @@ public class PanelStock extends JPanel implements ActionListener{
 		return panel;
 	}
 	
+  /**
+	 * Creates a transparent button without background
+   * @param i The file from where the image is loaded
+	 * @param c The text the button includes
+	 * @return The created button
+	 */
 	private Component botonTransparente(String i, String c){
 		JButton b = new JButton(new ImageIcon(i));
 		b.setActionCommand(c);
@@ -193,6 +245,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return b;
 	}
 
+  /**
+	 * Creates a panel with a list of the available products to create a stock
+	 * @return The created panel
+	 */
 	private Component crearPanelProductos() {
 		inventario = new JList<>();
 		inventario.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -208,6 +264,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return panelScroll;
 	}
 
+  /**
+	 * Creates a panel with a list of the available machines to create a stock in
+	 * @return The created panel
+	 */
 	private Component crearPanelMaquinas() {		
 		cMaquinas = new JComboBox<>(cargarMaquinas());
 		cMaquinas.setFont(new Font("Arial", Font.BOLD, 25));
@@ -220,6 +280,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return pCombo;
 	}
 
+  /**
+	 * Loads the different machines from the database
+	 * @return An array with the different machines
+	 */
 	private Maquina[] cargarMaquinas() {
 		List<Maquina> listaMaquinas = Maquinaria.cargarDatos(conexion);
 		Maquina[] maquinaria = new Maquina [listaMaquinas.size()];
@@ -229,6 +293,10 @@ public class PanelStock extends JPanel implements ActionListener{
 		return maquinaria;
 	}
 
+  /**
+	 * Overridden method to specify the action when the buttons with an action listener are pressed 
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("cancel")){
@@ -274,6 +342,9 @@ public class PanelStock extends JPanel implements ActionListener{
 		}
 	}
 	
+    /**
+	   * Updates the list of avaliable positions in a machine
+	   */
     private void actualizarPos() {
     	cPos.removeAllItems();
     	String[] posLibre = cargarPos();
@@ -282,6 +353,9 @@ public class PanelStock extends JPanel implements ActionListener{
     	}
 	}
 
+  /**
+	 * Effects the creation of a new empty stock in a machine introducing a new input in the database
+	 */
 	private void crearStock() throws ArrayIndexOutOfBoundsException, NumberFormatException, SQLException, OutOfStockException{
 		String[] datos = new String[Stock.getNombreColumnas().length];
     	Maquina maquina =(Maquina) cMaquinas.getSelectedItem();
@@ -296,6 +370,10 @@ public class PanelStock extends JPanel implements ActionListener{
     	
     	}  
 
+  /**
+	 * Checks if a date is correct or not 
+	 * @return true if the date is correct and false if it is incorrect
+	 */
 	private boolean comprobarFecha() {
         if(!textFecha.getText().toString().equals("") && !textHora.getText().toString().equals("")){
 
@@ -338,6 +416,10 @@ public class PanelStock extends JPanel implements ActionListener{
         return false;
     }
 
+    /**
+	   * Checks if the specified days for a month are correct 
+	   * @return true if it is correct and false if it is incorrect
+	   */
     private boolean comprobarDiaMeses(int dia, int mes, int ano) {
         int numdias = 31;
         switch (mes){

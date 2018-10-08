@@ -1,3 +1,9 @@
+/**
+ * @file PanelEstadisticas.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel to show different statistics about the best sellers from different machines
+ */
+
 package vistas;
 
 import java.awt.BorderLayout;
@@ -59,6 +65,11 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 	static final String IMAGEN_ATRAS = "img/back.png";
 	private static final String IM_ERROR = "img/error.png";
 
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 * @param v The JPanel from where this panel is accessible
+	 * @param conexion Instance if the conection to the database
+	 */
 	public PanelEstadisticas(JFrame v, MyDataAccess conexion){
 		
 		super(new BorderLayout());
@@ -74,17 +85,27 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		this.add(crearPanelCentral(),BorderLayout.CENTER);
 	}
 	
+  /**
+	 * Creates and initializes the labels for the top three product list
+	 */
 	private void crearLabels() {
 		for(int i = 0; i < labelProducto.length; i++){
 			labelProducto[i] = new JLabel("No se ha podido encontrar el producto");
 		}
 	}
 
+  /**
+	 * Updates the list's labels and the displayed panel
+	 */
 	public void actualizar(){
 		crearLabels();
 		this.add(crearPanelCentral(),BorderLayout.CENTER);
 	}
 
+  /**
+	 * Creates a toolbar with a back button and asigns it an action for when it is pressed
+	 * @return The created tool bar
+	 */
 	private JToolBar crearToolBar() {
 		JToolBar toolBar = new JToolBar();
 		JButton boton;
@@ -100,6 +121,10 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		return toolBar;
 	}
 	
+  /**
+	 * Creates a splitted panel where different machines can be selected to see their product statistics
+	 * @return The created panel
+	 */
 	private Component crearPanelCentral() {
 		JSplitPane panelSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true);
 		panelSplit.setLeftComponent(crearPanelMaquinas());
@@ -108,6 +133,10 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		return panelCentral;
 	}
 	
+  /**
+	 * Creates the left component of the splitted panel with a list of the different machines
+	 * @return The created panel
+	 */
 	private Component crearPanelMaquinas() {
 		listaMaquinas = new JList<>();
 		listaMaquinas.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -122,6 +151,10 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		return panelOpciones;
 	}
 	
+  /**
+	 * Creates the right component of the splitted panel with a ranking of the three best seller products
+	 * @return The created panel
+	 */
 	private Component crearPanelProductos() {
 		JPanel panel = new JPanel (new GridLayout(3, 1, 10, 10));
 		panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
@@ -133,7 +166,10 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		panelScrollDatos.setViewportView(panel);
 		return panelScrollDatos;
 	}
-
+  
+  /**
+	 * Charges the three most sold products from the database
+	 */
 	private void cargarProductos() {
 		String[] datos = new String[Producto.getNombreColumnas().length + 1]; // Para seleccionar productos + cantidad vendida
 		String[] cantidades = new String[Maquina.getNumhusillosmaquina()];
@@ -182,6 +218,13 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		}
 	}
 
+  /**
+	 * Creates the panel where a field for the new input is added
+   * @param label Label containing information about the product
+	 * @param titulo Title for the product label
+   * @param color Color for the border that includes the title
+	 * @return The created panel holding the label
+	 */
 	private JPanel crearLabel(JLabel label, String titulo, Color color) {
 		JPanel panel = new JPanel(new GridLayout(1,1));
 		label.setFont(new Font("Arial", Font.PLAIN, 25));
@@ -193,6 +236,10 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		return panel;
 	}
 
+  /**
+	 * Overridden method called whenever the value of the selection changes
+   * @param evento The event that characterizes the change
+	 */
 	@Override
 	public void valueChanged(ListSelectionEvent evento) {
 		if (evento.getValueIsAdjusting()) return;

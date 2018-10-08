@@ -1,3 +1,9 @@
+/**
+ * @file ImagenFondo.java
+ * @author Edgar Azpiazu
+ * @brief Class that  anages the background image
+ */
+
 package vistas;
 
 import java.awt.Graphics;
@@ -15,6 +21,11 @@ public class ImagenFondo extends JPanel{
 	private static final long serialVersionUID = 1L;
 	private BufferedImage imagen;
 
+  /**
+	* Constructor of the class which loads the image from a file and sets a layout
+  * @param l Defines the interface for classes that know how to lay out Containers
+  * @param l Defines the interface for classes that know how to lay out Containers
+	*/
 	public ImagenFondo(String n, LayoutManager l) {
 		this.setLayout(l);
 		try {
@@ -27,7 +38,11 @@ public class ImagenFondo extends JPanel{
 			this.imagen = imagen;
 		}
 	}
-
+  
+  /**
+  * Overridden method to paint the image
+  * @param g The Graphics object to protect
+  */
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
@@ -41,6 +56,10 @@ public class ImagenFondo extends JPanel{
 		g2d.dispose();
 	}
 	
+  /**
+  * Sets the background image and repaints it
+  * @param imagen The image to set in the background
+  */
 	public void setImagen(BufferedImage imagen) {
 		this.imagen = imagen;
 		repaint();

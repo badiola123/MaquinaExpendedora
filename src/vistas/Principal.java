@@ -1,3 +1,9 @@
+/**
+ * @file Principal.java
+ * @author Edgar Azpiazu
+ * @brief This file creates the panel that represents the main menu of the application
+ */
+
 package vistas;
 
 import java.awt.CardLayout;
@@ -54,6 +60,9 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	private static final String tablaVenta = "venta";
 	private static final String tablaStock = "stock";
 	
+  /**
+	 * Constructor of the class which initializes the needed parameters to display it
+	 */
 	public Principal(){
 		setTitle("Maquina Expendedora");
 		setSize(2200, 900);
@@ -65,11 +74,18 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 		comprobarConexion();
 	}
 	
+  /**
+	 * Gets the password for accessing the database from a dialog
+   * @return A string with the password
+	 */
 	private String getContrasena() {
 		DialogoContrasena dialogo = new DialogoContrasena(this, "Identificación", true);
 		return dialogo.getPassword();
 	}
 
+  /**
+	 * Checks wheter the connection with the database has been established in order to procced with the execution
+	 */
 	private void comprobarConexion() {
 		if(conexion.getConn() == null){
 			JOptionPane.showMessageDialog(null, "Contraseña incorrecta",
@@ -83,6 +99,9 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 		}
 	}
 
+  /**
+	 * Checks for a connected XBee module and initializes it if possible
+	 */
 	private void inicializarXBee() {
 		LocalizadorXBee localizador = new LocalizadorXBee();
 		String puerto = localizador.getPuertoConectado();
@@ -98,6 +117,10 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 		}
 	}
 
+  /**
+	 * Creates all the panels used in the application and adds them to a container from where they are accessible
+   * @return A container containing all the necessary panels
+	 */
 	private Container crearPaneles() {
 		panelCentro = new JPanel(new CardLayout());
 
@@ -119,7 +142,10 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 		return panelCentro;
 	}
 
-
+  /**
+	 * Creates the main panel
+   * @return A container containing the main panel
+	 */
 	private Container crearPanelPrincipal() {
 
 		ImagenFondo panel = new ImagenFondo(FONDO_PRINCIPAL, new GridBagLayout());
@@ -133,6 +159,12 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 		return panel;
 	}
 	
+  /**
+	 * Creates a transparent button without background
+   * @param i The file from where the image is loaded
+	 * @param c The text the button includes
+	 * @return The created button
+	 */
 	private Component botonTransparente(String i, String c, String titulo){
 		JButton b = new JButton(new ImageIcon(i));
 		b.setBorder(BorderFactory.createEmptyBorder(40, 40, 40, 40));
@@ -145,6 +177,10 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 		return b;
 	}
 	
+  /**
+	 * Overridden method to specify the action when the buttons with an action listener are pressed 
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		CardLayout panel = (CardLayout) panelCentro.getLayout();
@@ -168,73 +204,132 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 		}
 	}
 	
+  /**
+	 * Allows to the user go back to the previous panel
+	 */
 	public void volver(){
 		CardLayout panel = (CardLayout) panelCentro.getLayout();
 		panel.show(panelCentro, PANEL_CINCO);
 	}
 
+  /**
+	 * Getter of the client table from the databse 
+	 * @return A String containing tha name of the client table in the database
+	 */
 	public static String getTablacliente() {
 		return tablaCliente;
 	}
 
+  /**
+	 * Getter of the machine table from the databse 
+	 * @return A String containing tha name of the machine table in the database
+	 */
 	public static String getTablamaquina() {
 		return tablaMaquina;
 	}
 
+  /**
+	 * Getter of the product table from the databse 
+	 * @return A String containing tha name of the product table in the database
+	 */
 	public static String getTablaproducto() {
 		return tablaProducto;
 	}
 
+  /**
+	 * Getter of the product type table from the databse 
+	 * @return A String containing tha name of the product type table in the database
+	 */
 	public static String getTablatipop() {
 		return tablaTipoP;
 	}
 	
+  /**
+	 * Getter of the offer table from the databse 
+	 * @return A String containing tha name of the offer table in the database
+	 */
 	public static String getTablaoferta() {
 		return tablaOferta;
 	}
 	
+  /**
+	 * Getter of the sale table from the databse 
+	 * @return A String containing tha name of the sale table in the database
+	 */
 	public static String getTablaventa() {
 		return tablaVenta;
 	}
 	
+  /**
+	 * Getter of the stock table from the databse 
+	 * @return A String containing tha name of the stock table in the database
+	 */
 	public static String getTablastock() {
 		return tablaStock;
 	}
 
+  /**
+	 * Overridden method invoked when the Window is set to be the active Window
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void windowActivated(WindowEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 
+  /**
+	 * Overridden method invoked when a window has been closed as the result of calling dispose on the window
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void windowClosed(WindowEvent e) {
 		if(xBee != null) xBee.cerrarModulo();
 	}
 
+  /**
+	 * Overridden method invoked when the user attempts to close the window from the window's system menu
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void windowClosing(WindowEvent e) {
 		if(xBee != null) xBee.cerrarModulo();
 	}
 
+  /**
+	 * Overridden method invoked when a Window is no longer the active Window
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void windowDeactivated(WindowEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 
+  /**
+	 * Overridden method invoked when a window is changed from a minimized to a normal state
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void windowDeiconified(WindowEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 
+  /**
+	 * Overridden method invoked when a window is changed from a normal to a minimized state
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void windowIconified(WindowEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 
+  /**
+	 * Overridden method invoked the first time a window is made visible
+	 * @param e The event which contains information about the action
+	 */
 	@Override
 	public void windowOpened(WindowEvent e) {
 		// TODO Auto-generated method stub
