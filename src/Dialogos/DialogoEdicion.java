@@ -74,9 +74,10 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 	  * that will be put inside and the options to include
 	  * @param ventana Parent windows
 	  * @param titulo Title of the dialog
-      * @param modo Parameter that blocks any interaction with the parent window
-      * @param conexion Database connection instance
-      * @param xBee XBee connection instance
+    * @param modo Parameter that blocks any interaction with the parent window
+    * @param dato The object to edit
+    * @param conexion Database connection instance
+    * @param xBee XBee connection instance
 	  */
 	public DialogoEdicion(JFrame ventana, String titulo, boolean modo, T dato, MyDataAccess conexion, ModuloXBee xBee){
 		super(ventana, titulo, modo);
@@ -311,7 +312,8 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 
 	/**
 	  * Overridden method called for Observable-Observer pattern, to update when user detection is reported by the XBee receiver
-	  * @param e Event occurred
+	  * @param o Observable instance
+    * @param obj Updated object
 	  */
 	@Override
 	public void update(Observable o, Object obj) {

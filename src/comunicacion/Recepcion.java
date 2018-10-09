@@ -34,7 +34,7 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 	
 	/**
 	 * Constructor of the class which initializes the timer and sets the CBee module
-	 * @param moduleXBee Used XBee module
+	 * @param moduloXBee Used XBee module
 	 */
 	public Recepcion(ModuloXBee moduloXBee) {
 		this.moduloXBee = moduloXBee;

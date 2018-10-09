@@ -19,7 +19,7 @@ public class ComboRenderer extends DefaultListCellRenderer {
    /**
 	 * Identifies components that can be used as "rubber stamps" to paint the cells in a JList
 	 * @param list The JList we are painting
-	 * @param producto The product returned by list.getModel().getElementAt(index)
+	 * @param value The product returned by list.getModel().getElementAt(index)
 	 * @param index The cells index
    * @param isSelected True if the specified cell was selected
    * @param cellHasFocus True if the specified cell has the focus

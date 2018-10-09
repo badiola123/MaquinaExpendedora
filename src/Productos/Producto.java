@@ -19,7 +19,7 @@ public class Producto {
 		/**
 	 * Constructor of the class Producto, which creates the object of the product with all the needed information
 	 * @param id ID of product
-	 * @param description description of the product
+	 * @param descripcion description of the product
 	 * @param precio price of the product 
 	 * @param tipo_id id of the product type
 	 */

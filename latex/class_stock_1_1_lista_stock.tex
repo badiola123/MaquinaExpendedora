@@ -1,0 +1,130 @@
+\hypertarget{class_stock_1_1_lista_stock}{}\section{Stock.\+Lista\+Stock Class Reference}
+\label{class_stock_1_1_lista_stock}\index{Stock.\+Lista\+Stock@{Stock.\+Lista\+Stock}}
+
+
+Inheritance diagram for Stock.\+Lista\+Stock\+:
+% FIG 0
+
+
+Collaboration diagram for Stock.\+Lista\+Stock\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stock_1_1_lista_stock_a21df0fe48a39fb1aac80a2ca7fb67c0a}{Lista\+Stock}} (\mbox{\hyperlink{class_stock_1_1_modelo_columnas_tabla_stock}{Modelo\+Columnas\+Tabla\+Stock}} columnas, \mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\item 
+int \mbox{\hyperlink{class_stock_1_1_lista_stock_ad1b8da2d5ddcb4627e47533953e12d84}{get\+Column\+Count}} ()
+\item 
+int \mbox{\hyperlink{class_stock_1_1_lista_stock_a52c69465417c81534f1433dc56f749d9}{get\+Row\+Count}} ()
+\item 
+Object \mbox{\hyperlink{class_stock_1_1_lista_stock_ac181755caf0025ec10ae230927bb457f}{get\+Value\+At}} (int fila, int columna)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{class_stock_1_1_lista_stock_a18471e9271be7455310d9a277337c38e}{get\+Column\+Class}} (int column\+Index)
+\item 
+\mbox{\hyperlink{class_stock_1_1_stock}{Stock}} \mbox{\hyperlink{class_stock_1_1_lista_stock_a17681900b9bdf6909a15c61b4946d080}{get\+Stock}} (int pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_stock_1_1_stock}{Stock}} $>$ \mbox{\hyperlink{class_stock_1_1_lista_stock_ae43d6e1304e10935ed275f770f6fd743}{cargar\+Datos}} (\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stock_1_1_lista_stock_a21df0fe48a39fb1aac80a2ca7fb67c0a}\label{class_stock_1_1_lista_stock_a21df0fe48a39fb1aac80a2ca7fb67c0a}} 
+\index{Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}!Lista\+Stock@{Lista\+Stock}}
+\index{Lista\+Stock@{Lista\+Stock}!Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}}
+\subsubsection{\texorpdfstring{Lista\+Stock()}{ListaStock()}}
+{\footnotesize\ttfamily Stock.\+Lista\+Stock.\+Lista\+Stock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_stock_1_1_modelo_columnas_tabla_stock}{Modelo\+Columnas\+Tabla\+Stock}}}]{columnas,  }\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of \mbox{\hyperlink{class_stock_1_1_lista_stock}{Lista\+Stock}}, which establishes the connection to the database 
+\begin{DoxyParams}{Parameters}
+{\em columnas} & Columns of table \\
+\hline
+{\em conexion} & Database connection instance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stock_1_1_lista_stock_ae43d6e1304e10935ed275f770f6fd743}\label{class_stock_1_1_lista_stock_ae43d6e1304e10935ed275f770f6fd743}} 
+\index{Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}!cargar\+Datos@{cargar\+Datos}}
+\index{cargar\+Datos@{cargar\+Datos}!Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}}
+\subsubsection{\texorpdfstring{cargar\+Datos()}{cargarDatos()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_stock_1_1_stock}{Stock}}$>$ Stock.\+Lista\+Stock.\+cargar\+Datos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads data of stock to create a machine list 
+\begin{DoxyParams}{Parameters}
+{\em conexion} & The instance of connection to the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of stock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_1_1_lista_stock_a18471e9271be7455310d9a277337c38e}\label{class_stock_1_1_lista_stock_a18471e9271be7455310d9a277337c38e}} 
+\index{Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}!get\+Column\+Class@{get\+Column\+Class}}
+\index{get\+Column\+Class@{get\+Column\+Class}!Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}}
+\subsubsection{\texorpdfstring{get\+Column\+Class()}{getColumnClass()}}
+{\footnotesize\ttfamily Class$<$?$>$ Stock.\+Lista\+Stock.\+get\+Column\+Class (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the class of the field of a column 
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & number of the column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class of the column 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_1_1_lista_stock_ad1b8da2d5ddcb4627e47533953e12d84}\label{class_stock_1_1_lista_stock_ad1b8da2d5ddcb4627e47533953e12d84}} 
+\index{Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}}
+\subsubsection{\texorpdfstring{get\+Column\+Count()}{getColumnCount()}}
+{\footnotesize\ttfamily int Stock.\+Lista\+Stock.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Column number getter \begin{DoxyReturn}{Returns}
+Number of columns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_1_1_lista_stock_a52c69465417c81534f1433dc56f749d9}\label{class_stock_1_1_lista_stock_a52c69465417c81534f1433dc56f749d9}} 
+\index{Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}!get\+Row\+Count@{get\+Row\+Count}}
+\index{get\+Row\+Count@{get\+Row\+Count}!Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}}
+\subsubsection{\texorpdfstring{get\+Row\+Count()}{getRowCount()}}
+{\footnotesize\ttfamily int Stock.\+Lista\+Stock.\+get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Row number getter \begin{DoxyReturn}{Returns}
+Number of rows 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_1_1_lista_stock_a17681900b9bdf6909a15c61b4946d080}\label{class_stock_1_1_lista_stock_a17681900b9bdf6909a15c61b4946d080}} 
+\index{Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}!get\+Stock@{get\+Stock}}
+\index{get\+Stock@{get\+Stock}!Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}}
+\subsubsection{\texorpdfstring{get\+Stock()}{getStock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stock_1_1_stock}{Stock}} Stock.\+Lista\+Stock.\+get\+Stock (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a stock from the list of stocks 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the stock \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Product selected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stock_1_1_lista_stock_ac181755caf0025ec10ae230927bb457f}\label{class_stock_1_1_lista_stock_ac181755caf0025ec10ae230927bb457f}} 
+\index{Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}!get\+Value\+At@{get\+Value\+At}}
+\index{get\+Value\+At@{get\+Value\+At}!Stock\+::\+Lista\+Stock@{Stock\+::\+Lista\+Stock}}
+\subsubsection{\texorpdfstring{get\+Value\+At()}{getValueAt()}}
+{\footnotesize\ttfamily Object Stock.\+Lista\+Stock.\+get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to get an information field of a stock from table position 
+\begin{DoxyParams}{Parameters}
+{\em fila} & row coordinate \\
+\hline
+{\em columna} & columns coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Selected stock\textquotesingle{}s information field 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/\+Stock/\mbox{\hyperlink{_lista_stock_8java}{Lista\+Stock.\+java}}\end{DoxyCompactItemize}

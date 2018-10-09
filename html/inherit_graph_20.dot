@@ -1,0 +1,15 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node75 [label="AbstractAction",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node75 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="vistas.PanelUsuario.Accion\lAgregarApellido",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classvistas_1_1_panel_usuario_1_1_accion_agregar_apellido.html"];
+  Node75 -> Node77 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node77 [label="vistas.PanelUsuario.Accion\lAgregarCP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classvistas_1_1_panel_usuario_1_1_accion_agregar_c_p.html"];
+  Node75 -> Node78 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node78 [label="vistas.PanelUsuario.Accion\lAgregarEdad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classvistas_1_1_panel_usuario_1_1_accion_agregar_edad.html"];
+  Node75 -> Node79 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node79 [label="vistas.PanelUsuario.Accion\lAgregarID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classvistas_1_1_panel_usuario_1_1_accion_agregar_i_d.html"];
+}

@@ -1,0 +1,107 @@
+\hypertarget{classcomunicacion_1_1_recepcion}{}\section{comunicacion.\+Recepcion Class Reference}
+\label{classcomunicacion_1_1_recepcion}\index{comunicacion.\+Recepcion@{comunicacion.\+Recepcion}}
+
+
+Inheritance diagram for comunicacion.\+Recepcion\+:
+% FIG 0
+
+
+Collaboration diagram for comunicacion.\+Recepcion\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcomunicacion_1_1_recepcion_a46155e495b5e0f637bb884bf8a0ac7a1}{Recepcion}} (\mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee}{Modulo\+X\+Bee}} modulo\+X\+Bee)
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_recepcion_a83305dfbd31ca36b129c0cfb4e86a486}{data\+Received}} (X\+Bee\+Message data)
+\item 
+String \mbox{\hyperlink{classcomunicacion_1_1_recepcion_ab22533d01a1695958053c9898318f993}{get\+Maquina\+ID}} ()
+\item 
+String \mbox{\hyperlink{classcomunicacion_1_1_recepcion_a28eb0ee1c4a921ad9df8f893ba6809ed}{get\+Husillo\+ID}} ()
+\item 
+String \mbox{\hyperlink{classcomunicacion_1_1_recepcion_a8beb628d06ac82fdde1ee50157c93bc4}{get\+Usuario\+ID}} ()
+\item 
+int \mbox{\hyperlink{classcomunicacion_1_1_recepcion_afa39bd7c5b7b749cb28eb948ee130441}{get\+Num\+Actualizacion}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_recepcion_a803e0127570a68b2135cbe33ad0fb739}{action\+Performed}} (Action\+Event e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcomunicacion_1_1_recepcion_a46155e495b5e0f637bb884bf8a0ac7a1}\label{classcomunicacion_1_1_recepcion_a46155e495b5e0f637bb884bf8a0ac7a1}} 
+\index{comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}!Recepcion@{Recepcion}}
+\index{Recepcion@{Recepcion}!comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}}
+\subsubsection{\texorpdfstring{Recepcion()}{Recepcion()}}
+{\footnotesize\ttfamily comunicacion.\+Recepcion.\+Recepcion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee}{Modulo\+X\+Bee}}}]{modulo\+X\+Bee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of the class which initializes the timer and sets the C\+Bee module 
+\begin{DoxyParams}{Parameters}
+{\em modulo\+X\+Bee} & Used X\+Bee module \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcomunicacion_1_1_recepcion_a803e0127570a68b2135cbe33ad0fb739}\label{classcomunicacion_1_1_recepcion_a803e0127570a68b2135cbe33ad0fb739}} 
+\index{comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}!action\+Performed@{action\+Performed}}
+\index{action\+Performed@{action\+Performed}!comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}}
+\subsubsection{\texorpdfstring{action\+Performed()}{actionPerformed()}}
+{\footnotesize\ttfamily void comunicacion.\+Recepcion.\+action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overridden method of the Action\+Listener 
+\begin{DoxyParams}{Parameters}
+{\em e} & the identifier of the performed action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcomunicacion_1_1_recepcion_a83305dfbd31ca36b129c0cfb4e86a486}\label{classcomunicacion_1_1_recepcion_a83305dfbd31ca36b129c0cfb4e86a486}} 
+\index{comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}!data\+Received@{data\+Received}}
+\index{data\+Received@{data\+Received}!comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}}
+\subsubsection{\texorpdfstring{data\+Received()}{dataReceived()}}
+{\footnotesize\ttfamily void comunicacion.\+Recepcion.\+data\+Received (\begin{DoxyParamCaption}\item[{X\+Bee\+Message}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overridden method to receive data 
+\begin{DoxyParams}{Parameters}
+{\em data} & The received message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcomunicacion_1_1_recepcion_a28eb0ee1c4a921ad9df8f893ba6809ed}\label{classcomunicacion_1_1_recepcion_a28eb0ee1c4a921ad9df8f893ba6809ed}} 
+\index{comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}!get\+Husillo\+ID@{get\+Husillo\+ID}}
+\index{get\+Husillo\+ID@{get\+Husillo\+ID}!comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}}
+\subsubsection{\texorpdfstring{get\+Husillo\+I\+D()}{getHusilloID()}}
+{\footnotesize\ttfamily String comunicacion.\+Recepcion.\+get\+Husillo\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter of the spindle ID \begin{DoxyReturn}{Returns}
+The ID of the spindle involved 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcomunicacion_1_1_recepcion_ab22533d01a1695958053c9898318f993}\label{classcomunicacion_1_1_recepcion_ab22533d01a1695958053c9898318f993}} 
+\index{comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}!get\+Maquina\+ID@{get\+Maquina\+ID}}
+\index{get\+Maquina\+ID@{get\+Maquina\+ID}!comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}}
+\subsubsection{\texorpdfstring{get\+Maquina\+I\+D()}{getMaquinaID()}}
+{\footnotesize\ttfamily String comunicacion.\+Recepcion.\+get\+Maquina\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter of the machine ID \begin{DoxyReturn}{Returns}
+The ID of the machine involved 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcomunicacion_1_1_recepcion_afa39bd7c5b7b749cb28eb948ee130441}\label{classcomunicacion_1_1_recepcion_afa39bd7c5b7b749cb28eb948ee130441}} 
+\index{comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}!get\+Num\+Actualizacion@{get\+Num\+Actualizacion}}
+\index{get\+Num\+Actualizacion@{get\+Num\+Actualizacion}!comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}}
+\subsubsection{\texorpdfstring{get\+Num\+Actualizacion()}{getNumActualizacion()}}
+{\footnotesize\ttfamily int comunicacion.\+Recepcion.\+get\+Num\+Actualizacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter of the actualization number which specifies the executed change \begin{DoxyReturn}{Returns}
+The value of num\+Actualizacion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcomunicacion_1_1_recepcion_a8beb628d06ac82fdde1ee50157c93bc4}\label{classcomunicacion_1_1_recepcion_a8beb628d06ac82fdde1ee50157c93bc4}} 
+\index{comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}!get\+Usuario\+ID@{get\+Usuario\+ID}}
+\index{get\+Usuario\+ID@{get\+Usuario\+ID}!comunicacion\+::\+Recepcion@{comunicacion\+::\+Recepcion}}
+\subsubsection{\texorpdfstring{get\+Usuario\+I\+D()}{getUsuarioID()}}
+{\footnotesize\ttfamily String comunicacion.\+Recepcion.\+get\+Usuario\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter of the user ID \begin{DoxyReturn}{Returns}
+The ID of the user involved 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/comunicacion/\mbox{\hyperlink{_recepcion_8java}{Recepcion.\+java}}\end{DoxyCompactItemize}

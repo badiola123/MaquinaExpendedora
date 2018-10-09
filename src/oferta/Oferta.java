@@ -18,7 +18,7 @@ public class Oferta {
 	
 	/**
 	 * Constructor of the class Oferta, which creates the object of the offer with all the needed information
-	 * @param id ID of machine
+	 * @param id_maquina ID of machine
 	 * @param id_producto ID of product
 	 * @param fecha Date of offer
 	 * @param cantidad Quantity  

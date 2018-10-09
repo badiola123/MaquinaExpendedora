@@ -1,0 +1,140 @@
+\hypertarget{classcomunicacion_1_1_modulo_x_bee}{}\section{comunicacion.\+Modulo\+X\+Bee Class Reference}
+\label{classcomunicacion_1_1_modulo_x_bee}\index{comunicacion.\+Modulo\+X\+Bee@{comunicacion.\+Modulo\+X\+Bee}}
+
+
+Inheritance diagram for comunicacion.\+Modulo\+X\+Bee\+:
+% FIG 0
+
+
+Collaboration diagram for comunicacion.\+Modulo\+X\+Bee\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_aaea76284c0f4a44f4223888c9a8b44ea}{Modulo\+X\+Bee}} (String puerto, \mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_a2d5ad79e8571f3a2daaf66e3b5df4351}{abrir\+Modulo}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_a71bbc67392676c9e0bd57813a87d06c0}{mandar\+Trama\+Venta\+Aceptada}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_a60d0556ad61da3b8f66d192779c70bd7}{mandar\+Trama\+Datos\+Aceptados}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_ac996e20c06c0e1c33f868e33d13f083b}{mandar\+Trama\+Datos\+Rechazados}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_aecb573d973ba1e5e24a2c2cc5d1541f6}{mandar\+Trama\+Datos\+Nuevo\+Usuario}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_a965cdd2756d507c8c80eade0bf34d06e}{mandar\+Trama\+Datos\+Nuevo\+Usuario\+Cancelado}} ()
+\item 
+\mbox{\hyperlink{classcomunicacion_1_1_recepcion}{Recepcion}} \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_aa5c08aaaafb7b4dcb11fecb4fb47812f}{get\+Recibir}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_a4691476e52e74492bd9d9bc6919f0c4a}{cerrar\+Modulo}} ()
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_a34debd695cc102e385156983a52a658c}{confirmar\+Venta}} (String maquina\+ID, String husillo\+ID, String usuario\+ID)
+\item 
+void \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee_aa9794310e90df8198dbcfc8aacaa1405}{comprobar\+Datos}} (String maquina\+ID, String husillo\+ID, String usuario\+ID)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_aaea76284c0f4a44f4223888c9a8b44ea}\label{classcomunicacion_1_1_modulo_x_bee_aaea76284c0f4a44f4223888c9a8b44ea}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!Modulo\+X\+Bee@{Modulo\+X\+Bee}}
+\index{Modulo\+X\+Bee@{Modulo\+X\+Bee}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{Modulo\+X\+Bee()}{ModuloXBee()}}
+{\footnotesize\ttfamily comunicacion.\+Modulo\+X\+Bee.\+Modulo\+X\+Bee (\begin{DoxyParamCaption}\item[{String}]{puerto,  }\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of the class which initializes the X\+Bee device on the other side and the needed elements for the communication 
+\begin{DoxyParams}{Parameters}
+{\em puerto} & Port at which the local X\+Bee is connected \\
+\hline
+{\em conexion} & Connection to the database \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_a2d5ad79e8571f3a2daaf66e3b5df4351}\label{classcomunicacion_1_1_modulo_x_bee_a2d5ad79e8571f3a2daaf66e3b5df4351}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!abrir\+Modulo@{abrir\+Modulo}}
+\index{abrir\+Modulo@{abrir\+Modulo}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{abrir\+Modulo()}{abrirModulo()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+abrir\+Modulo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Opens the local X\+Bee module \mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_a4691476e52e74492bd9d9bc6919f0c4a}\label{classcomunicacion_1_1_modulo_x_bee_a4691476e52e74492bd9d9bc6919f0c4a}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!cerrar\+Modulo@{cerrar\+Modulo}}
+\index{cerrar\+Modulo@{cerrar\+Modulo}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{cerrar\+Modulo()}{cerrarModulo()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+cerrar\+Modulo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Closes the X\+Bee module \mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_aa9794310e90df8198dbcfc8aacaa1405}\label{classcomunicacion_1_1_modulo_x_bee_aa9794310e90df8198dbcfc8aacaa1405}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!comprobar\+Datos@{comprobar\+Datos}}
+\index{comprobar\+Datos@{comprobar\+Datos}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{comprobar\+Datos()}{comprobarDatos()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+comprobar\+Datos (\begin{DoxyParamCaption}\item[{String}]{maquina\+ID,  }\item[{String}]{husillo\+ID,  }\item[{String}]{usuario\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks that the desired product is available and that the user exists 
+\begin{DoxyParams}{Parameters}
+{\em maquina\+ID} & ID of the machine where the product is \\
+\hline
+{\em husillo\+ID} & ID of the spindle where the product is \\
+\hline
+{\em usuario\+ID} & ID of the user that has to be checked \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_a34debd695cc102e385156983a52a658c}\label{classcomunicacion_1_1_modulo_x_bee_a34debd695cc102e385156983a52a658c}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!confirmar\+Venta@{confirmar\+Venta}}
+\index{confirmar\+Venta@{confirmar\+Venta}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{confirmar\+Venta()}{confirmarVenta()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+confirmar\+Venta (\begin{DoxyParamCaption}\item[{String}]{maquina\+ID,  }\item[{String}]{husillo\+ID,  }\item[{String}]{usuario\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Confirms a sale by updating the stock and adding a new sale in the database 
+\begin{DoxyParams}{Parameters}
+{\em maquina\+ID} & ID of the machine where the sale has been done \\
+\hline
+{\em husillo\+ID} & ID of the spindle where the product of the sale was \\
+\hline
+{\em usuario\+ID} & ID of the user that has purchased the product \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_aa5c08aaaafb7b4dcb11fecb4fb47812f}\label{classcomunicacion_1_1_modulo_x_bee_aa5c08aaaafb7b4dcb11fecb4fb47812f}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!get\+Recibir@{get\+Recibir}}
+\index{get\+Recibir@{get\+Recibir}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{get\+Recibir()}{getRecibir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcomunicacion_1_1_recepcion}{Recepcion}} comunicacion.\+Modulo\+X\+Bee.\+get\+Recibir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter of the \mbox{\hyperlink{classcomunicacion_1_1_recepcion}{Recepcion}} class \begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{classcomunicacion_1_1_recepcion}{Recepcion}} instance of the class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_a60d0556ad61da3b8f66d192779c70bd7}\label{classcomunicacion_1_1_modulo_x_bee_a60d0556ad61da3b8f66d192779c70bd7}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!mandar\+Trama\+Datos\+Aceptados@{mandar\+Trama\+Datos\+Aceptados}}
+\index{mandar\+Trama\+Datos\+Aceptados@{mandar\+Trama\+Datos\+Aceptados}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{mandar\+Trama\+Datos\+Aceptados()}{mandarTramaDatosAceptados()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+mandar\+Trama\+Datos\+Aceptados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepares the data accepted frame \mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_aecb573d973ba1e5e24a2c2cc5d1541f6}\label{classcomunicacion_1_1_modulo_x_bee_aecb573d973ba1e5e24a2c2cc5d1541f6}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!mandar\+Trama\+Datos\+Nuevo\+Usuario@{mandar\+Trama\+Datos\+Nuevo\+Usuario}}
+\index{mandar\+Trama\+Datos\+Nuevo\+Usuario@{mandar\+Trama\+Datos\+Nuevo\+Usuario}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{mandar\+Trama\+Datos\+Nuevo\+Usuario()}{mandarTramaDatosNuevoUsuario()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+mandar\+Trama\+Datos\+Nuevo\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepares the new user frame \mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_a965cdd2756d507c8c80eade0bf34d06e}\label{classcomunicacion_1_1_modulo_x_bee_a965cdd2756d507c8c80eade0bf34d06e}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!mandar\+Trama\+Datos\+Nuevo\+Usuario\+Cancelado@{mandar\+Trama\+Datos\+Nuevo\+Usuario\+Cancelado}}
+\index{mandar\+Trama\+Datos\+Nuevo\+Usuario\+Cancelado@{mandar\+Trama\+Datos\+Nuevo\+Usuario\+Cancelado}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{mandar\+Trama\+Datos\+Nuevo\+Usuario\+Cancelado()}{mandarTramaDatosNuevoUsuarioCancelado()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+mandar\+Trama\+Datos\+Nuevo\+Usuario\+Cancelado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepares the new user cancelled frame \mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_ac996e20c06c0e1c33f868e33d13f083b}\label{classcomunicacion_1_1_modulo_x_bee_ac996e20c06c0e1c33f868e33d13f083b}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!mandar\+Trama\+Datos\+Rechazados@{mandar\+Trama\+Datos\+Rechazados}}
+\index{mandar\+Trama\+Datos\+Rechazados@{mandar\+Trama\+Datos\+Rechazados}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{mandar\+Trama\+Datos\+Rechazados()}{mandarTramaDatosRechazados()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+mandar\+Trama\+Datos\+Rechazados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepares the data rejected frame \mbox{\Hypertarget{classcomunicacion_1_1_modulo_x_bee_a71bbc67392676c9e0bd57813a87d06c0}\label{classcomunicacion_1_1_modulo_x_bee_a71bbc67392676c9e0bd57813a87d06c0}} 
+\index{comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}!mandar\+Trama\+Venta\+Aceptada@{mandar\+Trama\+Venta\+Aceptada}}
+\index{mandar\+Trama\+Venta\+Aceptada@{mandar\+Trama\+Venta\+Aceptada}!comunicacion\+::\+Modulo\+X\+Bee@{comunicacion\+::\+Modulo\+X\+Bee}}
+\subsubsection{\texorpdfstring{mandar\+Trama\+Venta\+Aceptada()}{mandarTramaVentaAceptada()}}
+{\footnotesize\ttfamily void comunicacion.\+Modulo\+X\+Bee.\+mandar\+Trama\+Venta\+Aceptada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prepares the sale accepted frame 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/comunicacion/\mbox{\hyperlink{_modulo_x_bee_8java}{Modulo\+X\+Bee.\+java}}\end{DoxyCompactItemize}

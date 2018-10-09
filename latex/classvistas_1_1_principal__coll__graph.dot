@@ -1,0 +1,39 @@
+digraph "vistas.Principal"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="vistas.Principal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="JFrame",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="ActionListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="WindowListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" xBee" ];
+  Node8 [label="comunicacion.ModuloXBee",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcomunicacion_1_1_modulo_x_bee.html"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="XBeeDevice",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" comandos" ];
+  Node10 [label="conexionSQL.Comandos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconexion_s_q_l_1_1_comandos.html"];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" conexion" ];
+  Node11 [label="conexionSQL.MyDataAccess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classconexion_s_q_l_1_1_my_data_access.html"];
+  Node11 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" conexion" ];
+  Node12 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" xBeeRemota" ];
+  Node12 [label="RemoteXBeeDevice",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node13 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" recibir" ];
+  Node13 [label="comunicacion.Recepcion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcomunicacion_1_1_recepcion.html"];
+  Node14 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Observable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node15 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="IDataReceiveListener",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" timer" ];
+  Node16 [label="Timer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node13 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" moduloXBee" ];
+  Node17 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" emitir" ];
+  Node17 [label="comunicacion.Emision",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcomunicacion_1_1_emision.html"];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" conexion" ];
+  Node18 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" panelVentas\npanelStock\npanelTrabajador\npanelEstadisticas\npanelRecargas\npanelUsuario\npanelCentro" ];
+  Node18 [label="JPanel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

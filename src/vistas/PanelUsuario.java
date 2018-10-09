@@ -226,10 +226,6 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
 
-        /**
-	       * Overridden method to specify the parameter that is taken into account when sorting 
-	       * @param cliente The client to be sorted
-	       */
 				@Override
 				public String map(Cliente cliente) {
 					return String.valueOf(cliente.getId());
@@ -248,7 +244,7 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
     /**
 	   * Creates the sorting method by surname
      * @param texto The text that describes the sorting method
-     * @param image The image that is displayed inside the button
+     * @param imagen The image that is displayed inside the button
      * @param descrip A short descripton of the method
      * @param nemonic Shortcut key
 	   */
@@ -268,10 +264,6 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
 
-        /**
-	       * Overridden method to specify the parameter that is taken into account when sorting 
-	       * @param cliente The client to be sorted
-	       */
 				@Override
 				public String map(Cliente cliente) {
 					return cliente.getApellido();
@@ -309,11 +301,7 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 		public void actionPerformed(ActionEvent e) {
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
-        
-        /**
-	       * Overridden method to specify the parameter that is taken into account when sorting 
-	       * @param cliente The client to be sorted
-	       */
+
 				@Override
 				public String map(Cliente cliente) {
 					String edad = cliente.getFechaNacimiento();
@@ -334,7 +322,7 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
     /**
 	   * Creates the sorting method by postal code
      * @param texto The text that describes the sorting method
-     * @param image The image that is displayed inside the button
+     * @param imagen The image that is displayed inside the button
      * @param descrip A short descripton of the method
      * @param nemonic Shortcut key
 	   */
@@ -354,10 +342,6 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 			clientela.volverACargar();
 			clientela.agrupar(new Mapeador<Cliente>(){
 
-        /**
-	       * Overridden method to specify the parameter that is taken into account when sorting 
-	       * @param cliente The client to be sorted
-	       */
 				@Override
 				public String map(Cliente cliente) {
 					return String.valueOf(cliente.getCodigoPostal());
@@ -371,7 +355,7 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 
   /**
 	 * Overridden method called whenever the value of the selection changes 
-	 * @param e The event that characterizes the change
+	 * @param evento The event that characterizes the change
 	 */
 	@Override
 	public void valueChanged(ListSelectionEvent evento) {

@@ -23,8 +23,8 @@ public class ImagenFondo extends JPanel{
 
   /**
 	* Constructor of the class which loads the image from a file and sets a layout
-  * @param l Defines the interface for classes that know how to lay out Containers
-  * @param l Defines the interface for classes that know how to lay out Containers
+  * @param n File from which the image has to be loaded
+  * @param l Instance of a layout manager for the display
 	*/
 	public ImagenFondo(String n, LayoutManager l) {
 		this.setLayout(l);

@@ -24,7 +24,7 @@ public class AdaptadorListaProductos  implements ListCellRenderer<Producto> {
  * This function is overridden to change the list adapter,
  * which changes the style of the elements of the lists of products
  * @param list List which contains the product wanted to change style
- * @param product Specific product to change style
+ * @param producto Specific product to change style
  * @param index Index of product in the list
  * @param isSelected Specifies if the element is selected
  * @param cellHasFocus Specifies if the cell has the focus

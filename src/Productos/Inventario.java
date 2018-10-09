@@ -49,6 +49,7 @@ public class Inventario extends AbstractTableModel{
 	/**
 	 * Loads data of products to create a machine list
 	 * @param conexion The instance of connection to the database
+   * @param maquinaID Machine from which data has to be loaded
 	 * @return List of products
 	 */
 	static public List<Producto> cargarDatos(MyDataAccess conexion, int maquinaID) {

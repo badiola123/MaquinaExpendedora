@@ -1,0 +1,75 @@
+\hypertarget{class_dialogos_1_1_dialogo_edicion}{}\section{Dialogos.\+Dialogo\+Edicion$<$ T $>$ Class Template Reference}
+\label{class_dialogos_1_1_dialogo_edicion}\index{Dialogos.\+Dialogo\+Edicion$<$ T $>$@{Dialogos.\+Dialogo\+Edicion$<$ T $>$}}
+
+
+Inheritance diagram for Dialogos.\+Dialogo\+Edicion$<$ T $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Dialogos.\+Dialogo\+Edicion$<$ T $>$\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dialogos_1_1_dialogo_edicion_a3faa9a40dae2814c946acaaacec3f708}{Dialogo\+Edicion}} (J\+Frame ventana, String titulo, boolean modo, T dato, \mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion, \mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee}{Modulo\+X\+Bee}} x\+Bee)
+\item 
+void \mbox{\hyperlink{class_dialogos_1_1_dialogo_edicion_a78705fff13d0b9999644b7a31ffea151}{action\+Performed}} (Action\+Event e)
+\item 
+void \mbox{\hyperlink{class_dialogos_1_1_dialogo_edicion_afcbec7817a74ba686ef1a00a33b48484}{update}} (Observable o, Object obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dialogos_1_1_dialogo_edicion_a3faa9a40dae2814c946acaaacec3f708}\label{class_dialogos_1_1_dialogo_edicion_a3faa9a40dae2814c946acaaacec3f708}} 
+\index{Dialogos\+::\+Dialogo\+Edicion@{Dialogos\+::\+Dialogo\+Edicion}!Dialogo\+Edicion@{Dialogo\+Edicion}}
+\index{Dialogo\+Edicion@{Dialogo\+Edicion}!Dialogos\+::\+Dialogo\+Edicion@{Dialogos\+::\+Dialogo\+Edicion}}
+\subsubsection{\texorpdfstring{Dialogo\+Edicion()}{DialogoEdicion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialogos_1_1_dialogo_edicion}{Dialogos.\+Dialogo\+Edicion}}$<$ T $>$.\mbox{\hyperlink{class_dialogos_1_1_dialogo_edicion}{Dialogo\+Edicion}} (\begin{DoxyParamCaption}\item[{J\+Frame}]{ventana,  }\item[{String}]{titulo,  }\item[{boolean}]{modo,  }\item[{T}]{dato,  }\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion,  }\item[{\mbox{\hyperlink{classcomunicacion_1_1_modulo_x_bee}{Modulo\+X\+Bee}}}]{x\+Bee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of the class, sets size, closing operation, specifies the panel that will be put inside and the options to include 
+\begin{DoxyParams}{Parameters}
+{\em ventana} & Parent windows \\
+\hline
+{\em titulo} & Title of the dialog \\
+\hline
+{\em modo} & Parameter that blocks any interaction with the parent window \\
+\hline
+{\em dato} & The object to edit \\
+\hline
+{\em conexion} & Database connection instance \\
+\hline
+{\em x\+Bee} & X\+Bee connection instance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dialogos_1_1_dialogo_edicion_a78705fff13d0b9999644b7a31ffea151}\label{class_dialogos_1_1_dialogo_edicion_a78705fff13d0b9999644b7a31ffea151}} 
+\index{Dialogos\+::\+Dialogo\+Edicion@{Dialogos\+::\+Dialogo\+Edicion}!action\+Performed@{action\+Performed}}
+\index{action\+Performed@{action\+Performed}!Dialogos\+::\+Dialogo\+Edicion@{Dialogos\+::\+Dialogo\+Edicion}}
+\subsubsection{\texorpdfstring{action\+Performed()}{actionPerformed()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_dialogos_1_1_dialogo_edicion}{Dialogos.\+Dialogo\+Edicion}}$<$ T $>$.action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method called by the Button class when pressed, to react to different button\textquotesingle{}s pulsation 
+\begin{DoxyParams}{Parameters}
+{\em e} & Event occurred \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dialogos_1_1_dialogo_edicion_afcbec7817a74ba686ef1a00a33b48484}\label{class_dialogos_1_1_dialogo_edicion_afcbec7817a74ba686ef1a00a33b48484}} 
+\index{Dialogos\+::\+Dialogo\+Edicion@{Dialogos\+::\+Dialogo\+Edicion}!update@{update}}
+\index{update@{update}!Dialogos\+::\+Dialogo\+Edicion@{Dialogos\+::\+Dialogo\+Edicion}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_dialogos_1_1_dialogo_edicion}{Dialogos.\+Dialogo\+Edicion}}$<$ T $>$.update (\begin{DoxyParamCaption}\item[{Observable}]{o,  }\item[{Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overridden method called for Observable-\/\+Observer pattern, to update when user detection is reported by the X\+Bee receiver 
+\begin{DoxyParams}{Parameters}
+{\em o} & Observable instance \\
+\hline
+{\em obj} & Updated object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/\+Dialogos/\mbox{\hyperlink{_dialogo_edicion_8java}{Dialogo\+Edicion.\+java}}\end{DoxyCompactItemize}

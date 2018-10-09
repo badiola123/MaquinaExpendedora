@@ -1,0 +1,132 @@
+\hypertarget{class_productos_1_1_inventario}{}\section{Productos.\+Inventario Class Reference}
+\label{class_productos_1_1_inventario}\index{Productos.\+Inventario@{Productos.\+Inventario}}
+
+
+Inheritance diagram for Productos.\+Inventario\+:
+% FIG 0
+
+
+Collaboration diagram for Productos.\+Inventario\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_productos_1_1_inventario_a679f0131ec8bfb9a78d5071ee72f6811}{Inventario}} (\mbox{\hyperlink{class_productos_1_1_modelo_columnas_tabla_producto}{Modelo\+Columnas\+Tabla\+Producto}} columnas, \mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\item 
+int \mbox{\hyperlink{class_productos_1_1_inventario_a0e88d355b4149cf548ae1cf27e5c342c}{get\+Column\+Count}} ()
+\item 
+int \mbox{\hyperlink{class_productos_1_1_inventario_ae299062aacb44852791e08833810e8bf}{get\+Row\+Count}} ()
+\item 
+Object \mbox{\hyperlink{class_productos_1_1_inventario_a79bccc9036dee4d92518ea4b21b3de3d}{get\+Value\+At}} (int fila, int columna)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{class_productos_1_1_inventario_a7292cea9b1726ac1635a202f3528886e}{get\+Column\+Class}} (int column\+Index)
+\item 
+\mbox{\hyperlink{class_productos_1_1_producto}{Producto}} \mbox{\hyperlink{class_productos_1_1_inventario_adedc7e3eac62bbbc20bff33ffa9503f0}{get\+Producto}} (int pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_productos_1_1_producto}{Producto}} $>$ \mbox{\hyperlink{class_productos_1_1_inventario_a89ddb54b03480d0e837f56be549b755c}{cargar\+Datos}} (\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion, int maquina\+ID)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_productos_1_1_inventario_a679f0131ec8bfb9a78d5071ee72f6811}\label{class_productos_1_1_inventario_a679f0131ec8bfb9a78d5071ee72f6811}} 
+\index{Productos\+::\+Inventario@{Productos\+::\+Inventario}!Inventario@{Inventario}}
+\index{Inventario@{Inventario}!Productos\+::\+Inventario@{Productos\+::\+Inventario}}
+\subsubsection{\texorpdfstring{Inventario()}{Inventario()}}
+{\footnotesize\ttfamily Productos.\+Inventario.\+Inventario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_productos_1_1_modelo_columnas_tabla_producto}{Modelo\+Columnas\+Tabla\+Producto}}}]{columnas,  }\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of \mbox{\hyperlink{class_productos_1_1_inventario}{Inventario}}, which establishes the connection to the database 
+\begin{DoxyParams}{Parameters}
+{\em columnas} & Columns of table \\
+\hline
+{\em conexion} & Database connection instance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_productos_1_1_inventario_a89ddb54b03480d0e837f56be549b755c}\label{class_productos_1_1_inventario_a89ddb54b03480d0e837f56be549b755c}} 
+\index{Productos\+::\+Inventario@{Productos\+::\+Inventario}!cargar\+Datos@{cargar\+Datos}}
+\index{cargar\+Datos@{cargar\+Datos}!Productos\+::\+Inventario@{Productos\+::\+Inventario}}
+\subsubsection{\texorpdfstring{cargar\+Datos()}{cargarDatos()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_productos_1_1_producto}{Producto}}$>$ Productos.\+Inventario.\+cargar\+Datos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion,  }\item[{int}]{maquina\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads data of products to create a machine list 
+\begin{DoxyParams}{Parameters}
+{\em conexion} & The instance of connection to the database \\
+\hline
+{\em maquina\+ID} & Machine from which data has to be loaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of products 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_productos_1_1_inventario_a7292cea9b1726ac1635a202f3528886e}\label{class_productos_1_1_inventario_a7292cea9b1726ac1635a202f3528886e}} 
+\index{Productos\+::\+Inventario@{Productos\+::\+Inventario}!get\+Column\+Class@{get\+Column\+Class}}
+\index{get\+Column\+Class@{get\+Column\+Class}!Productos\+::\+Inventario@{Productos\+::\+Inventario}}
+\subsubsection{\texorpdfstring{get\+Column\+Class()}{getColumnClass()}}
+{\footnotesize\ttfamily Class$<$?$>$ Productos.\+Inventario.\+get\+Column\+Class (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the class of the field of a column 
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & number of the column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class of the column 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_productos_1_1_inventario_a0e88d355b4149cf548ae1cf27e5c342c}\label{class_productos_1_1_inventario_a0e88d355b4149cf548ae1cf27e5c342c}} 
+\index{Productos\+::\+Inventario@{Productos\+::\+Inventario}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!Productos\+::\+Inventario@{Productos\+::\+Inventario}}
+\subsubsection{\texorpdfstring{get\+Column\+Count()}{getColumnCount()}}
+{\footnotesize\ttfamily int Productos.\+Inventario.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Column number getter \begin{DoxyReturn}{Returns}
+Number of columns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_productos_1_1_inventario_adedc7e3eac62bbbc20bff33ffa9503f0}\label{class_productos_1_1_inventario_adedc7e3eac62bbbc20bff33ffa9503f0}} 
+\index{Productos\+::\+Inventario@{Productos\+::\+Inventario}!get\+Producto@{get\+Producto}}
+\index{get\+Producto@{get\+Producto}!Productos\+::\+Inventario@{Productos\+::\+Inventario}}
+\subsubsection{\texorpdfstring{get\+Producto()}{getProducto()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_productos_1_1_producto}{Producto}} Productos.\+Inventario.\+get\+Producto (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a product from the list of products 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the product \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Product selected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_productos_1_1_inventario_ae299062aacb44852791e08833810e8bf}\label{class_productos_1_1_inventario_ae299062aacb44852791e08833810e8bf}} 
+\index{Productos\+::\+Inventario@{Productos\+::\+Inventario}!get\+Row\+Count@{get\+Row\+Count}}
+\index{get\+Row\+Count@{get\+Row\+Count}!Productos\+::\+Inventario@{Productos\+::\+Inventario}}
+\subsubsection{\texorpdfstring{get\+Row\+Count()}{getRowCount()}}
+{\footnotesize\ttfamily int Productos.\+Inventario.\+get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Row number getter \begin{DoxyReturn}{Returns}
+Number of rows 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_productos_1_1_inventario_a79bccc9036dee4d92518ea4b21b3de3d}\label{class_productos_1_1_inventario_a79bccc9036dee4d92518ea4b21b3de3d}} 
+\index{Productos\+::\+Inventario@{Productos\+::\+Inventario}!get\+Value\+At@{get\+Value\+At}}
+\index{get\+Value\+At@{get\+Value\+At}!Productos\+::\+Inventario@{Productos\+::\+Inventario}}
+\subsubsection{\texorpdfstring{get\+Value\+At()}{getValueAt()}}
+{\footnotesize\ttfamily Object Productos.\+Inventario.\+get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to get an information field of a product from table position 
+\begin{DoxyParams}{Parameters}
+{\em fila} & row coordinate \\
+\hline
+{\em columna} & columns coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Selected product\textquotesingle{}s information field 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/\+Productos/\mbox{\hyperlink{_inventario_8java}{Inventario.\+java}}\end{DoxyCompactItemize}

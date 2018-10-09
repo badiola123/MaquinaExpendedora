@@ -1,0 +1,21 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node55 [label="DefaultTableCellRenderer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node55 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="clientes.TrazadorTabla",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classclientes_1_1_trazador_tabla.html"];
+  Node55 -> Node57 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="maquinas.TrazadorTablaMaquina",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmaquinas_1_1_trazador_tabla_maquina.html"];
+  Node55 -> Node58 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="oferta.TrazadorTablaOferta",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classoferta_1_1_trazador_tabla_oferta.html"];
+  Node55 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="Productos.TrazadorTablaProducto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_productos_1_1_trazador_tabla_producto.html"];
+  Node55 -> Node60 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="Stock.TrazadorTablaStock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stock_1_1_trazador_tabla_stock.html"];
+  Node55 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="tipoProductos.TrazadorTabla\lTipoProductos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtipo_productos_1_1_trazador_tabla_tipo_productos.html"];
+  Node55 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="venta.TrazadorTablaVenta",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classventa_1_1_trazador_tabla_venta.html"];
+}

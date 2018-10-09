@@ -1,0 +1,130 @@
+\hypertarget{classoferta_1_1_lista_ofertas}{}\section{oferta.\+Lista\+Ofertas Class Reference}
+\label{classoferta_1_1_lista_ofertas}\index{oferta.\+Lista\+Ofertas@{oferta.\+Lista\+Ofertas}}
+
+
+Inheritance diagram for oferta.\+Lista\+Ofertas\+:
+% FIG 0
+
+
+Collaboration diagram for oferta.\+Lista\+Ofertas\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classoferta_1_1_lista_ofertas_a2af761366b995c4ddf7cb6b1175de314}{Lista\+Ofertas}} (\mbox{\hyperlink{classoferta_1_1_modelo_columnas_tabla_oferta}{Modelo\+Columnas\+Tabla\+Oferta}} columnas, \mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\item 
+int \mbox{\hyperlink{classoferta_1_1_lista_ofertas_a1134f680b1eb3a296d3f0db1f5f6c708}{get\+Column\+Count}} ()
+\item 
+int \mbox{\hyperlink{classoferta_1_1_lista_ofertas_af98f5114e3dc3f259ec55a2ab865c1af}{get\+Row\+Count}} ()
+\item 
+Object \mbox{\hyperlink{classoferta_1_1_lista_ofertas_a31d3834ba593c933f612572a942fc601}{get\+Value\+At}} (int fila, int columna)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classoferta_1_1_lista_ofertas_a86faae91c71fe103470f039a09213048}{get\+Column\+Class}} (int column\+Index)
+\item 
+\mbox{\hyperlink{classoferta_1_1_oferta}{Oferta}} \mbox{\hyperlink{classoferta_1_1_lista_ofertas_aff266896ffa3bb5682ef4ecf1d514f2e}{get\+Oferta}} (int pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classoferta_1_1_oferta}{Oferta}} $>$ \mbox{\hyperlink{classoferta_1_1_lista_ofertas_a7ad03e98699edb0253f41109273e350e}{cargar\+Datos}} (\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classoferta_1_1_lista_ofertas_a2af761366b995c4ddf7cb6b1175de314}\label{classoferta_1_1_lista_ofertas_a2af761366b995c4ddf7cb6b1175de314}} 
+\index{oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}!Lista\+Ofertas@{Lista\+Ofertas}}
+\index{Lista\+Ofertas@{Lista\+Ofertas}!oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}}
+\subsubsection{\texorpdfstring{Lista\+Ofertas()}{ListaOfertas()}}
+{\footnotesize\ttfamily oferta.\+Lista\+Ofertas.\+Lista\+Ofertas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classoferta_1_1_modelo_columnas_tabla_oferta}{Modelo\+Columnas\+Tabla\+Oferta}}}]{columnas,  }\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of \mbox{\hyperlink{classoferta_1_1_lista_ofertas}{Lista\+Ofertas}}, which establishes the connection to the database 
+\begin{DoxyParams}{Parameters}
+{\em columnas} & Columns of table \\
+\hline
+{\em conexion} & Database connection instance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classoferta_1_1_lista_ofertas_a7ad03e98699edb0253f41109273e350e}\label{classoferta_1_1_lista_ofertas_a7ad03e98699edb0253f41109273e350e}} 
+\index{oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}!cargar\+Datos@{cargar\+Datos}}
+\index{cargar\+Datos@{cargar\+Datos}!oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}}
+\subsubsection{\texorpdfstring{cargar\+Datos()}{cargarDatos()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classoferta_1_1_oferta}{Oferta}}$>$ oferta.\+Lista\+Ofertas.\+cargar\+Datos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads data of offers to create a offer list 
+\begin{DoxyParams}{Parameters}
+{\em conexion} & The instance of connection to the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of offers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classoferta_1_1_lista_ofertas_a86faae91c71fe103470f039a09213048}\label{classoferta_1_1_lista_ofertas_a86faae91c71fe103470f039a09213048}} 
+\index{oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}!get\+Column\+Class@{get\+Column\+Class}}
+\index{get\+Column\+Class@{get\+Column\+Class}!oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}}
+\subsubsection{\texorpdfstring{get\+Column\+Class()}{getColumnClass()}}
+{\footnotesize\ttfamily Class$<$?$>$ oferta.\+Lista\+Ofertas.\+get\+Column\+Class (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the class of the field of a column 
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & number of the column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class of the column 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classoferta_1_1_lista_ofertas_a1134f680b1eb3a296d3f0db1f5f6c708}\label{classoferta_1_1_lista_ofertas_a1134f680b1eb3a296d3f0db1f5f6c708}} 
+\index{oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}}
+\subsubsection{\texorpdfstring{get\+Column\+Count()}{getColumnCount()}}
+{\footnotesize\ttfamily int oferta.\+Lista\+Ofertas.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Column number getter \begin{DoxyReturn}{Returns}
+Number of columns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classoferta_1_1_lista_ofertas_aff266896ffa3bb5682ef4ecf1d514f2e}\label{classoferta_1_1_lista_ofertas_aff266896ffa3bb5682ef4ecf1d514f2e}} 
+\index{oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}!get\+Oferta@{get\+Oferta}}
+\index{get\+Oferta@{get\+Oferta}!oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}}
+\subsubsection{\texorpdfstring{get\+Oferta()}{getOferta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classoferta_1_1_oferta}{Oferta}} oferta.\+Lista\+Ofertas.\+get\+Oferta (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets an offer from the list of offers 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the offer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Offer selected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classoferta_1_1_lista_ofertas_af98f5114e3dc3f259ec55a2ab865c1af}\label{classoferta_1_1_lista_ofertas_af98f5114e3dc3f259ec55a2ab865c1af}} 
+\index{oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}!get\+Row\+Count@{get\+Row\+Count}}
+\index{get\+Row\+Count@{get\+Row\+Count}!oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}}
+\subsubsection{\texorpdfstring{get\+Row\+Count()}{getRowCount()}}
+{\footnotesize\ttfamily int oferta.\+Lista\+Ofertas.\+get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Row number getter \begin{DoxyReturn}{Returns}
+Number of rows 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classoferta_1_1_lista_ofertas_a31d3834ba593c933f612572a942fc601}\label{classoferta_1_1_lista_ofertas_a31d3834ba593c933f612572a942fc601}} 
+\index{oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}!get\+Value\+At@{get\+Value\+At}}
+\index{get\+Value\+At@{get\+Value\+At}!oferta\+::\+Lista\+Ofertas@{oferta\+::\+Lista\+Ofertas}}
+\subsubsection{\texorpdfstring{get\+Value\+At()}{getValueAt()}}
+{\footnotesize\ttfamily Object oferta.\+Lista\+Ofertas.\+get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to get an information field of an offer from table position 
+\begin{DoxyParams}{Parameters}
+{\em fila} & row coordinate \\
+\hline
+{\em columna} & columns coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Selected offer\textquotesingle{}s information field 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/oferta/\mbox{\hyperlink{_lista_ofertas_8java}{Lista\+Ofertas.\+java}}\end{DoxyCompactItemize}

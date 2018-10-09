@@ -1,0 +1,130 @@
+\hypertarget{classtipo_productos_1_1_tipos_lista}{}\section{tipo\+Productos.\+Tipos\+Lista Class Reference}
+\label{classtipo_productos_1_1_tipos_lista}\index{tipo\+Productos.\+Tipos\+Lista@{tipo\+Productos.\+Tipos\+Lista}}
+
+
+Inheritance diagram for tipo\+Productos.\+Tipos\+Lista\+:
+% FIG 0
+
+
+Collaboration diagram for tipo\+Productos.\+Tipos\+Lista\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtipo_productos_1_1_tipos_lista_a75e4a1ac3bcb6d64c3fc5dbae72e85c5}{Tipos\+Lista}} (\mbox{\hyperlink{classtipo_productos_1_1_modelo_columnas_tabla_tipo_productos}{Modelo\+Columnas\+Tabla\+Tipo\+Productos}} columnas, \mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\item 
+int \mbox{\hyperlink{classtipo_productos_1_1_tipos_lista_ae09ef2d57d7c7989d4e0e99463294761}{get\+Column\+Count}} ()
+\item 
+int \mbox{\hyperlink{classtipo_productos_1_1_tipos_lista_a619180cf0e73dd687d83511c805b0a7d}{get\+Row\+Count}} ()
+\item 
+Object \mbox{\hyperlink{classtipo_productos_1_1_tipos_lista_a78deb10c0cd2fbc2dfa0de19054e033e}{get\+Value\+At}} (int fila, int columna)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classtipo_productos_1_1_tipos_lista_a87b924c7d8f72e7615286c41d19c2589}{get\+Column\+Class}} (int column\+Index)
+\item 
+\mbox{\hyperlink{classtipo_productos_1_1_tipo_producto}{Tipo\+Producto}} \mbox{\hyperlink{classtipo_productos_1_1_tipos_lista_a825bd94b7e40672ab7d3a84083c21245}{get\+TipoP}} (int pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classtipo_productos_1_1_tipo_producto}{Tipo\+Producto}} $>$ \mbox{\hyperlink{classtipo_productos_1_1_tipos_lista_ad36441dd4c32340b0905b5d30b91fcb4}{cargar\+Datos}} (\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtipo_productos_1_1_tipos_lista_a75e4a1ac3bcb6d64c3fc5dbae72e85c5}\label{classtipo_productos_1_1_tipos_lista_a75e4a1ac3bcb6d64c3fc5dbae72e85c5}} 
+\index{tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}!Tipos\+Lista@{Tipos\+Lista}}
+\index{Tipos\+Lista@{Tipos\+Lista}!tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}}
+\subsubsection{\texorpdfstring{Tipos\+Lista()}{TiposLista()}}
+{\footnotesize\ttfamily tipo\+Productos.\+Tipos\+Lista.\+Tipos\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtipo_productos_1_1_modelo_columnas_tabla_tipo_productos}{Modelo\+Columnas\+Tabla\+Tipo\+Productos}}}]{columnas,  }\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of \mbox{\hyperlink{classtipo_productos_1_1_tipos_lista}{Tipos\+Lista}}, which establishes the connection to the database 
+\begin{DoxyParams}{Parameters}
+{\em columnas} & Columns of table \\
+\hline
+{\em conexion} & Database connection instance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtipo_productos_1_1_tipos_lista_ad36441dd4c32340b0905b5d30b91fcb4}\label{classtipo_productos_1_1_tipos_lista_ad36441dd4c32340b0905b5d30b91fcb4}} 
+\index{tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}!cargar\+Datos@{cargar\+Datos}}
+\index{cargar\+Datos@{cargar\+Datos}!tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}}
+\subsubsection{\texorpdfstring{cargar\+Datos()}{cargarDatos()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classtipo_productos_1_1_tipo_producto}{Tipo\+Producto}}$>$ tipo\+Productos.\+Tipos\+Lista.\+cargar\+Datos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads data of product types to create a product type list 
+\begin{DoxyParams}{Parameters}
+{\em conexion} & The instance of connection to the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of product types 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtipo_productos_1_1_tipos_lista_a87b924c7d8f72e7615286c41d19c2589}\label{classtipo_productos_1_1_tipos_lista_a87b924c7d8f72e7615286c41d19c2589}} 
+\index{tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}!get\+Column\+Class@{get\+Column\+Class}}
+\index{get\+Column\+Class@{get\+Column\+Class}!tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}}
+\subsubsection{\texorpdfstring{get\+Column\+Class()}{getColumnClass()}}
+{\footnotesize\ttfamily Class$<$?$>$ tipo\+Productos.\+Tipos\+Lista.\+get\+Column\+Class (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the class of the field of a column 
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & number of the column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class of the column 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtipo_productos_1_1_tipos_lista_ae09ef2d57d7c7989d4e0e99463294761}\label{classtipo_productos_1_1_tipos_lista_ae09ef2d57d7c7989d4e0e99463294761}} 
+\index{tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}}
+\subsubsection{\texorpdfstring{get\+Column\+Count()}{getColumnCount()}}
+{\footnotesize\ttfamily int tipo\+Productos.\+Tipos\+Lista.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Column number getter \begin{DoxyReturn}{Returns}
+Number of columns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtipo_productos_1_1_tipos_lista_a619180cf0e73dd687d83511c805b0a7d}\label{classtipo_productos_1_1_tipos_lista_a619180cf0e73dd687d83511c805b0a7d}} 
+\index{tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}!get\+Row\+Count@{get\+Row\+Count}}
+\index{get\+Row\+Count@{get\+Row\+Count}!tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}}
+\subsubsection{\texorpdfstring{get\+Row\+Count()}{getRowCount()}}
+{\footnotesize\ttfamily int tipo\+Productos.\+Tipos\+Lista.\+get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Row number getter \begin{DoxyReturn}{Returns}
+Number of rows 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtipo_productos_1_1_tipos_lista_a825bd94b7e40672ab7d3a84083c21245}\label{classtipo_productos_1_1_tipos_lista_a825bd94b7e40672ab7d3a84083c21245}} 
+\index{tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}!get\+TipoP@{get\+TipoP}}
+\index{get\+TipoP@{get\+TipoP}!tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}}
+\subsubsection{\texorpdfstring{get\+Tipo\+P()}{getTipoP()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtipo_productos_1_1_tipo_producto}{Tipo\+Producto}} tipo\+Productos.\+Tipos\+Lista.\+get\+TipoP (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a product type from the list of product types 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the product type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Product type selected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtipo_productos_1_1_tipos_lista_a78deb10c0cd2fbc2dfa0de19054e033e}\label{classtipo_productos_1_1_tipos_lista_a78deb10c0cd2fbc2dfa0de19054e033e}} 
+\index{tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}!get\+Value\+At@{get\+Value\+At}}
+\index{get\+Value\+At@{get\+Value\+At}!tipo\+Productos\+::\+Tipos\+Lista@{tipo\+Productos\+::\+Tipos\+Lista}}
+\subsubsection{\texorpdfstring{get\+Value\+At()}{getValueAt()}}
+{\footnotesize\ttfamily Object tipo\+Productos.\+Tipos\+Lista.\+get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to get an information field of a product type from table position 
+\begin{DoxyParams}{Parameters}
+{\em fila} & row coordinate \\
+\hline
+{\em columna} & columns coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Selected product type\textquotesingle{}s information field 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/tipo\+Productos/\mbox{\hyperlink{_tipos_lista_8java}{Tipos\+Lista.\+java}}\end{DoxyCompactItemize}

@@ -20,6 +20,11 @@ public class MyDataAccess {
  static String _url = "jdbc:mysql://localhost/"+_bd;
  private Connection conn = null;
  
+ /**
+ * Constructor that initalizes the connection with the database
+ * @param _usuario The SQL username
+ * @param _pwd The SQL user password
+ */
  public MyDataAccess(String _usuario, String _pwd) {
   
 	 this._usuario = _usuario;

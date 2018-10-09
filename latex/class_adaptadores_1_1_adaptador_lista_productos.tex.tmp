@@ -1,0 +1,45 @@
+\hypertarget{class_adaptadores_1_1_adaptador_lista_productos}{}\section{Adaptadores.\+Adaptador\+Lista\+Productos Class Reference}
+\label{class_adaptadores_1_1_adaptador_lista_productos}\index{Adaptadores.\+Adaptador\+Lista\+Productos@{Adaptadores.\+Adaptador\+Lista\+Productos}}
+
+
+Inheritance diagram for Adaptadores.\+Adaptador\+Lista\+Productos\+:
+% FIG 0
+
+
+Collaboration diagram for Adaptadores.\+Adaptador\+Lista\+Productos\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Component \mbox{\hyperlink{class_adaptadores_1_1_adaptador_lista_productos_ab58cd86bdd4c0009417f373521c6cfc4}{get\+List\+Cell\+Renderer\+Component}} (J\+List$<$? extends \mbox{\hyperlink{class_productos_1_1_producto}{Producto}} $>$ list, \mbox{\hyperlink{class_productos_1_1_producto}{Producto}} producto, int index, boolean is\+Selected, boolean cell\+Has\+Focus)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_adaptadores_1_1_adaptador_lista_productos_ab58cd86bdd4c0009417f373521c6cfc4}\label{class_adaptadores_1_1_adaptador_lista_productos_ab58cd86bdd4c0009417f373521c6cfc4}} 
+\index{Adaptadores\+::\+Adaptador\+Lista\+Productos@{Adaptadores\+::\+Adaptador\+Lista\+Productos}!get\+List\+Cell\+Renderer\+Component@{get\+List\+Cell\+Renderer\+Component}}
+\index{get\+List\+Cell\+Renderer\+Component@{get\+List\+Cell\+Renderer\+Component}!Adaptadores\+::\+Adaptador\+Lista\+Productos@{Adaptadores\+::\+Adaptador\+Lista\+Productos}}
+\subsubsection{\texorpdfstring{get\+List\+Cell\+Renderer\+Component()}{getListCellRendererComponent()}}
+{\footnotesize\ttfamily Component Adaptadores.\+Adaptador\+Lista\+Productos.\+get\+List\+Cell\+Renderer\+Component (\begin{DoxyParamCaption}\item[{J\+List$<$? extends \mbox{\hyperlink{class_productos_1_1_producto}{Producto}} $>$}]{list,  }\item[{\mbox{\hyperlink{class_productos_1_1_producto}{Producto}}}]{producto,  }\item[{int}]{index,  }\item[{boolean}]{is\+Selected,  }\item[{boolean}]{cell\+Has\+Focus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function is overridden to change the list adapter, which changes the style of the elements of the lists of products 
+\begin{DoxyParams}{Parameters}
+{\em list} & List which contains the product wanted to change style \\
+\hline
+{\em producto} & Specific product to change style \\
+\hline
+{\em index} & Index of product in the list \\
+\hline
+{\em is\+Selected} & Specifies if the element is selected \\
+\hline
+{\em cell\+Has\+Focus} & Specifies if the cell has the focus \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The panel with specified style 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/\+Adaptadores/Adaptador\+Lista\+Productos.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{classventa_1_1_lista_ventas}{}\section{venta.\+Lista\+Ventas Class Reference}
+\label{classventa_1_1_lista_ventas}\index{venta.\+Lista\+Ventas@{venta.\+Lista\+Ventas}}
+
+
+Inheritance diagram for venta.\+Lista\+Ventas\+:
+% FIG 0
+
+
+Collaboration diagram for venta.\+Lista\+Ventas\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classventa_1_1_lista_ventas_a69da326fde1b9ceea242d38147016528}{Lista\+Ventas}} (\mbox{\hyperlink{classventa_1_1_modelo_columnas_tabla_venta}{Modelo\+Columnas\+Tabla\+Venta}} columnas, \mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\item 
+int \mbox{\hyperlink{classventa_1_1_lista_ventas_a4c846805ce96ed90b2dc1228a2fc82c7}{get\+Column\+Count}} ()
+\item 
+int \mbox{\hyperlink{classventa_1_1_lista_ventas_a6c9b22b51a3571a01462073c6272cf0b}{get\+Row\+Count}} ()
+\item 
+Object \mbox{\hyperlink{classventa_1_1_lista_ventas_a49bbca6b55f15602ea06e0401ae84792}{get\+Value\+At}} (int fila, int columna)
+\item 
+Class$<$?$>$ \mbox{\hyperlink{classventa_1_1_lista_ventas_a285fad7c683f620c9320ee9d430975bd}{get\+Column\+Class}} (int column\+Index)
+\item 
+\mbox{\hyperlink{classventa_1_1_venta}{Venta}} \mbox{\hyperlink{classventa_1_1_lista_ventas_ae3dd8941eee7b0e14309add4764d3d1a}{get\+Venta}} (int pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{classventa_1_1_venta}{Venta}} $>$ \mbox{\hyperlink{classventa_1_1_lista_ventas_a5addbb3cc5ae30ddd938cc5ae3021a48}{cargar\+Datos}} (\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classventa_1_1_lista_ventas_a69da326fde1b9ceea242d38147016528}\label{classventa_1_1_lista_ventas_a69da326fde1b9ceea242d38147016528}} 
+\index{venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}!Lista\+Ventas@{Lista\+Ventas}}
+\index{Lista\+Ventas@{Lista\+Ventas}!venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}}
+\subsubsection{\texorpdfstring{Lista\+Ventas()}{ListaVentas()}}
+{\footnotesize\ttfamily venta.\+Lista\+Ventas.\+Lista\+Ventas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classventa_1_1_modelo_columnas_tabla_venta}{Modelo\+Columnas\+Tabla\+Venta}}}]{columnas,  }\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of Lista\+Venta, which establishes the connection to the database 
+\begin{DoxyParams}{Parameters}
+{\em columnas} & Columns of table \\
+\hline
+{\em conexion} & Database connection instance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classventa_1_1_lista_ventas_a5addbb3cc5ae30ddd938cc5ae3021a48}\label{classventa_1_1_lista_ventas_a5addbb3cc5ae30ddd938cc5ae3021a48}} 
+\index{venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}!cargar\+Datos@{cargar\+Datos}}
+\index{cargar\+Datos@{cargar\+Datos}!venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}}
+\subsubsection{\texorpdfstring{cargar\+Datos()}{cargarDatos()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{classventa_1_1_venta}{Venta}}$>$ venta.\+Lista\+Ventas.\+cargar\+Datos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}}}]{conexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Loads data of sale to create a machine list 
+\begin{DoxyParams}{Parameters}
+{\em conexion} & The instance of connection to the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of sale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classventa_1_1_lista_ventas_a285fad7c683f620c9320ee9d430975bd}\label{classventa_1_1_lista_ventas_a285fad7c683f620c9320ee9d430975bd}} 
+\index{venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}!get\+Column\+Class@{get\+Column\+Class}}
+\index{get\+Column\+Class@{get\+Column\+Class}!venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}}
+\subsubsection{\texorpdfstring{get\+Column\+Class()}{getColumnClass()}}
+{\footnotesize\ttfamily Class$<$?$>$ venta.\+Lista\+Ventas.\+get\+Column\+Class (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the class of the field of a column 
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & number of the column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Class of the column 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classventa_1_1_lista_ventas_a4c846805ce96ed90b2dc1228a2fc82c7}\label{classventa_1_1_lista_ventas_a4c846805ce96ed90b2dc1228a2fc82c7}} 
+\index{venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}!get\+Column\+Count@{get\+Column\+Count}}
+\index{get\+Column\+Count@{get\+Column\+Count}!venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}}
+\subsubsection{\texorpdfstring{get\+Column\+Count()}{getColumnCount()}}
+{\footnotesize\ttfamily int venta.\+Lista\+Ventas.\+get\+Column\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Column number getter \begin{DoxyReturn}{Returns}
+Number of columns 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classventa_1_1_lista_ventas_a6c9b22b51a3571a01462073c6272cf0b}\label{classventa_1_1_lista_ventas_a6c9b22b51a3571a01462073c6272cf0b}} 
+\index{venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}!get\+Row\+Count@{get\+Row\+Count}}
+\index{get\+Row\+Count@{get\+Row\+Count}!venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}}
+\subsubsection{\texorpdfstring{get\+Row\+Count()}{getRowCount()}}
+{\footnotesize\ttfamily int venta.\+Lista\+Ventas.\+get\+Row\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Row number getter \begin{DoxyReturn}{Returns}
+Number of rows 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classventa_1_1_lista_ventas_a49bbca6b55f15602ea06e0401ae84792}\label{classventa_1_1_lista_ventas_a49bbca6b55f15602ea06e0401ae84792}} 
+\index{venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}!get\+Value\+At@{get\+Value\+At}}
+\index{get\+Value\+At@{get\+Value\+At}!venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}}
+\subsubsection{\texorpdfstring{get\+Value\+At()}{getValueAt()}}
+{\footnotesize\ttfamily Object venta.\+Lista\+Ventas.\+get\+Value\+At (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Method to get an information field of a sale from table position 
+\begin{DoxyParams}{Parameters}
+{\em fila} & row coordinate \\
+\hline
+{\em columna} & columns coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Selected sales\textquotesingle{} information field 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classventa_1_1_lista_ventas_ae3dd8941eee7b0e14309add4764d3d1a}\label{classventa_1_1_lista_ventas_ae3dd8941eee7b0e14309add4764d3d1a}} 
+\index{venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}!get\+Venta@{get\+Venta}}
+\index{get\+Venta@{get\+Venta}!venta\+::\+Lista\+Ventas@{venta\+::\+Lista\+Ventas}}
+\subsubsection{\texorpdfstring{get\+Venta()}{getVenta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classventa_1_1_venta}{Venta}} venta.\+Lista\+Ventas.\+get\+Venta (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a sale from the list of sales 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Position of the sale \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sale selected 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/venta/Lista\+Ventas.\+java\end{DoxyCompactItemize}

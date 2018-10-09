@@ -1,0 +1,98 @@
+\hypertarget{classconexion_s_q_l_1_1_comandos}{}\section{conexion\+S\+Q\+L.\+Comandos Class Reference}
+\label{classconexion_s_q_l_1_1_comandos}\index{conexion\+S\+Q\+L.\+Comandos@{conexion\+S\+Q\+L.\+Comandos}}
+
+
+Collaboration diagram for conexion\+S\+Q\+L.\+Comandos\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconexion_s_q_l_1_1_comandos_a9198892a41e99577789c9091deb4e23f}\label{classconexion_s_q_l_1_1_comandos_a9198892a41e99577789c9091deb4e23f}} 
+{\bfseries Comandos} (\mbox{\hyperlink{classconexion_s_q_l_1_1_my_data_access}{My\+Data\+Access}} conexion)
+\item 
+void \mbox{\hyperlink{classconexion_s_q_l_1_1_comandos_a1a53c5650458c357ecd43cfc2734ad83}{borrar}} (String nombre\+Tabla, String primary\+Key)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classconexion_s_q_l_1_1_comandos_a2fb20845cbfb01a03b1aba60031608cb}{insertar}} (boolean\mbox{[}$\,$\mbox{]} formato\+Columnas, String\mbox{[}$\,$\mbox{]} datos, String nombre\+Tabla)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classconexion_s_q_l_1_1_comandos_af07c35c78a263c1a1ffb4661f1829e20}{update}} (boolean\mbox{[}$\,$\mbox{]} formato\+Columnas, String\mbox{[}$\,$\mbox{]} datos, String\mbox{[}$\,$\mbox{]} nombre\+Columnas, String nombre\+Tabla, String primary\+Key)  throws S\+Q\+L\+Exception 
+\item 
+Result\+Set \mbox{\hyperlink{classconexion_s_q_l_1_1_comandos_aa1dc46cfa52b931d7252da826880372d}{select}} (String\mbox{[}$\,$\mbox{]} nombre\+Columnas, String nombre\+Tabla, String primary\+Key, String agrupacion, String orden, boolean sentido\+Orden, int limitar)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconexion_s_q_l_1_1_comandos_a1a53c5650458c357ecd43cfc2734ad83}\label{classconexion_s_q_l_1_1_comandos_a1a53c5650458c357ecd43cfc2734ad83}} 
+\index{conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}!borrar@{borrar}}
+\index{borrar@{borrar}!conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}}
+\subsubsection{\texorpdfstring{borrar()}{borrar()}}
+{\footnotesize\ttfamily void conexion\+S\+Q\+L.\+Comandos.\+borrar (\begin{DoxyParamCaption}\item[{String}]{nombre\+Tabla,  }\item[{String}]{primary\+Key }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deletes data from table 
+\begin{DoxyParams}{Parameters}
+{\em nombre\+Tabla} & The database table in which the change has to be made \\
+\hline
+{\em primary\+Key} & Option to get clients \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classconexion_s_q_l_1_1_comandos_a2fb20845cbfb01a03b1aba60031608cb}\label{classconexion_s_q_l_1_1_comandos_a2fb20845cbfb01a03b1aba60031608cb}} 
+\index{conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}!insertar@{insertar}}
+\index{insertar@{insertar}!conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}}
+\subsubsection{\texorpdfstring{insertar()}{insertar()}}
+{\footnotesize\ttfamily void conexion\+S\+Q\+L.\+Comandos.\+insertar (\begin{DoxyParamCaption}\item[{boolean \mbox{[}$\,$\mbox{]}}]{formato\+Columnas,  }\item[{String \mbox{[}$\,$\mbox{]}}]{datos,  }\item[{String}]{nombre\+Tabla }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds data to a table 
+\begin{DoxyParams}{Parameters}
+{\em nombre\+Tabla} & The database table in which the change has to be made \\
+\hline
+{\em formato\+Columnas} & the format in which the S\+QL query has to be written \\
+\hline
+{\em datos} & the data that has to be introduced in the database \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classconexion_s_q_l_1_1_comandos_aa1dc46cfa52b931d7252da826880372d}\label{classconexion_s_q_l_1_1_comandos_aa1dc46cfa52b931d7252da826880372d}} 
+\index{conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}!select@{select}}
+\index{select@{select}!conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily Result\+Set conexion\+S\+Q\+L.\+Comandos.\+select (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{nombre\+Columnas,  }\item[{String}]{nombre\+Tabla,  }\item[{String}]{primary\+Key,  }\item[{String}]{agrupacion,  }\item[{String}]{orden,  }\item[{boolean}]{sentido\+Orden,  }\item[{int}]{limitar }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds data to a table 
+\begin{DoxyParams}{Parameters}
+{\em nombre\+Columnas} & The database table column names \\
+\hline
+{\em agrupacion} & \\
+\hline
+{\em orden} & \\
+\hline
+{\em sentido\+Orden} & \\
+\hline
+{\em limitar} & \\
+\hline
+{\em nombre\+Tabla} & The database table in which the change has to be made \\
+\hline
+{\em primary\+Key} & Option to get clients \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classconexion_s_q_l_1_1_comandos_af07c35c78a263c1a1ffb4661f1829e20}\label{classconexion_s_q_l_1_1_comandos_af07c35c78a263c1a1ffb4661f1829e20}} 
+\index{conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}!update@{update}}
+\index{update@{update}!conexion\+S\+Q\+L\+::\+Comandos@{conexion\+S\+Q\+L\+::\+Comandos}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void conexion\+S\+Q\+L.\+Comandos.\+update (\begin{DoxyParamCaption}\item[{boolean \mbox{[}$\,$\mbox{]}}]{formato\+Columnas,  }\item[{String \mbox{[}$\,$\mbox{]}}]{datos,  }\item[{String \mbox{[}$\,$\mbox{]}}]{nombre\+Columnas,  }\item[{String}]{nombre\+Tabla,  }\item[{String}]{primary\+Key }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds data to a table 
+\begin{DoxyParams}{Parameters}
+{\em nombre\+Columnas} & The database table column names \\
+\hline
+{\em formato\+Columnas} & the format in which the S\+QL query has to be written \\
+\hline
+{\em datos} & the data that has to be introduced in the database \\
+\hline
+{\em nombre\+Tabla} & The database table in which the change has to be made \\
+\hline
+{\em primary\+Key} & Option to get clients \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Edgar/\+Desktop/\+M\+U/1/\+Software\+Engineering/\+Second exam/\+Documenting\+The\+Source\+Code/\+Maquina\+Expendedora/src/conexion\+S\+Q\+L/\mbox{\hyperlink{_comandos_8java}{Comandos.\+java}}\end{DoxyCompactItemize}

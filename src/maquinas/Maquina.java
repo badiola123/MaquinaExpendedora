@@ -24,7 +24,7 @@ public class Maquina {
 	 * @param id ID of machine
 	 * @param provincia Province
 	 * @param pueblo City 
-	 * @param codigoPostal Postal code 
+	 * @param cp Postal code 
 	 * @param calle Street
 	 */
 	public Maquina(int id, String provincia, String pueblo, int cp, String calle){
