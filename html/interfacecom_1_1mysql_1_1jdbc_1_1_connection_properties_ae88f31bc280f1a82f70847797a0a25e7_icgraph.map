@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setCacheCallableStatements" name="com.mysql.jdbc.ConnectionProperties.setCacheCallableStatements">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a0f60cd752383652f21a16f404ee107c2" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setCacheCallable\lStatements" alt="" coords="307,5,548,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a2d8108c12a82b35523797323427b3b45" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setCacheCallable\lStatements" alt="" coords="309,85,545,141"/>
+</map>

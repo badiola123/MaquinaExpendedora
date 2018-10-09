@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.LoadBalancedConnectionProxy.addToGlobalBlacklist" name="com.mysql.jdbc.LoadBalancedConnectionProxy.addToGlobalBlacklist">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy.html#a95d3c42279e542a072f66457d990d101" title="com.mysql.jdbc.LoadBalanced\lConnectionProxy.doPing" alt="" coords="340,5,540,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy.html#a9b1718c334191c26cb1befc847cd8aad" title="com.mysql.jdbc.LoadBalanced\lConnectionProxy.addToGlobalBlacklist" alt="" coords="317,71,563,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy.html#af3322f74308fe5ca51f73f36f99aa12f" title="com.mysql.jdbc.LoadBalanced\lConnectionProxy.removeHostWhenNotInUse" alt="" coords="300,136,580,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_group.html#a27586faf64da09b716633d8af113a9ba" title="com.mysql.jdbc.Connection\lGroup.removeHost" alt="" coords="628,136,811,177"/>
+</map>

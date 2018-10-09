@@ -1,0 +1,10 @@
+<map id="com.mysql.jdbc.StringUtils.stripComments" name="com.mysql.jdbc.StringUtils.stripComments">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a9f707faf90e18c724869f1745933c1df" title="com.mysql.jdbc.Statement\lImpl.checkForDml" alt="" coords="260,169,439,211"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4a9164e855e1f7848142de8973a6dab6" title="com.mysql.jdbc.PreparedStatement.execute\lQuery" alt="" coords="487,136,767,177"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a0cec26f8a08e9d8e85b10565d4490b1a" title="com.mysql.jdbc.Statement\lImpl.executeQuery" alt="" coords="537,201,716,243"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#aad5669e55c0db83ec88a8fd9c34a406c" title="com.mysql.jdbc.DatabaseMeta\lData.getColumnPrivileges" alt="" coords="839,5,1041,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a86ec9e7284f797edec7e5ec4880f2006" title="com.mysql.jdbc.MysqlIO.explain\lSlowQuery" alt="" coords="835,71,1045,112"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1simple_1_1_connection_test.html#a018eaff5a1cc1db390b843a77c50d63f" title="testsuite.simple.Connection\lTest.testDontTrackOpenResources" alt="" coords="827,136,1053,177"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1simple_1_1_date_test.html#a65e40a7db246ac9e6d412004a72e4bd4" title="testsuite.simple.DateTest.test\lZeroDateBehavior" alt="" coords="842,201,1038,243"/>
+<area shape="rect" id="node8" href="$classtestsuite_1_1simple_1_1_statements_test.html#a8686a9137f5901a701020342f04dc3a7" title="testsuite.simple.Statements\lTest.testBinaryResultSetNumericTypes" alt="" coords="815,267,1065,308"/>
+</map>

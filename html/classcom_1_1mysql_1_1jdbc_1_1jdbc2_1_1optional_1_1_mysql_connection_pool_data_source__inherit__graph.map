@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource" name="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource" alt="" coords="158,184,361,225"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html" title="com.mysql.jdbc.Connection\lPropertiesImpl" alt="" coords="88,95,271,136"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="119,5,301,47"/>
+</map>

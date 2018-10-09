@@ -1,0 +1,7 @@
+<map id="vistas.PanelUsuario.AccionAgregarID.actionPerformed" name="vistas.PanelUsuario.AccionAgregarID.actionPerformed">
+<area shape="rect" id="node2" href="$classclientes_1_1_clientela.html#a99c3c767c734c205696aaf32131e0119" title="clientes.Clientela.volver\lACargar" alt="" coords="241,5,397,47"/>
+<area shape="rect" id="node3" href="$classclientes_1_1_clientela.html#ae120fcd5a51e1d17d11e3b36ca1d8290" title="clientes.Clientela.agrupar" alt="" coords="235,71,403,98"/>
+<area shape="rect" id="node5" href="$classclientes_1_1_cliente.html#afbd9530580077a88e7b5f0522d56ee6f" title="clientes.Cliente.getId" alt="" coords="247,122,390,149"/>
+<area shape="rect" id="node6" href="$classclientes_1_1_clientela.html#a036492cd5e2bba079ef0874b9693d9e1" title="clientes.Clientela.getLista\lOpciones" alt="" coords="233,173,404,215"/>
+<area shape="rect" id="node4" href="$interfaceclientes_1_1_mapeador.html#a503d8f7a0b5debb1eab28d7ff4c717f5" title="clientes.Mapeador.map" alt="" coords="452,71,609,98"/>
+</map>

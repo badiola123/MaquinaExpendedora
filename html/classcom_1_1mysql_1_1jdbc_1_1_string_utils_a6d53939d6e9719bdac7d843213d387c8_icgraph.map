@@ -1,0 +1,20 @@
+<map id="com.mysql.jdbc.StringUtils.indexOfIgnoreCase" name="com.mysql.jdbc.StringUtils.indexOfIgnoreCase">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#ac9b74074950b106a415701c336002c18" title="com.mysql.jdbc.DatabaseMeta\lData.extractForeignKeyForTable" alt="" coords="561,37,770,79"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#aa499f30e9c9222a702a504ad205d1802" title="com.mysql.jdbc.DatabaseMeta\lData.getColumns" alt="" coords="847,312,1049,353"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#ad37428c615c19cdc6330887196659957" title="com.mysql.jdbc.DatabaseMeta\lData.getVersionColumns" alt="" coords="288,165,491,207"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema.html#a32e04e3285884390a2cfd25bfb1fc544" title="com.mysql.jdbc.DatabaseMeta\lDataUsingInfoSchema.getColumns" alt="" coords="278,231,501,272"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema.html#a77e696e0c2b875ddbf17513a1be3f6a3" title="com.mysql.jdbc.DatabaseMeta\lDataUsingInfoSchema.getTables" alt="" coords="560,259,771,300"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#aa878fb59ee51a94be844867255666d74" title="com.mysql.jdbc.StringUtils.index\lOfIgnoreCase" alt="" coords="283,348,496,389"/>
+<area shape="rect" id="node13" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#adf390b3d52e630b26eb77d692e4ed624" title="com.mysql.jdbc.StringUtils.split" alt="" coords="286,414,493,441"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a7fe39164a1f79c6421f46509e672693a" title="com.mysql.jdbc.StringUtils.split\lDBdotName" alt="" coords="286,100,493,141"/>
+<area shape="rect" id="node17" href="$classtestsuite_1_1regression_1_1_string_regression_test.html#a310d7878e44bc9bf13daa040be2bb847" title="testsuite.regression.String\lRegressionTest.testBug25047" alt="" coords="291,516,487,557"/>
+<area shape="rect" id="node18" href="$classtestsuite_1_1regression_1_1_syntax_regression_test.html#ad83b1c216b65beb75abd988b87c801dc" title="testsuite.regression.Syntax\lRegressionTest.testTableCompression" alt="" coords="267,581,512,623"/>
+<area shape="rect" id="node19" href="$classtestsuite_1_1simple_1_1_string_utils_test.html#a8de93983177d6655b04484cf8391f653" title="testsuite.simple.StringUtils\lTest.testIndexOfIgnoreCase" alt="" coords="298,647,481,688"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a674d55ea080a7c9051cbb85224526184" title="com.mysql.jdbc.DatabaseMeta\lData.extractForeignKeyFromCreateTable" alt="" coords="819,71,1077,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a0dfb6635800405515c2e66a71a50f235" title="com.mysql.jdbc.DatabaseMeta\lData.getCrossReference" alt="" coords="1125,71,1328,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a17c160fdaac4749922b8ec683b4ab138" title="com.mysql.jdbc.DatabaseMeta\lData.getExportedKeys" alt="" coords="1125,136,1328,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a0161436eb7ad9574d25bd90730891e25" title="com.mysql.jdbc.DatabaseMeta\lData.getImportedKeys" alt="" coords="1125,5,1328,47"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a3c5930c79653f91ef2ce808d3cd37b45" title="com.mysql.jdbc.DatabaseMeta\lData.getTablePrivileges" alt="" coords="1125,312,1328,353"/>
+<area shape="rect" id="node15" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a09e2c74e6c817b349d43feea682eed58" title="com.mysql.jdbc.DatabaseMeta\lData.getTables" alt="" coords="564,103,767,144"/>
+<area shape="rect" id="node16" href="$classtestsuite_1_1simple_1_1_split_d_bdot_name_test.html#a079789e05d1272485f650f92c91777fa" title="testsuite.simple.SplitDBdot\lNameTest.testSplit" alt="" coords="575,168,755,209"/>
+</map>

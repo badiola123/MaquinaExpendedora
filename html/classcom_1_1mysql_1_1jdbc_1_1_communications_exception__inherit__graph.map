@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.CommunicationsException" name="com.mysql.jdbc.CommunicationsException">
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_feature_not_available_exception.html" title="com.mysql.jdbc.Connection\lFeatureNotAvailableException" alt="" coords="44,184,239,225"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_streaming_notifiable.html" title="com.mysql.jdbc.Streaming\lNotifiable" alt="" coords="137,5,314,47"/>
+</map>

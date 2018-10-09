@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setInitialTimeout" name="com.mysql.jdbc.ConnectionProperties.setInitialTimeout">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#af88d96aed55dd2fdd401b0d86dcc700d" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setInitialTimeout" alt="" coords="236,5,471,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#aeab355b0e9150013c3690b5be17ea12e" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setInitialTimeout" alt="" coords="239,71,468,112"/>
+</map>

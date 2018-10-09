@@ -1,0 +1,49 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping}{}\section{com.\+mysql.\+fabric.\+Range\+Shard\+Mapping Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping}\index{com.\+mysql.\+fabric.\+Range\+Shard\+Mapping@{com.\+mysql.\+fabric.\+Range\+Shard\+Mapping}}
+
+
+Inheritance diagram for com.\+mysql.\+fabric.\+Range\+Shard\+Mapping\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+fabric.\+Range\+Shard\+Mapping\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping_a3bf9d36e3581ae45064487cf5fd357eb}\label{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping_a3bf9d36e3581ae45064487cf5fd357eb}} 
+{\bfseries Range\+Shard\+Mapping} (int mapping\+Id, \mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}} sharding\+Type, String global\+Group\+Name, Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_table}{Shard\+Table}} $>$ shard\+Tables, Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} $>$ shard\+Indices)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping_a0195af3906593914326bfed4050eea72}{get\+Shard\+Index\+For\+Key}} (String string\+Key)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A shard mapping that partitions data by ranges. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping_a0195af3906593914326bfed4050eea72}\label{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping_a0195af3906593914326bfed4050eea72}} 
+\index{com\+::mysql\+::fabric\+::\+Range\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Range\+Shard\+Mapping}!get\+Shard\+Index\+For\+Key@{get\+Shard\+Index\+For\+Key}}
+\index{get\+Shard\+Index\+For\+Key@{get\+Shard\+Index\+For\+Key}!com\+::mysql\+::fabric\+::\+Range\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Range\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Shard\+Index\+For\+Key()}{getShardIndexForKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} com.\+mysql.\+fabric.\+Range\+Shard\+Mapping.\+get\+Shard\+Index\+For\+Key (\begin{DoxyParamCaption}\item[{String}]{string\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Search through the shard indicies to find the shard holding this key. Range-\/based sharding defines a lower bound for each partition with the upper bound being one less than the lower bound of the next highest shard. There is no upper bound for the shard with the highest lower bound. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/Range\+Shard\+Mapping.\+java\end{DoxyCompactItemize}

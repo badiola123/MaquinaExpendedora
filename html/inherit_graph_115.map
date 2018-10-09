@@ -1,0 +1,23 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1xmlrpc_1_1exceptions_1_1_my_s_q_l_fabric_exception.html" title="com.mysql.fabric.xmlrpc.exceptions.\lMySQLFabricException" alt="" coords="231,283,465,324"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_communications_exception.html" title="com.mysql.jdbc.Communications\lException" alt="" coords="241,112,455,153"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_non_transient_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLNonTransientException" alt="" coords="248,348,448,389"/>
+<area shape="rect" id="node13" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_transient_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLTransientException" alt="" coords="255,576,441,617"/>
+<area shape="rect" id="node17" href="$classcom_1_1mysql_1_1jdbc_1_1_not_updatable.html" title="com.mysql.jdbc.NotUpdatable" alt="" coords="250,791,446,818"/>
+<area shape="rect" id="node18" href="$classcom_1_1mysql_1_1jdbc_1_1_packet_too_big_exception.html" title="com.mysql.jdbc.PacketToo\lBigException" alt="" coords="258,843,438,884"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_feature_not_available_exception.html" title="com.mysql.jdbc.Connection\lFeatureNotAvailableException" alt="" coords="549,5,743,47"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_data_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLDataException" alt="" coords="553,71,739,112"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_integrity_constraint_violation_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLIntegrityConstraintViolation\lException" alt="" coords="535,137,757,193"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_invalid_authorization_spec_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLInvalidAuthorizationSpecException" alt="" coords="513,217,779,259"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_non_transient_connection_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLNonTransientConnectionException" alt="" coords="513,283,779,324"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_query_interrupted_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLQueryInterruptedException" alt="" coords="536,348,756,389"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_statement_cancelled_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLStatementCancelledException" alt="" coords="525,413,767,455"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_syntax_error_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLSyntaxErrorException" alt="" coords="549,479,743,520"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_timeout_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLTimeoutException" alt="" coords="553,544,739,585"/>
+<area shape="rect" id="node15" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_transaction_rollback_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLTransactionRollbackException" alt="" coords="525,675,767,716"/>
+<area shape="rect" id="node16" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_transient_connection_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLTransientConnectionException" alt="" coords="525,609,767,651"/>
+<area shape="rect" id="node20" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1jdbc4_1_1_communications_exception.html" title="com.mysql.jdbc.exceptions.jdbc4.\lCommunicationsException" alt="" coords="238,47,458,88"/>
+<area shape="rect" id="node22" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1jdbc4_1_1_my_s_q_l_transaction_rollback_exception.html" title="com.mysql.jdbc.exceptions.jdbc4.\lMySQLTransactionRollbackException" alt="" coords="525,740,767,781"/>
+<area shape="rect" id="node23" href="$interfacecom_1_1mysql_1_1jdbc_1_1exceptions_1_1_deadlock_timeout_rollback_marker.html" title="com.mysql.jdbc.exceptions.\lDeadlockTimeoutRollbackMarker" alt="" coords="242,675,454,716"/>
+<area shape="rect" id="node24" href="$interfacecom_1_1mysql_1_1jdbc_1_1_streaming_notifiable.html" title="com.mysql.jdbc.Streaming\lNotifiable" alt="" coords="5,109,183,151"/>
+</map>

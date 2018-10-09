@@ -1,0 +1,5 @@
+<map id="vistas.PanelCrear.actionPerformed" name="vistas.PanelCrear.actionPerformed">
+<area shape="rect" id="node2" href="$classcomunicacion_1_1_modulo_x_bee.html#a965cdd2756d507c8c80eade0bf34d06e" title="comunicacion.ModuloXBee.mandar\lTramaDatosNuevoUsuarioCancelado" alt="" coords="216,5,448,47"/>
+<area shape="rect" id="node4" href="$classvistas_1_1_panel_trabajador.html#a6779de800f0fec989da14137bcc8dc15" title="vistas.PanelTrabajador.volver" alt="" coords="239,71,425,98"/>
+<area shape="rect" id="node3" href="$classcomunicacion_1_1_emision.html#aa2b41a69ac8589e519c45e5f674ab135" title="comunicacion.Emision.crear\lTramaNuevoUsuarioCancelado" alt="" coords="496,5,695,47"/>
+</map>

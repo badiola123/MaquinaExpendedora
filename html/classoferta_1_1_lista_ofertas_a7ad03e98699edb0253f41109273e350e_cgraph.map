@@ -1,0 +1,6 @@
+<map id="oferta.ListaOfertas.cargarDatos" name="oferta.ListaOfertas.cargarDatos">
+<area shape="rect" id="node2" href="$classoferta_1_1_oferta.html#ab75e7ee84db370fdb8f5fcb4ea63e405" title="oferta.Oferta.getNombreColumnas" alt="" coords="221,5,440,32"/>
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_comandos.html#aa1dc46cfa52b931d7252da826880372d" title="conexionSQL.Comandos.select" alt="" coords="228,56,433,83"/>
+<area shape="rect" id="node5" href="$classvistas_1_1_principal.html#afe7ddf018ad429301b1aca1dbfc4770d" title="vistas.Principal.getTablaoferta" alt="" coords="233,107,428,133"/>
+<area shape="rect" id="node4" href="$classconexion_s_q_l_1_1_my_data_access.html#ae8d04039a000d2b3e7dc72c99be7c551" title="conexionSQL.MyDataAccess.get\lQuery" alt="" coords="488,49,703,90"/>
+</map>

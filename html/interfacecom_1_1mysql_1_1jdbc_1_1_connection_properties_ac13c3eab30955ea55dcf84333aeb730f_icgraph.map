@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getEmulateUnsupportedPstmts" name="com.mysql.jdbc.ConnectionProperties.getEmulateUnsupportedPstmts">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a778c594d3f6f04b555615834c7287ac3" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getEmulateUnsupported\lPstmts" alt="" coords="277,5,556,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a5c70d20e73b7ab4a471129a0f3c194fe" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getEmulateUnsupported\lPstmts" alt="" coords="279,85,554,141"/>
+</map>

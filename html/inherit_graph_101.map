@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_wrapper_base_1_1_connection_error_firing_invocation_handler.html" title="com.mysql.jdbc.jdbc2.optional.\lWrapperBase.ConnectionErrorFiring\lInvocationHandler" alt="" coords="176,71,407,127"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy.html" title="com.mysql.jdbc.MultiHost\lConnectionProxy" alt="" coords="205,5,378,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy.html" title="com.mysql.jdbc.FailoverConnection\lProxy" alt="" coords="455,5,681,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy.html" title="com.mysql.jdbc.LoadBalanced\lConnectionProxy" alt="" coords="468,141,668,183"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy.html" title="com.mysql.jdbc.Replication\lConnectionProxy" alt="" coords="477,72,659,113"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1mysql_1_1jdbc_1_1_ping_target.html" title="com.mysql.jdbc.PingTarget" alt="" coords="201,151,381,178"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setDynamicCalendars" name="com.mysql.jdbc.ConnectionProperties.setDynamicCalendars">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a0f42541efa793fe1588d0807c2ffab92" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setDynamicCalendars" alt="" coords="265,5,532,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#affcca6d6db55ca52fb6b29fdba761ca8" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setDynamicCalendars" alt="" coords="267,71,530,112"/>
+</map>

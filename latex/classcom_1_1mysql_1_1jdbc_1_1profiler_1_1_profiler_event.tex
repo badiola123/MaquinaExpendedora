@@ -1,0 +1,442 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event}{}\section{com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event}\index{com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event@{com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad8b797e8effa08aa412f59758be2c2b4}{Profiler\+Event}} (byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad6b8f61f050154e78ff191693d24f577}{event\+Type}}, String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ab10bb00ac3fe47677ad5b2ce225a9e44}{host\+Name}}, String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa7004cee55f006e0666c602f1a5b07bc}{catalog}}, long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a445919f2e674d2b75c42a8a2456ea0e7}{connection\+Id}}, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_af5386e1f6681fdf030b5f693dec2440c}{statement\+Id}}, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a76097357910684be9b8701f2a111c60f}{result\+Set\+Id}}, long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4ab76316294a2846c1b2a83cd696d6cf}{event\+Creation\+Time}}, long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a16e398a98262c89723022a8ab19974c4}{event\+Duration}}, String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4a5e45fb47ae2f11e5fddd7257feebda}{duration\+Units}}, String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a8ff1cab51f5065edb91a8d9f364decca}{event\+Creation\+Point\+Desc}}, String event\+Creation\+Point, String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aec15467b3a256046f8402f3a086ce70d}{message}})
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a6f3a1cc85995d238f59f17f6b4e24f10}{get\+Event\+Creation\+Point\+As\+String}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a492ffcc14034b9eaae70948322566592}{to\+String}} ()
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aca4cafacdd420d38a2fbf0213d3e7a43}{pack}} ()  throws Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aaee50466557164f5808399334b80754a}{get\+Catalog}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a72cc33be979416c497f5aa95148a9b58}{get\+Connection\+Id}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a642d75df4aef2a2759e3b8049b77e7f7}{get\+Event\+Creation\+Time}} ()
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ac84aed0bf6e19ad0e018fe0f1ebc00c6}{get\+Event\+Duration}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aecf3c0f13945accbbbe6ba77eb5189ca}{get\+Duration\+Units}} ()
+\item 
+byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4f980f077874e2c02ef0b871166c0f40}{get\+Event\+Type}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ab2278ad9e42c2abcb5f723cb0fe79acc}{get\+Result\+Set\+Id}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa4b1dcf9ac3ed0e242820a1c7f582521}{get\+Statement\+Id}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a67c7d65e3ace6062a69cdab99f466b3c}{get\+Message}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event}{Profiler\+Event}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ae4fb6b9cacc1749a77df0c3eec048a8e}{unpack}} (byte\mbox{[}$\,$\mbox{]} buf)  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a09239ec47cc814e66d678151c649c362}{T\+Y\+P\+E\+\_\+\+W\+A\+RN}} = 0
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad5c70376b24fea58a26f004a6ef96324}{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+R\+E\+A\+T\+I\+ON}} = 1
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad19a19412128007ed0c00a9fcd4053a7}{T\+Y\+P\+E\+\_\+\+P\+R\+E\+P\+A\+RE}} = 2
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa283ffd96cd013b7714c84b1a592df91}{T\+Y\+P\+E\+\_\+\+Q\+U\+E\+RY}} = 3
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_abdd68063adb3e03ed361c7559df4d401}{T\+Y\+P\+E\+\_\+\+E\+X\+E\+C\+U\+TE}} = 4
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a6d3e740793e368162fd794382f622948}{T\+Y\+P\+E\+\_\+\+F\+E\+T\+CH}} = 5
+\item 
+static final byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a708d4df0927f033994b987028442c3f8}{T\+Y\+P\+E\+\_\+\+S\+L\+O\+W\+\_\+\+Q\+U\+E\+RY}} = 6
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad6b8f61f050154e78ff191693d24f577}{event\+Type}}
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a445919f2e674d2b75c42a8a2456ea0e7}{connection\+Id}}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_af5386e1f6681fdf030b5f693dec2440c}{statement\+Id}}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a76097357910684be9b8701f2a111c60f}{result\+Set\+Id}}
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4ab76316294a2846c1b2a83cd696d6cf}{event\+Creation\+Time}}
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a16e398a98262c89723022a8ab19974c4}{event\+Duration}}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4a5e45fb47ae2f11e5fddd7257feebda}{duration\+Units}}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_adb4c0134fce273867141693f1e169751}{host\+Name\+Index}}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ab10bb00ac3fe47677ad5b2ce225a9e44}{host\+Name}}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a236836f572b2a3a603fc49b57a38afe9}{catalog\+Index}}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa7004cee55f006e0666c602f1a5b07bc}{catalog}}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a2ceb21aa4ab02ac62487f70bbbd23bb9}{event\+Creation\+Point\+Index}}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a8ff1cab51f5065edb91a8d9f364decca}{event\+Creation\+Point\+Desc}}
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aec15467b3a256046f8402f3a086ce70d}{message}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad8b797e8effa08aa412f59758be2c2b4}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad8b797e8effa08aa412f59758be2c2b4}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!Profiler\+Event@{Profiler\+Event}}
+\index{Profiler\+Event@{Profiler\+Event}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{Profiler\+Event()}{ProfilerEvent()}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+Profiler\+Event (\begin{DoxyParamCaption}\item[{byte}]{event\+Type,  }\item[{String}]{host\+Name,  }\item[{String}]{catalog,  }\item[{long}]{connection\+Id,  }\item[{int}]{statement\+Id,  }\item[{int}]{result\+Set\+Id,  }\item[{long}]{event\+Creation\+Time,  }\item[{long}]{event\+Duration,  }\item[{String}]{duration\+Units,  }\item[{String}]{event\+Creation\+Point\+Desc,  }\item[{String}]{event\+Creation\+Point,  }\item[{String}]{message }\end{DoxyParamCaption})}
+
+Creates a new profiler event
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Type} & the event type (from the constants T\+Y\+P\+E\+\_\+????) \\
+\hline
+{\em host\+Name} & the hostname where the event occurs \\
+\hline
+{\em catalog} & the catalog in use \\
+\hline
+{\em connection\+Id} & the connection id (-\/1 if N/A) \\
+\hline
+{\em statement\+Id} & the statement id (-\/1 if N/A) \\
+\hline
+{\em result\+Set\+Id} & the result set id (-\/1 if N/A) \\
+\hline
+{\em event\+Creation\+Time} & when was the event created? \\
+\hline
+{\em event\+Duration\+Millis} & how long did the event last? \\
+\hline
+{\em event\+Creation\+Point\+Desc} & event creation point as a string \\
+\hline
+{\em event\+Creation\+Point} & event creation point as a Throwable \\
+\hline
+{\em message} & optional message \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad8b797e8effa08aa412f59758be2c2b4_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aaee50466557164f5808399334b80754a}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aaee50466557164f5808399334b80754a}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Catalog@{get\+Catalog}}
+\index{get\+Catalog@{get\+Catalog}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Catalog()}{getCatalog()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Catalog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the catalog in use
+
+\begin{DoxyReturn}{Returns}
+the catalog in use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a72cc33be979416c497f5aa95148a9b58}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a72cc33be979416c497f5aa95148a9b58}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Connection\+Id@{get\+Connection\+Id}}
+\index{get\+Connection\+Id@{get\+Connection\+Id}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Connection\+Id()}{getConnectionId()}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Connection\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the id of the connection in use when this event was created.
+
+\begin{DoxyReturn}{Returns}
+the connection in use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aecf3c0f13945accbbbe6ba77eb5189ca}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aecf3c0f13945accbbbe6ba77eb5189ca}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Duration\+Units@{get\+Duration\+Units}}
+\index{get\+Duration\+Units@{get\+Duration\+Units}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Duration\+Units()}{getDurationUnits()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Duration\+Units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the units for \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ac84aed0bf6e19ad0e018fe0f1ebc00c6}{get\+Event\+Duration()}} \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a6f3a1cc85995d238f59f17f6b4e24f10}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a6f3a1cc85995d238f59f17f6b4e24f10}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Event\+Creation\+Point\+As\+String@{get\+Event\+Creation\+Point\+As\+String}}
+\index{get\+Event\+Creation\+Point\+As\+String@{get\+Event\+Creation\+Point\+As\+String}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Event\+Creation\+Point\+As\+String()}{getEventCreationPointAsString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Event\+Creation\+Point\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the description of when this event was created.
+
+\begin{DoxyReturn}{Returns}
+a description of when this event was created. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a6f3a1cc85995d238f59f17f6b4e24f10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a642d75df4aef2a2759e3b8049b77e7f7}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a642d75df4aef2a2759e3b8049b77e7f7}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Event\+Creation\+Time@{get\+Event\+Creation\+Time}}
+\index{get\+Event\+Creation\+Time@{get\+Event\+Creation\+Time}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Event\+Creation\+Time()}{getEventCreationTime()}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Event\+Creation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the time (in System.\+current\+Time\+Millis() form) when this event was created
+
+\begin{DoxyReturn}{Returns}
+the time this event was created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ac84aed0bf6e19ad0e018fe0f1ebc00c6}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ac84aed0bf6e19ad0e018fe0f1ebc00c6}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Event\+Duration@{get\+Event\+Duration}}
+\index{get\+Event\+Duration@{get\+Event\+Duration}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Event\+Duration()}{getEventDuration()}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Event\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the duration of the event in milliseconds
+
+\begin{DoxyReturn}{Returns}
+the duration of the event in milliseconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4f980f077874e2c02ef0b871166c0f40}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4f980f077874e2c02ef0b871166c0f40}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Event\+Type@{get\+Event\+Type}}
+\index{get\+Event\+Type@{get\+Event\+Type}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Event\+Type()}{getEventType()}}
+{\footnotesize\ttfamily byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Event\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the event type flag
+
+\begin{DoxyReturn}{Returns}
+the event type flag 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a67c7d65e3ace6062a69cdab99f466b3c}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a67c7d65e3ace6062a69cdab99f466b3c}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Message@{get\+Message}}
+\index{get\+Message@{get\+Message}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Message()}{getMessage()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the optional message for this event
+
+\begin{DoxyReturn}{Returns}
+the message stored in this event 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ab2278ad9e42c2abcb5f723cb0fe79acc}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ab2278ad9e42c2abcb5f723cb0fe79acc}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Result\+Set\+Id@{get\+Result\+Set\+Id}}
+\index{get\+Result\+Set\+Id@{get\+Result\+Set\+Id}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Result\+Set\+Id()}{getResultSetId()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Result\+Set\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the id of the result set in use when this event was created.
+
+\begin{DoxyReturn}{Returns}
+the result set in use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa4b1dcf9ac3ed0e242820a1c7f582521}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa4b1dcf9ac3ed0e242820a1c7f582521}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!get\+Statement\+Id@{get\+Statement\+Id}}
+\index{get\+Statement\+Id@{get\+Statement\+Id}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{get\+Statement\+Id()}{getStatementId()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+get\+Statement\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the id of the statement in use when this event was created.
+
+\begin{DoxyReturn}{Returns}
+the statement in use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aca4cafacdd420d38a2fbf0213d3e7a43}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aca4cafacdd420d38a2fbf0213d3e7a43}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!pack@{pack}}
+\index{pack@{pack}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{pack()}{pack()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+pack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Creates a binary representation of this event.
+
+\begin{DoxyReturn}{Returns}
+a binary representation of this event 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs while packing this event. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aca4cafacdd420d38a2fbf0213d3e7a43_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a492ffcc14034b9eaae70948322566592}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a492ffcc14034b9eaae70948322566592}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a representation of this event as a String.
+
+\begin{DoxyReturn}{Returns}
+a String representation of this event. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ae4fb6b9cacc1749a77df0c3eec048a8e}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ae4fb6b9cacc1749a77df0c3eec048a8e}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!unpack@{unpack}}
+\index{unpack@{unpack}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{unpack()}{unpack()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event}{Profiler\+Event}} com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+unpack (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buf }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Unpacks a binary representation of this event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the binary representation of this event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the unpacked Event 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs while unpacking the event \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ae4fb6b9cacc1749a77df0c3eec048a8e_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa7004cee55f006e0666c602f1a5b07bc}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa7004cee55f006e0666c602f1a5b07bc}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!catalog@{catalog}}
+\index{catalog@{catalog}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{catalog}{catalog}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+catalog\hspace{0.3cm}{\ttfamily [protected]}}
+
+The catalog the event occurred on \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a236836f572b2a3a603fc49b57a38afe9}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a236836f572b2a3a603fc49b57a38afe9}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!catalog\+Index@{catalog\+Index}}
+\index{catalog\+Index@{catalog\+Index}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{catalog\+Index}{catalogIndex}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+catalog\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+The catalog the event occurred on (as an index into a dictionary, used by \textquotesingle{}remote\textquotesingle{} profilers for efficiency)? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a445919f2e674d2b75c42a8a2456ea0e7}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a445919f2e674d2b75c42a8a2456ea0e7}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!connection\+Id@{connection\+Id}}
+\index{connection\+Id@{connection\+Id}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{connection\+Id}{connectionId}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+connection\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+Associated connection (-\/1 for none) \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4a5e45fb47ae2f11e5fddd7257feebda}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4a5e45fb47ae2f11e5fddd7257feebda}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!duration\+Units@{duration\+Units}}
+\index{duration\+Units@{duration\+Units}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{duration\+Units}{durationUnits}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+duration\+Units\hspace{0.3cm}{\ttfamily [protected]}}
+
+What units was the duration measured in? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a8ff1cab51f5065edb91a8d9f364decca}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a8ff1cab51f5065edb91a8d9f364decca}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!event\+Creation\+Point\+Desc@{event\+Creation\+Point\+Desc}}
+\index{event\+Creation\+Point\+Desc@{event\+Creation\+Point\+Desc}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{event\+Creation\+Point\+Desc}{eventCreationPointDesc}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+event\+Creation\+Point\+Desc\hspace{0.3cm}{\ttfamily [protected]}}
+
+Where was the event created (as a string description of the event\+Creation\+Point)? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a2ceb21aa4ab02ac62487f70bbbd23bb9}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a2ceb21aa4ab02ac62487f70bbbd23bb9}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!event\+Creation\+Point\+Index@{event\+Creation\+Point\+Index}}
+\index{event\+Creation\+Point\+Index@{event\+Creation\+Point\+Index}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{event\+Creation\+Point\+Index}{eventCreationPointIndex}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+event\+Creation\+Point\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+Where was the event created (as an index into a dictionary, used by \textquotesingle{}remote\textquotesingle{} profilers for efficiency)? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4ab76316294a2846c1b2a83cd696d6cf}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a4ab76316294a2846c1b2a83cd696d6cf}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!event\+Creation\+Time@{event\+Creation\+Time}}
+\index{event\+Creation\+Time@{event\+Creation\+Time}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{event\+Creation\+Time}{eventCreationTime}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+event\+Creation\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+When was the event created? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a16e398a98262c89723022a8ab19974c4}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a16e398a98262c89723022a8ab19974c4}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!event\+Duration@{event\+Duration}}
+\index{event\+Duration@{event\+Duration}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{event\+Duration}{eventDuration}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+event\+Duration\hspace{0.3cm}{\ttfamily [protected]}}
+
+How long did the event last? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad6b8f61f050154e78ff191693d24f577}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad6b8f61f050154e78ff191693d24f577}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!event\+Type@{event\+Type}}
+\index{event\+Type@{event\+Type}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{event\+Type}{eventType}}
+{\footnotesize\ttfamily byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+event\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+Type of event \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ab10bb00ac3fe47677ad5b2ce225a9e44}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ab10bb00ac3fe47677ad5b2ce225a9e44}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!host\+Name@{host\+Name}}
+\index{host\+Name@{host\+Name}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{host\+Name}{hostName}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+host\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+The hostname the event occurred on \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_adb4c0134fce273867141693f1e169751}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_adb4c0134fce273867141693f1e169751}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!host\+Name\+Index@{host\+Name\+Index}}
+\index{host\+Name\+Index@{host\+Name\+Index}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{host\+Name\+Index}{hostNameIndex}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+host\+Name\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+The hostname the event occurred on (as an index into a dictionary, used by \textquotesingle{}remote\textquotesingle{} profilers for efficiency)? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aec15467b3a256046f8402f3a086ce70d}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aec15467b3a256046f8402f3a086ce70d}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!message@{message}}
+\index{message@{message}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+message\hspace{0.3cm}{\ttfamily [protected]}}
+
+Optional event message \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a76097357910684be9b8701f2a111c60f}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a76097357910684be9b8701f2a111c60f}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!result\+Set\+Id@{result\+Set\+Id}}
+\index{result\+Set\+Id@{result\+Set\+Id}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{result\+Set\+Id}{resultSetId}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+result\+Set\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+Associated result set (-\/1 for none) \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_af5386e1f6681fdf030b5f693dec2440c}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_af5386e1f6681fdf030b5f693dec2440c}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!statement\+Id@{statement\+Id}}
+\index{statement\+Id@{statement\+Id}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{statement\+Id}{statementId}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+statement\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+Associated statement (-\/1 for none) \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_abdd68063adb3e03ed361c7559df4d401}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_abdd68063adb3e03ed361c7559df4d401}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!T\+Y\+P\+E\+\_\+\+E\+X\+E\+C\+U\+TE@{T\+Y\+P\+E\+\_\+\+E\+X\+E\+C\+U\+TE}}
+\index{T\+Y\+P\+E\+\_\+\+E\+X\+E\+C\+U\+TE@{T\+Y\+P\+E\+\_\+\+E\+X\+E\+C\+U\+TE}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+E\+X\+E\+C\+U\+TE}{TYPE\_EXECUTE}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+T\+Y\+P\+E\+\_\+\+E\+X\+E\+C\+U\+TE = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+Profiler event for prepared statements being executed \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a6d3e740793e368162fd794382f622948}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a6d3e740793e368162fd794382f622948}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!T\+Y\+P\+E\+\_\+\+F\+E\+T\+CH@{T\+Y\+P\+E\+\_\+\+F\+E\+T\+CH}}
+\index{T\+Y\+P\+E\+\_\+\+F\+E\+T\+CH@{T\+Y\+P\+E\+\_\+\+F\+E\+T\+CH}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+F\+E\+T\+CH}{TYPE\_FETCH}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+T\+Y\+P\+E\+\_\+\+F\+E\+T\+CH = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+Profiler event for result sets being retrieved \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad5c70376b24fea58a26f004a6ef96324}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad5c70376b24fea58a26f004a6ef96324}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+R\+E\+A\+T\+I\+ON@{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+R\+E\+A\+T\+I\+ON}}
+\index{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+R\+E\+A\+T\+I\+ON@{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+R\+E\+A\+T\+I\+ON}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+R\+E\+A\+T\+I\+ON}{TYPE\_OBJECT\_CREATION}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+T\+Y\+P\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+C\+R\+E\+A\+T\+I\+ON = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+Profiler creating object type event \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad19a19412128007ed0c00a9fcd4053a7}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_ad19a19412128007ed0c00a9fcd4053a7}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!T\+Y\+P\+E\+\_\+\+P\+R\+E\+P\+A\+RE@{T\+Y\+P\+E\+\_\+\+P\+R\+E\+P\+A\+RE}}
+\index{T\+Y\+P\+E\+\_\+\+P\+R\+E\+P\+A\+RE@{T\+Y\+P\+E\+\_\+\+P\+R\+E\+P\+A\+RE}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+P\+R\+E\+P\+A\+RE}{TYPE\_PREPARE}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+P\+A\+RE = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+Profiler event for prepared statements being prepared \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa283ffd96cd013b7714c84b1a592df91}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_aa283ffd96cd013b7714c84b1a592df91}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!T\+Y\+P\+E\+\_\+\+Q\+U\+E\+RY@{T\+Y\+P\+E\+\_\+\+Q\+U\+E\+RY}}
+\index{T\+Y\+P\+E\+\_\+\+Q\+U\+E\+RY@{T\+Y\+P\+E\+\_\+\+Q\+U\+E\+RY}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+Q\+U\+E\+RY}{TYPE\_QUERY}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+T\+Y\+P\+E\+\_\+\+Q\+U\+E\+RY = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+Profiler event for a query being executed \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a708d4df0927f033994b987028442c3f8}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a708d4df0927f033994b987028442c3f8}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!T\+Y\+P\+E\+\_\+\+S\+L\+O\+W\+\_\+\+Q\+U\+E\+RY@{T\+Y\+P\+E\+\_\+\+S\+L\+O\+W\+\_\+\+Q\+U\+E\+RY}}
+\index{T\+Y\+P\+E\+\_\+\+S\+L\+O\+W\+\_\+\+Q\+U\+E\+RY@{T\+Y\+P\+E\+\_\+\+S\+L\+O\+W\+\_\+\+Q\+U\+E\+RY}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+S\+L\+O\+W\+\_\+\+Q\+U\+E\+RY}{TYPE\_SLOW\_QUERY}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+T\+Y\+P\+E\+\_\+\+S\+L\+O\+W\+\_\+\+Q\+U\+E\+RY = 6\hspace{0.3cm}{\ttfamily [static]}}
+
+Profiler event for slow query \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a09239ec47cc814e66d678151c649c362}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_a09239ec47cc814e66d678151c649c362}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}!T\+Y\+P\+E\+\_\+\+W\+A\+RN@{T\+Y\+P\+E\+\_\+\+W\+A\+RN}}
+\index{T\+Y\+P\+E\+\_\+\+W\+A\+RN@{T\+Y\+P\+E\+\_\+\+W\+A\+RN}!com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event@{com\+::mysql\+::jdbc\+::profiler\+::\+Profiler\+Event}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+W\+A\+RN}{TYPE\_WARN}}
+{\footnotesize\ttfamily final byte com.\+mysql.\+jdbc.\+profiler.\+Profiler\+Event.\+T\+Y\+P\+E\+\_\+\+W\+A\+RN = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+A Profiler warning event 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/profiler/Profiler\+Event.\+java\end{DoxyCompactItemize}

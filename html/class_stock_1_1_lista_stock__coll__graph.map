@@ -1,0 +1,5 @@
+<map id="Stock.ListaStock" name="Stock.ListaStock">
+<area shape="rect" id="node3" href="$class_stock_1_1_modelo_columnas_tabla_stock.html" title="Stock.ModeloColumnasTabla\lStock" alt="" coords="497,57,688,98"/>
+<area shape="rect" id="node5" href="$class_stock_1_1_trazador_tabla_stock.html" title="Stock.TrazadorTablaStock" alt="" coords="221,97,396,124"/>
+<area shape="rect" id="node7" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="496,123,689,149"/>
+</map>

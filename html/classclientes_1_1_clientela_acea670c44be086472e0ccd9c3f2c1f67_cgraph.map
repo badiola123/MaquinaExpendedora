@@ -1,0 +1,7 @@
+<map id="clientes.Clientela.actualizar" name="clientes.Clientela.actualizar">
+<area shape="rect" id="node2" href="$classclientes_1_1_clientela.html#a2892095286ae0f52220099674a8b90d8" title="clientes.Clientela.cargar\lDatos" alt="" coords="235,64,396,105"/>
+<area shape="rect" id="node3" href="$classclientes_1_1_cliente.html#aaedfb1a4a28af84fb0e22c75d0d9dfdd" title="clientes.Cliente.getNombre\lColumnas" alt="" coords="457,5,636,47"/>
+<area shape="rect" id="node4" href="$classconexion_s_q_l_1_1_comandos.html#aa1dc46cfa52b931d7252da826880372d" title="conexionSQL.Comandos.select" alt="" coords="444,71,649,98"/>
+<area shape="rect" id="node6" href="$classvistas_1_1_principal.html#a2330cd451138f9f602cee0c5c0cd5c08" title="vistas.Principal.getTablacliente" alt="" coords="447,122,647,149"/>
+<area shape="rect" id="node5" href="$classconexion_s_q_l_1_1_my_data_access.html#ae8d04039a000d2b3e7dc72c99be7c551" title="conexionSQL.MyDataAccess.get\lQuery" alt="" coords="697,64,912,105"/>
+</map>

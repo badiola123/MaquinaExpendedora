@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.StatementInterceptor.init" name="com.mysql.jdbc.StatementInterceptor.init">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter.html#ae2a1db7cc624f326d2a0bf7d1b5b6e3d" title="com.mysql.jdbc.Reflective\lStatementInterceptorAdapter.init" alt="" coords="238,5,447,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter.html#acf5784b9b687c7d58d92492e2bd6a800" title="com.mysql.jdbc.V1toV2Statement\lInterceptorAdapter.init" alt="" coords="232,71,453,112"/>
+</map>

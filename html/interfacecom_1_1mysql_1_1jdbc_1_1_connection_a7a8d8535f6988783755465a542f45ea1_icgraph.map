@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.Connection.getActiveStatementCount" name="com.mysql.jdbc.Connection.getActiveStatementCount">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a72b79457a247fb0cedc5437e3d0d4cf2" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getActiveStatementCount" alt="" coords="259,5,545,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a67cdc2b43a1d7ac490ee30dd639ebd48" title="testsuite.regression.Statement\lRegressionTest.testBug25073" alt="" coords="302,71,502,112"/>
+</map>

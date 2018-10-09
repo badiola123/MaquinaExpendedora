@@ -1,0 +1,5 @@
+<map id="comunicacion.ModuloXBee.getRecibir" name="comunicacion.ModuloXBee.getRecibir">
+<area shape="rect" id="node2" href="$class_dialogos_1_1_dialogo_edicion.html#a3faa9a40dae2814c946acaaacec3f708" title="Dialogos.DialogoEdicion.\lDialogoEdicion" alt="" coords="265,5,432,47"/>
+<area shape="rect" id="node3" href="$classvistas_1_1_panel_crear.html#aa70ba36abb988733928cb8f23c920262" title="vistas.PanelCrear.PanelCrear" alt="" coords="253,71,444,98"/>
+<area shape="rect" id="node4" href="$classvistas_1_1_panel_editar.html#aaa23e1d6431066d28fb187133a1a91e3" title="vistas.PanelEditar.Panel\lEditar" alt="" coords="267,123,430,164"/>
+</map>

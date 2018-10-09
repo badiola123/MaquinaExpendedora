@@ -1,0 +1,42 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_security}{}\section{com.\+mysql.\+jdbc.\+Security Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_security}\index{com.\+mysql.\+jdbc.\+Security@{com.\+mysql.\+jdbc.\+Security}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_security_addff67ad545fe6c84cfacf80dbacdf4f}{xor\+String}} (byte\mbox{[}$\,$\mbox{]} from, byte\mbox{[}$\,$\mbox{]} to, byte\mbox{[}$\,$\mbox{]} scramble, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_security_aaef7d292418168c6a02db7610e3da156}\label{classcom_1_1mysql_1_1jdbc_1_1_security_aaef7d292418168c6a02db7610e3da156}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries scramble411} (String password, String seed, String password\+Encoding)  throws No\+Such\+Algorithm\+Exception, Unsupported\+Encoding\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Methods for doing secure authentication with My\+S\+Q\+L-\/4.\+1 and newer. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_security_addff67ad545fe6c84cfacf80dbacdf4f}\label{classcom_1_1mysql_1_1jdbc_1_1_security_addff67ad545fe6c84cfacf80dbacdf4f}} 
+\index{com\+::mysql\+::jdbc\+::\+Security@{com\+::mysql\+::jdbc\+::\+Security}!xor\+String@{xor\+String}}
+\index{xor\+String@{xor\+String}!com\+::mysql\+::jdbc\+::\+Security@{com\+::mysql\+::jdbc\+::\+Security}}
+\subsubsection{\texorpdfstring{xor\+String()}{xorString()}}
+{\footnotesize\ttfamily static void com.\+mysql.\+jdbc.\+Security.\+xor\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{from,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{to,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{scramble,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encrypt/\+Decrypt function used for password encryption in authentication
+
+Simple X\+OR is used here but it is OK as we crypt random strings
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & IN Data for encryption \\
+\hline
+{\em to} & O\+UT Encrypt data to the buffer (may be the same) \\
+\hline
+{\em scramble} & IN Scramble used for encryption \\
+\hline
+{\em length} & IN Length of data to encrypt \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Security.\+java\end{DoxyCompactItemize}

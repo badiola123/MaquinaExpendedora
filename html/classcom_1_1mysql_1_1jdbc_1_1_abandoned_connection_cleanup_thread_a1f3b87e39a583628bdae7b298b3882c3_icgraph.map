@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.AbandonedConnectionCleanupThread.checkedShutdown" name="com.mysql.jdbc.AbandonedConnectionCleanupThread.checkedShutdown">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread.html#aadfff88a87e766a3c6ad7cc6ced32b89" title="com.mysql.jdbc.Abandoned\lConnectionCleanupThread.shutdown" alt="" coords="280,13,512,54"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread.html#abf43aba7ad8fa551a194474046c02235" title="com.mysql.jdbc.Abandoned\lConnectionCleanupThread.unchecked\lShutdown" alt="" coords="560,5,800,61"/>
+</map>

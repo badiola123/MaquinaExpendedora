@@ -1,0 +1,5 @@
+<map id="Productos.Inventario" name="Productos.Inventario">
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="540,56,733,83"/>
+<area shape="rect" id="node4" href="$class_productos_1_1_modelo_columnas_tabla_producto.html" title="Productos.ModeloColumnas\lTablaProducto" alt="" coords="544,107,729,149"/>
+<area shape="rect" id="node6" href="$class_productos_1_1_trazador_tabla_producto.html" title="Productos.TrazadorTablaProducto" alt="" coords="221,148,440,175"/>
+</map>

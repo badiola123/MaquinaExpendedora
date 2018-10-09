@@ -1,0 +1,6 @@
+<map id="venta.Venta.getNombreColumnas" name="venta.Venta.getNombreColumnas">
+<area shape="rect" id="node2" href="$classcomunicacion_1_1_modulo_x_bee.html#a34debd695cc102e385156983a52a658c" title="comunicacion.ModuloXBee.confirmar\lVenta" alt="" coords="268,5,503,47"/>
+<area shape="rect" id="node4" href="$classventa_1_1_lista_ventas.html#a5addbb3cc5ae30ddd938cc5ae3021a48" title="venta.ListaVentas.cargar\lDatos" alt="" coords="303,71,468,112"/>
+<area shape="rect" id="node3" href="$classcomunicacion_1_1_recepcion.html#a83305dfbd31ca36b129c0cfb4e86a486" title="comunicacion.Recepcion.data\lReceived" alt="" coords="552,5,748,47"/>
+<area shape="rect" id="node5" href="$classventa_1_1_lista_ventas.html#a69da326fde1b9ceea242d38147016528" title="venta.ListaVentas.ListaVentas" alt="" coords="551,78,749,105"/>
+</map>

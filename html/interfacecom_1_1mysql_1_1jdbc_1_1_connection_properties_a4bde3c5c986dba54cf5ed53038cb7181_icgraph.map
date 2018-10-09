@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setLoggerClassName" name="com.mysql.jdbc.ConnectionProperties.setLoggerClassName">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a83bbb6fcf7e7526415776d20aff135fd" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setLoggerClassName" alt="" coords="263,5,527,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a2d01c838ac3a65f71743aaa28f220ed0" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setLoggerClassName" alt="" coords="265,71,524,112"/>
+</map>

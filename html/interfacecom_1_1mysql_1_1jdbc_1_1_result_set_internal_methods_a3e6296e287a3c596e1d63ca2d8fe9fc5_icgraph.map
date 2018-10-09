@@ -1,0 +1,13 @@
+<map id="com.mysql.jdbc.ResultSetInternalMethods.reallyResult" name="com.mysql.jdbc.ResultSetInternalMethods.reallyResult">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4c83f4279e13f60aa65dd4de3d2117e1" title="com.mysql.jdbc.PreparedStatement.execute" alt="" coords="240,143,520,170"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a698a1458d2109c83b0e3beaec53ce933" title="com.mysql.jdbc.Statement\lImpl.getLongUpdateCount" alt="" coords="291,195,469,236"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#ae5d2fb5a67dcfe89312b110c52e2194d" title="com.mysql.jdbc.Statement\lImpl.getMoreResults" alt="" coords="291,260,469,301"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a0e97bb2074d21e45c4849e5c2b1dd0ef" title="com.mysql.jdbc.Statement\lImpl.getResultSet" alt="" coords="291,71,469,112"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a49c1971a757125e970b073a7b7295a14" title="com.mysql.jdbc.Statement\lImpl.getLargeUpdateCount" alt="" coords="291,328,469,369"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_client_info_provider_s_p.html#a75c1a50050648fcab79401cd73342756" title="com.mysql.jdbc.JDBC4Client\lInfoProviderSP.getClientInfo" alt="" coords="603,5,794,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_client_info_provider_s_p.html#afc850b09b440756a3a5ecc69b8745ce4" title="com.mysql.jdbc.JDBC4Client\lInfoProviderSP.setClientInfo" alt="" coords="603,136,794,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a260be2cc343e066802a49720c672da77" title="com.mysql.jdbc.PreparedStatement.get\lMetaData" alt="" coords="573,71,825,112"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test.html#acc4c393fcbc483c6a959f10f561bb1b7" title="testsuite.regression.jdbc4.\lConnectionRegressionTest.testBug75168" alt="" coords="568,201,829,243"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a45f6666d2a8fbbc59bb210cd6e6f33a5" title="testsuite.regression.Statement\lRegressionTest.testBug28256" alt="" coords="599,267,799,308"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a5e320d2717fe1d637befef4f837719b6" title="com.mysql.jdbc.Statement\lImpl.getUpdateCount" alt="" coords="609,332,788,373"/>
+</map>

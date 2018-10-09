@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.Connection.setFailedOver" name="com.mysql.jdbc.Connection.setFailedOver">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a5ca644a1dbabdfa779153552d47fc826" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setFailedOver" alt="" coords="259,5,477,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#af950571e47bab54277504fca71cbefd5" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setFailedOver" alt="" coords="261,71,475,112"/>
+</map>

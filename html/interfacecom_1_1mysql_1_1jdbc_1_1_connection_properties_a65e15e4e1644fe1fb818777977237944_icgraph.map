@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setMaxQuerySizeToLog" name="com.mysql.jdbc.ConnectionProperties.setMaxQuerySizeToLog">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ac2fc5533a1f39ec379f5641cd048a91f" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setMaxQuerySizeToLog" alt="" coords="277,5,556,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#af7d68fcc0013bf2144e290097365b6ea" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setMaxQuerySizeToLog" alt="" coords="279,71,554,112"/>
+</map>

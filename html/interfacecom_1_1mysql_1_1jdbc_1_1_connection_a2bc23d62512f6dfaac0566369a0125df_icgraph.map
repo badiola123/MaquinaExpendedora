@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.Connection.hasTriedMaster" name="com.mysql.jdbc.Connection.hasTriedMaster">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a81b35d775907ec47cd7d3b1007700939" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.hasTriedMaster" alt="" coords="261,5,491,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a0c6bc4351473d95ef46999773702ed18" title="com.mysql.jdbc.MultiHost\lMySQLConnection.hasTriedMaster" alt="" coords="264,71,488,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="clientes.Clientela.agrupar" name="clientes.Clientela.agrupar">
+<area shape="rect" id="node2" href="$classvistas_1_1_panel_usuario.html#a21281d964400efa712d8d87864cf4d10" title="vistas.PanelUsuario.Panel\lUsuario" alt="" coords="240,5,413,47"/>
+<area shape="rect" id="node3" href="$classvistas_1_1_panel_usuario_1_1_accion_agregar_i_d.html#af6201c55723abc3b5517c8a18b18faa7" title="vistas.PanelUsuario.Accion\lAgregarID.actionPerformed" alt="" coords="237,71,417,112"/>
+<area shape="rect" id="node4" href="$classvistas_1_1_panel_usuario_1_1_accion_agregar_apellido.html#ac651cbb5fab14cdf904bc5cef9b53d05" title="vistas.PanelUsuario.Accion\lAgregarApellido.actionPerformed" alt="" coords="221,136,432,177"/>
+<area shape="rect" id="node5" href="$classvistas_1_1_panel_usuario_1_1_accion_agregar_edad.html#ab9cd4d3b054617348763f4ffb3b20a32" title="vistas.PanelUsuario.Accion\lAgregarEdad.actionPerformed" alt="" coords="229,201,424,243"/>
+<area shape="rect" id="node6" href="$classvistas_1_1_panel_usuario_1_1_accion_agregar_c_p.html#aa549660e9be2d4a07ad4ad5d13697959" title="vistas.PanelUsuario.Accion\lAgregarCP.actionPerformed" alt="" coords="235,267,418,308"/>
+</map>

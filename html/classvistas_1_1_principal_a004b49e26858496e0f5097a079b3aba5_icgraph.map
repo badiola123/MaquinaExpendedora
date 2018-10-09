@@ -1,0 +1,8 @@
+<map id="vistas.Principal.getTablastock" name="vistas.Principal.getTablastock">
+<area shape="rect" id="node2" href="$classcomunicacion_1_1_modulo_x_bee.html#aa9794310e90df8198dbcfc8aacaa1405" title="comunicacion.ModuloXBee.comprobar\lDatos" alt="" coords="248,5,491,47"/>
+<area shape="rect" id="node3" href="$class_productos_1_1_inventario.html#a89ddb54b03480d0e837f56be549b755c" title="Productos.Inventario.cargar\lDatos" alt="" coords="280,71,459,112"/>
+<area shape="rect" id="node5" href="$class_stock_1_1_lista_stock.html#ae43d6e1304e10935ed275f770f6fd743" title="Stock.ListaStock.cargarDatos" alt="" coords="271,137,467,163"/>
+<area shape="rect" id="node7" href="$classvistas_1_1_panel_editar.html#abfa1e278ba63d7cf2a14c02804dcadf1" title="vistas.PanelEditar.action\lPerformed" alt="" coords="287,188,452,229"/>
+<area shape="rect" id="node4" href="$class_productos_1_1_inventario.html#a679f0131ec8bfb9a78d5071ee72f6811" title="Productos.Inventario.Inventario" alt="" coords="539,78,736,105"/>
+<area shape="rect" id="node6" href="$class_stock_1_1_lista_stock.html#a21df0fe48a39fb1aac80a2ca7fb67c0a" title="Stock.ListaStock.ListaStock" alt="" coords="543,137,731,163"/>
+</map>

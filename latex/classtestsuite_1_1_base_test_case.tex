@@ -1,0 +1,665 @@
+\hypertarget{classtestsuite_1_1_base_test_case}{}\section{testsuite.\+Base\+Test\+Case Class Reference}
+\label{classtestsuite_1_1_base_test_case}\index{testsuite.\+Base\+Test\+Case@{testsuite.\+Base\+Test\+Case}}
+
+
+Inherits Test\+Case.
+
+
+
+Inherited by \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test}{testsuite.\+perf.\+Base\+Perf\+Test}}, \mbox{\hyperlink{classtestsuite_1_1perf_1_1_retrieval_perf_test}{testsuite.\+perf.\+Retrieval\+Perf\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_blob_regression_test}{testsuite.\+regression.\+Blob\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_cached_rowset_test}{testsuite.\+regression.\+Cached\+Rowset\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_callable_statement_regression_test}{testsuite.\+regression.\+Callable\+Statement\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_charset_regression_test}{testsuite.\+regression.\+Charset\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_connection_regression_test}{testsuite.\+regression.\+Connection\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_data_source_regression_test}{testsuite.\+regression.\+Data\+Source\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_escape_processor_regression_test}{testsuite.\+regression.\+Escape\+Processor\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc42_1_1_connection_regression_test}{testsuite.\+regression.\+jdbc42.\+Connection\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc42_1_1_result_set_regression_test}{testsuite.\+regression.\+jdbc42.\+Result\+Set\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test}{testsuite.\+regression.\+jdbc42.\+Statement\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test}{testsuite.\+regression.\+jdbc4.\+Connection\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc4_1_1_exception_subclasses_test}{testsuite.\+regression.\+jdbc4.\+Exception\+Subclasses\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc4_1_1_meta_data_regression_test}{testsuite.\+regression.\+jdbc4.\+Meta\+Data\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc4_1_1_statement_regression_test}{testsuite.\+regression.\+jdbc4.\+Statement\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_meta_data_regression_test}{testsuite.\+regression.\+Meta\+Data\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_micro_performance_regression_test}{testsuite.\+regression.\+Micro\+Performance\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_numbers_regression_test}{testsuite.\+regression.\+Numbers\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test}{testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_result_set_regression_test}{testsuite.\+regression.\+Result\+Set\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_statement_regression_test}{testsuite.\+regression.\+Statement\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_stress_regression_test}{testsuite.\+regression.\+Stress\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_string_regression_test}{testsuite.\+regression.\+String\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_subqueries_regression_test}{testsuite.\+regression.\+Subqueries\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_syntax_regression_test}{testsuite.\+regression.\+Syntax\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1regression_1_1_utils_regression_test}{testsuite.\+regression.\+Utils\+Regression\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_blob_test}{testsuite.\+simple.\+Blob\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_callable_statement_test}{testsuite.\+simple.\+Callable\+Statement\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_charset_test}{testsuite.\+simple.\+Charset\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_connection_test}{testsuite.\+simple.\+Connection\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_data_source_test}{testsuite.\+simple.\+Data\+Source\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_date_test}{testsuite.\+simple.\+Date\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_escape_processing_test}{testsuite.\+simple.\+Escape\+Processing\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1jdbc42_1_1_connection_test}{testsuite.\+simple.\+jdbc42.\+Connection\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1jdbc42_1_1_result_set_test}{testsuite.\+simple.\+jdbc42.\+Result\+Set\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1jdbc42_1_1_statements_test}{testsuite.\+simple.\+jdbc42.\+Statements\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1jdbc4_1_1_statements_test}{testsuite.\+simple.\+jdbc4.\+Statements\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_metadata_test}{testsuite.\+simple.\+Metadata\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_mini_admin_test}{testsuite.\+simple.\+Mini\+Admin\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_multi_host_connection_test}{testsuite.\+simple.\+Multi\+Host\+Connection\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_numbers_test}{testsuite.\+simple.\+Numbers\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_read_only_callable_statement_test}{testsuite.\+simple.\+Read\+Only\+Callable\+Statement\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_result_set_test}{testsuite.\+simple.\+Result\+Set\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_server_controller_test}{testsuite.\+simple.\+Server\+Controller\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_split_d_bdot_name_test}{testsuite.\+simple.\+Split\+D\+Bdot\+Name\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_s_s_l_test}{testsuite.\+simple.\+S\+S\+L\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_statements_test}{testsuite.\+simple.\+Statements\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_string_utils_test}{testsuite.\+simple.\+String\+Utils\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_transaction_test}{testsuite.\+simple.\+Transaction\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_traversal_test}{testsuite.\+simple.\+Traversal\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_updatability_test}{testsuite.\+simple.\+Updatability\+Test}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_utils_test}{testsuite.\+simple.\+Utils\+Test}}, and \mbox{\hyperlink{classtestsuite_1_1simple_1_1_x_a_test}{testsuite.\+simple.\+X\+A\+Test}}.
+
+
+
+Collaboration diagram for testsuite.\+Base\+Test\+Case\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_test_case__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Mock\+Connection\+Configuration}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtestsuite_1_1_base_test_case_a353e63229f72905eb043169b6c2002b5}{Base\+Test\+Case}} (String name)
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a694c26abcb73b73849f9d10ffdc4ebae}{get\+Connection\+With\+Props}} (Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ad4d75cf77ae765c312cda0d97c610a21}\label{classtestsuite_1_1_base_test_case_ad4d75cf77ae765c312cda0d97c610a21}} 
+void {\bfseries log\+Debug} (String message)
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a195f5d285c7979328734606d08ad15b1}{set\+Up}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a51c7d76ab24b0c966f956250fd7a4f52}{tear\+Down}} ()  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a43e16f16b388ad8133b17147588e6670}\label{classtestsuite_1_1_base_test_case_a43e16f16b388ad8133b17147588e6670}} 
+void {\bfseries create\+Schema\+Object} (String object\+Type, String object\+Name, String columns\+And\+Other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a7c9a8512d5ed0cfbe4b80a8f1b990b24}\label{classtestsuite_1_1_base_test_case_a7c9a8512d5ed0cfbe4b80a8f1b990b24}} 
+void {\bfseries create\+Schema\+Object} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String object\+Type, String object\+Name, String columns\+And\+Other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ab964ad68ca60ae9fef1deeef48b25c79}\label{classtestsuite_1_1_base_test_case_ab964ad68ca60ae9fef1deeef48b25c79}} 
+void {\bfseries create\+Function} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String function\+Name, String function\+Defn)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a308f048150ff4bde942c42021b9b2a09}\label{classtestsuite_1_1_base_test_case_a308f048150ff4bde942c42021b9b2a09}} 
+void {\bfseries create\+Function} (String function\+Name, String function\+Defn)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae40d8d8c945d750bd064ea265a1c48f3}\label{classtestsuite_1_1_base_test_case_ae40d8d8c945d750bd064ea265a1c48f3}} 
+void {\bfseries drop\+Function} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String function\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a361ab79861482404c0eb3c637fbf92e2}\label{classtestsuite_1_1_base_test_case_a361ab79861482404c0eb3c637fbf92e2}} 
+void {\bfseries drop\+Function} (String function\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a255cff56778ce81df619a9fb50a36696}\label{classtestsuite_1_1_base_test_case_a255cff56778ce81df619a9fb50a36696}} 
+void {\bfseries create\+Procedure} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String procedure\+Name, String procedure\+Defn)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a5d65f7a995144e564691da9ee898406a}\label{classtestsuite_1_1_base_test_case_a5d65f7a995144e564691da9ee898406a}} 
+void {\bfseries create\+Procedure} (String procedure\+Name, String procedure\+Defn)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a479da62297639342738924a0c27f88af}\label{classtestsuite_1_1_base_test_case_a479da62297639342738924a0c27f88af}} 
+void {\bfseries drop\+Procedure} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String procedure\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae81b9c574af66ec9f7af48837aca37fc}\label{classtestsuite_1_1_base_test_case_ae81b9c574af66ec9f7af48837aca37fc}} 
+void {\bfseries drop\+Procedure} (String procedure\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a9b100bed1696694cdede1b8181bdf70a}\label{classtestsuite_1_1_base_test_case_a9b100bed1696694cdede1b8181bdf70a}} 
+void {\bfseries create\+Table} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String table\+Name, String columns\+And\+Other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_afa4c0d18646a12915f111869b2275b87}\label{classtestsuite_1_1_base_test_case_afa4c0d18646a12915f111869b2275b87}} 
+void {\bfseries create\+Table} (String table\+Name, String columns\+And\+Other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a16751e4f9c11d900e1d37e7f073950cd}\label{classtestsuite_1_1_base_test_case_a16751e4f9c11d900e1d37e7f073950cd}} 
+void {\bfseries create\+Table} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String table\+Name, String columns\+And\+Other\+Stuff, String engine)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a46f784bec92e5fb4b4c8fcdb7817c4b3}\label{classtestsuite_1_1_base_test_case_a46f784bec92e5fb4b4c8fcdb7817c4b3}} 
+void {\bfseries create\+Table} (String table\+Name, String columns\+And\+Other\+Stuff, String engine)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a84f311adb4febe06deab08a132f85eaf}\label{classtestsuite_1_1_base_test_case_a84f311adb4febe06deab08a132f85eaf}} 
+void {\bfseries drop\+Table} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String table\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a6c0b307be5e764c26f34b91f6d6a6467}\label{classtestsuite_1_1_base_test_case_a6c0b307be5e764c26f34b91f6d6a6467}} 
+void {\bfseries drop\+Table} (String table\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a983df40dad5ef6b021807e9e04cc72b7}\label{classtestsuite_1_1_base_test_case_a983df40dad5ef6b021807e9e04cc72b7}} 
+void {\bfseries create\+View} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String view\+Name, String columns\+And\+Other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a283fa00242603070d4f3b90350114b56}\label{classtestsuite_1_1_base_test_case_a283fa00242603070d4f3b90350114b56}} 
+void {\bfseries create\+View} (String view\+Name, String columns\+And\+Other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a3b274340f82f139a17b459cd34092a63}\label{classtestsuite_1_1_base_test_case_a3b274340f82f139a17b459cd34092a63}} 
+void {\bfseries drop\+View} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String view\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a5c3ce4b39ab6ae72b494c165fc53a7d3}\label{classtestsuite_1_1_base_test_case_a5c3ce4b39ab6ae72b494c165fc53a7d3}} 
+void {\bfseries drop\+View} (String view\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a19d73ebe2a92f5a1813d92d21fcd6431}\label{classtestsuite_1_1_base_test_case_a19d73ebe2a92f5a1813d92d21fcd6431}} 
+void {\bfseries create\+Database} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String database\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aea6308a3defd8463397b835996508c4e}\label{classtestsuite_1_1_base_test_case_aea6308a3defd8463397b835996508c4e}} 
+void {\bfseries create\+Database} (String database\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a4f50d8b7e052b9a454a2edc5d4c73cfd}\label{classtestsuite_1_1_base_test_case_a4f50d8b7e052b9a454a2edc5d4c73cfd}} 
+void {\bfseries drop\+Database} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String database\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aaef6c7d74693cac4684e1fc34a35524b}\label{classtestsuite_1_1_base_test_case_aaef6c7d74693cac4684e1fc34a35524b}} 
+void {\bfseries drop\+Database} (String database\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a572945638013e76cba6fa17a9e7f4ee5}\label{classtestsuite_1_1_base_test_case_a572945638013e76cba6fa17a9e7f4ee5}} 
+void {\bfseries create\+User} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String user\+Name, String other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_afd3a6d04fc70a7d2fbff92ed1e8cb01d}\label{classtestsuite_1_1_base_test_case_afd3a6d04fc70a7d2fbff92ed1e8cb01d}} 
+void {\bfseries create\+User} (String user\+Name, String other\+Stuff)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a977fa9542cf99aaec9354c7fa6b2a677}\label{classtestsuite_1_1_base_test_case_a977fa9542cf99aaec9354c7fa6b2a677}} 
+void {\bfseries drop\+User} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String user)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a9a9d1bad807c93b02d0cdfda3b217195}\label{classtestsuite_1_1_base_test_case_a9a9d1bad807c93b02d0cdfda3b217195}} 
+void {\bfseries drop\+User} (String user)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a8778ffee4f5311ddcf9f34a431e65fd5}\label{classtestsuite_1_1_base_test_case_a8778ffee4f5311ddcf9f34a431e65fd5}} 
+void {\bfseries drop\+Schema\+Object} (String object\+Type, String object\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a7c25fb4e0676e75d993648ef990ee28f}\label{classtestsuite_1_1_base_test_case_a7c25fb4e0676e75d993648ef990ee28f}} 
+void {\bfseries drop\+Schema\+Object} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} st, String object\+Type, String object\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a5aac2df8b2b635a640bd2ca0f9df4f63}\label{classtestsuite_1_1_base_test_case_a5aac2df8b2b635a640bd2ca0f9df4f63}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Admin\+Connection} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a1b9097dbfa04cb3fda0be74767ee8b02}\label{classtestsuite_1_1_base_test_case_a1b9097dbfa04cb3fda0be74767ee8b02}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Admin\+Connection\+With\+Props} (Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a7a043249373f91474cb8dbfad42ea105}\label{classtestsuite_1_1_base_test_case_a7a043249373f91474cb8dbfad42ea105}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Connection\+With\+Props} (String props\+List)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a6d4d784759272e95598bed255fe533fa}\label{classtestsuite_1_1_base_test_case_a6d4d784759272e95598bed255fe533fa}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Connection\+With\+Props} (String url, String props\+List)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a63736613e1c2617aa290baa6ecadaf1b}\label{classtestsuite_1_1_base_test_case_a63736613e1c2617aa290baa6ecadaf1b}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Connection\+With\+Props} (String url, Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_af4fbedf355c4e4adc888e5acb709694f}\label{classtestsuite_1_1_base_test_case_af4fbedf355c4e4adc888e5acb709694f}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+New\+Connection} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_af0bcfb0a02343c87cca38ff29fae2f4d}\label{classtestsuite_1_1_base_test_case_af0bcfb0a02343c87cca38ff29fae2f4d}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+New\+Sha256\+Connection} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a06bbcacd72ff13e3905c04aada69feea}{get\+Instance\+Number}} ()
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a234990bc9494798d81b98dd40e7fe4eb}\label{classtestsuite_1_1_base_test_case_a234990bc9494798d81b98dd40e7fe4eb}} 
+String {\bfseries get\+Mysql\+Variable} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} c, String variable\+Name)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classtestsuite_1_1_base_test_case_ac50ae23586e12eaab184308368a6fb1d}{get\+Mysql\+Variable}} (String variable\+Name)  throws S\+Q\+L\+Exception 
+\item 
+Properties \mbox{\hyperlink{classtestsuite_1_1_base_test_case_ab63fc653810c4915e190196e7b3d6e6c}{get\+Properties\+From\+Testsuite\+Url}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a5a75db77f31d0984a0d1331dc49cadc0}\label{classtestsuite_1_1_base_test_case_a5a75db77f31d0984a0d1331dc49cadc0}} 
+Properties {\bfseries get\+Host\+Free\+Properties\+From\+Testsuite\+Url} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_af5813dd273ec517ee7393be19e26c3e7}\label{classtestsuite_1_1_base_test_case_af5813dd273ec517ee7393be19e26c3e7}} 
+Properties {\bfseries get\+Host\+Free\+Properties\+From\+Testsuite\+Url} (Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a5ca1f452f4a88327c0d35a85f1322d46}\label{classtestsuite_1_1_base_test_case_a5ca1f452f4a88327c0d35a85f1322d46}} 
+void {\bfseries remove\+Host\+Related\+Props} (Properties props)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a6a6e1d72f46dd17581da3f719a72417a}\label{classtestsuite_1_1_base_test_case_a6a6e1d72f46dd17581da3f719a72417a}} 
+int {\bfseries get\+Row\+Count} (String table\+Name)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a0cafe07cb8206e968a45d675446f2e48}\label{classtestsuite_1_1_base_test_case_a0cafe07cb8206e968a45d675446f2e48}} 
+Object {\bfseries get\+Single\+Indexed\+Value\+With\+Query} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} c, int column\+Index, String query)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a863b877857af0632dbdfb73b3cc0dfcc}\label{classtestsuite_1_1_base_test_case_a863b877857af0632dbdfb73b3cc0dfcc}} 
+Object {\bfseries get\+Single\+Indexed\+Value\+With\+Query} (int column\+Index, String query)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_acd63545de5bb38d1a442c2a09d3bddc4}\label{classtestsuite_1_1_base_test_case_acd63545de5bb38d1a442c2a09d3bddc4}} 
+Object {\bfseries get\+Single\+Value} (String table\+Name, String column\+Name, String where\+Clause)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a64b5c6d2782cd2ac6f359edf9b5c7365}\label{classtestsuite_1_1_base_test_case_a64b5c6d2782cd2ac6f359edf9b5c7365}} 
+Object {\bfseries get\+Single\+Value\+With\+Query} (String query)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a216bda00cffb011320f200b5dd78310d}\label{classtestsuite_1_1_base_test_case_a216bda00cffb011320f200b5dd78310d}} 
+String {\bfseries get\+Table\+Type\+Decl} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a0c430c33af3faad8e9490abda2054142}\label{classtestsuite_1_1_base_test_case_a0c430c33af3faad8e9490abda2054142}} 
+boolean {\bfseries is\+Admin\+Connection\+Configured} ()
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a38e227a349a04887dd5fdff34c746389}\label{classtestsuite_1_1_base_test_case_a38e227a349a04887dd5fdff34c746389}} 
+boolean {\bfseries is\+Server\+Running\+On\+Windows} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a2fb4c1ccc05d5db9f33abb34e9c2a9a7}\label{classtestsuite_1_1_base_test_case_a2fb4c1ccc05d5db9f33abb34e9c2a9a7}} 
+File {\bfseries new\+Temp\+Binary\+File} (String name, long size)  throws I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae5d273da4f580cf9778ec0c7c7072fad}\label{classtestsuite_1_1_base_test_case_ae5d273da4f580cf9778ec0c7c7072fad}} 
+final boolean {\bfseries run\+Long\+Tests} ()
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a3578b222700fc502212ce9834194ebaa}{run\+Test\+If\+Sys\+Prop\+Defined}} (String prop\+Name)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a145dcd536d811f0f904c1d711cf275f7}\label{classtestsuite_1_1_base_test_case_a145dcd536d811f0f904c1d711cf275f7}} 
+boolean {\bfseries run\+Multi\+Host\+Tests} ()
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a4098e9a480c1907875ded976cdbc81a3}{version\+Meets\+Minimum}} (int major, int minor)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a13e93e8347469a0c2e8dbf3be8795bb5}{version\+Meets\+Minimum}} (int major, int minor, int subminor)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a30a8a94757291826321a07c5b10a6233}{is\+Community\+Edition}} ()
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1_base_test_case_ae29a3a848b87638921a7078f572b3f83}{is\+Enterprise\+Edition}} ()
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_af67350d0499d7649ea352fddd70b0be2}\label{classtestsuite_1_1_base_test_case_af67350d0499d7649ea352fddd70b0be2}} 
+boolean {\bfseries is\+Class\+Available} (String classname)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aa78a5395ed790afc608520b5dc239552}\label{classtestsuite_1_1_base_test_case_aa78a5395ed790afc608520b5dc239552}} 
+boolean {\bfseries is\+Running\+On\+J\+Rockit} ()
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ad7304f085aa6f697299a0a10fb1f0e4d}\label{classtestsuite_1_1_base_test_case_ad7304f085aa6f697299a0a10fb1f0e4d}} 
+String {\bfseries random\+String} ()
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a604f630b7961dd73826ab5416a076ec7}\label{classtestsuite_1_1_base_test_case_a604f630b7961dd73826ab5416a076ec7}} 
+void {\bfseries cleanup\+Temp\+Files} (final File example\+Temp\+File, final String tempfile\+Prefix)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aa23dd720e89199dbafdc084069ed2ef3}\label{classtestsuite_1_1_base_test_case_aa23dd720e89199dbafdc084069ed2ef3}} 
+void {\bfseries assert\+Result\+Set\+Length} (Result\+Set rset, int len)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a9610d1a24e717741f2ec5cd310361d45}\label{classtestsuite_1_1_base_test_case_a9610d1a24e717741f2ec5cd310361d45}} 
+void {\bfseries assert\+Result\+Sets\+Equal} (Result\+Set control, Result\+Set test)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a64c93499839212c311d50823ef3f4edc}\label{classtestsuite_1_1_base_test_case_a64c93499839212c311d50823ef3f4edc}} 
+void {\bfseries assert\+Byte\+Array\+Equals} (String message, byte\mbox{[}$\,$\mbox{]} expected, byte\mbox{[}$\,$\mbox{]} actual)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a0a24b304ec6c8bcc8ffa37528d1c0800}\label{classtestsuite_1_1_base_test_case_a0a24b304ec6c8bcc8ffa37528d1c0800}} 
+void {\bfseries fill\+Primitive\+Defaults} (Class$<$?$>$ types\mbox{[}$\,$\mbox{]}, Object vals\mbox{[}$\,$\mbox{]}, int count)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aa0bd46e11f461b964afb1a93a6e5aa15}\label{classtestsuite_1_1_base_test_case_aa0bd46e11f461b964afb1a93a6e5aa15}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Failover\+Connection} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a7b89fc31036d3e6e4903f21c98477de4}\label{classtestsuite_1_1_base_test_case_a7b89fc31036d3e6e4903f21c98477de4}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Failover\+Connection} (Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a3ca1d1435694c5409c44d10e68800ccd}\label{classtestsuite_1_1_base_test_case_a3ca1d1435694c5409c44d10e68800ccd}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Master\+Slave\+Replication\+Connection} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aafbc4ce5f24d35545475dfe8ccd213f1}\label{classtestsuite_1_1_base_test_case_aafbc4ce5f24d35545475dfe8ccd213f1}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Master\+Slave\+Replication\+Connection} (Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae368e9f56d2795da57e928cba4528ebb}\label{classtestsuite_1_1_base_test_case_ae368e9f56d2795da57e928cba4528ebb}} 
+String {\bfseries get\+Master\+Slave\+Url} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ad6cc6fb4e11a39397721138337a9a099}\label{classtestsuite_1_1_base_test_case_ad6cc6fb4e11a39397721138337a9a099}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Load\+Balanced\+Connection} (int custom\+Host\+Location, String custom\+Host, Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aab97786f4a33c78651b4bae1898c9839}\label{classtestsuite_1_1_base_test_case_aab97786f4a33c78651b4bae1898c9839}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Load\+Balanced\+Connection} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_add047612e662b6cc0f4798f7a196050b}\label{classtestsuite_1_1_base_test_case_add047612e662b6cc0f4798f7a196050b}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Load\+Balanced\+Connection} (Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a417f5b5bd61fcf317f9c35c892a2a173}\label{classtestsuite_1_1_base_test_case_a417f5b5bd61fcf317f9c35c892a2a173}} 
+String {\bfseries get\+Port} (Properties props, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver}{Non\+Registering\+Driver}} d)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aa33289cf35fc9d325b815c6386586d38}\label{classtestsuite_1_1_base_test_case_aa33289cf35fc9d325b815c6386586d38}} 
+String {\bfseries get\+Port\+Free\+Hostname} (Properties props, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver}{Non\+Registering\+Driver}} d)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_af5d756474dc2a76bef281fc884529658}\label{classtestsuite_1_1_base_test_case_af5d756474dc2a76bef281fc884529658}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Unreliable\+Multi\+Host\+Connection} (String ha\+Mode, String\mbox{[}$\,$\mbox{]} host\+Names, Properties props, Set$<$ String $>$ downed\+Hosts)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_af564d6c77d426f7c2fbd614c4e8843f5}\label{classtestsuite_1_1_base_test_case_af564d6c77d426f7c2fbd614c4e8843f5}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Unreliable\+Failover\+Connection} (String\mbox{[}$\,$\mbox{]} host\+Names, Properties props)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae47036b912887e1198a33eeaf0dff29c}\label{classtestsuite_1_1_base_test_case_ae47036b912887e1198a33eeaf0dff29c}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Unreliable\+Failover\+Connection} (String\mbox{[}$\,$\mbox{]} host\+Names, Properties props, Set$<$ String $>$ downed\+Hosts)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a81c482cdb87cc311d0ed83ff480594bf}\label{classtestsuite_1_1_base_test_case_a81c482cdb87cc311d0ed83ff480594bf}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Unreliable\+Load\+Balanced\+Connection} (String\mbox{[}$\,$\mbox{]} host\+Names, Properties props)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_af1e7c3a34a87ab4a008843290942cdaa}\label{classtestsuite_1_1_base_test_case_af1e7c3a34a87ab4a008843290942cdaa}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Unreliable\+Load\+Balanced\+Connection} (String\mbox{[}$\,$\mbox{]} host\+Names, Properties props, Set$<$ String $>$ downed\+Hosts)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ad87384bfe06e3ddfbf89578316b176a2}\label{classtestsuite_1_1_base_test_case_ad87384bfe06e3ddfbf89578316b176a2}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}{Replication\+Connection}} {\bfseries get\+Unreliable\+Replication\+Connection} (String\mbox{[}$\,$\mbox{]} host\+Names, Properties props)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_add2c34fed4dd457540016f9d22a6fcb2}\label{classtestsuite_1_1_base_test_case_add2c34fed4dd457540016f9d22a6fcb2}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}{Replication\+Connection}} {\bfseries get\+Unreliable\+Replication\+Connection} (String\mbox{[}$\,$\mbox{]} host\+Names, Properties props, Set$<$ String $>$ downed\+Hosts)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a343014aac2808c32fbadb0f42a22f77d}\label{classtestsuite_1_1_base_test_case_a343014aac2808c32fbadb0f42a22f77d}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}{Replication\+Connection}} {\bfseries get\+Unreliable\+Replication\+Connection} (Set$<$ Mock\+Connection\+Configuration $>$ configs, Properties props)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a5c1fa014de36c1991223cb4b32cab1fc}\label{classtestsuite_1_1_base_test_case_a5c1fa014de36c1991223cb4b32cab1fc}} 
+boolean {\bfseries assert\+Equals\+F\+S\+Aware} (String match\+Str, String in\+Str)  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a9df2dad075d7a0d282a1c46a9be4bf66}\label{classtestsuite_1_1_base_test_case_a9df2dad075d7a0d282a1c46a9be4bf66}} 
+String {\bfseries remove\+Sql\+Mode} (String mode, String from\+Str)  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae34ffd921f16370341c4e642181840da}\label{classtestsuite_1_1_base_test_case_ae34ffd921f16370341c4e642181840da}} 
+static$<$ EX extends Throwable $>$ EX {\bfseries assert\+Throws} (Class$<$ EX $>$ throwable, Callable$<$?$>$ test\+Routine)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aeb8b95d92ca70c6308fbf4f5bf701286}\label{classtestsuite_1_1_base_test_case_aeb8b95d92ca70c6308fbf4f5bf701286}} 
+static$<$ EX extends Throwable $>$ EX {\bfseries assert\+Throws} (String message, Class$<$ EX $>$ throwable, Callable$<$?$>$ test\+Routine)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a4374e9b5e46f33c84aefeb7d5d7e49d5}\label{classtestsuite_1_1_base_test_case_a4374e9b5e46f33c84aefeb7d5d7e49d5}} 
+static$<$ EX extends Throwable $>$ EX {\bfseries assert\+Throws} (Class$<$ EX $>$ throwable, String msg\+Matches\+Regex, Callable$<$?$>$ test\+Routine)
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a933e368e79298cfda4960166ec2b078c}\label{classtestsuite_1_1_base_test_case_a933e368e79298cfda4960166ec2b078c}} 
+static$<$ EX extends Throwable $>$ EX {\bfseries assert\+Throws} (String message, Class$<$ EX $>$ throwable, String msg\+Matches\+Regex, Callable$<$?$>$ test\+Routine)
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1_base_test_case_aca5533ef294301b97ad9d54a7edf825f}{assert\+Connections\+History}} (String... expected\+Connections\+History)
+\item 
+static final long \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a48d748cca7b09172b6e5e2fac15c6bc7}{current\+Time\+Millis}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ab7e16b70df00394f5d55e8047c3c2471}\label{classtestsuite_1_1_base_test_case_ab7e16b70df00394f5d55e8047c3c2471}} 
+boolean {\bfseries D\+I\+S\+A\+B\+L\+E\+D\+\_\+test\+Bug15121} = true
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aade0f7a71cb88d5c263fffd13a9581ac}\label{classtestsuite_1_1_base_test_case_aade0f7a71cb88d5c263fffd13a9581ac}} 
+boolean {\bfseries D\+I\+S\+A\+B\+L\+E\+D\+\_\+test\+Bug7033} = true
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aa0c548e48f82aa602ab584c833f083ca}\label{classtestsuite_1_1_base_test_case_aa0c548e48f82aa602ab584c833f083ca}} 
+boolean {\bfseries D\+I\+S\+A\+B\+L\+E\+D\+\_\+test\+Bug2654} = true
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ad648618fb57db1d2bfcf8c789334513f}\label{classtestsuite_1_1_base_test_case_ad648618fb57db1d2bfcf8c789334513f}} 
+boolean {\bfseries D\+I\+S\+A\+B\+L\+E\+D\+\_\+test\+Bug5136} = true
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae901da5e006e157035ca0394e61d39b3}\label{classtestsuite_1_1_base_test_case_ae901da5e006e157035ca0394e61d39b3}} 
+boolean {\bfseries D\+I\+S\+A\+B\+L\+E\+D\+\_\+test\+Bug65503} = true
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a366ca14a4b36186f1e93966bff8ae923}\label{classtestsuite_1_1_base_test_case_a366ca14a4b36186f1e93966bff8ae923}} 
+boolean {\bfseries D\+I\+S\+A\+B\+L\+E\+D\+\_\+test\+Contention} = true
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a51c71d14ae22c75fb285989cc78b4730}{conn}} = null
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a5bd183a70ffca96d160794ac4a6250a4}\label{classtestsuite_1_1_base_test_case_a5bd183a70ffca96d160794ac4a6250a4}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries sha256\+Conn} = null
+\item 
+String \mbox{\hyperlink{classtestsuite_1_1_base_test_case_ab78915f48e4a877fab1ace666b20f68a}{db\+Class}} = \char`\"{}com.\+mysql.\+jdbc.\+Driver\char`\"{}
+\item 
+Prepared\+Statement \mbox{\hyperlink{classtestsuite_1_1_base_test_case_ad11201d39ce60fd541a261cac7d9a889}{pstmt}} = null
+\item 
+Result\+Set \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a31fa73417c178b2baaf37ef1362e37d9}{rs}} = null
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a0b42d16fb351a34cb4c1f0119e93b5d1}\label{classtestsuite_1_1_base_test_case_a0b42d16fb351a34cb4c1f0119e93b5d1}} 
+Result\+Set {\bfseries sha256\+Rs} = null
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a47db7db62d10e395144b1210dc7fd337}{stmt}} = null
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a774269ef0c9a559079dfeaf3be301d28}\label{classtestsuite_1_1_base_test_case_a774269ef0c9a559079dfeaf3be301d28}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} {\bfseries sha256\+Stmt} = null
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_base_test_case_abf615dd75e2b0bff6538d49bcc34541c}{db\+Url}} = \char`\"{}jdbc\+:mysql\+:///test\char`\"{}
+\item 
+static String \mbox{\hyperlink{classtestsuite_1_1_base_test_case_aa0a3676bf28f60f30f04e5ec95327ddd}{sha256\+Url}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all test cases. Creates connections, statements, etc. and closes them. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a353e63229f72905eb043169b6c2002b5}\label{classtestsuite_1_1_base_test_case_a353e63229f72905eb043169b6c2002b5}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!Base\+Test\+Case@{Base\+Test\+Case}}
+\index{Base\+Test\+Case@{Base\+Test\+Case}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{Base\+Test\+Case()}{BaseTestCase()}}
+{\footnotesize\ttfamily testsuite.\+Base\+Test\+Case.\+Base\+Test\+Case (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{classtestsuite_1_1_base_test_case}{Base\+Test\+Case}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the J\+Unit test case \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aca5533ef294301b97ad9d54a7edf825f}\label{classtestsuite_1_1_base_test_case_aca5533ef294301b97ad9d54a7edf825f}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!assert\+Connections\+History@{assert\+Connections\+History}}
+\index{assert\+Connections\+History@{assert\+Connections\+History}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{assert\+Connections\+History()}{assertConnectionsHistory()}}
+{\footnotesize\ttfamily static void testsuite.\+Base\+Test\+Case.\+assert\+Connections\+History (\begin{DoxyParamCaption}\item[{String...}]{expected\+Connections\+History }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Asserts the most recent history of connection attempts from the global data in \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory}{Unreliable\+Socket\+Factory}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected\+Connections\+History} & The list of expected events. Use Unreliable\+Socket\+Factory.\+get\+Host\+Connected\+Status(\+String), Unreliable\+Socket\+Factory.\+get\+Host\+Failed\+Status(\+String) and Unreliable\+Socket\+Factory.\+get\+Host\+Unknown\+Status(\+String) to build proper syntax for host+status identification. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a48d748cca7b09172b6e5e2fac15c6bc7}\label{classtestsuite_1_1_base_test_case_a48d748cca7b09172b6e5e2fac15c6bc7}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!current\+Time\+Millis@{current\+Time\+Millis}}
+\index{current\+Time\+Millis@{current\+Time\+Millis}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{current\+Time\+Millis()}{currentTimeMillis()}}
+{\footnotesize\ttfamily static final long testsuite.\+Base\+Test\+Case.\+current\+Time\+Millis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Retrieve the current system time in milliseconds, using the nanosecond time if possible. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_test_case_a48d748cca7b09172b6e5e2fac15c6bc7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a694c26abcb73b73849f9d10ffdc4ebae}\label{classtestsuite_1_1_base_test_case_a694c26abcb73b73849f9d10ffdc4ebae}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!get\+Connection\+With\+Props@{get\+Connection\+With\+Props}}
+\index{get\+Connection\+With\+Props@{get\+Connection\+With\+Props}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{get\+Connection\+With\+Props()}{getConnectionWithProps()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} testsuite.\+Base\+Test\+Case.\+get\+Connection\+With\+Props (\begin{DoxyParamCaption}\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns a new connection with the given properties
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & the properties to use (the U\+RL will come from the standard for this testcase).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new connection using the given properties.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a06bbcacd72ff13e3905c04aada69feea}\label{classtestsuite_1_1_base_test_case_a06bbcacd72ff13e3905c04aada69feea}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!get\+Instance\+Number@{get\+Instance\+Number}}
+\index{get\+Instance\+Number@{get\+Instance\+Number}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{get\+Instance\+Number()}{getInstanceNumber()}}
+{\footnotesize\ttfamily int testsuite.\+Base\+Test\+Case.\+get\+Instance\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the per-\/instance counter (for messages when multi-\/threading stress tests)
+
+\begin{DoxyReturn}{Returns}
+int the instance number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ac50ae23586e12eaab184308368a6fb1d}\label{classtestsuite_1_1_base_test_case_ac50ae23586e12eaab184308368a6fb1d}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!get\+Mysql\+Variable@{get\+Mysql\+Variable}}
+\index{get\+Mysql\+Variable@{get\+Mysql\+Variable}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{get\+Mysql\+Variable()}{getMysqlVariable()}}
+{\footnotesize\ttfamily String testsuite.\+Base\+Test\+Case.\+get\+Mysql\+Variable (\begin{DoxyParamCaption}\item[{String}]{variable\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the named My\+S\+QL variable from the currently connected server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable\+Name} & the name of the variable to return\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the given variable, or N\+U\+LL if it doesn\textquotesingle{}t exist
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ab63fc653810c4915e190196e7b3d6e6c}\label{classtestsuite_1_1_base_test_case_ab63fc653810c4915e190196e7b3d6e6c}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!get\+Properties\+From\+Testsuite\+Url@{get\+Properties\+From\+Testsuite\+Url}}
+\index{get\+Properties\+From\+Testsuite\+Url@{get\+Properties\+From\+Testsuite\+Url}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{get\+Properties\+From\+Testsuite\+Url()}{getPropertiesFromTestsuiteUrl()}}
+{\footnotesize\ttfamily Properties testsuite.\+Base\+Test\+Case.\+get\+Properties\+From\+Testsuite\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the properties that represent the default U\+RL used for connections for all testcases.
+
+\begin{DoxyReturn}{Returns}
+properties parsed from com.\+mysql.\+jdbc.\+testsuite.\+url
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if parsing fails \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_test_case_ab63fc653810c4915e190196e7b3d6e6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a30a8a94757291826321a07c5b10a6233}\label{classtestsuite_1_1_base_test_case_a30a8a94757291826321a07c5b10a6233}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!is\+Community\+Edition@{is\+Community\+Edition}}
+\index{is\+Community\+Edition@{is\+Community\+Edition}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{is\+Community\+Edition()}{isCommunityEdition()}}
+{\footnotesize\ttfamily boolean testsuite.\+Base\+Test\+Case.\+is\+Community\+Edition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether the server we\textquotesingle{}re connected to is a My\+S\+QL Community edition Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_test_case_a30a8a94757291826321a07c5b10a6233_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_test_case_a30a8a94757291826321a07c5b10a6233_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ae29a3a848b87638921a7078f572b3f83}\label{classtestsuite_1_1_base_test_case_ae29a3a848b87638921a7078f572b3f83}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!is\+Enterprise\+Edition@{is\+Enterprise\+Edition}}
+\index{is\+Enterprise\+Edition@{is\+Enterprise\+Edition}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{is\+Enterprise\+Edition()}{isEnterpriseEdition()}}
+{\footnotesize\ttfamily boolean testsuite.\+Base\+Test\+Case.\+is\+Enterprise\+Edition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether the server we\textquotesingle{}re connected to is an My\+S\+QL Enterprise edition Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_test_case_ae29a3a848b87638921a7078f572b3f83_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a3578b222700fc502212ce9834194ebaa}\label{classtestsuite_1_1_base_test_case_a3578b222700fc502212ce9834194ebaa}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!run\+Test\+If\+Sys\+Prop\+Defined@{run\+Test\+If\+Sys\+Prop\+Defined}}
+\index{run\+Test\+If\+Sys\+Prop\+Defined@{run\+Test\+If\+Sys\+Prop\+Defined}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{run\+Test\+If\+Sys\+Prop\+Defined()}{runTestIfSysPropDefined()}}
+{\footnotesize\ttfamily boolean testsuite.\+Base\+Test\+Case.\+run\+Test\+If\+Sys\+Prop\+Defined (\begin{DoxyParamCaption}\item[{String}]{prop\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether a certain system property is defined, in order to run/not-\/run certain tests
+
+
+\begin{DoxyParams}{Parameters}
+{\em prop\+Name} & the property name to check for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the property is defined. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_test_case_a3578b222700fc502212ce9834194ebaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a195f5d285c7979328734606d08ad15b1}\label{classtestsuite_1_1_base_test_case_a195f5d285c7979328734606d08ad15b1}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!set\+Up@{set\+Up}}
+\index{set\+Up@{set\+Up}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{set\+Up()}{setUp()}}
+{\footnotesize\ttfamily void testsuite.\+Base\+Test\+Case.\+set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Creates resources used by all tests.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a51c7d76ab24b0c966f956250fd7a4f52}\label{classtestsuite_1_1_base_test_case_a51c7d76ab24b0c966f956250fd7a4f52}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!tear\+Down@{tear\+Down}}
+\index{tear\+Down@{tear\+Down}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{tear\+Down()}{tearDown()}}
+{\footnotesize\ttfamily void testsuite.\+Base\+Test\+Case.\+tear\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Destroys resources created during the test case. \mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a4098e9a480c1907875ded976cdbc81a3}\label{classtestsuite_1_1_base_test_case_a4098e9a480c1907875ded976cdbc81a3}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!version\+Meets\+Minimum@{version\+Meets\+Minimum}}
+\index{version\+Meets\+Minimum@{version\+Meets\+Minimum}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{version\+Meets\+Minimum()}{versionMeetsMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean testsuite.\+Base\+Test\+Case.\+version\+Meets\+Minimum (\begin{DoxyParamCaption}\item[{int}]{major,  }\item[{int}]{minor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether the database we\textquotesingle{}re connected to meets the given version minimum
+
+
+\begin{DoxyParams}{Parameters}
+{\em major} & the major version to meet \\
+\hline
+{\em minor} & the minor version to meet\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if the major/minor is met
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a13e93e8347469a0c2e8dbf3be8795bb5}\label{classtestsuite_1_1_base_test_case_a13e93e8347469a0c2e8dbf3be8795bb5}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!version\+Meets\+Minimum@{version\+Meets\+Minimum}}
+\index{version\+Meets\+Minimum@{version\+Meets\+Minimum}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{version\+Meets\+Minimum()}{versionMeetsMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean testsuite.\+Base\+Test\+Case.\+version\+Meets\+Minimum (\begin{DoxyParamCaption}\item[{int}]{major,  }\item[{int}]{minor,  }\item[{int}]{subminor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether the database we\textquotesingle{}re connected to meets the given version minimum
+
+
+\begin{DoxyParams}{Parameters}
+{\em major} & the major version to meet \\
+\hline
+{\em minor} & the minor version to meet\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if the major/minor is met
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a51c71d14ae22c75fb285989cc78b4730}\label{classtestsuite_1_1_base_test_case_a51c71d14ae22c75fb285989cc78b4730}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!conn@{conn}}
+\index{conn@{conn}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{conn}{conn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} testsuite.\+Base\+Test\+Case.\+conn = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Connection to server, initialized in \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a195f5d285c7979328734606d08ad15b1}{set\+Up()}} Cleaned up in \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a51c7d76ab24b0c966f956250fd7a4f52}{tear\+Down()}}. \mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ab78915f48e4a877fab1ace666b20f68a}\label{classtestsuite_1_1_base_test_case_ab78915f48e4a877fab1ace666b20f68a}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!db\+Class@{db\+Class}}
+\index{db\+Class@{db\+Class}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{db\+Class}{dbClass}}
+{\footnotesize\ttfamily String testsuite.\+Base\+Test\+Case.\+db\+Class = \char`\"{}com.\+mysql.\+jdbc.\+Driver\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+The driver to use \mbox{\Hypertarget{classtestsuite_1_1_base_test_case_abf615dd75e2b0bff6538d49bcc34541c}\label{classtestsuite_1_1_base_test_case_abf615dd75e2b0bff6538d49bcc34541c}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!db\+Url@{db\+Url}}
+\index{db\+Url@{db\+Url}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{db\+Url}{dbUrl}}
+{\footnotesize\ttfamily String testsuite.\+Base\+Test\+Case.\+db\+Url = \char`\"{}jdbc\+:mysql\+:///test\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+J\+D\+BC U\+RL, initialized from com.\+mysql.\+jdbc.\+testsuite.\+url system property, or defaults to jdbc\+:mysql\+:///test \mbox{\Hypertarget{classtestsuite_1_1_base_test_case_ad11201d39ce60fd541a261cac7d9a889}\label{classtestsuite_1_1_base_test_case_ad11201d39ce60fd541a261cac7d9a889}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!pstmt@{pstmt}}
+\index{pstmt@{pstmt}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{pstmt}{pstmt}}
+{\footnotesize\ttfamily Prepared\+Statement testsuite.\+Base\+Test\+Case.\+pstmt = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepared\+Statement to be used in tests, not initialized. Cleaned up in \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a51c7d76ab24b0c966f956250fd7a4f52}{tear\+Down()}}. \mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a31fa73417c178b2baaf37ef1362e37d9}\label{classtestsuite_1_1_base_test_case_a31fa73417c178b2baaf37ef1362e37d9}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!rs@{rs}}
+\index{rs@{rs}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{rs}{rs}}
+{\footnotesize\ttfamily Result\+Set testsuite.\+Base\+Test\+Case.\+rs = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Result\+Set to be used in tests, not initialized. Cleaned up in \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a51c7d76ab24b0c966f956250fd7a4f52}{tear\+Down()}}. \mbox{\Hypertarget{classtestsuite_1_1_base_test_case_aa0a3676bf28f60f30f04e5ec95327ddd}\label{classtestsuite_1_1_base_test_case_aa0a3676bf28f60f30f04e5ec95327ddd}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!sha256\+Url@{sha256\+Url}}
+\index{sha256\+Url@{sha256\+Url}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{sha256\+Url}{sha256Url}}
+{\footnotesize\ttfamily String testsuite.\+Base\+Test\+Case.\+sha256\+Url = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+J\+D\+BC U\+RL, initialized from com.\+mysql.\+jdbc.\+testsuite.\+url.\+sha256default system property \mbox{\Hypertarget{classtestsuite_1_1_base_test_case_a47db7db62d10e395144b1210dc7fd337}\label{classtestsuite_1_1_base_test_case_a47db7db62d10e395144b1210dc7fd337}} 
+\index{testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}!stmt@{stmt}}
+\index{stmt@{stmt}!testsuite\+::\+Base\+Test\+Case@{testsuite\+::\+Base\+Test\+Case}}
+\subsubsection{\texorpdfstring{stmt}{stmt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} testsuite.\+Base\+Test\+Case.\+stmt = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Statement to be used in tests, initialized in \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a195f5d285c7979328734606d08ad15b1}{set\+Up()}}. Cleaned up in \mbox{\hyperlink{classtestsuite_1_1_base_test_case_a51c7d76ab24b0c966f956250fd7a4f52}{tear\+Down()}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/Base\+Test\+Case.\+java\end{DoxyCompactItemize}

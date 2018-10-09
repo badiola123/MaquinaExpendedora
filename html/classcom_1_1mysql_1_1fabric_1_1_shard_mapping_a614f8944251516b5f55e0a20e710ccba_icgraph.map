@@ -1,0 +1,5 @@
+<map id="com.mysql.fabric.ShardMapping.getGroupNameForKey" name="com.mysql.fabric.ShardMapping.getGroupNameForKey">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider.html#a5e2f7fa211f847bce86d4c89b1665ff6" title="com.mysql.fabric.hibernate.\lFabricMultiTenantConnectionProvider.get\lConnection" alt="" coords="284,5,543,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy.html#ace89320543442af9fbe6034a4171333b" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnectionProxy.setShardKey" alt="" coords="291,86,535,127"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1_test_shard_mapping.html#a6b77d1255324c5140498ebae4aed5030" title="testsuite.fabric.TestShard\lMapping.testRangeShardMappingKey\lLookup" alt="" coords="293,152,533,208"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.jdbc2.optional.ConnectionWrapper.setSavepoint" name="com.mysql.jdbc.jdbc2.optional.ConnectionWrapper.setSavepoint">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a62dab37c7e8a78cbb34735cf016b9591" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.isInGlobalTx" alt="" coords="268,5,479,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#a78a9a11946443467d3fbc7838922a205" title="com.mysql.jdbc.Connection.is\lInGlobalTx" alt="" coords="527,5,724,47"/>
+</map>

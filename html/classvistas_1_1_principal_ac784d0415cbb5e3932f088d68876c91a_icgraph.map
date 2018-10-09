@@ -1,0 +1,7 @@
+<map id="vistas.Principal.getTablamaquina" name="vistas.Principal.getTablamaquina">
+<area shape="rect" id="node2" href="$classmaquinas_1_1_maquinaria.html#a8c8ade68894e4e32e50a0130d482bc5e" title="maquinas.Maquinaria.cargar\lDatos" alt="" coords="264,5,449,47"/>
+<area shape="rect" id="node4" href="$class_productos_1_1_inventario.html#a89ddb54b03480d0e837f56be549b755c" title="Productos.Inventario.cargar\lDatos" alt="" coords="267,71,446,112"/>
+<area shape="rect" id="node6" href="$classvistas_1_1_panel_editar.html#abfa1e278ba63d7cf2a14c02804dcadf1" title="vistas.PanelEditar.action\lPerformed" alt="" coords="274,136,439,177"/>
+<area shape="rect" id="node3" href="$classmaquinas_1_1_maquinaria.html#adf1a7cb67d56325ab9689a85945a17bd" title="maquinas.Maquinaria.Maquinaria" alt="" coords="497,13,709,39"/>
+<area shape="rect" id="node5" href="$class_productos_1_1_inventario.html#a679f0131ec8bfb9a78d5071ee72f6811" title="Productos.Inventario.Inventario" alt="" coords="505,78,702,105"/>
+</map>

@@ -1,0 +1,2334 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{}\section{com.\+mysql.\+jdbc.\+Prepared\+Statement Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}\index{com.\+mysql.\+jdbc.\+Prepared\+Statement@{com.\+mysql.\+jdbc.\+Prepared\+Statement}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Prepared\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Prepared\+Statement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Appending\+Batch\+Visitor}
+\item 
+class \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_1_1_batch_params}{Batch\+Params}}
+\item 
+interface {\bfseries Batch\+Visitor}
+\item 
+class {\bfseries Emulated\+Prepared\+Statement\+Bindings}
+\item 
+class {\bfseries End\+Point}
+\item 
+class {\bfseries Parse\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1784431accedc207e4dc40ff2f7f9e5}{Prepared\+Statement}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, String catalog)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3d4c96994b71d52559d3d084ada8276}{Prepared\+Statement}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, String sql, String catalog)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a29276b227ce437739a5d554a91c348c2}{Prepared\+Statement}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, String sql, String catalog, Parse\+Info cached\+Parse\+Info)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ade546357756baf1a168cc652c5a4de84}{add\+Batch}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_abbb884a425426709aa5068ee1b375de6}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_abbb884a425426709aa5068ee1b375de6}} 
+void {\bfseries add\+Batch} (String sql)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a525b09b122fa04efbc903ec484ae1020}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a525b09b122fa04efbc903ec484ae1020}} 
+String {\bfseries as\+Sql} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2e55d41f5fde41c65828433a9dc38a18}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2e55d41f5fde41c65828433a9dc38a18}} 
+String {\bfseries as\+Sql} (boolean quote\+Streams\+And\+Unknowns)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a8e22121add1e1ecf9d24616de5ec8002}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a8e22121add1e1ecf9d24616de5ec8002}} 
+void {\bfseries clear\+Batch} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac1bd628fd165487d93822d0198ead08a}{clear\+Parameters}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4c83f4279e13f60aa65dd4de3d2117e1}{execute}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aabc927c92b71b3250b3b297dd9ea796b}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aabc927c92b71b3250b3b297dd9ea796b}} 
+boolean {\bfseries can\+Rewrite\+As\+Multi\+Value\+Insert\+At\+Sql\+Level} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9e4270861fadbc1b2510175104deb829}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9e4270861fadbc1b2510175104deb829}} 
+String {\bfseries get\+Date\+Time} (String pattern)
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a9164e855e1f7848142de8973a6dab6}{execute\+Query}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a356cdeaae7b10fb79da4806e829a2190}{execute\+Update}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a99f44a35ddc148fd4c5aa95a451ca0c1}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a99f44a35ddc148fd4c5aa95a451ca0c1}} 
+int {\bfseries get\+Rewritten\+Batch\+Size} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7cf0ecdb1b6ad775131a83ef684a41db}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7cf0ecdb1b6ad775131a83ef684a41db}} 
+String {\bfseries get\+Non\+Rewritten\+Sql} ()  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9d7f8d794591450a31fc804150054196}{get\+Bytes\+Representation}} (int parameter\+Index)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set\+Meta\+Data \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a260be2cc343e066802a49720c672da77}{get\+Meta\+Data}} ()  throws S\+Q\+L\+Exception 
+\item 
+Parameter\+Meta\+Data \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aec23fbfe8b08dd9281ff9757dc896101}{get\+Parameter\+Meta\+Data}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a435eccbc94fa43a060e987fa8236fbe8}{set\+Array}} (int i, Array x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae3612d6b5fc893fa6e24ec026c40a100}{set\+Ascii\+Stream}} (int parameter\+Index, Input\+Stream x, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab398b97a7a8e7b77fa5d2ad422897cd7}{set\+Big\+Decimal}} (int parameter\+Index, Big\+Decimal x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a230dbbbaa17cdab8c8a70125a6b8bbca}{set\+Binary\+Stream}} (int parameter\+Index, Input\+Stream x, int length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a399d25c1005b98c41eae016490357fcc}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a399d25c1005b98c41eae016490357fcc}} 
+void {\bfseries set\+Blob} (int parameter\+Index, Input\+Stream input\+Stream, long length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a923cc59072cb8539196d7288f1830f0d}{set\+Blob}} (int i, java.\+sql.\+Blob x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9f0e5dd8b1cae6d2f116ae694577b2ce}{set\+Boolean}} (int parameter\+Index, boolean x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a77b76109f1a5e97036a8a82de590efc5}{set\+Byte}} (int parameter\+Index, byte x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aaaac7a11d71f1c60bc57f96271582061}{set\+Bytes}} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3653eef6d3825664b0dd3f0adbe8288c}{set\+Character\+Stream}} (int parameter\+Index, java.\+io.\+Reader reader, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_afede5384371c1526e48fe4a923bc2292}{set\+Clob}} (int i, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob}{Clob}} x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fff0e5cc0d3a8205620da02c39f4673}{set\+Date}} (int parameter\+Index, java.\+sql.\+Date x)  throws java.\+sql.\+S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aea55e79f823b386bf3525f1f147cd272}{set\+Date}} (int parameter\+Index, java.\+sql.\+Date x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9be27733e4e54e675dd6eaf238380e02}{set\+Double}} (int parameter\+Index, double x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a68b6271f340188dc794c5bc4418705cb}{set\+Float}} (int parameter\+Index, float x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae9efafe8af966733befb3f271c7d902c}{set\+Int}} (int parameter\+Index, int x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a56039ead85e37c1c6d019cb62f584ef9}{set\+Long}} (int parameter\+Index, long x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab885f67afaf798c888f537898f82809e}{set\+Null}} (int parameter\+Index, int sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a52e34d1cb0264c8eb6f8bac60385e446}{set\+Null}} (int parameter\+Index, int sql\+Type, String arg)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aaf9923fc3cd5ada90b7e7ca5f8d7ba5e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aaf9923fc3cd5ada90b7e7ca5f8d7ba5e}} 
+void {\bfseries set\+Object} (int parameter\+Index, Object parameter\+Obj)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9e69a72bbaef62df845abee77bde90ef}{set\+Object}} (int parameter\+Index, Object parameter\+Obj, int target\+Sql\+Type)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aee3c411b599fe20f669701c025cc7a90}{set\+Object}} (int parameter\+Index, Object parameter\+Obj, int target\+Sql\+Type, int scale)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae89f89fcb2083ed1bc44a04a7a5757b4}{set\+Ref}} (int i, Ref x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9ed8cafd89fc66eb155892b62a006c38}{set\+Short}} (int parameter\+Index, short x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a4c13284de8a0257085966284a41f1d}{set\+String}} (int parameter\+Index, String x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a72d22c559a4a13dc93fc5343d8bc85}{set\+Time}} (int parameter\+Index, java.\+sql.\+Time x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2edc3ed9d413dfc3dc612f8f27a6cf72}{set\+Time}} (int parameter\+Index, Time x)  throws java.\+sql.\+S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a6ae79298e06ce58b5e8acb9d8fd66e65}{set\+Timestamp}} (int parameter\+Index, java.\+sql.\+Timestamp x, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_acc2c80fd01dd1159ea8865da73016b8f}{set\+Timestamp}} (int parameter\+Index, Timestamp x)  throws java.\+sql.\+S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a60b5160c6f36f382f465cbe65a898638}{set\+Unicode\+Stream}} (int parameter\+Index, Input\+Stream x, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a19011de47765abe0b12d60a3ad76ceb1}{set\+U\+RL}} (int parameter\+Index, U\+RL arg)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a21fa3680558df3800e15b9ee1a38ae70}{to\+String}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab08cc3b0f158f1bf3392142af1b72ba7}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab08cc3b0f158f1bf3392142af1b72ba7}} 
+void {\bfseries set\+Ascii\+Stream} (int parameter\+Index, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a69ea08dddc92989329d784b7ab5f6038}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a69ea08dddc92989329d784b7ab5f6038}} 
+void {\bfseries set\+Ascii\+Stream} (int parameter\+Index, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab24fa29d07ae51c76be9039ddca51b56}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab24fa29d07ae51c76be9039ddca51b56}} 
+void {\bfseries set\+Binary\+Stream} (int parameter\+Index, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5886755ea4d1180dba14c9fe3918a9dc}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5886755ea4d1180dba14c9fe3918a9dc}} 
+void {\bfseries set\+Binary\+Stream} (int parameter\+Index, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a31fc22e6fd04f28d1530bf13d96f597f}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a31fc22e6fd04f28d1530bf13d96f597f}} 
+void {\bfseries set\+Blob} (int parameter\+Index, Input\+Stream input\+Stream)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_adf54e427f59595adc25813f8633dc9cf}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_adf54e427f59595adc25813f8633dc9cf}} 
+void {\bfseries set\+Character\+Stream} (int parameter\+Index, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1db29c704ffbe8b26f483e155a0b3328}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1db29c704ffbe8b26f483e155a0b3328}} 
+void {\bfseries set\+Character\+Stream} (int parameter\+Index, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad0e4fc3bfcdcfd5ae67a29461202be9e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad0e4fc3bfcdcfd5ae67a29461202be9e}} 
+void {\bfseries set\+Clob} (int parameter\+Index, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a28b8277d0dcd7f5184ce11b0cfb9fb9a}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a28b8277d0dcd7f5184ce11b0cfb9fb9a}} 
+void {\bfseries set\+Clob} (int parameter\+Index, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a432ca600d8f804c01d52416457e69d48}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a432ca600d8f804c01d52416457e69d48}} 
+void {\bfseries set\+N\+Character\+Stream} (int parameter\+Index, Reader value)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a8a013584b26bbffe4b3c11c283ef6efc}{set\+N\+String}} (int parameter\+Index, String x)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1b2dd7f3f872f4ff1400be1d760e200}{set\+N\+Character\+Stream}} (int parameter\+Index, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a677fc55abb97ff80b34fe943063a6b60}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a677fc55abb97ff80b34fe943063a6b60}} 
+void {\bfseries set\+N\+Clob} (int parameter\+Index, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aacd4ab63c372045d3e340bccf996e227}{set\+N\+Clob}} (int parameter\+Index, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_afd34466552f4cd98e571a65a33038916}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_afd34466552f4cd98e571a65a33038916}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_parameter_bindings}{Parameter\+Bindings}} {\bfseries get\+Parameter\+Bindings} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac32663dd7cd29fc79a323db94f03694e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac32663dd7cd29fc79a323db94f03694e}} 
+String {\bfseries get\+Prepared\+Sql} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4922b9bd45e7dc06a43917c08b6efebb}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4922b9bd45e7dc06a43917c08b6efebb}} 
+int {\bfseries get\+Update\+Count} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9db54f06b57ab9446798d306d59aeefc}{execute\+Large\+Update}} ()  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab69d1c322e914d0d4452ee635444219c}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab69d1c322e914d0d4452ee635444219c}} 
+void {\bfseries detect\+Fractional\+Seconds\+Support} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af96357c4ef89d1eae553d657f4989bcc}{check\+Read\+Only\+Safe\+Statement}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac38752e04261745fc1bbff0533c6893f}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac38752e04261745fc1bbff0533c6893f}} 
+long \mbox{[}$\,$\mbox{]} {\bfseries execute\+Batch\+Internal} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9375859ff627133c5917da65bf03108d}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9375859ff627133c5917da65bf03108d}} 
+int {\bfseries get\+Location\+Of\+On\+Duplicate\+Key\+Update} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3cdc3e336070c453b5878ce9ba8a0cc}{execute\+Prepared\+Batch\+As\+Multi\+Statement}} (int batch\+Timeout)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4b54450205db6b099922240e4f2e72a0}{execute\+Batched\+Inserts}} (int batch\+Timeout)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1f930baaa3569bf0a59983cd73e0cf3f}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1f930baaa3569bf0a59983cd73e0cf3f}} 
+String {\bfseries get\+Values\+Clause} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2de0ab2631bf812f061ea336302f2b62}{compute\+Batch\+Size}} (int num\+Batched\+Args)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0bd3fe8e5e85dd522b3d84fb68b142ff}{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size}} (int num\+Batched\+Args)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a87e79e103adae56e63a967e64c167c}{execute\+Batch\+Serially}} (int batch\+Timeout)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7d300759d88bba2536598e70808c3b6b}{execute\+Internal}} (int max\+Rows\+To\+Retrieve, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} send\+Packet, boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl_a642ade7ecee90913b8de38602c43ce20}{create\+Streaming\+Result\+Set}}, boolean query\+Is\+Select\+Only, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} metadata\+From\+Cache, boolean is\+Batch)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1ff3ce7d3fe991d135b40794bf799938}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1ff3ce7d3fe991d135b40794bf799938}} 
+long {\bfseries execute\+Update\+Internal} (boolean clear\+Batched\+Generated\+Keys\+And\+Warnings, boolean is\+Batch)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5f77388e9afc0a2fcb248732c3c91577}{execute\+Update\+Internal}} (byte\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} batched\+Parameter\+Strings, Input\+Stream\mbox{[}$\,$\mbox{]} batched\+Parameter\+Streams, boolean\mbox{[}$\,$\mbox{]} batched\+Is\+Stream, int\mbox{[}$\,$\mbox{]} batched\+Stream\+Lengths, boolean\mbox{[}$\,$\mbox{]} batched\+Is\+Null, boolean is\+Really\+Batch)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af7bcac5db19e2993b3edf7033aed5d51}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af7bcac5db19e2993b3edf7033aed5d51}} 
+boolean {\bfseries contains\+On\+Duplicate\+Key\+Update\+In\+S\+QL} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0f1235a6e911d9370ef27e6ba5932d89}{fill\+Send\+Packet}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7012604554fada055dce8c36ece28ac7}{fill\+Send\+Packet}} (byte\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} batched\+Parameter\+Strings, Input\+Stream\mbox{[}$\,$\mbox{]} batched\+Parameter\+Streams, boolean\mbox{[}$\,$\mbox{]} batched\+Is\+Stream, int\mbox{[}$\,$\mbox{]} batched\+Stream\+Lengths)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad039caba8bbe065bb7b6a26a0f7a1f30}{prepare\+Batched\+Insert\+S\+QL}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} local\+Conn, int num\+Batches)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a726fdf5ea37ab78ff534b948880a6afe}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a726fdf5ea37ab78ff534b948880a6afe}} 
+void {\bfseries set\+Retrieve\+Generated\+Keys} (boolean flag)  throws S\+Q\+L\+Exception 
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fd98fc094ff75e0c2cacedb818f236e}{get\+Bytes\+Representation\+For\+Batch}} (int parameter\+Index, int command\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a27509d993b66a5a3b78d148e9550f63b}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a27509d993b66a5a3b78d148e9550f63b}} 
+boolean {\bfseries is\+Select\+Query} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a20c0c136d44994a292aecb75b10b4133}{real\+Close}} (boolean called\+Explicitly, boolean close\+Open\+Results)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a56440753fcaad792f039ac1a7ae19ff8}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a56440753fcaad792f039ac1a7ae19ff8}} 
+void {\bfseries set\+Bytes} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} x, boolean check\+For\+Introducer, boolean escape\+For\+M\+B\+Chars)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae6f08c22768c05382f813b02cfdb81e8}{set\+Bytes\+No\+Escape}} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} parameter\+As\+Bytes)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac81fd3136eaf9d9413981580ea24d675}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac81fd3136eaf9d9413981580ea24d675}} 
+void {\bfseries set\+Bytes\+No\+Escape\+No\+Quotes} (int parameter\+Index, byte\mbox{[}$\,$\mbox{]} parameter\+As\+Bytes)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_abe4f7422dafc47e6e0862ad6f5f23ac8}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_abe4f7422dafc47e6e0862ad6f5f23ac8}} 
+final void {\bfseries set\+Internal} (int param\+Index, byte\mbox{[}$\,$\mbox{]} val)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1b0d85e127268e978746a2fca6797d7c}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1b0d85e127268e978746a2fca6797d7c}} 
+void {\bfseries check\+Bounds} (int param\+Index, int parameter\+Index\+Offset)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a54f321a6a054f27cc4c123e6ec9892ce}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a54f321a6a054f27cc4c123e6ec9892ce}} 
+final void {\bfseries set\+Internal} (int param\+Index, String val)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aa058984dec1f45b04300f03f9e983bd5}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aa058984dec1f45b04300f03f9e983bd5}} 
+int {\bfseries set\+One\+Batched\+Parameter\+Set} (java.\+sql.\+Prepared\+Statement batched\+Statement, int batched\+Param\+Index, Object param\+Set)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a80a81c39177a5e46c653efb1acd9e797}{get\+Parameter\+Index\+Offset}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a38e323114d62ae7b8bee091841dcee5d}{read\+Fully}} (Reader reader, char\mbox{[}$\,$\mbox{]} buf, int length)  throws I\+O\+Exception 
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3f7dd0edd868d1c66f08be25392fba8e}{get\+Instance}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, String catalog)  throws S\+Q\+L\+Exception 
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a597b46826cbe709aaee73ee7ccb1ab85}{get\+Instance}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, String sql, String catalog)  throws S\+Q\+L\+Exception 
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a37bdcf9e02a649454447143c8b6361d7}{get\+Instance}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, String sql, String catalog, Parse\+Info cached\+Parse\+Info)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae9688cf850bf02e82d743aa85880d8b7}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae9688cf850bf02e82d743aa85880d8b7}} 
+static boolean {\bfseries can\+Rewrite} (String sql, boolean is\+On\+Duplicate\+Key\+Update, int location\+Of\+On\+Duplicate\+Key\+Update, int statement\+Start\+Pos)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab2b6492262755a13533495771a983d2e}{batch\+Has\+Plain\+Statements}} = false
+\item 
+char \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab4a2f47d871558da1216653add5dcbb3}{first\+Char\+Of\+Stmt}} = 0
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3b5d2d6f48345edc1fc813d040ff041a}{is\+Load\+Data\+Query}} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3374561b56d375f6ddfabf165322bb87}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3374561b56d375f6ddfabf165322bb87}} 
+boolean \mbox{[}$\,$\mbox{]} {\bfseries is\+Null} = null
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a84c0187262c2bef05409990fd6a613af}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a84c0187262c2bef05409990fd6a613af}} 
+int {\bfseries number\+Of\+Executions} = 0
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9378b4b930d85c095050653868c37d77}{original\+Sql}} = null
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aa558a4c2359849497f6e7b985fa4fb08}{parameter\+Count}}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5686a7b6b020e4c6485b403ee5151ec3}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5686a7b6b020e4c6485b403ee5151ec3}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_parameter_metadata}{Mysql\+Parameter\+Metadata}} {\bfseries parameter\+Meta\+Data}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2ee36bea2958e84148585745d9aceffe}{parameter\+Types}} = null
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad68e5b636bc25c2cfe14755977564d83}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad68e5b636bc25c2cfe14755977564d83}} 
+Parse\+Info {\bfseries parse\+Info}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3fa0bb505083ccf2801bb60dbe416708}{use\+True\+Boolean}} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1d87b3b93d3122ccb6cc9cde36df720e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a1d87b3b93d3122ccb6cc9cde36df720e}} 
+boolean {\bfseries using\+Ansi\+Mode}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a246cebf3dfca10cef5868fd886ee15}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a246cebf3dfca10cef5868fd886ee15}} 
+String {\bfseries batched\+Values\+Clause}
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae44694bcb78c273236f69949567f9d69}{batch\+Command\+Index}} = -\/1
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a02f68abf02a7794d087960054333828a}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a02f68abf02a7794d087960054333828a}} 
+boolean {\bfseries server\+Supports\+Frac\+Secs}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a97e2df611a96a4d356042ceab7b6d7cf}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a97e2df611a96a4d356042ceab7b6d7cf}} 
+int {\bfseries rewritten\+Batch\+Size} = 0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A S\+QL \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} is pre-\/compiled and stored in a \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} object. This object can then be used to efficiently execute this statement multiple times.
+
+{\bfseries Note\+:} The set\+X\+XX methods for setting IN parameter values must specify types that are compatible with the defined S\+QL type of the input parameter. For instance, if the IN parameter has S\+QL type Integer, then set\+Int should be used. 
+
+If arbitrary parameter type conversions are required, then the set\+Object method should be used with a target S\+QL type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1784431accedc207e4dc40ff2f7f9e5}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1784431accedc207e4dc40ff2f7f9e5}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!Prepared\+Statement@{Prepared\+Statement}}
+\index{Prepared\+Statement@{Prepared\+Statement}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{Prepared\+Statement()}{PreparedStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+Prepared\+Statement.\+Prepared\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{String}]{catalog }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Constructor used by server-\/side prepared statements
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection that created us \\
+\hline
+{\em catalog} & the catalog in use when we were created\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1784431accedc207e4dc40ff2f7f9e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3d4c96994b71d52559d3d084ada8276}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3d4c96994b71d52559d3d084ada8276}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!Prepared\+Statement@{Prepared\+Statement}}
+\index{Prepared\+Statement@{Prepared\+Statement}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{Prepared\+Statement()}{PreparedStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+Prepared\+Statement.\+Prepared\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{String}]{sql,  }\item[{String}]{catalog }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Constructor for the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection creating this statement \\
+\hline
+{\em sql} & the S\+QL for this statement \\
+\hline
+{\em catalog} & the catalog/database this statement should be issued against\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3d4c96994b71d52559d3d084ada8276_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a29276b227ce437739a5d554a91c348c2}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a29276b227ce437739a5d554a91c348c2}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!Prepared\+Statement@{Prepared\+Statement}}
+\index{Prepared\+Statement@{Prepared\+Statement}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{Prepared\+Statement()}{PreparedStatement()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+Prepared\+Statement.\+Prepared\+Statement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{String}]{sql,  }\item[{String}]{catalog,  }\item[{Parse\+Info}]{cached\+Parse\+Info }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Creates a new \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection creating this statement \\
+\hline
+{\em sql} & the S\+QL for this statement \\
+\hline
+{\em catalog} & the catalog/database this statement should be issued against \\
+\hline
+{\em cached\+Parse\+Info} & already created parse\+Info.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a29276b227ce437739a5d554a91c348c2_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ade546357756baf1a168cc652c5a4de84}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ade546357756baf1a168cc652c5a4de84}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!add\+Batch@{add\+Batch}}
+\index{add\+Batch@{add\+Batch}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{add\+Batch()}{addBatch()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+add\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Add a set of parameters to the batch.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl_a3ea3c4f24a3d1c9d4f9f9a9d29e53a02}{Statement\+Impl\+::add\+Batch}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ade546357756baf1a168cc652c5a4de84_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ade546357756baf1a168cc652c5a4de84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af96357c4ef89d1eae553d657f4989bcc}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af96357c4ef89d1eae553d657f4989bcc}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!check\+Read\+Only\+Safe\+Statement@{check\+Read\+Only\+Safe\+Statement}}
+\index{check\+Read\+Only\+Safe\+Statement@{check\+Read\+Only\+Safe\+Statement}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{check\+Read\+Only\+Safe\+Statement()}{checkReadOnlySafeStatement()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Prepared\+Statement.\+check\+Read\+Only\+Safe\+Statement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check to see if the statement is safe for read-\/only slaves after failover.
+
+\begin{DoxyReturn}{Returns}
+true if safe for read-\/only. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af96357c4ef89d1eae553d657f4989bcc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af96357c4ef89d1eae553d657f4989bcc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac1bd628fd165487d93822d0198ead08a}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac1bd628fd165487d93822d0198ead08a}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!clear\+Parameters@{clear\+Parameters}}
+\index{clear\+Parameters@{clear\+Parameters}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{clear\+Parameters()}{clearParameters()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+clear\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+In general, parameter values remain in force for repeated used of a \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}}. Setting a parameter value automatically clears its previous value. However, in some cases, it is useful to immediately release the resources used by the current parameter values; this can be done by calling clear\+Parameters
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac1bd628fd165487d93822d0198ead08a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ac1bd628fd165487d93822d0198ead08a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2de0ab2631bf812f061ea336302f2b62}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2de0ab2631bf812f061ea336302f2b62}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!compute\+Batch\+Size@{compute\+Batch\+Size}}
+\index{compute\+Batch\+Size@{compute\+Batch\+Size}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{compute\+Batch\+Size()}{computeBatchSize()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Prepared\+Statement.\+compute\+Batch\+Size (\begin{DoxyParamCaption}\item[{int}]{num\+Batched\+Args }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the optimum number of batched parameter lists to send without overflowing max\+\_\+allowed\+\_\+packet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Batched\+Args} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2de0ab2631bf812f061ea336302f2b62_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2de0ab2631bf812f061ea336302f2b62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0bd3fe8e5e85dd522b3d84fb68b142ff}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0bd3fe8e5e85dd522b3d84fb68b142ff}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size@{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size}}
+\index{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size@{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size()}{computeMaxParameterSetSizeAndBatchSize()}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+compute\+Max\+Parameter\+Set\+Size\+And\+Batch\+Size (\begin{DoxyParamCaption}\item[{int}]{num\+Batched\+Args }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Computes the maximum parameter set size, and entire batch size given the number of arguments in the batch.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0bd3fe8e5e85dd522b3d84fb68b142ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0bd3fe8e5e85dd522b3d84fb68b142ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4c83f4279e13f60aa65dd4de3d2117e1}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4c83f4279e13f60aa65dd4de3d2117e1}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute@{execute}}
+\index{execute@{execute}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Some prepared statements return multiple results; the execute method handles these complex statements as well as the simpler form of statements handled by execute\+Query and execute\+Update
+
+\begin{DoxyReturn}{Returns}
+true if the next result is a Result\+Set; false if it is an update count or there are no more results
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4c83f4279e13f60aa65dd4de3d2117e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4c83f4279e13f60aa65dd4de3d2117e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4b54450205db6b099922240e4f2e72a0}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4b54450205db6b099922240e4f2e72a0}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Batched\+Inserts@{execute\+Batched\+Inserts}}
+\index{execute\+Batched\+Inserts@{execute\+Batched\+Inserts}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Batched\+Inserts()}{executeBatchedInserts()}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Batched\+Inserts (\begin{DoxyParamCaption}\item[{int}]{batch\+Timeout }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rewrites the already prepared statement into a multi-\/value insert statement of \textquotesingle{}statements\+Per\+Batch\textquotesingle{} values and executes the entire batch using this new statement.
+
+\begin{DoxyReturn}{Returns}
+update counts in the same fashion as \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl_acf49c07c2b02c99e25719bb916bc0b39}{execute\+Batch()}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4b54450205db6b099922240e4f2e72a0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a87e79e103adae56e63a967e64c167c}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a87e79e103adae56e63a967e64c167c}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Batch\+Serially@{execute\+Batch\+Serially}}
+\index{execute\+Batch\+Serially@{execute\+Batch\+Serially}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Batch\+Serially()}{executeBatchSerially()}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Batch\+Serially (\begin{DoxyParamCaption}\item[{int}]{batch\+Timeout }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Executes the current batch of statements by executing them one-\/by-\/one.
+
+\begin{DoxyReturn}{Returns}
+a list of update counts 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a87e79e103adae56e63a967e64c167c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a87e79e103adae56e63a967e64c167c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7d300759d88bba2536598e70808c3b6b}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7d300759d88bba2536598e70808c3b6b}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Internal@{execute\+Internal}}
+\index{execute\+Internal@{execute\+Internal}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Internal()}{executeInternal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Internal (\begin{DoxyParamCaption}\item[{int}]{max\+Rows\+To\+Retrieve,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}}}]{send\+Packet,  }\item[{boolean}]{create\+Streaming\+Result\+Set,  }\item[{boolean}]{query\+Is\+Select\+Only,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} \mbox{[}$\,$\mbox{]}}]{metadata\+From\+Cache,  }\item[{boolean}]{is\+Batch }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Actually execute the prepared statement. This is here so server-\/side Prepared\+Statements can re-\/use most of the code from this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Rows\+To\+Retrieve} & the max number of rows to return \\
+\hline
+{\em send\+Packet} & the packet to send \\
+\hline
+{\em create\+Streaming\+Result\+Set} & should a \textquotesingle{}streaming\textquotesingle{} result set be created? \\
+\hline
+{\em query\+Is\+Select\+Only} & is this query doing a S\+E\+L\+E\+CT? \\
+\hline
+{\em unpack\+Fields} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the results as a Result\+Set
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7d300759d88bba2536598e70808c3b6b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7d300759d88bba2536598e70808c3b6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9db54f06b57ab9446798d306d59aeefc}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9db54f06b57ab9446798d306d59aeefc}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Large\+Update@{execute\+Large\+Update}}
+\index{execute\+Large\+Update@{execute\+Large\+Update}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Large\+Update()}{executeLargeUpdate()}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Large\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+2 Same as \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a356cdeaae7b10fb79da4806e829a2190}{Prepared\+Statement.\+execute\+Update()}} but returns long instead of int. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9db54f06b57ab9446798d306d59aeefc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3cdc3e336070c453b5878ce9ba8a0cc}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3cdc3e336070c453b5878ce9ba8a0cc}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Prepared\+Batch\+As\+Multi\+Statement@{execute\+Prepared\+Batch\+As\+Multi\+Statement}}
+\index{execute\+Prepared\+Batch\+As\+Multi\+Statement@{execute\+Prepared\+Batch\+As\+Multi\+Statement}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Prepared\+Batch\+As\+Multi\+Statement()}{executePreparedBatchAsMultiStatement()}}
+{\footnotesize\ttfamily long \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Prepared\+Batch\+As\+Multi\+Statement (\begin{DoxyParamCaption}\item[{int}]{batch\+Timeout }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rewrites the already prepared statement into a multi-\/statement query of \textquotesingle{}statements\+Per\+Batch\textquotesingle{} values and executes the entire batch using this new statement.
+
+\begin{DoxyReturn}{Returns}
+update counts in the same fashion as \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl_acf49c07c2b02c99e25719bb916bc0b39}{execute\+Batch()}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad3cdc3e336070c453b5878ce9ba8a0cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a9164e855e1f7848142de8973a6dab6}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a9164e855e1f7848142de8973a6dab6}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Query@{execute\+Query}}
+\index{execute\+Query@{execute\+Query}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Query()}{executeQuery()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+A Prepared S\+QL query is executed and its Result\+Set is returned
+
+\begin{DoxyReturn}{Returns}
+a Result\+Set that contains the data produced by the query -\/ never null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a9164e855e1f7848142de8973a6dab6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a9164e855e1f7848142de8973a6dab6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a356cdeaae7b10fb79da4806e829a2190}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a356cdeaae7b10fb79da4806e829a2190}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Update@{execute\+Update}}
+\index{execute\+Update@{execute\+Update}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Update()}{executeUpdate()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Execute a S\+QL I\+N\+S\+E\+RT, U\+P\+D\+A\+TE or D\+E\+L\+E\+TE statement. In addition, S\+QL statements that return nothing such as S\+QL D\+DL statements can be executed.
+
+\begin{DoxyReturn}{Returns}
+either the row count for I\+N\+S\+E\+RT, U\+P\+D\+A\+TE or D\+E\+L\+E\+TE; or 0 for S\+QL statements that return nothing.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a356cdeaae7b10fb79da4806e829a2190_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a356cdeaae7b10fb79da4806e829a2190_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5f77388e9afc0a2fcb248732c3c91577}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5f77388e9afc0a2fcb248732c3c91577}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!execute\+Update\+Internal@{execute\+Update\+Internal}}
+\index{execute\+Update\+Internal@{execute\+Update\+Internal}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{execute\+Update\+Internal()}{executeUpdateInternal()}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+Prepared\+Statement.\+execute\+Update\+Internal (\begin{DoxyParamCaption}\item[{byte}]{batched\+Parameter\+Strings\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{Input\+Stream \mbox{[}$\,$\mbox{]}}]{batched\+Parameter\+Streams,  }\item[{boolean \mbox{[}$\,$\mbox{]}}]{batched\+Is\+Stream,  }\item[{int \mbox{[}$\,$\mbox{]}}]{batched\+Stream\+Lengths,  }\item[{boolean \mbox{[}$\,$\mbox{]}}]{batched\+Is\+Null,  }\item[{boolean}]{is\+Really\+Batch }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Added to allow batch-\/updates
+
+
+\begin{DoxyParams}{Parameters}
+{\em batched\+Parameter\+Strings} & string values used in single statement \\
+\hline
+{\em batched\+Parameter\+Streams} & stream values used in single statement \\
+\hline
+{\em batched\+Is\+Stream} & flags for streams used in single statement \\
+\hline
+{\em batched\+Stream\+Lengths} & lengths of streams to be read. \\
+\hline
+{\em batched\+Is\+Null} & flags for parameters that are null\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the update count
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a5f77388e9afc0a2fcb248732c3c91577_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0f1235a6e911d9370ef27e6ba5932d89}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0f1235a6e911d9370ef27e6ba5932d89}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!fill\+Send\+Packet@{fill\+Send\+Packet}}
+\index{fill\+Send\+Packet@{fill\+Send\+Packet}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{fill\+Send\+Packet()}{fillSendPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+fill\+Send\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the packet that contains the query to be sent to the server.
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} filled with the query representing the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0f1235a6e911d9370ef27e6ba5932d89_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0f1235a6e911d9370ef27e6ba5932d89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7012604554fada055dce8c36ece28ac7}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7012604554fada055dce8c36ece28ac7}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!fill\+Send\+Packet@{fill\+Send\+Packet}}
+\index{fill\+Send\+Packet@{fill\+Send\+Packet}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{fill\+Send\+Packet()}{fillSendPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+fill\+Send\+Packet (\begin{DoxyParamCaption}\item[{byte}]{batched\+Parameter\+Strings\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{Input\+Stream \mbox{[}$\,$\mbox{]}}]{batched\+Parameter\+Streams,  }\item[{boolean \mbox{[}$\,$\mbox{]}}]{batched\+Is\+Stream,  }\item[{int \mbox{[}$\,$\mbox{]}}]{batched\+Stream\+Lengths }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the packet that contains the query to be sent to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em batched\+Parameter\+Strings} & the parameters as strings \\
+\hline
+{\em batched\+Parameter\+Streams} & the parameters as streams \\
+\hline
+{\em batched\+Is\+Stream} & is the given parameter a stream? \\
+\hline
+{\em batched\+Stream\+Lengths} & the lengths of the streams (if appropriate)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} filled with the query that represents this statement
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7012604554fada055dce8c36ece28ac7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9d7f8d794591450a31fc804150054196}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9d7f8d794591450a31fc804150054196}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Bytes\+Representation@{get\+Bytes\+Representation}}
+\index{get\+Bytes\+Representation@{get\+Bytes\+Representation}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Bytes\+Representation()}{getBytesRepresentation()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Bytes\+Representation (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9d7f8d794591450a31fc804150054196_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9d7f8d794591450a31fc804150054196_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fd98fc094ff75e0c2cacedb818f236e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fd98fc094ff75e0c2cacedb818f236e}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Bytes\+Representation\+For\+Batch@{get\+Bytes\+Representation\+For\+Batch}}
+\index{get\+Bytes\+Representation\+For\+Batch@{get\+Bytes\+Representation\+For\+Batch}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Bytes\+Representation\+For\+Batch()}{getBytesRepresentationForBatch()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Bytes\+Representation\+For\+Batch (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{int}]{command\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get bytes representation for a parameter in a statement batch.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em command\+Index} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fd98fc094ff75e0c2cacedb818f236e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3f7dd0edd868d1c66f08be25392fba8e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3f7dd0edd868d1c66f08be25392fba8e}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{String}]{catalog }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Creates a prepared statement instance -- We need to provide factory-\/style methods so we can support both J\+D\+B\+C3 (and older) and J\+D\+B\+C4 runtimes, otherwise the class verifier complains when it tries to load J\+D\+B\+C4-\/only interface classes that are present in J\+D\+B\+C4 method signatures. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3f7dd0edd868d1c66f08be25392fba8e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a597b46826cbe709aaee73ee7ccb1ab85}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a597b46826cbe709aaee73ee7ccb1ab85}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{String}]{sql,  }\item[{String}]{catalog }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Creates a prepared statement instance -- We need to provide factory-\/style methods so we can support both J\+D\+B\+C3 (and older) and J\+D\+B\+C4 runtimes, otherwise the class verifier complains when it tries to load J\+D\+B\+C4-\/only interface classes that are present in J\+D\+B\+C4 method signatures. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a597b46826cbe709aaee73ee7ccb1ab85_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a37bdcf9e02a649454447143c8b6361d7}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a37bdcf9e02a649454447143c8b6361d7}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{String}]{sql,  }\item[{String}]{catalog,  }\item[{Parse\+Info}]{cached\+Parse\+Info }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Creates a prepared statement instance -- We need to provide factory-\/style methods so we can support both J\+D\+B\+C3 (and older) and J\+D\+B\+C4 runtimes, otherwise the class verifier complains when it tries to load J\+D\+B\+C4-\/only interface classes that are present in J\+D\+B\+C4 method signatures. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a37bdcf9e02a649454447143c8b6361d7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a260be2cc343e066802a49720c672da77}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a260be2cc343e066802a49720c672da77}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Meta\+Data@{get\+Meta\+Data}}
+\index{get\+Meta\+Data@{get\+Meta\+Data}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Meta\+Data()}{getMetaData()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set\+Meta\+Data com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+The number, types and properties of a Result\+Set\textquotesingle{}s columns are provided by the get\+Meta\+Data method.
+
+\begin{DoxyReturn}{Returns}
+the description of a Result\+Set\textquotesingle{}s columns
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a260be2cc343e066802a49720c672da77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a80a81c39177a5e46c653efb1acd9e797}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a80a81c39177a5e46c653efb1acd9e797}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Parameter\+Index\+Offset@{get\+Parameter\+Index\+Offset}}
+\index{get\+Parameter\+Index\+Offset@{get\+Parameter\+Index\+Offset}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Parameter\+Index\+Offset()}{getParameterIndexOffset()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Parameter\+Index\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+For calling stored functions, this will be -\/1 as we don\textquotesingle{}t really count the first \textquotesingle{}?\textquotesingle{} parameter marker, it\textquotesingle{}s only syntax, but J\+D\+BC counts it as \#1, otherwise it will return 0 Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a80a81c39177a5e46c653efb1acd9e797_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aec23fbfe8b08dd9281ff9757dc896101}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aec23fbfe8b08dd9281ff9757dc896101}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!get\+Parameter\+Meta\+Data@{get\+Parameter\+Meta\+Data}}
+\index{get\+Parameter\+Meta\+Data@{get\+Parameter\+Meta\+Data}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{get\+Parameter\+Meta\+Data()}{getParameterMetaData()}}
+{\footnotesize\ttfamily Parameter\+Meta\+Data com.\+mysql.\+jdbc.\+Prepared\+Statement.\+get\+Parameter\+Meta\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aec23fbfe8b08dd9281ff9757dc896101}{Prepared\+Statement\+::get\+Parameter\+Meta\+Data()}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aec23fbfe8b08dd9281ff9757dc896101_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad039caba8bbe065bb7b6a26a0f7a1f30}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad039caba8bbe065bb7b6a26a0f7a1f30}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!prepare\+Batched\+Insert\+S\+QL@{prepare\+Batched\+Insert\+S\+QL}}
+\index{prepare\+Batched\+Insert\+S\+QL@{prepare\+Batched\+Insert\+S\+QL}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{prepare\+Batched\+Insert\+S\+Q\+L()}{prepareBatchedInsertSQL()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+prepare\+Batched\+Insert\+S\+QL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{local\+Conn,  }\item[{int}]{num\+Batches }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a prepared statement for the number of batched parameters, used when re-\/writing batch I\+N\+S\+E\+R\+Ts. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad039caba8bbe065bb7b6a26a0f7a1f30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ad039caba8bbe065bb7b6a26a0f7a1f30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a38e323114d62ae7b8bee091841dcee5d}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a38e323114d62ae7b8bee091841dcee5d}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!read\+Fully@{read\+Fully}}
+\index{read\+Fully@{read\+Fully}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{read\+Fully()}{readFully()}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+Prepared\+Statement.\+read\+Fully (\begin{DoxyParamCaption}\item[{Reader}]{reader,  }\item[{char \mbox{[}$\,$\mbox{]}}]{buf,  }\item[{int}]{length }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Reads length bytes from reader into buf. Blocks until enough input is available
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & \\
+\hline
+{\em buf} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a38e323114d62ae7b8bee091841dcee5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a20c0c136d44994a292aecb75b10b4133}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a20c0c136d44994a292aecb75b10b4133}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!real\+Close@{real\+Close}}
+\index{real\+Close@{real\+Close}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{real\+Close()}{realClose()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+real\+Close (\begin{DoxyParamCaption}\item[{boolean}]{called\+Explicitly,  }\item[{boolean}]{close\+Open\+Results }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Closes this statement, releasing all resources
+
+
+\begin{DoxyParams}{Parameters}
+{\em called\+Explicitly} & was this called by \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl_a740a220f82b06eace44154a089fbdf18}{close()}}?\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a20c0c136d44994a292aecb75b10b4133_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a20c0c136d44994a292aecb75b10b4133_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a435eccbc94fa43a060e987fa8236fbe8}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a435eccbc94fa43a060e987fa8236fbe8}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Array@{set\+Array}}
+\index{set\+Array@{set\+Array}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Array()}{setArray()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Array (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{Array}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Set an Array parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em x} & an object representing an S\+QL array\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & because this method is not implemented. \\
+\hline
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_not_implemented}{Not\+Implemented}}} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a435eccbc94fa43a060e987fa8236fbe8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae3612d6b5fc893fa6e24ec026c40a100}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae3612d6b5fc893fa6e24ec026c40a100}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Ascii\+Stream@{set\+Ascii\+Stream}}
+\index{set\+Ascii\+Stream@{set\+Ascii\+Stream}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Ascii\+Stream()}{setAsciiStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Ascii\+Stream (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Input\+Stream}]{x,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+When a very large A\+S\+C\+II value is input to a L\+O\+N\+G\+V\+A\+R\+C\+H\+AR parameter, it may be more practical to send it via a java.\+io.\+Input\+Stream. J\+D\+BC will read the data from the stream as needed, until it reaches end-\/of-\/file. The J\+D\+BC driver will do any necessary conversion from A\+S\+C\+II to the database char format.
+
+{\bfseries Note\+:} This stream object can either be a standard Java stream object or your own subclass that implements the standard interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value \\
+\hline
+{\em length} & the number of bytes in the stream\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae3612d6b5fc893fa6e24ec026c40a100_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae3612d6b5fc893fa6e24ec026c40a100_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab398b97a7a8e7b77fa5d2ad422897cd7}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab398b97a7a8e7b77fa5d2ad422897cd7}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Big\+Decimal@{set\+Big\+Decimal}}
+\index{set\+Big\+Decimal@{set\+Big\+Decimal}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Big\+Decimal()}{setBigDecimal()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Big\+Decimal (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Big\+Decimal}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a java.\+math.\+Big\+Decimal value. The driver converts this to a S\+QL N\+U\+M\+E\+R\+IC value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab398b97a7a8e7b77fa5d2ad422897cd7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab398b97a7a8e7b77fa5d2ad422897cd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a230dbbbaa17cdab8c8a70125a6b8bbca}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a230dbbbaa17cdab8c8a70125a6b8bbca}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Binary\+Stream@{set\+Binary\+Stream}}
+\index{set\+Binary\+Stream@{set\+Binary\+Stream}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Binary\+Stream()}{setBinaryStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Binary\+Stream (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Input\+Stream}]{x,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+When a very large binary value is input to a L\+O\+N\+G\+V\+A\+R\+B\+I\+N\+A\+RY parameter, it may be more practical to send it via a java.\+io.\+Input\+Stream. J\+D\+BC will read the data from the stream as needed, until it reaches end-\/of-\/file.
+
+{\bfseries Note\+:} This stream object can either be a standard Java stream object or your own subclass that implements the standard interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value \\
+\hline
+{\em length} & the number of bytes to read from the stream (ignored)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a230dbbbaa17cdab8c8a70125a6b8bbca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a230dbbbaa17cdab8c8a70125a6b8bbca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a923cc59072cb8539196d7288f1830f0d}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a923cc59072cb8539196d7288f1830f0d}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Blob@{set\+Blob}}
+\index{set\+Blob@{set\+Blob}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Blob()}{setBlob()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Blob (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{java.\+sql.\+Blob}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Set a B\+L\+OB parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em x} & an object representing a B\+L\+OB\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a923cc59072cb8539196d7288f1830f0d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9f0e5dd8b1cae6d2f116ae694577b2ce}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9f0e5dd8b1cae6d2f116ae694577b2ce}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Boolean@{set\+Boolean}}
+\index{set\+Boolean@{set\+Boolean}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Boolean()}{setBoolean()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Boolean (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{boolean}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java boolean value. The driver converts this to a S\+QL B\+IT value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9f0e5dd8b1cae6d2f116ae694577b2ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9f0e5dd8b1cae6d2f116ae694577b2ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a77b76109f1a5e97036a8a82de590efc5}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a77b76109f1a5e97036a8a82de590efc5}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Byte@{set\+Byte}}
+\index{set\+Byte@{set\+Byte}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Byte()}{setByte()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Byte (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{byte}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java byte value. The driver converts this to a S\+QL T\+I\+N\+Y\+I\+NT value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a77b76109f1a5e97036a8a82de590efc5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a77b76109f1a5e97036a8a82de590efc5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aaaac7a11d71f1c60bc57f96271582061}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aaaac7a11d71f1c60bc57f96271582061}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Bytes@{set\+Bytes}}
+\index{set\+Bytes@{set\+Bytes}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Bytes()}{setBytes()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Bytes (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java array of bytes. The driver converts this to a S\+QL V\+A\+R\+B\+I\+N\+A\+RY or L\+O\+N\+G\+V\+A\+R\+B\+I\+N\+A\+RY (depending on the argument\textquotesingle{}s size relative to the driver\textquotesingle{}s limits on V\+A\+R\+B\+I\+N\+A\+R\+Ys) when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aaaac7a11d71f1c60bc57f96271582061_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aaaac7a11d71f1c60bc57f96271582061_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae6f08c22768c05382f813b02cfdb81e8}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae6f08c22768c05382f813b02cfdb81e8}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Bytes\+No\+Escape@{set\+Bytes\+No\+Escape}}
+\index{set\+Bytes\+No\+Escape@{set\+Bytes\+No\+Escape}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Bytes\+No\+Escape()}{setBytesNoEscape()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Bytes\+No\+Escape (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{parameter\+As\+Bytes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Used by updatable result sets for refresh\+Row() because the parameter has already been escaped for updater or inserter prepared statements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the parameter to set. \\
+\hline
+{\em parameter\+As\+Bytes} & the parameter as a string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3653eef6d3825664b0dd3f0adbe8288c}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3653eef6d3825664b0dd3f0adbe8288c}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Character\+Stream@{set\+Character\+Stream}}
+\index{set\+Character\+Stream@{set\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Character\+Stream()}{setCharacterStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Character\+Stream (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{java.\+io.\+Reader}]{reader,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 When a very large U\+N\+I\+C\+O\+DE value is input to a L\+O\+N\+G\+V\+A\+R\+C\+H\+AR parameter, it may be more practical to send it via a java.\+io.\+Reader. J\+D\+BC will read the data from the stream as needed, until it reaches end-\/of-\/file. The J\+D\+BC driver will do any necessary conversion from U\+N\+I\+C\+O\+DE to the database char format.
+
+{\bfseries Note\+:} This stream object can either be a standard Java stream object or your own subclass that implements the standard interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em reader} & the java reader which contains the U\+N\+I\+C\+O\+DE data \\
+\hline
+{\em length} & the number of characters in the stream\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3653eef6d3825664b0dd3f0adbe8288c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3653eef6d3825664b0dd3f0adbe8288c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_afede5384371c1526e48fe4a923bc2292}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_afede5384371c1526e48fe4a923bc2292}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Clob@{set\+Clob}}
+\index{set\+Clob@{set\+Clob}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Clob()}{setClob()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Clob (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob}{Clob}}}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Set a C\+L\+OB parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em x} & an object representing a C\+L\+OB\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_afede5384371c1526e48fe4a923bc2292_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_afede5384371c1526e48fe4a923bc2292_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fff0e5cc0d3a8205620da02c39f4673}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fff0e5cc0d3a8205620da02c39f4673}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Date (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{java.\+sql.\+Date}]{x }\end{DoxyParamCaption}) throws java.\+sql.\+S\+Q\+L\+Exception}
+
+Set a parameter to a java.\+sql.\+Date value. The driver converts this to a S\+QL D\+A\+TE value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+sql.\+S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a7fff0e5cc0d3a8205620da02c39f4673_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aea55e79f823b386bf3525f1f147cd272}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aea55e79f823b386bf3525f1f147cd272}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Date (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{java.\+sql.\+Date}]{x,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a java.\+sql.\+Date value. The driver converts this to a S\+QL D\+A\+TE value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em x} & the parameter value \\
+\hline
+{\em cal} & the calendar to interpret the date with\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aea55e79f823b386bf3525f1f147cd272_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9be27733e4e54e675dd6eaf238380e02}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9be27733e4e54e675dd6eaf238380e02}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Double@{set\+Double}}
+\index{set\+Double@{set\+Double}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Double()}{setDouble()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Double (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{double}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java double value. The driver converts this to a S\+QL D\+O\+U\+B\+LE value when it sends it to the database
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9be27733e4e54e675dd6eaf238380e02_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9be27733e4e54e675dd6eaf238380e02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a68b6271f340188dc794c5bc4418705cb}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a68b6271f340188dc794c5bc4418705cb}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Float@{set\+Float}}
+\index{set\+Float@{set\+Float}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Float()}{setFloat()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Float (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{float}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java float value. The driver converts this to a S\+QL F\+L\+O\+AT value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a68b6271f340188dc794c5bc4418705cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a68b6271f340188dc794c5bc4418705cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae9efafe8af966733befb3f271c7d902c}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae9efafe8af966733befb3f271c7d902c}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Int@{set\+Int}}
+\index{set\+Int@{set\+Int}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Int()}{setInt()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Int (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{int}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java int value. The driver converts this to a S\+QL I\+N\+T\+E\+G\+ER value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae9efafe8af966733befb3f271c7d902c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae9efafe8af966733befb3f271c7d902c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a56039ead85e37c1c6d019cb62f584ef9}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a56039ead85e37c1c6d019cb62f584ef9}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Long@{set\+Long}}
+\index{set\+Long@{set\+Long}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Long()}{setLong()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Long (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{long}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java long value. The driver converts this to a S\+QL B\+I\+G\+I\+NT value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a56039ead85e37c1c6d019cb62f584ef9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a56039ead85e37c1c6d019cb62f584ef9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1b2dd7f3f872f4ff1400be1d760e200}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1b2dd7f3f872f4ff1400be1d760e200}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+N\+Character\+Stream@{set\+N\+Character\+Stream}}
+\index{set\+N\+Character\+Stream@{set\+N\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+N\+Character\+Stream()}{setNCharacterStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+N\+Character\+Stream (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Reader}]{reader,  }\item[{long}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 When a very large U\+N\+I\+C\+O\+DE value is input to a L\+O\+N\+G\+V\+A\+R\+C\+H\+AR parameter, it may be more practical to send it via a java.\+io.\+Reader. J\+D\+BC will read the data from the stream as needed, until it reaches end-\/of-\/file. The J\+D\+BC driver will do any necessary conversion from U\+N\+I\+C\+O\+DE to the database char format.
+
+{\bfseries Note\+:} This stream object can either be a standard Java stream object or your own subclass that implements the standard interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em reader} & the java reader which contains the U\+N\+I\+C\+O\+DE data \\
+\hline
+{\em length} & the number of characters in the stream\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_af1b2dd7f3f872f4ff1400be1d760e200_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aacd4ab63c372045d3e340bccf996e227}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aacd4ab63c372045d3e340bccf996e227}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+N\+Clob@{set\+N\+Clob}}
+\index{set\+N\+Clob@{set\+N\+Clob}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+N\+Clob()}{setNClob()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+N\+Clob (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Reader}]{reader,  }\item[{long}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0 Set a N\+C\+L\+OB parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em reader} & the java reader which contains the U\+N\+I\+C\+O\+DE data \\
+\hline
+{\em length} & the number of characters in the stream\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aacd4ab63c372045d3e340bccf996e227_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a8a013584b26bbffe4b3c11c283ef6efc}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a8a013584b26bbffe4b3c11c283ef6efc}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+N\+String@{set\+N\+String}}
+\index{set\+N\+String@{set\+N\+String}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+N\+String()}{setNString()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+N\+String (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{String}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java String value. The driver converts this to a S\+QL V\+A\+R\+C\+H\+AR or L\+O\+N\+G\+V\+A\+R\+C\+H\+AR value with introducer \+\_\+utf8 (depending on the arguments size relative to the driver\textquotesingle{}s limits on V\+A\+R\+C\+H\+A\+Rs) when it sends it to the database. If charset is set as utf8, this method just call set\+String.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a8a013584b26bbffe4b3c11c283ef6efc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a8a013584b26bbffe4b3c11c283ef6efc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab885f67afaf798c888f537898f82809e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab885f67afaf798c888f537898f82809e}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Null@{set\+Null}}
+\index{set\+Null@{set\+Null}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Null()}{setNull()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Null (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{int}]{sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to S\+QL N\+U\+LL
+
+{\bfseries Note\+:} You must specify the parameters S\+QL type (although My\+S\+QL ignores it) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, etc... \\
+\hline
+{\em sql\+Type} & the S\+QL type code defined in java.\+sql.\+Types\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab885f67afaf798c888f537898f82809e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab885f67afaf798c888f537898f82809e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a52e34d1cb0264c8eb6f8bac60385e446}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a52e34d1cb0264c8eb6f8bac60385e446}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Null@{set\+Null}}
+\index{set\+Null@{set\+Null}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Null()}{setNull()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Null (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{int}]{sql\+Type,  }\item[{String}]{arg }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to S\+QL N\+U\+LL.
+
+{\bfseries Note\+:} You must specify the parameter\textquotesingle{}s S\+QL type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em sql\+Type} & S\+QL type code defined by java.\+sql.\+Types \\
+\hline
+{\em arg} & argument parameters for null\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a52e34d1cb0264c8eb6f8bac60385e446_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9e69a72bbaef62df845abee77bde90ef}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9e69a72bbaef62df845abee77bde90ef}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Object}]{parameter\+Obj,  }\item[{int}]{target\+Sql\+Type }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & \\
+\hline
+{\em parameter\+Obj} & \\
+\hline
+{\em target\+Sql\+Type} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aee3c411b599fe20f669701c025cc7a90}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aee3c411b599fe20f669701c025cc7a90}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Object@{set\+Object}}
+\index{set\+Object@{set\+Object}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Object()}{setObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Object (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Object}]{parameter\+Obj,  }\item[{int}]{target\+Sql\+Type,  }\item[{int}]{scale }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set the value of a parameter using an object; use the java.\+lang equivalent objects for integral values.
+
+The given Java object will be converted to the target\+Sql\+Type before being sent to the database. 
+
+note that this method may be used to pass database-\/specific abstract data types. This is done by using a Driver-\/specific Java type and using a target\+Sql\+Type of java.\+sql.\+Types.\+O\+T\+H\+ER 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em parameter\+Obj} & the object containing the input parameter value \\
+\hline
+{\em target\+Sql\+Type} & The S\+QL type to be send to the database \\
+\hline
+{\em scale} & For java.\+sql.\+Types.\+D\+E\+C\+I\+M\+AL or java.\+sql.\+Types.\+N\+U\+M\+E\+R\+IC types this is the number of digits after the decimal. For all other types this value will be ignored.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aee3c411b599fe20f669701c025cc7a90_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae89f89fcb2083ed1bc44a04a7a5757b4}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae89f89fcb2083ed1bc44a04a7a5757b4}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Ref@{set\+Ref}}
+\index{set\+Ref@{set\+Ref}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Ref()}{setRef()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Ref (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{Ref}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 2.\+0 Set a R\+EF($<$structured-\/type$>$) parameter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em x} & an object representing data of an S\+QL R\+EF Type\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_not_implemented}{Not\+Implemented}}} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae89f89fcb2083ed1bc44a04a7a5757b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9ed8cafd89fc66eb155892b62a006c38}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9ed8cafd89fc66eb155892b62a006c38}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Short@{set\+Short}}
+\index{set\+Short@{set\+Short}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Short()}{setShort()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Short (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{short}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java short value. The driver converts this to a S\+QL S\+M\+A\+L\+L\+I\+NT value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9ed8cafd89fc66eb155892b62a006c38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9ed8cafd89fc66eb155892b62a006c38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a4c13284de8a0257085966284a41f1d}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a4c13284de8a0257085966284a41f1d}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+String@{set\+String}}
+\index{set\+String@{set\+String}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+String()}{setString()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+String (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{String}]{x }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a Java String value. The driver converts this to a S\+QL V\+A\+R\+C\+H\+AR or L\+O\+N\+G\+V\+A\+R\+C\+H\+AR value (depending on the arguments size relative to the driver\textquotesingle{}s limits on V\+A\+R\+C\+H\+A\+Rs) when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a4c13284de8a0257085966284a41f1d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a0a4c13284de8a0257085966284a41f1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a72d22c559a4a13dc93fc5343d8bc85}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a72d22c559a4a13dc93fc5343d8bc85}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Time()}{setTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Time (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{java.\+sql.\+Time}]{x,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a java.\+sql.\+Time value. The driver converts this to a S\+QL T\+I\+ME value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em x} & the parameter value \\
+\hline
+{\em cal} & the cal specifying the timezone\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a72d22c559a4a13dc93fc5343d8bc85_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a4a72d22c559a4a13dc93fc5343d8bc85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2edc3ed9d413dfc3dc612f8f27a6cf72}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2edc3ed9d413dfc3dc612f8f27a6cf72}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Time()}{setTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Time (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Time}]{x }\end{DoxyParamCaption}) throws java.\+sql.\+S\+Q\+L\+Exception}
+
+Set a parameter to a java.\+sql.\+Time value. The driver converts this to a S\+QL T\+I\+ME value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1...)); \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+sql.\+S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2edc3ed9d413dfc3dc612f8f27a6cf72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a6ae79298e06ce58b5e8acb9d8fd66e65}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a6ae79298e06ce58b5e8acb9d8fd66e65}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Timestamp@{set\+Timestamp}}
+\index{set\+Timestamp@{set\+Timestamp}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Timestamp()}{setTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Timestamp (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{java.\+sql.\+Timestamp}]{x,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set a parameter to a java.\+sql.\+Timestamp value. The driver converts this to a S\+QL T\+I\+M\+E\+S\+T\+A\+MP value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1, the second is 2, ... \\
+\hline
+{\em x} & the parameter value \\
+\hline
+{\em cal} & the calendar specifying the timezone to use\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a6ae79298e06ce58b5e8acb9d8fd66e65_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a6ae79298e06ce58b5e8acb9d8fd66e65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_acc2c80fd01dd1159ea8865da73016b8f}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_acc2c80fd01dd1159ea8865da73016b8f}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Timestamp@{set\+Timestamp}}
+\index{set\+Timestamp@{set\+Timestamp}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Timestamp()}{setTimestamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Timestamp (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Timestamp}]{x }\end{DoxyParamCaption}) throws java.\+sql.\+S\+Q\+L\+Exception}
+
+Set a parameter to a java.\+sql.\+Timestamp value. The driver converts this to a S\+QL T\+I\+M\+E\+S\+T\+A\+MP value when it sends it to the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+sql.\+S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_acc2c80fd01dd1159ea8865da73016b8f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a60b5160c6f36f382f465cbe65a898638}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a60b5160c6f36f382f465cbe65a898638}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+Unicode\+Stream@{set\+Unicode\+Stream}}
+\index{set\+Unicode\+Stream@{set\+Unicode\+Stream}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+Unicode\+Stream()}{setUnicodeStream()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+Unicode\+Stream (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{Input\+Stream}]{x,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+When a very large Unicode value is input to a L\+O\+N\+G\+V\+A\+R\+C\+H\+AR parameter, it may be more practical to send it via a java.\+io.\+Input\+Stream. J\+D\+BC will read the data from the stream as needed, until it reaches end-\/of-\/file. The J\+D\+BC driver will do any necessary conversion from U\+N\+I\+C\+O\+DE to the database char format.
+
+{\bfseries Note\+:} This stream object can either be a standard Java stream object or your own subclass that implements the standard interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter\+Index} & the first parameter is 1... \\
+\hline
+{\em x} & the parameter value \\
+\hline
+{\em length} & the number of bytes to read from the stream\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000017}{Deprecated}}]\end{DoxyRefDesc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a60b5160c6f36f382f465cbe65a898638_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a19011de47765abe0b12d60a3ad76ceb1}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a19011de47765abe0b12d60a3ad76ceb1}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!set\+U\+RL@{set\+U\+RL}}
+\index{set\+U\+RL@{set\+U\+RL}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{set\+U\+R\+L()}{setURL()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Prepared\+Statement.\+set\+U\+RL (\begin{DoxyParamCaption}\item[{int}]{parameter\+Index,  }\item[{U\+RL}]{arg }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a19011de47765abe0b12d60a3ad76ceb1}{Prepared\+Statement\+::set\+U\+R\+L(int, U\+R\+L)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a19011de47765abe0b12d60a3ad76ceb1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a21fa3680558df3800e15b9ee1a38ae70}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a21fa3680558df3800e15b9ee1a38ae70}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+Prepared\+Statement.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} represented as a string.
+
+\begin{DoxyReturn}{Returns}
+this \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} represented as a string. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae44694bcb78c273236f69949567f9d69}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ae44694bcb78c273236f69949567f9d69}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!batch\+Command\+Index@{batch\+Command\+Index}}
+\index{batch\+Command\+Index@{batch\+Command\+Index}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{batch\+Command\+Index}{batchCommandIndex}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Prepared\+Statement.\+batch\+Command\+Index = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+Command index of currently executing batch command. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab2b6492262755a13533495771a983d2e}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab2b6492262755a13533495771a983d2e}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!batch\+Has\+Plain\+Statements@{batch\+Has\+Plain\+Statements}}
+\index{batch\+Has\+Plain\+Statements@{batch\+Has\+Plain\+Statements}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{batch\+Has\+Plain\+Statements}{batchHasPlainStatements}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Prepared\+Statement.\+batch\+Has\+Plain\+Statements = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Does the batch (if any) contain \char`\"{}plain\char`\"{} statements added by Statement.\+add\+Batch(\+String)?
+
+If so, we can\textquotesingle{}t re-\/write it to use multi-\/value or multi-\/queries. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab4a2f47d871558da1216653add5dcbb3}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_ab4a2f47d871558da1216653add5dcbb3}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!first\+Char\+Of\+Stmt@{first\+Char\+Of\+Stmt}}
+\index{first\+Char\+Of\+Stmt@{first\+Char\+Of\+Stmt}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{first\+Char\+Of\+Stmt}{firstCharOfStmt}}
+{\footnotesize\ttfamily char com.\+mysql.\+jdbc.\+Prepared\+Statement.\+first\+Char\+Of\+Stmt = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+What is the first character of the prepared statement (used to check for S\+E\+L\+E\+CT vs. I\+N\+S\+E\+R\+T/\+U\+P\+D\+A\+T\+E/\+D\+E\+L\+E\+TE) \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3b5d2d6f48345edc1fc813d040ff041a}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3b5d2d6f48345edc1fc813d040ff041a}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!is\+Load\+Data\+Query@{is\+Load\+Data\+Query}}
+\index{is\+Load\+Data\+Query@{is\+Load\+Data\+Query}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{is\+Load\+Data\+Query}{isLoadDataQuery}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Prepared\+Statement.\+is\+Load\+Data\+Query = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Is this query a L\+O\+AD D\+A\+TA query? \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9378b4b930d85c095050653868c37d77}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a9378b4b930d85c095050653868c37d77}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!original\+Sql@{original\+Sql}}
+\index{original\+Sql@{original\+Sql}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{original\+Sql}{originalSql}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+Prepared\+Statement.\+original\+Sql = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The S\+QL that was passed in to \textquotesingle{}prepare\textquotesingle{} \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aa558a4c2359849497f6e7b985fa4fb08}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_aa558a4c2359849497f6e7b985fa4fb08}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!parameter\+Count@{parameter\+Count}}
+\index{parameter\+Count@{parameter\+Count}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{parameter\+Count}{parameterCount}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Prepared\+Statement.\+parameter\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+The number of parameters in this \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}} \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2ee36bea2958e84148585745d9aceffe}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a2ee36bea2958e84148585745d9aceffe}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!parameter\+Types@{parameter\+Types}}
+\index{parameter\+Types@{parameter\+Types}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{parameter\+Types}{parameterTypes}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Prepared\+Statement.\+parameter\+Types = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Only used by statement interceptors at the moment to provide introspection of bound values \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3fa0bb505083ccf2801bb60dbe416708}\label{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement_a3fa0bb505083ccf2801bb60dbe416708}} 
+\index{com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}!use\+True\+Boolean@{use\+True\+Boolean}}
+\index{use\+True\+Boolean@{use\+True\+Boolean}!com\+::mysql\+::jdbc\+::\+Prepared\+Statement@{com\+::mysql\+::jdbc\+::\+Prepared\+Statement}}
+\subsubsection{\texorpdfstring{use\+True\+Boolean}{useTrueBoolean}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Prepared\+Statement.\+use\+True\+Boolean = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Are we using a version of My\+S\+QL where we can use \textquotesingle{}true\textquotesingle{} boolean values? 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Prepared\+Statement.\+java\end{DoxyCompactItemize}

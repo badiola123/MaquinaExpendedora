@@ -1,0 +1,321 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob}{}\section{com.\+mysql.\+jdbc.\+Blob Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_blob}\index{com.\+mysql.\+jdbc.\+Blob@{com.\+mysql.\+jdbc.\+Blob}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Blob\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classcom_1_1mysql_1_1jdbc_1_1_blob__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Blob\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classcom_1_1mysql_1_1jdbc_1_1_blob__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized java.\+io.\+Input\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a716c9113195aafa27a5a1f2eb50c230c}{get\+Binary\+Stream}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a7553db3605516634189d77a9cdfbac60}{get\+Bytes}} (long pos, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_aed91f2ff2c2217b4c52294d356253e63}{length}})  throws S\+Q\+L\+Exception 
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_aed91f2ff2c2217b4c52294d356253e63}{length}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a2559b772dc01c0b327cee87b1a5c119e}{position}} (byte\mbox{[}$\,$\mbox{]} pattern, long start)  throws S\+Q\+L\+Exception 
+\item 
+synchronized long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a7ea2c2c3ebb85581cd54c5615e725a88}{position}} (java.\+sql.\+Blob pattern, long start)  throws S\+Q\+L\+Exception 
+\item 
+synchronized Output\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_afa722f94370d179ecd4275e8717751a2}{set\+Binary\+Stream}} (long index\+To\+Write\+At)  throws S\+Q\+L\+Exception 
+\item 
+synchronized int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a229c3ca9696de0a5d230671e1adea557}{set\+Bytes}} (long write\+At, byte\mbox{[}$\,$\mbox{]} bytes)  throws S\+Q\+L\+Exception 
+\item 
+synchronized int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a17fdc870a0ed05ef0d500c874115e3dd}{set\+Bytes}} (long write\+At, byte\mbox{[}$\,$\mbox{]} bytes, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_aed91f2ff2c2217b4c52294d356253e63}{length}})  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a8e4bb5f28a7f31220f2817cc8765d8b1}{stream\+Closed}} (byte\mbox{[}$\,$\mbox{]} byte\+Data)
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a91be83b3b4b6ebf95318f681051065ed}{stream\+Closed}} (Watchable\+Output\+Stream out)
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_ac1341e0ed7c4ba983773aee70c265cb9}{truncate}} (long len)  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a7405044926c16084af58e0666a33eddc}{free}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized Input\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_a5c5e58e0fee91fa04afad866e2c87289}{get\+Binary\+Stream}} (long pos, long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_aed91f2ff2c2217b4c52294d356253e63}{length}})  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The representation (mapping) in the Java\+TM programming language of an S\+QL B\+L\+OB value. An S\+QL B\+L\+OB is a built-\/in type that stores a Binary Large Object as a column value in a row of a database table. The driver implements \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}} using an S\+QL locator(\+B\+L\+O\+B), which means that a \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}} object contains a logical pointer to the S\+QL B\+L\+OB data rather than the data itself. A \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}} object is valid for the duration of the transaction in which is was created. Methods in the interfaces Result\+Set, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_callable_statement}{Callable\+Statement}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}}, such as get\+Blob and set\+Blob allow a programmer to access an S\+QL B\+L\+OB value. The \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}} interface provides methods for getting the length of an S\+QL B\+L\+OB (Binary Large Object) value, for materializing a B\+L\+OB value on the client, and for determining the position of a pattern of bytes within a B\+L\+OB value. This class is new in the J\+D\+BC 2.\+0 A\+PI. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a7405044926c16084af58e0666a33eddc}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a7405044926c16084af58e0666a33eddc}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!free@{free}}
+\index{free@{free}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+jdbc.\+Blob.\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+This method frees the {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}} object and releases the resources that it holds. The object is invalid once the {\ttfamily free} method is called. 
+
+After {\ttfamily free} has been called, any attempt to invoke a method other than {\ttfamily free} will result in a {\ttfamily S\+Q\+L\+Exception} being thrown. If {\ttfamily free} is called multiple times, the subsequent calls to {\ttfamily free} are treated as a no-\/op. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs releasing the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}\textquotesingle{}s resources \\
+\hline
+{\em S\+Q\+L\+Feature\+Not\+Supported\+Exception} & if the J\+D\+BC driver does not support this method \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a716c9113195aafa27a5a1f2eb50c230c}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a716c9113195aafa27a5a1f2eb50c230c}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!get\+Binary\+Stream@{get\+Binary\+Stream}}
+\index{get\+Binary\+Stream@{get\+Binary\+Stream}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{get\+Binary\+Stream()}{getBinaryStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized java.\+io.\+Input\+Stream com.\+mysql.\+jdbc.\+Blob.\+get\+Binary\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Retrieves the B\+L\+OB designated by this \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}} instance as a stream.
+
+\begin{DoxyReturn}{Returns}
+this B\+L\+OB represented as a binary stream of bytes.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a5c5e58e0fee91fa04afad866e2c87289}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a5c5e58e0fee91fa04afad866e2c87289}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!get\+Binary\+Stream@{get\+Binary\+Stream}}
+\index{get\+Binary\+Stream@{get\+Binary\+Stream}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{get\+Binary\+Stream()}{getBinaryStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized Input\+Stream com.\+mysql.\+jdbc.\+Blob.\+get\+Binary\+Stream (\begin{DoxyParamCaption}\item[{long}]{pos,  }\item[{long}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns an {\ttfamily Input\+Stream} object that contains a partial {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}} value, starting with the byte specified by pos, which is length bytes in length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the offset to the first byte of the partial value to be retrieved. The first byte in the {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}} is at position 1 \\
+\hline
+{\em length} & the length in bytes of the partial value to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Input\+Stream} through which the partial {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}} value can be read. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if pos is less than 1 or if pos is greater than the number of bytes in the {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}} or if pos + length is greater than the number of bytes in the {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}}\\
+\hline
+{\em S\+Q\+L\+Feature\+Not\+Supported\+Exception} & if the J\+D\+BC driver does not support this method \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_a5c5e58e0fee91fa04afad866e2c87289_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a7553db3605516634189d77a9cdfbac60}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a7553db3605516634189d77a9cdfbac60}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}}
+{\footnotesize\ttfamily synchronized byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Blob.\+get\+Bytes (\begin{DoxyParamCaption}\item[{long}]{pos,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns as an array of bytes, part or all of the B\+L\+OB value that this \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}} object designates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & where to start the part of the B\+L\+OB \\
+\hline
+{\em length} & the length of the part of the B\+L\+OB you want returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the bytes stored in the blob starting at position {\ttfamily pos} and having a length of {\ttfamily length}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_a7553db3605516634189d77a9cdfbac60_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_aed91f2ff2c2217b4c52294d356253e63}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_aed91f2ff2c2217b4c52294d356253e63}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!length@{length}}
+\index{length@{length}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+jdbc.\+Blob.\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns the number of bytes in the B\+L\+OB value designated by this \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}} object.
+
+\begin{DoxyReturn}{Returns}
+the length of this blob
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_aed91f2ff2c2217b4c52294d356253e63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a2559b772dc01c0b327cee87b1a5c119e}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a2559b772dc01c0b327cee87b1a5c119e}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!position@{position}}
+\index{position@{position}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+jdbc.\+Blob.\+position (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{pattern,  }\item[{long}]{start }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Blob\+::position(byte\mbox{[}$\,$\mbox{]}, long) 
+\end{DoxySeeAlso}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_a2559b772dc01c0b327cee87b1a5c119e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a7ea2c2c3ebb85581cd54c5615e725a88}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a7ea2c2c3ebb85581cd54c5615e725a88}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!position@{position}}
+\index{position@{position}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized long com.\+mysql.\+jdbc.\+Blob.\+position (\begin{DoxyParamCaption}\item[{java.\+sql.\+Blob}]{pattern,  }\item[{long}]{start }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Finds the position of the given pattern in this B\+L\+OB.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & the pattern to find \\
+\hline
+{\em start} & where to start finding the pattern\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the position where the pattern is found in the B\+L\+OB, -\/1 if not found
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_a7ea2c2c3ebb85581cd54c5615e725a88_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_afa722f94370d179ecd4275e8717751a2}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_afa722f94370d179ecd4275e8717751a2}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!set\+Binary\+Stream@{set\+Binary\+Stream}}
+\index{set\+Binary\+Stream@{set\+Binary\+Stream}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{set\+Binary\+Stream()}{setBinaryStream()}}
+{\footnotesize\ttfamily synchronized Output\+Stream com.\+mysql.\+jdbc.\+Blob.\+set\+Binary\+Stream (\begin{DoxyParamCaption}\item[{long}]{index\+To\+Write\+At }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob_afa722f94370d179ecd4275e8717751a2}{Blob\+::set\+Binary\+Stream(long)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_afa722f94370d179ecd4275e8717751a2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_afa722f94370d179ecd4275e8717751a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a229c3ca9696de0a5d230671e1adea557}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a229c3ca9696de0a5d230671e1adea557}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!set\+Bytes@{set\+Bytes}}
+\index{set\+Bytes@{set\+Bytes}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{set\+Bytes()}{setBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized int com.\+mysql.\+jdbc.\+Blob.\+set\+Bytes (\begin{DoxyParamCaption}\item[{long}]{write\+At,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{bytes }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Blob\+::set\+Bytes(long, byte\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a17fdc870a0ed05ef0d500c874115e3dd}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a17fdc870a0ed05ef0d500c874115e3dd}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!set\+Bytes@{set\+Bytes}}
+\index{set\+Bytes@{set\+Bytes}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{set\+Bytes()}{setBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized int com.\+mysql.\+jdbc.\+Blob.\+set\+Bytes (\begin{DoxyParamCaption}\item[{long}]{write\+At,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{bytes,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Blob\+::set\+Bytes(long, byte\mbox{[}$\,$\mbox{]}, int, int) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_blob_a17fdc870a0ed05ef0d500c874115e3dd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a8e4bb5f28a7f31220f2817cc8765d8b1}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a8e4bb5f28a7f31220f2817cc8765d8b1}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!stream\+Closed@{stream\+Closed}}
+\index{stream\+Closed@{stream\+Closed}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{stream\+Closed()}{streamClosed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+jdbc.\+Blob.\+stream\+Closed (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{byte\+Data }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+com.\+mysql.\+jdbc.\+Output\+Stream\+Watcher\+::stream\+Closed(byte\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_a91be83b3b4b6ebf95318f681051065ed}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_a91be83b3b4b6ebf95318f681051065ed}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!stream\+Closed@{stream\+Closed}}
+\index{stream\+Closed@{stream\+Closed}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{stream\+Closed()}{streamClosed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+jdbc.\+Blob.\+stream\+Closed (\begin{DoxyParamCaption}\item[{Watchable\+Output\+Stream}]{out }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+com.\+mysql.\+jdbc.\+Output\+Stream\+Watcher\+::stream\+Closed(byte\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_blob_ac1341e0ed7c4ba983773aee70c265cb9}\label{classcom_1_1mysql_1_1jdbc_1_1_blob_ac1341e0ed7c4ba983773aee70c265cb9}} 
+\index{com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}!truncate@{truncate}}
+\index{truncate@{truncate}!com\+::mysql\+::jdbc\+::\+Blob@{com\+::mysql\+::jdbc\+::\+Blob}}
+\subsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+jdbc.\+Blob.\+truncate (\begin{DoxyParamCaption}\item[{long}]{len }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Truncates the {\ttfamily B\+L\+OB} value that this {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}} object represents to be {\ttfamily len} bytes in length. 
+
+{\bfseries Note\+:} If the value specified for {\ttfamily len} is greater then the length+1 of the {\ttfamily B\+L\+OB} value then the behavior is undefined. Some J\+D\+BC drivers may throw a {\ttfamily S\+Q\+L\+Exception} while other drivers may support this operation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & the length, in bytes, to which the {\ttfamily B\+L\+OB} value that this {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_blob}{Blob}}} object represents should be truncated \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if there is an error accessing the {\ttfamily B\+L\+OB} value or if len is less than 0 \\
+\hline
+{\em S\+Q\+L\+Feature\+Not\+Supported\+Exception} & if the J\+D\+BC driver does not support this method \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\+4 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Blob.\+java\end{DoxyCompactItemize}

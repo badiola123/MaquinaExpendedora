@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setEnablePacketDebug" name="com.mysql.jdbc.ConnectionProperties.setEnablePacketDebug">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a8aa46e9a081e1832ae682449584a218e" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setEnablePacketDebug" alt="" coords="275,5,551,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a08ebf87d3511967776a8f2047453f72b" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setEnablePacketDebug" alt="" coords="277,71,548,112"/>
+</map>

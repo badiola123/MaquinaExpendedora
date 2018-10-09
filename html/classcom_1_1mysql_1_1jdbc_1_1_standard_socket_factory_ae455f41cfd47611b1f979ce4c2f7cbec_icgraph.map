@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.StandardSocketFactory.getRealTimeout" name="com.mysql.jdbc.StandardSocketFactory.getRealTimeout">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory.html#a0fc01cf46005340dec4113471621f792" title="com.mysql.jdbc.StandardSocket\lFactory.beforeHandshake" alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory.html#a3b3577f8cc0de73aa70e6f672e066c6f" title="com.mysql.jdbc.StandardSocket\lFactory.connect" alt="" coords="264,71,475,112"/>
+</map>

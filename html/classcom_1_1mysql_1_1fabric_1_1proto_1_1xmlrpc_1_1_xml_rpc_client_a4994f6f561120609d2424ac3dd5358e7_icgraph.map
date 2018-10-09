@@ -1,0 +1,5 @@
+<map id="com.mysql.fabric.proto.xmlrpc.XmlRpcClient.getServerGroups" name="com.mysql.fabric.proto.xmlrpc.XmlRpcClient.getServerGroups">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1_fabric_connection.html#aa008c3c21505a6a3cd81dbe20c8ca9f0" title="com.mysql.fabric.FabricConnection.refresh\lState" alt="" coords="255,5,524,47"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1_test_dump_commands.html#a75941414b59513c00c54c4fc8f09f13e" title="testsuite.fabric.TestDump\lCommands.testDumpServersAll" alt="" coords="286,71,493,112"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a7b46187e3a7d4a9951d8cd51344b090e" title="testsuite.fabric.jdbc.Test\lRegressions.testBug82094" alt="" coords="572,5,751,47"/>
+</map>

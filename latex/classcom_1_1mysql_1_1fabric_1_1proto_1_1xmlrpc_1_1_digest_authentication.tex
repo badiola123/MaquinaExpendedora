@@ -1,0 +1,92 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication}{}\section{com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication}\index{com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication@{com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_ad9ce3cfbee13158823b154c4becee425}{get\+Challenge\+Header}} (String url)  throws I\+O\+Exception 
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a4fdd078d57ecac0859549c94bb2c1e8a}{calculate\+M\+D5\+Request\+Digest}} (String uri, String username, String password, String realm, String nonce, String nc, String cnonce, String qop)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a49b053a5230a3da6f09e04dc411b43a9}{serialize\+Digest\+Response}} (Map$<$ String, String $>$ param\+Map)
+\item 
+static Map$<$ String, String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a683328b672137be86be1fe63ae788c0f}{parse\+Digest\+Challenge}} (String header\+Value)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_ad06c98ef189413a4f866dacbcdf12137}{generate\+Cnonce}} (String nonce, String nc)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a7383e84a342b4945b22e8f3cca0b526d}{generate\+Authorization\+Header}} (Map$<$ String, String $>$ digest\+Challenge, String username, String password)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H\+T\+T\+P/1.\+1 Digest Authentication -\/ R\+FC 2617 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a4fdd078d57ecac0859549c94bb2c1e8a}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a4fdd078d57ecac0859549c94bb2c1e8a}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}!calculate\+M\+D5\+Request\+Digest@{calculate\+M\+D5\+Request\+Digest}}
+\index{calculate\+M\+D5\+Request\+Digest@{calculate\+M\+D5\+Request\+Digest}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}}
+\subsubsection{\texorpdfstring{calculate\+M\+D5\+Request\+Digest()}{calculateMD5RequestDigest()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication.\+calculate\+M\+D5\+Request\+Digest (\begin{DoxyParamCaption}\item[{String}]{uri,  }\item[{String}]{username,  }\item[{String}]{password,  }\item[{String}]{realm,  }\item[{String}]{nonce,  }\item[{String}]{nc,  }\item[{String}]{cnonce,  }\item[{String}]{qop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate the request digest for algorithm=M\+D5. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a4fdd078d57ecac0859549c94bb2c1e8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a7383e84a342b4945b22e8f3cca0b526d}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a7383e84a342b4945b22e8f3cca0b526d}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}!generate\+Authorization\+Header@{generate\+Authorization\+Header}}
+\index{generate\+Authorization\+Header@{generate\+Authorization\+Header}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}}
+\subsubsection{\texorpdfstring{generate\+Authorization\+Header()}{generateAuthorizationHeader()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication.\+generate\+Authorization\+Header (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{digest\+Challenge,  }\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate the Authorization header to make the authenticated request. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a7383e84a342b4945b22e8f3cca0b526d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_ad06c98ef189413a4f866dacbcdf12137}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_ad06c98ef189413a4f866dacbcdf12137}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}!generate\+Cnonce@{generate\+Cnonce}}
+\index{generate\+Cnonce@{generate\+Cnonce}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}}
+\subsubsection{\texorpdfstring{generate\+Cnonce()}{generateCnonce()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication.\+generate\+Cnonce (\begin{DoxyParamCaption}\item[{String}]{nonce,  }\item[{String}]{nc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate the cnonce value. This allows the client provide a value used in the digest calculation. Same as Python. (no motivation given for this algorithm) Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_ad06c98ef189413a4f866dacbcdf12137_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_ad9ce3cfbee13158823b154c4becee425}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_ad9ce3cfbee13158823b154c4becee425}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}!get\+Challenge\+Header@{get\+Challenge\+Header}}
+\index{get\+Challenge\+Header@{get\+Challenge\+Header}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}}
+\subsubsection{\texorpdfstring{get\+Challenge\+Header()}{getChallengeHeader()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication.\+get\+Challenge\+Header (\begin{DoxyParamCaption}\item[{String}]{url }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the digest challenge header by connecting to the resource with no credentials. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a683328b672137be86be1fe63ae788c0f}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a683328b672137be86be1fe63ae788c0f}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}!parse\+Digest\+Challenge@{parse\+Digest\+Challenge}}
+\index{parse\+Digest\+Challenge@{parse\+Digest\+Challenge}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}}
+\subsubsection{\texorpdfstring{parse\+Digest\+Challenge()}{parseDigestChallenge()}}
+{\footnotesize\ttfamily static Map$<$String, String$>$ com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication.\+parse\+Digest\+Challenge (\begin{DoxyParamCaption}\item[{String}]{header\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse a digest challenge from the W\+W\+W-\/\+Authenticate header return as the initial response during the authentication exchange. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a49b053a5230a3da6f09e04dc411b43a9}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a49b053a5230a3da6f09e04dc411b43a9}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}!serialize\+Digest\+Response@{serialize\+Digest\+Response}}
+\index{serialize\+Digest\+Response@{serialize\+Digest\+Response}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Digest\+Authentication}}
+\subsubsection{\texorpdfstring{serialize\+Digest\+Response()}{serializeDigestResponse()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Digest\+Authentication.\+serialize\+Digest\+Response (\begin{DoxyParamCaption}\item[{Map$<$ String, String $>$}]{param\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Serialize a parameter map into a digest response. This is used as the \char`\"{}\+Authorization\char`\"{} header in the request. All parameters in the supplied map will be added to the header. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_digest_authentication_a49b053a5230a3da6f09e04dc411b43a9_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/proto/xmlrpc/Digest\+Authentication.\+java\end{DoxyCompactItemize}

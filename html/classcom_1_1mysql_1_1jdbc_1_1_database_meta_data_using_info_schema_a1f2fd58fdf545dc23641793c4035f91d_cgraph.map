@@ -1,0 +1,10 @@
+<map id="com.mysql.jdbc.DatabaseMetaDataUsingInfoSchema.getProcedures" name="com.mysql.jdbc.DatabaseMetaDataUsingInfoSchema.getProcedures">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema.html#a78df26f7bd43db24e251d4b14560fe47" title="com.mysql.jdbc.DatabaseMeta\lDataUsingInfoSchema.getRoutineType\lConditionForGetProcedures" alt="" coords="292,5,536,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a7e055f9029b2da1d3a7d014bca117da4" title="com.mysql.jdbc.DatabaseMeta\lData.prepareMetaDataSafeStatement" alt="" coords="295,86,533,127"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#af1784431accedc207e4dc40ff2f7f9e5" title="com.mysql.jdbc.PreparedStatement.\lPreparedStatement" alt="" coords="584,21,819,62"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#a1836d2e9bc2f4f47fb77b2418d08616a" title="com.mysql.jdbc.Connection.client\lPrepareStatement" alt="" coords="592,86,811,127"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a06eb1d241e4ca066606cbf1a1e04e87c" title="com.mysql.jdbc.Statement\lImpl.setMaxRows" alt="" coords="612,151,791,193"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a273589250c52af54dac911d1cfcfd87d" title="com.mysql.jdbc.Statement\lImpl.setLargeMaxRows" alt="" coords="867,151,1045,193"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a88caedee8619aad1351c9edea352c37e" title="com.mysql.jdbc.Statement\lImpl.checkClosed" alt="" coords="1093,122,1272,163"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="1320,151,1520,193"/>
+</map>

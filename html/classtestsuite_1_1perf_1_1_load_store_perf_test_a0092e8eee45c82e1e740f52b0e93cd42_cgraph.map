@@ -1,0 +1,11 @@
+<map id="testsuite.perf.LoadStorePerfTest.test1000Transactions" name="testsuite.perf.LoadStorePerfTest.test1000Transactions">
+<area shape="rect" id="node2" href="$classtestsuite_1_1perf_1_1_load_store_perf_test.html#aedfa3a61f8e71a59e738a6b6e9d27d0e" title="testsuite.perf.LoadStore\lPerfTest.warmUp" alt="" coords="280,20,440,61"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a5d1d0a1bf44d9feb9603a2c98705c6c6" title="testsuite.perf.BasePerfTest.do\lIterations" alt="" coords="261,85,459,127"/>
+<area shape="rect" id="node8" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a88bddb3492e88ede49a0b70c63dc47b1" title="testsuite.perf.BasePerfTest.report\lResults" alt="" coords="252,151,468,192"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1perf_1_1_load_store_perf_test.html#aae53536cc1145eb4860cc71c132f66d8" title="testsuite.perf.LoadStore\lPerfTest.doOneIteration" alt="" coords="537,20,697,61"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a4949a27d2e0b9c314d12f45128004da2" title="testsuite.perf.BasePerfTest.add\lResult" alt="" coords="765,5,969,47"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a27382fb187f93da07deaa8b4ce1cc3e9" title="testsuite.perf.BasePerfTest.get\lMeanValue" alt="" coords="767,71,968,112"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#ac9682520790f17d153ad993c7bdf5bf4" title="testsuite.perf.BasePerfTest.do\lOneIteration" alt="" coords="518,85,715,127"/>
+<area shape="rect" id="node9" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a72145770043104a1fe0a8a1648044aed" title="testsuite.perf.BasePerfTest.get\lStandardDeviationP" alt="" coords="767,163,968,204"/>
+<area shape="rect" id="node10" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a9206b0e839cce6e668eec8c2cd94bc5c" title="testsuite.perf.BasePerfTest.get\lMarginOfError" alt="" coords="516,205,717,247"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Connection.supportsTransactions" name="com.mysql.jdbc.Connection.supportsTransactions">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a289cac917f19975c023dc68f8a7ae559" title="com.mysql.jdbc.DatabaseMeta\lData.supportsTransactions" alt="" coords="321,5,524,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a1f15bbe2ddf9ab93df95fd71932a0908" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.supportsTransactions" alt="" coords="291,71,555,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a356916a7b3d5204fdd9886f9925816e7" title="com.mysql.jdbc.MultiHost\lMySQLConnection.supportsTransactions" alt="" coords="293,136,552,177"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.ReplicationConnectionProxy" name="com.mysql.jdbc.ReplicationConnectionProxy">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy.html" title="com.mysql.jdbc.MultiHost\lConnectionProxy" alt="" coords="867,91,1040,133"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="469,195,696,221"/>
+<area shape="rect" id="node11" href="$interfacecom_1_1mysql_1_1jdbc_1_1_load_balanced_connection.html" title="com.mysql.jdbc.LoadBalanced\lConnection" alt="" coords="853,183,1053,225"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="237,160,420,187"/>
+<area shape="rect" id="node8" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="5,199,188,241"/>
+<area shape="rect" id="node10" href="$interfacecom_1_1mysql_1_1jdbc_1_1_ping_target.html" title="com.mysql.jdbc.PingTarget" alt="" coords="863,249,1043,276"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group.html" title="com.mysql.jdbc.Replication\lConnectionGroup" alt="" coords="862,301,1045,342"/>
+</map>

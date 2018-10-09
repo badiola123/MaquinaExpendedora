@@ -1,0 +1,65 @@
+\hypertarget{classtestsuite_1_1fabric_1_1_test_shard_mapping}{}\section{testsuite.\+fabric.\+Test\+Shard\+Mapping Class Reference}
+\label{classtestsuite_1_1fabric_1_1_test_shard_mapping}\index{testsuite.\+fabric.\+Test\+Shard\+Mapping@{testsuite.\+fabric.\+Test\+Shard\+Mapping}}
+
+
+Inheritance diagram for testsuite.\+fabric.\+Test\+Shard\+Mapping\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtestsuite_1_1fabric_1_1_test_shard_mapping__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+fabric.\+Test\+Shard\+Mapping\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtestsuite_1_1fabric_1_1_test_shard_mapping__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1fabric_1_1_test_shard_mapping_a6b77d1255324c5140498ebae4aed5030}{test\+Range\+Shard\+Mapping\+Key\+Lookup}} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1_test_shard_mapping_ac378cb3174076c7221b42cf2226ca26e}\label{classtestsuite_1_1fabric_1_1_test_shard_mapping_ac378cb3174076c7221b42cf2226ca26e}} 
+void {\bfseries test\+Hash\+Shard\+Mapping\+Key\+Lookup} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1fabric_1_1_test_shard_mapping_afacc92744572b4f3b5e5776e34e08f21}{test\+Bug82203}} ()  throws Throwable 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tests for shard mappings. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1_test_shard_mapping_afacc92744572b4f3b5e5776e34e08f21}\label{classtestsuite_1_1fabric_1_1_test_shard_mapping_afacc92744572b4f3b5e5776e34e08f21}} 
+\index{testsuite\+::fabric\+::\+Test\+Shard\+Mapping@{testsuite\+::fabric\+::\+Test\+Shard\+Mapping}!test\+Bug82203@{test\+Bug82203}}
+\index{test\+Bug82203@{test\+Bug82203}!testsuite\+::fabric\+::\+Test\+Shard\+Mapping@{testsuite\+::fabric\+::\+Test\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{test\+Bug82203()}{testBug82203()}}
+{\footnotesize\ttfamily void testsuite.\+fabric.\+Test\+Shard\+Mapping.\+test\+Bug82203 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Throwable}
+
+Tests fix for Bug\#82203 -\/ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping}{com.\+mysql.\+fabric.\+Hash\+Shard\+Mapping}} is not thread safe.
+
+This test is non-\/deterministic but most runs used to fail before 5 to 10 seconds. This test runs at most for 30 seconds. \mbox{\Hypertarget{classtestsuite_1_1fabric_1_1_test_shard_mapping_a6b77d1255324c5140498ebae4aed5030}\label{classtestsuite_1_1fabric_1_1_test_shard_mapping_a6b77d1255324c5140498ebae4aed5030}} 
+\index{testsuite\+::fabric\+::\+Test\+Shard\+Mapping@{testsuite\+::fabric\+::\+Test\+Shard\+Mapping}!test\+Range\+Shard\+Mapping\+Key\+Lookup@{test\+Range\+Shard\+Mapping\+Key\+Lookup}}
+\index{test\+Range\+Shard\+Mapping\+Key\+Lookup@{test\+Range\+Shard\+Mapping\+Key\+Lookup}!testsuite\+::fabric\+::\+Test\+Shard\+Mapping@{testsuite\+::fabric\+::\+Test\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{test\+Range\+Shard\+Mapping\+Key\+Lookup()}{testRangeShardMappingKeyLookup()}}
+{\footnotesize\ttfamily void testsuite.\+fabric.\+Test\+Shard\+Mapping.\+test\+Range\+Shard\+Mapping\+Key\+Lookup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Test that a range based shard mapping looks up groups for keys correctly. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1fabric_1_1_test_shard_mapping_a6b77d1255324c5140498ebae4aed5030_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/fabric/Test\+Shard\+Mapping.\+java\end{DoxyCompactItemize}

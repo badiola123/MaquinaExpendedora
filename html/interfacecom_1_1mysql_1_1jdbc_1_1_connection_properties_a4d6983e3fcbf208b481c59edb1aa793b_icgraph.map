@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseOnlyServerErrorMessages" name="com.mysql.jdbc.ConnectionProperties.setUseOnlyServerErrorMessages">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aeb0a18bb97912baf34e436f5a61e7233" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseOnlyServer\lErrorMessages" alt="" coords="271,5,515,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a64cd255943d0563c0246595083a5f2a7" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseOnlyServer\lErrorMessages" alt="" coords="273,85,512,141"/>
+</map>

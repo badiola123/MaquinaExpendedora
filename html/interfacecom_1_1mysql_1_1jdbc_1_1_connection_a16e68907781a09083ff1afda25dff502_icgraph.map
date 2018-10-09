@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.Connection.supportsQuotedIdentifiers" name="com.mysql.jdbc.Connection.supportsQuotedIdentifiers">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy.html#aa4c9ae2613fa025d3498bb4eae8fae8e" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnectionProxy.supportsQuoted\lIdentifiers" alt="" coords="291,5,552,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a1a0f564a2d0f6c011143f31f9a0128ef" title="com.mysql.jdbc.DatabaseMeta\lData.getIdentifierQuoteString" alt="" coords="320,86,523,127"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aee329f3049dfe677c6baa7454004bd2a" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.supportsQuoted\lIdentifiers" alt="" coords="305,152,537,208"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#af49bebe337318800930bddf6351d53f2" title="com.mysql.jdbc.MultiHost\lMySQLConnection.supportsQuoted\lIdentifiers" alt="" coords="308,232,535,288"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a754255faffa1310c4d9507733583ae72" title="com.mysql.jdbc.DatabaseMeta\lData.DatabaseMetaData" alt="" coords="600,86,803,127"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a7f3edbb716bb075ccd3821993ea718be" title="com.mysql.jdbc.DatabaseMeta\lData.getInstance" alt="" coords="851,86,1053,127"/>
+</map>

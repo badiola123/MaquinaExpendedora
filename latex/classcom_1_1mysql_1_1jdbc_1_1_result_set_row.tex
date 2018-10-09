@@ -1,0 +1,545 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row}{}\section{com.\+mysql.\+jdbc.\+Result\+Set\+Row Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row}\index{com.\+mysql.\+jdbc.\+Result\+Set\+Row@{com.\+mysql.\+jdbc.\+Result\+Set\+Row}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Result\+Set\+Row\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Result\+Set\+Row\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a54a6cea0cae63390d866d6ba7577912c}{close\+Open\+Streams}} ()
+\item 
+abstract Input\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a48ff052b76ef93e6dbd945e75639e995}{get\+Binary\+Input\+Stream}} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+abstract byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a5213f1db94bbf4bbd98c5141aff51fb8}{get\+Column\+Value}} (int index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a6d97394d50b7fb2a331a1ef6228a388b}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a6d97394d50b7fb2a331a1ef6228a388b}} 
+abstract java.\+sql.\+Date {\bfseries get\+Date\+Fast} (int column\+Index, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs, Calendar target\+Calendar)  throws S\+Q\+L\+Exception
+\item 
+abstract int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a293e31748cc32630b98c119b1a87c9ee}{get\+Int}} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+abstract long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abe8370eba2fb621aa7523763fc8ef3c6}{get\+Long}} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a1cde6961b5ccbfcc628c9c7fe76cae14}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a1cde6961b5ccbfcc628c9c7fe76cae14}} 
+abstract Date {\bfseries get\+Native\+Date} (int column\+Index, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs, Calendar cal)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_afdd28e52810c8279cb1f32ca96de9327}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_afdd28e52810c8279cb1f32ca96de9327}} 
+abstract Object {\bfseries get\+Native\+Date\+Time\+Value} (int column\+Index, Calendar target\+Calendar, int jdbc\+Type, int mysql\+Type, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_afabffd30877904cad9d0f7e537175138}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_afabffd30877904cad9d0f7e537175138}} 
+abstract double {\bfseries get\+Native\+Double} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7a40f94d3b3b887285ee842752327cf1}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7a40f94d3b3b887285ee842752327cf1}} 
+abstract float {\bfseries get\+Native\+Float} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ad2ff0b7b1a0775a1038857b7c366b92f}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ad2ff0b7b1a0775a1038857b7c366b92f}} 
+abstract int {\bfseries get\+Native\+Int} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a06abf687d49995500266c3b4cc8662fa}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a06abf687d49995500266c3b4cc8662fa}} 
+abstract long {\bfseries get\+Native\+Long} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abc64d4718c8286b32de2201f10d2ee72}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abc64d4718c8286b32de2201f10d2ee72}} 
+abstract short {\bfseries get\+Native\+Short} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a1202bd097aecfda59831e5c9eacc47ee}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a1202bd097aecfda59831e5c9eacc47ee}} 
+abstract Time {\bfseries get\+Native\+Time} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a8890a9c93f4b3314ba98348b9254e372}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a8890a9c93f4b3314ba98348b9254e372}} 
+abstract Timestamp {\bfseries get\+Native\+Timestamp} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a4becfbce9fd8fd07f702b653f830d2d0}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a4becfbce9fd8fd07f702b653f830d2d0}} 
+abstract Reader {\bfseries get\+Reader} (int column\+Index)  throws S\+Q\+L\+Exception
+\item 
+abstract String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_af2c2012bd344ef5efe874ea994431f65}{get\+String}} (int index, String encoding, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a6a5a55e329b929a24c66e670204160f2}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a6a5a55e329b929a24c66e670204160f2}} 
+abstract Time {\bfseries get\+Time\+Fast} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7f6a2c12bba0877de6c266a24c79c29a}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7f6a2c12bba0877de6c266a24c79c29a}} 
+abstract Timestamp {\bfseries get\+Timestamp\+Fast} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception
+\item 
+abstract boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abce23203c5142ca0ed2a8f0d031c8123}{is\+Floating\+Point\+Number}} (int index)  throws S\+Q\+L\+Exception
+\item 
+abstract boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a96243f8e7eb839c4c233a2e4aa1cfb6b}{is\+Null}} (int index)  throws S\+Q\+L\+Exception
+\item 
+abstract long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}} (int index)  throws S\+Q\+L\+Exception
+\item 
+abstract void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a39c9cab871e6878715135801daa3b09d}{set\+Column\+Value}} (int index, byte\mbox{[}$\,$\mbox{]} value)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a2fbba370e0b023b2138d373f26430930}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a2fbba370e0b023b2138d373f26430930}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row}{Result\+Set\+Row}} {\bfseries set\+Metadata} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} f)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_af2febed19df5e74579b5c6db88583a81}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_af2febed19df5e74579b5c6db88583a81}} 
+abstract int {\bfseries get\+Bytes\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a8e4b451a4f91cddb07232bdaa93af00e}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a8e4b451a4f91cddb07232bdaa93af00e}} 
+{\bfseries Result\+Set\+Row} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a51f0c454746c83c422e72e156d44eb3f}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a51f0c454746c83c422e72e156d44eb3f}} 
+final java.\+sql.\+Date {\bfseries get\+Date\+Fast} (int column\+Index, byte\mbox{[}$\,$\mbox{]} date\+As\+Bytes, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs, Calendar target\+Calendar)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Date \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a341f6e94b4b79858e732cc6dc8bfc452}{get\+Native\+Date}} (int column\+Index, byte\mbox{[}$\,$\mbox{]} bits, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7bf648b240228eaa4b571a9388ddc331}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7bf648b240228eaa4b571a9388ddc331}} 
+Object {\bfseries get\+Native\+Date\+Time\+Value} (int column\+Index, byte\mbox{[}$\,$\mbox{]} bits, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}}, Calendar target\+Calendar, int jdbc\+Type, int mysql\+Type, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a73c7885d3165bd2c9c76e041d94bc11e}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a73c7885d3165bd2c9c76e041d94bc11e}} 
+double {\bfseries get\+Native\+Double} (byte\mbox{[}$\,$\mbox{]} bits, int offset)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a4ece03d1a5f03aafb7634dc86cf82c2b}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a4ece03d1a5f03aafb7634dc86cf82c2b}} 
+float {\bfseries get\+Native\+Float} (byte\mbox{[}$\,$\mbox{]} bits, int offset)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abf4363c1be1554e6bf1e05367f9d2b4b}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abf4363c1be1554e6bf1e05367f9d2b4b}} 
+int {\bfseries get\+Native\+Int} (byte\mbox{[}$\,$\mbox{]} bits, int offset)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a0ff7ffcc989d7e6032d5aff94384f2eb}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a0ff7ffcc989d7e6032d5aff94384f2eb}} 
+long {\bfseries get\+Native\+Long} (byte\mbox{[}$\,$\mbox{]} bits, int offset)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ae548d76305fadd3ed630d42fa408fdd3}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ae548d76305fadd3ed630d42fa408fdd3}} 
+short {\bfseries get\+Native\+Short} (byte\mbox{[}$\,$\mbox{]} bits, int offset)
+\item 
+Time \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a658750cc3352c8d7d75b0884b5c28477}{get\+Native\+Time}} (int column\+Index, byte\mbox{[}$\,$\mbox{]} bits, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}}, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ae3b80d6e8c2cc4c125a841fb1c55cc73}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ae3b80d6e8c2cc4c125a841fb1c55cc73}} 
+Timestamp {\bfseries get\+Native\+Timestamp} (byte\mbox{[}$\,$\mbox{]} bits, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}}, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a00bcc93b466d809a12b1e12be8747505}{get\+String}} (String encoding, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, byte\mbox{[}$\,$\mbox{]} value, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}})  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a8bcb25cbd32a5e721e6e6ac17309e65f}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a8bcb25cbd32a5e721e6e6ac17309e65f}} 
+Time {\bfseries get\+Time\+Fast} (int column\+Index, byte\mbox{[}$\,$\mbox{]} time\+As\+Bytes, int offset, int full\+Length, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a4c850cf70e2d53fb4dfb36ec113feab4}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a4c850cf70e2d53fb4dfb36ec113feab4}} 
+Timestamp {\bfseries get\+Timestamp\+Fast} (int column\+Index, byte\mbox{[}$\,$\mbox{]} timestamp\+As\+Bytes, int offset, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}{length}}, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a946515538dce5f386c0d71d2ce7112da}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a946515538dce5f386c0d71d2ce7112da}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} {\bfseries exception\+Interceptor}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ac63878ed59cf731b0f02ae12e80e27c0}{metadata}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classes that implement this interface represent one row of data from the My\+S\+QL server that might be stored in different ways depending on whether the result set was streaming (so they wrap a reusable packet), or whether the result set was cached or via a server-\/side cursor (so they represent a byte\mbox{[}\mbox{]}\mbox{[}\mbox{]}).
+
+Notice that {\bfseries no} bounds checking is expected for implementors of this interface, it happens in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a54a6cea0cae63390d866d6ba7577912c}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a54a6cea0cae63390d866d6ba7577912c}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!close\+Open\+Streams@{close\+Open\+Streams}}
+\index{close\+Open\+Streams@{close\+Open\+Streams}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{close\+Open\+Streams()}{closeOpenStreams()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+close\+Open\+Streams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called during navigation to next row to close all open streams. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a54a6cea0cae63390d866d6ba7577912c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a48ff052b76ef93e6dbd945e75639e995}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a48ff052b76ef93e6dbd945e75639e995}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+Binary\+Input\+Stream@{get\+Binary\+Input\+Stream}}
+\index{get\+Binary\+Input\+Stream@{get\+Binary\+Input\+Stream}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+Binary\+Input\+Stream()}{getBinaryInputStream()}}
+{\footnotesize\ttfamily abstract Input\+Stream com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+Binary\+Input\+Stream (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns data at the given index as an Input\+Stream with no character conversion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & of the column value (starting at 0) to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value at the given index as an Input\+Stream or null if null.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs while retrieving the value. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a48ff052b76ef93e6dbd945e75639e995_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a5213f1db94bbf4bbd98c5141aff51fb8}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a5213f1db94bbf4bbd98c5141aff51fb8}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+Column\+Value@{get\+Column\+Value}}
+\index{get\+Column\+Value@{get\+Column\+Value}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+Column\+Value()}{getColumnValue()}}
+{\footnotesize\ttfamily abstract byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+Column\+Value (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value at the given column (index starts at 0) \char`\"{}raw\char`\"{} (i.\+e. as-\/returned by the server).
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the column value (starting at 0) to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value for the given column (including N\+U\+LL if it is) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs while retrieving the value. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a5213f1db94bbf4bbd98c5141aff51fb8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a293e31748cc32630b98c119b1a87c9ee}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a293e31748cc32630b98c119b1a87c9ee}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+Int@{get\+Int}}
+\index{get\+Int@{get\+Int}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+Int()}{getInt()}}
+{\footnotesize\ttfamily abstract int com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+Int (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value at the given column (index starts at 0) as an int. $\ast$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the column value (starting at 0) to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value for the given column (returns 0 if N\+U\+LL, use \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a96243f8e7eb839c4c233a2e4aa1cfb6b}{is\+Null()}} to determine if the value was actually N\+U\+LL) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs while retrieving the value. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abe8370eba2fb621aa7523763fc8ef3c6}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abe8370eba2fb621aa7523763fc8ef3c6}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+Long@{get\+Long}}
+\index{get\+Long@{get\+Long}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+Long()}{getLong()}}
+{\footnotesize\ttfamily abstract long com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+Long (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value at the given column (index starts at 0) as a long. $\ast$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the column value (starting at 0) to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value for the given column (returns 0 if N\+U\+LL, use \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a96243f8e7eb839c4c233a2e4aa1cfb6b}{is\+Null()}} to determine if the value was actually N\+U\+LL) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs while retrieving the value. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a341f6e94b4b79858e732cc6dc8bfc452}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a341f6e94b4b79858e732cc6dc8bfc452}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+Native\+Date@{get\+Native\+Date}}
+\index{get\+Native\+Date@{get\+Native\+Date}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+Native\+Date()}{getNativeDate()}}
+{\footnotesize\ttfamily java.\+sql.\+Date com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+Native\+Date (\begin{DoxyParamCaption}\item[{int}]{column\+Index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{bits,  }\item[{int}]{offset,  }\item[{int}]{length,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}}}]{rs,  }\item[{Calendar}]{cal }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & \\
+\hline
+{\em bits} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em length} & \\
+\hline
+{\em conn} & \\
+\hline
+{\em rs} & \\
+\hline
+{\em cal} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a341f6e94b4b79858e732cc6dc8bfc452_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a341f6e94b4b79858e732cc6dc8bfc452_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a658750cc3352c8d7d75b0884b5c28477}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a658750cc3352c8d7d75b0884b5c28477}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+Native\+Time@{get\+Native\+Time}}
+\index{get\+Native\+Time@{get\+Native\+Time}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+Native\+Time()}{getNativeTime()}}
+{\footnotesize\ttfamily Time com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+Native\+Time (\begin{DoxyParamCaption}\item[{int}]{column\+Index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{bits,  }\item[{int}]{offset,  }\item[{int}]{length,  }\item[{Calendar}]{target\+Calendar,  }\item[{Time\+Zone}]{tz,  }\item[{boolean}]{roll\+Forward,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}}}]{rs }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & \\
+\hline
+{\em bits} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em length} & \\
+\hline
+{\em target\+Calendar} & \\
+\hline
+{\em tz} & \\
+\hline
+{\em roll\+Forward} & \\
+\hline
+{\em conn} & \\
+\hline
+{\em rs} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a658750cc3352c8d7d75b0884b5c28477_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_af2c2012bd344ef5efe874ea994431f65}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_af2c2012bd344ef5efe874ea994431f65}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily abstract String com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+String (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{String}]{encoding,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value at the given column (index starts at 0) as a java.\+lang.\+String with the requested encoding, using the given \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} to find character converters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the column value (starting at 0) to return. \\
+\hline
+{\em encoding} & the Java name for the character encoding \\
+\hline
+{\em conn} & the connection that created this result set row\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value for the given column (including N\+U\+LL if it is) as a String
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs while retrieving the value. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_af2c2012bd344ef5efe874ea994431f65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a00bcc93b466d809a12b1e12be8747505}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a00bcc93b466d809a12b1e12be8747505}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!get\+String@{get\+String}}
+\index{get\+String@{get\+String}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{get\+String()}{getString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+get\+String (\begin{DoxyParamCaption}\item[{String}]{encoding,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Convenience method for turning a byte\mbox{[}\mbox{]} into a string with the given encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em encoding} & the Java encoding name for the byte\mbox{[}\mbox{]} -\/$>$ char conversion \\
+\hline
+{\em conn} & the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} that created the result set \\
+\hline
+{\em value} & the String value as a series of bytes, encoded using \char`\"{}encoding\char`\"{} \\
+\hline
+{\em offset} & where to start the decoding \\
+\hline
+{\em length} & how many bytes to decode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the String as decoded from bytes with the given encoding
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a00bcc93b466d809a12b1e12be8747505_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abce23203c5142ca0ed2a8f0d031c8123}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abce23203c5142ca0ed2a8f0d031c8123}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!is\+Floating\+Point\+Number@{is\+Floating\+Point\+Number}}
+\index{is\+Floating\+Point\+Number@{is\+Floating\+Point\+Number}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{is\+Floating\+Point\+Number()}{isFloatingPointNumber()}}
+{\footnotesize\ttfamily abstract boolean com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+is\+Floating\+Point\+Number (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Could the column value at the given index (which starts at 0) be interpreted as a floating-\/point number (has +/-\//\+E/e in it)?
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the column value (starting at 0) to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the column value at the given index looks like it might be a floating-\/point number, false if not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_abce23203c5142ca0ed2a8f0d031c8123_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a96243f8e7eb839c4c233a2e4aa1cfb6b}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a96243f8e7eb839c4c233a2e4aa1cfb6b}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!is\+Null@{is\+Null}}
+\index{is\+Null@{is\+Null}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{is\+Null()}{isNull()}}
+{\footnotesize\ttfamily abstract boolean com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+is\+Null (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Is the column value at the given index (which starts at 0) N\+U\+LL?
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the column value (starting at 0) to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the column value is N\+U\+LL, false if not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a96243f8e7eb839c4c233a2e4aa1cfb6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!length@{length}}
+\index{length@{length}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily abstract long com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+length (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the length of the column at the given index (which starts at 0).
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & of the column value (starting at 0) for which to return the length. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the requested column, 0 if null (clients of this interface should use \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a96243f8e7eb839c4c233a2e4aa1cfb6b}{is\+Null()}} beforehand to determine status of N\+U\+LL values in the column).
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a7d2e1a3d54533e0655afdc0a411808ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a39c9cab871e6878715135801daa3b09d}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a39c9cab871e6878715135801daa3b09d}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!set\+Column\+Value@{set\+Column\+Value}}
+\index{set\+Column\+Value@{set\+Column\+Value}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{set\+Column\+Value()}{setColumnValue()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+set\+Column\+Value (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{value }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Sets the given column value (only works currently with Byte\+Array\+Row\+Holder).
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & index of the column value (starting at 0) to set. \\
+\hline
+{\em value} & the (raw) value to set\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs, or the concrete Row\+Holder doesn\textquotesingle{}t support this operation. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_a39c9cab871e6878715135801daa3b09d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ac63878ed59cf731b0f02ae12e80e27c0}\label{classcom_1_1mysql_1_1jdbc_1_1_result_set_row_ac63878ed59cf731b0f02ae12e80e27c0}} 
+\index{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}!metadata@{metadata}}
+\index{metadata@{metadata}!com\+::mysql\+::jdbc\+::\+Result\+Set\+Row@{com\+::mysql\+::jdbc\+::\+Result\+Set\+Row}}
+\subsubsection{\texorpdfstring{metadata}{metadata}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Result\+Set\+Row.\+metadata\hspace{0.3cm}{\ttfamily [protected]}}
+
+The metadata of the fields of this result set. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Result\+Set\+Row.\+java\end{DoxyCompactItemize}

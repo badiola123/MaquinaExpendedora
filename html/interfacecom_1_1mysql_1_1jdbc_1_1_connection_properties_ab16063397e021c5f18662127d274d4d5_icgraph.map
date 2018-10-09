@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setBlobSendChunkSize" name="com.mysql.jdbc.ConnectionProperties.setBlobSendChunkSize">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ad2a5eec9a52c3c5a68de2bc6af8f333e" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setBlobSendChunkSize" alt="" coords="276,5,553,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a8ab368d3783dcf159d7b5055fa104362" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setBlobSendChunkSize" alt="" coords="279,71,551,112"/>
+</map>

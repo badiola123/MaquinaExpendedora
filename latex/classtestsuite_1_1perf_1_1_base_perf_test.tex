@@ -1,0 +1,255 @@
+\hypertarget{classtestsuite_1_1perf_1_1_base_perf_test}{}\section{testsuite.\+perf.\+Base\+Perf\+Test Class Reference}
+\label{classtestsuite_1_1perf_1_1_base_perf_test}\index{testsuite.\+perf.\+Base\+Perf\+Test@{testsuite.\+perf.\+Base\+Perf\+Test}}
+
+
+Inheritance diagram for testsuite.\+perf.\+Base\+Perf\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classtestsuite_1_1perf_1_1_base_perf_test__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+perf.\+Base\+Perf\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_a31aa6418a4c1089b614c41ea0b9bd924}{Base\+Perf\+Test}} (String name)
+\item 
+double \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_a27382fb187f93da07deaa8b4ce1cc3e9}{get\+Mean\+Value}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_ac9682520790f17d153ad993c7bdf5bf4}{do\+One\+Iteration}} ()  throws Exception
+\item 
+double \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_aafbdf56943e217d90ffd87d17c118af1}{get\+Current\+Confidence}} ()
+\item 
+double \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_a9206b0e839cce6e668eec8c2cd94bc5c}{get\+Margin\+Of\+Error}} ()
+\item 
+double \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_a72145770043104a1fe0a8a1648044aed}{get\+Standard\+DeviationP}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_a4949a27d2e0b9c314d12f45128004da2}{add\+Result}} (double value)
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_a5d1d0a1bf44d9feb9603a2c98705c6c6}{do\+Iterations}} (int num\+\_\+iterations)  throws Exception 
+\item 
+synchronized void \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test_a88bddb3492e88ede49a0b70c63dc47b1}{report\+Results}} (String additional\+Message)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class for performance test cases. Handles statistics. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_a31aa6418a4c1089b614c41ea0b9bd924}\label{classtestsuite_1_1perf_1_1_base_perf_test_a31aa6418a4c1089b614c41ea0b9bd924}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!Base\+Perf\+Test@{Base\+Perf\+Test}}
+\index{Base\+Perf\+Test@{Base\+Perf\+Test}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{Base\+Perf\+Test()}{BasePerfTest()}}
+{\footnotesize\ttfamily testsuite.\+perf.\+Base\+Perf\+Test.\+Base\+Perf\+Test (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{classtestsuite_1_1perf_1_1_base_perf_test}{Base\+Perf\+Test}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the testcase name to perform. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_a4949a27d2e0b9c314d12f45128004da2}\label{classtestsuite_1_1perf_1_1_base_perf_test_a4949a27d2e0b9c314d12f45128004da2}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!add\+Result@{add\+Result}}
+\index{add\+Result@{add\+Result}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{add\+Result()}{addResult()}}
+{\footnotesize\ttfamily void testsuite.\+perf.\+Base\+Perf\+Test.\+add\+Result (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds one test result to the statistics.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a single result representing the value being measured in the test. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a4949a27d2e0b9c314d12f45128004da2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_a5d1d0a1bf44d9feb9603a2c98705c6c6}\label{classtestsuite_1_1perf_1_1_base_perf_test_a5d1d0a1bf44d9feb9603a2c98705c6c6}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!do\+Iterations@{do\+Iterations}}
+\index{do\+Iterations@{do\+Iterations}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{do\+Iterations()}{doIterations()}}
+{\footnotesize\ttfamily void testsuite.\+perf.\+Base\+Perf\+Test.\+do\+Iterations (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+iterations }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calls do\+Iteration() the {\ttfamily num\+Iterations} times, displaying the mean, std, margin of error and confidence level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+iterations} & the number of iterations to perform ( $<$ 30) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a5d1d0a1bf44d9feb9603a2c98705c6c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a5d1d0a1bf44d9feb9603a2c98705c6c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_ac9682520790f17d153ad993c7bdf5bf4}\label{classtestsuite_1_1perf_1_1_base_perf_test_ac9682520790f17d153ad993c7bdf5bf4}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!do\+One\+Iteration@{do\+One\+Iteration}}
+\index{do\+One\+Iteration@{do\+One\+Iteration}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{do\+One\+Iteration()}{doOneIteration()}}
+{\footnotesize\ttfamily abstract void testsuite.\+perf.\+Base\+Perf\+Test.\+do\+One\+Iteration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Sub-\/classes should override this to perform the operation to be measured.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_ac9682520790f17d153ad993c7bdf5bf4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_aafbdf56943e217d90ffd87d17c118af1}\label{classtestsuite_1_1perf_1_1_base_perf_test_aafbdf56943e217d90ffd87d17c118af1}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!get\+Current\+Confidence@{get\+Current\+Confidence}}
+\index{get\+Current\+Confidence@{get\+Current\+Confidence}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{get\+Current\+Confidence()}{getCurrentConfidence()}}
+{\footnotesize\ttfamily double testsuite.\+perf.\+Base\+Perf\+Test.\+get\+Current\+Confidence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the current confidence level.
+
+\begin{DoxyReturn}{Returns}
+the current confindence level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_a9206b0e839cce6e668eec8c2cd94bc5c}\label{classtestsuite_1_1perf_1_1_base_perf_test_a9206b0e839cce6e668eec8c2cd94bc5c}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!get\+Margin\+Of\+Error@{get\+Margin\+Of\+Error}}
+\index{get\+Margin\+Of\+Error@{get\+Margin\+Of\+Error}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{get\+Margin\+Of\+Error()}{getMarginOfError()}}
+{\footnotesize\ttfamily double testsuite.\+perf.\+Base\+Perf\+Test.\+get\+Margin\+Of\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the current margin of error.
+
+\begin{DoxyReturn}{Returns}
+the current margin of error. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a9206b0e839cce6e668eec8c2cd94bc5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a9206b0e839cce6e668eec8c2cd94bc5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_a27382fb187f93da07deaa8b4ce1cc3e9}\label{classtestsuite_1_1perf_1_1_base_perf_test_a27382fb187f93da07deaa8b4ce1cc3e9}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!get\+Mean\+Value@{get\+Mean\+Value}}
+\index{get\+Mean\+Value@{get\+Mean\+Value}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{get\+Mean\+Value()}{getMeanValue()}}
+{\footnotesize\ttfamily double testsuite.\+perf.\+Base\+Perf\+Test.\+get\+Mean\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the mean\+Value.
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a27382fb187f93da07deaa8b4ce1cc3e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_a72145770043104a1fe0a8a1648044aed}\label{classtestsuite_1_1perf_1_1_base_perf_test_a72145770043104a1fe0a8a1648044aed}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!get\+Standard\+DeviationP@{get\+Standard\+DeviationP}}
+\index{get\+Standard\+DeviationP@{get\+Standard\+DeviationP}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{get\+Standard\+Deviation\+P()}{getStandardDeviationP()}}
+{\footnotesize\ttfamily double testsuite.\+perf.\+Base\+Perf\+Test.\+get\+Standard\+DeviationP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the current S\+T\+D\+D\+EV.
+
+\begin{DoxyReturn}{Returns}
+the current S\+T\+D\+D\+EV 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a72145770043104a1fe0a8a1648044aed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1perf_1_1_base_perf_test_a88bddb3492e88ede49a0b70c63dc47b1}\label{classtestsuite_1_1perf_1_1_base_perf_test_a88bddb3492e88ede49a0b70c63dc47b1}} 
+\index{testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}!report\+Results@{report\+Results}}
+\index{report\+Results@{report\+Results}!testsuite\+::perf\+::\+Base\+Perf\+Test@{testsuite\+::perf\+::\+Base\+Perf\+Test}}
+\subsubsection{\texorpdfstring{report\+Results()}{reportResults()}}
+{\footnotesize\ttfamily synchronized void testsuite.\+perf.\+Base\+Perf\+Test.\+report\+Results (\begin{DoxyParamCaption}\item[{String}]{additional\+Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reports the current results to S\+T\+D\+O\+UT, preceeded by {\ttfamily additional\+Message} if not null.
+
+
+\begin{DoxyParams}{Parameters}
+{\em additional\+Message} & the additional message to print, or null if no message. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a88bddb3492e88ede49a0b70c63dc47b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1perf_1_1_base_perf_test_a88bddb3492e88ede49a0b70c63dc47b1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/perf/Base\+Perf\+Test.\+java\end{DoxyCompactItemize}

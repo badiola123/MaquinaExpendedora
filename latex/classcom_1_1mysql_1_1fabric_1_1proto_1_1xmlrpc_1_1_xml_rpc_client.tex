@@ -1,0 +1,153 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client}{}\section{com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client}\index{com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client@{com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_aca70274d71b6242a02d406f727f58428}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_aca70274d71b6242a02d406f727f58428}} 
+{\bfseries Xml\+Rpc\+Client} (String url, String username, String password)  throws Fabric\+Communication\+Exception 
+\item 
+Set$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a61a79c49069ab6e664bbca2f37fe7813}{get\+Fabric\+Names}} ()  throws Fabric\+Communication\+Exception 
+\item 
+Set$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a553477c453b6790f351a0b0b21bf5947}{get\+Group\+Names}} ()  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_ac8a5e74b99defac547d42dcdf8c8e30e}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_ac8a5e74b99defac547d42dcdf8c8e30e}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group}{Server\+Group}} {\bfseries get\+Server\+Group} (String group\+Name)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a8d9a5ec130ad0fead5583984559ab417}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a8d9a5ec130ad0fead5583984559ab417}} 
+Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} $>$ {\bfseries get\+Servers\+For\+Key} (String table\+Name, int key)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_state_response}{Fabric\+State\+Response}}$<$ Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group}{Server\+Group}} $>$ $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a4994f6f561120609d2424ac3dd5358e7}{get\+Server\+Groups}} (String group\+Pattern)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a6d94795852e21641cd0071a3c16c7a9c}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a6d94795852e21641cd0071a3c16c7a9c}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_state_response}{Fabric\+State\+Response}}$<$ Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group}{Server\+Group}} $>$ $>$ {\bfseries get\+Server\+Groups} ()  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_state_response}{Fabric\+State\+Response}}$<$ Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping}{Shard\+Mapping}} $>$ $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_abe45ffddd4ee9cb5dd9aa9a7b38b895c}{get\+Shard\+Mappings}} (String shard\+Mapping\+Id\+Pattern)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_afb0765944d961057580c90d54070dba9}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_afb0765944d961057580c90d54070dba9}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_state_response}{Fabric\+State\+Response}}$<$ Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping}{Shard\+Mapping}} $>$ $>$ {\bfseries get\+Shard\+Mappings} ()  throws Fabric\+Communication\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a798e2b72d0dfbe29011320bc85cb7368}{create\+Group}} (String group\+Name)  throws Fabric\+Communication\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a502a4375746c23b6a6213754daa0b02a}{destroy\+Group}} (String group\+Name)  throws Fabric\+Communication\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a7fea61d00a4acbbc23aac53f5c108056}{create\+Server\+In\+Group}} (String group\+Name, String hostname, int port)  throws Fabric\+Communication\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a90a46aa65d36a3b282a2e10bce2656ee}{create\+Shard\+Mapping}} (\mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}} type, String global\+Group\+Name)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a4cc8e481181ee81d309a25d47e49deba}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a4cc8e481181ee81d309a25d47e49deba}} 
+void {\bfseries create\+Shard\+Table} (int shard\+Mapping\+Id, String database, String table, String column)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a5c3b829c1ea56c98b3d6a84413468511}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a5c3b829c1ea56c98b3d6a84413468511}} 
+void {\bfseries create\+Shard\+Index} (int shard\+Mapping\+Id, String group\+Name\+Lower\+Bound\+List)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a8e3edc0d2a4f2410484cd24576ef5702}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a8e3edc0d2a4f2410484cd24576ef5702}} 
+void {\bfseries add\+Server\+To\+Group} (String group\+Name, String hostname, int port)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a084138b62bcbe11860d25be57caa66ae}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a084138b62bcbe11860d25be57caa66ae}} 
+void {\bfseries remove\+Server\+From\+Group} (String group\+Name, String hostname, int port)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_ad62e69f6d208839236a530a9251a0836}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_ad62e69f6d208839236a530a9251a0836}} 
+void {\bfseries promote\+Server\+In\+Group} (String group\+Name, String hostname, int port)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a768c30282c7c3df672972f589a1c3c8a}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a768c30282c7c3df672972f589a1c3c8a}} 
+void {\bfseries report\+Server\+Error} (\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} server, String error\+Description, boolean force\+Faulty)  throws Fabric\+Communication\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fabric client using the X\+M\+L-\/\+R\+PC protocol. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a798e2b72d0dfbe29011320bc85cb7368}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a798e2b72d0dfbe29011320bc85cb7368}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!create\+Group@{create\+Group}}
+\index{create\+Group@{create\+Group}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{create\+Group()}{createGroup()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+create\+Group (\begin{DoxyParamCaption}\item[{String}]{group\+Name }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Create a new HA group. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a7fea61d00a4acbbc23aac53f5c108056}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a7fea61d00a4acbbc23aac53f5c108056}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!create\+Server\+In\+Group@{create\+Server\+In\+Group}}
+\index{create\+Server\+In\+Group@{create\+Server\+In\+Group}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{create\+Server\+In\+Group()}{createServerInGroup()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+create\+Server\+In\+Group (\begin{DoxyParamCaption}\item[{String}]{group\+Name,  }\item[{String}]{hostname,  }\item[{int}]{port }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Create a new server in the given group. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a90a46aa65d36a3b282a2e10bce2656ee}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a90a46aa65d36a3b282a2e10bce2656ee}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!create\+Shard\+Mapping@{create\+Shard\+Mapping}}
+\index{create\+Shard\+Mapping@{create\+Shard\+Mapping}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{create\+Shard\+Mapping()}{createShardMapping()}}
+{\footnotesize\ttfamily int com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+create\+Shard\+Mapping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}}}]{type,  }\item[{String}]{global\+Group\+Name }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Create a new shard mapping.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & method by which data is distributed to shards \\
+\hline
+{\em global\+Group\+Name} & name of global group of the shard mapping \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id of the new shard mapping. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a502a4375746c23b6a6213754daa0b02a}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a502a4375746c23b6a6213754daa0b02a}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!destroy\+Group@{destroy\+Group}}
+\index{destroy\+Group@{destroy\+Group}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{destroy\+Group()}{destroyGroup()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+destroy\+Group (\begin{DoxyParamCaption}\item[{String}]{group\+Name }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Destroy an HA group. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a61a79c49069ab6e664bbca2f37fe7813}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a61a79c49069ab6e664bbca2f37fe7813}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!get\+Fabric\+Names@{get\+Fabric\+Names}}
+\index{get\+Fabric\+Names@{get\+Fabric\+Names}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{get\+Fabric\+Names()}{getFabricNames()}}
+{\footnotesize\ttfamily Set$<$String$>$ com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+get\+Fabric\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Return a list of Fabric servers. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a553477c453b6790f351a0b0b21bf5947}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a553477c453b6790f351a0b0b21bf5947}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!get\+Group\+Names@{get\+Group\+Names}}
+\index{get\+Group\+Names@{get\+Group\+Names}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{get\+Group\+Names()}{getGroupNames()}}
+{\footnotesize\ttfamily Set$<$String$>$ com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+get\+Group\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Return a list of groups present in this fabric. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a4994f6f561120609d2424ac3dd5358e7}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a4994f6f561120609d2424ac3dd5358e7}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!get\+Server\+Groups@{get\+Server\+Groups}}
+\index{get\+Server\+Groups@{get\+Server\+Groups}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{get\+Server\+Groups()}{getServerGroups()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_state_response}{Fabric\+State\+Response}}$<$Set$<$\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group}{Server\+Group}}$>$ $>$ com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+get\+Server\+Groups (\begin{DoxyParamCaption}\item[{String}]{group\+Pattern }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Facade for \char`\"{}dump.\+servers\char`\"{}. Will not return empty server groups. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_a4994f6f561120609d2424ac3dd5358e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_abe45ffddd4ee9cb5dd9aa9a7b38b895c}\label{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_abe45ffddd4ee9cb5dd9aa9a7b38b895c}} 
+\index{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}!get\+Shard\+Mappings@{get\+Shard\+Mappings}}
+\index{get\+Shard\+Mappings@{get\+Shard\+Mappings}!com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client@{com\+::mysql\+::fabric\+::proto\+::xmlrpc\+::\+Xml\+Rpc\+Client}}
+\subsubsection{\texorpdfstring{get\+Shard\+Mappings()}{getShardMappings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_state_response}{Fabric\+State\+Response}}$<$Set$<$\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping}{Shard\+Mapping}}$>$ $>$ com.\+mysql.\+fabric.\+proto.\+xmlrpc.\+Xml\+Rpc\+Client.\+get\+Shard\+Mappings (\begin{DoxyParamCaption}\item[{String}]{shard\+Mapping\+Id\+Pattern }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+Retrieve a set of complete shard mappings. The returned mappings include all information available about the mapping.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shard\+Mapping\+Id\+Pattern} & the shard mapping id to retrieve \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_abe45ffddd4ee9cb5dd9aa9a7b38b895c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client_abe45ffddd4ee9cb5dd9aa9a7b38b895c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/proto/xmlrpc/Xml\+Rpc\+Client.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="com.mysql.jdbc.Util.handleNewInstance" name="com.mysql.jdbc.Util.handleNewInstance">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_callable_statement.html#a48501c01025bf2330e0dc26b7e43947e" title="com.mysql.jdbc.CallableStatement.get\lInstance" alt="" coords="235,104,481,145"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#afda2c6f126087c49737afee5bc053e32" title="com.mysql.jdbc.Connection\lImpl.getInstance" alt="" coords="267,169,449,211"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a7f3edbb716bb075ccd3821993ea718be" title="com.mysql.jdbc.DatabaseMeta\lData.getInstance" alt="" coords="257,235,459,276"/>
+<area shape="rect" id="node13" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a3f7dd0edd868d1c66f08be25392fba8e" title="com.mysql.jdbc.PreparedStatement.get\lInstance" alt="" coords="232,300,484,341"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a2b7230144634b4d3e651707a23fd5064" title="com.mysql.jdbc.ResultSet\lImpl.getInstance" alt="" coords="271,365,445,407"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#ab44319ffdc136817efca3040507a1cdf" title="com.mysql.jdbc.Connection\lImpl.prepareCall" alt="" coords="544,104,727,145"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html#a834c012e752a01d1ee435b3461bb8218" title="com.mysql.jdbc.NonRegistering\lDriver.connect" alt="" coords="532,169,739,211"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#ad532c3e1663ec177fe6863bd0c8ca47d" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.getConnection" alt="" coords="789,5,1001,47"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_mini_admin.html#a5177d105f0850fa5b293e71255803260" title="com.mysql.jdbc.MiniAdmin.\lMiniAdmin" alt="" coords="804,71,987,112"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1util_1_1_base_bug_report.html#a23d83d1297142eb136a1898cb339b77a" title="com.mysql.jdbc.util.Base\lBugReport.getConnection" alt="" coords="810,136,981,177"/>
+<area shape="rect" id="node9" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a37a5b68fc2ee7b632c08744bc7579f29" title="testsuite.regression.Connection\lRegressionTest.testBug3554" alt="" coords="793,201,998,243"/>
+<area shape="rect" id="node10" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a24c8f315d33aa8259b7777c43e225b24" title="testsuite.regression.Connection\lRegressionTest.testBug16224249" alt="" coords="787,267,1004,308"/>
+<area shape="rect" id="node11" href="$classtestsuite_1_1simple_1_1_connection_test.html#a898cfadb7bf3141e3a364a0d47c824fc" title="testsuite.simple.Connection\lTest.testClusterConnection" alt="" coords="804,332,987,373"/>
+</map>

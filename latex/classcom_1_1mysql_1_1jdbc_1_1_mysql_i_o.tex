@@ -1,0 +1,604 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}{}\section{com.\+mysql.\+jdbc.\+Mysql\+IO Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}\index{com.\+mysql.\+jdbc.\+Mysql\+IO@{com.\+mysql.\+jdbc.\+Mysql\+IO}}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Mysql\+IO\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b4e102e11948b0b76701c1c3ce3a4a9}{Mysql\+IO}} (String host, int port, Properties props, String socket\+Factory\+Class\+Name, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, int socket\+Timeout, int use\+Buffer\+Row\+Size\+Threshold)  throws I\+O\+Exception, S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a128a14ef2f35a39db63a1e8cf5bf772b}{has\+Long\+Column\+Info}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae3c7706cfd7affce7496e00714244abf}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae3c7706cfd7affce7496e00714244abf}} 
+boolean {\bfseries is\+S\+S\+L\+Established} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a3ac54d9f5aa7caf1c58370e93099e27e}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a3ac54d9f5aa7caf1c58370e93099e27e}} 
+boolean {\bfseries is\+E\+O\+F\+Deprecated} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ad9f29b93a2437574e50ba8f85b77c8c3}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ad9f29b93a2437574e50ba8f85b77c8c3}} 
+static boolean {\bfseries use\+Buffer\+Row\+Explicit} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} fields)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Socket \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a4e4146e633ac294fc4e60b7168f346e3}{mysql\+Connection}} = null
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a990a37f80033c522373acc3df21487a4}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a990a37f80033c522373acc3df21487a4}} 
+static final int {\bfseries S\+E\+E\+D\+\_\+\+L\+E\+N\+G\+TH} = 20
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a488f63df6fbee68f43c10ef5ea139977}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a488f63df6fbee68f43c10ef5ea139977}} 
+boolean {\bfseries is\+Data\+Available} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa095242c04541a0fd380446e67d765d8}{get\+Last\+Packet\+Sent\+Time\+Ms}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a6d74cc4256f4851c4dbc96469e80fc4c}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a6d74cc4256f4851c4dbc96469e80fc4c}} 
+long {\bfseries get\+Last\+Packet\+Received\+Time\+Ms} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a73c871988cf4c69bf78db472e6a7713f}{get\+Result\+Set}} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl}{Statement\+Impl}} calling\+Statement, long column\+Count, int max\+Rows, int result\+Set\+Type, int result\+Set\+Concurrency, boolean stream\+Results, String catalog, boolean is\+Binary\+Encoded, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} metadata\+From\+Cache)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae030add0abfc9799fa23d7b5ab982d97}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae030add0abfc9799fa23d7b5ab982d97}} 
+Network\+Resources {\bfseries get\+Network\+Resources} ()
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a35b3e85f82755ba047023c6094ab5cd6}{force\+Close}} ()
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b5ceba1f2420b68450dd1f8ae9ad53a}{skip\+Packet}} ()  throws S\+Q\+L\+Exception 
+\item 
+final \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a97388b336bdd49fcbf3ee8f1e305e11a}{read\+Packet}} ()  throws S\+Q\+L\+Exception 
+\item 
+final \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2da4fe16e54a2d70893f1b5da3bdb1af}{unpack\+Field}} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} packet, boolean extract\+Default\+Values)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a905b469bb29211ae5068baa141c3a4e2}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a905b469bb29211ae5068baa141c3a4e2}} 
+boolean {\bfseries is\+Set\+Needed\+For\+Auto\+Commit\+Mode} (boolean auto\+Commit\+Flag)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_adce0dbfb3ed6a68c40855e5b7948b19d}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_adce0dbfb3ed6a68c40855e5b7948b19d}} 
+boolean {\bfseries in\+Transaction\+On\+Server} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2b65fc2cb7cccdb5923da263d37019ad}{change\+User}} (String user\+Name, String password, String database)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa74c577f61133d4e06188e8903e5d6c2}{check\+Error\+Packet}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a83b397711c486862b282c060e1e7fd5f}{check\+For\+Charset\+Mismatch}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a204a5891acbca2ebde4e15cbf8f41452}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a204a5891acbca2ebde4e15cbf8f41452}} 
+void {\bfseries clear\+Input\+Stream} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_afaae7b1e0e7ae77feced10bc032de473}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_afaae7b1e0e7ae77feced10bc032de473}} 
+void {\bfseries reset\+Read\+Packet\+Sequence} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a4fa522522af077a7c1702c338d635c55}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a4fa522522af077a7c1702c338d635c55}} 
+void {\bfseries dump\+Packet\+Ring\+Buffer} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a86ec9e7284f797edec7e5ec4880f2006}{explain\+Slow\+Query}} (byte\mbox{[}$\,$\mbox{]} query\+S\+QL, String truncated\+Query)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ad6340a0cc694b0de342d33f419a12d79}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ad6340a0cc694b0de342d33f419a12d79}} 
+boolean {\bfseries should\+Intercept} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a81dc91eb94390a4956e26506e3567149}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a81dc91eb94390a4956e26506e3567149}} 
+long {\bfseries get\+Current\+Time\+Nanos\+Or\+Millis} ()
+\item 
+final \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae581885b9b18704a97106cc0992d1893}{read\+Results\+For\+Query\+Or\+Update}} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl}{Statement\+Impl}} calling\+Statement, int max\+Rows, int result\+Set\+Type, int result\+Set\+Concurrency, boolean stream\+Results, String catalog, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} result\+Packet, boolean is\+Binary\+Encoded, long pre\+Sent\+Column\+Count, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} metadata\+From\+Cache)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ac1c93c4a047efd777572e1739e678df8}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ac1c93c4a047efd777572e1739e678df8}} 
+int {\bfseries get\+Server\+Status} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa81d2e6a1068990608de84c4b2341d59}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa81d2e6a1068990608de84c4b2341d59}} 
+List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row}{Result\+Set\+Row}} $>$ {\bfseries fetch\+Rows\+Via\+Cursor} (List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row}{Result\+Set\+Row}} $>$ fetched\+Rows, long statement\+Id, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} column\+Types, int fetch\+Size, boolean use\+Buffer\+Row\+Explicit)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae867a013a643e65fe891bc90baf93971}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae867a013a643e65fe891bc90baf93971}} 
+long {\bfseries get\+Thread\+Id} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ac2781004ba351ce7e299f6de7f11cf28}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ac2781004ba351ce7e299f6de7f11cf28}} 
+boolean {\bfseries use\+Nanos\+For\+Elapsed\+Time} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a167a2084286b2e759186ecadfd2c9af3}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a167a2084286b2e759186ecadfd2c9af3}} 
+long {\bfseries get\+Slow\+Query\+Threshold} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a4f34934b7a7501c35f1e5f4783e60b9e}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a4f34934b7a7501c35f1e5f4783e60b9e}} 
+String {\bfseries get\+Query\+Timing\+Units} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa54b5e173904097597a8d31716719d8d}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa54b5e173904097597a8d31716719d8d}} 
+int {\bfseries get\+Command\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2d94ecc8769d2df1743be282bf32ed59}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2d94ecc8769d2df1743be282bf32ed59}} 
+void {\bfseries set\+Statement\+Interceptors} (List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2}{Statement\+Interceptor\+V2}} $>$ statement\+Interceptors)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a3b8d395692790c90ea56bddb5aeeaf92}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a3b8d395692790c90ea56bddb5aeeaf92}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} {\bfseries get\+Exception\+Interceptor} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a1b10092e5a778b972264df381478e71c}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a1b10092e5a778b972264df381478e71c}} 
+void {\bfseries set\+Socket\+Timeout} (int milliseconds)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a93f8cb846651a3256047f9fbe703cff9}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a93f8cb846651a3256047f9fbe703cff9}} 
+void {\bfseries release\+Resources} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a58db7d49c761d6559cdb393fab64052d}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a58db7d49c761d6559cdb393fab64052d}} 
+int {\bfseries server\+Charset\+Index}
+\item 
+Buffered\+Output\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_afddb7f18ab4d502a389d87ac9343e568}{mysql\+Output}} = null
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a88c1f503171aa38e7171668c7c842024}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a88c1f503171aa38e7171668c7c842024}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} {\bfseries connection}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_af034779b1a2f9b363828cc8e04ae0dd2}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_af034779b1a2f9b363828cc8e04ae0dd2}} 
+Input\+Stream {\bfseries mysql\+Input} = null
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a1b60edd4d8aff7e90cf480ed8a0fa49b}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a1b60edd4d8aff7e90cf480ed8a0fa49b}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory}{Socket\+Factory}} {\bfseries socket\+Factory} = null
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aeea3acc1e16ad6cc00d8aa81de25752a}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aeea3acc1e16ad6cc00d8aa81de25752a}} 
+String {\bfseries host} = null
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa39f7c979fc69267d71c528e938add77}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa39f7c979fc69267d71c528e938add77}} 
+String {\bfseries seed}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a236bee395d002577e16701c6e9818c35}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a236bee395d002577e16701c6e9818c35}} 
+int {\bfseries max\+Three\+Bytes} = 255 $\ast$ 255 $\ast$ 255
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a0f2e8611bf4f891583ccc643cca499dc}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a0f2e8611bf4f891583ccc643cca499dc}} 
+int {\bfseries port} = 3306
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a1a8a6605a59284a55ece4df04c496eef}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a1a8a6605a59284a55ece4df04c496eef}} 
+int {\bfseries server\+Capabilities}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9bdb1ce0aa60566d0e4aba8739985184}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9bdb1ce0aa60566d0e4aba8739985184}} 
+long {\bfseries client\+Param} = 0
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a11e9f314d195a18ff96c603f933307e2}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a11e9f314d195a18ff96c603f933307e2}} 
+long {\bfseries last\+Packet\+Sent\+Time\+Ms} = 0
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_acc24d799164be18c491e68c2d95bfd4e}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_acc24d799164be18c491e68c2d95bfd4e}} 
+long {\bfseries last\+Packet\+Received\+Time\+Ms} = 0
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_acbf9702f62d3a30f500e3472721e592a}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_acbf9702f62d3a30f500e3472721e592a}} 
+static final int {\bfseries N\+U\+L\+L\+\_\+\+L\+E\+N\+G\+TH} = $\sim$0
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a21c11a84b28aab8401f8d95a18262a2a}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a21c11a84b28aab8401f8d95a18262a2a}} 
+static final int {\bfseries C\+O\+M\+P\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+L\+E\+N\+G\+TH} = 3
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa0debc972775b27b9dc716d091d3e6d0}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa0debc972775b27b9dc716d091d3e6d0}} 
+static final int {\bfseries M\+I\+N\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+\_\+\+L\+EN} = 50
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a5d4fa493dff3be862dcad4b53ace80cb}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a5d4fa493dff3be862dcad4b53ace80cb}} 
+static final int {\bfseries H\+E\+A\+D\+E\+R\+\_\+\+L\+E\+N\+G\+TH} = 4
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a22aaf479178d9af21c550d9cd1f92c09}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a22aaf479178d9af21c550d9cd1f92c09}} 
+static final int {\bfseries A\+U\+T\+H\+\_\+411\+\_\+\+O\+V\+E\+R\+H\+E\+AD} = 33
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ac7036ef3f597d74f66db70f2aa0d2bf8}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ac7036ef3f597d74f66db70f2aa0d2bf8}} 
+static final int {\bfseries C\+L\+I\+E\+N\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+\_\+\+W\+I\+T\+H\+\_\+\+DB} = 0x00000008
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a299288664939debd64d3313f2488a242}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a299288664939debd64d3313f2488a242}} 
+static final int {\bfseries C\+L\+I\+E\+N\+T\+\_\+\+S\+SL} = 0x00000800
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_af34b097a95dcae67cd9c3dff0aae2060}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_af34b097a95dcae67cd9c3dff0aae2060}} 
+static final int {\bfseries C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+S\+E\+R\+V\+ED} = 0x00004000
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a78814a687c993427e89c52d4a3a99316}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a78814a687c993427e89c52d4a3a99316}} 
+static final int {\bfseries C\+L\+I\+E\+N\+T\+\_\+\+S\+E\+C\+U\+R\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON} = 0x00008000
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2d2cccf3256820469cfc6597e74d10af}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2d2cccf3256820469cfc6597e74d10af}} 
+static final int {\bfseries M\+A\+X\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+O\+\_\+\+L\+OG} = 1024
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa14027c67779bce159810d8d96ed2a37}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa14027c67779bce159810d8d96ed2a37}} 
+static final int {\bfseries M\+A\+X\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+O\+\_\+\+E\+X\+P\+L\+A\+IN} = 1024 $\ast$ 1024
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2769548a27fa2dbafdc5a7bdbfee7fd0}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2769548a27fa2dbafdc5a7bdbfee7fd0}} 
+static final int {\bfseries I\+N\+I\+T\+I\+A\+L\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+S\+I\+ZE} = 1024
+\item 
+static final String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ab97d65895f0cd8157dd3f39c968eee68}{Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER}} = \char`\"{}0000-\/00-\/00\char`\"{}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a8ee301b64234289e02e2635167aa8522}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a8ee301b64234289e02e2635167aa8522}} 
+static final String {\bfseries Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER} = \char`\"{}0000-\/00-\/00 00\+:00\+:00\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used by \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} for communicating with the My\+S\+QL server. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b4e102e11948b0b76701c1c3ce3a4a9}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b4e102e11948b0b76701c1c3ce3a4a9}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!Mysql\+IO@{Mysql\+IO}}
+\index{Mysql\+IO@{Mysql\+IO}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{Mysql\+I\+O()}{MysqlIO()}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+Mysql\+IO (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{int}]{port,  }\item[{Properties}]{props,  }\item[{String}]{socket\+Factory\+Class\+Name,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{int}]{socket\+Timeout,  }\item[{int}]{use\+Buffer\+Row\+Size\+Threshold }\end{DoxyParamCaption}) throws I\+O\+Exception, S\+Q\+L\+Exception}
+
+Constructor\+: Connect to the My\+S\+QL server and setup a stream connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & the hostname to connect to \\
+\hline
+{\em port} & the port number that the server is listening on \\
+\hline
+{\em props} & the Properties from Driver\+Manager.\+get\+Connection() \\
+\hline
+{\em socket\+Factory\+Class\+Name} & the socket factory to use \\
+\hline
+{\em conn} & the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} that is creating us \\
+\hline
+{\em socket\+Timeout} & the timeout to set for the socket (0 means no timeout)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if an I\+O\+Exception occurs during connect. \\
+\hline
+{\em S\+Q\+L\+Exception} & if a database access error occurs. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b4e102e11948b0b76701c1c3ce3a4a9_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2b65fc2cb7cccdb5923da263d37019ad}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2b65fc2cb7cccdb5923da263d37019ad}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!change\+User@{change\+User}}
+\index{change\+User@{change\+User}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{change\+User()}{changeUser()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+change\+User (\begin{DoxyParamCaption}\item[{String}]{user\+Name,  }\item[{String}]{password,  }\item[{String}]{database }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Re-\/authenticates as the given user and password
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+{\em password} & \\
+\hline
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2b65fc2cb7cccdb5923da263d37019ad_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa74c577f61133d4e06188e8903e5d6c2}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa74c577f61133d4e06188e8903e5d6c2}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!check\+Error\+Packet@{check\+Error\+Packet}}
+\index{check\+Error\+Packet@{check\+Error\+Packet}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{check\+Error\+Packet()}{checkErrorPacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+check\+Error\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks for errors in the reply packet, and if none, returns the reply packet, ready for reading
+
+\begin{DoxyReturn}{Returns}
+a packet ready for reading.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & is the packet is an error packet \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa74c577f61133d4e06188e8903e5d6c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a83b397711c486862b282c060e1e7fd5f}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a83b397711c486862b282c060e1e7fd5f}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!check\+For\+Charset\+Mismatch@{check\+For\+Charset\+Mismatch}}
+\index{check\+For\+Charset\+Mismatch@{check\+For\+Charset\+Mismatch}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{check\+For\+Charset\+Mismatch()}{checkForCharsetMismatch()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+check\+For\+Charset\+Mismatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines if the database charset is the same as the platform charset \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a86ec9e7284f797edec7e5ec4880f2006}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a86ec9e7284f797edec7e5ec4880f2006}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!explain\+Slow\+Query@{explain\+Slow\+Query}}
+\index{explain\+Slow\+Query@{explain\+Slow\+Query}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{explain\+Slow\+Query()}{explainSlowQuery()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+explain\+Slow\+Query (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{query\+S\+QL,  }\item[{String}]{truncated\+Query }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Runs an \textquotesingle{}E\+X\+P\+L\+A\+IN\textquotesingle{} on the given query and dumps the results to the log
+
+
+\begin{DoxyParams}{Parameters}
+{\em query\+S\+QL} & \\
+\hline
+{\em truncated\+Query} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a86ec9e7284f797edec7e5ec4880f2006_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a35b3e85f82755ba047023c6094ab5cd6}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a35b3e85f82755ba047023c6094ab5cd6}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!force\+Close@{force\+Close}}
+\index{force\+Close@{force\+Close}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{force\+Close()}{forceClose()}}
+{\footnotesize\ttfamily final void com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+force\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Forcibly closes the underlying socket to My\+S\+QL. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a35b3e85f82755ba047023c6094ab5cd6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa095242c04541a0fd380446e67d765d8}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_aa095242c04541a0fd380446e67d765d8}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!get\+Last\+Packet\+Sent\+Time\+Ms@{get\+Last\+Packet\+Sent\+Time\+Ms}}
+\index{get\+Last\+Packet\+Sent\+Time\+Ms@{get\+Last\+Packet\+Sent\+Time\+Ms}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{get\+Last\+Packet\+Sent\+Time\+Ms()}{getLastPacketSentTimeMs()}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+get\+Last\+Packet\+Sent\+Time\+Ms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+Returns the last\+Packet\+Sent\+Time\+Ms. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a73c871988cf4c69bf78db472e6a7713f}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a73c871988cf4c69bf78db472e6a7713f}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!get\+Result\+Set@{get\+Result\+Set}}
+\index{get\+Result\+Set@{get\+Result\+Set}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{get\+Result\+Set()}{getResultSet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+get\+Result\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl}{Statement\+Impl}}}]{calling\+Statement,  }\item[{long}]{column\+Count,  }\item[{int}]{max\+Rows,  }\item[{int}]{result\+Set\+Type,  }\item[{int}]{result\+Set\+Concurrency,  }\item[{boolean}]{stream\+Results,  }\item[{String}]{catalog,  }\item[{boolean}]{is\+Binary\+Encoded,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} \mbox{[}$\,$\mbox{]}}]{metadata\+From\+Cache }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build a result set. Delegates to build\+Result\+Set\+With\+Rows() to build a J\+D\+B\+C-\/version-\/specific Result\+Set, given rows as byte data, and field information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Statement} & \\
+\hline
+{\em column\+Count} & the number of columns in the result set \\
+\hline
+{\em max\+Rows} & the maximum number of rows to read (-\/1 means all rows) \\
+\hline
+{\em result\+Set\+Type} & (T\+Y\+P\+E\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+O\+N\+LY, T\+Y\+P\+E\+\_\+\+S\+C\+R\+O\+L\+L\+\_\+????) \\
+\hline
+{\em result\+Set\+Concurrency} & the type of result set (C\+O\+N\+C\+U\+R\+\_\+\+U\+P\+D\+A\+T\+A\+B\+LE or R\+E\+A\+D\+\_\+\+O\+N\+LY) \\
+\hline
+{\em stream\+Results} & should the result set be read all at once, or streamed? \\
+\hline
+{\em catalog} & the database name in use when the result set was created \\
+\hline
+{\em is\+Binary\+Encoded} & is this result set in native encoding? \\
+\hline
+{\em unpack\+Field\+Info} & should we read M\+Y\+S\+Q\+L\+\_\+\+F\+I\+E\+LD info (if available)?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result set
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a73c871988cf4c69bf78db472e6a7713f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a73c871988cf4c69bf78db472e6a7713f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a128a14ef2f35a39db63a1e8cf5bf772b}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a128a14ef2f35a39db63a1e8cf5bf772b}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!has\+Long\+Column\+Info@{has\+Long\+Column\+Info}}
+\index{has\+Long\+Column\+Info@{has\+Long\+Column\+Info}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{has\+Long\+Column\+Info()}{hasLongColumnInfo()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+has\+Long\+Column\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Does the server send back extra column info?
+
+\begin{DoxyReturn}{Returns}
+true if so 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a97388b336bdd49fcbf3ee8f1e305e11a}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a97388b336bdd49fcbf3ee8f1e305e11a}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!read\+Packet@{read\+Packet}}
+\index{read\+Packet@{read\+Packet}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{read\+Packet()}{readPacket()}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+read\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read one packet from the My\+S\+QL server
+
+\begin{DoxyReturn}{Returns}
+the packet from the server.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_communications_exception}{Communications\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a97388b336bdd49fcbf3ee8f1e305e11a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a97388b336bdd49fcbf3ee8f1e305e11a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae581885b9b18704a97106cc0992d1893}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae581885b9b18704a97106cc0992d1893}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!read\+Results\+For\+Query\+Or\+Update@{read\+Results\+For\+Query\+Or\+Update}}
+\index{read\+Results\+For\+Query\+Or\+Update@{read\+Results\+For\+Query\+Or\+Update}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{read\+Results\+For\+Query\+Or\+Update()}{readResultsForQueryOrUpdate()}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+read\+Results\+For\+Query\+Or\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl}{Statement\+Impl}}}]{calling\+Statement,  }\item[{int}]{max\+Rows,  }\item[{int}]{result\+Set\+Type,  }\item[{int}]{result\+Set\+Concurrency,  }\item[{boolean}]{stream\+Results,  }\item[{String}]{catalog,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}}}]{result\+Packet,  }\item[{boolean}]{is\+Binary\+Encoded,  }\item[{long}]{pre\+Sent\+Column\+Count,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} \mbox{[}$\,$\mbox{]}}]{metadata\+From\+Cache }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads one result set off of the wire, if the result is actually an update count, creates an update-\/count only result set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Statement} & \\
+\hline
+{\em max\+Rows} & the maximum rows to return in the result set. \\
+\hline
+{\em result\+Set\+Type} & scrollability \\
+\hline
+{\em result\+Set\+Concurrency} & updatability \\
+\hline
+{\em stream\+Results} & should the driver leave the results on the wire, and read them only when needed? \\
+\hline
+{\em catalog} & the catalog in use \\
+\hline
+{\em result\+Packet} & the first packet of information in the result set \\
+\hline
+{\em is\+Binary\+Encoded} & is this result set from a prepared statement? \\
+\hline
+{\em pre\+Sent\+Column\+Count} & do we already know the number of columns? \\
+\hline
+{\em unpack\+Field\+Info} & should we unpack the field information?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result set that either represents the rows, or an update count
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs while reading the rows \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ae581885b9b18704a97106cc0992d1893_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b5ceba1f2420b68450dd1f8ae9ad53a}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b5ceba1f2420b68450dd1f8ae9ad53a}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!skip\+Packet@{skip\+Packet}}
+\index{skip\+Packet@{skip\+Packet}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{skip\+Packet()}{skipPacket()}}
+{\footnotesize\ttfamily final void com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+skip\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads and discards a single My\+S\+QL packet from the input stream.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if the network fails while skipping the packet. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b5ceba1f2420b68450dd1f8ae9ad53a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a9b5ceba1f2420b68450dd1f8ae9ad53a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2da4fe16e54a2d70893f1b5da3bdb1af}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2da4fe16e54a2d70893f1b5da3bdb1af}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!unpack\+Field@{unpack\+Field}}
+\index{unpack\+Field@{unpack\+Field}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{unpack\+Field()}{unpackField()}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+unpack\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}}}]{packet,  }\item[{boolean}]{extract\+Default\+Values }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unpacks the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}} information from the given packet. Understands pre 4.\+1 and post 4.\+1 server version field packet structures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & the packet containing the field information \\
+\hline
+{\em extract\+Default\+Values} & should default values be extracted?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the unpacked field
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2da4fe16e54a2d70893f1b5da3bdb1af_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a4e4146e633ac294fc4e60b7168f346e3}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a4e4146e633ac294fc4e60b7168f346e3}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!mysql\+Connection@{mysql\+Connection}}
+\index{mysql\+Connection@{mysql\+Connection}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{mysql\+Connection}{mysqlConnection}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+mysql\+Connection = null}
+
+The connection to the server \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_afddb7f18ab4d502a389d87ac9343e568}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_afddb7f18ab4d502a389d87ac9343e568}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!mysql\+Output@{mysql\+Output}}
+\index{mysql\+Output@{mysql\+Output}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{mysql\+Output}{mysqlOutput}}
+{\footnotesize\ttfamily Buffered\+Output\+Stream com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+mysql\+Output = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Data to the server \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ab97d65895f0cd8157dd3f39c968eee68}\label{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_ab97d65895f0cd8157dd3f39c968eee68}} 
+\index{com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}!Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER@{Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER}}
+\index{Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER@{Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER}!com\+::mysql\+::jdbc\+::\+Mysql\+IO@{com\+::mysql\+::jdbc\+::\+Mysql\+IO}}
+\subsubsection{\texorpdfstring{Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER}{ZERO\_DATE\_VALUE\_MARKER}}
+{\footnotesize\ttfamily final String com.\+mysql.\+jdbc.\+Mysql\+I\+O.\+Z\+E\+R\+O\+\_\+\+D\+A\+T\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+M\+A\+R\+K\+ER = \char`\"{}0000-\/00-\/00\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+We need to have a \textquotesingle{}marker\textquotesingle{} for all-\/zero datetimes so that Result\+Set can decide what to do based on connection setting 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Mysql\+I\+O.\+java\end{DoxyCompactItemize}

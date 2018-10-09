@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.JDBC4DatabaseMetaDataUsingInfoSchema" name="com.mysql.jdbc.JDBC4DatabaseMetaDataUsingInfoSchema">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema.html" title="com.mysql.jdbc.DatabaseMeta\lDataUsingInfoSchema" alt="" coords="66,337,269,379"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html" title="com.mysql.jdbc.DatabaseMetaData" alt="" coords="53,261,282,288"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="218,172,445,199"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="175,96,357,123"/>
+<area shape="rect" id="node8" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="304,5,487,47"/>
+</map>

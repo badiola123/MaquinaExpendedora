@@ -1,0 +1,11 @@
+<map id="com.mysql.jdbc.MysqlIO.MysqlIO" name="com.mysql.jdbc.MysqlIO.MysqlIO">
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#accdc773d99a84b7b1db522aa324d6084" title="com.mysql.jdbc.Connection\lProperties.getEnablePacketDebug" alt="" coords="297,5,518,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#ac91e629cc7505335e1de76be5d070102" title="com.mysql.jdbc.Connection\lProperties.getTraceProtocol" alt="" coords="316,71,499,112"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#a82c72191f1132e06d2bbe504acde3399" title="com.mysql.jdbc.Connection\lProperties.getLogSlowQueries" alt="" coords="309,136,506,177"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory.html#a2e5061cef1109ab4689437fe177c4ffe" title="com.mysql.jdbc.SocketFactory.connect" alt="" coords="281,202,534,229"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory.html#aa9a78553a76681f49c734aaa3f8f126b" title="com.mysql.jdbc.SocketFactory.before\lHandshake" alt="" coords="286,253,529,295"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#abad9605452003baa9e6841a990334c92" title="com.mysql.jdbc.Connection\lProperties.getUseReadAheadInput" alt="" coords="297,319,518,360"/>
+<area shape="rect" id="node8" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html#a3faf787772351caedf8e95f28c09c4cd" title="com.mysql.jdbc.MySQLConnection.getLog" alt="" coords="272,385,543,411"/>
+<area shape="rect" id="node9" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#ae9cefafa60524eaec697493db7349cc1" title="com.mysql.jdbc.Connection\lProperties.useUnbufferedInput" alt="" coords="310,436,505,477"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="307,501,507,543"/>
+</map>

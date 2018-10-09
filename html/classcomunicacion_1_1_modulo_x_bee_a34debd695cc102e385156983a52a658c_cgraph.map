@@ -1,0 +1,7 @@
+<map id="comunicacion.ModuloXBee.confirmarVenta" name="comunicacion.ModuloXBee.confirmarVenta">
+<area shape="rect" id="node2" href="$classventa_1_1_venta.html#a517a4e2b36e633e0adab951596a733ed" title="venta.Venta.getNombreColumnas" alt="" coords="290,5,505,32"/>
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_comandos.html#a2fb20845cbfb01a03b1aba60031608cb" title="conexionSQL.Comandos.insertar" alt="" coords="291,56,504,83"/>
+<area shape="rect" id="node5" href="$classventa_1_1_venta.html#a82a6dd2795bd37dc1a72ffb5cb36a156" title="venta.Venta.getFormatoColumnas" alt="" coords="288,107,507,133"/>
+<area shape="rect" id="node6" href="$classvistas_1_1_principal.html#aa81de202b442c060c9db8f564ba288b3" title="vistas.Principal.getTablaventa" alt="" coords="301,157,493,184"/>
+<area shape="rect" id="node4" href="$classconexion_s_q_l_1_1_my_data_access.html#a9c57d53829ea15bb0bc59d7647cc6249" title="conexionSQL.MyDataAccess.set\lQuery" alt="" coords="555,49,769,90"/>
+</map>

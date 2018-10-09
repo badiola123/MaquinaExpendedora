@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.PreparedStatement.executeLargeUpdate" name="com.mysql.jdbc.PreparedStatement.executeLargeUpdate">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4b54450205db6b099922240e4f2e72a0" title="com.mysql.jdbc.PreparedStatement.execute\lBatchedInserts" alt="" coords="333,71,613,112"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a356cdeaae7b10fb79da4806e829a2190" title="com.mysql.jdbc.PreparedStatement.execute\lUpdate" alt="" coords="333,136,613,177"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a921d48d8e5c7adfde7518475024d822f" title="com.mysql.jdbc.Updatable\lResultSet.deleteRow" alt="" coords="699,5,875,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#aef041f8d9d0778083716fc26652648fa" title="com.mysql.jdbc.Updatable\lResultSet.insertRow" alt="" coords="699,71,875,112"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a919969ba4b3c7cbc7b18605e9f31a746" title="com.mysql.jdbc.Updatable\lResultSet.updateRow" alt="" coords="699,136,875,177"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1simple_1_1_connection_test.html#a88325894a5bef7fc0239d8af082ede7f" title="testsuite.simple.Connection\lTest.testCacheDefaultTimezone" alt="" coords="683,201,890,243"/>
+<area shape="rect" id="node8" href="$classtestsuite_1_1simple_1_1_statements_test.html#a8686a9137f5901a701020342f04dc3a7" title="testsuite.simple.Statements\lTest.testBinaryResultSetNumericTypes" alt="" coords="661,267,912,308"/>
+</map>

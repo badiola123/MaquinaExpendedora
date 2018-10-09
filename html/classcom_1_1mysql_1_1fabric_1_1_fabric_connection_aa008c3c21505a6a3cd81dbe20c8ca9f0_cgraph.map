@@ -1,0 +1,5 @@
+<map id="com.mysql.fabric.FabricConnection.refreshState" name="com.mysql.fabric.FabricConnection.refreshState">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client.html#a4994f6f561120609d2424ac3dd5358e7" title="com.mysql.fabric.proto.xmlrpc.\lXmlRpcClient.getServerGroups" alt="" coords="327,5,529,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client.html#abe45ffddd4ee9cb5dd9aa9a7b38b895c" title="com.mysql.fabric.proto.xmlrpc.\lXmlRpcClient.getShardMappings" alt="" coords="323,71,533,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1fabric_1_1_fabric_state_response.html#addba05821ef4572c9270bfea44f36826" title="com.mysql.fabric.FabricState\lResponse.getExpireTimeMillis" alt="" coords="581,100,779,141"/>
+</map>

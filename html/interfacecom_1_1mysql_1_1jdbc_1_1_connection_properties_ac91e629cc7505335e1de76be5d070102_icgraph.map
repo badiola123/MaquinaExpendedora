@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getTraceProtocol" name="com.mysql.jdbc.ConnectionProperties.getTraceProtocol">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a06d5bb90a0cf97abeb4975e63d92ea7a" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getTraceProtocol" alt="" coords="236,5,475,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#ac04f24be8ad62148eb1ea1718ea42851" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getTraceProtocol" alt="" coords="239,71,472,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a9b4e102e11948b0b76701c1c3ce3a4a9" title="com.mysql.jdbc.MysqlIO.MysqlIO" alt="" coords="246,137,465,163"/>
+</map>

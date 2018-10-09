@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseLocalSessionState" name="com.mysql.jdbc.ConnectionProperties.setUseLocalSessionState">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aad66241cb376c51b566660d1027e6b14" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseLocalSessionState" alt="" coords="288,5,579,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a9c5be4608718622501934b5054995bf7" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseLocalSessionState" alt="" coords="291,71,576,112"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.Connection.setInGlobalTx" name="com.mysql.jdbc.Connection.setInGlobalTx">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ad2b00fa8ecb1c3455f2f2725ca9fc29c" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setInGlobalTx" alt="" coords="259,5,477,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection.html#ae3f99ed779f888fbf58e1c447862a962" title="com.mysql.jdbc.jdbc2.optional.\lMysqlXAConnection.rollback" alt="" coords="267,71,469,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection.html#a7c2af1d5be8d8ba54c6293c6e3e61ffd" title="com.mysql.jdbc.jdbc2.optional.\lMysqlXAConnection.start" alt="" coords="267,136,469,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection.html#a0e248ebae4b509b14237febcd79c7132" title="com.mysql.jdbc.jdbc2.optional.\lMysqlXAConnection.commit" alt="" coords="267,201,469,243"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#ae2310c7ba07ef821c22538d1a4cc4c84" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setInGlobalTx" alt="" coords="261,267,475,308"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a4300303d3f60a9a817eb9db03d583034" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.ConnectionWrapper" alt="" coords="525,5,780,47"/>
+</map>

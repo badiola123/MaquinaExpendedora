@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.PreparedStatement.setBoolean" name="com.mysql.jdbc.PreparedStatement.setBoolean">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#aee3c411b599fe20f669701c025cc7a90" title="com.mysql.jdbc.PreparedStatement.set\lObject" alt="" coords="305,5,557,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#ad7bcfc97b47f3037e44a2b4271a92f61" title="com.mysql.jdbc.Updatable\lResultSet.updateBoolean" alt="" coords="343,71,519,112"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1simple_1_1_connection_test.html#a88325894a5bef7fc0239d8af082ede7f" title="testsuite.simple.Connection\lTest.testCacheDefaultTimezone" alt="" coords="328,136,535,177"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a5070cb2945792ee2e9f66f659df8b38a" title="com.mysql.jdbc.Updatable\lResultSet.updateBoolean" alt="" coords="605,71,781,112"/>
+</map>

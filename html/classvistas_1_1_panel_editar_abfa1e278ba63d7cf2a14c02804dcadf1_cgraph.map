@@ -1,0 +1,23 @@
+<map id="vistas.PanelEditar.actionPerformed" name="vistas.PanelEditar.actionPerformed">
+<area shape="rect" id="node2" href="$classvistas_1_1_panel_trabajador.html#a6779de800f0fec989da14137bcc8dc15" title="vistas.PanelTrabajador.volver" alt="" coords="239,5,425,32"/>
+<area shape="rect" id="node3" href="$classclientes_1_1_clientela.html#a1d531f14dc541569b84f1f72c760d376" title="clientes.Clientela.getCliente" alt="" coords="241,56,423,83"/>
+<area shape="rect" id="node4" href="$classmaquinas_1_1_maquinaria.html#a438161cbcee58e47e57c1c1f0d0207eb" title="maquinas.Maquinaria.getMaquina" alt="" coords="224,107,440,133"/>
+<area shape="rect" id="node5" href="$class_productos_1_1_inventario.html#adedc7e3eac62bbbc20bff33ffa9503f0" title="Productos.Inventario.get\lProducto" alt="" coords="251,158,413,199"/>
+<area shape="rect" id="node6" href="$classtipo_productos_1_1_tipos_lista.html#a825bd94b7e40672ab7d3a84083c21245" title="tipoProductos.TiposLista.get\lTipoP" alt="" coords="239,223,425,265"/>
+<area shape="rect" id="node7" href="$classoferta_1_1_lista_ofertas.html#aff266896ffa3bb5682ef4ecf1d514f2e" title="oferta.ListaOfertas.getOferta" alt="" coords="239,289,425,316"/>
+<area shape="rect" id="node8" href="$classventa_1_1_lista_ventas.html#ae3dd8941eee7b0e14309add4764d3d1a" title="venta.ListaVentas.getVenta" alt="" coords="241,340,423,367"/>
+<area shape="rect" id="node9" href="$class_stock_1_1_lista_stock.html#a17681900b9bdf6909a15c61b4946d080" title="Stock.ListaStock.getStock" alt="" coords="243,391,421,417"/>
+<area shape="rect" id="node10" href="$classclientes_1_1_cliente.html#afe1b2756b16dc23224805400ef1125d3" title="clientes.Cliente.getPrimaryKey" alt="" coords="231,441,433,468"/>
+<area shape="rect" id="node11" href="$classvistas_1_1_principal.html#a2330cd451138f9f602cee0c5c0cd5c08" title="vistas.Principal.getTablacliente" alt="" coords="232,492,432,519"/>
+<area shape="rect" id="node12" href="$classmaquinas_1_1_maquina.html#a96e2d5af0f84acd39c23cc43d513f3ee" title="maquinas.Maquina.getPrimaryKey" alt="" coords="221,543,443,569"/>
+<area shape="rect" id="node13" href="$classvistas_1_1_principal.html#ac784d0415cbb5e3932f088d68876c91a" title="vistas.Principal.getTablamaquina" alt="" coords="227,593,437,620"/>
+<area shape="rect" id="node14" href="$class_productos_1_1_producto.html#a3b9f2b2cfcbbc5708e65dbfeee373528" title="Productos.Producto.getPrimaryKey" alt="" coords="219,644,445,671"/>
+<area shape="rect" id="node15" href="$classvistas_1_1_principal.html#a39c3c478060c985a23f97e38dc88e61b" title="vistas.Principal.getTablaproducto" alt="" coords="226,695,438,721"/>
+<area shape="rect" id="node16" href="$classtipo_productos_1_1_tipo_producto.html#aca3b6c0276f1694c3032a7a512ac0910" title="tipoProductos.TipoProducto.get\lPrimaryKey" alt="" coords="230,746,434,787"/>
+<area shape="rect" id="node17" href="$classvistas_1_1_principal.html#a3cf8de4e71a59fc279da130e39af6cd2" title="vistas.Principal.getTablatipop" alt="" coords="237,812,427,839"/>
+<area shape="rect" id="node18" href="$classvistas_1_1_principal.html#afe7ddf018ad429301b1aca1dbfc4770d" title="vistas.Principal.getTablaoferta" alt="" coords="235,863,429,889"/>
+<area shape="rect" id="node19" href="$classvistas_1_1_principal.html#aa81de202b442c060c9db8f564ba288b3" title="vistas.Principal.getTablaventa" alt="" coords="236,913,428,940"/>
+<area shape="rect" id="node20" href="$class_stock_1_1_stock.html#aaba40908c8c5d06d27e39c3f0c57ba07" title="Stock.Stock.getPrimaryKey" alt="" coords="240,964,424,991"/>
+<area shape="rect" id="node21" href="$classvistas_1_1_principal.html#a004b49e26858496e0f5097a079b3aba5" title="vistas.Principal.getTablastock" alt="" coords="235,1015,429,1041"/>
+<area shape="rect" id="node22" href="$classvistas_1_1_panel_editar.html#a785d026660ee2531aa4fbd29d1377370" title="vistas.PanelEditar.actualizar" alt="" coords="239,1065,425,1092"/>
+</map>

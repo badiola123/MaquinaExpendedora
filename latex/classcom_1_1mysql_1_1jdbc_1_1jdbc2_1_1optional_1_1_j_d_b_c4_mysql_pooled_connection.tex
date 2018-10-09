@@ -1,0 +1,79 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection}{}\section{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection}\index{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection@{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a80351f040d0adf0bbef56995c761626e}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a80351f040d0adf0bbef56995c761626e}} 
+{\bfseries J\+D\+B\+C4\+Mysql\+Pooled\+Connection} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{com.\+mysql.\+jdbc.\+Connection}} connection)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a98f59301b7dd941bc74c05497342cad0}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a98f59301b7dd941bc74c05497342cad0}} 
+synchronized void {\bfseries close} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a2b428dac99e43f2bac5ad37f299e0975}{add\+Statement\+Event\+Listener}} (Statement\+Event\+Listener listener)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a85fee01b184f403b8d44d40502c4f5ef}{remove\+Statement\+Event\+Listener}} (Statement\+Event\+Listener listener)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is used to wrap and return a physical connection within a logical handle. It also registers and notifies Connection\+Event\+Listeners of any Connection\+Events 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a2b428dac99e43f2bac5ad37f299e0975}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a2b428dac99e43f2bac5ad37f299e0975}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection}!add\+Statement\+Event\+Listener@{add\+Statement\+Event\+Listener}}
+\index{add\+Statement\+Event\+Listener@{add\+Statement\+Event\+Listener}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{add\+Statement\+Event\+Listener()}{addStatementEventListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection.\+add\+Statement\+Event\+Listener (\begin{DoxyParamCaption}\item[{Statement\+Event\+Listener}]{listener }\end{DoxyParamCaption})}
+
+Registers a {\ttfamily Statement\+Event\+Listener} with this {\ttfamily Pooled\+Connection} object. Components that wish to be notified when {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}}}s created by the connection are closed or are detected to be invalid may use this method to register a {\ttfamily Statement\+Event\+Listener} with this {\ttfamily Pooled\+Connection} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & an component which implements the {\ttfamily Statement\+Event\+Listener} interface that is to be registered with this {\ttfamily Pooled\+Connection} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a85fee01b184f403b8d44d40502c4f5ef}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_mysql_pooled_connection_a85fee01b184f403b8d44d40502c4f5ef}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection}!remove\+Statement\+Event\+Listener@{remove\+Statement\+Event\+Listener}}
+\index{remove\+Statement\+Event\+Listener@{remove\+Statement\+Event\+Listener}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection}}
+\subsubsection{\texorpdfstring{remove\+Statement\+Event\+Listener()}{removeStatementEventListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Mysql\+Pooled\+Connection.\+remove\+Statement\+Event\+Listener (\begin{DoxyParamCaption}\item[{Statement\+Event\+Listener}]{listener }\end{DoxyParamCaption})}
+
+Removes the specified {\ttfamily Statement\+Event\+Listener} from the list of components that will be notified when the driver detects that a {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}}} has been closed or is invalid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & the component which implements the {\ttfamily Statement\+Event\+Listener} interface that was previously registered with this {\ttfamily Pooled\+Connection} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/jdbc2/optional/J\+D\+B\+C4\+Mysql\+Pooled\+Connection.\+java\end{DoxyCompactItemize}

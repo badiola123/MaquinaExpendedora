@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.MultiHostMySQLConnection" name="com.mysql.jdbc.MultiHostMySQLConnection">
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="469,201,696,228"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy.html" title="com.mysql.jdbc.MultiHost\lConnectionProxy" alt="" coords="853,97,1027,138"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="237,171,420,197"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="5,210,188,251"/>
+</map>

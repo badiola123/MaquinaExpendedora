@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setMaxReconnects" name="com.mysql.jdbc.ConnectionProperties.setMaxReconnects">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aeed825d6bd8942b00610c43d8a8c82ef" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setMaxReconnects" alt="" coords="251,5,503,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a3f763d84919c40ae00d9d76bc53ac78e" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setMaxReconnects" alt="" coords="253,71,500,112"/>
+</map>

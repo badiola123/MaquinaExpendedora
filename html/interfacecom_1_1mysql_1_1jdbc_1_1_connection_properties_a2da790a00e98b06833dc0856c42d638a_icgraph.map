@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getAllowNanAndInf" name="com.mysql.jdbc.ConnectionProperties.getAllowNanAndInf">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ae732025b7fe6d97377f2bd477fb87aea" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getAllowNanAndInf" alt="" coords="249,5,497,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a3f62430d18cd00a4f9e11a0271ad46af" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getAllowNanAndInf" alt="" coords="251,71,494,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a9be27733e4e54e675dd6eaf238380e02" title="com.mysql.jdbc.PreparedStatement.set\lDouble" alt="" coords="247,136,499,177"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#a50bb9137b1cec3fbff1140ed19785841" title="com.mysql.jdbc.ServerPrepared\lStatement.setDouble" alt="" coords="269,201,476,243"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#acaefa9679a9a4f8b588c76c960756f87" title="com.mysql.jdbc.Updatable\lResultSet.updateDouble" alt="" coords="547,136,723,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a0f22f27383615d4803d4355a612970aa" title="com.mysql.jdbc.Updatable\lResultSet.updateDouble" alt="" coords="771,136,947,177"/>
+</map>

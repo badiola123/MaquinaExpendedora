@@ -1,0 +1,353 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection}{}\section{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection}\index{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection@{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_adb324e1831acfb5a867780a35d8c95a0}{Mysql\+X\+A\+Connection}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{com.\+mysql.\+jdbc.\+Connection}} connection, boolean log\+Xa\+Commands)  throws S\+Q\+L\+Exception 
+\item 
+X\+A\+Resource \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a7af72f218de2585effac3636eb6b1cec}{get\+X\+A\+Resource}} ()  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_aa09db65cb5575dd6396924f5967f7f6f}{get\+Transaction\+Timeout}} ()  throws X\+A\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a8daf9a2f37693ad1f9e8b83bcb46b1db}{set\+Transaction\+Timeout}} (int arg0)  throws X\+A\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a352f65f22228587f43c93e280c679496}{is\+Same\+RM}} (X\+A\+Resource xares)  throws X\+A\+Exception 
+\item 
+Xid \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_addc214698fd02360fd129159f4485e65}{recover}} (int flag)  throws X\+A\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a6321a959e44d23678afc54a8c2f9828f}{prepare}} (Xid xid)  throws X\+A\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a286ccbfb959c94172ea24b4aace83961}{forget}} (Xid xid)  throws X\+A\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ae3f99ed779f888fbf58e1c447862a962}{rollback}} (Xid xid)  throws X\+A\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ad446fd4ef97424ed837f11269a6da6f6}{end}} (Xid xid, int flags)  throws X\+A\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a7c2af1d5be8d8ba54c6293c6e3e61ffd}{start}} (Xid xid, int flags)  throws X\+A\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a0e248ebae4b509b14237febcd79c7132}{commit}} (Xid xid, boolean one\+Phase)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a16279181f48314c235a8edbc3452abf3}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a16279181f48314c235a8edbc3452abf3}} 
+synchronized \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Connection} ()  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ac1d453a2ff5d3af2b96bc50a61c5cab4}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ac1d453a2ff5d3af2b96bc50a61c5cab4}} 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection}{Mysql\+X\+A\+Connection}} {\bfseries get\+Instance} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{com.\+mysql.\+jdbc.\+Connection}} mysql\+Connection, boolean log\+Xa\+Commands)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ac5e2ace16b8a6812130dd22538d82aaa}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ac5e2ace16b8a6812130dd22538d82aaa}} 
+static Xid \mbox{[}$\,$\mbox{]} {\bfseries recover} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} c, int flag)  throws X\+A\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a71761d33388941ae85f7f8739fe6fce1}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a71761d33388941ae85f7f8739fe6fce1}} 
+static X\+A\+Exception {\bfseries map\+X\+A\+Exception\+From\+S\+Q\+L\+Exception} (S\+Q\+L\+Exception sql\+Ex)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a1739938869dca893f7feca3a170410aa}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a1739938869dca893f7feca3a170410aa}} 
+boolean {\bfseries log\+Xa\+Commands}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An object that provides support for distributed transactions. An {\ttfamily X\+A\+Connection} object may be enlisted in a distributed transaction by means of an {\ttfamily X\+A\+Resource} object. A transaction manager, usually part of a middle tier server, manages an {\ttfamily X\+A\+Connection} object through the {\ttfamily X\+A\+Resource} object.
+
+An application programmer does not use this interface directly; rather, it is used by a transaction manager working in the middle tier server. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_adb324e1831acfb5a867780a35d8c95a0}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_adb324e1831acfb5a867780a35d8c95a0}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!Mysql\+X\+A\+Connection@{Mysql\+X\+A\+Connection}}
+\index{Mysql\+X\+A\+Connection@{Mysql\+X\+A\+Connection}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{Mysql\+X\+A\+Connection()}{MysqlXAConnection()}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+Mysql\+X\+A\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{com.\+mysql.\+jdbc.\+Connection}}}]{connection,  }\item[{boolean}]{log\+Xa\+Commands }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a0e248ebae4b509b14237febcd79c7132}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a0e248ebae4b509b14237febcd79c7132}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!commit@{commit}}
+\index{commit@{commit}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+commit (\begin{DoxyParamCaption}\item[{Xid}]{xid,  }\item[{boolean}]{one\+Phase }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Commits the global transaction specified by xid.
+
+xid A global transaction identifier  one\+Phase -\/ If true, the resource manager should use a one-\/phase commit protocol to commit the work done on behalf of xid.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible X\+A\+Exceptions are X\+A\+\_\+\+H\+E\+U\+R\+H\+AZ, X\+A\+\_\+\+H\+E\+U\+R\+C\+OM, X\+A\+\_\+\+H\+E\+U\+R\+RB, X\+A\+\_\+\+H\+E\+U\+R\+M\+IX, X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, X\+A\+E\+R\+\_\+\+N\+O\+TA, X\+A\+E\+R\+\_\+\+I\+N\+V\+AL, or X\+A\+E\+R\+\_\+\+P\+R\+O\+TO.\\
+\hline
+\end{DoxyExceptions}
+If the resource manager did not commit the transaction and the parameter one\+Phase is set to true, the resource manager may throw one of the X\+A\+\_\+\+R\+B$\ast$ exceptions.
+
+Upon return, the resource manager has rolled back the branch\textquotesingle{}s work and has released all held resources. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a0e248ebae4b509b14237febcd79c7132_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ad446fd4ef97424ed837f11269a6da6f6}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ad446fd4ef97424ed837f11269a6da6f6}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!end@{end}}
+\index{end@{end}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+end (\begin{DoxyParamCaption}\item[{Xid}]{xid,  }\item[{int}]{flags }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Ends the work performed on behalf of a transaction branch.
+
+The resource manager disassociates the XA resource from the transaction branch specified and lets the transaction complete.
+
+If T\+M\+S\+U\+S\+P\+E\+ND is specified in the flags, the transaction branch is temporarily suspended in an incomplete state. The transaction context is in a suspended state and must be resumed via the start method with T\+M\+R\+E\+S\+U\+ME specified.
+
+If T\+M\+F\+A\+IL is specified, the portion of work has failed. The resource manager may mark the transaction as rollback-\/only
+
+If T\+M\+S\+U\+C\+C\+E\+SS is specified, the portion of work has completed successfully.
+
+xid A global transaction identifier that is the same as the identifier used previously in the start method.
+
+flags One of T\+M\+S\+U\+C\+C\+E\+SS, T\+M\+F\+A\+IL, or T\+M\+S\+U\+S\+P\+E\+ND.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & 
+\begin{DoxyItemize}
+\item An error has occurred. Possible X\+A\+Exception values are X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, X\+A\+E\+R\+\_\+\+N\+O\+TA, X\+A\+E\+R\+\_\+\+I\+N\+V\+AL, X\+A\+E\+R\+\_\+\+P\+R\+O\+TO, or X\+A\+\_\+\+R\+B$\ast$. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a286ccbfb959c94172ea24b4aace83961}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a286ccbfb959c94172ea24b4aace83961}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!forget@{forget}}
+\index{forget@{forget}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+forget (\begin{DoxyParamCaption}\item[{Xid}]{xid }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Tells the resource manager to forget about a heuristically completed transaction branch.
+
+xid A global transaction identifier.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible exception values are X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, X\+A\+E\+R\+\_\+\+N\+O\+TA, X\+A\+E\+R\+\_\+\+I\+N\+V\+AL, or X\+A\+E\+R\+\_\+\+P\+R\+O\+TO. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_aa09db65cb5575dd6396924f5967f7f6f}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_aa09db65cb5575dd6396924f5967f7f6f}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!get\+Transaction\+Timeout@{get\+Transaction\+Timeout}}
+\index{get\+Transaction\+Timeout@{get\+Transaction\+Timeout}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{get\+Transaction\+Timeout()}{getTransactionTimeout()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+get\+Transaction\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Obtains the current transaction timeout value set for this X\+A\+Resource instance. If X\+A\+Resource.\+set\+Transaction\+Timeout was not used prior to invoking this method, the return value is the default timeout set for the resource manager; otherwise, the value used in the previous set\+Transaction\+Timeout call is returned.
+
+\begin{DoxyReturn}{Returns}
+the transaction timeout value in seconds.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible exception values are X\+A\+E\+R\+\_\+\+R\+M\+E\+RR and X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a7af72f218de2585effac3636eb6b1cec}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a7af72f218de2585effac3636eb6b1cec}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!get\+X\+A\+Resource@{get\+X\+A\+Resource}}
+\index{get\+X\+A\+Resource@{get\+X\+A\+Resource}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{get\+X\+A\+Resource()}{getXAResource()}}
+{\footnotesize\ttfamily X\+A\+Resource com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+get\+X\+A\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Retrieves an {\ttfamily X\+A\+Resource} object that the transaction manager will use to manage this {\ttfamily X\+A\+Connection} object\textquotesingle{}s participation in a distributed transaction.
+
+\begin{DoxyReturn}{Returns}
+the {\ttfamily X\+A\+Resource} object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a352f65f22228587f43c93e280c679496}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a352f65f22228587f43c93e280c679496}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!is\+Same\+RM@{is\+Same\+RM}}
+\index{is\+Same\+RM@{is\+Same\+RM}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{is\+Same\+R\+M()}{isSameRM()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+is\+Same\+RM (\begin{DoxyParamCaption}\item[{X\+A\+Resource}]{xares }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+This method is called to determine if the resource manager instance represented by the target object is the same as the resouce manager instance represented by the parameter xares.
+
+xares An X\+A\+Resource object whose resource manager instance is to be compared with the resource manager instance of the target object.
+
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s the same RM instance; otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible exception values are X\+A\+E\+R\+\_\+\+R\+M\+E\+RR and X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a352f65f22228587f43c93e280c679496_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a6321a959e44d23678afc54a8c2f9828f}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a6321a959e44d23678afc54a8c2f9828f}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!prepare@{prepare}}
+\index{prepare@{prepare}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+prepare (\begin{DoxyParamCaption}\item[{Xid}]{xid }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Asks the resource manager to prepare for a transaction commit of the transaction specified in xid.
+
+xid A global transaction identifier.
+
+\begin{DoxyReturn}{Returns}
+A value indicating the resource manager\textquotesingle{}s vote on the outcome of the transaction.
+\end{DoxyReturn}
+The possible values are\+: X\+A\+\_\+\+R\+D\+O\+N\+LY or X\+A\+\_\+\+OK. If the resource manager wants to roll back the transaction, it should do so by raising an appropriate X\+A\+Exception in the prepare method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible exception values are\+: X\+A\+\_\+\+R\+B$\ast$, X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, X\+A\+E\+R\+\_\+\+N\+O\+TA, X\+A\+E\+R\+\_\+\+I\+N\+V\+AL, or X\+A\+E\+R\+\_\+\+P\+R\+O\+TO. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_addc214698fd02360fd129159f4485e65}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_addc214698fd02360fd129159f4485e65}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!recover@{recover}}
+\index{recover@{recover}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{recover()}{recover()}}
+{\footnotesize\ttfamily Xid \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+recover (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+This method is called to obtain a list of prepared transaction branches from a resource manager. The transaction manager calls this method during recovery to obtain the list of transaction branches that are currently in prepared or heuristically completed states.
+
+The flag parameter indicates where the recover scan should start or end, or start and end. This method may be invoked one or more times during a recovery scan. The resource manager maintains a cursor which marks the current position of the prepared or heuristically completed transaction list. Each invocation of the recover method moves the cursor passed the set of Xids that are returned.
+
+Two consecutive invocation of this method that starts from the beginning of the list must return the same list of transaction branches unless one of the following takes place\+:
+
+
+\begin{DoxyItemize}
+\item the transaction manager invokes the commit, forget, prepare, or rollback method for that resource manager, between the two consecutive invocation of the recovery scan.
+\item the resource manager heuristically completes some transaction branches between the two invocation of the recovery scan.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & One of T\+M\+S\+T\+A\+R\+T\+R\+S\+C\+AN, T\+M\+E\+N\+D\+R\+S\+C\+AN, T\+M\+N\+O\+F\+L\+A\+GS. T\+M\+N\+O\+F\+L\+A\+GS must be used when no other flags are set in the parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resource manager returns zero or more X\+I\+Ds of the transaction branches that are currently in a prepared or heuristically completed state. If an error occurs during the operation, the resource manager should throw the appropriate X\+A\+Exception.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible values are X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, X\+A\+E\+R\+\_\+\+I\+N\+V\+AL, and X\+A\+E\+R\+\_\+\+P\+R\+O\+TO. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ae3f99ed779f888fbf58e1c447862a962}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ae3f99ed779f888fbf58e1c447862a962}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!rollback@{rollback}}
+\index{rollback@{rollback}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+rollback (\begin{DoxyParamCaption}\item[{Xid}]{xid }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Informs the resource manager to roll back work done on behalf of a transaction branch.
+
+xid A global transaction identifier.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible X\+A\+Exceptions are X\+A\+\_\+\+H\+E\+U\+R\+H\+AZ, X\+A\+\_\+\+H\+E\+U\+R\+C\+OM, X\+A\+\_\+\+H\+E\+U\+R\+RB, X\+A\+\_\+\+H\+E\+U\+R\+M\+IX, X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, X\+A\+E\+R\+\_\+\+N\+O\+TA, X\+A\+E\+R\+\_\+\+I\+N\+V\+AL, or X\+A\+E\+R\+\_\+\+P\+R\+O\+TO.\\
+\hline
+\end{DoxyExceptions}
+If the transaction branch is already marked rollback-\/only the resource manager may throw one of the X\+A\+\_\+\+R\+B$\ast$ exceptions.
+
+Upon return, the resource manager has rolled back the branch\textquotesingle{}s work and has released all held resources. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_ae3f99ed779f888fbf58e1c447862a962_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a8daf9a2f37693ad1f9e8b83bcb46b1db}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a8daf9a2f37693ad1f9e8b83bcb46b1db}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!set\+Transaction\+Timeout@{set\+Transaction\+Timeout}}
+\index{set\+Transaction\+Timeout@{set\+Transaction\+Timeout}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{set\+Transaction\+Timeout()}{setTransactionTimeout()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+set\+Transaction\+Timeout (\begin{DoxyParamCaption}\item[{int}]{arg0 }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Sets the current transaction timeout value for this X\+A\+Resource instance. Once set, this timeout value is effective until set\+Transaction\+Timeout is invoked again with a different value.
+
+To reset the timeout value to the default value used by the resource manager, set the value to zero. If the timeout operation is performed successfully, the method returns true; otherwise false.
+
+If a resource manager does not support explicitly setting the transaction timeout value, this method returns false.
+
+seconds The transaction timeout value in seconds.
+
+\begin{DoxyReturn}{Returns}
+true if the transaction timeout value is set successfully; otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible exception values are X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, or X\+A\+E\+R\+\_\+\+I\+N\+V\+AL. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a7c2af1d5be8d8ba54c6293c6e3e61ffd}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a7c2af1d5be8d8ba54c6293c6e3e61ffd}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}!start@{start}}
+\index{start@{start}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+X\+A\+Connection.\+start (\begin{DoxyParamCaption}\item[{Xid}]{xid,  }\item[{int}]{flags }\end{DoxyParamCaption}) throws X\+A\+Exception}
+
+Starts work on behalf of a transaction branch specified in xid.
+
+If T\+M\+J\+O\+IN is specified, the start applies to joining a transaction previously seen by the resource manager.
+
+If T\+M\+R\+E\+S\+U\+ME is specified, the start applies to resuming a suspended transaction specified in the parameter xid.
+
+If neither T\+M\+J\+O\+IN nor T\+M\+R\+E\+S\+U\+ME is specified and the transaction specified by xid has previously been seen by the resource manager, the resource manager throws the X\+A\+Exception exception with X\+A\+E\+R\+\_\+\+D\+U\+P\+ID error code.
+
+xid A global transaction identifier to be associated with the resource.
+
+flags One of T\+M\+N\+O\+F\+L\+A\+GS, T\+M\+J\+O\+IN, or T\+M\+R\+E\+S\+U\+ME.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em X\+A\+Exception} & An error has occurred. Possible exceptions are X\+A\+\_\+\+R\+B$\ast$, X\+A\+E\+R\+\_\+\+R\+M\+E\+RR, X\+A\+E\+R\+\_\+\+R\+M\+F\+A\+IL, X\+A\+E\+R\+\_\+\+D\+U\+P\+ID, X\+A\+E\+R\+\_\+\+O\+U\+T\+S\+I\+DE, X\+A\+E\+R\+\_\+\+N\+O\+TA, X\+A\+E\+R\+\_\+\+I\+N\+V\+AL, or X\+A\+E\+R\+\_\+\+P\+R\+O\+TO. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection_a7c2af1d5be8d8ba54c6293c6e3e61ffd_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/jdbc2/optional/Mysql\+X\+A\+Connection.\+java\end{DoxyCompactItemize}

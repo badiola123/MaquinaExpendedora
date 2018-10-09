@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.AuthenticationPlugin" name="com.mysql.jdbc.AuthenticationPlugin">
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin.html" title="com.mysql.jdbc.authentication.\lMysqlClearPasswordPlugin" alt="" coords="496,5,699,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin.html" title="com.mysql.jdbc.authentication.\lMysqlNativePasswordPlugin" alt="" coords="496,71,699,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin.html" title="com.mysql.jdbc.authentication.\lMysqlOldPasswordPlugin" alt="" coords="496,136,699,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin.html" title="com.mysql.jdbc.authentication.\lSha256PasswordPlugin" alt="" coords="496,201,699,243"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html" title="com.mysql.jdbc.Extension" alt="" coords="5,209,181,235"/>
+</map>

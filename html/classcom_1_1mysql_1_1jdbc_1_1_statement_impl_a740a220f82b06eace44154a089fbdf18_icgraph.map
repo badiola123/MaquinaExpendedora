@@ -1,0 +1,12 @@
+<map id="com.mysql.jdbc.StatementImpl.close" name="com.mysql.jdbc.StatementImpl.close">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#aad5669e55c0db83ec88a8fd9c34a406c" title="com.mysql.jdbc.DatabaseMeta\lData.getColumnPrivileges" alt="" coords="271,5,473,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_client_info_provider_s_p.html#a0115e7120ff51f36e85b8d4bfb10c3f7" title="com.mysql.jdbc.JDBC4Client\lInfoProviderSP.destroy" alt="" coords="277,71,467,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a86ec9e7284f797edec7e5ec4880f2006" title="com.mysql.jdbc.MysqlIO.explain\lSlowQuery" alt="" coords="267,136,477,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ad3cdc3e336070c453b5878ce9ba8a0cc" title="com.mysql.jdbc.PreparedStatement.execute\lPreparedBatchAsMultiStatement" alt="" coords="232,201,512,243"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4b54450205db6b099922240e4f2e72a0" title="com.mysql.jdbc.PreparedStatement.execute\lBatchedInserts" alt="" coords="232,267,512,308"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a260be2cc343e066802a49720c672da77" title="com.mysql.jdbc.PreparedStatement.get\lMetaData" alt="" coords="246,332,498,373"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a56e7da4266eef885ba3dfc5005e30525" title="com.mysql.jdbc.Updatable\lResultSet.realClose" alt="" coords="284,397,460,439"/>
+<area shape="rect" id="node9" href="$classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test.html#acc4c393fcbc483c6a959f10f561bb1b7" title="testsuite.regression.jdbc4.\lConnectionRegressionTest.testBug75168" alt="" coords="241,463,503,504"/>
+<area shape="rect" id="node10" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a31f8a70535a902a36164d60c222d0430" title="testsuite.regression.Statement\lRegressionTest.testBug17587" alt="" coords="272,528,472,569"/>
+<area shape="rect" id="node11" href="$classtestsuite_1_1simple_1_1_connection_test.html#a88325894a5bef7fc0239d8af082ede7f" title="testsuite.simple.Connection\lTest.testCacheDefaultTimezone" alt="" coords="269,593,475,635"/>
+</map>

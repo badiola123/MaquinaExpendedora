@@ -1,0 +1,76 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection}{}\section{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection}\index{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection@{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_a0c2994bc20054bb0adfce57478b081b2}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_a0c2994bc20054bb0adfce57478b081b2}} 
+{\bfseries J\+D\+B\+C4\+Suspendable\+X\+A\+Connection} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} connection)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_aba26915d57755c6ccba8fffdf791a84a}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_aba26915d57755c6ccba8fffdf791a84a}} 
+synchronized void {\bfseries close} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_a843a8e3024c0dc9be66ddac1e999bb08}{add\+Statement\+Event\+Listener}} (Statement\+Event\+Listener listener)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_af251cdfe978409bb1a5f8004639731f0}{remove\+Statement\+Event\+Listener}} (Statement\+Event\+Listener listener)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_a843a8e3024c0dc9be66ddac1e999bb08}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_a843a8e3024c0dc9be66ddac1e999bb08}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection}!add\+Statement\+Event\+Listener@{add\+Statement\+Event\+Listener}}
+\index{add\+Statement\+Event\+Listener@{add\+Statement\+Event\+Listener}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{add\+Statement\+Event\+Listener()}{addStatementEventListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection.\+add\+Statement\+Event\+Listener (\begin{DoxyParamCaption}\item[{Statement\+Event\+Listener}]{listener }\end{DoxyParamCaption})}
+
+Registers a {\ttfamily Statement\+Event\+Listener} with this {\ttfamily Pooled\+Connection} object. Components that wish to be notified when {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}}}s created by the connection are closed or are detected to be invalid may use this method to register a {\ttfamily Statement\+Event\+Listener} with this {\ttfamily Pooled\+Connection} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & an component which implements the {\ttfamily Statement\+Event\+Listener} interface that is to be registered with this {\ttfamily Pooled\+Connection} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_af251cdfe978409bb1a5f8004639731f0}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_j_d_b_c4_suspendable_x_a_connection_af251cdfe978409bb1a5f8004639731f0}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection}!remove\+Statement\+Event\+Listener@{remove\+Statement\+Event\+Listener}}
+\index{remove\+Statement\+Event\+Listener@{remove\+Statement\+Event\+Listener}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection}}
+\subsubsection{\texorpdfstring{remove\+Statement\+Event\+Listener()}{removeStatementEventListener()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+J\+D\+B\+C4\+Suspendable\+X\+A\+Connection.\+remove\+Statement\+Event\+Listener (\begin{DoxyParamCaption}\item[{Statement\+Event\+Listener}]{listener }\end{DoxyParamCaption})}
+
+Removes the specified {\ttfamily Statement\+Event\+Listener} from the list of components that will be notified when the driver detects that a {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_prepared_statement}{Prepared\+Statement}}} has been closed or is invalid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & the component which implements the {\ttfamily Statement\+Event\+Listener} interface that was previously registered with this {\ttfamily Pooled\+Connection} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/jdbc2/optional/J\+D\+B\+C4\+Suspendable\+X\+A\+Connection.\+java\end{DoxyCompactItemize}

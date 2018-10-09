@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.PreparedStatement.checkReadOnlySafeStatement" name="com.mysql.jdbc.PreparedStatement.checkReadOnlySafeStatement">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4c83f4279e13f60aa65dd4de3d2117e1" title="com.mysql.jdbc.PreparedStatement.execute" alt="" coords="323,143,603,170"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_client_info_provider_s_p.html#a75c1a50050648fcab79401cd73342756" title="com.mysql.jdbc.JDBC4Client\lInfoProviderSP.getClientInfo" alt="" coords="686,5,877,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_client_info_provider_s_p.html#afc850b09b440756a3a5ecc69b8745ce4" title="com.mysql.jdbc.JDBC4Client\lInfoProviderSP.setClientInfo" alt="" coords="686,71,877,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a260be2cc343e066802a49720c672da77" title="com.mysql.jdbc.PreparedStatement.get\lMetaData" alt="" coords="655,136,907,177"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test.html#acc4c393fcbc483c6a959f10f561bb1b7" title="testsuite.regression.jdbc4.\lConnectionRegressionTest.testBug75168" alt="" coords="651,201,912,243"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a45f6666d2a8fbbc59bb210cd6e6f33a5" title="testsuite.regression.Statement\lRegressionTest.testBug28256" alt="" coords="681,267,881,308"/>
+</map>

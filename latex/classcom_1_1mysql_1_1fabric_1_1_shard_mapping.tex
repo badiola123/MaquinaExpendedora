@@ -1,0 +1,133 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping}{}\section{com.\+mysql.\+fabric.\+Shard\+Mapping Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping}\index{com.\+mysql.\+fabric.\+Shard\+Mapping@{com.\+mysql.\+fabric.\+Shard\+Mapping}}
+
+
+Inheritance diagram for com.\+mysql.\+fabric.\+Shard\+Mapping\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_shard_mapping__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+fabric.\+Shard\+Mapping\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_shard_mapping__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a1bd4eea3f59b014b4cbbffbc9955c331}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a1bd4eea3f59b014b4cbbffbc9955c331}} 
+{\bfseries Shard\+Mapping} (int mapping\+Id, \mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}} sharding\+Type, String global\+Group\+Name, Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_table}{Shard\+Table}} $>$ shard\+Tables, Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} $>$ shard\+Indices)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a614f8944251516b5f55e0a20e710ccba}{get\+Group\+Name\+For\+Key}} (String key)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_aec74534cc8c237229a6da6b3ac657735}{get\+Mapping\+Id}} ()
+\item 
+\mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}} \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a576cf21291d18696ee2ca479861fd099}{get\+Sharding\+Type}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a87e18cf8f09fdab3db0cf08d239fabd8}{get\+Global\+Group\+Name}} ()
+\item 
+Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_table}{Shard\+Table}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_acce92dfd014b358a9873a90a23a7a89c}{get\+Shard\+Tables}} ()
+\item 
+Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_afb50468e08f25ffe3fd2dd3dae8c5d8a}{get\+Shard\+Indices}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a3bca2f5f590422ea653e744d578b3bc0}{get\+Shard\+Index\+For\+Key}} (String key)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a3f110db458b89a5a1cd4b71962ea969f}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a3f110db458b89a5a1cd4b71962ea969f}} 
+Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_table}{Shard\+Table}} $>$ {\bfseries shard\+Tables}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a2055d6631accc861410561fcbb180423}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a2055d6631accc861410561fcbb180423}} 
+Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} $>$ {\bfseries shard\+Indices}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A shard mapping representing this set of sharded data. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a87e18cf8f09fdab3db0cf08d239fabd8}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a87e18cf8f09fdab3db0cf08d239fabd8}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}!get\+Global\+Group\+Name@{get\+Global\+Group\+Name}}
+\index{get\+Global\+Group\+Name@{get\+Global\+Group\+Name}!com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Global\+Group\+Name()}{getGlobalGroupName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+fabric.\+Shard\+Mapping.\+get\+Global\+Group\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The name of the global group for this shard map. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a87e18cf8f09fdab3db0cf08d239fabd8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a614f8944251516b5f55e0a20e710ccba}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a614f8944251516b5f55e0a20e710ccba}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}!get\+Group\+Name\+For\+Key@{get\+Group\+Name\+For\+Key}}
+\index{get\+Group\+Name\+For\+Key@{get\+Group\+Name\+For\+Key}!com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Group\+Name\+For\+Key()}{getGroupNameForKey()}}
+{\footnotesize\ttfamily String com.\+mysql.\+fabric.\+Shard\+Mapping.\+get\+Group\+Name\+For\+Key (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})}
+
+Lookup the server group that stores the given key. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a614f8944251516b5f55e0a20e710ccba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a614f8944251516b5f55e0a20e710ccba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_aec74534cc8c237229a6da6b3ac657735}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_aec74534cc8c237229a6da6b3ac657735}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}!get\+Mapping\+Id@{get\+Mapping\+Id}}
+\index{get\+Mapping\+Id@{get\+Mapping\+Id}!com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Mapping\+Id()}{getMappingId()}}
+{\footnotesize\ttfamily int com.\+mysql.\+fabric.\+Shard\+Mapping.\+get\+Mapping\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The ID of this mapping. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a3bca2f5f590422ea653e744d578b3bc0}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a3bca2f5f590422ea653e744d578b3bc0}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}!get\+Shard\+Index\+For\+Key@{get\+Shard\+Index\+For\+Key}}
+\index{get\+Shard\+Index\+For\+Key@{get\+Shard\+Index\+For\+Key}!com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Shard\+Index\+For\+Key()}{getShardIndexForKey()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} com.\+mysql.\+fabric.\+Shard\+Mapping.\+get\+Shard\+Index\+For\+Key (\begin{DoxyParamCaption}\item[{String}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Decide which shard index stores the given key. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a3bca2f5f590422ea653e744d578b3bc0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_afb50468e08f25ffe3fd2dd3dae8c5d8a}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_afb50468e08f25ffe3fd2dd3dae8c5d8a}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}!get\+Shard\+Indices@{get\+Shard\+Indices}}
+\index{get\+Shard\+Indices@{get\+Shard\+Indices}!com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Shard\+Indices()}{getShardIndices()}}
+{\footnotesize\ttfamily Set$<$\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}}$>$ com.\+mysql.\+fabric.\+Shard\+Mapping.\+get\+Shard\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the set of shards in this mapping. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a576cf21291d18696ee2ca479861fd099}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_a576cf21291d18696ee2ca479861fd099}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}!get\+Sharding\+Type@{get\+Sharding\+Type}}
+\index{get\+Sharding\+Type@{get\+Sharding\+Type}!com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Sharding\+Type()}{getShardingType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}} com.\+mysql.\+fabric.\+Shard\+Mapping.\+get\+Sharding\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The \mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}} of this mapping. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_acce92dfd014b358a9873a90a23a7a89c}\label{classcom_1_1mysql_1_1fabric_1_1_shard_mapping_acce92dfd014b358a9873a90a23a7a89c}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}!get\+Shard\+Tables@{get\+Shard\+Tables}}
+\index{get\+Shard\+Tables@{get\+Shard\+Tables}!com\+::mysql\+::fabric\+::\+Shard\+Mapping@{com\+::mysql\+::fabric\+::\+Shard\+Mapping}}
+\subsubsection{\texorpdfstring{get\+Shard\+Tables()}{getShardTables()}}
+{\footnotesize\ttfamily Set$<$\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_table}{Shard\+Table}}$>$ com.\+mysql.\+fabric.\+Shard\+Mapping.\+get\+Shard\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the set of tables sharded in this mapping. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/Shard\+Mapping.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setAllowUrlInLocalInfile" name="com.mysql.jdbc.ConnectionProperties.setAllowUrlInLocalInfile">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ae47387cb708cc1dfa15cda434a2738aa" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setAllowUrlInLocal\lInfile" alt="" coords="271,5,517,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a65ced19d9988a77826c138d8d2f1574e" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setAllowUrlIn\lLocalInfile" alt="" coords="289,85,499,141"/>
+</map>

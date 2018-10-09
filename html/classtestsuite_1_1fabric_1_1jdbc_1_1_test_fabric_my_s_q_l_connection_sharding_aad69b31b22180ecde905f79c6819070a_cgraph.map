@@ -1,0 +1,4 @@
+<map id="testsuite.fabric.jdbc.TestFabricMySQLConnectionSharding.testGlobalTableCreation" name="testsuite.fabric.jdbc.TestFabricMySQLConnectionSharding.testGlobalTableCreation">
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a934f2eca033d68725f572ceab4585efc" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.setServerGroupName" alt="" coords="301,5,560,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a45d6ee9742db0ea16e51e0db018a41d2" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.getCurrentServerGroup" alt="" coords="297,71,564,112"/>
+</map>

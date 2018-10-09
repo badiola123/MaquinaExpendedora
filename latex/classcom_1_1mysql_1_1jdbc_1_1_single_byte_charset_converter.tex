@@ -1,0 +1,221 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{}\section{com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}\index{com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter@{com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_aed8174d9a617a107e837d27943c98662}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_aed8174d9a617a107e837d27943c98662}} 
+final byte \mbox{[}$\,$\mbox{]} {\bfseries to\+Bytes} (char\mbox{[}$\,$\mbox{]} c)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a3605f2b813c48d524e36ea94469761ed}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a3605f2b813c48d524e36ea94469761ed}} 
+final byte \mbox{[}$\,$\mbox{]} {\bfseries to\+Bytes\+Wrapped} (char\mbox{[}$\,$\mbox{]} c, char begin\+Wrap, char end\+Wrap)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a9dd65ab0c0b2d5a5c8a3519ddfbfd71f}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a9dd65ab0c0b2d5a5c8a3519ddfbfd71f}} 
+final byte \mbox{[}$\,$\mbox{]} {\bfseries to\+Bytes} (char\mbox{[}$\,$\mbox{]} chars, int offset, int length)
+\item 
+final byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a88dcfd9fecdfa02f7f61be8f24f5d973}{to\+Bytes}} (String s)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ab173235f77834fe19616c7c43b7de9fb}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ab173235f77834fe19616c7c43b7de9fb}} 
+final byte \mbox{[}$\,$\mbox{]} {\bfseries to\+Bytes\+Wrapped} (String s, char begin\+Wrap, char end\+Wrap)
+\item 
+final byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ac88a7b12c138cada583fed31cd800bb7}{to\+Bytes}} (String s, int offset, int length)
+\item 
+final String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a4ff777805c18fb811faf1310a02f9814}{to\+String}} (byte\mbox{[}$\,$\mbox{]} buffer)
+\item 
+final String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ac1f5f932c49579ae691341e20ffac33b}{to\+String}} (byte\mbox{[}$\,$\mbox{]} buffer, int start\+Pos, int length)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a38d3994fc1cbfec7c61d072303f124b5}{get\+Instance}} (String encoding\+Name, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn)  throws Unsupported\+Encoding\+Exception, S\+Q\+L\+Exception 
+\item 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a756d8433aca86ef6942c0eb1a106a898}{init\+Charset}} (String java\+Encoding\+Name)  throws Unsupported\+Encoding\+Exception, S\+Q\+L\+Exception 
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_af6ab6e344ea9ea06b62ef3476c5e17cf}{to\+String\+Default\+Encoding}} (byte\mbox{[}$\,$\mbox{]} buffer, int start\+Pos, int length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Converter for char\mbox{[}\mbox{]}-\/$>$byte\mbox{[}\mbox{]} and byte\mbox{[}\mbox{]}-\/$>$char\mbox{[}\mbox{]} for single-\/byte character sets. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a38d3994fc1cbfec7c61d072303f124b5}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a38d3994fc1cbfec7c61d072303f124b5}} 
+\index{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter.\+get\+Instance (\begin{DoxyParamCaption}\item[{String}]{encoding\+Name,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn }\end{DoxyParamCaption}) throws Unsupported\+Encoding\+Exception, S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a converter for the given encoding name
+
+
+\begin{DoxyParams}{Parameters}
+{\em encoding\+Name} & the Java character encoding name \\
+\hline
+{\em conn} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a converter for the given encoding name 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Encoding\+Exception} & if the character encoding is not supported \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a38d3994fc1cbfec7c61d072303f124b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a38d3994fc1cbfec7c61d072303f124b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a756d8433aca86ef6942c0eb1a106a898}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a756d8433aca86ef6942c0eb1a106a898}} 
+\index{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}!init\+Charset@{init\+Charset}}
+\index{init\+Charset@{init\+Charset}!com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}}
+\subsubsection{\texorpdfstring{init\+Charset()}{initCharset()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter.\+init\+Charset (\begin{DoxyParamCaption}\item[{String}]{java\+Encoding\+Name }\end{DoxyParamCaption}) throws Unsupported\+Encoding\+Exception, S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize the shared instance of a converter for the given character encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em java\+Encoding\+Name} & the Java name for the character set to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a converter for the given character set 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unsupported\+Encoding\+Exception} & if the character encoding is not supported \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a756d8433aca86ef6942c0eb1a106a898_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a756d8433aca86ef6942c0eb1a106a898_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a88dcfd9fecdfa02f7f61be8f24f5d973}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a88dcfd9fecdfa02f7f61be8f24f5d973}} 
+\index{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}!to\+Bytes@{to\+Bytes}}
+\index{to\+Bytes@{to\+Bytes}!com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}}
+\subsubsection{\texorpdfstring{to\+Bytes()}{toBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily final byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter.\+to\+Bytes (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})}
+
+Convert the given string to an array of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the String to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the bytes that make up the String 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ac88a7b12c138cada583fed31cd800bb7}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ac88a7b12c138cada583fed31cd800bb7}} 
+\index{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}!to\+Bytes@{to\+Bytes}}
+\index{to\+Bytes@{to\+Bytes}!com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}}
+\subsubsection{\texorpdfstring{to\+Bytes()}{toBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily final byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter.\+to\+Bytes (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+Convert the given string to an array of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the String to convert \\
+\hline
+{\em offset} & the offset to start at \\
+\hline
+{\em length} & length (max) to convert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the bytes that make up the String 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a4ff777805c18fb811faf1310a02f9814}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a4ff777805c18fb811faf1310a02f9814}} 
+\index{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily final String com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter.\+to\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer }\end{DoxyParamCaption})}
+
+Convert the byte buffer to a string using this instance\textquotesingle{}s character encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the bytes to convert to a String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted String 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_a4ff777805c18fb811faf1310a02f9814_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ac1f5f932c49579ae691341e20ffac33b}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_ac1f5f932c49579ae691341e20ffac33b}} 
+\index{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily final String com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter.\+to\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{start\+Pos,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+Convert the byte buffer from start\+Pos to a length of length to a string using this instance\textquotesingle{}s character encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the bytes to convert \\
+\hline
+{\em start\+Pos} & the index to start at \\
+\hline
+{\em length} & the number of bytes to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the String representation of the given bytes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_af6ab6e344ea9ea06b62ef3476c5e17cf}\label{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter_af6ab6e344ea9ea06b62ef3476c5e17cf}} 
+\index{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}!to\+String\+Default\+Encoding@{to\+String\+Default\+Encoding}}
+\index{to\+String\+Default\+Encoding@{to\+String\+Default\+Encoding}!com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter@{com\+::mysql\+::jdbc\+::\+Single\+Byte\+Charset\+Converter}}
+\subsubsection{\texorpdfstring{to\+String\+Default\+Encoding()}{toStringDefaultEncoding()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+Single\+Byte\+Charset\+Converter.\+to\+String\+Default\+Encoding (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{start\+Pos,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the byte buffer from start\+Pos to a length of length to a string using the default platform encoding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the bytes to convert \\
+\hline
+{\em start\+Pos} & the index to start at \\
+\hline
+{\em length} & the number of bytes to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the String representation of the given bytes 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Single\+Byte\+Charset\+Converter.\+java\end{DoxyCompactItemize}

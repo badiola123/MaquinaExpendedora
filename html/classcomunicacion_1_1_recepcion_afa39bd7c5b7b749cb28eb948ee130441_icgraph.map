@@ -1,0 +1,5 @@
+<map id="comunicacion.Recepcion.getNumActualizacion" name="comunicacion.Recepcion.getNumActualizacion">
+<area shape="rect" id="node2" href="$class_dialogos_1_1_dialogo_edicion.html#afcbec7817a74ba686ef1a00a33b48484" title="Dialogos.DialogoEdicion.update" alt="" coords="243,5,448,32"/>
+<area shape="rect" id="node3" href="$classvistas_1_1_panel_crear.html#acf3b138f0c0c67c48a405b469eb37606" title="vistas.PanelCrear.update" alt="" coords="262,56,429,83"/>
+<area shape="rect" id="node4" href="$classvistas_1_1_panel_editar.html#ae0fe6b22793a1dddd5b8003e1c245788" title="vistas.PanelEditar.update" alt="" coords="261,107,430,133"/>
+</map>

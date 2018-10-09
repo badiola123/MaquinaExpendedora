@@ -1,0 +1,58 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_driver}{}\section{com.\+mysql.\+jdbc.\+Driver Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_driver}\index{com.\+mysql.\+jdbc.\+Driver@{com.\+mysql.\+jdbc.\+Driver}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcom_1_1mysql_1_1jdbc_1_1_driver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_driver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_driver_a55d93610188df37d4699e34b19519728}{Driver}} ()  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The Java S\+QL framework allows for multiple database drivers. Each driver should supply a class that implements the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_driver}{Driver}} interface
+
+The Driver\+Manager will try to load as many drivers as it can find and then for any given connection request, it will ask each driver in turn to try to connect to the target U\+RL.
+
+It is strongly recommended that each \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_driver}{Driver}} class should be small and standalone so that the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_driver}{Driver}} class can be loaded and queried without bringing in vast quantities of supporting code.
+
+When a \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_driver}{Driver}} class is loaded, it should create an instance of itself and register it with the Driver\+Manager. This means that a user can load and register a driver by doing Class.\+for\+Name(\char`\"{}foo.\+bah.\+Driver\char`\"{}) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_driver_a55d93610188df37d4699e34b19519728}\label{classcom_1_1mysql_1_1jdbc_1_1_driver_a55d93610188df37d4699e34b19519728}} 
+\index{com\+::mysql\+::jdbc\+::\+Driver@{com\+::mysql\+::jdbc\+::\+Driver}!Driver@{Driver}}
+\index{Driver@{Driver}!com\+::mysql\+::jdbc\+::\+Driver@{com\+::mysql\+::jdbc\+::\+Driver}}
+\subsubsection{\texorpdfstring{Driver()}{Driver()}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+Driver.\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Construct a new driver and register it with Driver\+Manager
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database error occurs. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Driver.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.JDBC4ClientInfoProviderSP.destroy" name="com.mysql.jdbc.JDBC4ClientInfoProviderSP.destroy">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a740a220f82b06eace44154a089fbdf18" title="com.mysql.jdbc.Statement\lImpl.close" alt="" coords="244,64,423,105"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a1e0670e4c9378bf2790c688208dc8913" title="com.mysql.jdbc.Statement\lImpl.realClose" alt="" coords="471,64,649,105"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#aec0f6158d9bacdc45d430fbddcc93120" title="com.mysql.jdbc.Connection\lProperties.getDontTrackOpenResources" alt="" coords="697,5,952,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="1527,97,1727,139"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a62c86a98fa9bd9792873a0d160e7ef59" title="com.mysql.jdbc.Statement\lImpl.closeAllOpenResults" alt="" coords="735,125,914,167"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a2477a2df55a2af9c8e127fc9a8a0fc34" title="com.mysql.jdbc.Assertion\lFailedException.shouldNotHappen" alt="" coords="1000,128,1221,169"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a4e3aad4529bc6d57c1c58d52defe4cb8" title="com.mysql.jdbc.Assertion\lFailedException.AssertionFailed\lException" alt="" coords="1269,122,1479,178"/>
+</map>

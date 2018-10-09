@@ -1,0 +1,195 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer}{}\section{com.\+mysql.\+jdbc.\+Buffer Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_buffer}\index{com.\+mysql.\+jdbc.\+Buffer@{com.\+mysql.\+jdbc.\+Buffer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_aded1a2a1e87364b83437aab79524f015}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_aded1a2a1e87364b83437aab79524f015}} 
+{\bfseries Buffer} (byte\mbox{[}$\,$\mbox{]} buf)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_a28c84074ea3c21866a0cb59bfa1edcb3}{fast\+Skip\+Len\+String}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_aef0e116a1535fa42709dc4f198ff2dc9}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_aef0e116a1535fa42709dc4f198ff2dc9}} 
+void {\bfseries fast\+Skip\+Len\+Byte\+Array} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a5fec7969f448c7d92a37ccff056d310f}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a5fec7969f448c7d92a37ccff056d310f}} 
+int {\bfseries get\+Buf\+Length} ()
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_ae784a6295702aa89204d8d5023e61761}{get\+Byte\+Buffer}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_ade4bafd26b1eef0c1a687a3eee62651d}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_ade4bafd26b1eef0c1a687a3eee62651d}} 
+Byte\+Buffer {\bfseries get\+Nio\+Buffer} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_a7dd4c64bfd124ad0a31a962364e7aaf6}{get\+Position}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a42b52657465038b4a391b451bac0f1af}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a42b52657465038b4a391b451bac0f1af}} 
+final String {\bfseries read\+String} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a680863d9d2797069ce668cc56b17a1a2}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a680863d9d2797069ce668cc56b17a1a2}} 
+void {\bfseries set\+Buf\+Length} (int buf\+Length\+To\+Set)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_ad00a61ce402f1bfaf796e15cd2e70a8d}{set\+Byte\+Buffer}} (byte\mbox{[}$\,$\mbox{]} byte\+Buffer\+To\+Set)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_a88b04735cd68d8d1772d176c3ac4542a}{set\+Position}} (int position\+To\+Set)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_a51b92498f9644d69555e3770986d3ad4}{set\+Was\+Multi\+Packet}} (boolean flag)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_aea1fea5839ec7ecc4f4030174a94a255}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_aea1fea5839ec7ecc4f4030174a94a255}} 
+String {\bfseries to\+String} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a8923166bdd8d0138cacddfde13a736a2}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a8923166bdd8d0138cacddfde13a736a2}} 
+String {\bfseries to\+Super\+String} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_a3fce81ada28c621352873af28ff8e1fb}{was\+Multi\+Packet}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a1fe73e4f76f2d4834a30fcaf321e364c}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a1fe73e4f76f2d4834a30fcaf321e364c}} 
+final void {\bfseries write\+Byte} (byte b)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a7594cd7d495e30109ec9980fb65ea648}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a7594cd7d495e30109ec9980fb65ea648}} 
+final void {\bfseries write\+Bytes\+No\+Null} (byte\mbox{[}$\,$\mbox{]} bytes)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_aaa8f7ceb780c783f736ddefdb0231677}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_aaa8f7ceb780c783f736ddefdb0231677}} 
+static final short {\bfseries T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+R\+R\+OR} = 0x\+FF
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a0b7efeab25742beac2b8dfe29e7f9485}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a0b7efeab25742beac2b8dfe29e7f9485}} 
+static final short {\bfseries T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+E\+OF} = 0x\+FE
+\item 
+static final short \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer_a56f21b391ad7591e2ea8fb3661b69ddf}{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}} = 0x\+FE
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a8f9618038dd3bb2847bcdbf7a36992f6}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a8f9618038dd3bb2847bcdbf7a36992f6}} 
+static final short {\bfseries T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+L\+O\+C\+A\+L\+\_\+\+I\+N\+F\+I\+LE} = 0x\+FB
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a4e18b02d53dcd859a57ee1a0793ba655}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a4e18b02d53dcd859a57ee1a0793ba655}} 
+static final short {\bfseries T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+OK} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_ab969db3e2fcd36822f96294abf79154a}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_ab969db3e2fcd36822f96294abf79154a}} 
+final byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Buffer\+Source} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_adb7b6ce3666634481713b9c7ef17f8d8}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_adb7b6ce3666634481713b9c7ef17f8d8}} 
+boolean {\bfseries was\+Multi\+Packet} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} contains code to read and write packets from/to the My\+S\+QL server. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a28c84074ea3c21866a0cb59bfa1edcb3}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a28c84074ea3c21866a0cb59bfa1edcb3}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!fast\+Skip\+Len\+String@{fast\+Skip\+Len\+String}}
+\index{fast\+Skip\+Len\+String@{fast\+Skip\+Len\+String}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{fast\+Skip\+Len\+String()}{fastSkipLenString()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Buffer.\+fast\+Skip\+Len\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Skip over a length-\/encoded string
+
+\begin{DoxyReturn}{Returns}
+The position past the end of the string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_ae784a6295702aa89204d8d5023e61761}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_ae784a6295702aa89204d8d5023e61761}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!get\+Byte\+Buffer@{get\+Byte\+Buffer}}
+\index{get\+Byte\+Buffer@{get\+Byte\+Buffer}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Byte\+Buffer()}{getByteBuffer()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Buffer.\+get\+Byte\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the array of bytes this \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} is using to read from.
+
+\begin{DoxyReturn}{Returns}
+byte array being read from 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a7dd4c64bfd124ad0a31a962364e7aaf6}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a7dd4c64bfd124ad0a31a962364e7aaf6}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Buffer.\+get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current position to write to/ read from
+
+\begin{DoxyReturn}{Returns}
+the current position to write to/ read from 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_buffer_a7dd4c64bfd124ad0a31a962364e7aaf6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_ad00a61ce402f1bfaf796e15cd2e70a8d}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_ad00a61ce402f1bfaf796e15cd2e70a8d}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!set\+Byte\+Buffer@{set\+Byte\+Buffer}}
+\index{set\+Byte\+Buffer@{set\+Byte\+Buffer}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Byte\+Buffer()}{setByteBuffer()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Buffer.\+set\+Byte\+Buffer (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{byte\+Buffer\+To\+Set }\end{DoxyParamCaption})}
+
+Sets the array of bytes to use as a buffer to read from.
+
+
+\begin{DoxyParams}{Parameters}
+{\em byte\+Buffer} & the array of bytes to use as a buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a88b04735cd68d8d1772d176c3ac4542a}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a88b04735cd68d8d1772d176c3ac4542a}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Buffer.\+set\+Position (\begin{DoxyParamCaption}\item[{int}]{position\+To\+Set }\end{DoxyParamCaption})}
+
+Set the current position to write to/ read from
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position (0-\/based index) \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_buffer_a88b04735cd68d8d1772d176c3ac4542a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a51b92498f9644d69555e3770986d3ad4}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a51b92498f9644d69555e3770986d3ad4}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!set\+Was\+Multi\+Packet@{set\+Was\+Multi\+Packet}}
+\index{set\+Was\+Multi\+Packet@{set\+Was\+Multi\+Packet}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Was\+Multi\+Packet()}{setWasMultiPacket()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Buffer.\+set\+Was\+Multi\+Packet (\begin{DoxyParamCaption}\item[{boolean}]{flag }\end{DoxyParamCaption})}
+
+Sets whether this packet was part of a multipacket
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & was this packet part of a multipacket? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a3fce81ada28c621352873af28ff8e1fb}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a3fce81ada28c621352873af28ff8e1fb}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!was\+Multi\+Packet@{was\+Multi\+Packet}}
+\index{was\+Multi\+Packet@{was\+Multi\+Packet}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{was\+Multi\+Packet()}{wasMultiPacket()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Buffer.\+was\+Multi\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Was this packet part of a multipacket?
+
+\begin{DoxyReturn}{Returns}
+was this packet part of a multipacket? 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_a56f21b391ad7591e2ea8fb3661b69ddf}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_a56f21b391ad7591e2ea8fb3661b69ddf}} 
+\index{com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}!T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}}
+\index{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH@{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}!com\+::mysql\+::jdbc\+::\+Buffer@{com\+::mysql\+::jdbc\+::\+Buffer}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH}{TYPE\_ID\_AUTH\_SWITCH}}
+{\footnotesize\ttfamily final short com.\+mysql.\+jdbc.\+Buffer.\+T\+Y\+P\+E\+\_\+\+I\+D\+\_\+\+A\+U\+T\+H\+\_\+\+S\+W\+I\+T\+CH = 0x\+FE\hspace{0.3cm}{\ttfamily [static]}}
+
+It has the same signature as E\+OF, but may be issued by server only during handshake phase 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Buffer.\+java\end{DoxyCompactItemize}

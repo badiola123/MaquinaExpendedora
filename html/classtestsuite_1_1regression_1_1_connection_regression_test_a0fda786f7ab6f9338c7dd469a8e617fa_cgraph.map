@@ -1,0 +1,5 @@
+<map id="testsuite.regression.ConnectionRegressionTest.testBug23626" name="testsuite.regression.ConnectionRegressionTest.testBug23626">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html#a726bb5014e1cdfffa313257781d4496d" title="com.mysql.jdbc.NonRegistering\lDriver.getPropertyInfo" alt="" coords="259,39,465,80"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="547,5,747,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#a810088febe63fb8c4bf25651f6b92020" title="com.mysql.jdbc.Connection\lPropertiesImpl.exposeAsDriverPropertyInfo" alt="" coords="513,71,781,112"/>
+</map>

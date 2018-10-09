@@ -1,0 +1,5 @@
+<map id="oferta.ListaOfertas" name="oferta.ListaOfertas">
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="496,56,689,83"/>
+<area shape="rect" id="node4" href="$classoferta_1_1_modelo_columnas_tabla_oferta.html" title="oferta.ModeloColumnasTabla\lOferta" alt="" coords="498,107,687,149"/>
+<area shape="rect" id="node6" href="$classoferta_1_1_trazador_tabla_oferta.html" title="oferta.TrazadorTablaOferta" alt="" coords="221,148,396,175"/>
+</map>

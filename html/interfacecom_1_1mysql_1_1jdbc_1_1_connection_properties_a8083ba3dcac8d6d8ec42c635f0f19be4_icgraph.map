@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setGatherPerformanceMetrics" name="com.mysql.jdbc.ConnectionProperties.setGatherPerformanceMetrics">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a245c02868e2569c0144af26ede2258e9" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setGatherPerformance\lMetrics" alt="" coords="268,5,539,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a06b568a697c11663a400405c5c8998cb" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setGatherPerformance\lMetrics" alt="" coords="271,85,536,141"/>
+</map>

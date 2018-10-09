@@ -1,0 +1,11 @@
+<map id="testsuite.simple.XATest" name="testsuite.simple.XATest">
+<area shape="rect" id="node2" href="$classtestsuite_1_1_base_test_case.html" title="testsuite.BaseTestCase" alt="" coords="1479,139,1641,165"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_statement.html" title="com.mysql.jdbc.Statement" alt="" coords="1141,56,1319,83"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_wrapper.html" title="com.mysql.jdbc.Wrapper" alt="" coords="727,56,893,83"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="1139,111,1321,137"/>
+<area shape="rect" id="node9" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="719,158,901,199"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html" title="com.mysql.jdbc.Connection\lPropertiesImpl" alt="" coords="1139,295,1321,337"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_data_source.html" title="com.mysql.jdbc.jdbc2.optional.\lMysqlXADataSource" alt="" coords="1711,537,1913,578"/>
+<area shape="rect" id="node13" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource" alt="" coords="1459,537,1661,578"/>
+<area shape="rect" id="node22" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html" title="com.mysql.jdbc.NonRegistering\lDriver" alt="" coords="1127,646,1333,687"/>
+</map>

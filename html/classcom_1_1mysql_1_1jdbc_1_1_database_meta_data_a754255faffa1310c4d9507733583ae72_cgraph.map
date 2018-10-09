@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.DatabaseMetaData.DatabaseMetaData" name="com.mysql.jdbc.DatabaseMetaData.DatabaseMetaData">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a1a0f564a2d0f6c011143f31f9a0128ef" title="com.mysql.jdbc.DatabaseMeta\lData.getIdentifierQuoteString" alt="" coords="265,8,468,49"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a2477a2df55a2af9c8e127fc9a8a0fc34" title="com.mysql.jdbc.Assertion\lFailedException.shouldNotHappen" alt="" coords="256,75,477,116"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#a16e68907781a09083ff1afda25dff502" title="com.mysql.jdbc.Connection.supports\lQuotedIdentifiers" alt="" coords="525,5,763,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a4e3aad4529bc6d57c1c58d52defe4cb8" title="com.mysql.jdbc.Assertion\lFailedException.AssertionFailed\lException" alt="" coords="539,71,749,127"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="811,79,1011,120"/>
+</map>

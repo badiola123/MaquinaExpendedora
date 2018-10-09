@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.ResultSetImpl.ResultSetImpl" name="com.mysql.jdbc.ResultSetImpl.ResultSetImpl">
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#af48fc4f6629e4ada4cf9bc8668207e1c" title="com.mysql.jdbc.Connection\lProperties.getUseFastIntParsing" alt="" coords="247,5,458,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html#a28586f911062106cb730733427568fc7" title="com.mysql.jdbc.MySQLConnection.get\lServerTimezoneTZ" alt="" coords="228,71,477,112"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_row_data.html#a7c6f91ddc0fcd7f5f12a64c7dc019995" title="com.mysql.jdbc.RowData.size" alt="" coords="253,137,452,163"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="253,188,453,229"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_row_data.html#ac548da95fe41cee544964af3b6d734a6" title="com.mysql.jdbc.RowData.close" alt="" coords="250,254,455,281"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1mysql_1_1jdbc_1_1_row_data.html#ad2c7f5220e0bd60681453d3d294607cc" title="com.mysql.jdbc.RowData.set\lOwner" alt="" coords="257,305,449,347"/>
+</map>

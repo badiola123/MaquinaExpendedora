@@ -1,0 +1,11 @@
+<map id="vistas.PanelUsuario" name="vistas.PanelUsuario">
+<area shape="rect" id="node17" href="$classvistas_1_1_principal.html" title="vistas.Principal" alt="" coords="987,661,1097,688"/>
+<area shape="rect" id="node4" href="$classclientes_1_1_modelo_columnas_tabla.html" title="clientes.ModeloColumnasTabla" alt="" coords="604,163,807,189"/>
+<area shape="rect" id="node10" href="$classclientes_1_1_clientela.html" title="clientes.Clientela" alt="" coords="981,384,1103,411"/>
+<area shape="rect" id="node6" href="$classclientes_1_1_trazador_tabla.html" title="clientes.TrazadorTabla" alt="" coords="314,96,466,123"/>
+<area shape="rect" id="node9" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="5,661,199,688"/>
+<area shape="rect" id="node21" href="$classcomunicacion_1_1_modulo_x_bee.html" title="comunicacion.ModuloXBee" alt="" coords="616,835,795,861"/>
+<area shape="rect" id="node23" href="$classconexion_s_q_l_1_1_comandos.html" title="conexionSQL.Comandos" alt="" coords="307,876,473,903"/>
+<area shape="rect" id="node25" href="$classcomunicacion_1_1_recepcion.html" title="comunicacion.Recepcion" alt="" coords="959,911,1125,937"/>
+<area shape="rect" id="node29" href="$classcomunicacion_1_1_emision.html" title="comunicacion.Emision" alt="" coords="313,775,467,801"/>
+</map>

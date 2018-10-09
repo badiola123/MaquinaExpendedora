@@ -1,0 +1,5 @@
+<map id="com.mysql.fabric.xmlrpc.base.MethodResponse" name="com.mysql.fabric.xmlrpc.base.MethodResponse">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1xmlrpc_1_1base_1_1_params.html" title="com.mysql.fabric.xmlrpc.base.\lParams" alt="" coords="27,109,227,151"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1fabric_1_1xmlrpc_1_1base_1_1_fault.html" title="com.mysql.fabric.xmlrpc.base.\lFault" alt="" coords="259,109,459,151"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1fabric_1_1xmlrpc_1_1base_1_1_value.html" title="com.mysql.fabric.xmlrpc.base.\lValue" alt="" coords="263,5,463,47"/>
+</map>

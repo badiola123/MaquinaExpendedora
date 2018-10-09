@@ -1,0 +1,4 @@
+<map id="testsuite.fabric.jdbc.TestHashSharding.assertBasicDataIsInProperPlaces" name="testsuite.fabric.jdbc.TestHashSharding.assertBasicDataIsInProperPlaces">
+<area shape="rect" id="node2" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a4d63bb47eb2f1bc8fcbc57257a21def1" title="testsuite.fabric.jdbc.Test\lHashSharding.testBasicInsertByGroup" alt="" coords="267,5,512,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#aae506b3baba9edbc0b43d3f4d5f6e308" title="testsuite.fabric.jdbc.Test\lHashSharding.testBasicInsertByKey" alt="" coords="273,71,506,112"/>
+</map>

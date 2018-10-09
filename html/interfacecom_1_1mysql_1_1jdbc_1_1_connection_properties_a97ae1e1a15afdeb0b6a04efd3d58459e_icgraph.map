@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getJdbcCompliantTruncation" name="com.mysql.jdbc.ConnectionProperties.getJdbcCompliantTruncation">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a3daafc5194855212c6b6c0c30fb449b7" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getJdbcCompliant\lTruncation" alt="" coords="301,5,544,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#aa7498b944d87abde92d8e38ddd15afe9" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getJdbcCompliant\lTruncation" alt="" coords="303,85,542,141"/>
+</map>

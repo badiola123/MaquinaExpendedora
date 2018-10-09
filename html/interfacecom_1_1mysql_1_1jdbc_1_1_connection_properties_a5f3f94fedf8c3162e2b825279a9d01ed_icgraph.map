@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setContinueBatchOnError" name="com.mysql.jdbc.ConnectionProperties.setContinueBatchOnError">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a0d0494da50a007f3aea31ada724385d9" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setContinueBatch\lOnError" alt="" coords="287,5,529,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a99f0b12351ec3cb5353af259a71bae1c" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setContinueBatch\lOnError" alt="" coords="289,85,527,141"/>
+</map>

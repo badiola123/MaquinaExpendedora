@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource.getXAConnection" name="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource.getXAConnection">
+<area shape="rect" id="node2" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#ac8bd9a129a96fb8c9d9c220369e1a5b2" title="testsuite.regression.Connection\lRegressionTest.testBug69506" alt="" coords="325,5,531,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a4ac113ac44c3a4432d84e3a3c062da8f" title="testsuite.regression.Connection\lRegressionTest.testBug67803" alt="" coords="325,71,531,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test.html#a15cc5d9ae0ab3041f166565d1dc1e577" title="testsuite.regression.jdbc4.\lConnectionRegressionTest.testBug62452" alt="" coords="297,136,559,177"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1_data_source_regression_test.html#a59191cb9aeb387f68d1d484356d9c744" title="testsuite.regression.Data\lSourceRegressionTest.testBug20242" alt="" coords="309,201,547,243"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1regression_1_1_data_source_regression_test.html#ae91b4203179883e6c257ba0484c9974e" title="testsuite.regression.Data\lSourceRegressionTest.testBug72890" alt="" coords="309,267,547,308"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1regression_1_1_pooled_connection_regression_test.html#ae448a81e77d17829c9e922b7859ef609" title="testsuite.regression.Pooled\lConnectionRegressionTest.testBug35489" alt="" coords="297,332,559,373"/>
+</map>

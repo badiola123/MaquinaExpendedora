@@ -1,0 +1,16 @@
+<map id="testsuite.simple.ConnectionTest.testCacheDefaultTimezone" name="testsuite.simple.ConnectionTest.testCacheDefaultTimezone">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a9f0e5dd8b1cae6d2f116ae694577b2ce" title="com.mysql.jdbc.PreparedStatement.set\lBoolean" alt="" coords="274,5,526,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a6ae79298e06ce58b5e8acb9d8fd66e65" title="com.mysql.jdbc.PreparedStatement.set\lTimestamp" alt="" coords="274,71,526,112"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a356cdeaae7b10fb79da4806e829a2190" title="com.mysql.jdbc.PreparedStatement.execute\lUpdate" alt="" coords="260,136,540,177"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a740a220f82b06eace44154a089fbdf18" title="com.mysql.jdbc.Statement\lImpl.close" alt="" coords="311,227,489,268"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a80a81c39177a5e46c653efb1acd9e797" title="com.mysql.jdbc.PreparedStatement.get\lParameterIndexOffset" alt="" coords="602,5,854,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a88caedee8619aad1351c9edea352c37e" title="com.mysql.jdbc.Statement\lImpl.checkClosed" alt="" coords="1240,87,1419,128"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="1745,164,1945,205"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_util.html#ab73dd640e4fb69c157001303d7be0164" title="com.mysql.jdbc.Util.truncate\lAndConvertToInt" alt="" coords="634,125,822,167"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a9db54f06b57ab9446798d306d59aeefc" title="com.mysql.jdbc.PreparedStatement.execute\lLargeUpdate" alt="" coords="588,191,868,232"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a1e0670e4c9378bf2790c688208dc8913" title="com.mysql.jdbc.Statement\lImpl.realClose" alt="" coords="639,256,817,297"/>
+<area shape="rect" id="node12" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#aec0f6158d9bacdc45d430fbddcc93120" title="com.mysql.jdbc.Connection\lProperties.getDontTrackOpenResources" alt="" coords="916,223,1171,264"/>
+<area shape="rect" id="node13" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a62c86a98fa9bd9792873a0d160e7ef59" title="com.mysql.jdbc.Statement\lImpl.closeAllOpenResults" alt="" coords="954,288,1133,329"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a2477a2df55a2af9c8e127fc9a8a0fc34" title="com.mysql.jdbc.Assertion\lFailedException.shouldNotHappen" alt="" coords="1219,273,1440,315"/>
+<area shape="rect" id="node15" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a4e3aad4529bc6d57c1c58d52defe4cb8" title="com.mysql.jdbc.Assertion\lFailedException.AssertionFailed\lException" alt="" coords="1488,237,1697,293"/>
+</map>

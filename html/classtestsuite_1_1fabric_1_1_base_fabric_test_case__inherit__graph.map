@@ -1,0 +1,10 @@
+<map id="testsuite.fabric.BaseFabricTestCase" name="testsuite.fabric.BaseFabricTestCase">
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_basic_connection.html" title="testsuite.fabric.jdbc.Test\lBasicConnection" alt="" coords="383,5,547,47"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_fabric_my_s_q_l_connection_sharding.html" title="testsuite.fabric.jdbc.Test\lFabricMySQLConnectionSharding" alt="" coords="356,71,575,112"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics.html" title="testsuite.fabric.jdbc.Test\lHABasics" alt="" coords="383,136,547,177"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html" title="testsuite.fabric.jdbc.Test\lHashSharding" alt="" coords="383,201,547,243"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html" title="testsuite.fabric.jdbc.Test\lRegressions" alt="" coords="383,267,547,308"/>
+<area shape="rect" id="node8" href="$classtestsuite_1_1fabric_1_1_test_admin_commands.html" title="testsuite.fabric.TestAdmin\lCommands" alt="" coords="379,332,552,373"/>
+<area shape="rect" id="node9" href="$classtestsuite_1_1fabric_1_1_test_dump_commands.html" title="testsuite.fabric.TestDump\lCommands" alt="" coords="380,397,551,439"/>
+<area shape="rect" id="node10" href="$classtestsuite_1_1fabric_1_1_test_xml_rpc_core.html" title="testsuite.fabric.TestXml\lRpcCore" alt="" coords="387,463,544,504"/>
+</map>

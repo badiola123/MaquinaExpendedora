@@ -1,0 +1,171 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group}{}\section{com.\+mysql.\+jdbc.\+Replication\+Connection\+Group Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group}\index{com.\+mysql.\+jdbc.\+Replication\+Connection\+Group@{com.\+mysql.\+jdbc.\+Replication\+Connection\+Group}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a26227ff0a3921c41cd2df3c126eadd0e}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a26227ff0a3921c41cd2df3c126eadd0e}} 
+long {\bfseries get\+Connection\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a212f469500dc509f3f1ccc230c91eb1b}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a212f469500dc509f3f1ccc230c91eb1b}} 
+long {\bfseries register\+Replication\+Connection} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}{Replication\+Connection}} conn, List$<$ String $>$ local\+Master\+List, List$<$ String $>$ local\+Slave\+List)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a2d9d1b4ff7a1c09c23068c4c28ba6ffd}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a2d9d1b4ff7a1c09c23068c4c28ba6ffd}} 
+String {\bfseries get\+Group\+Name} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a339544179cf08d6ad2bb27d7afc33321}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a339544179cf08d6ad2bb27d7afc33321}} 
+Collection$<$ String $>$ {\bfseries get\+Master\+Hosts} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_af4bc61184b16d79fd6178a9723c9dc31}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_af4bc61184b16d79fd6178a9723c9dc31}} 
+Collection$<$ String $>$ {\bfseries get\+Slave\+Hosts} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a8e01912c5eb8fa7845a475ad9304ad1d}{add\+Slave\+Host}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a50b39c4a15948ad6f72c01c9f6517a0e}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a50b39c4a15948ad6f72c01c9f6517a0e}} 
+void {\bfseries handle\+Close\+Connection} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}{Replication\+Connection}} conn)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a0edd408afd3be5821bae63d00bdef097}{remove\+Slave\+Host}} (String host\+Port\+Pair, boolean close\+Gently)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a140b14f491bedc6744398fa71dc3519a}{promote\+Slave\+To\+Master}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a02f65bcb4a871155ab5ebdd0b58f865b}{remove\+Master\+Host}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a8a270e9cbf9895c73694f7ed565ee4e7}{remove\+Master\+Host}} (String host\+Port\+Pair, boolean close\+Gently)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_aab89e53ef91ba53400dd9000e921c10a}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_aab89e53ef91ba53400dd9000e921c10a}} 
+int {\bfseries get\+Connection\+Count\+With\+Host\+As\+Slave} (String host\+Port\+Pair)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_aadb84cb7b2ca7f069e81d915a19bd34c}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_aadb84cb7b2ca7f069e81d915a19bd34c}} 
+int {\bfseries get\+Connection\+Count\+With\+Host\+As\+Master} (String host\+Port\+Pair)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a196905b85143562fb21eac90461c2a11}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a196905b85143562fb21eac90461c2a11}} 
+long {\bfseries get\+Number\+Of\+Slaves\+Added} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a9a0beacc833023e904d1989b3088fe6c}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a9a0beacc833023e904d1989b3088fe6c}} 
+long {\bfseries get\+Number\+Of\+Slaves\+Removed} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_ab1bc2e20b1c757711abcbf7a0557efd8}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_ab1bc2e20b1c757711abcbf7a0557efd8}} 
+long {\bfseries get\+Number\+Of\+Slave\+Promotions} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_abb15644d430b46060e59164c61eec53b}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_abb15644d430b46060e59164c61eec53b}} 
+long {\bfseries get\+Total\+Connection\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a3fcafa79664d4bb7ba3edff7dd39c23d}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a3fcafa79664d4bb7ba3edff7dd39c23d}} 
+long {\bfseries get\+Active\+Connection\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_ae3173af084116d0b6c75c389868d2dd0}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_ae3173af084116d0b6c75c389868d2dd0}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Group of connection objects which can be configured as a group. This is used for promotion/demotion of slaves and masters in a replication configuration, and for exposing metrics around replication-\/aware connections. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a8e01912c5eb8fa7845a475ad9304ad1d}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a8e01912c5eb8fa7845a475ad9304ad1d}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}!add\+Slave\+Host@{add\+Slave\+Host}}
+\index{add\+Slave\+Host@{add\+Slave\+Host}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{add\+Slave\+Host()}{addSlaveHost()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Replication\+Connection\+Group.\+add\+Slave\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Adds a host to the slaves hosts list.
+
+We can safely assume that if this host was added to the slaves list, then it must be added to each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{}{Replication\+Connection\#add\+Slave\+Host(\+String)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group already has this host in a slave role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a140b14f491bedc6744398fa71dc3519a}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a140b14f491bedc6744398fa71dc3519a}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}!promote\+Slave\+To\+Master@{promote\+Slave\+To\+Master}}
+\index{promote\+Slave\+To\+Master@{promote\+Slave\+To\+Master}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{promote\+Slave\+To\+Master()}{promoteSlaveToMaster()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Replication\+Connection\+Group.\+promote\+Slave\+To\+Master (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Promotes a slave host to master.
+
+We can safely assume that if this host was removed from the slaves list or added to the masters list, then the same host promotion must happen in each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{}{Replication\+Connection\#promote\+Slave\+To\+Master(\+String)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group already has this host in a master role and not in slave role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a02f65bcb4a871155ab5ebdd0b58f865b}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a02f65bcb4a871155ab5ebdd0b58f865b}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}!remove\+Master\+Host@{remove\+Master\+Host}}
+\index{remove\+Master\+Host@{remove\+Master\+Host}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Master\+Host()}{removeMasterHost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Replication\+Connection\+Group.\+remove\+Master\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the masters hosts list.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a8a270e9cbf9895c73694f7ed565ee4e7}{remove\+Master\+Host(\+String, boolean)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a8a270e9cbf9895c73694f7ed565ee4e7}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a8a270e9cbf9895c73694f7ed565ee4e7}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}!remove\+Master\+Host@{remove\+Master\+Host}}
+\index{remove\+Master\+Host@{remove\+Master\+Host}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Master\+Host()}{removeMasterHost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Replication\+Connection\+Group.\+remove\+Master\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{boolean}]{close\+Gently }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the masters hosts list.
+
+We can safely assume that if this host was removed from the masters list, then it must be removed from each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{}{Replication\+Connection\#remove\+Master\+Host(\+String, boolean)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group doesn\textquotesingle{}t have this host in a master role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+{\em close\+Gently} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a0edd408afd3be5821bae63d00bdef097}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_a0edd408afd3be5821bae63d00bdef097}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}!remove\+Slave\+Host@{remove\+Slave\+Host}}
+\index{remove\+Slave\+Host@{remove\+Slave\+Host}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Slave\+Host()}{removeSlaveHost()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Replication\+Connection\+Group.\+remove\+Slave\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{boolean}]{close\+Gently }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Removes a host from the slaves hosts list.
+
+We can safely assume that if this host was removed from the slaves list, then it must be removed from each one of the replication connections from this group as well. Unnecessary calls to \mbox{\hyperlink{}{Replication\+Connection\#remove\+Slave(\+String, boolean)}} could result in undesirable locking issues, assuming that this method is synchronized by nature.
+
+This is a no-\/op if the group doesn\textquotesingle{}t have this host in a slave role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & \\
+\hline
+{\em close\+Gently} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Replication\+Connection\+Group.\+java\end{DoxyCompactItemize}

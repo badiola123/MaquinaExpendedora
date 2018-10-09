@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getNoDatetimeStringSync" name="com.mysql.jdbc.ConnectionProperties.getNoDatetimeStringSync">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aa17bed727b36f4557e32e581a7abff7f" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getNoDatetimeStringSync" alt="" coords="288,5,579,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a6b3c51428efc616f8a08b2e5c70b75cd" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getNoDatetime\lStringSync" alt="" coords="323,71,544,127"/>
+</map>

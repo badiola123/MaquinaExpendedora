@@ -1,0 +1,7 @@
+<map id="com.mysql.fabric.jdbc.FabricMySQLDataSource" name="com.mysql.fabric.jdbc.FabricMySQLDataSource">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource" alt="" coords="1572,257,1775,299"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html" title="com.mysql.jdbc.Connection\lPropertiesImpl" alt="" coords="1139,177,1321,219"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="719,5,901,47"/>
+<area shape="rect" id="node17" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_properties.html" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnectionProperties" alt="" coords="1357,47,1548,88"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html" title="com.mysql.jdbc.NonRegistering\lDriver" alt="" coords="1127,257,1333,299"/>
+</map>

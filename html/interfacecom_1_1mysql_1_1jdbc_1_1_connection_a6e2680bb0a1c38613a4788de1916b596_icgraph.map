@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.Connection.serverPrepareStatement" name="com.mysql.jdbc.Connection.serverPrepareStatement">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy.html#a1acde7226641989bf319992e99bc45f5" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnectionProxy.serverPrepare\lStatement" alt="" coords="290,5,538,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a75b41a04d4e8c60fd30e3ec13abccaa0" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.serverPrepareStatement" alt="" coords="275,86,553,127"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#ac7585cb7791fb3f439f1dec002b9486e" title="com.mysql.jdbc.MultiHost\lMySQLConnection.serverPrepare\lStatement" alt="" coords="307,152,521,208"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a45f6666d2a8fbbc59bb210cd6e6f33a5" title="testsuite.regression.Statement\lRegressionTest.testBug28256" alt="" coords="314,233,514,274"/>
+</map>

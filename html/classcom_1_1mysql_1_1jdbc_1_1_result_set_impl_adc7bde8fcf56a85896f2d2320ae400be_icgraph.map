@@ -1,0 +1,10 @@
+<map id="com.mysql.jdbc.ResultSetImpl.getNativeBinaryStream" name="com.mysql.jdbc.ResultSetImpl.getNativeBinaryStream">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a3121b8b483b8b8bfcdf6b1b977a60808" title="com.mysql.jdbc.ResultSet\lImpl.getAsciiStream" alt="" coords="467,5,642,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a59faa6b2172c9dafdc26ea397bc4fc93" title="com.mysql.jdbc.ResultSet\lImpl.getBinaryStream" alt="" coords="236,119,411,160"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#ae1fb89a978f6a70882bb7305f8266234" title="com.mysql.jdbc.ResultSet\lImpl.getUnicodeStream" alt="" coords="467,201,642,243"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a25a66bda18485aa6fb3891ba594b8c57" title="com.mysql.jdbc.ResultSet\lImpl.getNativeAsciiStream" alt="" coords="236,236,411,277"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a87d456ff8fb48adfb5a12005afc51787" title="com.mysql.jdbc.ResultSet\lImpl.getAsciiStream" alt="" coords="699,5,873,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a903fb401d883a4fcfbe7a96b561efbe0" title="com.mysql.jdbc.ResultSet\lImpl.getBinaryStream" alt="" coords="467,71,642,112"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a83d3f3839270765b9b934fc524a0e04e" title="com.mysql.jdbc.ResultSet\lImpl.getNativeUnicodeStream" alt="" coords="459,136,651,177"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#ac6f678af8cdf491781c04615014e58f5" title="com.mysql.jdbc.ResultSet\lImpl.getUnicodeStream" alt="" coords="699,201,873,243"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setSlowQueryThresholdMillis" name="com.mysql.jdbc.ConnectionProperties.setSlowQueryThresholdMillis">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ac0a113a1ba7f79345af3609e978a93fe" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setSlowQueryThreshold\lMillis" alt="" coords="276,5,553,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a0b2593b4f94be127319ff6d487f5edcc" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setSlowQuery\lThresholdMillis" alt="" coords="307,85,523,141"/>
+</map>

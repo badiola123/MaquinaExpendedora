@@ -1,0 +1,10 @@
+<map id="comunicacion.Recepcion.dataReceived" name="comunicacion.Recepcion.dataReceived">
+<area shape="rect" id="node2" href="$classcomunicacion_1_1_modulo_x_bee.html#a71bbc67392676c9e0bd57813a87d06c0" title="comunicacion.ModuloXBee.mandar\lTramaVentaAceptada" alt="" coords="254,28,479,69"/>
+<area shape="rect" id="node4" href="$classcomunicacion_1_1_modulo_x_bee.html#a34debd695cc102e385156983a52a658c" title="comunicacion.ModuloXBee.confirmar\lVenta" alt="" coords="249,115,484,156"/>
+<area shape="rect" id="node3" href="$classcomunicacion_1_1_emision.html#ab2a5697489ffb7d87fc89057cc5f9798" title="comunicacion.Emision.crear\lTramaVentaAceptada" alt="" coords="548,5,735,47"/>
+<area shape="rect" id="node5" href="$classventa_1_1_venta.html#a517a4e2b36e633e0adab951596a733ed" title="venta.Venta.getNombreColumnas" alt="" coords="534,71,749,98"/>
+<area shape="rect" id="node6" href="$classconexion_s_q_l_1_1_comandos.html#a2fb20845cbfb01a03b1aba60031608cb" title="conexionSQL.Comandos.insertar" alt="" coords="535,122,748,149"/>
+<area shape="rect" id="node8" href="$classventa_1_1_venta.html#a82a6dd2795bd37dc1a72ffb5cb36a156" title="venta.Venta.getFormatoColumnas" alt="" coords="532,173,751,199"/>
+<area shape="rect" id="node9" href="$classvistas_1_1_principal.html#aa81de202b442c060c9db8f564ba288b3" title="vistas.Principal.getTablaventa" alt="" coords="545,223,737,250"/>
+<area shape="rect" id="node7" href="$classconexion_s_q_l_1_1_my_data_access.html#a9c57d53829ea15bb0bc59d7647cc6249" title="conexionSQL.MyDataAccess.set\lQuery" alt="" coords="799,115,1013,156"/>
+</map>

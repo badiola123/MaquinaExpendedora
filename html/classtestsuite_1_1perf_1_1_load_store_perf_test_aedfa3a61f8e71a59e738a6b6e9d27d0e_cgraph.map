@@ -1,0 +1,5 @@
+<map id="testsuite.perf.LoadStorePerfTest.warmUp" name="testsuite.perf.LoadStorePerfTest.warmUp">
+<area shape="rect" id="node2" href="$classtestsuite_1_1perf_1_1_load_store_perf_test.html#aae53536cc1145eb4860cc71c132f66d8" title="testsuite.perf.LoadStore\lPerfTest.doOneIteration" alt="" coords="213,39,373,80"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a4949a27d2e0b9c314d12f45128004da2" title="testsuite.perf.BasePerfTest.add\lResult" alt="" coords="421,5,625,47"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1perf_1_1_base_perf_test.html#a27382fb187f93da07deaa8b4ce1cc3e9" title="testsuite.perf.BasePerfTest.get\lMeanValue" alt="" coords="423,71,624,112"/>
+</map>

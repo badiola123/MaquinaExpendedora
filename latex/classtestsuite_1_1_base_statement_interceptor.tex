@@ -1,0 +1,168 @@
+\hypertarget{classtestsuite_1_1_base_statement_interceptor}{}\section{testsuite.\+Base\+Statement\+Interceptor Class Reference}
+\label{classtestsuite_1_1_base_statement_interceptor}\index{testsuite.\+Base\+Statement\+Interceptor@{testsuite.\+Base\+Statement\+Interceptor}}
+
+
+Inheritance diagram for testsuite.\+Base\+Statement\+Interceptor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1_base_statement_interceptor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+Base\+Statement\+Interceptor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classtestsuite_1_1_base_statement_interceptor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a9f780bb34bc2101037455ca81d1c2a16}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_aa08942c2eb76d1550322df94b28bb2cc}{pre\+Process}} (String sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} intercepted\+Statement, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} connection)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a1eb3615bcd122817ef160af0a06d7e23}{execute\+Top\+Level\+Only}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_ad60c14de4fc7503095f6dd609f34a95a}{destroy}} ()
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a00ff902755e287c1a983e8d840ca32d5}{post\+Process}} (String sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} intercepted\+Statement, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} original\+Result\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} connection, int warning\+Count, boolean no\+Index\+Used, boolean no\+Good\+Index\+Used, S\+Q\+L\+Exception statement\+Exception)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1_base_statement_interceptor_ad60c14de4fc7503095f6dd609f34a95a}\label{classtestsuite_1_1_base_statement_interceptor_ad60c14de4fc7503095f6dd609f34a95a}} 
+\index{testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}!destroy@{destroy}}
+\index{destroy@{destroy}!testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void testsuite.\+Base\+Statement\+Interceptor.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a00bfb3d3f7b81e16a9cdf4784150c3f7}{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1_base_statement_interceptor_a1eb3615bcd122817ef160af0a06d7e23}\label{classtestsuite_1_1_base_statement_interceptor_a1eb3615bcd122817ef160af0a06d7e23}} 
+\index{testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}!execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}}
+\index{execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}!testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}}
+\subsubsection{\texorpdfstring{execute\+Top\+Level\+Only()}{executeTopLevelOnly()}}
+{\footnotesize\ttfamily boolean testsuite.\+Base\+Statement\+Interceptor.\+execute\+Top\+Level\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Should the driver execute this interceptor only for the \char`\"{}original\char`\"{} top-\/level query, and not put it in the execution path for queries that may be executed from other interceptors?
+
+If an interceptor issues queries using the connection it was created for, and does not return {\ttfamily true} for this method, it must ensure that it does not cause infinite recursion.
+
+\begin{DoxyReturn}{Returns}
+true if the driver should ensure that this interceptor is only executed for the top-\/level \char`\"{}original\char`\"{} query. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a36f03c5f5b1755d48549862d5b6c627f}{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1_base_statement_interceptor_a9f780bb34bc2101037455ca81d1c2a16}\label{classtestsuite_1_1_base_statement_interceptor_a9f780bb34bc2101037455ca81d1c2a16}} 
+\index{testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}!init@{init}}
+\index{init@{init}!testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void testsuite.\+Base\+Statement\+Interceptor.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once per connection that wants to use the interceptor
+
+The properties are the same ones passed in in the U\+RL or arguments to Driver.\+connect() or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this interceptor is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. Statement\+Interceptor properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the Statement\+Interceptor can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_ae2d3d924826dcf4a4e025433af0b4d8f}{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1_base_statement_interceptor_a00ff902755e287c1a983e8d840ca32d5}\label{classtestsuite_1_1_base_statement_interceptor_a00ff902755e287c1a983e8d840ca32d5}} 
+\index{testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}!post\+Process@{post\+Process}}
+\index{post\+Process@{post\+Process}!testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}}
+\subsubsection{\texorpdfstring{post\+Process()}{postProcess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} testsuite.\+Base\+Statement\+Interceptor.\+post\+Process (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}}}]{intercepted\+Statement,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}}}]{original\+Result\+Set,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{connection,  }\item[{int}]{warning\+Count,  }\item[{boolean}]{no\+Index\+Used,  }\item[{boolean}]{no\+Good\+Index\+Used,  }\item[{S\+Q\+L\+Exception}]{statement\+Exception }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called after the given statement has been sent to the server for processing, instead of the Statement\+Aware \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a00ff902755e287c1a983e8d840ca32d5}{post\+Process()}} of the earlier api.
+
+Interceptors are free to inspect the \char`\"{}original\char`\"{} result set, and if a different result set is returned by the interceptor, it is used in place of the \char`\"{}original\char`\"{} result set. (the result set returned by the interceptor must implement the interface \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}}).
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the S\+QL representation of the statement \\
+\hline
+{\em intercepted\+Statement} & the actual statement instance being intercepted \\
+\hline
+{\em connection} & the connection the statement is using (passed in to make thread-\/safe implementations straightforward)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result set that should be returned to the application instead of results that are created from actual execution of the intercepted statement.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs during execution\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a6dadce27d32c6beaa303d46515307320}{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1_base_statement_interceptor_aa08942c2eb76d1550322df94b28bb2cc}\label{classtestsuite_1_1_base_statement_interceptor_aa08942c2eb76d1550322df94b28bb2cc}} 
+\index{testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}!pre\+Process@{pre\+Process}}
+\index{pre\+Process@{pre\+Process}!testsuite\+::\+Base\+Statement\+Interceptor@{testsuite\+::\+Base\+Statement\+Interceptor}}
+\subsubsection{\texorpdfstring{pre\+Process()}{preProcess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} testsuite.\+Base\+Statement\+Interceptor.\+pre\+Process (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}}}]{intercepted\+Statement,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{connection }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called before the given statement is going to be sent to the server for processing.
+
+Interceptors are free to return a result set (which must implement the interface \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}}), and if so, the server will not execute the query, and the given result set will be returned to the application instead.
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the S\+QL representation of the statement \\
+\hline
+{\em intercepted\+Statement} & the actual statement instance being intercepted \\
+\hline
+{\em connection} & the connection the statement is using (passed in to make thread-\/safe implementations straightforward)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result set that should be returned to the application instead of results that are created from actual execution of the intercepted statement.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs during execution\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_abe4a0e52fc3e4cc9b458dd8eaeef82ff}{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/Base\+Statement\+Interceptor.\+java\end{DoxyCompactItemize}

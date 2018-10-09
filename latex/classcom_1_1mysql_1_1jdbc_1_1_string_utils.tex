@@ -1,0 +1,1278 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils}{}\section{com.\+mysql.\+jdbc.\+String\+Utils Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils}\index{com.\+mysql.\+jdbc.\+String\+Utils@{com.\+mysql.\+jdbc.\+String\+Utils}}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+String\+Utils\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_acb1c38dccd1d027f74d9098be91229df}{consistent\+To\+String}} (Big\+Decimal decimal)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae709b9204f54ce98657cd4133619961b}{dump\+As\+Hex}} (byte\mbox{[}$\,$\mbox{]} byte\+Buffer, int length)
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7d62af1e510047299adcf569e5d94c84}{escape\+Eastern\+Unicode\+Byte\+Stream}} (byte\mbox{[}$\,$\mbox{]} orig\+Bytes, String orig\+String)
+\item 
+static char \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a118670d9eee02bcc84a54737721389dd}{first\+Non\+Ws\+Char\+Uc}} (String search\+In)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a1a984ee5654b56a92fbe157e630aae60}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a1a984ee5654b56a92fbe157e630aae60}} 
+static char {\bfseries first\+Non\+Ws\+Char\+Uc} (String search\+In, int start\+At)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ac74bb6c2ab4fde108680cdcc1e55e01d}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ac74bb6c2ab4fde108680cdcc1e55e01d}} 
+static char {\bfseries first\+Alpha\+Char\+Uc} (String search\+In, int start\+At)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afb8f4c9222ba22bd576dfb94ec65f625}{fix\+Decimal\+Exponent}} (String d\+String)
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab237c5e450dc15a76201b3f13d44e6b3}{get\+Bytes}} (char\mbox{[}$\,$\mbox{]} c, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} converter, String encoding, String server\+Encoding, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afa77878bbb64c7649486eab195b72185}{get\+Bytes}} (char\mbox{[}$\,$\mbox{]} c, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} converter, String encoding, String server\+Encoding, int offset, int length, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4997696bd5f691e1bdfe5b41dec49be1}{get\+Bytes}} (char\mbox{[}$\,$\mbox{]} c, String encoding, String server\+Encoding, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ccf9deb162f278f270b455040e8aa03}{get\+Bytes}} (String s, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} converter, String encoding, String server\+Encoding, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a08b655dc82143b3bff5c4af85cafb9c0}{get\+Bytes}} (String s, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} converter, String encoding, String server\+Encoding, int offset, int length, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b5fe6d3bbd403144a59f29d4fb9984a}{get\+Bytes}} (String s, String encoding, String server\+Encoding, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static final byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0782bc62fd8f75d707d84487c9cd50cc}{get\+Bytes}} (String s, String encoding, String server\+Encoding, int offset, int length, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afd812ec650baa8ee5d9218e48ec7e026}{get\+Bytes\+Wrapped}} (String s, char begin\+Wrap, char end\+Wrap, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}} converter, String encoding, String server\+Encoding, boolean parser\+Knows\+Unicode, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad129a2058164beeee111efd6b04ff9d4}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad129a2058164beeee111efd6b04ff9d4}} 
+static int {\bfseries get\+Int} (byte\mbox{[}$\,$\mbox{]} buf)  throws Number\+Format\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0c5338d779649ba9355d344e6052e4b3}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0c5338d779649ba9355d344e6052e4b3}} 
+static int {\bfseries get\+Int} (byte\mbox{[}$\,$\mbox{]} buf, int offset, int end\+Pos)  throws Number\+Format\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7a7d4c7334cf2fcdfb22e2edebe376e7}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7a7d4c7334cf2fcdfb22e2edebe376e7}} 
+static long {\bfseries get\+Long} (byte\mbox{[}$\,$\mbox{]} buf)  throws Number\+Format\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2677663c1b71f1d37a0277acd2f57ecb}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2677663c1b71f1d37a0277acd2f57ecb}} 
+static long {\bfseries get\+Long} (byte\mbox{[}$\,$\mbox{]} buf, int offset, int endpos)  throws Number\+Format\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad64d862e69d854b60eaadca3c4d976b8}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad64d862e69d854b60eaadca3c4d976b8}} 
+static short {\bfseries get\+Short} (byte\mbox{[}$\,$\mbox{]} buf)  throws Number\+Format\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adc0d012cbbd96b631e701a0236463516}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adc0d012cbbd96b631e701a0236463516}} 
+static short {\bfseries get\+Short} (byte\mbox{[}$\,$\mbox{]} buf, int offset, int endpos)  throws Number\+Format\+Exception 
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6d53939d6e9719bdac7d843213d387c8}{index\+Of\+Ignore\+Case}} (String search\+In, String search\+For)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa5b9bbcd397f4e878c473c861c14e739}{index\+Of\+Ignore\+Case}} (int starting\+Position, String search\+In, String search\+For)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa878fb59ee51a94be844867255666d74}{index\+Of\+Ignore\+Case}} (int starting\+Position, String search\+In, String\mbox{[}$\,$\mbox{]} search\+For\+Sequence, String opening\+Markers, String closing\+Markers, Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ search\+Mode)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adad7a6d6f0a6d0a8c63355dabbf4ed35}{index\+Of\+Ignore\+Case}} (int starting\+Position, String search\+In, String search\+For, String opening\+Markers, String closing\+Markers, Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ search\+Mode)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_add4ac2b0e744a88735d527491bd75450}{index\+Of\+Ignore\+Case}} (int starting\+Position, String search\+In, String search\+For, String opening\+Markers, String closing\+Markers, String overriding\+Markers, Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ search\+Mode)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9585acb209b381778e2d9ffde265e2f9}{split}} (String string\+To\+Split, String delimiter, boolean trim)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0c4aba0dfcc1d3d7f60241b4c676aff4}{split}} (String string\+To\+Split, String delimiter, String opening\+Markers, String closing\+Markers, boolean trim)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adf390b3d52e630b26eb77d692e4ed624}{split}} (String string\+To\+Split, String delimiter, String opening\+Markers, String closing\+Markers, String overriding\+Markers, boolean trim)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4b1e5c86b08efa1656d9f2688fc00ec9}{starts\+With\+Ignore\+Case}} (String search\+In, int start\+At, String search\+For)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a3d79ea63bb33aa848246c4c41e1d4df0}{starts\+With\+Ignore\+Case}} (String search\+In, String search\+For)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9e913ad5a1846fd695d58c3b7b3719de}{starts\+With\+Ignore\+Case\+And\+Non\+Alpha\+Numeric}} (String search\+In, String search\+For)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b08be3e1e6f1b48cd88d94373acd13b}{starts\+With\+Ignore\+Case\+And\+Ws}} (String search\+In, String search\+For)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a373e54e6ee0066339105f9372a0663e2}{starts\+With\+Ignore\+Case\+And\+Ws}} (String search\+In, String search\+For, int begin\+Pos)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa21253db094aee0f6574a06c1076158c}{starts\+With\+Ignore\+Case\+And\+Ws}} (String search\+In, String\mbox{[}$\,$\mbox{]} search\+For)
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adaa51c3ab6d116872d9493d7d9bd4541}{strip\+Enclosure}} (byte\mbox{[}$\,$\mbox{]} source, String prefix, String suffix)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a8b353d590943a20a16b5f6772b1eac8a}{to\+Ascii\+String}} (byte\mbox{[}$\,$\mbox{]} buffer)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_acb96fd30c2b868b8823a0b930d8aca49}{to\+Ascii\+String}} (byte\mbox{[}$\,$\mbox{]} buffer, int start\+Pos, int length)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a20d8547a5e865d12bac8f9ef9ba00834}{wild\+Compare\+Ignore\+Case}} (String search\+In, String search\+For)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a597f05ea484529053474e70198a8ef79}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a597f05ea484529053474e70198a8ef79}} 
+static int {\bfseries last\+Index\+Of} (byte\mbox{[}$\,$\mbox{]} s, char c)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a783b290a273765cd318bebbd9c5d1fe9}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a783b290a273765cd318bebbd9c5d1fe9}} 
+static int {\bfseries index\+Of} (byte\mbox{[}$\,$\mbox{]} s, char c)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a929f419cc0fde41e6209dc252273fc75}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a929f419cc0fde41e6209dc252273fc75}} 
+static boolean {\bfseries is\+Null\+Or\+Empty} (String to\+Test)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad636754b7611d6235efff200a958779c}{strip\+Comments}} (String src, String string\+Opens, String string\+Closes, boolean slash\+Star\+Comments, boolean slash\+Slash\+Comments, boolean hash\+Comments, boolean dash\+Dash\+Comments)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a5a12075fbc5dc15fb882600f8d424f39}{sanitize\+Proc\+Or\+Func\+Name}} (String src)
+\item 
+static List$<$ String $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7fe39164a1f79c6421f46509e672693a}{split\+D\+Bdot\+Name}} (String source, String catalog, String quote\+Id, boolean is\+No\+Bslash\+Esc\+Set)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a77826106be5c7373867af85a7633336d}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a77826106be5c7373867af85a7633336d}} 
+static boolean {\bfseries is\+Empty\+Or\+Whitespace\+Only} (String str)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4a3f8c3f231e3f1c50d8fc9aa334061e}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4a3f8c3f231e3f1c50d8fc9aa334061e}} 
+static String {\bfseries escape\+Quote} (String src, String quot\+Char)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad75792b3351810790b35be02d6481bec}{quote\+Identifier}} (String identifier, String quote\+Char, boolean is\+Pedantic)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ecf14188b41e974d586d79f3295d4f1}{quote\+Identifier}} (String identifier, boolean is\+Pedantic)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2b5fec0251d326e70298ce197422e5cc}{un\+Quote\+Identifier}} (String identifier, String quote\+Char)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7eb0300beb295c2b8b102a2027f86c09}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7eb0300beb295c2b8b102a2027f86c09}} 
+static int {\bfseries index\+Of\+Quote\+Double\+Aware} (String search\+In, String quote\+Char, int start\+From)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9d2d56cb783cadc8fcc5326dbdde2f94}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9d2d56cb783cadc8fcc5326dbdde2f94}} 
+static String {\bfseries to\+String} (byte\mbox{[}$\,$\mbox{]} value, int offset, int length, String encoding)  throws Unsupported\+Encoding\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad4c10768cc1cd8bd40f6592fae012763}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad4c10768cc1cd8bd40f6592fae012763}} 
+static String {\bfseries to\+String} (byte\mbox{[}$\,$\mbox{]} value, String encoding)  throws Unsupported\+Encoding\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_abfed3bf99b160fa25001528c19399e09}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_abfed3bf99b160fa25001528c19399e09}} 
+static String {\bfseries to\+String} (byte\mbox{[}$\,$\mbox{]} value, int offset, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a1926d826a1da992214af8028c67215da}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a1926d826a1da992214af8028c67215da}} 
+static String {\bfseries to\+String} (byte\mbox{[}$\,$\mbox{]} value)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_af78c2272f5a4b6499a24809d88452b18}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_af78c2272f5a4b6499a24809d88452b18}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (char\mbox{[}$\,$\mbox{]} value)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2631f6d78e753a4edb52d6bdc09256bd}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2631f6d78e753a4edb52d6bdc09256bd}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (char\mbox{[}$\,$\mbox{]} value, int offset, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a5f606c97eb464cdfa06e48b3a46b6c88}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a5f606c97eb464cdfa06e48b3a46b6c88}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (char\mbox{[}$\,$\mbox{]} value, String encoding)  throws Unsupported\+Encoding\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aeec7b6dd75381e95ed54dbcada1514e3}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aeec7b6dd75381e95ed54dbcada1514e3}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (char\mbox{[}$\,$\mbox{]} value, int offset, int length, String encoding)  throws Unsupported\+Encoding\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a834e5a9f957c2835f4f5342ec4a75afe}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a834e5a9f957c2835f4f5342ec4a75afe}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (String value)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a03ae4296a6877178239daaa9acde81f0}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a03ae4296a6877178239daaa9acde81f0}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (String value, int offset, int length)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aaf0cc5b4521c4bd4eb56f2e70aff6f46}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aaf0cc5b4521c4bd4eb56f2e70aff6f46}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (String value, String encoding)  throws Unsupported\+Encoding\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a518e459c4cac204f4a724f1a618b62db}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a518e459c4cac204f4a724f1a618b62db}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes} (String value, int offset, int length, String encoding)  throws Unsupported\+Encoding\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2ab1d8afcb0858387b1f2a26f9b9dd06}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2ab1d8afcb0858387b1f2a26f9b9dd06}} 
+static final boolean {\bfseries is\+Valid\+Id\+Char} (char c)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9998e2dccbad43b9e584b28daf1ab110}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9998e2dccbad43b9e584b28daf1ab110}} 
+static void {\bfseries append\+As\+Hex} (String\+Builder builder, byte\mbox{[}$\,$\mbox{]} bytes)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae803414b52673af4d21d4a44e701bc72}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae803414b52673af4d21d4a44e701bc72}} 
+static void {\bfseries append\+As\+Hex} (String\+Builder builder, int value)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab71a6c908170eaf08815b6210e5ad48a}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab71a6c908170eaf08815b6210e5ad48a}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Bytes\+Null\+Terminated} (String value, String encoding)  throws Unsupported\+Encoding\+Exception 
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab43c5d12775b34b95c58cefcfc647755}{is\+Strictly\+Numeric}} (Char\+Sequence cs)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae7d013953cfc589d4a336aae1cad3e15}{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+A\+LL}} = Collections.\+unmodifiable\+Set(Enum\+Set.\+all\+Of(Search\+Mode.\+class))
+\item 
+static final Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a866b8f1784ccb509241bd1e090006dfb}{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+C\+O\+M\+\_\+\+WS}}
+\item 
+static final Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afb4d834a01668b926398485a5b2e97f8}{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+C\+O\+M\+\_\+\+WS}}
+\item 
+static final Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7d38fa41256662257907064dd0b950b5}{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+M\+R\+K\+\_\+\+WS}}
+\item 
+static final Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad7e062e4d813140127bb184c5e040cc6}{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+C\+O\+M\+\_\+\+WS}}
+\item 
+static final Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_af6d3d63373df472a5518bd7dcc2ebcb7}{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+WS}}
+\item 
+static final Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a358b0534d95ad61de34282abee33205a}{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+N\+O\+NE}} = Collections.\+unmodifiable\+Set(Enum\+Set.\+none\+Of(Search\+Mode.\+class))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Various utility methods for converting to/from byte arrays in the platform encoding 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_acb1c38dccd1d027f74d9098be91229df}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_acb1c38dccd1d027f74d9098be91229df}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!consistent\+To\+String@{consistent\+To\+String}}
+\index{consistent\+To\+String@{consistent\+To\+String}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{consistent\+To\+String()}{consistentToString()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+consistent\+To\+String (\begin{DoxyParamCaption}\item[{Big\+Decimal}]{decimal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes care of the fact that Sun changed the output of Big\+Decimal.\+to\+String() between J\+D\+K-\/1.\+4 and J\+DK 5
+
+
+\begin{DoxyParams}{Parameters}
+{\em decimal} & the big decimal to stringify\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representation of \textquotesingle{}decimal\textquotesingle{} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_acb1c38dccd1d027f74d9098be91229df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae709b9204f54ce98657cd4133619961b}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae709b9204f54ce98657cd4133619961b}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!dump\+As\+Hex@{dump\+As\+Hex}}
+\index{dump\+As\+Hex@{dump\+As\+Hex}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{dump\+As\+Hex()}{dumpAsHex()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+dump\+As\+Hex (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{byte\+Buffer,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dumps the given bytes to S\+T\+D\+O\+UT as a hex dump (up to length bytes).
+
+
+\begin{DoxyParams}{Parameters}
+{\em byte\+Buffer} & the data to print as hex \\
+\hline
+{\em length} & the number of bytes to print\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+... 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae709b9204f54ce98657cd4133619961b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7d62af1e510047299adcf569e5d94c84}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7d62af1e510047299adcf569e5d94c84}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!escape\+Eastern\+Unicode\+Byte\+Stream@{escape\+Eastern\+Unicode\+Byte\+Stream}}
+\index{escape\+Eastern\+Unicode\+Byte\+Stream@{escape\+Eastern\+Unicode\+Byte\+Stream}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{escape\+Eastern\+Unicode\+Byte\+Stream()}{escapeEasternUnicodeByteStream()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+escape\+Eastern\+Unicode\+Byte\+Stream (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{orig\+Bytes,  }\item[{String}]{orig\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Unfortunately, S\+J\+IS has 0x5c as a high byte in some of its double-\/byte characters, so we need to escape it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig\+Bytes} & the original bytes in S\+J\+IS format \\
+\hline
+{\em orig\+String} & the string that had .\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab237c5e450dc15a76201b3f13d44e6b3}{get\+Bytes()}} called on it\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte\mbox{[}\mbox{]} with 0x5c escaped 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7d62af1e510047299adcf569e5d94c84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a118670d9eee02bcc84a54737721389dd}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a118670d9eee02bcc84a54737721389dd}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!first\+Non\+Ws\+Char\+Uc@{first\+Non\+Ws\+Char\+Uc}}
+\index{first\+Non\+Ws\+Char\+Uc@{first\+Non\+Ws\+Char\+Uc}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{first\+Non\+Ws\+Char\+Uc()}{firstNonWsCharUc()}}
+{\footnotesize\ttfamily static char com.\+mysql.\+jdbc.\+String\+Utils.\+first\+Non\+Ws\+Char\+Uc (\begin{DoxyParamCaption}\item[{String}]{search\+In }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the first non whitespace char, converted to upper case
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the first non-\/whitespace character, upper cased. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afb8f4c9222ba22bd576dfb94ec65f625}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afb8f4c9222ba22bd576dfb94ec65f625}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!fix\+Decimal\+Exponent@{fix\+Decimal\+Exponent}}
+\index{fix\+Decimal\+Exponent@{fix\+Decimal\+Exponent}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{fix\+Decimal\+Exponent()}{fixDecimalExponent()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+fix\+Decimal\+Exponent (\begin{DoxyParamCaption}\item[{String}]{d\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Adds \textquotesingle{}+\textquotesingle{} to decimal numbers that are positive (My\+S\+QL doesn\textquotesingle{}t understand them otherwise
+
+
+\begin{DoxyParams}{Parameters}
+{\em d\+String} & The value as a string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String the string with a \textquotesingle{}+\textquotesingle{} added (if needed) 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afb8f4c9222ba22bd576dfb94ec65f625_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab237c5e450dc15a76201b3f13d44e6b3}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab237c5e450dc15a76201b3f13d44e6b3}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{c,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}}}]{converter,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of the given char\mbox{[}\mbox{]} (re)using the given charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab237c5e450dc15a76201b3f13d44e6b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab237c5e450dc15a76201b3f13d44e6b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afa77878bbb64c7649486eab195b72185}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afa77878bbb64c7649486eab195b72185}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{c,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}}}]{converter,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{int}]{offset,  }\item[{int}]{length,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of subset of the given char\mbox{[}\mbox{]} (re)using the given charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afa77878bbb64c7649486eab195b72185_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4997696bd5f691e1bdfe5b41dec49be1}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4997696bd5f691e1bdfe5b41dec49be1}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{c,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of the given char\mbox{[}\mbox{]} (re)using a cached charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4997696bd5f691e1bdfe5b41dec49be1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ccf9deb162f278f270b455040e8aa03}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ccf9deb162f278f270b455040e8aa03}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}}}]{converter,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of the given string (re)using the given charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ccf9deb162f278f270b455040e8aa03_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a08b655dc82143b3bff5c4af85cafb9c0}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a08b655dc82143b3bff5c4af85cafb9c0}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}}}]{converter,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{int}]{offset,  }\item[{int}]{length,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of a substring of the given string (re)using the given charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a08b655dc82143b3bff5c4af85cafb9c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b5fe6d3bbd403144a59f29d4fb9984a}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b5fe6d3bbd403144a59f29d4fb9984a}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of the given string (re)using a cached charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b5fe6d3bbd403144a59f29d4fb9984a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0782bc62fd8f75d707d84487c9cd50cc}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0782bc62fd8f75d707d84487c9cd50cc}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes@{get\+Bytes}}
+\index{get\+Bytes@{get\+Bytes}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes()}{getBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily static final byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{int}]{offset,  }\item[{int}]{length,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of a substring of the given string (re)using a cached charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0782bc62fd8f75d707d84487c9cd50cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afd812ec650baa8ee5d9218e48ec7e026}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afd812ec650baa8ee5d9218e48ec7e026}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!get\+Bytes\+Wrapped@{get\+Bytes\+Wrapped}}
+\index{get\+Bytes\+Wrapped@{get\+Bytes\+Wrapped}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{get\+Bytes\+Wrapped()}{getBytesWrapped()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+get\+Bytes\+Wrapped (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{char}]{begin\+Wrap,  }\item[{char}]{end\+Wrap,  }\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter}{Single\+Byte\+Charset\+Converter}}}]{converter,  }\item[{String}]{encoding,  }\item[{String}]{server\+Encoding,  }\item[{boolean}]{parser\+Knows\+Unicode,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the byte\mbox{[}\mbox{]} representation of the given string properly wrapped between the given char delimiters, (re)using the given charset converter, and the given encoding. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afd812ec650baa8ee5d9218e48ec7e026_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afd812ec650baa8ee5d9218e48ec7e026_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6d53939d6e9719bdac7d843213d387c8}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6d53939d6e9719bdac7d843213d387c8}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}}
+\index{index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{index\+Of\+Ignore\+Case()}{indexOfIgnoreCase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+String\+Utils.\+index\+Of\+Ignore\+Case (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{String}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds the position of a substring within a string ignoring case.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the array of strings to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the position where {\ttfamily search\+For} is found within {\ttfamily search\+In} starting from {\ttfamily starting\+Position}. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6d53939d6e9719bdac7d843213d387c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa5b9bbcd397f4e878c473c861c14e739}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa5b9bbcd397f4e878c473c861c14e739}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}}
+\index{index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{index\+Of\+Ignore\+Case()}{indexOfIgnoreCase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+String\+Utils.\+index\+Of\+Ignore\+Case (\begin{DoxyParamCaption}\item[{int}]{starting\+Position,  }\item[{String}]{search\+In,  }\item[{String}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds the position of a substring within a string ignoring case.
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting\+Position} & the position to start the search from \\
+\hline
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the array of strings to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the position where {\ttfamily search\+For} is found within {\ttfamily search\+In} starting from {\ttfamily starting\+Position}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa5b9bbcd397f4e878c473c861c14e739_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa878fb59ee51a94be844867255666d74}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa878fb59ee51a94be844867255666d74}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}}
+\index{index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{index\+Of\+Ignore\+Case()}{indexOfIgnoreCase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+String\+Utils.\+index\+Of\+Ignore\+Case (\begin{DoxyParamCaption}\item[{int}]{starting\+Position,  }\item[{String}]{search\+In,  }\item[{String \mbox{[}$\,$\mbox{]}}]{search\+For\+Sequence,  }\item[{String}]{opening\+Markers,  }\item[{String}]{closing\+Markers,  }\item[{Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$}]{search\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds the position of the first of a consecutive sequence of strings within a string, ignoring case, with the option to skip text delimited by given markers or within comments. 
+
+Independently of the {\ttfamily search\+Mode} provided, when searching for the second and following strings {\ttfamily Search\+Mode.\+S\+K\+I\+P\+\_\+\+W\+H\+I\+T\+E\+\_\+\+S\+P\+A\+CE} will be added and {\ttfamily Search\+Mode.\+S\+K\+I\+P\+\_\+\+B\+E\+T\+W\+E\+E\+N\+\_\+\+M\+A\+R\+K\+E\+RS} removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting\+Position} & the position to start the search from \\
+\hline
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the array of strings to search for \\
+\hline
+{\em opening\+Markers} & characters which delimit the beginning of a text block to skip \\
+\hline
+{\em closing\+Markers} & characters which delimit the end of a text block to skip \\
+\hline
+{\em search\+Mode} & a {\ttfamily Set}, ideally an {\ttfamily Enum\+Set}, containing the flags from the enum {\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{String\+Utils.\+Search\+Mode}}} that determine the behavior of the search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the position where {\ttfamily search\+For} is found within {\ttfamily search\+In} starting from {\ttfamily starting\+Position}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa878fb59ee51a94be844867255666d74_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adad7a6d6f0a6d0a8c63355dabbf4ed35}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adad7a6d6f0a6d0a8c63355dabbf4ed35}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}}
+\index{index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{index\+Of\+Ignore\+Case()}{indexOfIgnoreCase()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+String\+Utils.\+index\+Of\+Ignore\+Case (\begin{DoxyParamCaption}\item[{int}]{starting\+Position,  }\item[{String}]{search\+In,  }\item[{String}]{search\+For,  }\item[{String}]{opening\+Markers,  }\item[{String}]{closing\+Markers,  }\item[{Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$}]{search\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds the position of a substring within a string, ignoring case, with the option to skip text delimited by given markers or within comments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting\+Position} & the position to start the search from \\
+\hline
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string to search for \\
+\hline
+{\em opening\+Markers} & characters which delimit the beginning of a text block to skip \\
+\hline
+{\em closing\+Markers} & characters which delimit the end of a text block to skip \\
+\hline
+{\em search\+Mode} & a {\ttfamily Set}, ideally an {\ttfamily Enum\+Set}, containing the flags from the enum {\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{String\+Utils.\+Search\+Mode}}} that determine the behavior of the search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the position where {\ttfamily search\+For} is found within {\ttfamily search\+In} starting from {\ttfamily starting\+Position}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adad7a6d6f0a6d0a8c63355dabbf4ed35_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_add4ac2b0e744a88735d527491bd75450}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_add4ac2b0e744a88735d527491bd75450}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}}
+\index{index\+Of\+Ignore\+Case@{index\+Of\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{index\+Of\+Ignore\+Case()}{indexOfIgnoreCase()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+String\+Utils.\+index\+Of\+Ignore\+Case (\begin{DoxyParamCaption}\item[{int}]{starting\+Position,  }\item[{String}]{search\+In,  }\item[{String}]{search\+For,  }\item[{String}]{opening\+Markers,  }\item[{String}]{closing\+Markers,  }\item[{String}]{overriding\+Markers,  }\item[{Set$<$ \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}} $>$}]{search\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds the position of a substring within a string, ignoring case, with the option to skip text delimited by given markers or within comments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em starting\+Position} & the position to start the search from \\
+\hline
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string to search for \\
+\hline
+{\em opening\+Markers} & characters which delimit the beginning of a text block to skip \\
+\hline
+{\em closing\+Markers} & characters which delimit the end of a text block to skip \\
+\hline
+{\em overriding\+Markers} & the subset of {\ttfamily opening\+Markers} that override the remaining markers, e.\+g., if {\ttfamily opening\+Markers = \char`\"{}\textquotesingle{}(\char`\"{}} and {\ttfamily overriding\+Markers = \char`\"{}\textquotesingle{}\char`\"{}} then the block between the outer parenthesis in {\ttfamily \char`\"{}start (\textquotesingle{}max(\textquotesingle{}); end\char`\"{}} is strictly consumed, otherwise the suffix {\ttfamily \char`\"{} end\char`\"{}} would end up being consumed too in the process of handling the nested parenthesis. \\
+\hline
+{\em search\+Mode} & a {\ttfamily Set}, ideally an {\ttfamily Enum\+Set}, containing the flags from the enum {\ttfamily \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{String\+Utils.\+Search\+Mode}}} that determine the behavior of the search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the position where {\ttfamily search\+For} is found within {\ttfamily search\+In} starting from {\ttfamily starting\+Position}. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_add4ac2b0e744a88735d527491bd75450_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab43c5d12775b34b95c58cefcfc647755}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ab43c5d12775b34b95c58cefcfc647755}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!is\+Strictly\+Numeric@{is\+Strictly\+Numeric}}
+\index{is\+Strictly\+Numeric@{is\+Strictly\+Numeric}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{is\+Strictly\+Numeric()}{isStrictlyNumeric()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+String\+Utils.\+is\+Strictly\+Numeric (\begin{DoxyParamCaption}\item[{Char\+Sequence}]{cs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks is the Char\+Sequence contains digits only. No leading sign and thousands or decimal separators are allowed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cs} & The Char\+Sequence to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyCode}
+\textcolor{keyword}{true} 
+\end{DoxyCode}
+ if the Char\+Sequence not empty and contains only digits,
+\begin{DoxyCode}
+\textcolor{keyword}{false} 
+\end{DoxyCode}
+ otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad75792b3351810790b35be02d6481bec}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad75792b3351810790b35be02d6481bec}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!quote\+Identifier@{quote\+Identifier}}
+\index{quote\+Identifier@{quote\+Identifier}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{quote\+Identifier()}{quoteIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+quote\+Identifier (\begin{DoxyParamCaption}\item[{String}]{identifier,  }\item[{String}]{quote\+Char,  }\item[{boolean}]{is\+Pedantic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Surrounds identifier with quote\+Char and duplicates these symbols inside the identifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quote\+Char} & \`{} or " \\
+\hline
+{\em identifier} & in pedantic mode (connection property pedantic=true) identifier is treated as unquoted (as it is stored in the database) even if it starts and ends with quote\+Char; in non-\/pedantic mode if identifier starts and ends with quote\+Char method treats it as already quoted and doesn\textquotesingle{}t modify. \\
+\hline
+{\em is\+Pedantic} & are we in pedantic mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+With quote\+Char=\char`\"{}\`{}\char`\"{}\+:~\newline
+ 
+\begin{DoxyItemize}
+\item null -\/$>$ null 
+\item abc -\/$>$ {\ttfamily abc} 
+\item ab{\ttfamily c -\/$>$}ab\`{}{\ttfamily c} 
+\item ab\char`\"{}c -\/$>$ \`{}ab\char`\"{}c{\ttfamily $<$/li$>$ $<$li$>$}ab{\ttfamily c\`{} -\/$>$ \`{}ab}c{\ttfamily in non-\/pedantic mode or}{\ttfamily ab}{\ttfamily c}\`{} in pedantic mode 
+\end{DoxyItemize}With quote\+Char=\char`\"{}\textbackslash{}\char`\"{}"\+:~\newline
+ 
+\begin{DoxyItemize}
+\item null -\/$>$ null 
+\item abc -\/$>$ \char`\"{}abc\char`\"{} 
+\item ab{\ttfamily c -\/$>$ \char`\"{}ab$<$/tt$>$c\char`\"{} }
+\item {\ttfamily ab\char`\"{}c -\/$>$ \char`\"{}ab\char`\"{}\char`\"{}c\char`\"{}$<$/li$>$
+        $<$li$>$\char`\"{}ab\char`\"{}\char`\"{}c\char`\"{} -\/$>$ \char`\"{}ab\char`\"{}\char`\"{}c\char`\"{} in non-\/pedantic mode or \char`\"{}\char`\"{}\char`\"{}ab\char`\"{}\char`\"{}\char`\"{}\char`\"{}c\char`\"{}\char`\"{}" in pedantic mode }
+\end{DoxyItemize}
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad75792b3351810790b35be02d6481bec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ecf14188b41e974d586d79f3295d4f1}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ecf14188b41e974d586d79f3295d4f1}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!quote\+Identifier@{quote\+Identifier}}
+\index{quote\+Identifier@{quote\+Identifier}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{quote\+Identifier()}{quoteIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+quote\+Identifier (\begin{DoxyParamCaption}\item[{String}]{identifier,  }\item[{boolean}]{is\+Pedantic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Surrounds identifier with \char`\"{}\`{}\char`\"{} and duplicates these symbols inside the identifier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & in pedantic mode (connection property pedantic=true) identifier is treated as unquoted (as it is stored in the database) even if it starts and ends with \char`\"{}\`{}\char`\"{}; in non-\/pedantic mode if identifier starts and ends with \char`\"{}\`{}\char`\"{} method treats it as already quoted and doesn\textquotesingle{}t modify. \\
+\hline
+{\em is\+Pedantic} & are we in pedantic mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item null -\/$>$ null 
+\item abc -\/$>$ {\ttfamily abc} 
+\item ab{\ttfamily c -\/$>$}ab\`{}{\ttfamily c} 
+\item ab\char`\"{}c -\/$>$ \`{}ab\char`\"{}c{\ttfamily $<$/li$>$ $<$li$>$}ab{\ttfamily c\`{} -\/$>$ \`{}ab}c{\ttfamily in non-\/pedantic mode or}{\ttfamily ab}{\ttfamily c}\`{} in pedantic mode 
+\end{DoxyItemize}
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7ecf14188b41e974d586d79f3295d4f1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a5a12075fbc5dc15fb882600f8d424f39}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a5a12075fbc5dc15fb882600f8d424f39}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!sanitize\+Proc\+Or\+Func\+Name@{sanitize\+Proc\+Or\+Func\+Name}}
+\index{sanitize\+Proc\+Or\+Func\+Name@{sanitize\+Proc\+Or\+Func\+Name}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{sanitize\+Proc\+Or\+Func\+Name()}{sanitizeProcOrFuncName()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+sanitize\+Proc\+Or\+Func\+Name (\begin{DoxyParamCaption}\item[{String}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Next two functions are to help D\+B\+MD check if the given string is in form of database.\+name and return it as \char`\"{}database\char`\"{};\char`\"{}name\char`\"{} with comments removed. If string is N\+U\+LL or wildcard (\%), returns null and exits.
+
+First, we sanitize...
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & the source string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the input string with all comment-\/delimited data removed 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a5a12075fbc5dc15fb882600f8d424f39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9585acb209b381778e2d9ffde265e2f9}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9585acb209b381778e2d9ffde265e2f9}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!split@{split}}
+\index{split@{split}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{split()}{split()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+split (\begin{DoxyParamCaption}\item[{String}]{string\+To\+Split,  }\item[{String}]{delimiter,  }\item[{boolean}]{trim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits string\+To\+Split into a list, using the given delimiter
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+To\+Split} & the string to split \\
+\hline
+{\em delimiter} & the string to split on \\
+\hline
+{\em trim} & should the split strings be whitespace trimmed?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of strings, split by delimiter
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9585acb209b381778e2d9ffde265e2f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0c4aba0dfcc1d3d7f60241b4c676aff4}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0c4aba0dfcc1d3d7f60241b4c676aff4}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!split@{split}}
+\index{split@{split}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{split()}{split()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+split (\begin{DoxyParamCaption}\item[{String}]{string\+To\+Split,  }\item[{String}]{delimiter,  }\item[{String}]{opening\+Markers,  }\item[{String}]{closing\+Markers,  }\item[{boolean}]{trim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits string\+To\+Split into a list, using the given delimiter and skipping all between the given markers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+To\+Split} & the string to split \\
+\hline
+{\em delimiter} & the string to split on \\
+\hline
+{\em opening\+Markers} & characters which delimit the beginning of a text block to skip \\
+\hline
+{\em closing\+Markers} & characters which delimit the end of a text block to skip \\
+\hline
+{\em trim} & should the split strings be whitespace trimmed?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of strings, split by delimiter
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a0c4aba0dfcc1d3d7f60241b4c676aff4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adf390b3d52e630b26eb77d692e4ed624}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adf390b3d52e630b26eb77d692e4ed624}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!split@{split}}
+\index{split@{split}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{split()}{split()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+split (\begin{DoxyParamCaption}\item[{String}]{string\+To\+Split,  }\item[{String}]{delimiter,  }\item[{String}]{opening\+Markers,  }\item[{String}]{closing\+Markers,  }\item[{String}]{overriding\+Markers,  }\item[{boolean}]{trim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits string\+To\+Split into a list, using the given delimiter and skipping all between the given markers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+To\+Split} & the string to split \\
+\hline
+{\em delimiter} & the string to split on \\
+\hline
+{\em opening\+Markers} & characters which delimit the beginning of a text block to skip \\
+\hline
+{\em closing\+Markers} & characters which delimit the end of a text block to skip \\
+\hline
+{\em overriding\+Markers} & the subset of {\ttfamily opening\+Markers} that override the remaining markers, e.\+g., if {\ttfamily opening\+Markers = \char`\"{}\textquotesingle{}(\char`\"{}} and {\ttfamily overriding\+Markers = \char`\"{}\textquotesingle{}\char`\"{}} then the block between the outer parenthesis in {\ttfamily \char`\"{}start (\textquotesingle{}max(\textquotesingle{}); end\char`\"{}} is strictly consumed, otherwise the suffix {\ttfamily \char`\"{} end\char`\"{}} would end up being consumed too in the process of handling the nested parenthesis. \\
+\hline
+{\em trim} & should the split strings be whitespace trimmed?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of strings, split by delimiter
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adf390b3d52e630b26eb77d692e4ed624_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7fe39164a1f79c6421f46509e672693a}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7fe39164a1f79c6421f46509e672693a}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!split\+D\+Bdot\+Name@{split\+D\+Bdot\+Name}}
+\index{split\+D\+Bdot\+Name@{split\+D\+Bdot\+Name}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{split\+D\+Bdot\+Name()}{splitDBdotName()}}
+{\footnotesize\ttfamily static List$<$String$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+split\+D\+Bdot\+Name (\begin{DoxyParamCaption}\item[{String}]{source,  }\item[{String}]{catalog,  }\item[{String}]{quote\+Id,  }\item[{boolean}]{is\+No\+Bslash\+Esc\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits an entity identifier into its parts (database and entity name) and returns a list containing the two elements. If the identifier doesn\textquotesingle{}t contain the database part then the argument {\ttfamily catalog} is used in its place and {\ttfamily source} corresponds to the full entity name. If argument {\ttfamily source} is N\+U\+LL or wildcard (\%), returns an empty list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & the source string \\
+\hline
+{\em catalog} & Catalog, if available \\
+\hline
+{\em quote\+Id} & quote character as defined on server \\
+\hline
+{\em is\+No\+Bslash\+Esc\+Set} & is our connection in no Back\+Slash\+Escape mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the input string with all comment-\/delimited data removed 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7fe39164a1f79c6421f46509e672693a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7fe39164a1f79c6421f46509e672693a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4b1e5c86b08efa1656d9f2688fc00ec9}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4b1e5c86b08efa1656d9f2688fc00ec9}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!starts\+With\+Ignore\+Case@{starts\+With\+Ignore\+Case}}
+\index{starts\+With\+Ignore\+Case@{starts\+With\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{starts\+With\+Ignore\+Case()}{startsWithIgnoreCase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+String\+Utils.\+starts\+With\+Ignore\+Case (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{int}]{start\+At,  }\item[{String}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether or not the string \textquotesingle{}search\+In\textquotesingle{} contains the string \textquotesingle{}search\+For\textquotesingle{}, dis-\/regarding case starting at \textquotesingle{}start\+At\textquotesingle{} Shorthand for a String.\+region\+Match(...)
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em start\+At} & the position to start at \\
+\hline
+{\em search\+For} & the string to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether search\+In starts with search\+For, ignoring case 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a4b1e5c86b08efa1656d9f2688fc00ec9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a3d79ea63bb33aa848246c4c41e1d4df0}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a3d79ea63bb33aa848246c4c41e1d4df0}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!starts\+With\+Ignore\+Case@{starts\+With\+Ignore\+Case}}
+\index{starts\+With\+Ignore\+Case@{starts\+With\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{starts\+With\+Ignore\+Case()}{startsWithIgnoreCase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+String\+Utils.\+starts\+With\+Ignore\+Case (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{String}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether or not the string \textquotesingle{}search\+In\textquotesingle{} contains the string \textquotesingle{}search\+For\textquotesingle{}, dis-\/regarding case. Shorthand for a String.\+region\+Match(...)
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether search\+In starts with search\+For, ignoring case 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a3d79ea63bb33aa848246c4c41e1d4df0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9e913ad5a1846fd695d58c3b7b3719de}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9e913ad5a1846fd695d58c3b7b3719de}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!starts\+With\+Ignore\+Case\+And\+Non\+Alpha\+Numeric@{starts\+With\+Ignore\+Case\+And\+Non\+Alpha\+Numeric}}
+\index{starts\+With\+Ignore\+Case\+And\+Non\+Alpha\+Numeric@{starts\+With\+Ignore\+Case\+And\+Non\+Alpha\+Numeric}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{starts\+With\+Ignore\+Case\+And\+Non\+Alpha\+Numeric()}{startsWithIgnoreCaseAndNonAlphaNumeric()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+String\+Utils.\+starts\+With\+Ignore\+Case\+And\+Non\+Alpha\+Numeric (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{String}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether or not the string \textquotesingle{}search\+In\textquotesingle{} contains the string \textquotesingle{}search\+For\textquotesingle{}, disregarding case,leading whitespace and non-\/alphanumeric characters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the string starts with \textquotesingle{}search\+For\textquotesingle{} ignoring whitespace 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a9e913ad5a1846fd695d58c3b7b3719de_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b08be3e1e6f1b48cd88d94373acd13b}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b08be3e1e6f1b48cd88d94373acd13b}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!starts\+With\+Ignore\+Case\+And\+Ws@{starts\+With\+Ignore\+Case\+And\+Ws}}
+\index{starts\+With\+Ignore\+Case\+And\+Ws@{starts\+With\+Ignore\+Case\+And\+Ws}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{starts\+With\+Ignore\+Case\+And\+Ws()}{startsWithIgnoreCaseAndWs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+String\+Utils.\+starts\+With\+Ignore\+Case\+And\+Ws (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{String}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether or not the string \textquotesingle{}search\+In\textquotesingle{} contains the string \textquotesingle{}search\+For\textquotesingle{}, disregarding case and leading whitespace
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the string starts with \textquotesingle{}search\+For\textquotesingle{} ignoring whitespace 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a6b08be3e1e6f1b48cd88d94373acd13b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a373e54e6ee0066339105f9372a0663e2}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a373e54e6ee0066339105f9372a0663e2}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!starts\+With\+Ignore\+Case\+And\+Ws@{starts\+With\+Ignore\+Case\+And\+Ws}}
+\index{starts\+With\+Ignore\+Case\+And\+Ws@{starts\+With\+Ignore\+Case\+And\+Ws}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{starts\+With\+Ignore\+Case\+And\+Ws()}{startsWithIgnoreCaseAndWs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+String\+Utils.\+starts\+With\+Ignore\+Case\+And\+Ws (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{String}]{search\+For,  }\item[{int}]{begin\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether or not the string \textquotesingle{}search\+In\textquotesingle{} contains the string \textquotesingle{}search\+For\textquotesingle{}, disregarding case and leading whitespace
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string to search for \\
+\hline
+{\em begin\+Pos} & where to start searching\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the string starts with \textquotesingle{}search\+For\textquotesingle{} ignoring whitespace 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a373e54e6ee0066339105f9372a0663e2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa21253db094aee0f6574a06c1076158c}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa21253db094aee0f6574a06c1076158c}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!starts\+With\+Ignore\+Case\+And\+Ws@{starts\+With\+Ignore\+Case\+And\+Ws}}
+\index{starts\+With\+Ignore\+Case\+And\+Ws@{starts\+With\+Ignore\+Case\+And\+Ws}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{starts\+With\+Ignore\+Case\+And\+Ws()}{startsWithIgnoreCaseAndWs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+String\+Utils.\+starts\+With\+Ignore\+Case\+And\+Ws (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{String \mbox{[}$\,$\mbox{]}}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether or not the string \textquotesingle{}search\+In\textquotesingle{} starts with one of the strings in \textquotesingle{}search\+For\textquotesingle{}, disregarding case and leading whitespace
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string array to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \textquotesingle{}search\+For\textquotesingle{} array index that matched or -\/1 if none matches 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_aa21253db094aee0f6574a06c1076158c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad636754b7611d6235efff200a958779c}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad636754b7611d6235efff200a958779c}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!strip\+Comments@{strip\+Comments}}
+\index{strip\+Comments@{strip\+Comments}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{strip\+Comments()}{stripComments()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+strip\+Comments (\begin{DoxyParamCaption}\item[{String}]{src,  }\item[{String}]{string\+Opens,  }\item[{String}]{string\+Closes,  }\item[{boolean}]{slash\+Star\+Comments,  }\item[{boolean}]{slash\+Slash\+Comments,  }\item[{boolean}]{hash\+Comments,  }\item[{boolean}]{dash\+Dash\+Comments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the given string, with comments removed
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & the source string \\
+\hline
+{\em string\+Opens} & characters which delimit the \char`\"{}open\char`\"{} of a string \\
+\hline
+{\em string\+Closes} & characters which delimit the \char`\"{}close\char`\"{} of a string, in counterpart order to {\ttfamily string\+Opens} \\
+\hline
+{\em slash\+Star\+Comments} & strip slash-\/star type \char`\"{}\+C\char`\"{} style comments \\
+\hline
+{\em slash\+Slash\+Comments} & strip slash-\/slash C++ style comments to end-\/of-\/line \\
+\hline
+{\em hash\+Comments} & strip \#-\/style comments to end-\/of-\/line \\
+\hline
+{\em dash\+Dash\+Comments} & strip \char`\"{}-\/-\/\char`\"{} style comments to end-\/of-\/line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the input string with all comment-\/delimited data removed 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad636754b7611d6235efff200a958779c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adaa51c3ab6d116872d9493d7d9bd4541}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_adaa51c3ab6d116872d9493d7d9bd4541}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!strip\+Enclosure@{strip\+Enclosure}}
+\index{strip\+Enclosure@{strip\+Enclosure}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{strip\+Enclosure()}{stripEnclosure()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+String\+Utils.\+strip\+Enclosure (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{source,  }\item[{String}]{prefix,  }\item[{String}]{suffix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes\+To\+Strip} & \\
+\hline
+{\em prefix} & \\
+\hline
+{\em suffix} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a8b353d590943a20a16b5f6772b1eac8a}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a8b353d590943a20a16b5f6772b1eac8a}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!to\+Ascii\+String@{to\+Ascii\+String}}
+\index{to\+Ascii\+String@{to\+Ascii\+String}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{to\+Ascii\+String()}{toAsciiString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+to\+Ascii\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the bytes as an A\+S\+C\+II String.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the bytes representing the string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The A\+S\+C\+II String. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a8b353d590943a20a16b5f6772b1eac8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_acb96fd30c2b868b8823a0b930d8aca49}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_acb96fd30c2b868b8823a0b930d8aca49}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!to\+Ascii\+String@{to\+Ascii\+String}}
+\index{to\+Ascii\+String@{to\+Ascii\+String}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{to\+Ascii\+String()}{toAsciiString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+to\+Ascii\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{start\+Pos,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the bytes as an A\+S\+C\+II String.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the bytes to convert \\
+\hline
+{\em start\+Pos} & the position to start converting \\
+\hline
+{\em length} & the length of the string to convert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the A\+S\+C\+II string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2b5fec0251d326e70298ce197422e5cc}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2b5fec0251d326e70298ce197422e5cc}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!un\+Quote\+Identifier@{un\+Quote\+Identifier}}
+\index{un\+Quote\+Identifier@{un\+Quote\+Identifier}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{un\+Quote\+Identifier()}{unQuoteIdentifier()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+String\+Utils.\+un\+Quote\+Identifier (\begin{DoxyParamCaption}\item[{String}]{identifier,  }\item[{String}]{quote\+Char }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Trims identifier, removes quote chars from first and last positions and replaces double occurrences of quote char from entire identifier, i.\+e converts quoted identifier into form as it is stored in database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & \\
+\hline
+{\em quote\+Char} & \`{} or " \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item null -\/$>$ null 
+\item abc -\/$>$ abc 
+\item {\ttfamily abc} -\/$>$ abc 
+\item {\ttfamily ab}{\ttfamily c} -\/$>$ ab{\ttfamily c$<$/li$>$ $<$li$>$}\char`\"{}ab\`{}c\char`\"{}{\ttfamily -\/$>$ \char`\"{}ab$<$/tt$>$c\char`\"{} }
+\item {\ttfamily \`{}ab\char`\"{}c\`{} -\/$>$ ab\char`\"{}c }
+\item {\ttfamily \char`\"{}abc\char`\"{} -\/$>$ abc }
+\item {\ttfamily \char`\"{}$<$tt$>$ab\char`\"{}\char`\"{}c$<$/tt$>$\char`\"{} -\/$>$ \`{}ab\char`\"{}c$<$tt$>$\textbackslash{}$<$/li\textbackslash{}$>$
+        \textbackslash{}$<$li\textbackslash{}$>$\char`\"{}ab}c" -\/$>$ ab\`{}c 
+\end{DoxyItemize}
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a2b5fec0251d326e70298ce197422e5cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a20d8547a5e865d12bac8f9ef9ba00834}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a20d8547a5e865d12bac8f9ef9ba00834}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!wild\+Compare\+Ignore\+Case@{wild\+Compare\+Ignore\+Case}}
+\index{wild\+Compare\+Ignore\+Case@{wild\+Compare\+Ignore\+Case}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{wild\+Compare\+Ignore\+Case()}{wildCompareIgnoreCase()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+String\+Utils.\+wild\+Compare\+Ignore\+Case (\begin{DoxyParamCaption}\item[{String}]{search\+In,  }\item[{String}]{search\+For }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compares search\+In against search\+For\+Wildcard with wildcards, in a case insensitive manner.
+
+
+\begin{DoxyParams}{Parameters}
+{\em search\+In} & the string to search in \\
+\hline
+{\em search\+For} & the string to search for, using the \textquotesingle{}standard\textquotesingle{} S\+QL wildcard chars of \textquotesingle{}\textquotesingle{} and \textquotesingle{}\+\_\+\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a20d8547a5e865d12bac8f9ef9ba00834_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae7d013953cfc589d4a336aae1cad3e15}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ae7d013953cfc589d4a336aae1cad3e15}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+A\+LL@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+A\+LL}}
+\index{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+A\+LL@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+A\+LL}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+A\+LL}{SEARCH\_MODE\_\_ALL}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+A\+LL = Collections.\+unmodifiable\+Set(Enum\+Set.\+all\+Of(Search\+Mode.\+class))\hspace{0.3cm}{\ttfamily [static]}}
+
+Full search mode\+: allow backslash escape, skip between markers, skip block comments, skip line comments and skip white space. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afb4d834a01668b926398485a5b2e97f8}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_afb4d834a01668b926398485a5b2e97f8}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+C\+O\+M\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+C\+O\+M\+\_\+\+WS}}
+\index{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+C\+O\+M\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+C\+O\+M\+\_\+\+WS}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+C\+O\+M\+\_\+\+WS}{SEARCH\_MODE\_\_BSESC\_COM\_WS}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+C\+O\+M\+\_\+\+WS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= Collections.unmodifiableSet(
+            EnumSet.of(SearchMode.ALLOW\_BACKSLASH\_ESCAPE, SearchMode.SKIP\_BLOCK\_COMMENTS, SearchMode.
+      SKIP\_LINE\_COMMENTS, SearchMode.SKIP\_WHITE\_SPACE))
+\end{DoxyCode}
+Search mode\+: allow backslash escape, skip block comments, skip line comments and skip white space. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7d38fa41256662257907064dd0b950b5}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a7d38fa41256662257907064dd0b950b5}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+M\+R\+K\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+M\+R\+K\+\_\+\+WS}}
+\index{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+M\+R\+K\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+M\+R\+K\+\_\+\+WS}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+M\+R\+K\+\_\+\+WS}{SEARCH\_MODE\_\_BSESC\_MRK\_WS}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+B\+S\+E\+S\+C\+\_\+\+M\+R\+K\+\_\+\+WS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= Collections
+            .unmodifiableSet(EnumSet.of(SearchMode.ALLOW\_BACKSLASH\_ESCAPE, SearchMode.SKIP\_BETWEEN\_MARKERS,
+       SearchMode.SKIP\_WHITE\_SPACE))
+\end{DoxyCode}
+Search mode\+: allow backslash escape, skip between markers and skip white space. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad7e062e4d813140127bb184c5e040cc6}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_ad7e062e4d813140127bb184c5e040cc6}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+C\+O\+M\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+C\+O\+M\+\_\+\+WS}}
+\index{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+C\+O\+M\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+C\+O\+M\+\_\+\+WS}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+C\+O\+M\+\_\+\+WS}{SEARCH\_MODE\_\_COM\_WS}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+C\+O\+M\+\_\+\+WS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= Collections
+            .unmodifiableSet(EnumSet.of(SearchMode.SKIP\_BLOCK\_COMMENTS, SearchMode.SKIP\_LINE\_COMMENTS, 
+      SearchMode.SKIP\_WHITE\_SPACE))
+\end{DoxyCode}
+Search mode\+: skip block comments, skip line comments and skip white space. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a866b8f1784ccb509241bd1e090006dfb}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a866b8f1784ccb509241bd1e090006dfb}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+C\+O\+M\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+C\+O\+M\+\_\+\+WS}}
+\index{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+C\+O\+M\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+C\+O\+M\+\_\+\+WS}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+C\+O\+M\+\_\+\+WS}{SEARCH\_MODE\_\_MRK\_COM\_WS}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+C\+O\+M\+\_\+\+WS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= Collections.unmodifiableSet(
+            EnumSet.of(SearchMode.SKIP\_BETWEEN\_MARKERS, SearchMode.SKIP\_BLOCK\_COMMENTS, SearchMode.
+      SKIP\_LINE\_COMMENTS, SearchMode.SKIP\_WHITE\_SPACE))
+\end{DoxyCode}
+Search mode\+: skip between markers, skip block comments, skip line comments and skip white space. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_af6d3d63373df472a5518bd7dcc2ebcb7}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_af6d3d63373df472a5518bd7dcc2ebcb7}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+WS}}
+\index{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+WS@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+WS}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+WS}{SEARCH\_MODE\_\_MRK\_WS}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+M\+R\+K\+\_\+\+WS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= Collections
+            .unmodifiableSet(EnumSet.of(SearchMode.SKIP\_BETWEEN\_MARKERS, SearchMode.SKIP\_WHITE\_SPACE))
+\end{DoxyCode}
+Search mode\+: skip between markers and skip white space. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a358b0534d95ad61de34282abee33205a}\label{classcom_1_1mysql_1_1jdbc_1_1_string_utils_a358b0534d95ad61de34282abee33205a}} 
+\index{com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}!S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+N\+O\+NE@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+N\+O\+NE}}
+\index{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+N\+O\+NE@{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+N\+O\+NE}!com\+::mysql\+::jdbc\+::\+String\+Utils@{com\+::mysql\+::jdbc\+::\+String\+Utils}}
+\subsubsection{\texorpdfstring{S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+N\+O\+NE}{SEARCH\_MODE\_\_NONE}}
+{\footnotesize\ttfamily final Set$<$\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_string_utils_1_1_search_mode}{Search\+Mode}}$>$ com.\+mysql.\+jdbc.\+String\+Utils.\+S\+E\+A\+R\+C\+H\+\_\+\+M\+O\+D\+E\+\_\+\+\_\+\+N\+O\+NE = Collections.\+unmodifiable\+Set(Enum\+Set.\+none\+Of(Search\+Mode.\+class))\hspace{0.3cm}{\ttfamily [static]}}
+
+Empty search mode. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/String\+Utils.\+java\end{DoxyCompactItemize}

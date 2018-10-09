@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.JDBC4DatabaseMetaData.getProcedureOrFunctionColumnType" name="com.mysql.jdbc.JDBC4DatabaseMetaData.getProcedureOrFunctionColumnType">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_database_meta_data.html#a155ed928ee6454172e7e9eac80d923aa" title="com.mysql.jdbc.JDBC4Database\lMetaData.getColumnType" alt="" coords="306,5,519,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_database_meta_data_using_info_schema.html#af4f257273acbcd56b426db37f2fdf11c" title="com.mysql.jdbc.JDBC4Database\lMetaDataUsingInfoSchema.getColumnType" alt="" coords="276,71,549,112"/>
+</map>

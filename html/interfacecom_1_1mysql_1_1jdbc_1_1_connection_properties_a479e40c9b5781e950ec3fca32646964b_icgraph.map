@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseSqlStateCodes" name="com.mysql.jdbc.ConnectionProperties.setUseSqlStateCodes">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a5a221de19389e4c32fffb7532d8816ff" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseSqlStateCodes" alt="" coords="267,5,535,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a71f99bc9ca78dfeaa258b42946f7f2fd" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseSqlStateCodes" alt="" coords="269,71,532,112"/>
+</map>

@@ -1,0 +1,79 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler}{}\section{com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler}\index{com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler@{com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a3ac48bdd0688a9aa2b6e8f58b1b283cf}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a3ac48bdd0688a9aa2b6e8f58b1b283cf}} 
+void {\bfseries consume\+Event} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event}{Profiler\+Event}} evt)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a9f1d02071f12bd8d00621a7a371a0e2e}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a2754871ca8890f78c4997b33ae32d925}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties props)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A profile event handler that just logs to the standard logging mechanism of the J\+D\+BC driver. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a9f1d02071f12bd8d00621a7a371a0e2e}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a9f1d02071f12bd8d00621a7a371a0e2e}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler@{com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler@{com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a2754871ca8890f78c4997b33ae32d925}\label{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a2754871ca8890f78c4997b33ae32d925}} 
+\index{com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler@{com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler}!init@{init}}
+\index{init@{init}!com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler@{com\+::mysql\+::jdbc\+::profiler\+::\+Logging\+Profiler\+Event\+Handler}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once per connection that wants to use the extension
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver_a834c012e752a01d1ee435b3461bb8218}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this extension is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{com.\+mysql.\+jdbc.\+Extension}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/profiler/Logging\+Profiler\+Event\+Handler.\+java\end{DoxyCompactItemize}

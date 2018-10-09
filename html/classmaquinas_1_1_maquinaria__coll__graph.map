@@ -1,0 +1,5 @@
+<map id="maquinas.Maquinaria" name="maquinas.Maquinaria">
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="543,56,737,83"/>
+<area shape="rect" id="node5" href="$classmaquinas_1_1_modelo_columnas_tabla_maquina.html" title="maquinas.ModeloColumnasTabla\lMaquina" alt="" coords="533,167,747,209"/>
+<area shape="rect" id="node7" href="$classmaquinas_1_1_trazador_tabla_maquina.html" title="maquinas.TrazadorTablaMaquina" alt="" coords="221,204,433,231"/>
+</map>

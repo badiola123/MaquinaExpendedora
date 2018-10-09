@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.NonRegisteringDriver.database" name="com.mysql.jdbc.NonRegisteringDriver.database">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html#a834c012e752a01d1ee435b3461bb8218" title="com.mysql.jdbc.NonRegistering\lDriver.connect" alt="" coords="260,169,467,211"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#ad532c3e1663ec177fe6863bd0c8ca47d" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.getConnection" alt="" coords="517,5,729,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_mini_admin.html#a5177d105f0850fa5b293e71255803260" title="com.mysql.jdbc.MiniAdmin.\lMiniAdmin" alt="" coords="532,71,715,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1util_1_1_base_bug_report.html#a23d83d1297142eb136a1898cb339b77a" title="com.mysql.jdbc.util.Base\lBugReport.getConnection" alt="" coords="538,136,709,177"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a37a5b68fc2ee7b632c08744bc7579f29" title="testsuite.regression.Connection\lRegressionTest.testBug3554" alt="" coords="521,201,726,243"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a24c8f315d33aa8259b7777c43e225b24" title="testsuite.regression.Connection\lRegressionTest.testBug16224249" alt="" coords="515,267,732,308"/>
+<area shape="rect" id="node8" href="$classtestsuite_1_1simple_1_1_connection_test.html#a898cfadb7bf3141e3a364a0d47c824fc" title="testsuite.simple.Connection\lTest.testClusterConnection" alt="" coords="532,332,715,373"/>
+</map>

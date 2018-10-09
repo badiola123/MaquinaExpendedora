@@ -1,0 +1,8 @@
+<map id="testsuite.perf.LoadStorePerfTest" name="testsuite.perf.LoadStorePerfTest">
+<area shape="rect" id="node2" href="$classtestsuite_1_1perf_1_1_base_perf_test.html" title="testsuite.perf.BasePerfTest" alt="" coords="859,145,1037,172"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1_base_test_case.html" title="testsuite.BaseTestCase" alt="" coords="545,116,707,143"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_statement.html" title="com.mysql.jdbc.Statement" alt="" coords="239,56,418,83"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1mysql_1_1jdbc_1_1_wrapper.html" title="com.mysql.jdbc.Wrapper" alt="" coords="13,57,180,84"/>
+<area shape="rect" id="node8" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="237,111,420,137"/>
+<area shape="rect" id="node10" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="5,161,188,202"/>
+</map>

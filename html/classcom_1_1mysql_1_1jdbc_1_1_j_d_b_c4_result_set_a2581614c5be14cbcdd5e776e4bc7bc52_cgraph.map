@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.JDBC4ResultSet.getNCharacterStream" name="com.mysql.jdbc.JDBC4ResultSet.getNCharacterStream">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a1ef4220e1860ea8f9ab89180466c2bde" title="com.mysql.jdbc.ResultSet\lImpl.checkColumnBounds" alt="" coords="484,33,659,75"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_field.html#a7deff67d821ec5ec20a675db24b28c47" title="com.mysql.jdbc.Field.get\lEncoding" alt="" coords="251,59,419,100"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a941ea1683438a62fca25a1553e10e6e4" title="com.mysql.jdbc.ResultSet\lImpl.getCharacterStream" alt="" coords="248,124,423,165"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a451fa419a4cdd5a02efd996428fcd0c4" title="com.mysql.jdbc.ResultSet\lImpl.checkClosed" alt="" coords="720,5,895,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="943,35,1143,76"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_row.html#a96243f8e7eb839c4c233a2e4aa1cfb6b" title="com.mysql.jdbc.ResultSet\lRow.isNull" alt="" coords="720,137,895,179"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#aa4b4211a652d497532ff8e857c0cb7a5" title="com.mysql.jdbc.ResultSet\lImpl.getNativeCharacterStream" alt="" coords="471,153,672,195"/>
+</map>

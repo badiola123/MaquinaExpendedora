@@ -1,0 +1,26 @@
+<map id="com.mysql.jdbc.SQLError.createSQLFeatureNotSupportedException" name="com.mysql.jdbc.SQLError.createSQLFeatureNotSupportedException">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy.html#ac227e92bb718704cd526d8bc728303c7" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnectionProxy.shutdownServer" alt="" coords="288,5,548,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_blob_from_locator.html#abf802cf4f616472a72e73540b2a06265" title="com.mysql.jdbc.BlobFromLocator.set\lBinaryStream" alt="" coords="299,71,537,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a2e3bce3038d1c58eedcfdfe49c82f904" title="com.mysql.jdbc.Connection\lImpl.rollback" alt="" coords="327,136,509,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a435eccbc94fa43a060e987fa8236fbe8" title="com.mysql.jdbc.PreparedStatement.set\lArray" alt="" coords="292,201,544,243"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ae89f89fcb2083ed1bc44a04a7a5757b4" title="com.mysql.jdbc.PreparedStatement.setRef" alt="" coords="283,267,553,294"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a6b06205205974e4964705258ce1c90df" title="com.mysql.jdbc.ResultSet\lImpl.getArray" alt="" coords="331,319,505,360"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a76b1a9c9433c919ed45a65c8ace0705f" title="com.mysql.jdbc.ResultSet\lImpl.getNativeArray" alt="" coords="331,384,505,425"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#ad943614b8eb9828bacf207844265f8b5" title="com.mysql.jdbc.ResultSet\lImpl.getNativeRef" alt="" coords="331,449,505,491"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a1ac9c4862814fa6b5439c71a4f4cdac8" title="com.mysql.jdbc.ResultSet\lImpl.getRef" alt="" coords="331,515,505,556"/>
+<area shape="rect" id="node13" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a1b064fbd329b324c8acac4a7ef61d4b4" title="com.mysql.jdbc.ResultSet\lImpl.rowDeleted" alt="" coords="331,580,505,621"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#affa56f32911dd7a8e11cb24b17afc125" title="com.mysql.jdbc.ResultSet\lImpl.rowInserted" alt="" coords="331,645,505,687"/>
+<area shape="rect" id="node15" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a6a1bb16fac14ca4cb15ad07292a371ae" title="com.mysql.jdbc.ResultSet\lImpl.rowUpdated" alt="" coords="331,711,505,752"/>
+<area shape="rect" id="node16" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a0661c3eec2182123467ad3461928515c" title="com.mysql.jdbc.ResultSet\lImpl.updateArray" alt="" coords="331,776,505,817"/>
+<area shape="rect" id="node17" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a30158cf109fab3d9e3842ac81fae489d" title="com.mysql.jdbc.ResultSet\lImpl.updateClob" alt="" coords="331,841,505,883"/>
+<area shape="rect" id="node19" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a0d0258dbd474e1f0519f6d9e4166c9d3" title="com.mysql.jdbc.ResultSet\lImpl.updateRef" alt="" coords="331,907,505,948"/>
+<area shape="rect" id="node20" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#a5b7edfa5f5447b3ff8d511f524021031" title="com.mysql.jdbc.ServerPrepared\lStatement.setArray" alt="" coords="315,972,521,1013"/>
+<area shape="rect" id="node21" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#a5f91135ca91172666ffc7998eb6ee95c" title="com.mysql.jdbc.ServerPrepared\lStatement.setRef" alt="" coords="315,1037,521,1079"/>
+<area shape="rect" id="node22" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#a366c36761206d2104213b5aeaaaeb2b9" title="com.mysql.jdbc.ServerPrepared\lStatement.setUnicodeStream" alt="" coords="315,1103,521,1144"/>
+<area shape="rect" id="node23" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a64824468904a1fc69bc116d10d4a274f" title="com.mysql.jdbc.Updatable\lResultSet.rowDeleted" alt="" coords="330,1168,506,1209"/>
+<area shape="rect" id="node24" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a50cd8500080d2403e86b968b0cd9718b" title="com.mysql.jdbc.Updatable\lResultSet.rowInserted" alt="" coords="330,1233,506,1275"/>
+<area shape="rect" id="node25" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a220d6c10abf185de3588e99132f5f68f" title="com.mysql.jdbc.Updatable\lResultSet.rowUpdated" alt="" coords="330,1299,506,1340"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a47d8389da497a88335d4ef11c611e8f7" title="com.mysql.jdbc.ResultSet\lImpl.getArray" alt="" coords="601,319,776,360"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#af8b105dab46bd80b9d201a544e993e68" title="com.mysql.jdbc.ResultSet\lImpl.getRef" alt="" coords="601,515,776,556"/>
+<area shape="rect" id="node18" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a9b169ffea6210a494fc74ead38e60d17" title="com.mysql.jdbc.ResultSet\lImpl.updateClob" alt="" coords="601,841,776,883"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.log.Log" name="com.mysql.jdbc.log.Log">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1log_1_1_jdk14_logger.html" title="com.mysql.jdbc.log.Jdk14\lLogger" alt="" coords="230,5,403,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1log_1_1_null_logger.html" title="com.mysql.jdbc.log.NullLogger" alt="" coords="217,71,417,98"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1log_1_1_slf4_j_logger.html" title="com.mysql.jdbc.log.Slf4JLogger" alt="" coords="213,122,420,149"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1log_1_1_standard_logger.html" title="com.mysql.jdbc.log.Standard\lLogger" alt="" coords="221,173,412,215"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1simple_1_1_test_bug57662_logger.html" title="testsuite.simple.TestBug57662\lLogger" alt="" coords="468,173,669,215"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="com.mysql.jdbc.JDBC42PreparedStatement" name="com.mysql.jdbc.JDBC42PreparedStatement">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_prepared_statement.html" title="com.mysql.jdbc.JDBC4Prepared\lStatement" alt="" coords="1608,534,1819,575"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html" title="com.mysql.jdbc.PreparedStatement" alt="" coords="1328,541,1559,568"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html" title="com.mysql.jdbc.StatementImpl" alt="" coords="943,367,1145,393"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_statement.html" title="com.mysql.jdbc.Statement" alt="" coords="535,31,713,57"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1mysql_1_1jdbc_1_1_wrapper.html" title="com.mysql.jdbc.Wrapper" alt="" coords="249,56,416,83"/>
+<area shape="rect" id="node10" href="$interfacecom_1_1mysql_1_1jdbc_1_1_ping_target.html" title="com.mysql.jdbc.PingTarget" alt="" coords="534,199,714,225"/>
+<area shape="rect" id="node11" href="$interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods.html" title="com.mysql.jdbc.ResultSet\lInternalMethods" alt="" coords="537,250,711,291"/>
+<area shape="rect" id="node13" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="511,316,737,343"/>
+<area shape="rect" id="node14" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="241,311,424,337"/>
+<area shape="rect" id="node16" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="5,350,188,391"/>
+<area shape="rect" id="node20" href="$classcom_1_1mysql_1_1jdbc_1_1_single_byte_charset_converter.html" title="com.mysql.jdbc.SingleByte\lCharsetConverter" alt="" coords="533,549,715,590"/>
+<area shape="rect" id="node21" href="$interfacecom_1_1mysql_1_1jdbc_1_1profiler_1_1_profiler_event_handler.html" title="com.mysql.jdbc.profiler.\lProfilerEventHandler" alt="" coords="544,614,704,655"/>
+<area shape="rect" id="node22" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html" title="com.mysql.jdbc.Extension" alt="" coords="245,621,421,648"/>
+<area shape="rect" id="node26" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_parameter_metadata.html" title="com.mysql.jdbc.MysqlParameter\lMetadata" alt="" coords="937,723,1151,765"/>
+<area shape="rect" id="node28" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_meta_data.html" title="com.mysql.jdbc.ResultSet\lMetaData" alt="" coords="537,782,711,823"/>
+<area shape="rect" id="node30" href="$classcom_1_1mysql_1_1jdbc_1_1_field.html" title="com.mysql.jdbc.Field" alt="" coords="259,815,406,841"/>
+</map>

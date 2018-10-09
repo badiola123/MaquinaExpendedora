@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Util.loadExtensions" name="com.mysql.jdbc.Util.loadExtensions">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a9585acb209b381778e2d9ffde265e2f9" title="com.mysql.jdbc.StringUtils.split" alt="" coords="219,5,425,32"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html#a79427811058193260bd4df0c38414e88" title="com.mysql.jdbc.Extension.init" alt="" coords="223,56,421,83"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="222,107,422,149"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setAutoReconnect" name="com.mysql.jdbc.ConnectionProperties.setAutoReconnect">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ab60e87c0bf38561dcfae0c6a3524ef27" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setAutoReconnect" alt="" coords="245,5,492,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a5444b292e218f16cfc2baadf784c35ab" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setAutoReconnect" alt="" coords="247,71,490,112"/>
+</map>

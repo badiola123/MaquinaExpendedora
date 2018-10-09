@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.ProfilerEventHandlerFactory.getInstance" name="com.mysql.jdbc.ProfilerEventHandlerFactory.getInstance">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_row_data_dynamic.html#a284d8e7db5b779d4c20de17f1f5b8c5c" title="com.mysql.jdbc.RowDataDynamic.close" alt="" coords="244,5,500,32"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a2d3783c9f776e2eb863b449b21825b4d" title="com.mysql.jdbc.Statement\lImpl.StatementImpl" alt="" coords="283,57,461,98"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a56e7da4266eef885ba3dfc5005e30525" title="com.mysql.jdbc.Updatable\lResultSet.realClose" alt="" coords="284,122,460,163"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ad3cdc3e336070c453b5878ce9ba8a0cc" title="com.mysql.jdbc.PreparedStatement.execute\lPreparedBatchAsMultiStatement" alt="" coords="548,57,828,98"/>
+</map>

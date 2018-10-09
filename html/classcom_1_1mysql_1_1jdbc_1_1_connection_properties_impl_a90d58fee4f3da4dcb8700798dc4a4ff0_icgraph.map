@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionPropertiesImpl.getUseOldUTF8Behavior" name="com.mysql.jdbc.ConnectionPropertiesImpl.getUseOldUTF8Behavior">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a66f46efa858fb96251057b1dd48ad028" title="com.mysql.jdbc.Connection\lImpl.getEncodingForIndex" alt="" coords="304,5,487,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a2585f67a62bdf6127174e9f7dbc8a0b6" title="com.mysql.jdbc.Connection\lImpl.getCharsetNameForIndex" alt="" coords="535,5,732,47"/>
+</map>

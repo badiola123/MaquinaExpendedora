@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.PreparedStatement.computeMaxParameterSetSizeAndBatchSize" name="com.mysql.jdbc.PreparedStatement.computeMaxParameterSetSizeAndBatchSize">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a2de0ab2631bf812f061ea336302f2b62" title="com.mysql.jdbc.PreparedStatement.compute\lBatchSize" alt="" coords="337,39,621,80"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ad3cdc3e336070c453b5878ce9ba8a0cc" title="com.mysql.jdbc.PreparedStatement.execute\lPreparedBatchAsMultiStatement" alt="" coords="669,5,949,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4b54450205db6b099922240e4f2e72a0" title="com.mysql.jdbc.PreparedStatement.execute\lBatchedInserts" alt="" coords="669,71,949,112"/>
+</map>

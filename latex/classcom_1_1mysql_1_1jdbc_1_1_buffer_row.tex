@@ -1,0 +1,112 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row}{}\section{com.\+mysql.\+jdbc.\+Buffer\+Row Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row}\index{com.\+mysql.\+jdbc.\+Buffer\+Row@{com.\+mysql.\+jdbc.\+Buffer\+Row}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Buffer\+Row\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classcom_1_1mysql_1_1jdbc_1_1_buffer_row__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Buffer\+Row\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classcom_1_1mysql_1_1jdbc_1_1_buffer_row__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a06cd63c4f7082a4d07d915ef3d1f3be4}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a06cd63c4f7082a4d07d915ef3d1f3be4}} 
+{\bfseries Buffer\+Row} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} buf, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} fields, boolean is\+Binary\+Encoded, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_af8dd4b86f6fdb083d437cedb0a98bc4f}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_af8dd4b86f6fdb083d437cedb0a98bc4f}} 
+synchronized void {\bfseries close\+Open\+Streams} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_aa2e61cedf8ba72ca850b6761dfad96cd}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_aa2e61cedf8ba72ca850b6761dfad96cd}} 
+synchronized Input\+Stream {\bfseries get\+Binary\+Input\+Stream} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a53c9aedd636520eb969cef23f8b235b0}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a53c9aedd636520eb969cef23f8b235b0}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries get\+Column\+Value} (int index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_aea05396adfbb0e15800b5bd7d77bb426}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_aea05396adfbb0e15800b5bd7d77bb426}} 
+int {\bfseries get\+Int} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a7d4c72a0b8158e687f9f2a8ee634d6ed}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a7d4c72a0b8158e687f9f2a8ee634d6ed}} 
+long {\bfseries get\+Long} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a0fd55a0504f2584239fabacc19a3d8b0}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a0fd55a0504f2584239fabacc19a3d8b0}} 
+double {\bfseries get\+Native\+Double} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a1a968f3ef81d6c1c0101d36a0495ec26}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a1a968f3ef81d6c1c0101d36a0495ec26}} 
+float {\bfseries get\+Native\+Float} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_afec9632b717c3aa97be7c8c18f516665}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_afec9632b717c3aa97be7c8c18f516665}} 
+int {\bfseries get\+Native\+Int} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a411de1bf3c9177a5a8dd50f35fece3b8}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a411de1bf3c9177a5a8dd50f35fece3b8}} 
+long {\bfseries get\+Native\+Long} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a12b5a5d9edf9701ecf8d54147ed59e21}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a12b5a5d9edf9701ecf8d54147ed59e21}} 
+short {\bfseries get\+Native\+Short} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_abcd45c08d370ae0d06e730576925bd39}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_abcd45c08d370ae0d06e730576925bd39}} 
+Timestamp {\bfseries get\+Native\+Timestamp} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a6b8f15e913a13da69d00a6f57aa9cfaa}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a6b8f15e913a13da69d00a6f57aa9cfaa}} 
+Reader {\bfseries get\+Reader} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a84df9c4bdfd795bbc33ea88ca46ea651}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a84df9c4bdfd795bbc33ea88ca46ea651}} 
+String {\bfseries get\+String} (int column\+Index, String encoding, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_ab35226bf069aac27262110f02ee1adf9}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_ab35226bf069aac27262110f02ee1adf9}} 
+Time {\bfseries get\+Time\+Fast} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a92b1616c9064bca92188be1ad0d4c9de}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a92b1616c9064bca92188be1ad0d4c9de}} 
+Timestamp {\bfseries get\+Timestamp\+Fast} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_abfb8a51661b4bfb8efd5ad783b969aa2}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_abfb8a51661b4bfb8efd5ad783b969aa2}} 
+boolean {\bfseries is\+Floating\+Point\+Number} (int index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a06546e7698baa4d5d8afc03fba3a66fd}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a06546e7698baa4d5d8afc03fba3a66fd}} 
+boolean {\bfseries is\+Null} (int index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a4d3f439b464359c6ffa543390c06254a}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a4d3f439b464359c6ffa543390c06254a}} 
+long {\bfseries length} (int index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_aec309feb8e5ff10fbd19f12b6d38ffdb}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_aec309feb8e5ff10fbd19f12b6d38ffdb}} 
+void {\bfseries set\+Column\+Value} (int index, byte\mbox{[}$\,$\mbox{]} value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a245f44766c75f6711cf5f5358d9ff1d9}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a245f44766c75f6711cf5f5358d9ff1d9}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_row}{Result\+Set\+Row}} {\bfseries set\+Metadata} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} f)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_ac01e3eeb9f6d527d3142388e57d14e47}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_ac01e3eeb9f6d527d3142388e57d14e47}} 
+Date {\bfseries get\+Date\+Fast} (int column\+Index, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs, Calendar target\+Calendar)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a59a14b5e79d08e93f8bde1e9fdab27d4}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a59a14b5e79d08e93f8bde1e9fdab27d4}} 
+java.\+sql.\+Date {\bfseries get\+Native\+Date} (int column\+Index, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs, Calendar cal)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a3ff9fd5c2b89f52616226cb99794f98d}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a3ff9fd5c2b89f52616226cb99794f98d}} 
+Object {\bfseries get\+Native\+Date\+Time\+Value} (int column\+Index, Calendar target\+Calendar, int jdbc\+Type, int mysql\+Type, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_ab0064fcd7f830d30f7c0cce34c42fb27}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_ab0064fcd7f830d30f7c0cce34c42fb27}} 
+Time {\bfseries get\+Native\+Time} (int column\+Index, Calendar target\+Calendar, Time\+Zone tz, boolean roll\+Forward, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl}{Result\+Set\+Impl}} rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a41eddd26f3db3b8e0083e63f50a1f64d}\label{classcom_1_1mysql_1_1jdbc_1_1_buffer_row_a41eddd26f3db3b8e0083e63f50a1f64d}} 
+int {\bfseries get\+Bytes\+Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A Row\+Holder implementation that holds one row packet (which is re-\/used by the driver, and thus saves memory allocations), and tries when possible to avoid allocations to break out the results as individual byte\mbox{[}\mbox{]}s.
+
+(this isn\textquotesingle{}t possible when doing things like reading floating point values). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Buffer\+Row.\+java\end{DoxyCompactItemize}

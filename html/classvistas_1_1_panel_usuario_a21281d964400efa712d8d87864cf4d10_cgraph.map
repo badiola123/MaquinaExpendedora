@@ -1,0 +1,5 @@
+<map id="vistas.PanelUsuario.PanelUsuario" name="vistas.PanelUsuario.PanelUsuario">
+<area shape="rect" id="node2" href="$classclientes_1_1_clientela.html#ae120fcd5a51e1d17d11e3b36ca1d8290" title="clientes.Clientela.agrupar" alt="" coords="227,5,395,32"/>
+<area shape="rect" id="node4" href="$classclientes_1_1_cliente.html#afbd9530580077a88e7b5f0522d56ee6f" title="clientes.Cliente.getId" alt="" coords="239,56,382,83"/>
+<area shape="rect" id="node3" href="$interfaceclientes_1_1_mapeador.html#a503d8f7a0b5debb1eab28d7ff4c717f5" title="clientes.Mapeador.map" alt="" coords="443,5,600,32"/>
+</map>

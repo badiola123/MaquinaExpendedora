@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.ExceptionInterceptor" name="com.mysql.jdbc.ExceptionInterceptor">
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_error_reporting_exception_interceptor.html" title="com.mysql.fabric.jdbc.Error\lReportingExceptionInterceptor" alt="" coords="495,5,691,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain.html" title="com.mysql.jdbc.Connection\lImpl.ExceptionInterceptorChain" alt="" coords="491,71,694,112"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html" title="com.mysql.jdbc.Extension" alt="" coords="5,191,181,218"/>
+</map>

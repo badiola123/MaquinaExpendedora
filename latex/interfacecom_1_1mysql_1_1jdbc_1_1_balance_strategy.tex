@@ -1,0 +1,79 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy}{}\section{com.\+mysql.\+jdbc.\+Balance\+Strategy Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy}\index{com.\+mysql.\+jdbc.\+Balance\+Strategy@{com.\+mysql.\+jdbc.\+Balance\+Strategy}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Balance\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Balance\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy_a9cebc8dcd86aaf1c7dcb458cc7755540}{pick\+Connection}} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}} proxy, List$<$ String $>$ configured\+Hosts, Map$<$ String, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} $>$ live\+Connections, long\mbox{[}$\,$\mbox{]} response\+Times, int num\+Retries)  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement this interface to provide a new load balancing strategy for U\+R\+Ls of the form \char`\"{}jdbc\+:mysql\+:loadbalance\+://..\char`\"{}, and provide the implementation class name as the configuration parameter \char`\"{}load\+Balance\+Strategy\char`\"{}.
+
+The driver will not pass in a \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} instance when calling \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{init()}}, but it will pass in the Properties, otherwise it acts like a normal \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}}.
+
+One instance of a strategy {\itshape per} J\+D\+BC connection instance will be created. If you need singleton-\/like behavior, you\textquotesingle{}re on your own to provide it. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy_a9cebc8dcd86aaf1c7dcb458cc7755540}\label{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy_a9cebc8dcd86aaf1c7dcb458cc7755540}} 
+\index{com\+::mysql\+::jdbc\+::\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Balance\+Strategy}!pick\+Connection@{pick\+Connection}}
+\index{pick\+Connection@{pick\+Connection}!com\+::mysql\+::jdbc\+::\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Balance\+Strategy}}
+\subsubsection{\texorpdfstring{pick\+Connection()}{pickConnection()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} com.\+mysql.\+jdbc.\+Balance\+Strategy.\+pick\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}}}]{proxy,  }\item[{List$<$ String $>$}]{configured\+Hosts,  }\item[{Map$<$ String, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} $>$}]{live\+Connections,  }\item[{long \mbox{[}$\,$\mbox{]}}]{response\+Times,  }\item[{int}]{num\+Retries }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called by the driver to pick a new connection to route requests over.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy} & the Invocation\+Handler that deals with actual method calls to the J\+D\+BC connection, and serves as a factory for new connections for this strategy via the create\+Connection\+For\+Host() method.\\
+\hline
+\end{DoxyParams}
+This proxy takes care of maintaining the response time list, map of host/ports to live connections, and taking connections out of the live connections map if they receive a network-\/related error while they are in use by the application. 
+\begin{DoxyParams}{Parameters}
+{\em configured\+Hosts} & the list of hosts/ports (in \char`\"{}host\+:port\char`\"{} form) as passed in by the user. \\
+\hline
+{\em live\+Connections} & a map of host/ports to \char`\"{}live\char`\"{} connections to them. \\
+\hline
+{\em response\+Times} & the list of response times for a {\bfseries transaction} for each host in the configured hosts list. \\
+\hline
+{\em num\+Retries} & the number of times the driver expects this strategy to re-\/try connection attempts if creating a new connection fails. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the physical J\+D\+BC connection for the application to use, based upon the strategy employed. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a new connection can not be found or created by this strategy.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy_a8ab535276152fa3a1aa8621cf3fb1c68}{Load\+Balanced\+Connection\+Proxy\+::create\+Connection\+For\+Host(\+String)}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_sequential_balance_strategy_a382180c797efcc912292dc511beafa4d}{com.\+mysql.\+jdbc.\+Sequential\+Balance\+Strategy}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_random_balance_strategy_ab621c7b0143450318d7bb73a3a176651}{com.\+mysql.\+jdbc.\+Random\+Balance\+Strategy}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ad59590e6022784ddedcfb060173aed21}{com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Balance\+Strategy.\+java\end{DoxyCompactItemize}

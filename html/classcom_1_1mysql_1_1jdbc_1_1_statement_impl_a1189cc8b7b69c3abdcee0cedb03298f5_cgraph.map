@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.StatementImpl.disableStreamingResults" name="com.mysql.jdbc.StatementImpl.disableStreamingResults">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a88caedee8619aad1351c9edea352c37e" title="com.mysql.jdbc.Statement\lImpl.checkClosed" alt="" coords="701,56,880,97"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a5e92dd77e4ff9bf65cff4f50e63a1045" title="com.mysql.jdbc.Statement\lImpl.setFetchSize" alt="" coords="248,60,427,101"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="928,100,1128,141"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a5961bd894f79a6b3e2dedc7726527aab" title="com.mysql.jdbc.Statement\lImpl.getMaxRows" alt="" coords="475,85,653,127"/>
+</map>

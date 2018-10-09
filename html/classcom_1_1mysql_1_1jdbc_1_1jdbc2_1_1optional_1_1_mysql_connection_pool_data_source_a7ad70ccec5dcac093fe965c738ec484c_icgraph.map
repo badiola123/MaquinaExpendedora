@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource.getPooledConnection" name="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource.getPooledConnection">
+<area shape="rect" id="node2" href="$classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test.html#a15cc5d9ae0ab3041f166565d1dc1e577" title="testsuite.regression.jdbc4.\lConnectionRegressionTest.testBug62452" alt="" coords="292,5,553,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_data_source_regression_test.html#a549c69563bb8fff0dbc64c72d6867f69" title="testsuite.regression.Data\lSourceRegressionTest.testBug4808" alt="" coords="307,71,538,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1regression_1_1_data_source_regression_test.html#afbc8307057c46d97d66b67f78f567cb5" title="testsuite.regression.Data\lSourceRegressionTest.testBug32101" alt="" coords="304,136,541,177"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a84dc5a1748d9651df8f09ae7b8e2fd2b" title="testsuite.regression.Statement\lRegressionTest.testBug58728" alt="" coords="323,201,523,243"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1regression_1_1_pooled_connection_regression_test.html#ae448a81e77d17829c9e922b7859ef609" title="testsuite.regression.Pooled\lConnectionRegressionTest.testBug35489" alt="" coords="292,267,553,308"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1simple_1_1_data_source_test.html#a238136c42e16d78196d3a6104c43cce5" title="testsuite.simple.DataSource\lTest.testChangeUserAndCharsets" alt="" coords="313,332,532,373"/>
+</map>

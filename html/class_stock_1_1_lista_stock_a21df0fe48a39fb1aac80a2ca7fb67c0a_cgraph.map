@@ -1,0 +1,6 @@
+<map id="Stock.ListaStock.ListaStock" name="Stock.ListaStock.ListaStock">
+<area shape="rect" id="node2" href="$class_stock_1_1_lista_stock.html#ae43d6e1304e10935ed275f770f6fd743" title="Stock.ListaStock.cargarDatos" alt="" coords="241,56,437,83"/>
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_comandos.html#aa1dc46cfa52b931d7252da826880372d" title="conexionSQL.Comandos.select" alt="" coords="485,5,691,32"/>
+<area shape="rect" id="node4" href="$classconexion_s_q_l_1_1_my_data_access.html#ae8d04039a000d2b3e7dc72c99be7c551" title="conexionSQL.MyDataAccess.get\lQuery" alt="" coords="739,23,953,65"/>
+<area shape="rect" id="node5" href="$classvistas_1_1_principal.html#a004b49e26858496e0f5097a079b3aba5" title="vistas.Principal.getTablastock" alt="" coords="491,107,685,133"/>
+</map>

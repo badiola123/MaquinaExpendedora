@@ -1,0 +1,13 @@
+<map id="com.mysql.jdbc.MysqlIO.getResultSet" name="com.mysql.jdbc.MysqlIO.getResultSet">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a97388b336bdd49fcbf3ee8f1e305e11a" title="com.mysql.jdbc.MysqlIO.read\lPacket" alt="" coords="257,196,452,238"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a2da4fe16e54a2d70893f1b5da3bdb1af" title="com.mysql.jdbc.MysqlIO.unpack\lField" alt="" coords="249,327,461,368"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a9b5ceba1f2420b68450dd1f8ae9ad53a" title="com.mysql.jdbc.MysqlIO.skip\lPacket" alt="" coords="257,262,452,303"/>
+<area shape="rect" id="node10" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#af05f0b2545de1a6a1ca7d41f467516d3" title="com.mysql.jdbc.Connection.version\lMeetsMinimum" alt="" coords="241,392,468,434"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a3d7a3b48520675c00358f995af291fbe" title="com.mysql.jdbc.ResultSet\lImpl.setFetchSize" alt="" coords="267,28,442,70"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a35b3e85f82755ba047023c6094ab5cd6" title="com.mysql.jdbc.MysqlIO.force\lClose" alt="" coords="552,262,751,303"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="835,58,1035,99"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#ae709b9204f54ce98657cd4133619961b" title="com.mysql.jdbc.StringUtils.dump\lAsHex" alt="" coords="544,327,759,368"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html#a3faf787772351caedf8e95f28c09c4cd" title="com.mysql.jdbc.MySQLConnection.getLog" alt="" coords="516,145,787,172"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1mysql_1_1jdbc_1_1log_1_1_log.html#a8946382e4cf99819a43cdb3783fd0ee3" title="com.mysql.jdbc.log.Log.log\lTrace" alt="" coords="561,196,742,238"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a451fa419a4cdd5a02efd996428fcd0c4" title="com.mysql.jdbc.ResultSet\lImpl.checkClosed" alt="" coords="564,28,739,70"/>
+</map>

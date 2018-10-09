@@ -1,0 +1,123 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory}{}\section{com.\+mysql.\+jdbc.\+Socket\+Factory Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory}\index{com.\+mysql.\+jdbc.\+Socket\+Factory@{com.\+mysql.\+jdbc.\+Socket\+Factory}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Socket\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Socket \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_adc5277dd008da61b24261a983202f5bf}{after\+Handshake}} ()  throws Socket\+Exception, I\+O\+Exception
+\item 
+Socket \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_aa9a78553a76681f49c734aaa3f8f126b}{before\+Handshake}} ()  throws Socket\+Exception, I\+O\+Exception
+\item 
+Socket \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_a2e5061cef1109ab4689437fe177c4ffe}{connect}} (String host, int port\+Number, Properties props)  throws Socket\+Exception, I\+O\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface to allow pluggable socket creation in the driver 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_adc5277dd008da61b24261a983202f5bf}\label{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_adc5277dd008da61b24261a983202f5bf}} 
+\index{com\+::mysql\+::jdbc\+::\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Socket\+Factory}!after\+Handshake@{after\+Handshake}}
+\index{after\+Handshake@{after\+Handshake}!com\+::mysql\+::jdbc\+::\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{after\+Handshake()}{afterHandshake()}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+jdbc.\+Socket\+Factory.\+after\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Socket\+Exception, I\+O\+Exception}
+
+Called by the driver after issuing the My\+S\+QL protocol handshake and reading the results of the handshake.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Socket\+Exception} & if a socket error occurs \\
+\hline
+{\em I\+O\+Exception} & if an I/O error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+the socket to use after the handshake 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_ab50d6b1a289f6f7205ab9ee2a2492673}{testsuite.\+Unreliable\+Socket\+Factory}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_abcc02b328b87ff64d3f7e6556af8a6ce}{com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory_a7387cf40cb31ead4c39dcc642d1980b5}{com.\+mysql.\+jdbc.\+Standard\+Socket\+Factory}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_aa9a78553a76681f49c734aaa3f8f126b}\label{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_aa9a78553a76681f49c734aaa3f8f126b}} 
+\index{com\+::mysql\+::jdbc\+::\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Socket\+Factory}!before\+Handshake@{before\+Handshake}}
+\index{before\+Handshake@{before\+Handshake}!com\+::mysql\+::jdbc\+::\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{before\+Handshake()}{beforeHandshake()}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+jdbc.\+Socket\+Factory.\+before\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Socket\+Exception, I\+O\+Exception}
+
+Called by the driver before issuing the My\+S\+QL protocol handshake. Should return the socket instance that should be used during the handshake.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Socket\+Exception} & if a socket error occurs \\
+\hline
+{\em I\+O\+Exception} & if an I/O error occurs\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+the socket to use before the handshake 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_ad65b14e35905d6b36bf1e93c5b0c90e2}{testsuite.\+Unreliable\+Socket\+Factory}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ad9b744457afb6727e696dc11e69c4b15}{com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory_a0fc01cf46005340dec4113471621f792}{com.\+mysql.\+jdbc.\+Standard\+Socket\+Factory}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_aa9a78553a76681f49c734aaa3f8f126b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_a2e5061cef1109ab4689437fe177c4ffe}\label{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_a2e5061cef1109ab4689437fe177c4ffe}} 
+\index{com\+::mysql\+::jdbc\+::\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Socket\+Factory}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::jdbc\+::\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+jdbc.\+Socket\+Factory.\+connect (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{int}]{port\+Number,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws Socket\+Exception, I\+O\+Exception}
+
+Creates a new socket using the given properties. Properties are parsed by the driver from the U\+RL. All properties other than sensitive ones (user and password) are passed to this method. The driver will instantiate the socket factory with the class name given in the property "socket\+Factory", where the standard is {\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory}{com.\+mysql.\+jdbc.\+Standard\+Socket\+Factory}}} Implementing classes are responsible for handling synchronization of this method (if needed).
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & the hostname passed in the J\+D\+BC U\+RL. It will be a single hostname, as the driver parses multi-\/hosts (for failover) and calls this method for each host connection attempt.\\
+\hline
+{\em port\+Number} & the port number to connect to (if required).\\
+\hline
+{\em props} & properties passed to the driver via the U\+RL and/or properties instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a socket connected to the given host 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Socket\+Exception} & if a socket error occurs \\
+\hline
+{\em I\+O\+Exception} & if an I/O error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_a11fcef05ddc58b721b102fc810d12d5f}{com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory}}, \mbox{\hyperlink{classtestsuite_1_1_unreliable_socket_factory_aa23b6bb1ed436f99adc8e51f6b86d641}{testsuite.\+Unreliable\+Socket\+Factory}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory_a3b3577f8cc0de73aa70e6f672e066c6f}{com.\+mysql.\+jdbc.\+Standard\+Socket\+Factory}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_a2e5061cef1109ab4689437fe177c4ffe_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Socket\+Factory.\+java\end{DoxyCompactItemize}

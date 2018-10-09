@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setTinyInt1isBit" name="com.mysql.jdbc.ConnectionProperties.setTinyInt1isBit">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a6cad9c36cb924008caf164e37c618362" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setTinyInt1isBit" alt="" coords="236,5,465,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a7f6ba35d4da5c8ab2972086f48f02227" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setTinyInt1isBit" alt="" coords="239,71,463,112"/>
+</map>

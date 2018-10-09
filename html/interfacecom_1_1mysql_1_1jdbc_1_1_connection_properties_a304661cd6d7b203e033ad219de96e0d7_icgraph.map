@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setTraceProtocol" name="com.mysql.jdbc.ConnectionProperties.setTraceProtocol">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a126325f8a5fd6f8b6800a4b8bb9a0131" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setTraceProtocol" alt="" coords="236,5,475,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#aa661c53930b9d9af7528cf6cf24a2fce" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setTraceProtocol" alt="" coords="239,71,472,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1regression_1_1_string_regression_test.html#abcc37c5fb4c57b3f201afaadbc55ee13" title="testsuite.regression.String\lRegressionTest.testLatin1Encoding" alt="" coords="242,136,469,177"/>
+</map>

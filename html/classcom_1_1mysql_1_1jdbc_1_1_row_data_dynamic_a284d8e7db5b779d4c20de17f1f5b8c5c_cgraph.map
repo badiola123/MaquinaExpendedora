@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.RowDataDynamic.close" name="com.mysql.jdbc.RowDataDynamic.close">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_row_data_dynamic.html#af940fe3daed4a966db30feb64581dfe6" title="com.mysql.jdbc.RowDataDynamic.next" alt="" coords="309,5,560,32"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#a8097aba9e8a5a513b9dec2c4bfb04fd2" title="com.mysql.jdbc.Connection\lProperties.getClobberStreaming\lResults" alt="" coords="331,56,538,112"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#ac3d940436d5babe33067c3f75817e9a9" title="com.mysql.jdbc.Connection\lProperties.getUseUsageAdvisor" alt="" coords="332,137,537,178"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_profiler_event_handler_factory.html#a08c2982b1dba0c8012f879d1ea77ba69" title="com.mysql.jdbc.ProfilerEvent\lHandlerFactory.getInstance" alt="" coords="339,202,530,243"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="335,267,535,309"/>
+</map>

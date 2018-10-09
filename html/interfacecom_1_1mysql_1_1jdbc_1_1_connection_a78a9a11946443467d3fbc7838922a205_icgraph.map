@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.Connection.isInGlobalTx" name="com.mysql.jdbc.Connection.isInGlobalTx">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a62dab37c7e8a78cbb34735cf016b9591" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.isInGlobalTx" alt="" coords="251,104,461,145"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a7a8d4c611693701c71532835d4f1fffa" title="com.mysql.jdbc.MultiHost\lMySQLConnection.isInGlobalTx" alt="" coords="253,169,459,211"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ac27aa87d5bd9512af3870bd2a55af58d" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setAutoCommit" alt="" coords="509,5,740,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a6b97c71da72c7bb460e420e03078cb53" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setSavepoint" alt="" coords="517,71,732,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a2765c010785f1fc2cbed1ac07c28a577" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.commit" alt="" coords="523,136,726,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a970363042f006042fefc3c7a3f2d93f1" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.rollback" alt="" coords="523,201,726,243"/>
+</map>

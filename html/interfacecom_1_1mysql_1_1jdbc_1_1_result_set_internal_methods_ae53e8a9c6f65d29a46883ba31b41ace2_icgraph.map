@@ -1,0 +1,17 @@
+<map id="com.mysql.jdbc.ResultSetInternalMethods.getUpdateID" name="com.mysql.jdbc.ResultSetInternalMethods.getUpdateID">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4c83f4279e13f60aa65dd4de3d2117e1" title="com.mysql.jdbc.PreparedStatement.execute" alt="" coords="243,175,523,202"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4a9164e855e1f7848142de8973a6dab6" title="com.mysql.jdbc.PreparedStatement.execute\lQuery" alt="" coords="243,429,523,471"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a5f77388e9afc0a2fcb248732c3c91577" title="com.mysql.jdbc.PreparedStatement.execute\lUpdateInternal" alt="" coords="243,495,523,536"/>
+<area shape="rect" id="node15" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a0cec26f8a08e9d8e85b10565d4490b1a" title="com.mysql.jdbc.Statement\lImpl.executeQuery" alt="" coords="293,560,472,601"/>
+<area shape="rect" id="node16" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#ae5d2fb5a67dcfe89312b110c52e2194d" title="com.mysql.jdbc.Statement\lImpl.getMoreResults" alt="" coords="293,625,472,667"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_client_info_provider_s_p.html#a75c1a50050648fcab79401cd73342756" title="com.mysql.jdbc.JDBC4Client\lInfoProviderSP.getClientInfo" alt="" coords="606,5,797,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_client_info_provider_s_p.html#afc850b09b440756a3a5ecc69b8745ce4" title="com.mysql.jdbc.JDBC4Client\lInfoProviderSP.setClientInfo" alt="" coords="606,71,797,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a260be2cc343e066802a49720c672da77" title="com.mysql.jdbc.PreparedStatement.get\lMetaData" alt="" coords="575,136,827,177"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test.html#acc4c393fcbc483c6a959f10f561bb1b7" title="testsuite.regression.jdbc4.\lConnectionRegressionTest.testBug75168" alt="" coords="571,201,832,243"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a45f6666d2a8fbbc59bb210cd6e6f33a5" title="testsuite.regression.Statement\lRegressionTest.testBug28256" alt="" coords="601,267,801,308"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#aad5669e55c0db83ec88a8fd9c34a406c" title="com.mysql.jdbc.DatabaseMeta\lData.getColumnPrivileges" alt="" coords="600,332,803,373"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a86ec9e7284f797edec7e5ec4880f2006" title="com.mysql.jdbc.MysqlIO.explain\lSlowQuery" alt="" coords="596,397,807,439"/>
+<area shape="rect" id="node11" href="$classtestsuite_1_1simple_1_1_connection_test.html#a018eaff5a1cc1db390b843a77c50d63f" title="testsuite.simple.Connection\lTest.testDontTrackOpenResources" alt="" coords="589,463,814,504"/>
+<area shape="rect" id="node12" href="$classtestsuite_1_1simple_1_1_date_test.html#a65e40a7db246ac9e6d412004a72e4bd4" title="testsuite.simple.DateTest.test\lZeroDateBehavior" alt="" coords="603,528,799,569"/>
+<area shape="rect" id="node13" href="$classtestsuite_1_1simple_1_1_statements_test.html#a8686a9137f5901a701020342f04dc3a7" title="testsuite.simple.Statements\lTest.testBinaryResultSetNumericTypes" alt="" coords="576,593,827,635"/>
+</map>

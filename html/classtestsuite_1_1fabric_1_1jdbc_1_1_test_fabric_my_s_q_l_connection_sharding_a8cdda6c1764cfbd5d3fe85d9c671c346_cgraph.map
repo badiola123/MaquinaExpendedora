@@ -1,0 +1,4 @@
+<map id="testsuite.fabric.jdbc.TestFabricMySQLConnectionSharding.testQueryTableShardSelection" name="testsuite.fabric.jdbc.TestFabricMySQLConnectionSharding.testQueryTableShardSelection">
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a5e830f9ef0fa1d0bae2d5dab997629c3" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.addQueryTable" alt="" coords="304,5,527,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a50d57924d9cec195770ff2621425e36e" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.clearQueryTables" alt="" coords="297,71,533,112"/>
+</map>

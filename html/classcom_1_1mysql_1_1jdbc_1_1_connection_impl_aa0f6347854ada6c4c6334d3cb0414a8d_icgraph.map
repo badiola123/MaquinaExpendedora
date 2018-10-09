@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.ConnectionImpl.nativeSQL" name="com.mysql.jdbc.ConnectionImpl.nativeSQL">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a18afe2c6cb7638fb24284863be9a4350" title="com.mysql.jdbc.Connection\lImpl.prepareStatement" alt="" coords="239,5,422,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a32bbaa44990d6c0094b9697bf298bb60" title="com.mysql.jdbc.Connection\lImpl.serverPrepareStatement" alt="" coords="236,71,425,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#afda4b5397a3241273af80d0ba702c6a0" title="com.mysql.jdbc.Connection\lImpl.serverPrepareStatement" alt="" coords="473,71,663,112"/>
+</map>

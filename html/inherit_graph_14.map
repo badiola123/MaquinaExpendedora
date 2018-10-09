@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$interfacecom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_method_caller.html" title="com.mysql.fabric.proto.xmlrpc.\lXmlRpcMethodCaller" alt="" coords="5,39,207,80"/>
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_authenticated_xml_rpc_method_caller.html" title="com.mysql.fabric.proto.xmlrpc.\lAuthenticatedXmlRpcMethodCaller" alt="" coords="255,5,477,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_internal_xml_rpc_method_caller.html" title="com.mysql.fabric.proto.xmlrpc.\lInternalXmlRpcMethodCaller" alt="" coords="265,71,467,112"/>
+</map>

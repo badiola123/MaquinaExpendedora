@@ -1,0 +1,6 @@
+<map id="testsuite.fabric.jdbc.TestRegressions.manualTestBug22750465" name="testsuite.fabric.jdbc.TestRegressions.manualTestBug22750465">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_data_source.html#aaade1a90a7a191696ad1d05c3f79cc45" title="com.mysql.fabric.jdbc.Fabric\lMySQLDataSource.getConnection" alt="" coords="320,5,541,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a934f2eca033d68725f572ceab4585efc" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.setServerGroupName" alt="" coords="301,71,560,112"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a45d6ee9742db0ea16e51e0db018a41d2" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.getCurrentServerGroup" alt="" coords="297,136,564,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1fabric_1_1_server_group.html#ac2ba8dc80be8118578f35d07727297d8" title="com.mysql.fabric.ServerGroup.get\lMaster" alt="" coords="321,201,540,243"/>
+</map>

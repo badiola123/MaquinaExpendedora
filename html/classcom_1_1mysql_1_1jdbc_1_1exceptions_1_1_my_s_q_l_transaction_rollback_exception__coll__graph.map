@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.exceptions.MySQLTransactionRollbackException" name="com.mysql.jdbc.exceptions.MySQLTransactionRollbackException">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1_my_s_q_l_transient_exception.html" title="com.mysql.jdbc.exceptions.\lMySQLTransientException" alt="" coords="173,5,359,47"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1exceptions_1_1_deadlock_timeout_rollback_marker.html" title="com.mysql.jdbc.exceptions.\lDeadlockTimeoutRollbackMarker" alt="" coords="160,71,372,112"/>
+</map>

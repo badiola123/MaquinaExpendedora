@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.LoadBalancedConnectionProxy" name="com.mysql.jdbc.LoadBalancedConnectionProxy">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy.html" title="com.mysql.jdbc.MultiHost\lConnectionProxy" alt="" coords="865,86,1039,127"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="469,128,696,155"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="237,93,420,120"/>
+<area shape="rect" id="node8" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="5,133,188,174"/>
+<area shape="rect" id="node10" href="$interfacecom_1_1mysql_1_1jdbc_1_1_ping_target.html" title="com.mysql.jdbc.PingTarget" alt="" coords="862,152,1042,179"/>
+</map>

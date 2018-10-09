@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.ConnectionImpl.close" name="com.mysql.jdbc.ConnectionImpl.close">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a644a18de5be3f4793ed1e97834fea266" title="com.mysql.jdbc.Connection\lImpl.realClose" alt="" coords="236,104,419,145"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a29b7b5781a8ac3876760aa1d98b8d25a" title="com.mysql.jdbc.Connection\lImpl.getAutoCommit" alt="" coords="490,5,673,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a62b6461dc72ef3c739da196995cb9786" title="com.mysql.jdbc.Connection\lImpl.rollback" alt="" coords="490,71,673,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#a9b3b207c5c07bd5443fb9788dc800539" title="com.mysql.jdbc.Connection\lPropertiesImpl.getUseUsageAdvisor" alt="" coords="467,136,696,177"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html#a7d9644de305efed5df71f3fcc7cc1772" title="com.mysql.jdbc.Extension.destroy" alt="" coords="470,202,693,229"/>
+</map>

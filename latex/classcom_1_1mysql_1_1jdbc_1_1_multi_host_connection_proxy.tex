@@ -1,0 +1,133 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy}{}\section{com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy}\index{com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy@{com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Jdbc\+Interface\+Proxy}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized Object \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a9b04a3d31a24703df3ace35e18c02874}{invoke}} (Object proxy, Method method, Object\mbox{[}$\,$\mbox{]} args)  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_ad1a32008ee8fe87595d5f04667f8850e}{get\+Proxy}} ()
+\item 
+final void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aac045496f382b249b0fbbdf5d1163813}{set\+Proxy}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} proxy\+Conn)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aa6770753b8f86d1d0680e1f97924c64c}{propagate\+Proxy\+Down}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} proxy\+Conn)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a799290722b93bd37d82f4b1364fa4975}{allowed\+On\+Closed\+Connection}} (Method method)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a08694096ac580335e6cb412254369471}\label{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a08694096ac580335e6cb412254369471}} 
+Throwable {\bfseries last\+Exception\+Dealt\+With} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract class that processes generic multi-\/host configurations. This class has to be sub-\/classed by specific multi-\/host implementations, such as load-\/balancing and failover. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a799290722b93bd37d82f4b1364fa4975}\label{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a799290722b93bd37d82f4b1364fa4975}} 
+\index{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}!allowed\+On\+Closed\+Connection@{allowed\+On\+Closed\+Connection}}
+\index{allowed\+On\+Closed\+Connection@{allowed\+On\+Closed\+Connection}!com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{allowed\+On\+Closed\+Connection()}{allowedOnClosedConnection()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy.\+allowed\+On\+Closed\+Connection (\begin{DoxyParamCaption}\item[{Method}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if the given method is allowed on closed connections. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a799290722b93bd37d82f4b1364fa4975_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_ad1a32008ee8fe87595d5f04667f8850e}\label{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_ad1a32008ee8fe87595d5f04667f8850e}} 
+\index{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}!get\+Proxy@{get\+Proxy}}
+\index{get\+Proxy@{get\+Proxy}!com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Proxy()}{getProxy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy.\+get\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get this connection\textquotesingle{}s proxy. A multi-\/host connection may not be at top level in the multi-\/host connections chain. In such case the first connection in the chain is available as a proxy.
+
+\begin{DoxyReturn}{Returns}
+Returns this connection\textquotesingle{}s proxy if there is one or itself if this is the first one. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a9b04a3d31a24703df3ace35e18c02874}\label{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_a9b04a3d31a24703df3ace35e18c02874}} 
+\index{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}!invoke@{invoke}}
+\index{invoke@{invoke}!com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily synchronized Object com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy.\+invoke (\begin{DoxyParamCaption}\item[{Object}]{proxy,  }\item[{Method}]{method,  }\item[{Object \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Throwable}
+
+Proxies method invocation on the java.\+sql.\+Connection interface, trapping multi-\/host specific methods and generic methods. Subclasses have to override this to complete the method invocation process, deal with exceptions and decide when to switch connection. To avoid unnecessary additional exception handling overriders should consult \#can\+Deal\+With(\+Method) before chaining here. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aa6770753b8f86d1d0680e1f97924c64c}\label{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aa6770753b8f86d1d0680e1f97924c64c}} 
+\index{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}!propagate\+Proxy\+Down@{propagate\+Proxy\+Down}}
+\index{propagate\+Proxy\+Down@{propagate\+Proxy\+Down}!com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{propagate\+Proxy\+Down()}{propagateProxyDown()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy.\+propagate\+Proxy\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{proxy\+Conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Propagates the connection proxy down through the multi-\/host connections chain. This method is intended to be overridden in subclasses that manage more than one active connection at same time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Conn} & The top level connection in the multi-\/host connections chain. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aa6770753b8f86d1d0680e1f97924c64c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aac045496f382b249b0fbbdf5d1163813}\label{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aac045496f382b249b0fbbdf5d1163813}} 
+\index{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}!set\+Proxy@{set\+Proxy}}
+\index{set\+Proxy@{set\+Proxy}!com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Multi\+Host\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{set\+Proxy()}{setProxy()}}
+{\footnotesize\ttfamily final void com.\+mysql.\+jdbc.\+Multi\+Host\+Connection\+Proxy.\+set\+Proxy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{proxy\+Conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets this connection\textquotesingle{}s proxy. This proxy should be the first connection in the multi-\/host connections chain. After setting the connection proxy locally, propagates it through the dependant connections.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Conn} & The top level connection in the multi-\/host connections chain. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_multi_host_connection_proxy_aac045496f382b249b0fbbdf5d1163813_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Multi\+Host\+Connection\+Proxy.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Buffer.setPosition" name="com.mysql.jdbc.Buffer.setPosition">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin.html#afe852978e8b5462d13f6f60bc8d7d6be" title="com.mysql.jdbc.authentication.\lMysqlClearPasswordPlugin.nextAuthenticationStep" alt="" coords="227,5,545,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin.html#a0a1725f9a449c72b77a493bce2d57bdd" title="com.mysql.jdbc.authentication.\lMysqlOldPasswordPlugin.nextAuthenticationStep" alt="" coords="231,71,541,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin.html#aa46e906714a3b8a223f0e3e15e2aaf94" title="com.mysql.jdbc.authentication.\lSha256PasswordPlugin.nextAuthenticationStep" alt="" coords="237,136,535,177"/>
+</map>

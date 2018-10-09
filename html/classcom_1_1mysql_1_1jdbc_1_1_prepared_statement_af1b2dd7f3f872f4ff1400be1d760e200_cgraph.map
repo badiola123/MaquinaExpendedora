@@ -1,0 +1,16 @@
+<map id="com.mysql.jdbc.PreparedStatement.setNCharacterStream" name="com.mysql.jdbc.PreparedStatement.setNCharacterStream">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a88caedee8619aad1351c9edea352c37e" title="com.mysql.jdbc.Statement\lImpl.checkClosed" alt="" coords="1271,113,1450,155"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ab885f67afaf798c888f537898f82809e" title="com.mysql.jdbc.PreparedStatement.setNull" alt="" coords="912,121,1187,147"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a80a81c39177a5e46c653efb1acd9e797" title="com.mysql.jdbc.PreparedStatement.get\lParameterIndexOffset" alt="" coords="1235,457,1487,499"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a38e323114d62ae7b8bee091841dcee5d" title="com.mysql.jdbc.PreparedStatement.read\lFully" alt="" coords="305,756,564,797"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a8a013584b26bbffe4b3c11c283ef6efc" title="com.mysql.jdbc.PreparedStatement.set\lNString" alt="" coords="309,340,561,381"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="1547,256,1747,297"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a0a4c13284de8a0257085966284a41f1d" title="com.mysql.jdbc.PreparedStatement.set\lString" alt="" coords="612,340,864,381"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#ab237c5e450dc15a76201b3f13d44e6b3" title="com.mysql.jdbc.StringUtils.get\lBytes" alt="" coords="1261,256,1461,297"/>
+<area shape="rect" id="node12" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html#a4f921d9cf354764fd1241cd56c0abecb" title="com.mysql.jdbc.MySQLConnection.get\lServerCharset" alt="" coords="925,523,1174,564"/>
+<area shape="rect" id="node13" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#a09e06dca89e57de8d11e9e9ff2d78f4d" title="com.mysql.jdbc.Connection.parser\lKnowsUnicode" alt="" coords="938,588,1161,629"/>
+<area shape="rect" id="node9" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#a3465592f69365c9572cc404ae04375b4" title="com.mysql.jdbc.Connection.is\lNoBackslashEscapesSet" alt="" coords="951,223,1148,264"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#aaaac7a11d71f1c60bc57f96271582061" title="com.mysql.jdbc.PreparedStatement.set\lBytes" alt="" coords="923,457,1175,499"/>
+<area shape="rect" id="node15" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#afd812ec650baa8ee5d9218e48ec7e026" title="com.mysql.jdbc.StringUtils.get\lBytesWrapped" alt="" coords="949,340,1149,381"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a7d62af1e510047299adcf569e5d94c84" title="com.mysql.jdbc.StringUtils.escape\lEasternUnicodeByteStream" alt="" coords="1535,343,1759,384"/>
+</map>

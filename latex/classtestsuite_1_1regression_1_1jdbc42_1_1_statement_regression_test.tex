@@ -1,0 +1,47 @@
+\hypertarget{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test}{}\section{testsuite.\+regression.\+jdbc42.\+Statement\+Regression\+Test Class Reference}
+\label{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test}\index{testsuite.\+regression.\+jdbc42.\+Statement\+Regression\+Test@{testsuite.\+regression.\+jdbc42.\+Statement\+Regression\+Test}}
+
+
+Inheritance diagram for testsuite.\+regression.\+jdbc42.\+Statement\+Regression\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+regression.\+jdbc42.\+Statement\+Regression\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test_a4dc2c37af6ff37a9d241956285280ab8}\label{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test_a4dc2c37af6ff37a9d241956285280ab8}} 
+{\bfseries Statement\+Regression\+Test} (String name)
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test_a26436c1550ec062ed6a7c11ee2fe5047}{test\+Bug79598}} ()  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test_a26436c1550ec062ed6a7c11ee2fe5047}\label{classtestsuite_1_1regression_1_1jdbc42_1_1_statement_regression_test_a26436c1550ec062ed6a7c11ee2fe5047}} 
+\index{testsuite\+::regression\+::jdbc42\+::\+Statement\+Regression\+Test@{testsuite\+::regression\+::jdbc42\+::\+Statement\+Regression\+Test}!test\+Bug79598@{test\+Bug79598}}
+\index{test\+Bug79598@{test\+Bug79598}!testsuite\+::regression\+::jdbc42\+::\+Statement\+Regression\+Test@{testsuite\+::regression\+::jdbc42\+::\+Statement\+Regression\+Test}}
+\subsubsection{\texorpdfstring{test\+Bug79598()}{testBug79598()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+jdbc42.\+Statement\+Regression\+Test.\+test\+Bug79598 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Tests fix for Bug\#79598 -\/ Client side Prepared Statement caching bypasses J\+D\+B\+C42 Java 8 Time conversion.
+
+Although in the bug report subject is mentioned a Java 8 Time conversion issue, the actual problem occurs because of wrong types being returned after preparing statements when prepared statements cache is enabled. The Java 8 Time data has no relation to this bug. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/regression/jdbc42/Statement\+Regression\+Test.\+java\end{DoxyCompactItemize}

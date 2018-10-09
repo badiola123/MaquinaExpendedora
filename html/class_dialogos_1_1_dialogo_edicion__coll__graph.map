@@ -1,0 +1,14 @@
+<map id="Dialogos.DialogoEdicion&lt; T &gt;" name="Dialogos.DialogoEdicion&lt; T &gt;">
+<area shape="rect" id="node13" href="$classcomunicacion_1_1_recepcion.html" title="comunicacion.Recepcion" alt="" coords="304,131,471,157"/>
+<area shape="rect" id="node5" href="$classoferta_1_1_oferta.html" title="oferta.Oferta" alt="" coords="643,157,737,184"/>
+<area shape="rect" id="node6" href="$class_productos_1_1_producto.html" title="Productos.Producto" alt="" coords="621,208,759,235"/>
+<area shape="rect" id="node7" href="$classtipo_productos_1_1_tipo_producto.html" title="tipoProductos.TipoProducto" alt="" coords="599,259,781,285"/>
+<area shape="rect" id="node8" href="$classcomunicacion_1_1_modulo_x_bee.html" title="comunicacion.ModuloXBee" alt="" coords="601,309,779,336"/>
+<area shape="rect" id="node10" href="$classconexion_s_q_l_1_1_comandos.html" title="conexionSQL.Comandos" alt="" coords="304,239,471,265"/>
+<area shape="rect" id="node11" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="5,291,199,317"/>
+<area shape="rect" id="node17" href="$classcomunicacion_1_1_emision.html" title="comunicacion.Emision" alt="" coords="311,403,464,429"/>
+<area shape="rect" id="node18" href="$class_stock_1_1_stock.html" title="Stock.Stock" alt="" coords="643,411,737,437"/>
+<area shape="rect" id="node21" href="$classventa_1_1_venta.html" title="venta.Venta" alt="" coords="645,563,735,589"/>
+<area shape="rect" id="node22" href="$classmaquinas_1_1_maquina.html" title="maquinas.Maquina" alt="" coords="625,613,755,640"/>
+<area shape="rect" id="node23" href="$classclientes_1_1_cliente.html" title="clientes.Cliente" alt="" coords="635,664,745,691"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="com.mysql.jdbc.ConnectionImpl.ConnectionImpl" name="com.mysql.jdbc.ConnectionImpl.ConnectionImpl">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1log_1_1_log_factory.html#a3f0b5a4ccece1431779fa4b8c79806b8" title="com.mysql.jdbc.log.LogFactory.get\lLogger" alt="" coords="237,5,464,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html#ab113b21e7be85905b13ac3f1ec511a09" title="com.mysql.jdbc.NonRegistering\lDriver.expandHostKeyValues" alt="" coords="247,71,454,112"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#a9b3b207c5c07bd5443fb9788dc800539" title="com.mysql.jdbc.Connection\lPropertiesImpl.getUseUsageAdvisor" alt="" coords="236,136,465,177"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#aa16ed222f78d8d0202446aafb5330612" title="com.mysql.jdbc.Connection\lImpl.getMetaData" alt="" coords="259,201,442,243"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#ade9022e02eb0afed7976e6bc0f0b86da" title="com.mysql.jdbc.Connection\lImpl.createNewIO" alt="" coords="259,267,442,308"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_util.html#a30a2020999202ce3bb0871498f6bcc5b" title="com.mysql.jdbc.Util.getPackageName" alt="" coords="513,13,757,39"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html#a3b94f70cb8b81fa3c6691fde8a63b776" title="com.mysql.jdbc.NonRegistering\lDriver.host" alt="" coords="532,68,739,109"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a9585acb209b381778e2d9ffde265e2f9" title="com.mysql.jdbc.StringUtils.split" alt="" coords="532,134,739,161"/>
+</map>

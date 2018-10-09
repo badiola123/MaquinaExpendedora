@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.log.Log.logTrace" name="com.mysql.jdbc.log.Log.logTrace">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a9b5ceba1f2420b68450dd1f8ae9ad53a" title="com.mysql.jdbc.MysqlIO.skip\lPacket" alt="" coords="235,5,429,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a97388b336bdd49fcbf3ee8f1e305e11a" title="com.mysql.jdbc.MysqlIO.read\lPacket" alt="" coords="235,71,429,112"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a73c871988cf4c69bf78db472e6a7713f" title="com.mysql.jdbc.MysqlIO.get\lResultSet" alt="" coords="477,39,665,80"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#ae581885b9b18704a97106cc0992d1893" title="com.mysql.jdbc.MysqlIO.read\lResultsForQueryOrUpdate" alt="" coords="713,39,908,80"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.Connection.setPreferSlaveDuringFailover" name="com.mysql.jdbc.Connection.setPreferSlaveDuringFailover">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a41e30138708f151589417be4f59e8c59" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setPreferSlave\lDuringFailover" alt="" coords="259,5,481,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a87204976d451f0fa0c086fea3bc3be73" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setPreferSlave\lDuringFailover" alt="" coords="261,85,479,141"/>
+</map>

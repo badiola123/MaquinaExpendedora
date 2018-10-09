@@ -1,0 +1,7 @@
+<map id="testsuite.fabric.jdbc.TestFabricMySQLConnectionSharding.testShardSelection" name="testsuite.fabric.jdbc.TestFabricMySQLConnectionSharding.testShardSelection">
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a934f2eca033d68725f572ceab4585efc" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.setServerGroupName" alt="" coords="301,5,560,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a7e0998ece683fdc723cf3c84c16e53be" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.clearServerSelection\lCriteria" alt="" coords="304,71,557,127"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a5e9287d2536bd36fcc2f63d8a27a6b9b" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.setShardTable" alt="" coords="321,152,540,193"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#ab3be2f1efeb29e95c43ef316dd8ce0bf" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.setShardKey" alt="" coords="325,217,536,259"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html#a45d6ee9742db0ea16e51e0db018a41d2" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection.getCurrentServerGroup" alt="" coords="297,283,564,324"/>
+</map>

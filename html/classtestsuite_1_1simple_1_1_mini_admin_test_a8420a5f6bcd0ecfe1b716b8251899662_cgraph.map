@@ -1,0 +1,5 @@
+<map id="testsuite.simple.MiniAdminTest.testShutdown" name="testsuite.simple.MiniAdminTest.testShutdown">
+<area shape="rect" id="node2" href="$classtestsuite_1_1_base_test_case.html#a3578b222700fc502212ce9834194ebaa" title="testsuite.BaseTestCase.run\lTestIfSysPropDefined" alt="" coords="260,5,443,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_mini_admin.html#a2d976dc99e2fd7ea82cf744a6156d4d6" title="com.mysql.jdbc.MiniAdmin.shutdown" alt="" coords="232,71,471,98"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#a58ca482a0546e93af285d0e9836d7fae" title="com.mysql.jdbc.Connection.shutdown\lServer" alt="" coords="519,64,761,105"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getZeroDateTimeBehavior" name="com.mysql.jdbc.ConnectionProperties.getZeroDateTimeBehavior">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a018005289e60ac341a0911f9e1f9dbb8" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getZeroDateTime\lBehavior" alt="" coords="285,5,524,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a7f3732fae7bbb72f1fdccbe5fe5931bd" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getZeroDateTime\lBehavior" alt="" coords="288,85,521,141"/>
+</map>

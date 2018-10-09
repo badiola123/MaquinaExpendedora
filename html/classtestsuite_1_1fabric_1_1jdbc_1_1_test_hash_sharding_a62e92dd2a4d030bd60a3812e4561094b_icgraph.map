@@ -1,0 +1,7 @@
+<map id="testsuite.fabric.jdbc.TestHashSharding.checkRowExists" name="testsuite.fabric.jdbc.TestHashSharding.checkRowExists">
+<area shape="rect" id="node2" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a9d7cbb774663dec35a3f486d09f5d124" title="testsuite.fabric.jdbc.Test\lHashSharding.checkRowExistsInServerGroup" alt="" coords="257,5,543,47"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a004334f5d0b85fae53d4d2034457dd84" title="testsuite.fabric.jdbc.Test\lHashSharding.checkRowExistsInKeyGroup" alt="" coords="264,71,536,112"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a54c7662d69f56fc657d35bd049d87f1b" title="testsuite.fabric.jdbc.Test\lHashSharding.assertBasicDataIs\lInProperPlaces" alt="" coords="591,31,804,87"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a4d63bb47eb2f1bc8fcbc57257a21def1" title="testsuite.fabric.jdbc.Test\lHashSharding.testBasicInsertByGroup" alt="" coords="852,5,1097,47"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#aae506b3baba9edbc0b43d3f4d5f6e308" title="testsuite.fabric.jdbc.Test\lHashSharding.testBasicInsertByKey" alt="" coords="858,71,1091,112"/>
+</map>

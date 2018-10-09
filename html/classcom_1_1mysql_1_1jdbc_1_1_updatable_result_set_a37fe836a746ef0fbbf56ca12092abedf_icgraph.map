@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.UpdatableResultSet.updateNull" name="com.mysql.jdbc.UpdatableResultSet.updateNull">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_updatable_result_set.html#a5879920869f38b41dd3e54c1896a03da" title="com.mysql.jdbc.JDBC4Updatable\lResultSet.updateNClob" alt="" coords="229,5,445,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#adc60deda2d478d5978e684d6efc77e4b" title="com.mysql.jdbc.Updatable\lResultSet.updateClob" alt="" coords="249,71,425,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a6c296ecb4dc31d5ab887aa35b37c3996" title="com.mysql.jdbc.Updatable\lResultSet.updateNull" alt="" coords="249,136,425,177"/>
+</map>

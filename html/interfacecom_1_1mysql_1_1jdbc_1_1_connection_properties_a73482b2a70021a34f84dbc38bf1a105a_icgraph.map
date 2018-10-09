@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.exposeAsXml" name="com.mysql.jdbc.ConnectionProperties.exposeAsXml">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ac3ce990dbc68f651981e2fddf73e9df8" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.exposeAsXml" alt="" coords="236,5,455,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#acaae1022ce53ec5e0ba07c1a90244af2" title="com.mysql.jdbc.MultiHost\lMySQLConnection.exposeAsXml" alt="" coords="238,71,453,112"/>
+</map>

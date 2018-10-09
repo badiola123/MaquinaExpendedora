@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.StringUtils.toAsciiString" name="com.mysql.jdbc.StringUtils.toAsciiString">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_clob.html#a70ec18cf9f17467e40d95a64db72866e" title="com.mysql.jdbc.Clob.stream\lClosed" alt="" coords="281,5,469,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a0a7e2392923b5db5870c053d91d42b29" title="com.mysql.jdbc.ResultSet\lImpl.getNativeBigDecimal" alt="" coords="288,71,463,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_row.html#a00bcc93b466d809a12b1e12be8747505" title="com.mysql.jdbc.ResultSet\lRow.getString" alt="" coords="288,136,463,177"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1_string_regression_test.html#a5a8cfa1befdedece1a323e0b37658e39" title="testsuite.regression.String\lRegressionTest.testAsciiCharConversion" alt="" coords="247,201,504,243"/>
+</map>

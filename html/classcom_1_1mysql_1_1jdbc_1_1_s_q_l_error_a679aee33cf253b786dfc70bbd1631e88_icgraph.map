@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.SQLError.createBatchUpdateException" name="com.mysql.jdbc.SQLError.createBatchUpdateException">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ad3cdc3e336070c453b5878ce9ba8a0cc" title="com.mysql.jdbc.PreparedStatement.execute\lPreparedBatchAsMultiStatement" alt="" coords="265,5,545,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a4b54450205db6b099922240e4f2e72a0" title="com.mysql.jdbc.PreparedStatement.execute\lBatchedInserts" alt="" coords="593,93,873,135"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a0a87e79e103adae56e63a967e64c167c" title="com.mysql.jdbc.PreparedStatement.execute\lBatchSerially" alt="" coords="265,123,545,164"/>
+</map>

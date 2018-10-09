@@ -1,0 +1,176 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy}{}\section{com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy}\index{com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy@{com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab25d7e5a9f2b59a77d9ec427dde0b7df}{is\+Master\+Connection}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a79f83682c33e022f47c7392a5dd242af}{is\+Slaves\+Connection}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a44cea9c5b2aef7a32ea73568ab157eeb}{do\+Ping}} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a8fa5c5fc025c8fd93c82bd85232fef00}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a8fa5c5fc025c8fd93c82bd85232fef00}} 
+synchronized \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Current\+Connection} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ae9ad1e963ad4f46c814b3f6ff80442af}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ae9ad1e963ad4f46c814b3f6ff80442af}} 
+long {\bfseries get\+Connection\+Group\+Id} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a99a675ae08646b9e0f9022b6e3693f92}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a99a675ae08646b9e0f9022b6e3693f92}} 
+synchronized \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Master\+Connection} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a86a1eead8f2211331d648231e3c2de73}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a86a1eead8f2211331d648231e3c2de73}} 
+synchronized void {\bfseries promote\+Slave\+To\+Master} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a5d58f64b838c645e72685108b7eb7545}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a5d58f64b838c645e72685108b7eb7545}} 
+synchronized void {\bfseries remove\+Master\+Host} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a28a707d3c1c63e81bb585dae11dae71b}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a28a707d3c1c63e81bb585dae11dae71b}} 
+synchronized void {\bfseries remove\+Master\+Host} (String host\+Port\+Pair, boolean wait\+Until\+Not\+In\+Use)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab68974b16605dbf183e6d99b1463f94a}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab68974b16605dbf183e6d99b1463f94a}} 
+synchronized void {\bfseries remove\+Master\+Host} (String host\+Port\+Pair, boolean wait\+Until\+Not\+In\+Use, boolean is\+Now\+Slave)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a1517a43a2e4bf41c26a8dfd4b87f33c3}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a1517a43a2e4bf41c26a8dfd4b87f33c3}} 
+boolean {\bfseries is\+Host\+Master} (String host\+Port\+Pair)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_af89d3f8b715ae9ccbe17ce65a31e8d54}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_af89d3f8b715ae9ccbe17ce65a31e8d54}} 
+synchronized \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Slaves\+Connection} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a5f6a95ee0c3213f2788a02c0420d4be3}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a5f6a95ee0c3213f2788a02c0420d4be3}} 
+synchronized void {\bfseries add\+Slave\+Host} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a81fbde46cac9a8ee5301aa651ac9dd68}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a81fbde46cac9a8ee5301aa651ac9dd68}} 
+synchronized void {\bfseries remove\+Slave} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a2b4d41b913807e8ba6bdd6469a3d4e38}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a2b4d41b913807e8ba6bdd6469a3d4e38}} 
+synchronized void {\bfseries remove\+Slave} (String host\+Port\+Pair, boolean close\+Gently)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ae0536c45c9b502ac2bf261582ef1e4b1}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ae0536c45c9b502ac2bf261582ef1e4b1}} 
+boolean {\bfseries is\+Host\+Slave} (String host\+Port\+Pair)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab1eaa5cf0757b8d87a1d6d16d8c6cdea}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab1eaa5cf0757b8d87a1d6d16d8c6cdea}} 
+synchronized void {\bfseries set\+Read\+Only} (boolean read\+Only)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ae6b2d35f024720e606d26a19867650cb}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ae6b2d35f024720e606d26a19867650cb}} 
+boolean {\bfseries is\+Read\+Only} ()  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a718450466c78bfa46c790442afa425c5}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a718450466c78bfa46c790442afa425c5}} 
+static \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}{Replication\+Connection}} {\bfseries create\+Proxy\+Instance} (List$<$ String $>$ master\+Host\+List, Properties master\+Properties, List$<$ String $>$ slave\+Host\+List, Properties slave\+Properties)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a87e8d96ac3318b83e27d47dcf813c500}{propagate\+Proxy\+Down}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} proxy\+Conn)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_aa590bdaba3c360ed625b152a1372ff6d}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_aa590bdaba3c360ed625b152a1372ff6d}} 
+boolean {\bfseries enable\+J\+MX} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ac65f0cf274741ac670f080f09ee38971}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ac65f0cf274741ac670f080f09ee38971}} 
+boolean {\bfseries allow\+Master\+Down\+Connections} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a86582023c39a4695850cc7728f32c9a1}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a86582023c39a4695850cc7728f32c9a1}} 
+boolean {\bfseries allow\+Slave\+Down\+Connections} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_af14c4062d468351d66443109f35e33e3}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_af14c4062d468351d66443109f35e33e3}} 
+boolean {\bfseries read\+From\+Master\+When\+No\+Slaves} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a697f89707fb58f3bf60421b8a35fe611}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a697f89707fb58f3bf60421b8a35fe611}} 
+boolean {\bfseries read\+From\+Master\+When\+No\+Slaves\+Original} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a350943050330a9a5cfc82a1efd4b01fe}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a350943050330a9a5cfc82a1efd4b01fe}} 
+boolean {\bfseries read\+Only} = false
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_adcceed8cbbcccde9c0b1b7d16eb2e8fa}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_adcceed8cbbcccde9c0b1b7d16eb2e8fa}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_load_balanced_connection}{Load\+Balanced\+Connection}} {\bfseries master\+Connection}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_aed67d9173fc297b00169361510ca3d87}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_aed67d9173fc297b00169361510ca3d87}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_load_balanced_connection}{Load\+Balanced\+Connection}} {\bfseries slaves\+Connection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} that opens two connections, one two a replication master, and another to one or more slaves, and decides to use master when the connection is not read-\/only, and use slave(s) when the connection is read-\/only. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a44cea9c5b2aef7a32ea73568ab157eeb}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a44cea9c5b2aef7a32ea73568ab157eeb}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}!do\+Ping@{do\+Ping}}
+\index{do\+Ping@{do\+Ping}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{do\+Ping()}{doPing()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy.\+do\+Ping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Pings both l/b connections. Switch to another connection in case of failure. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_ping_target}{com.\+mysql.\+jdbc.\+Ping\+Target}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a44cea9c5b2aef7a32ea73568ab157eeb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab25d7e5a9f2b59a77d9ec427dde0b7df}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab25d7e5a9f2b59a77d9ec427dde0b7df}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}!is\+Master\+Connection@{is\+Master\+Connection}}
+\index{is\+Master\+Connection@{is\+Master\+Connection}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{is\+Master\+Connection()}{isMasterConnection()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy.\+is\+Master\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if current connection is the masters l/b connection. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_ab25d7e5a9f2b59a77d9ec427dde0b7df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a79f83682c33e022f47c7392a5dd242af}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a79f83682c33e022f47c7392a5dd242af}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}!is\+Slaves\+Connection@{is\+Slaves\+Connection}}
+\index{is\+Slaves\+Connection@{is\+Slaves\+Connection}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{is\+Slaves\+Connection()}{isSlavesConnection()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy.\+is\+Slaves\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if current connection is the slaves l/b connection. \mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a87e8d96ac3318b83e27d47dcf813c500}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy_a87e8d96ac3318b83e27d47dcf813c500}} 
+\index{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}!propagate\+Proxy\+Down@{propagate\+Proxy\+Down}}
+\index{propagate\+Proxy\+Down@{propagate\+Proxy\+Down}!com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy@{com\+::mysql\+::jdbc\+::\+Replication\+Connection\+Proxy}}
+\subsubsection{\texorpdfstring{propagate\+Proxy\+Down()}{propagateProxyDown()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Replication\+Connection\+Proxy.\+propagate\+Proxy\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{proxy\+Conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Propagates the connection proxy down through all live connections.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Conn} & The top level connection in the multi-\/host connections chain. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Replication\+Connection\+Proxy.\+java\end{DoxyCompactItemize}

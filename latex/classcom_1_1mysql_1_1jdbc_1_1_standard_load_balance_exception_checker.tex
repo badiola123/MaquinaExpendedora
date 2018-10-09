@@ -1,0 +1,99 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker}{}\section{com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker}\index{com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker@{com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ae94fdd274579d8507853e5f32e0a948a}{should\+Exception\+Trigger\+Failover}} (S\+Q\+L\+Exception ex)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_a4e65985d73071a946e9b3f825de794ca}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ac8bb8f4e7d1e80c79687b68336eeae15}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties props)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_a4e65985d73071a946e9b3f825de794ca}\label{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_a4e65985d73071a946e9b3f825de794ca}} 
+\index{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ac8bb8f4e7d1e80c79687b68336eeae15}\label{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ac8bb8f4e7d1e80c79687b68336eeae15}} 
+\index{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker}!init@{init}}
+\index{init@{init}!com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once per connection that wants to use the extension
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver_a834c012e752a01d1ee435b3461bb8218}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this extension is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ae94fdd274579d8507853e5f32e0a948a}\label{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ae94fdd274579d8507853e5f32e0a948a}} 
+\index{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker}!should\+Exception\+Trigger\+Failover@{should\+Exception\+Trigger\+Failover}}
+\index{should\+Exception\+Trigger\+Failover@{should\+Exception\+Trigger\+Failover}!com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Standard\+Load\+Balance\+Exception\+Checker}}
+\subsubsection{\texorpdfstring{should\+Exception\+Trigger\+Failover()}{shouldExceptionTriggerFailover()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker.\+should\+Exception\+Trigger\+Failover (\begin{DoxyParamCaption}\item[{S\+Q\+L\+Exception}]{ex }\end{DoxyParamCaption})}
+
+Invoked to determine whether or a given S\+Q\+L\+Exception should trigger a failover in a load-\/balanced deployment.
+
+The driver will not pass in a \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} instance when calling \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ac8bb8f4e7d1e80c79687b68336eeae15}{init()}}, but it will pass in the Properties, otherwise it acts like a normal \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}}.
+
+One instance of a handler {\itshape per} J\+D\+BC connection instance will be created. If you need singleton-\/like behavior, you\textquotesingle{}re on your own to provide it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the exception should trigger failover. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_load_balance_exception_checker_afe38ee5813abd27e1fb61d8adab72f64}{com.\+mysql.\+jdbc.\+Load\+Balance\+Exception\+Checker}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Standard\+Load\+Balance\+Exception\+Checker.\+java\end{DoxyCompactItemize}

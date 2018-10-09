@@ -1,0 +1,5 @@
+<map id="vistas.Principal.getTablaoferta" name="vistas.Principal.getTablaoferta">
+<area shape="rect" id="node2" href="$classoferta_1_1_lista_ofertas.html#a7ad03e98699edb0253f41109273e350e" title="oferta.ListaOfertas.cargar\lDatos" alt="" coords="248,5,416,47"/>
+<area shape="rect" id="node4" href="$classvistas_1_1_panel_editar.html#abfa1e278ba63d7cf2a14c02804dcadf1" title="vistas.PanelEditar.action\lPerformed" alt="" coords="249,71,415,112"/>
+<area shape="rect" id="node3" href="$classoferta_1_1_lista_ofertas.html#a2af761366b995c4ddf7cb6b1175de314" title="oferta.ListaOfertas.Lista\lOfertas" alt="" coords="464,5,624,47"/>
+</map>

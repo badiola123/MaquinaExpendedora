@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setDetectServerPreparedStmts" name="com.mysql.jdbc.ConnectionProperties.setDetectServerPreparedStmts">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a0c80fd9ac23df453f078c771d7b88760" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setDetectServer\lPreparedStmts" alt="" coords="317,5,549,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a9bc00ee02ec2cb57883a27ac982ed215" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setDetectServer\lPreparedStmts" alt="" coords="320,85,547,141"/>
+</map>

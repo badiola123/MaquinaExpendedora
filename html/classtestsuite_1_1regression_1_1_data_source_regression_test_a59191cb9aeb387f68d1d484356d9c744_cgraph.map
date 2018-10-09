@@ -1,0 +1,6 @@
+<map id="testsuite.regression.DataSourceRegressionTest.testBug20242" name="testsuite.regression.DataSourceRegressionTest.testBug20242">
+<area shape="rect" id="node2" href="$classtestsuite_1_1_base_test_case.html#a4098e9a480c1907875ded976cdbc81a3" title="testsuite.BaseTestCase.version\lMeetsMinimum" alt="" coords="310,5,515,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#abdeb3391c72e2633372294991d9291fb" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.setUrl" alt="" coords="311,71,514,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_data_source.html#a767e7d22d5ab6144aac907e6f0a1114b" title="com.mysql.jdbc.jdbc2.optional.\lMysqlXADataSource.getXAConnection" alt="" coords="291,136,535,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#aa19c209327ac343921cb8b4f2e2b30ab" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.getConnection" alt="" coords="583,136,795,177"/>
+</map>

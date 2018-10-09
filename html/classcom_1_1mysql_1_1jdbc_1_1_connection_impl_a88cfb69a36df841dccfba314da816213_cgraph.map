@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.ConnectionImpl.isServerLocal" name="com.mysql.jdbc.ConnectionImpl.isServerLocal">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a4d22c7c85c9da8bc9ee56bd4e0ede41d" title="com.mysql.jdbc.Connection\lImpl.getIO" alt="" coords="251,5,433,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#ae8304e8374b4789fe5f73120bccb7143" title="com.mysql.jdbc.Connection\lImpl.getLog" alt="" coords="251,71,433,112"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1log_1_1_log.html#aa37a430b8cd7d66bb3ff46cb87e060f3" title="com.mysql.jdbc.log.Log.logWarn" alt="" coords="236,137,448,163"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="242,188,442,229"/>
+</map>

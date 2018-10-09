@@ -1,0 +1,6 @@
+<map id="comunicacion.Emision.crearTramaNuevoUsuarioCancelado" name="comunicacion.Emision.crearTramaNuevoUsuarioCancelado">
+<area shape="rect" id="node2" href="$classcomunicacion_1_1_modulo_x_bee.html#a965cdd2756d507c8c80eade0bf34d06e" title="comunicacion.ModuloXBee.mandar\lTramaDatosNuevoUsuarioCancelado" alt="" coords="252,71,484,112"/>
+<area shape="rect" id="node3" href="$class_dialogos_1_1_dialogo_edicion.html#a78705fff13d0b9999644b7a31ffea151" title="Dialogos.DialogoEdicion.action\lPerformed" alt="" coords="532,5,733,47"/>
+<area shape="rect" id="node4" href="$classvistas_1_1_panel_crear.html#a668d00abf12ad5a3f53ba063c6cc8d39" title="vistas.PanelCrear.itemState\lChanged" alt="" coords="541,71,724,112"/>
+<area shape="rect" id="node5" href="$classvistas_1_1_panel_crear.html#af3bd29f72641be17636321ed461373d9" title="vistas.PanelCrear.action\lPerformed" alt="" coords="551,136,714,177"/>
+</map>

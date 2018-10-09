@@ -1,0 +1,67 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager}{}\section{com.\+mysql.\+jdbc.\+Replication\+Connection\+Group\+Manager Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager}\index{com.\+mysql.\+jdbc.\+Replication\+Connection\+Group\+Manager@{com.\+mysql.\+jdbc.\+Replication\+Connection\+Group\+Manager}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a8b7b8becd805bdfa8c3ab65bd17e2aa7}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a8b7b8becd805bdfa8c3ab65bd17e2aa7}} 
+static synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group}{Replication\+Connection\+Group}} {\bfseries get\+Connection\+Group\+Instance} (String group\+Name)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ae3bd10474c238f971b0481e3fe74425e}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ae3bd10474c238f971b0481e3fe74425e}} 
+static void {\bfseries register\+Jmx} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a0c03e4a34a22d70beff8c8abef104634}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a0c03e4a34a22d70beff8c8abef104634}} 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group}{Replication\+Connection\+Group}} {\bfseries get\+Connection\+Group} (String group\+Name)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ae65a1277ebacf40e2498fc2e4158c8ae}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ae65a1277ebacf40e2498fc2e4158c8ae}} 
+static Collection$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group}{Replication\+Connection\+Group}} $>$ {\bfseries get\+Groups\+Matching} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_adf795b80b0bd84212bcd93fb823bd556}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_adf795b80b0bd84212bcd93fb823bd556}} 
+static void {\bfseries add\+Slave\+Host} (String group, String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a292bfa9997251bce355a8ce565d7b1db}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a292bfa9997251bce355a8ce565d7b1db}} 
+static void {\bfseries remove\+Slave\+Host} (String group, String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a3b04521d2a431b33d089ab135038f0e0}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a3b04521d2a431b33d089ab135038f0e0}} 
+static void {\bfseries remove\+Slave\+Host} (String group, String host\+Port\+Pair, boolean close\+Gently)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a5f271528d78e0a0c04f7dfe483d40da7}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a5f271528d78e0a0c04f7dfe483d40da7}} 
+static void {\bfseries promote\+Slave\+To\+Master} (String group, String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a70baec92cc982c5fdc96dc98ad29e9c4}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a70baec92cc982c5fdc96dc98ad29e9c4}} 
+static long {\bfseries get\+Slave\+Promotion\+Count} (String group)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_afc94383ad5113d8e1c0f59b3ee558c04}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_afc94383ad5113d8e1c0f59b3ee558c04}} 
+static void {\bfseries remove\+Master\+Host} (String group, String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_abf340b01742eab810e8f104f49aef3e9}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_abf340b01742eab810e8f104f49aef3e9}} 
+static void {\bfseries remove\+Master\+Host} (String group, String host\+Port\+Pair, boolean close\+Gently)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a6696e40ade6ac1c0634f8975441cb536}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a6696e40ade6ac1c0634f8975441cb536}} 
+static String {\bfseries get\+Registered\+Replication\+Connection\+Groups} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_af46a996fc11beaefc608bf0b418b59d5}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_af46a996fc11beaefc608bf0b418b59d5}} 
+static int {\bfseries get\+Number\+Of\+Master\+Promotion} (String group\+Filter)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a676ed79ed0029eff4e682fa703016cc8}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a676ed79ed0029eff4e682fa703016cc8}} 
+static int {\bfseries get\+Connection\+Count\+With\+Host\+As\+Slave} (String group\+Filter, String host\+Port\+Pair)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ab8d302eddeeb6a23b1bef90dd301f58f}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ab8d302eddeeb6a23b1bef90dd301f58f}} 
+static int {\bfseries get\+Connection\+Count\+With\+Host\+As\+Master} (String group\+Filter, String host\+Port\+Pair)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a89790d5c0c930e4bd53473a5f9147ad6}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a89790d5c0c930e4bd53473a5f9147ad6}} 
+static Collection$<$ String $>$ {\bfseries get\+Slave\+Hosts} (String group\+Filter)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ae36f66328cb13aef58f675e2876b27b5}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ae36f66328cb13aef58f675e2876b27b5}} 
+static Collection$<$ String $>$ {\bfseries get\+Master\+Hosts} (String group\+Filter)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a057d4fb180ba959a3759248b11762e6d}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_a057d4fb180ba959a3759248b11762e6d}} 
+static long {\bfseries get\+Total\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ab0e81209cbb2c3507b86cf0f80dc532f}\label{classcom_1_1mysql_1_1jdbc_1_1_replication_connection_group_manager_ab0e81209cbb2c3507b86cf0f80dc532f}} 
+static long {\bfseries get\+Active\+Connection\+Count} (String group)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Replication\+Connection\+Group\+Manager.\+java\end{DoxyCompactItemize}

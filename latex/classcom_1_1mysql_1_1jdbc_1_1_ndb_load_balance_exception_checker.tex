@@ -1,0 +1,59 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker}{}\section{com.\+mysql.\+jdbc.\+Ndb\+Load\+Balance\+Exception\+Checker Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker}\index{com.\+mysql.\+jdbc.\+Ndb\+Load\+Balance\+Exception\+Checker@{com.\+mysql.\+jdbc.\+Ndb\+Load\+Balance\+Exception\+Checker}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Ndb\+Load\+Balance\+Exception\+Checker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Ndb\+Load\+Balance\+Exception\+Checker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker_a07072cfa83f0942761b59015dbefc25e}{should\+Exception\+Trigger\+Failover}} (S\+Q\+L\+Exception ex)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker_a07072cfa83f0942761b59015dbefc25e}\label{classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker_a07072cfa83f0942761b59015dbefc25e}} 
+\index{com\+::mysql\+::jdbc\+::\+Ndb\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Ndb\+Load\+Balance\+Exception\+Checker}!should\+Exception\+Trigger\+Failover@{should\+Exception\+Trigger\+Failover}}
+\index{should\+Exception\+Trigger\+Failover@{should\+Exception\+Trigger\+Failover}!com\+::mysql\+::jdbc\+::\+Ndb\+Load\+Balance\+Exception\+Checker@{com\+::mysql\+::jdbc\+::\+Ndb\+Load\+Balance\+Exception\+Checker}}
+\subsubsection{\texorpdfstring{should\+Exception\+Trigger\+Failover()}{shouldExceptionTriggerFailover()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Ndb\+Load\+Balance\+Exception\+Checker.\+should\+Exception\+Trigger\+Failover (\begin{DoxyParamCaption}\item[{S\+Q\+L\+Exception}]{ex }\end{DoxyParamCaption})}
+
+Invoked to determine whether or a given S\+Q\+L\+Exception should trigger a failover in a load-\/balanced deployment.
+
+The driver will not pass in a \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} instance when calling \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ac8bb8f4e7d1e80c79687b68336eeae15}{init()}}, but it will pass in the Properties, otherwise it acts like a normal \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}}.
+
+One instance of a handler {\itshape per} J\+D\+BC connection instance will be created. If you need singleton-\/like behavior, you\textquotesingle{}re on your own to provide it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the exception should trigger failover. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_load_balance_exception_checker_afe38ee5813abd27e1fb61d8adab72f64}{com.\+mysql.\+jdbc.\+Load\+Balance\+Exception\+Checker}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Ndb\+Load\+Balance\+Exception\+Checker.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getCacheServerConfiguration" name="com.mysql.jdbc.ConnectionProperties.getCacheServerConfiguration">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a3338701a08234fb035685c6e0ce5b77c" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getCacheServer\lConfiguration" alt="" coords="304,5,535,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#aef3695ab6a8b5b8c534fc4020f6d12a4" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getCacheServer\lConfiguration" alt="" coords="306,85,533,141"/>
+</map>

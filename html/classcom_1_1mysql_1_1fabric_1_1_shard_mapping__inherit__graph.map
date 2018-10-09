@@ -1,0 +1,4 @@
+<map id="com.mysql.fabric.ShardMapping" name="com.mysql.fabric.ShardMapping">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping.html" title="com.mysql.fabric.HashShard\lMapping" alt="" coords="5,80,195,121"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping.html" title="com.mysql.fabric.RangeShard\lMapping" alt="" coords="219,80,415,121"/>
+</map>

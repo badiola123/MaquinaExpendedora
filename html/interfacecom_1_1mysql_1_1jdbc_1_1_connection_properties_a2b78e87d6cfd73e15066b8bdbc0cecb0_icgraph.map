@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseUnicode" name="com.mysql.jdbc.ConnectionProperties.setUseUnicode">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aad47efde1fa5f5f876ed766cf6b01a43" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseUnicode" alt="" coords="236,5,464,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#afcdd021cd65ac9c824bf069c3d52a22b" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseUnicode" alt="" coords="239,71,461,112"/>
+</map>

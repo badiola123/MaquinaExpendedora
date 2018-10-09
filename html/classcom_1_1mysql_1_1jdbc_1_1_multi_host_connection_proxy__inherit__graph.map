@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.MultiHostConnectionProxy" name="com.mysql.jdbc.MultiHostConnectionProxy">
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy.html" title="com.mysql.jdbc.FailoverConnection\lProxy" alt="" coords="397,5,624,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy.html" title="com.mysql.jdbc.LoadBalanced\lConnectionProxy" alt="" coords="411,71,611,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_connection_proxy.html" title="com.mysql.jdbc.Replication\lConnectionProxy" alt="" coords="419,136,602,177"/>
+</map>

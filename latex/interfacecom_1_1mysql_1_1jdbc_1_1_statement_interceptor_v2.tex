@@ -1,0 +1,216 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2}{}\section{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2 Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2}\index{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2@{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_ae2d3d924826dcf4a4e025433af0b4d8f}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties props)  throws S\+Q\+L\+Exception
+\item 
+abstract \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_abe4a0e52fc3e4cc9b458dd8eaeef82ff}{pre\+Process}} (String sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} intercepted\+Statement, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} connection)  throws S\+Q\+L\+Exception
+\item 
+abstract boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a36f03c5f5b1755d48549862d5b6c627f}{execute\+Top\+Level\+Only}} ()
+\item 
+abstract void \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a00bfb3d3f7b81e16a9cdf4784150c3f7}{destroy}} ()
+\item 
+abstract \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a6dadce27d32c6beaa303d46515307320}{post\+Process}} (String sql, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}} intercepted\+Statement, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} original\+Result\+Set, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} connection, int warning\+Count, boolean no\+Index\+Used, boolean no\+Good\+Index\+Used, S\+Q\+L\+Exception statement\+Exception)  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a00bfb3d3f7b81e16a9cdf4784150c3f7}\label{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a00bfb3d3f7b81e16a9cdf4784150c3f7}} 
+\index{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}{com.\+mysql.\+jdbc.\+Extension}}.
+
+
+
+Implemented in \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_ad60c14de4fc7503095f6dd609f34a95a}{testsuite.\+Base\+Statement\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper_ae579d5fb41efef1fff171752d736d4f5}{com.\+mysql.\+jdbc.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter_aa04ad6c4f60c2b7339f5dcb07ba9407a}{com.\+mysql.\+jdbc.\+Reflective\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter_adca046793aea90f93e607ca0c8e7f34b}{com.\+mysql.\+jdbc.\+V1to\+V2\+Statement\+Interceptor\+Adapter}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor_aca69669db95231d8c2fff5800b62c7f7}{com.\+mysql.\+jdbc.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a00bfb3d3f7b81e16a9cdf4784150c3f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a36f03c5f5b1755d48549862d5b6c627f}\label{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a36f03c5f5b1755d48549862d5b6c627f}} 
+\index{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}!execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}}
+\index{execute\+Top\+Level\+Only@{execute\+Top\+Level\+Only}!com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}}
+\subsubsection{\texorpdfstring{execute\+Top\+Level\+Only()}{executeTopLevelOnly()}}
+{\footnotesize\ttfamily abstract boolean com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2.\+execute\+Top\+Level\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Should the driver execute this interceptor only for the \char`\"{}original\char`\"{} top-\/level query, and not put it in the execution path for queries that may be executed from other interceptors?
+
+If an interceptor issues queries using the connection it was created for, and does not return {\ttfamily true} for this method, it must ensure that it does not cause infinite recursion.
+
+\begin{DoxyReturn}{Returns}
+true if the driver should ensure that this interceptor is only executed for the top-\/level \char`\"{}original\char`\"{} query. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper_a3688c515a37ae2f36b8f59ae51304ac4}{com.\+mysql.\+jdbc.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter_abe31396aeda856d1ef66a90f95b3d3c0}{com.\+mysql.\+jdbc.\+Reflective\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor_afdb08603f13610a4d26d188bf171c232}{com.\+mysql.\+jdbc.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter_aa5c3d7a91f90891f02b1a33310e4efb6}{com.\+mysql.\+jdbc.\+V1to\+V2\+Statement\+Interceptor\+Adapter}}, and \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a1eb3615bcd122817ef160af0a06d7e23}{testsuite.\+Base\+Statement\+Interceptor}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a36f03c5f5b1755d48549862d5b6c627f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_ae2d3d924826dcf4a4e025433af0b4d8f}\label{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_ae2d3d924826dcf4a4e025433af0b4d8f}} 
+\index{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}!init@{init}}
+\index{init@{init}!com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called once per connection that wants to use the interceptor
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver_a834c012e752a01d1ee435b3461bb8218}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this interceptor is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor}{Statement\+Interceptor}} properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor}{Statement\+Interceptor}} can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{com.\+mysql.\+jdbc.\+Extension}}.
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper_a7272676b9081fbf866a494f4d35b3a6d}{com.\+mysql.\+jdbc.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor_a7ac3a68deb0ddbc6ede5ece0824d3189}{com.\+mysql.\+jdbc.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter_ae2a1db7cc624f326d2a0bf7d1b5b6e3d}{com.\+mysql.\+jdbc.\+Reflective\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter_acf5784b9b687c7d58d92492e2bd6a800}{com.\+mysql.\+jdbc.\+V1to\+V2\+Statement\+Interceptor\+Adapter}}, and \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a9f780bb34bc2101037455ca81d1c2a16}{testsuite.\+Base\+Statement\+Interceptor}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_ae2d3d924826dcf4a4e025433af0b4d8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a6dadce27d32c6beaa303d46515307320}\label{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a6dadce27d32c6beaa303d46515307320}} 
+\index{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}!post\+Process@{post\+Process}}
+\index{post\+Process@{post\+Process}!com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}}
+\subsubsection{\texorpdfstring{post\+Process()}{postProcess()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2.\+post\+Process (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}}}]{intercepted\+Statement,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}}}]{original\+Result\+Set,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{connection,  }\item[{int}]{warning\+Count,  }\item[{boolean}]{no\+Index\+Used,  }\item[{boolean}]{no\+Good\+Index\+Used,  }\item[{S\+Q\+L\+Exception}]{statement\+Exception }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called after the given statement has been sent to the server for processing, instead of the Statement\+Aware \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a6dadce27d32c6beaa303d46515307320}{post\+Process()}} of the earlier api.
+
+Interceptors are free to inspect the \char`\"{}original\char`\"{} result set, and if a different result set is returned by the interceptor, it is used in place of the \char`\"{}original\char`\"{} result set. (the result set returned by the interceptor must implement the interface \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}}).
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the S\+QL representation of the statement \\
+\hline
+{\em intercepted\+Statement} & the actual statement instance being intercepted \\
+\hline
+{\em connection} & the connection the statement is using (passed in to make thread-\/safe implementations straightforward)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result set that should be returned to the application instead of results that are created from actual execution of the intercepted statement.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs during execution\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor_a54b925109880e6e84eb16b36f608ecd3}{com.\+mysql.\+jdbc.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper_ad422f02c34900ee0adb87481762f09a7}{com.\+mysql.\+jdbc.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter_a2b91745fad9110e1f8f33fc4ce4b6be1}{com.\+mysql.\+jdbc.\+Reflective\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a00ff902755e287c1a983e8d840ca32d5}{testsuite.\+Base\+Statement\+Interceptor}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter_ab1a3f9ab0d2156eb2fbe442e39354ece}{com.\+mysql.\+jdbc.\+V1to\+V2\+Statement\+Interceptor\+Adapter}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a6dadce27d32c6beaa303d46515307320_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_abe4a0e52fc3e4cc9b458dd8eaeef82ff}\label{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_abe4a0e52fc3e4cc9b458dd8eaeef82ff}} 
+\index{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}!pre\+Process@{pre\+Process}}
+\index{pre\+Process@{pre\+Process}!com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2@{com\+::mysql\+::jdbc\+::\+Statement\+Interceptor\+V2}}
+\subsubsection{\texorpdfstring{pre\+Process()}{preProcess()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{Result\+Set\+Internal\+Methods}} com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2.\+pre\+Process (\begin{DoxyParamCaption}\item[{String}]{sql,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement}{Statement}}}]{intercepted\+Statement,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{connection }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called before the given statement is going to be sent to the server for processing.
+
+Interceptors are free to return a result set (which must implement the interface \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}}), and if so, the server will not execute the query, and the given result set will be returned to the application instead.
+
+This method will be called while the connection-\/level mutex is held, so it will only be called from one thread at a time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & the S\+QL representation of the statement \\
+\hline
+{\em intercepted\+Statement} & the actual statement instance being intercepted \\
+\hline
+{\em connection} & the connection the statement is using (passed in to make thread-\/safe implementations straightforward)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a result set that should be returned to the application instead of results that are created from actual execution of the intercepted statement.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs during execution\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods}{com.\+mysql.\+jdbc.\+Result\+Set\+Internal\+Methods}} 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor_a6a69c6841856a5f6f8062206f2854d76}{com.\+mysql.\+jdbc.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter_afd1203522724452385bc67c8949586b3}{com.\+mysql.\+jdbc.\+Reflective\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper_a60bc39ee3aaef8a088cecda8f0f5a831}{com.\+mysql.\+jdbc.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter_a51a9e9ad7779917b8755806589849559}{com.\+mysql.\+jdbc.\+V1to\+V2\+Statement\+Interceptor\+Adapter}}, and \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_aa08942c2eb76d1550322df94b28bb2cc}{testsuite.\+Base\+Statement\+Interceptor}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_abe4a0e52fc3e4cc9b458dd8eaeef82ff_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Statement\+Interceptor\+V2.\+java\end{DoxyCompactItemize}

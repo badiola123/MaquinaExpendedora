@@ -1,0 +1,12 @@
+<map id="com.mysql.jdbc.ConnectionImpl.serverPrepareStatement" name="com.mysql.jdbc.ConnectionImpl.serverPrepareStatement">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a32bbaa44990d6c0094b9697bf298bb60" title="com.mysql.jdbc.Connection\lImpl.serverPrepareStatement" alt="" coords="243,104,432,145"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#aa0f6347854ada6c4c6334d3cb0414a8d" title="com.mysql.jdbc.Connection\lImpl.nativeSQL" alt="" coords="492,39,675,80"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#af8dc86dfa81a0998b2462a95b0f754a6" title="com.mysql.jdbc.ServerPrepared\lStatement.getInstance" alt="" coords="480,104,687,145"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a200118367aa1d33fe239bc8dcf5457dd" title="com.mysql.jdbc.Connection\lImpl.getCatalog" alt="" coords="492,169,675,211"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#a18c9d09a55d3c02fda15e64e5c818c8f" title="com.mysql.jdbc.ServerPrepared\lStatement.ServerPreparedStatement" alt="" coords="735,104,969,145"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a29ea5f4b5f00602d6b7845623c616a7d" title="com.mysql.jdbc.Statement\lImpl.checkNullOrEmptyQuery" alt="" coords="1045,5,1239,47"/>
+<area shape="rect" id="node8" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#af05f0b2545de1a6a1ca7d41f467516d3" title="com.mysql.jdbc.Connection.version\lMeetsMinimum" alt="" coords="1029,71,1255,112"/>
+<area shape="rect" id="node9" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html#aca7bbebb7ec6fa745218e6dca38cfaad" title="com.mysql.jdbc.MySQLConnection.get\lStatementComment" alt="" coords="1017,136,1267,177"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#af12056e4aca4279abd972fbbba2f320f" title="com.mysql.jdbc.ServerPrepared\lStatement.realClose" alt="" coords="1039,201,1245,243"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="1315,5,1515,47"/>
+</map>

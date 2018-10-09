@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setRollbackOnPooledClose" name="com.mysql.jdbc.ConnectionProperties.setRollbackOnPooledClose">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a9d43b30760d413e9c1278f85a7f63349" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setRollbackOnPooledClose" alt="" coords="296,5,595,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a1e6e4b6adaf9cf037af7de68ede17aac" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setRollbackOn\lPooledClose" alt="" coords="335,71,555,127"/>
+</map>

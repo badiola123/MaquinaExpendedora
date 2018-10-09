@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setAlwaysSendSetIsolation" name="com.mysql.jdbc.ConnectionProperties.setAlwaysSendSetIsolation">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a622e428378e682ed73e80bb82717478c" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setAlwaysSendSet\lIsolation" alt="" coords="296,5,547,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#af0ef05e04bfe22b5ac3e8108ea2bc3cc" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setAlwaysSend\lSetIsolation" alt="" coords="309,85,534,141"/>
+</map>

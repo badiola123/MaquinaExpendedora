@@ -1,0 +1,6 @@
+<map id="maquinas.Maquinaria.cargarDatos" name="maquinas.Maquinaria.cargarDatos">
+<area shape="rect" id="node2" href="$classmaquinas_1_1_maquina.html#a47e430c44c10450125499adaeb26531c" title="maquinas.Maquina.getNombre\lColumnas" alt="" coords="245,5,443,47"/>
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_comandos.html#aa1dc46cfa52b931d7252da826880372d" title="conexionSQL.Comandos.select" alt="" coords="241,71,447,98"/>
+<area shape="rect" id="node5" href="$classvistas_1_1_principal.html#ac784d0415cbb5e3932f088d68876c91a" title="vistas.Principal.getTablamaquina" alt="" coords="239,122,449,149"/>
+<area shape="rect" id="node4" href="$classconexion_s_q_l_1_1_my_data_access.html#ae8d04039a000d2b3e7dc72c99be7c551" title="conexionSQL.MyDataAccess.get\lQuery" alt="" coords="497,64,712,105"/>
+</map>

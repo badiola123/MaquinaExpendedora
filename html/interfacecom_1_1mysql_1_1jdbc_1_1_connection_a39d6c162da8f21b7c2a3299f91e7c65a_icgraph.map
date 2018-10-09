@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.Connection.isMasterConnection" name="com.mysql.jdbc.Connection.isMasterConnection">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a4259500598efa1b3dc8cf4317792338b" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.isMasterConnection" alt="" coords="251,5,505,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#ad20cb3d4d184371c5cbf7e540726e6a6" title="testsuite.regression.Connection\lRegressionTest.testBug68763" alt="" coords="275,71,481,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a9d54ba5c540e24424893bc15c83312ac" title="testsuite.regression.Connection\lRegressionTest.testBug68733" alt="" coords="275,136,481,177"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a5b74dbc899a9fefe265aabac1e1818ce" title="testsuite.regression.Connection\lRegressionTest.testBug56100" alt="" coords="275,201,481,243"/>
+</map>

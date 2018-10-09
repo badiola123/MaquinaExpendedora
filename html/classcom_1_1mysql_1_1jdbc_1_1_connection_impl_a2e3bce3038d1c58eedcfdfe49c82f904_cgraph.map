@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.ConnectionImpl.rollback" name="com.mysql.jdbc.ConnectionImpl.rollback">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#ac3cf366e43f103cfc8b29b81a2a1d25e" title="com.mysql.jdbc.Connection\lImpl.versionMeetsMinimum" alt="" coords="259,5,442,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a62b6461dc72ef3c739da196995cb9786" title="com.mysql.jdbc.Connection\lImpl.rollback" alt="" coords="259,71,442,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_s_q_l_error.html#ac3aaaa79ef0f07281c6f5eb0e94d57fc" title="com.mysql.jdbc.SQLError.create\lSQLFeatureNotSupportedException" alt="" coords="236,136,465,177"/>
+</map>

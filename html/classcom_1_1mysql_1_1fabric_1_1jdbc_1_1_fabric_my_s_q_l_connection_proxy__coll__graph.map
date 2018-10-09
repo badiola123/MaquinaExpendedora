@@ -1,0 +1,12 @@
+<map id="com.mysql.fabric.jdbc.FabricMySQLConnectionProxy" name="com.mysql.fabric.jdbc.FabricMySQLConnectionProxy">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html" title="com.mysql.jdbc.Connection\lPropertiesImpl" alt="" coords="1333,181,1515,222"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="164,322,347,363"/>
+<area shape="rect" id="node10" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="886,320,1113,347"/>
+<area shape="rect" id="node11" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="435,355,618,381"/>
+<area shape="rect" id="node13" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_properties.html" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnectionProperties" alt="" coords="661,397,852,438"/>
+<area shape="rect" id="node9" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection.html" title="com.mysql.fabric.jdbc.Fabric\lMySQLConnection" alt="" coords="1329,270,1519,311"/>
+<area shape="rect" id="node15" href="$interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection.html" title="com.mysql.jdbc.Replication\lConnection" alt="" coords="1333,335,1515,377"/>
+<area shape="rect" id="node16" href="$classcom_1_1mysql_1_1fabric_1_1_shard_mapping.html" title="com.mysql.fabric.ShardMapping" alt="" coords="1320,532,1528,559"/>
+<area shape="rect" id="node19" href="$classcom_1_1mysql_1_1fabric_1_1_server_group.html" title="com.mysql.fabric.ServerGroup" alt="" coords="1326,583,1522,609"/>
+<area shape="rect" id="node20" href="$classcom_1_1mysql_1_1fabric_1_1_fabric_connection.html" title="com.mysql.fabric.FabricConnection" alt="" coords="1311,633,1537,660"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.PreparedStatement.setTimestamp" name="com.mysql.jdbc.PreparedStatement.setTimestamp">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#aee3c411b599fe20f669701c025cc7a90" title="com.mysql.jdbc.PreparedStatement.set\lObject" alt="" coords="305,5,557,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#ac64644e427b3351770c30753ad0d9bbd" title="com.mysql.jdbc.Updatable\lResultSet.updateTimestamp" alt="" coords="338,71,525,112"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1simple_1_1_connection_test.html#a88325894a5bef7fc0239d8af082ede7f" title="testsuite.simple.Connection\lTest.testCacheDefaultTimezone" alt="" coords="328,136,535,177"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_updatable_result_set.html#a76ddad6df768c73381a9cdb2797aeba4" title="com.mysql.jdbc.Updatable\lResultSet.updateTimestamp" alt="" coords="605,71,792,112"/>
+</map>

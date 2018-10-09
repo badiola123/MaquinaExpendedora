@@ -1,0 +1,523 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set}{}\section{com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set}\index{com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set@{com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a70b5d683429f0ea686963f736d666974}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a70b5d683429f0ea686963f736d666974}} 
+{\bfseries J\+D\+B\+C4\+Result\+Set} (long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl_a3278756f102c97b9e4f5e5aa53590722}{update\+Count}}, long update\+ID, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl}{Statement\+Impl}} creator\+Stmt)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a1cb8ecbd072c4b0241014cf27b7b7df6}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a1cb8ecbd072c4b0241014cf27b7b7df6}} 
+{\bfseries J\+D\+B\+C4\+Result\+Set} (String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl_ae05d8a0ad69c96645b783537100fb95c}{catalog}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_field}{Field}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl_a5da5c6ef8d035aa65884115a2f7daf67}{fields}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_row_data}{Row\+Data}} tuples, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_statement_impl}{Statement\+Impl}} creator\+Stmt)  throws S\+Q\+L\+Exception 
+\item 
+Reader \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2581614c5be14cbcdd5e776e4bc7bc52}{get\+N\+Character\+Stream}} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+Reader \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4477f8b894dc7e0892bb80064db7f499}{get\+N\+Character\+Stream}} (String column\+Name)  throws S\+Q\+L\+Exception 
+\item 
+N\+Clob \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_af604405c61bde640ee0b00aba57b81e1}{get\+N\+Clob}} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+N\+Clob \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab31ba6018cd42a3af784126f0d17db83}{get\+N\+Clob}} (String column\+Name)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab4ab66899e61b969bab44eccedad00fb}{get\+N\+String}} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a01c74243228097fa36990664acb399bd}{get\+N\+String}} (String column\+Name)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a5d72c53312683748786c1416e5e14bf5}{update\+N\+Character\+Stream}} (int column\+Index, Reader x, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a641a93c720890dce9260033269fa9611}{update\+N\+Character\+Stream}} (String column\+Name, Reader reader, int length)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab7a86653c16281ed187fdda84743d6d3}{update\+N\+Clob}} (String column\+Name, N\+Clob n\+Clob)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2984faca8923fa1a5eaff36e05097d17}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2984faca8923fa1a5eaff36e05097d17}} 
+void {\bfseries update\+Row\+Id} (int column\+Index, Row\+Id x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2d9a02a4dcc808388b4a67a2e987191f}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2d9a02a4dcc808388b4a67a2e987191f}} 
+void {\bfseries update\+Row\+Id} (String column\+Name, Row\+Id x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4b25d7d39fb8c0225f056b3d25cb883c}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4b25d7d39fb8c0225f056b3d25cb883c}} 
+int {\bfseries get\+Holdability} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a8f8d6a4cfc67604eb35e68a2a566e218}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a8f8d6a4cfc67604eb35e68a2a566e218}} 
+Row\+Id {\bfseries get\+Row\+Id} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a5aed9f8331b1fdd326937df807c8ce94}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a5aed9f8331b1fdd326937df807c8ce94}} 
+Row\+Id {\bfseries get\+Row\+Id} (String column\+Label)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a04ab8434a23b0fad588b4bd5286b930f}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a04ab8434a23b0fad588b4bd5286b930f}} 
+S\+Q\+L\+X\+ML {\bfseries get\+S\+Q\+L\+X\+ML} (int column\+Index)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6bc6dbed14f847605648b43d082f49f4}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6bc6dbed14f847605648b43d082f49f4}} 
+S\+Q\+L\+X\+ML {\bfseries get\+S\+Q\+L\+X\+ML} (String column\+Label)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac45f3493adda070d1f1010265c6199b0}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac45f3493adda070d1f1010265c6199b0}} 
+void {\bfseries update\+Ascii\+Stream} (int column\+Index, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_afafc1ade7b59c5b624a93fb26ea4afdd}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_afafc1ade7b59c5b624a93fb26ea4afdd}} 
+void {\bfseries update\+Ascii\+Stream} (String column\+Label, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a59cecf0d71db748cb3a0ade17574a745}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a59cecf0d71db748cb3a0ade17574a745}} 
+void {\bfseries update\+Ascii\+Stream} (int column\+Index, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4f0864e409797638a3d1acdf2c239f27}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4f0864e409797638a3d1acdf2c239f27}} 
+void {\bfseries update\+Ascii\+Stream} (String column\+Label, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_abe794b3d7631a5474f24ddaeea029c54}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_abe794b3d7631a5474f24ddaeea029c54}} 
+void {\bfseries update\+Binary\+Stream} (int column\+Index, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a899bd17d5c035d07e1279a3c539709ff}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a899bd17d5c035d07e1279a3c539709ff}} 
+void {\bfseries update\+Binary\+Stream} (String column\+Label, Input\+Stream x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2c9c1f4672e8aa100a9e4e797d6a806b}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2c9c1f4672e8aa100a9e4e797d6a806b}} 
+void {\bfseries update\+Binary\+Stream} (int column\+Index, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a8a62ea14f050f829aa913495724b71fc}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a8a62ea14f050f829aa913495724b71fc}} 
+void {\bfseries update\+Binary\+Stream} (String column\+Label, Input\+Stream x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4b72762b01af92a7455e45eb11901dfa}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4b72762b01af92a7455e45eb11901dfa}} 
+void {\bfseries update\+Blob} (int column\+Index, Input\+Stream input\+Stream)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_af5ba8c5c7ad3eb0c0bbd62a7ace6baed}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_af5ba8c5c7ad3eb0c0bbd62a7ace6baed}} 
+void {\bfseries update\+Blob} (String column\+Label, Input\+Stream input\+Stream)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac462c1715bf0ca125e5487b762ccea26}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac462c1715bf0ca125e5487b762ccea26}} 
+void {\bfseries update\+Blob} (int column\+Index, Input\+Stream input\+Stream, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_adeaa9d59c0a41e9e8a3cdaf1e9d9e1d6}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_adeaa9d59c0a41e9e8a3cdaf1e9d9e1d6}} 
+void {\bfseries update\+Blob} (String column\+Label, Input\+Stream input\+Stream, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a3254b0d6fc52ff1c3680b9ac11ff3c1e}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a3254b0d6fc52ff1c3680b9ac11ff3c1e}} 
+void {\bfseries update\+Character\+Stream} (int column\+Index, Reader x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ad45ef730d81191da3d0a3250e34a2c3f}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ad45ef730d81191da3d0a3250e34a2c3f}} 
+void {\bfseries update\+Character\+Stream} (String column\+Label, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a9f89802e78fb3e0280ffb9c47d9cca8a}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a9f89802e78fb3e0280ffb9c47d9cca8a}} 
+void {\bfseries update\+Character\+Stream} (int column\+Index, Reader x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a07626d8b8f1995baf65ac7e15989faab}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a07626d8b8f1995baf65ac7e15989faab}} 
+void {\bfseries update\+Character\+Stream} (String column\+Label, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6131c301b1fa7a000bb458da1ff87349}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6131c301b1fa7a000bb458da1ff87349}} 
+void {\bfseries update\+Clob} (int column\+Index, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a938b87a97b2dc363d8c83c6f93e30bc5}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a938b87a97b2dc363d8c83c6f93e30bc5}} 
+void {\bfseries update\+Clob} (String column\+Label, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aba0260401b02de5e996b6950d7e6e311}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aba0260401b02de5e996b6950d7e6e311}} 
+void {\bfseries update\+Clob} (int column\+Index, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aa85c62419f26963772cc1081a9801962}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aa85c62419f26963772cc1081a9801962}} 
+void {\bfseries update\+Clob} (String column\+Label, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_add52ce217134df0f3105214475312972}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_add52ce217134df0f3105214475312972}} 
+void {\bfseries update\+N\+Character\+Stream} (int column\+Index, Reader x)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a301d0410a8f9ddba3d7fcc829fa26e52}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a301d0410a8f9ddba3d7fcc829fa26e52}} 
+void {\bfseries update\+N\+Character\+Stream} (String column\+Label, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a1ba37f8ec7db44d5fa5d1ea125fcd2c6}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a1ba37f8ec7db44d5fa5d1ea125fcd2c6}} 
+void {\bfseries update\+N\+Character\+Stream} (int column\+Index, Reader x, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab10cc566c38fcbc60a53ce3b17c79858}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab10cc566c38fcbc60a53ce3b17c79858}} 
+void {\bfseries update\+N\+Character\+Stream} (String column\+Label, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aaac3403912c74748aa7a2d6ea0a2e8e6}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aaac3403912c74748aa7a2d6ea0a2e8e6}} 
+void {\bfseries update\+N\+Clob} (int column\+Index, N\+Clob n\+Clob)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac34a2dcfce257cd20316fac01887e3ff}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac34a2dcfce257cd20316fac01887e3ff}} 
+void {\bfseries update\+N\+Clob} (int column\+Index, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ade72d03fa9a40b22f6d332559124ef20}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ade72d03fa9a40b22f6d332559124ef20}} 
+void {\bfseries update\+N\+Clob} (String column\+Label, Reader reader)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aa5a0e42ed1f5dfe544268c616fd3c96f}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_aa5a0e42ed1f5dfe544268c616fd3c96f}} 
+void {\bfseries update\+N\+Clob} (int column\+Index, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_afd70c26c0d760dbd80f4410dfbbde802}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_afd70c26c0d760dbd80f4410dfbbde802}} 
+void {\bfseries update\+N\+Clob} (String column\+Label, Reader reader, long length)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a72bff558eeca3bb43c6aa4b23c66752b}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a72bff558eeca3bb43c6aa4b23c66752b}} 
+void {\bfseries update\+N\+String} (int column\+Index, String n\+String)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4fd74b21a0092595310365d3ed619c98}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4fd74b21a0092595310365d3ed619c98}} 
+void {\bfseries update\+N\+String} (String column\+Label, String n\+String)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a13a10874d7c0430902d9e0a7ecdc781e}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a13a10874d7c0430902d9e0a7ecdc781e}} 
+void {\bfseries update\+S\+Q\+L\+X\+ML} (int column\+Index, S\+Q\+L\+X\+ML xml\+Object)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac4414886671b7498c6adbadc75f840e3}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ac4414886671b7498c6adbadc75f840e3}} 
+void {\bfseries update\+S\+Q\+L\+X\+ML} (String column\+Label, S\+Q\+L\+X\+ML xml\+Object)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a57d383b2ccf7020664d948a4fc2c09ea}{is\+Wrapper\+For}} (Class$<$?$>$ iface)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+java.\+sql.\+N\+Clob \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6bf40393d9b07a198cc49ca934d42f10}{get\+Native\+N\+Clob}} (int column\+Index)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6bf40393d9b07a198cc49ca934d42f10}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6bf40393d9b07a198cc49ca934d42f10}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!get\+Native\+N\+Clob@{get\+Native\+N\+Clob}}
+\index{get\+Native\+N\+Clob@{get\+Native\+N\+Clob}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{get\+Native\+N\+Clob()}{getNativeNClob()}}
+{\footnotesize\ttfamily java.\+sql.\+N\+Clob com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+get\+Native\+N\+Clob (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+J\+D\+BC 4.\+0 Get a N\+C\+L\+OB column.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & the first column is 1, the second is 2, ...\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object representing a N\+C\+L\+OB
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a6bf40393d9b07a198cc49ca934d42f10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2581614c5be14cbcdd5e776e4bc7bc52}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2581614c5be14cbcdd5e776e4bc7bc52}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!get\+N\+Character\+Stream@{get\+N\+Character\+Stream}}
+\index{get\+N\+Character\+Stream@{get\+N\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{get\+N\+Character\+Stream()}{getNCharacterStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Reader com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+get\+N\+Character\+Stream (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0
+
+Get the value of a column in the current row as a java.\+io.\+Reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & the column to get the value from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value in the column as a java.\+io.\+Reader.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2581614c5be14cbcdd5e776e4bc7bc52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a2581614c5be14cbcdd5e776e4bc7bc52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4477f8b894dc7e0892bb80064db7f499}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4477f8b894dc7e0892bb80064db7f499}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!get\+N\+Character\+Stream@{get\+N\+Character\+Stream}}
+\index{get\+N\+Character\+Stream@{get\+N\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{get\+N\+Character\+Stream()}{getNCharacterStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Reader com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+get\+N\+Character\+Stream (\begin{DoxyParamCaption}\item[{String}]{column\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0
+
+Get the value of a column in the current row as a java.\+io.\+Reader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Name} & the column name to retrieve the value from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value as a java.\+io.\+Reader
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a4477f8b894dc7e0892bb80064db7f499_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_af604405c61bde640ee0b00aba57b81e1}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_af604405c61bde640ee0b00aba57b81e1}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!get\+N\+Clob@{get\+N\+Clob}}
+\index{get\+N\+Clob@{get\+N\+Clob}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{get\+N\+Clob()}{getNClob()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily N\+Clob com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+get\+N\+Clob (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0 Get a N\+C\+L\+OB column.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the first column is 1, the second is 2, ...\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object representing a N\+C\+L\+OB
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_af604405c61bde640ee0b00aba57b81e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_af604405c61bde640ee0b00aba57b81e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab31ba6018cd42a3af784126f0d17db83}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab31ba6018cd42a3af784126f0d17db83}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!get\+N\+Clob@{get\+N\+Clob}}
+\index{get\+N\+Clob@{get\+N\+Clob}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{get\+N\+Clob()}{getNClob()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily N\+Clob com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+get\+N\+Clob (\begin{DoxyParamCaption}\item[{String}]{column\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0 Get a N\+C\+L\+OB column.
+
+
+\begin{DoxyParams}{Parameters}
+{\em col\+Name} & the column name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object representing a N\+C\+L\+OB
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab31ba6018cd42a3af784126f0d17db83_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab4ab66899e61b969bab44eccedad00fb}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab4ab66899e61b969bab44eccedad00fb}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!get\+N\+String@{get\+N\+String}}
+\index{get\+N\+String@{get\+N\+String}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{get\+N\+String()}{getNString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+get\+N\+String (\begin{DoxyParamCaption}\item[{int}]{column\+Index }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0
+
+Get the value of a column in the current row as a Java String
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & the first column is 1, the second is 2...\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the column value, null for S\+QL N\+U\+LL
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab4ab66899e61b969bab44eccedad00fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab4ab66899e61b969bab44eccedad00fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a01c74243228097fa36990664acb399bd}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a01c74243228097fa36990664acb399bd}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!get\+N\+String@{get\+N\+String}}
+\index{get\+N\+String@{get\+N\+String}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{get\+N\+String()}{getNString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+get\+N\+String (\begin{DoxyParamCaption}\item[{String}]{column\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0
+
+The following routines simply convert the column\+Name into a column\+Index and then call the appropriate routine above.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Name} & is the S\+QL name of the column\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the column value
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a01c74243228097fa36990664acb399bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a57d383b2ccf7020664d948a4fc2c09ea}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a57d383b2ccf7020664d948a4fc2c09ea}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!is\+Wrapper\+For@{is\+Wrapper\+For}}
+\index{is\+Wrapper\+For@{is\+Wrapper\+For}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{is\+Wrapper\+For()}{isWrapperFor()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+is\+Wrapper\+For (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{iface }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns true if this either implements the interface argument or is directly or indirectly a wrapper for an object that does. Returns false otherwise. If this implements the interface then return true, else if this is a wrapper then return the result of recursively calling {\ttfamily is\+Wrapper\+For} on the wrapped object. If this does not implement the interface and is not a wrapper, return false. This method should be implemented as a low-\/cost operation compared to {\ttfamily unwrap} so that callers can use this method to avoid expensive {\ttfamily unwrap} calls that may fail. If this method returns true then calling {\ttfamily unwrap} with the same argument should succeed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interfaces} & a Class defining an interface. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this implements the interface or directly or indirectly wraps an object that does. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em java.\+sql.\+S\+Q\+L\+Exception} & if an error occurs while determining whether this is a wrapper for an object with the given interface. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a57d383b2ccf7020664d948a4fc2c09ea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a5d72c53312683748786c1416e5e14bf5}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a5d72c53312683748786c1416e5e14bf5}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!update\+N\+Character\+Stream@{update\+N\+Character\+Stream}}
+\index{update\+N\+Character\+Stream@{update\+N\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{update\+N\+Character\+Stream()}{updateNCharacterStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+update\+N\+Character\+Stream (\begin{DoxyParamCaption}\item[{int}]{column\+Index,  }\item[{Reader}]{x,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0 Update a column with a character stream value. The update\+X\+X\+X() methods are used to update column values in the current row, or the insert row. The update\+X\+X\+X() methods do not update the underlying database, instead the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl_a2842d32292d023aaeeafedeed3322981}{update\+Row()}} or \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl_a78e304e3279cbcf60392f18c1385e3bf}{insert\+Row()}} methods are called to update the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Index} & the first column is 1, the second is 2, ... \\
+\hline
+{\em x} & the new column value \\
+\hline
+{\em length} & the length of the stream\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs \\
+\hline
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_not_updatable}{Not\+Updatable}}} & \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a5d72c53312683748786c1416e5e14bf5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a641a93c720890dce9260033269fa9611}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a641a93c720890dce9260033269fa9611}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!update\+N\+Character\+Stream@{update\+N\+Character\+Stream}}
+\index{update\+N\+Character\+Stream@{update\+N\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{update\+N\+Character\+Stream()}{updateNCharacterStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+update\+N\+Character\+Stream (\begin{DoxyParamCaption}\item[{String}]{column\+Name,  }\item[{Reader}]{reader,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+J\+D\+BC 4.\+0 Update a column with a character stream value. The update\+X\+X\+X() methods are used to update column values in the current row, or the insert row. The update\+X\+X\+X() methods do not update the underlying database, instead the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl_a2842d32292d023aaeeafedeed3322981}{update\+Row()}} or \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_result_set_impl_a78e304e3279cbcf60392f18c1385e3bf}{insert\+Row()}} methods are called to update the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em column\+Name} & the name of the column \\
+\hline
+{\em reader} & the stream to update the column with \\
+\hline
+{\em length} & of the stream\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database-\/access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_a641a93c720890dce9260033269fa9611_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab7a86653c16281ed187fdda84743d6d3}\label{classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_result_set_ab7a86653c16281ed187fdda84743d6d3}} 
+\index{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}!update\+N\+Clob@{update\+N\+Clob}}
+\index{update\+N\+Clob@{update\+N\+Clob}!com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set@{com\+::mysql\+::jdbc\+::\+J\+D\+B\+C4\+Result\+Set}}
+\subsubsection{\texorpdfstring{update\+N\+Clob()}{updateNClob()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+J\+D\+B\+C4\+Result\+Set.\+update\+N\+Clob (\begin{DoxyParamCaption}\item[{String}]{column\+Name,  }\item[{N\+Clob}]{n\+Clob }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+Result\+Set\+::update\+N\+Clob(\+String, N\+Clob) 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/J\+D\+B\+C4\+Result\+Set.\+java\end{DoxyCompactItemize}

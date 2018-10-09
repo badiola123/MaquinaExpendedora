@@ -1,0 +1,177 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group}{}\section{com.\+mysql.\+jdbc.\+Connection\+Group Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group}\index{com.\+mysql.\+jdbc.\+Connection\+Group@{com.\+mysql.\+jdbc.\+Connection\+Group}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a0b9bbcb97df0c64dad23edf84c030a8c}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a0b9bbcb97df0c64dad23edf84c030a8c}} 
+long {\bfseries register\+Connection\+Proxy} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}} proxy, List$<$ String $>$ local\+Host\+List)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a8b1b75467cdb903023cffc60362cafe5}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a8b1b75467cdb903023cffc60362cafe5}} 
+String {\bfseries get\+Group\+Name} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_aa07cd4fdcafcd821da23f55611021f13}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_aa07cd4fdcafcd821da23f55611021f13}} 
+Collection$<$ String $>$ {\bfseries get\+Initial\+Hosts} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a00a7049f7312d5710f282d51c62cea0e}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a00a7049f7312d5710f282d51c62cea0e}} 
+int {\bfseries get\+Active\+Host\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a80fba5dc8d17b4a9f183158f630bd769}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a80fba5dc8d17b4a9f183158f630bd769}} 
+Collection$<$ String $>$ {\bfseries get\+Closed\+Hosts} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a249146837505ecacf02fd287343f2316}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a249146837505ecacf02fd287343f2316}} 
+long {\bfseries get\+Total\+Logical\+Connection\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a05525d44b09a0cff417714cdd68d8389}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a05525d44b09a0cff417714cdd68d8389}} 
+long {\bfseries get\+Active\+Logical\+Connection\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a5411acb4feff8b4214dc57497d5f24a4}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a5411acb4feff8b4214dc57497d5f24a4}} 
+long {\bfseries get\+Active\+Physical\+Connection\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a2c4f6dffe1af27a4931e42f451e0626d}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a2c4f6dffe1af27a4931e42f451e0626d}} 
+long {\bfseries get\+Total\+Physical\+Connection\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a8b5d4cbf84c07ec1cde02bdcd8605563}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a8b5d4cbf84c07ec1cde02bdcd8605563}} 
+long {\bfseries get\+Total\+Transaction\+Count} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_adf86915b8ef7962c6c9982dd8d4e7541}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_adf86915b8ef7962c6c9982dd8d4e7541}} 
+void {\bfseries close\+Connection\+Proxy} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}} proxy)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ae0d6740efd41c535f64998acbf213a54}{remove\+Host}} (String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ac1cffa2544420e1e0304129257c97a91}{remove\+Host}} (String host\+Port\+Pair, boolean remove\+Existing)  throws S\+Q\+L\+Exception 
+\item 
+synchronized void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a27586faf64da09b716633d8af113a9ba}{remove\+Host}} (String host\+Port\+Pair, boolean remove\+Existing, boolean wait\+For\+Graceful\+Failover)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a3d7277b9513c4f9f7e98a62bbe6c6b4d}{add\+Host}} (String host\+Port\+Pair)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a26394f92e59f213c787876133b0a17e5}{add\+Host}} (String host\+Port\+Pair, boolean for\+Existing)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a3d7277b9513c4f9f7e98a62bbe6c6b4d}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a3d7277b9513c4f9f7e98a62bbe6c6b4d}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}!add\+Host@{add\+Host}}
+\index{add\+Host@{add\+Host}!com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}}
+\subsubsection{\texorpdfstring{add\+Host()}{addHost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Connection\+Group.\+add\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption})}
+
+Add the given host (host\+:port pair) to this \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} Group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host\+:port pair to add. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a26394f92e59f213c787876133b0a17e5}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a26394f92e59f213c787876133b0a17e5}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}!add\+Host@{add\+Host}}
+\index{add\+Host@{add\+Host}!com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}}
+\subsubsection{\texorpdfstring{add\+Host()}{addHost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Connection\+Group.\+add\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{boolean}]{for\+Existing }\end{DoxyParamCaption})}
+
+Add the given host (host\+:port pair) to this \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} Group and, consequently, to all the load-\/balanced connections it holds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host\+:port pair to add. \\
+\hline
+{\em for\+Existing} & Whether affects existing load-\/balanced connections or only new ones. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a26394f92e59f213c787876133b0a17e5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ae0d6740efd41c535f64998acbf213a54}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ae0d6740efd41c535f64998acbf213a54}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}!remove\+Host@{remove\+Host}}
+\index{remove\+Host@{remove\+Host}!com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Host()}{removeHost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Connection\+Group.\+remove\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Remove the given host (host\+:port pair) from this \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} Group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host\+:port pair to remove. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ae0d6740efd41c535f64998acbf213a54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ac1cffa2544420e1e0304129257c97a91}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ac1cffa2544420e1e0304129257c97a91}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}!remove\+Host@{remove\+Host}}
+\index{remove\+Host@{remove\+Host}!com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Host()}{removeHost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Connection\+Group.\+remove\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{boolean}]{remove\+Existing }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Remove the given host (host\+:port pair) from this \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} Group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host\+:port pair to remove. \\
+\hline
+{\em remove\+Existing} & Whether affects existing load-\/balanced connections or only new ones. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_connection_group_ac1cffa2544420e1e0304129257c97a91_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a27586faf64da09b716633d8af113a9ba}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a27586faf64da09b716633d8af113a9ba}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}!remove\+Host@{remove\+Host}}
+\index{remove\+Host@{remove\+Host}!com\+::mysql\+::jdbc\+::\+Connection\+Group@{com\+::mysql\+::jdbc\+::\+Connection\+Group}}
+\subsubsection{\texorpdfstring{remove\+Host()}{removeHost()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily synchronized void com.\+mysql.\+jdbc.\+Connection\+Group.\+remove\+Host (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+Pair,  }\item[{boolean}]{remove\+Existing,  }\item[{boolean}]{wait\+For\+Graceful\+Failover }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Remove the given host (host\+:port pair) from this \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} Group and, consequently, from all the load-\/balanced connections it holds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host\+Port\+Pair} & The host\+:port pair to remove. \\
+\hline
+{\em remove\+Existing} & Whether affects existing load-\/balanced connections or only new ones. \\
+\hline
+{\em wait\+For\+Graceful\+Failover} & If true instructs the load-\/balanced connections to fail-\/over the underlying active connection before removing this host, otherwise remove immediately. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_connection_group_a27586faf64da09b716633d8af113a9ba_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Connection\+Group.\+java\end{DoxyCompactItemize}

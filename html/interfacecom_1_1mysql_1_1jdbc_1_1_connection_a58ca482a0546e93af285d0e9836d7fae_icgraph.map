@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Connection.shutdownServer" name="com.mysql.jdbc.Connection.shutdownServer">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a23e3bc174ec3f98397698fcddc3d3ca0" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.shutdownServer" alt="" coords="300,5,531,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_mini_admin.html#a2d976dc99e2fd7ea82cf744a6156d4d6" title="com.mysql.jdbc.MiniAdmin.shutdown" alt="" coords="296,71,535,98"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1simple_1_1_mini_admin_test.html#a8420a5f6bcd0ecfe1b716b8251899662" title="testsuite.simple.MiniAdmin\lTest.testShutdown" alt="" coords="583,64,761,105"/>
+</map>

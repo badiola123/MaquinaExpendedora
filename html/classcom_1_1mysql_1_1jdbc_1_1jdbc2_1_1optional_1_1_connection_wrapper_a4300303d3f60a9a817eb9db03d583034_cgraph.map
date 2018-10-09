@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.jdbc2.optional.ConnectionWrapper.ConnectionWrapper" name="com.mysql.jdbc.jdbc2.optional.ConnectionWrapper.ConnectionWrapper">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ad2b00fa8ecb1c3455f2f2725ca9fc29c" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setInGlobalTx" alt="" coords="308,5,527,47"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#ae5192425468c89f3d404ed0dece17cfc" title="com.mysql.jdbc.Connection.set\lInGlobalTx" alt="" coords="575,5,780,47"/>
+</map>

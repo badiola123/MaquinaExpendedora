@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setDumpQueriesOnException" name="com.mysql.jdbc.ConnectionProperties.setDumpQueriesOnException">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a0e4c6f477c15bd82e03a4376fbef7124" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setDumpQueries\lOnException" alt="" coords="311,5,548,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#ad62d20e58b21ef53f69e1c7c39325ef8" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setDumpQueries\lOnException" alt="" coords="313,85,545,141"/>
+</map>

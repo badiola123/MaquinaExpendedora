@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.ConnectionImpl" name="com.mysql.jdbc.ConnectionImpl">
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_connection.html" title="com.mysql.jdbc.JDBC4Connection" alt="" coords="60,333,283,360"/>
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html" title="com.mysql.jdbc.Connection\lPropertiesImpl" alt="" coords="5,95,188,136"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="145,5,328,47"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="134,184,361,211"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="275,102,457,129"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="com.mysql.fabric.jdbc.FabricMySQLDataSource.getConnection" name="com.mysql.fabric.jdbc.FabricMySQLDataSource.getConnection">
+<area shape="rect" id="node2" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_basic_connection.html#a86081e38cdb6f9233486dcb721716dd2" title="testsuite.fabric.jdbc.Test\lBasicConnection.testConnection\lDataSource" alt="" coords="312,5,523,61"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics.html#a46bc7c088ffa04246b0cf08add9694d6" title="testsuite.fabric.jdbc.Test\lHABasics.manualTestNewConnHasNewState" alt="" coords="275,86,560,127"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics.html#ab66fc4203073df03c09bf9ab9c08b5dc" title="testsuite.fabric.jdbc.Test\lHABasics.manualTestFailedOldMaster\lDoesntBlockNewConnections" alt="" coords="294,152,541,208"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics.html#a8f2267e44add804694f5e99500bdc455" title="testsuite.fabric.jdbc.Test\lHABasics.manualTestFailedSingle\lSlaveDoesntBlockNewConnections" alt="" coords="305,232,529,288"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a62bab22c5e479b7c4f07339b0085a73a" title="testsuite.fabric.jdbc.Test\lRegressions.testBug73070" alt="" coords="328,313,507,354"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a4e0d710d5707438a3ccd2dde61938f1c" title="testsuite.fabric.jdbc.Test\lRegressions.testBug75080" alt="" coords="328,378,507,419"/>
+<area shape="rect" id="node8" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a3ce60c17f8f082b01d2d313de8a469e3" title="testsuite.fabric.jdbc.Test\lRegressions.testBug77217" alt="" coords="328,443,507,485"/>
+<area shape="rect" id="node9" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a97a6970c2925c2feddfeceac2e0a1d71" title="testsuite.fabric.jdbc.Test\lRegressions.manualTestRefreshFabric\lStateCache" alt="" coords="295,509,540,565"/>
+<area shape="rect" id="node10" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a7b46187e3a7d4a9951d8cd51344b090e" title="testsuite.fabric.jdbc.Test\lRegressions.testBug82094" alt="" coords="328,590,507,631"/>
+<area shape="rect" id="node11" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a832cdff2250e770858c18a1143e689ad" title="testsuite.fabric.jdbc.Test\lRegressions.manualTestBug22750465" alt="" coords="295,655,539,697"/>
+</map>

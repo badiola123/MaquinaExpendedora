@@ -1,0 +1,107 @@
+\hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics}{}\section{testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics Class Reference}
+\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics}\index{testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics@{testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics}}
+
+
+Inheritance diagram for testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a7aa5897ac268e034ecbfd14875be8990}\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a7aa5897ac268e034ecbfd14875be8990}} 
+void {\bfseries set\+Up} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a5da87d14850b9c0c358c1cb26d1b134b}\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a5da87d14850b9c0c358c1cb26d1b134b}} 
+void {\bfseries tear\+Down} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a7403ca8813b62ba5c1107ab80bed7f02}{test\+Read\+Write\+Splitting}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_ad06678b5e9617e9471be5b2e4d4f1699}{manual\+Test\+Failover}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a46bc7c088ffa04246b0cf08add9694d6}{manual\+Test\+New\+Conn\+Has\+New\+State}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_ab66fc4203073df03c09bf9ab9c08b5dc}{manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a8f2267e44add804694f5e99500bdc455}{manual\+Test\+Failed\+Single\+Slave\+Doesnt\+Block\+New\+Connections}} ()  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+T\+O\+DO\+: document required setup for this test 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_ab66fc4203073df03c09bf9ab9c08b5dc}\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_ab66fc4203073df03c09bf9ab9c08b5dc}} 
+\index{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}!manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections@{manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections}}
+\index{manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections@{manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections}!testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}}
+\subsubsection{\texorpdfstring{manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections()}{manualTestFailedOldMasterDoesntBlockNewConnections()}}
+{\footnotesize\ttfamily void testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics.\+manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Test that partially failed over connections (those that failed but could not immediately get a new connection) don\textquotesingle{}t impact the creation of new connections by being a part of the replication connection group. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_ab66fc4203073df03c09bf9ab9c08b5dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a8f2267e44add804694f5e99500bdc455}\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a8f2267e44add804694f5e99500bdc455}} 
+\index{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}!manual\+Test\+Failed\+Single\+Slave\+Doesnt\+Block\+New\+Connections@{manual\+Test\+Failed\+Single\+Slave\+Doesnt\+Block\+New\+Connections}}
+\index{manual\+Test\+Failed\+Single\+Slave\+Doesnt\+Block\+New\+Connections@{manual\+Test\+Failed\+Single\+Slave\+Doesnt\+Block\+New\+Connections}!testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}}
+\subsubsection{\texorpdfstring{manual\+Test\+Failed\+Single\+Slave\+Doesnt\+Block\+New\+Connections()}{manualTestFailedSingleSlaveDoesntBlockNewConnections()}}
+{\footnotesize\ttfamily void testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics.\+manual\+Test\+Failed\+Single\+Slave\+Doesnt\+Block\+New\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Same as test `manual\+Test\+Failed\+Old\+Master\+Doesnt\+Block\+New\+Connections' for slaves. There must be only one slave in the HA group for this test. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a8f2267e44add804694f5e99500bdc455_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_ad06678b5e9617e9471be5b2e4d4f1699}\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_ad06678b5e9617e9471be5b2e4d4f1699}} 
+\index{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}!manual\+Test\+Failover@{manual\+Test\+Failover}}
+\index{manual\+Test\+Failover@{manual\+Test\+Failover}!testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}}
+\subsubsection{\texorpdfstring{manual\+Test\+Failover()}{manualTestFailover()}}
+{\footnotesize\ttfamily void testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics.\+manual\+Test\+Failover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Test for failover that requires manual intervention. \mbox{\Hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a46bc7c088ffa04246b0cf08add9694d6}\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a46bc7c088ffa04246b0cf08add9694d6}} 
+\index{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}!manual\+Test\+New\+Conn\+Has\+New\+State@{manual\+Test\+New\+Conn\+Has\+New\+State}}
+\index{manual\+Test\+New\+Conn\+Has\+New\+State@{manual\+Test\+New\+Conn\+Has\+New\+State}!testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}}
+\subsubsection{\texorpdfstring{manual\+Test\+New\+Conn\+Has\+New\+State()}{manualTestNewConnHasNewState()}}
+{\footnotesize\ttfamily void testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics.\+manual\+Test\+New\+Conn\+Has\+New\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Test that new connections get the state changes from the Fabric node. The current implementation queries the Fabric node on every new connection and therefore always has the latest state. Future shared state implementation may loosen this constraint. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a46bc7c088ffa04246b0cf08add9694d6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a7403ca8813b62ba5c1107ab80bed7f02}\label{classtestsuite_1_1fabric_1_1jdbc_1_1_test_h_a_basics_a7403ca8813b62ba5c1107ab80bed7f02}} 
+\index{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}!test\+Read\+Write\+Splitting@{test\+Read\+Write\+Splitting}}
+\index{test\+Read\+Write\+Splitting@{test\+Read\+Write\+Splitting}!testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics@{testsuite\+::fabric\+::jdbc\+::\+Test\+H\+A\+Basics}}
+\subsubsection{\texorpdfstring{test\+Read\+Write\+Splitting()}{testReadWriteSplitting()}}
+{\footnotesize\ttfamily void testsuite.\+fabric.\+jdbc.\+Test\+H\+A\+Basics.\+test\+Read\+Write\+Splitting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Test that writes go to the master and reads go to the slave(s). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/fabric/jdbc/Test\+H\+A\+Basics.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean}{}\section{com.\+mysql.\+jdbc.\+jmx.\+Load\+Balance\+Connection\+Group\+Manager\+M\+Bean Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean}\index{com.\+mysql.\+jdbc.\+jmx.\+Load\+Balance\+Connection\+Group\+Manager\+M\+Bean@{com.\+mysql.\+jdbc.\+jmx.\+Load\+Balance\+Connection\+Group\+Manager\+M\+Bean}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+jmx.\+Load\+Balance\+Connection\+Group\+Manager\+M\+Bean\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a843965ea55e1b31a118ed9f6284c9e5c}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a843965ea55e1b31a118ed9f6284c9e5c}} 
+abstract int {\bfseries get\+Active\+Host\+Count} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_aa612e0ec83bbcb4991b96525f185152d}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_aa612e0ec83bbcb4991b96525f185152d}} 
+abstract int {\bfseries get\+Total\+Host\+Count} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a60d3432efeedd4fc3fd4fb8d63d707f3}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a60d3432efeedd4fc3fd4fb8d63d707f3}} 
+abstract long {\bfseries get\+Total\+Logical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_af4ecb1601690785fd10c37d67e026b86}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_af4ecb1601690785fd10c37d67e026b86}} 
+abstract long {\bfseries get\+Active\+Logical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a9b777fdab217ddb8c256e292bf9b34a9}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a9b777fdab217ddb8c256e292bf9b34a9}} 
+abstract long {\bfseries get\+Active\+Physical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_adedc62964bd6151e6bead20cb002913c}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_adedc62964bd6151e6bead20cb002913c}} 
+abstract long {\bfseries get\+Total\+Physical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_aaf3ef882a5280e68c31fc45f525d5c0e}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_aaf3ef882a5280e68c31fc45f525d5c0e}} 
+abstract long {\bfseries get\+Total\+Transaction\+Count} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a7a677dfa70003ae04a708633a8e06bf8}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a7a677dfa70003ae04a708633a8e06bf8}} 
+abstract void {\bfseries remove\+Host} (String group, String host)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a0c02903089ebd76f8c100d7fed65f843}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a0c02903089ebd76f8c100d7fed65f843}} 
+abstract void {\bfseries stop\+New\+Connections\+To\+Host} (String group, String host)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a71910631b1d07b0c4f36d5b4a53d1641}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a71910631b1d07b0c4f36d5b4a53d1641}} 
+abstract void {\bfseries add\+Host} (String group, String host, boolean for\+Existing)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a59bcffbd3733a14e7a17de45645439b0}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_a59bcffbd3733a14e7a17de45645439b0}} 
+abstract String {\bfseries get\+Active\+Hosts\+List} (String group)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_aab3649482b819734dd6d01d03204b06c}\label{interfacecom_1_1mysql_1_1jdbc_1_1jmx_1_1_load_balance_connection_group_manager_m_bean_aab3649482b819734dd6d01d03204b06c}} 
+abstract String {\bfseries get\+Registered\+Connection\+Groups} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/jmx/Load\+Balance\+Connection\+Group\+Manager\+M\+Bean.\+java\end{DoxyCompactItemize}

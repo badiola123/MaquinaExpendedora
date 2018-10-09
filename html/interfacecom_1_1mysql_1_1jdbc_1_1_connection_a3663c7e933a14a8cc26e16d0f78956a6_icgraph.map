@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.Connection.isSameResource" name="com.mysql.jdbc.Connection.isSameResource">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_connection.html#a352f65f22228587f43c93e280c679496" title="com.mysql.jdbc.jdbc2.optional.\lMysqlXAConnection.isSameRM" alt="" coords="265,5,471,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a476b5999b12b909b4b43cd3c97b4f5d5" title="com.mysql.jdbc.MultiHost\lMySQLConnection.isSameResource" alt="" coords="251,71,485,112"/>
+</map>

@@ -1,0 +1,90 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection}{}\section{com.\+mysql.\+fabric.\+Fabric\+Connection Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection}\index{com.\+mysql.\+fabric.\+Fabric\+Connection@{com.\+mysql.\+fabric.\+Fabric\+Connection}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_ad3552e9fbdef5f8b076182c8a34ab337}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_ad3552e9fbdef5f8b076182c8a34ab337}} 
+{\bfseries Fabric\+Connection} (String url, String username, String password)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a8d7d3ea0363c352f69ef2b4c6f311637}{Fabric\+Connection}} (Set$<$ String $>$ urls, String username, String password)  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a3b88c9f9951d44aba25e827a1ad0a841}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a3b88c9f9951d44aba25e827a1ad0a841}} 
+String {\bfseries get\+Instance\+Uuid} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a594b4b7b7f94b95b3dc10d3a5962a20b}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a594b4b7b7f94b95b3dc10d3a5962a20b}} 
+int {\bfseries get\+Version} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_aa008c3c21505a6a3cd81dbe20c8ca9f0}{refresh\+State}} ()  throws Fabric\+Communication\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_aeb271deac0f538b21b16bc6c7bbd9f41}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_aeb271deac0f538b21b16bc6c7bbd9f41}} 
+int {\bfseries refresh\+State\+Passive} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a3258ace24dbdfe645935d44acfc76c79}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a3258ace24dbdfe645935d44acfc76c79}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group}{Server\+Group}} {\bfseries get\+Server\+Group} (String server\+Group\+Name)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a967e99d19059cbb528f735d1d3a79bbc}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a967e99d19059cbb528f735d1d3a79bbc}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_mapping}{Shard\+Mapping}} {\bfseries get\+Shard\+Mapping} (String database, String table)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_accdcdbe0488949e8378e565de365da23}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_accdcdbe0488949e8378e565de365da23}} 
+boolean {\bfseries is\+State\+Expired} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_ac496bdea8dc324f8769b7be75a827f58}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_ac496bdea8dc324f8769b7be75a827f58}} 
+Set$<$ String $>$ {\bfseries get\+Fabric\+Hosts} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a64bb580f34d81ad8e4b30599031127fc}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a64bb580f34d81ad8e4b30599031127fc}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1proto_1_1xmlrpc_1_1_xml_rpc_client}{Xml\+Rpc\+Client}} {\bfseries get\+Client} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a8d7d3ea0363c352f69ef2b4c6f311637}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_a8d7d3ea0363c352f69ef2b4c6f311637}} 
+\index{com\+::mysql\+::fabric\+::\+Fabric\+Connection@{com\+::mysql\+::fabric\+::\+Fabric\+Connection}!Fabric\+Connection@{Fabric\+Connection}}
+\index{Fabric\+Connection@{Fabric\+Connection}!com\+::mysql\+::fabric\+::\+Fabric\+Connection@{com\+::mysql\+::fabric\+::\+Fabric\+Connection}}
+\subsubsection{\texorpdfstring{Fabric\+Connection()}{FabricConnection()}}
+{\footnotesize\ttfamily com.\+mysql.\+fabric.\+Fabric\+Connection.\+Fabric\+Connection (\begin{DoxyParamCaption}\item[{Set$<$ String $>$}]{urls,  }\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em urls} & \\
+\hline
+{\em username} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_aa008c3c21505a6a3cd81dbe20c8ca9f0}\label{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_aa008c3c21505a6a3cd81dbe20c8ca9f0}} 
+\index{com\+::mysql\+::fabric\+::\+Fabric\+Connection@{com\+::mysql\+::fabric\+::\+Fabric\+Connection}!refresh\+State@{refresh\+State}}
+\index{refresh\+State@{refresh\+State}!com\+::mysql\+::fabric\+::\+Fabric\+Connection@{com\+::mysql\+::fabric\+::\+Fabric\+Connection}}
+\subsubsection{\texorpdfstring{refresh\+State()}{refreshState()}}
+{\footnotesize\ttfamily int com.\+mysql.\+fabric.\+Fabric\+Connection.\+refresh\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_fabric_communication_exception}{Fabric\+Communication\+Exception}}}
+
+\begin{DoxyReturn}{Returns}
+version of state data 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_aa008c3c21505a6a3cd81dbe20c8ca9f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_fabric_connection_aa008c3c21505a6a3cd81dbe20c8ca9f0_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/Fabric\+Connection.\+java\end{DoxyCompactItemize}

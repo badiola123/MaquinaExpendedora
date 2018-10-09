@@ -1,0 +1,901 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema}{}\section{com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema}\index{com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema@{com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_1_1_j_d_b_c4_function_constant}{J\+D\+B\+C4\+Function\+Constant}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a21958250d37526385b0bfc7e0699c6bf}{get\+Column\+Privileges}} (String catalog, String schema, String table, String column\+Name\+Pattern)  throws S\+Q\+L\+Exception 
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a32e04e3285884390a2cfd25bfb1fc544}{get\+Columns}} (String catalog, String schema\+Pattern, String table\+Name, String column\+Name\+Pattern)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a720ac1db468802b830153fb7300155d8}{get\+Cross\+Reference}} (String primary\+Catalog, String primary\+Schema, String primary\+Table, String foreign\+Catalog, String foreign\+Schema, String foreign\+Table)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a5340c760bf25beeec6aff524824dbda8}{get\+Exported\+Keys}} (String catalog, String schema, String table)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a53a952ae6bd3ef46f348c882a06358db}{get\+Imported\+Keys}} (String catalog, String schema, String table)  throws S\+Q\+L\+Exception 
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0bb4ecdb1ce309f41ee03ffe637f3a98}{get\+Index\+Info}} (String catalog, String schema, String table, boolean unique, boolean approximate)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a65812af65021eed61d345630af494ca3}{get\+Primary\+Keys}} (String catalog, String schema, String table)  throws S\+Q\+L\+Exception 
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a1f2fd58fdf545dc23641793c4035f91d}{get\+Procedures}} (String catalog, String schema\+Pattern, String procedure\+Name\+Pattern)  throws S\+Q\+L\+Exception 
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2bb17e6501848d501ed65ee886ed4225}{get\+Procedure\+Columns}} (String catalog, String schema\+Pattern, String procedure\+Name\+Pattern, String column\+Name\+Pattern)  throws S\+Q\+L\+Exception 
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a77e696e0c2b875ddbf17513a1be3f6a3}{get\+Tables}} (String catalog, String schema\+Pattern, String table\+Name\+Pattern, String\mbox{[}$\,$\mbox{]} types)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a671b98658bfeb0335ad1099ebede527d}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a671b98658bfeb0335ad1099ebede527d}} 
+boolean {\bfseries gethas\+Parameters\+View} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_af84372ae6814c8b39bc67cf6af6ee5f9}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_af84372ae6814c8b39bc67cf6af6ee5f9}} 
+Result\+Set {\bfseries get\+Version\+Columns} (String catalog, String schema, String table)  throws S\+Q\+L\+Exception 
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2fa8933408d13c24d5bb5cc008a40bb0}{get\+Function\+Columns}} (String catalog, String schema\+Pattern, String function\+Name\+Pattern, String column\+Name\+Pattern)  throws S\+Q\+L\+Exception 
+\item 
+java.\+sql.\+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a6c98ce4fc7444e6f16442fb9b450fb72}{get\+Functions}} (String catalog, String schema\+Pattern, String function\+Name\+Pattern)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a913f7305d6206445fc4fae7d4a8f4e33}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a913f7305d6206445fc4fae7d4a8f4e33}} 
+{\bfseries Database\+Meta\+Data\+Using\+Info\+Schema} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn\+To\+Set, String database\+To\+Set)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a293d76621d3f1ded136670a7b35cb279}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a293d76621d3f1ded136670a7b35cb279}} 
+Result\+Set {\bfseries execute\+Metadata\+Query} (java.\+sql.\+Prepared\+Statement p\+Stmt)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a78df26f7bd43db24e251d4b14560fe47}{get\+Routine\+Type\+Condition\+For\+Get\+Procedures}} ()
+\item 
+Result\+Set \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a39f4d86800a2ecfb0e22a88485a92aae}{get\+Procedure\+Columns\+No\+I\+S\+Parameters\+View}} (String catalog, String schema\+Pattern, String procedure\+Name\+Pattern, String column\+Name\+Pattern)  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0ccd2f846e79fd6ef8d5f77c6200fb03}{get\+Routine\+Type\+Condition\+For\+Get\+Procedure\+Columns}} ()
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a7c25e43c46f40752d923944f2d6f9bcc}{get\+J\+D\+B\+C4\+Function\+Constant}} (\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_1_1_j_d_b_c4_function_constant}{J\+D\+B\+C4\+Function\+Constant}} constant)
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a29cf035125a66f19f874935b8cc8138a}{get\+J\+D\+B\+C4\+Function\+No\+Table\+Constant}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data}{Database\+Meta\+Data}} implementation that uses I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+N\+\_\+\+S\+C\+H\+E\+MA available in My\+S\+Q\+L-\/5.\+0 and newer. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a21958250d37526385b0bfc7e0699c6bf}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a21958250d37526385b0bfc7e0699c6bf}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Column\+Privileges@{get\+Column\+Privileges}}
+\index{get\+Column\+Privileges@{get\+Column\+Privileges}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Column\+Privileges()}{getColumnPrivileges()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Column\+Privileges (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema,  }\item[{String}]{table,  }\item[{String}]{column\+Name\+Pattern }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of the access rights for a table\textquotesingle{}s columns. 
+
+Only privileges matching the column name criteria are returned. They are ordered by C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME and P\+R\+I\+V\+I\+L\+E\+GE. 
+
+Each privilige description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ table catalog (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ table schema (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ table name 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ column name 
+\item {\bfseries G\+R\+A\+N\+T\+OR} =$>$ grantor of access (may be null) 
+\item {\bfseries G\+R\+A\+N\+T\+EE} String =$>$ grantee of access 
+\item {\bfseries P\+R\+I\+V\+I\+L\+E\+GE} String =$>$ name of access (S\+E\+L\+E\+CT, I\+N\+S\+E\+RT, U\+P\+D\+A\+TE, R\+E\+F\+R\+E\+N\+C\+ES, ...) 
+\item {\bfseries I\+S\+\_\+\+G\+R\+A\+N\+T\+A\+B\+LE} String =$>$ \char`\"{}\+Y\+E\+S\char`\"{} if grantee is permitted to grant to others; \char`\"{}\+N\+O\char`\"{} if not; null if unknown 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em schema} & a schema name; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em table} & a table name \\
+\hline
+{\em column\+Name\+Pattern} & a column name pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is a column privilege description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_a210b7942557a965c3af550074bb6fe9d}{get\+Search\+String\+Escape}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a21958250d37526385b0bfc7e0699c6bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a32e04e3285884390a2cfd25bfb1fc544}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a32e04e3285884390a2cfd25bfb1fc544}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Columns@{get\+Columns}}
+\index{get\+Columns@{get\+Columns}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Columns()}{getColumns()}}
+{\footnotesize\ttfamily Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Columns (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema\+Pattern,  }\item[{String}]{table\+Name,  }\item[{String}]{column\+Name\+Pattern }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of table columns available in a catalog. 
+
+Only column descriptions matching the catalog, schema, table and column name criteria are returned. They are ordered by T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM, T\+A\+B\+L\+E\+\_\+\+N\+A\+ME and O\+R\+D\+I\+N\+A\+L\+\_\+\+P\+O\+S\+I\+T\+I\+ON. 
+
+Each column description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ table catalog (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ table schema (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ table name 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ column name 
+\item {\bfseries D\+A\+T\+A\+\_\+\+T\+Y\+PE} short =$>$ S\+QL type from java.\+sql.\+Types 
+\item {\bfseries T\+Y\+P\+E\+\_\+\+N\+A\+ME} String =$>$ Data source dependent type name 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+S\+I\+ZE} int =$>$ column size. For char or date types this is the maximum number of characters, for numeric or decimal types this is precision. 
+\item {\bfseries B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N\+G\+TH} is not used. 
+\item {\bfseries D\+E\+C\+I\+M\+A\+L\+\_\+\+D\+I\+G\+I\+TS} int =$>$ the number of fractional digits 
+\item {\bfseries N\+U\+M\+\_\+\+P\+R\+E\+C\+\_\+\+R\+A\+D\+IX} int =$>$ Radix (typically either 10 or 2) 
+\item {\bfseries N\+U\+L\+L\+A\+B\+LE} int =$>$ is N\+U\+LL allowed? 
+\begin{DoxyItemize}
+\item column\+No\+Nulls -\/ might not allow N\+U\+LL values 
+\item column\+Nullable -\/ definitely allows N\+U\+LL values 
+\item column\+Nullable\+Unknown -\/ nullability unknown 
+\end{DoxyItemize}
+\item {\bfseries R\+E\+M\+A\+R\+KS} String =$>$ comment describing column (may be null) 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+D\+EF} String =$>$ default value (may be null) 
+\item {\bfseries S\+Q\+L\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE} int =$>$ unused 
+\item {\bfseries S\+Q\+L\+\_\+\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+UB} int =$>$ unused 
+\item {\bfseries C\+H\+A\+R\+\_\+\+O\+C\+T\+E\+T\+\_\+\+L\+E\+N\+G\+TH} int =$>$ for char types the maximum number of bytes in the column 
+\item {\bfseries O\+R\+D\+I\+N\+A\+L\+\_\+\+P\+O\+S\+I\+T\+I\+ON} int =$>$ index of column in table (starting at 1) 
+\item {\bfseries I\+S\+\_\+\+N\+U\+L\+L\+A\+B\+LE} String =$>$ \char`\"{}\+N\+O\char`\"{} means column definitely does not allow N\+U\+LL values; \char`\"{}\+Y\+E\+S\char`\"{} means the column might allow N\+U\+LL values. An empty string means nobody knows. 
+\end{DoxyEnumerate}Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a32e04e3285884390a2cfd25bfb1fc544_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a720ac1db468802b830153fb7300155d8}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a720ac1db468802b830153fb7300155d8}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Cross\+Reference@{get\+Cross\+Reference}}
+\index{get\+Cross\+Reference@{get\+Cross\+Reference}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Cross\+Reference()}{getCrossReference()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Cross\+Reference (\begin{DoxyParamCaption}\item[{String}]{primary\+Catalog,  }\item[{String}]{primary\+Schema,  }\item[{String}]{primary\+Table,  }\item[{String}]{foreign\+Catalog,  }\item[{String}]{foreign\+Schema,  }\item[{String}]{foreign\+Table }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of the foreign key columns in the foreign key table that reference the primary key columns of the primary key table (describe how one table imports another\textquotesingle{}s key.) This should normally return a single foreign key/primary key pair (most tables only import a foreign key from a table once.) They are ordered by F\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT, F\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM, F\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME, and K\+E\+Y\+\_\+\+S\+EQ. 
+
+Each foreign key column description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ primary key table catalog (may be null) 
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ primary key table schema (may be null) 
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ primary key table name 
+\item {\bfseries P\+K\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ primary key column name 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ foreign key table catalog (may be null) being exported (may be null) 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ foreign key table schema (may be null) being exported (may be null) 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ foreign key table name being exported 
+\item {\bfseries F\+K\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ foreign key column name being exported 
+\item {\bfseries K\+E\+Y\+\_\+\+S\+EQ} short =$>$ sequence number within foreign key 
+\item {\bfseries U\+P\+D\+A\+T\+E\+\_\+\+R\+U\+LE} short =$>$ What happens to foreign key when primary is updated\+: 
+\begin{DoxyItemize}
+\item imported\+Key\+Cascade -\/ change imported key to agree with primary key update 
+\item imported\+Key\+Restrict -\/ do not allow update of primary key if it has been imported 
+\item imported\+Key\+Set\+Null -\/ change imported key to N\+U\+LL if its primary key has been updated 
+\end{DoxyItemize}
+\item {\bfseries D\+E\+L\+E\+T\+E\+\_\+\+R\+U\+LE} short =$>$ What happens to the foreign key when primary is deleted. 
+\begin{DoxyItemize}
+\item imported\+Key\+Cascade -\/ delete rows that import a deleted key 
+\item imported\+Key\+Restrict -\/ do not allow delete of primary key if it has been imported 
+\item imported\+Key\+Set\+Null -\/ change imported key to N\+U\+LL if its primary key has been deleted 
+\end{DoxyItemize}
+\item {\bfseries F\+K\+\_\+\+N\+A\+ME} String =$>$ foreign key identifier (may be null) 
+\item {\bfseries P\+K\+\_\+\+N\+A\+ME} String =$>$ primary key identifier (may be null) 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em primary\+Catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em primary\+Schema} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em primary\+Table} & a table name \\
+\hline
+{\em foreign\+Catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em foreign\+Schema} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em foreign\+Table} & a table name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is a foreign key column description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a720ac1db468802b830153fb7300155d8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a5340c760bf25beeec6aff524824dbda8}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a5340c760bf25beeec6aff524824dbda8}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Exported\+Keys@{get\+Exported\+Keys}}
+\index{get\+Exported\+Keys@{get\+Exported\+Keys}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Exported\+Keys()}{getExportedKeys()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Exported\+Keys (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema,  }\item[{String}]{table }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of a foreign key columns that reference a table\textquotesingle{}s primary key columns (the foreign keys exported by a table). They are ordered by F\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT, F\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM, F\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME, and K\+E\+Y\+\_\+\+S\+EQ. 
+
+Each foreign key column description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ primary key table catalog (may be null) 
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ primary key table schema (may be null) 
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ primary key table name 
+\item {\bfseries P\+K\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ primary key column name 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ foreign key table catalog (may be null) being exported (may be null) 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ foreign key table schema (may be null) being exported (may be null) 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ foreign key table name being exported 
+\item {\bfseries F\+K\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ foreign key column name being exported 
+\item {\bfseries K\+E\+Y\+\_\+\+S\+EQ} short =$>$ sequence number within foreign key 
+\item {\bfseries U\+P\+D\+A\+T\+E\+\_\+\+R\+U\+LE} short =$>$ What happens to foreign key when primary is updated\+: 
+\begin{DoxyItemize}
+\item imported\+Key\+Cascade -\/ change imported key to agree with primary key update 
+\item imported\+Key\+Restrict -\/ do not allow update of primary key if it has been imported 
+\item imported\+Key\+Set\+Null -\/ change imported key to N\+U\+LL if its primary key has been updated 
+\end{DoxyItemize}
+\item {\bfseries D\+E\+L\+E\+T\+E\+\_\+\+R\+U\+LE} short =$>$ What happens to the foreign key when primary is deleted. 
+\begin{DoxyItemize}
+\item imported\+Key\+Cascade -\/ delete rows that import a deleted key 
+\item imported\+Key\+Restrict -\/ do not allow delete of primary key if it has been imported 
+\item imported\+Key\+Set\+Null -\/ change imported key to N\+U\+LL if its primary key has been deleted 
+\end{DoxyItemize}
+\item {\bfseries F\+K\+\_\+\+N\+A\+ME} String =$>$ foreign key identifier (may be null) 
+\item {\bfseries P\+K\+\_\+\+N\+A\+ME} String =$>$ primary key identifier (may be null) 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em schema} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em table} & a table name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is a foreign key column description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a53a952ae6bd3ef46f348c882a06358db}{get\+Imported\+Keys}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a5340c760bf25beeec6aff524824dbda8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2fa8933408d13c24d5bb5cc008a40bb0}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2fa8933408d13c24d5bb5cc008a40bb0}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Function\+Columns@{get\+Function\+Columns}}
+\index{get\+Function\+Columns@{get\+Function\+Columns}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Function\+Columns()}{getFunctionColumns()}}
+{\footnotesize\ttfamily Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Function\+Columns (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema\+Pattern,  }\item[{String}]{function\+Name\+Pattern,  }\item[{String}]{column\+Name\+Pattern }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Retrieves a description of the given catalog\textquotesingle{}s system or user function parameters and return type.
+
+Only descriptions matching the schema, function and parameter name criteria are returned. They are ordered by {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+C\+AT}, {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+C\+H\+EM}, {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+A\+ME} and {\ttfamily S\+P\+E\+C\+I\+F\+I\+C\+\_\+ N\+A\+ME}. Within this, the return value, if any, is first. Next are the parameter descriptions in call order. The column descriptions follow in column number order.
+
+Each row in the {\ttfamily Result\+Set} is a parameter description, column description or return type description with the following fields\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+C\+AT} String =$>$ function catalog (may be {\ttfamily null}) 
+\item {\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+C\+H\+EM} String =$>$ function schema (may be {\ttfamily null}) 
+\item {\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+A\+ME} String =$>$ function name. This is the name used to invoke the function 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ column/parameter name 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+T\+Y\+PE} Short =$>$ kind of column/parameter\+: 
+\begin{DoxyItemize}
+\item function\+Column\+Unknown -\/ nobody knows 
+\item function\+Column\+In -\/ IN parameter 
+\item function\+Column\+In\+Out -\/ I\+N\+O\+UT parameter 
+\item function\+Column\+Out -\/ O\+UT parameter 
+\item function\+Column\+Return -\/ function return value 
+\item function\+Column\+Result -\/ Indicates that the parameter or column is a column in the {\ttfamily Result\+Set} 
+\end{DoxyItemize}
+\item {\bfseries D\+A\+T\+A\+\_\+\+T\+Y\+PE} int =$>$ S\+QL type from java.\+sql.\+Types 
+\item {\bfseries T\+Y\+P\+E\+\_\+\+N\+A\+ME} String =$>$ S\+QL type name, for a U\+DT type the type name is fully qualified 
+\item {\bfseries P\+R\+E\+C\+I\+S\+I\+ON} int =$>$ precision 
+\item {\bfseries L\+E\+N\+G\+TH} int =$>$ length in bytes of data 
+\item {\bfseries S\+C\+A\+LE} short =$>$ scale -\/ null is returned for data types where S\+C\+A\+LE is not applicable. 
+\item {\bfseries R\+A\+D\+IX} short =$>$ radix 
+\item {\bfseries N\+U\+L\+L\+A\+B\+LE} short =$>$ can it contain N\+U\+LL. 
+\begin{DoxyItemize}
+\item function\+No\+Nulls -\/ does not allow N\+U\+LL values 
+\item function\+Nullable -\/ allows N\+U\+LL values 
+\item function\+Nullable\+Unknown -\/ nullability unknown 
+\end{DoxyItemize}
+\item {\bfseries R\+E\+M\+A\+R\+KS} String =$>$ comment describing column/parameter 
+\item {\bfseries C\+H\+A\+R\+\_\+\+O\+C\+T\+E\+T\+\_\+\+L\+E\+N\+G\+TH} int =$>$ the maximum length of binary and character based parameters or columns. For any other datatype the returned value is a N\+U\+LL 
+\item {\bfseries O\+R\+D\+I\+N\+A\+L\+\_\+\+P\+O\+S\+I\+T\+I\+ON} int =$>$ the ordinal position, starting from 1, for the input and output parameters. A value of 0 is returned if this row describes the function\textquotesingle{}s return value. For result set columns, it is the ordinal position of the column in the result set starting from 1. 
+\item {\bfseries I\+S\+\_\+\+N\+U\+L\+L\+A\+B\+LE} String =$>$ I\+SO rules are used to determine the nullability for a parameter or column. 
+\begin{DoxyItemize}
+\item Y\+ES --- if the parameter or column can include N\+U\+L\+Ls 
+\item NO --- if the parameter or column cannot include N\+U\+L\+Ls 
+\item empty string --- if the nullability for the parameter or column is unknown 
+\end{DoxyItemize}
+\item {\bfseries S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+N\+A\+ME} String =$>$ the name which uniquely identifies this function within its schema. This is a user specified, or D\+B\+MS generated, name that may be different then the {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+A\+ME} for example with overload functions 
+\end{DoxyEnumerate}
+
+The P\+R\+E\+C\+I\+S\+I\+ON column represents the specified column size for the given parameter or column. For numeric data, this is the maximum precision. For character data, this is the length in characters. For datetime datatypes, this is the length in characters of the String representation (assuming the maximum allowed precision of the fractional seconds component). For binary data, this is the length in bytes. For the R\+O\+W\+ID datatype, this is the length in bytes. Null is returned for data types where the column size is not applicable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; must match the catalog name as it is stored in the database; \char`\"{}\char`\"{} retrieves those without a catalog; {\ttfamily null} means that the catalog name should not be used to narrow the search \\
+\hline
+{\em schema\+Pattern} & a schema name pattern; must match the schema name as it is stored in the database; \char`\"{}\char`\"{} retrieves those without a schema; {\ttfamily null} means that the schema name should not be used to narrow the search \\
+\hline
+{\em function\+Name\+Pattern} & a procedure name pattern; must match the function name as it is stored in the database \\
+\hline
+{\em column\+Name\+Pattern} & a parameter name pattern; must match the parameter or column name as it is stored in the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Result\+Set} -\/ each row describes a user function parameter, column or return type
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_a210b7942557a965c3af550074bb6fe9d}{get\+Search\+String\+Escape}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2fa8933408d13c24d5bb5cc008a40bb0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a6c98ce4fc7444e6f16442fb9b450fb72}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a6c98ce4fc7444e6f16442fb9b450fb72}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Functions@{get\+Functions}}
+\index{get\+Functions@{get\+Functions}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Functions()}{getFunctions()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Functions (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema\+Pattern,  }\item[{String}]{function\+Name\+Pattern }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Retrieves a description of the system and user functions available in the given catalog. 
+
+Only system and user function descriptions matching the schema and function name criteria are returned. They are ordered by {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+C\+AT}, {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+C\+H\+EM}, {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+A\+ME} and {\ttfamily S\+P\+E\+C\+I\+F\+I\+C\+\_\+ N\+A\+ME}.
+
+Each function description has the the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+C\+AT} String =$>$ function catalog (may be {\ttfamily null}) 
+\item {\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+C\+H\+EM} String =$>$ function schema (may be {\ttfamily null}) 
+\item {\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+A\+ME} String =$>$ function name. This is the name used to invoke the function 
+\item {\bfseries R\+E\+M\+A\+R\+KS} String =$>$ explanatory comment on the function 
+\item {\bfseries F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE} short =$>$ kind of function\+: 
+\begin{DoxyItemize}
+\item function\+Result\+Unknown -\/ Cannot determine if a return value or table will be returned 
+\item function\+No\+Table-\/ Does not return a table 
+\item function\+Returns\+Table -\/ Returns a table 
+\end{DoxyItemize}
+\item {\bfseries S\+P\+E\+C\+I\+F\+I\+C\+\_\+\+N\+A\+ME} String =$>$ the name which uniquely identifies this function within its schema. This is a user specified, or D\+B\+MS generated, name that may be different then the {\ttfamily F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+A\+ME} for example with overload functions 
+\end{DoxyEnumerate}
+
+A user may not have permission to execute any of the functions that are returned by {\ttfamily get\+Functions}
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; must match the catalog name as it is stored in the database; \char`\"{}\char`\"{} retrieves those without a catalog; {\ttfamily null} means that the catalog name should not be used to narrow the search \\
+\hline
+{\em schema\+Pattern} & a schema name pattern; must match the schema name as it is stored in the database; \char`\"{}\char`\"{} retrieves those without a schema; {\ttfamily null} means that the schema name should not be used to narrow the search \\
+\hline
+{\em function\+Name\+Pattern} & a function name pattern; must match the function name as it is stored in the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Result\+Set} -\/ each row is a function description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_a210b7942557a965c3af550074bb6fe9d}{get\+Search\+String\+Escape}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\+6 
+\end{DoxySince}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a6c98ce4fc7444e6f16442fb9b450fb72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a53a952ae6bd3ef46f348c882a06358db}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a53a952ae6bd3ef46f348c882a06358db}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Imported\+Keys@{get\+Imported\+Keys}}
+\index{get\+Imported\+Keys@{get\+Imported\+Keys}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Imported\+Keys()}{getImportedKeys()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Imported\+Keys (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema,  }\item[{String}]{table }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of the primary key columns that are referenced by a table\textquotesingle{}s foreign key columns (the primary keys imported by a table). They are ordered by P\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT, P\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM, P\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME, and K\+E\+Y\+\_\+\+S\+EQ. 
+
+Each primary key column description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ primary key table catalog being imported (may be null) 
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ primary key table schema being imported (may be null) 
+\item {\bfseries P\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ primary key table name being imported 
+\item {\bfseries P\+K\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ primary key column name being imported 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ foreign key table catalog (may be null) 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ foreign key table schema (may be null) 
+\item {\bfseries F\+K\+T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ foreign key table name 
+\item {\bfseries F\+K\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ foreign key column name 
+\item {\bfseries K\+E\+Y\+\_\+\+S\+EQ} short =$>$ sequence number within foreign key 
+\item {\bfseries U\+P\+D\+A\+T\+E\+\_\+\+R\+U\+LE} short =$>$ What happens to foreign key when primary is updated\+: 
+\begin{DoxyItemize}
+\item imported\+Key\+Cascade -\/ change imported key to agree with primary key update 
+\item imported\+Key\+Restrict -\/ do not allow update of primary key if it has been imported 
+\item imported\+Key\+Set\+Null -\/ change imported key to N\+U\+LL if its primary key has been updated 
+\end{DoxyItemize}
+\item {\bfseries D\+E\+L\+E\+T\+E\+\_\+\+R\+U\+LE} short =$>$ What happens to the foreign key when primary is deleted. 
+\begin{DoxyItemize}
+\item imported\+Key\+Cascade -\/ delete rows that import a deleted key 
+\item imported\+Key\+Restrict -\/ do not allow delete of primary key if it has been imported 
+\item imported\+Key\+Set\+Null -\/ change imported key to N\+U\+LL if its primary key has been deleted 
+\end{DoxyItemize}
+\item {\bfseries F\+K\+\_\+\+N\+A\+ME} String =$>$ foreign key name (may be null) 
+\item {\bfseries P\+K\+\_\+\+N\+A\+ME} String =$>$ primary key name (may be null) 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em schema} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em table} & a table name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is a primary key column description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a5340c760bf25beeec6aff524824dbda8}{get\+Exported\+Keys}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a53a952ae6bd3ef46f348c882a06358db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0bb4ecdb1ce309f41ee03ffe637f3a98}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0bb4ecdb1ce309f41ee03ffe637f3a98}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Index\+Info@{get\+Index\+Info}}
+\index{get\+Index\+Info@{get\+Index\+Info}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Index\+Info()}{getIndexInfo()}}
+{\footnotesize\ttfamily Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Index\+Info (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema,  }\item[{String}]{table,  }\item[{boolean}]{unique,  }\item[{boolean}]{approximate }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of a table\textquotesingle{}s indices and statistics. They are ordered by N\+O\+N\+\_\+\+U\+N\+I\+Q\+UE, T\+Y\+PE, I\+N\+D\+E\+X\+\_\+\+N\+A\+ME, and O\+R\+D\+I\+N\+A\+L\+\_\+\+P\+O\+S\+I\+T\+I\+ON. 
+
+Each index column description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ table catalog (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ table schema (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ table name 
+\item {\bfseries N\+O\+N\+\_\+\+U\+N\+I\+Q\+UE} boolean =$>$ Can index values be non-\/unique? false when T\+Y\+PE is table\+Index\+Statistic 
+\item {\bfseries I\+N\+D\+E\+X\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER} String =$>$ index catalog (may be null); null when T\+Y\+PE is table\+Index\+Statistic 
+\item {\bfseries I\+N\+D\+E\+X\+\_\+\+N\+A\+ME} String =$>$ index name; null when T\+Y\+PE is table\+Index\+Statistic 
+\item {\bfseries T\+Y\+PE} short =$>$ index type\+: 
+\begin{DoxyItemize}
+\item table\+Index\+Statistic -\/ this identifies table statistics that are returned in conjuction with a table\textquotesingle{}s index descriptions 
+\item table\+Index\+Clustered -\/ this is a clustered index 
+\item table\+Index\+Hashed -\/ this is a hashed index 
+\item table\+Index\+Other -\/ this is some other style of index 
+\end{DoxyItemize}
+\item {\bfseries O\+R\+D\+I\+N\+A\+L\+\_\+\+P\+O\+S\+I\+T\+I\+ON} short =$>$ column sequence number within index; zero when T\+Y\+PE is table\+Index\+Statistic 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ column name; null when T\+Y\+PE is table\+Index\+Statistic 
+\item {\bfseries A\+S\+C\+\_\+\+O\+R\+\_\+\+D\+E\+SC} String =$>$ column sort sequence, \char`\"{}\+A\char`\"{} =$>$ ascending, \char`\"{}\+D\char`\"{} =$>$ descending, may be null if sort sequence is not supported; null when T\+Y\+PE is table\+Index\+Statistic 
+\item {\bfseries C\+A\+R\+D\+I\+N\+A\+L\+I\+TY} int =$>$ When T\+Y\+PE is table\+Index\+Statisic then this is the number of rows in the table; otherwise it is the number of unique values in the index. 
+\item {\bfseries P\+A\+G\+ES} int =$>$ When T\+Y\+PE is table\+Index\+Statisic then this is the number of pages used for the table, otherwise it is the number of pages used for the current index. 
+\item {\bfseries F\+I\+L\+T\+E\+R\+\_\+\+C\+O\+N\+D\+I\+T\+I\+ON} String =$>$ Filter condition, if any. (may be null) 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em schema} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em table} & a table name \\
+\hline
+{\em unique} & when true, return only indices for unique values; when false, return indices regardless of whether unique or not \\
+\hline
+{\em approximate} & when true, result is allowed to reflect approximate or out of data values; when false, results are requested to be accurate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is an index column description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0bb4ecdb1ce309f41ee03ffe637f3a98_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a7c25e43c46f40752d923944f2d6f9bcc}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a7c25e43c46f40752d923944f2d6f9bcc}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+J\+D\+B\+C4\+Function\+Constant@{get\+J\+D\+B\+C4\+Function\+Constant}}
+\index{get\+J\+D\+B\+C4\+Function\+Constant@{get\+J\+D\+B\+C4\+Function\+Constant}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+J\+D\+B\+C4\+Function\+Constant()}{getJDBC4FunctionConstant()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+J\+D\+B\+C4\+Function\+Constant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_1_1_j_d_b_c4_function_constant}{J\+D\+B\+C4\+Function\+Constant}}}]{constant }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Getter to J\+D\+B\+C4 Database\+Meta\+Data.\+function$\ast$ constants. This method must be overridden by J\+D\+B\+C4 subclasses. this implementation should never be called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em constant} & the constant id from \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data}{Database\+Meta\+Data}} fields to return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a7c25e43c46f40752d923944f2d6f9bcc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a29cf035125a66f19f874935b8cc8138a}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a29cf035125a66f19f874935b8cc8138a}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+J\+D\+B\+C4\+Function\+No\+Table\+Constant@{get\+J\+D\+B\+C4\+Function\+No\+Table\+Constant}}
+\index{get\+J\+D\+B\+C4\+Function\+No\+Table\+Constant@{get\+J\+D\+B\+C4\+Function\+No\+Table\+Constant}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+J\+D\+B\+C4\+Function\+No\+Table\+Constant()}{getJDBC4FunctionNoTableConstant()}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+J\+D\+B\+C4\+Function\+No\+Table\+Constant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Getter to J\+D\+B\+C4 Database\+Meta\+Data.\+function\+No\+Table constant. This method must be overridden by J\+D\+B\+C4 subclasses. this implementation should never be called.
+
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a29cf035125a66f19f874935b8cc8138a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a65812af65021eed61d345630af494ca3}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a65812af65021eed61d345630af494ca3}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Primary\+Keys@{get\+Primary\+Keys}}
+\index{get\+Primary\+Keys@{get\+Primary\+Keys}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Primary\+Keys()}{getPrimaryKeys()}}
+{\footnotesize\ttfamily java.\+sql.\+Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Primary\+Keys (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema,  }\item[{String}]{table }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of a table\textquotesingle{}s primary key columns. They are ordered by C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME. 
+
+Each column description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ table catalog (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ table schema (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ table name 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ column name 
+\item {\bfseries K\+E\+Y\+\_\+\+S\+EQ} short =$>$ sequence number within primary key 
+\item {\bfseries P\+K\+\_\+\+N\+A\+ME} String =$>$ primary key name (may be null) 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em schema} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em table} & a table name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is a primary key column description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a65812af65021eed61d345630af494ca3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2bb17e6501848d501ed65ee886ed4225}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2bb17e6501848d501ed65ee886ed4225}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Procedure\+Columns@{get\+Procedure\+Columns}}
+\index{get\+Procedure\+Columns@{get\+Procedure\+Columns}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Procedure\+Columns()}{getProcedureColumns()}}
+{\footnotesize\ttfamily Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Procedure\+Columns (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema\+Pattern,  }\item[{String}]{procedure\+Name\+Pattern,  }\item[{String}]{column\+Name\+Pattern }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Retrieves a description of the given catalog\textquotesingle{}s stored procedure parameter and result columns.
+
+Only descriptions matching the schema, procedure and parameter name criteria are returned. They are ordered by P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+S\+C\+H\+EM and P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+N\+A\+ME. Within this, the return value, if any, is first. Next are the parameter descriptions in call order. The column descriptions follow in column number order.
+
+Each row in the {\ttfamily Result\+Set} is a parameter description or column description with the following fields\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+C\+AT} String =$>$ procedure catalog (may be {\ttfamily null}) 
+\item {\bfseries P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+S\+C\+H\+EM} String =$>$ procedure schema (may be {\ttfamily null}) 
+\item {\bfseries P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+N\+A\+ME} String =$>$ procedure name 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+ME} String =$>$ column/parameter name 
+\item {\bfseries C\+O\+L\+U\+M\+N\+\_\+\+T\+Y\+PE} Short =$>$ kind of column/parameter\+: 
+\begin{DoxyItemize}
+\item procedure\+Column\+Unknown -\/ nobody knows 
+\item procedure\+Column\+In -\/ IN parameter 
+\item procedure\+Column\+In\+Out -\/ I\+N\+O\+UT parameter 
+\item procedure\+Column\+Out -\/ O\+UT parameter 
+\item procedure\+Column\+Return -\/ procedure return value 
+\item procedure\+Column\+Result -\/ result column in {\ttfamily Result\+Set} 
+\end{DoxyItemize}
+\item {\bfseries D\+A\+T\+A\+\_\+\+T\+Y\+PE} int =$>$ S\+QL type from java.\+sql.\+Types 
+\item {\bfseries T\+Y\+P\+E\+\_\+\+N\+A\+ME} String =$>$ S\+QL type name, for a U\+DT type the type name is fully qualified 
+\item {\bfseries P\+R\+E\+C\+I\+S\+I\+ON} int =$>$ precision 
+\item {\bfseries L\+E\+N\+G\+TH} int =$>$ length in bytes of data 
+\item {\bfseries S\+C\+A\+LE} short =$>$ scale 
+\item {\bfseries R\+A\+D\+IX} short =$>$ radix 
+\item {\bfseries N\+U\+L\+L\+A\+B\+LE} short =$>$ can it contain N\+U\+LL. 
+\begin{DoxyItemize}
+\item procedure\+No\+Nulls -\/ does not allow N\+U\+LL values 
+\item procedure\+Nullable -\/ allows N\+U\+LL values 
+\item procedure\+Nullable\+Unknown -\/ nullability unknown 
+\end{DoxyItemize}
+\item {\bfseries R\+E\+M\+A\+R\+KS} String =$>$ comment describing parameter/column 
+\end{DoxyEnumerate}
+
+{\bfseries Note\+:} Some databases may not return the column descriptions for a procedure. Additional columns beyond R\+E\+M\+A\+R\+KS can be defined by the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; must match the catalog name as it is stored in the database; \char`\"{}\char`\"{} retrieves those without a catalog; {\ttfamily null} means that the catalog name should not be used to narrow the search \\
+\hline
+{\em schema\+Pattern} & a schema name pattern; must match the schema name as it is stored in the database; \char`\"{}\char`\"{} retrieves those without a schema; {\ttfamily null} means that the schema name should not be used to narrow the search \\
+\hline
+{\em procedure\+Name\+Pattern} & a procedure name pattern; must match the procedure name as it is stored in the database \\
+\hline
+{\em column\+Name\+Pattern} & a column name pattern; must match the column name as it is stored in the database \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Result\+Set} -\/ each row describes a stored procedure parameter or column 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_a210b7942557a965c3af550074bb6fe9d}{get\+Search\+String\+Escape}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2bb17e6501848d501ed65ee886ed4225_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a39f4d86800a2ecfb0e22a88485a92aae}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a39f4d86800a2ecfb0e22a88485a92aae}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Procedure\+Columns\+No\+I\+S\+Parameters\+View@{get\+Procedure\+Columns\+No\+I\+S\+Parameters\+View}}
+\index{get\+Procedure\+Columns\+No\+I\+S\+Parameters\+View@{get\+Procedure\+Columns\+No\+I\+S\+Parameters\+View}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Procedure\+Columns\+No\+I\+S\+Parameters\+View()}{getProcedureColumnsNoISParametersView()}}
+{\footnotesize\ttfamily Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Procedure\+Columns\+No\+I\+S\+Parameters\+View (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema\+Pattern,  }\item[{String}]{procedure\+Name\+Pattern,  }\item[{String}]{column\+Name\+Pattern }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Redirects to another implementation of \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2bb17e6501848d501ed65ee886ed4225}{get\+Procedure\+Columns}}. Subclasses may need to override this method.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a2bb17e6501848d501ed65ee886ed4225}{get\+Procedure\+Columns}} 
+\end{DoxySeeAlso}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a39f4d86800a2ecfb0e22a88485a92aae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a1f2fd58fdf545dc23641793c4035f91d}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a1f2fd58fdf545dc23641793c4035f91d}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Procedures@{get\+Procedures}}
+\index{get\+Procedures@{get\+Procedures}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Procedures()}{getProcedures()}}
+{\footnotesize\ttfamily Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Procedures (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema\+Pattern,  }\item[{String}]{procedure\+Name\+Pattern }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of stored procedures available in a catalog. 
+
+Only procedure descriptions matching the schema and procedure name criteria are returned. They are ordered by P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+S\+C\+H\+EM, and P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+N\+A\+ME. 
+
+Each procedure description has the the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+C\+AT} String =$>$ procedure catalog (may be null) 
+\item {\bfseries P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+S\+C\+H\+EM} String =$>$ procedure schema (may be null) 
+\item {\bfseries P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+N\+A\+ME} String =$>$ procedure name 
+\item reserved for future use 
+\item reserved for future use 
+\item reserved for future use 
+\item {\bfseries R\+E\+M\+A\+R\+KS} String =$>$ explanatory comment on the procedure 
+\item {\bfseries P\+R\+O\+C\+E\+D\+U\+R\+E\+\_\+\+T\+Y\+PE} short =$>$ kind of procedure\+: 
+\begin{DoxyItemize}
+\item procedure\+Result\+Unknown -\/ May return a result 
+\item procedure\+No\+Result -\/ Does not return a result 
+\item procedure\+Returns\+Result -\/ Returns a result 
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em schema\+Pattern} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em procedure\+Name\+Pattern} & a procedure name pattern \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is a procedure description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a database access error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_a210b7942557a965c3af550074bb6fe9d}{get\+Search\+String\+Escape}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a1f2fd58fdf545dc23641793c4035f91d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0ccd2f846e79fd6ef8d5f77c6200fb03}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0ccd2f846e79fd6ef8d5f77c6200fb03}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Routine\+Type\+Condition\+For\+Get\+Procedure\+Columns@{get\+Routine\+Type\+Condition\+For\+Get\+Procedure\+Columns}}
+\index{get\+Routine\+Type\+Condition\+For\+Get\+Procedure\+Columns@{get\+Routine\+Type\+Condition\+For\+Get\+Procedure\+Columns}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Routine\+Type\+Condition\+For\+Get\+Procedure\+Columns()}{getRoutineTypeConditionForGetProcedureColumns()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Routine\+Type\+Condition\+For\+Get\+Procedure\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a condition to be injected in the query that returns metadata for procedure columns only. Overridden by subclasses when needed. When not empty must end with \char`\"{}\+A\+N\+D \char`\"{}.
+
+\begin{DoxyReturn}{Returns}
+String with the condition to be injected. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a0ccd2f846e79fd6ef8d5f77c6200fb03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a78df26f7bd43db24e251d4b14560fe47}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a78df26f7bd43db24e251d4b14560fe47}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Routine\+Type\+Condition\+For\+Get\+Procedures@{get\+Routine\+Type\+Condition\+For\+Get\+Procedures}}
+\index{get\+Routine\+Type\+Condition\+For\+Get\+Procedures@{get\+Routine\+Type\+Condition\+For\+Get\+Procedures}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Routine\+Type\+Condition\+For\+Get\+Procedures()}{getRoutineTypeConditionForGetProcedures()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Routine\+Type\+Condition\+For\+Get\+Procedures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a condition to be injected in the query that returns metadata for procedures only. Overridden by subclasses when needed. When not empty must end with \char`\"{}\+A\+N\+D \char`\"{}.
+
+\begin{DoxyReturn}{Returns}
+String with the condition to be injected. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a78df26f7bd43db24e251d4b14560fe47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a77e696e0c2b875ddbf17513a1be3f6a3}\label{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a77e696e0c2b875ddbf17513a1be3f6a3}} 
+\index{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}!get\+Tables@{get\+Tables}}
+\index{get\+Tables@{get\+Tables}!com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema@{com\+::mysql\+::jdbc\+::\+Database\+Meta\+Data\+Using\+Info\+Schema}}
+\subsubsection{\texorpdfstring{get\+Tables()}{getTables()}}
+{\footnotesize\ttfamily Result\+Set com.\+mysql.\+jdbc.\+Database\+Meta\+Data\+Using\+Info\+Schema.\+get\+Tables (\begin{DoxyParamCaption}\item[{String}]{catalog,  }\item[{String}]{schema\+Pattern,  }\item[{String}]{table\+Name\+Pattern,  }\item[{String \mbox{[}$\,$\mbox{]}}]{types }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a description of tables available in a catalog. 
+
+Only table descriptions matching the catalog, schema, table name and type criteria are returned. They are ordered by T\+A\+B\+L\+E\+\_\+\+T\+Y\+PE, T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM and T\+A\+B\+L\+E\+\_\+\+N\+A\+ME. 
+
+Each table description has the following columns\+: 
+\begin{DoxyEnumerate}
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+C\+AT} String =$>$ table catalog (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+S\+C\+H\+EM} String =$>$ table schema (may be null) 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+N\+A\+ME} String =$>$ table name 
+\item {\bfseries T\+A\+B\+L\+E\+\_\+\+T\+Y\+PE} String =$>$ table type. Typical types are \char`\"{}\+T\+A\+B\+L\+E\char`\"{}, \char`\"{}\+V\+I\+E\+W\char`\"{}, \char`\"{}\+S\+Y\+S\+T\+E\+M T\+A\+B\+L\+E\char`\"{}, \char`\"{}\+G\+L\+O\+B\+A\+L T\+E\+M\+P\+O\+R\+A\+R\+Y\char`\"{}, \char`\"{}\+L\+O\+C\+A\+L T\+E\+M\+P\+O\+R\+A\+R\+Y\char`\"{}, \char`\"{}\+A\+L\+I\+A\+S\char`\"{}, \char`\"{}\+S\+Y\+N\+O\+N\+Y\+M\char`\"{}.  
+\item {\bfseries R\+E\+M\+A\+R\+KS} String =$>$ explanatory comment on the table 
+\end{DoxyEnumerate}
+
+{\bfseries Note\+:} Some databases may not return information for all tables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em catalog} & a catalog name; \char`\"{}\char`\"{} retrieves those without a catalog \\
+\hline
+{\em schema\+Pattern} & a schema name pattern; \char`\"{}\char`\"{} retrieves those without a schema \\
+\hline
+{\em table\+Name\+Pattern} & a table name pattern \\
+\hline
+{\em types} & a list of table types to include; null returns all types \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result\+Set each row is a table description 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_a210b7942557a965c3af550074bb6fe9d}{get\+Search\+String\+Escape}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema_a77e696e0c2b875ddbf17513a1be3f6a3_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Database\+Meta\+Data\+Using\+Info\+Schema.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,426 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util}{}\section{com.\+mysql.\+jdbc.\+Util Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_util}\index{com.\+mysql.\+jdbc.\+Util@{com.\+mysql.\+jdbc.\+Util}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Rand\+Structcture}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_ab89f2b0eb8e68d8fc2f89377df7b05a6}\label{classcom_1_1mysql_1_1jdbc_1_1_util_ab89f2b0eb8e68d8fc2f89377df7b05a6}} 
+static boolean {\bfseries is\+Jdbc4} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a3a0083c700e144ca2cd4c051a795b9b8}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a3a0083c700e144ca2cd4c051a795b9b8}} 
+static boolean {\bfseries is\+Jdbc42} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a095a50ab6a96e7367b722acfd3fd595c}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a095a50ab6a96e7367b722acfd3fd595c}} 
+static int {\bfseries get\+J\+V\+M\+Version} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a5418d50fd9ec471e6b55b55fc41d23a7}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a5418d50fd9ec471e6b55b55fc41d23a7}} 
+static boolean {\bfseries jvm\+Meets\+Minimum} (int version, int update\+Number)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a9bd3ec1800f67dd4d1ad2a48438b5cdd}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a9bd3ec1800f67dd4d1ad2a48438b5cdd}} 
+static int {\bfseries get\+J\+V\+M\+Update\+Number} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_abb0e2e1094f9d212f27fa01de31f72f2}\label{classcom_1_1mysql_1_1jdbc_1_1_util_abb0e2e1094f9d212f27fa01de31f72f2}} 
+static boolean {\bfseries is\+Cold\+Fusion} ()
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_ab577aaf14859ab359307da29c26bff32}{is\+Community\+Edition}} (String server\+Version)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a0baaeeb5b7526fe807869f6941b77a27}{is\+Enterprise\+Edition}} (String server\+Version)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a1863ffe8385df0ad0c24a8f40b2334b2}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a1863ffe8385df0ad0c24a8f40b2334b2}} 
+static String {\bfseries new\+Crypt} (String password, String seed, String encoding)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a970940dafe64cb6bfab39f0d5cc1909e}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a970940dafe64cb6bfab39f0d5cc1909e}} 
+static long \mbox{[}$\,$\mbox{]} {\bfseries hash\+Pre41\+Password} (String password, String encoding)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_ae6151f13a63db35822a8e8b18a0c6f89}\label{classcom_1_1mysql_1_1jdbc_1_1_util_ae6151f13a63db35822a8e8b18a0c6f89}} 
+static long \mbox{[}$\,$\mbox{]} {\bfseries hash\+Pre41\+Password} (String password)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a1f79cefa06e5313d4f6aa38bba41ca59}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a1f79cefa06e5313d4f6aa38bba41ca59}} 
+static String {\bfseries old\+Crypt} (String password, String seed)
+\item 
+static Object \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_adb6404cb7c97c6020399a4388652e2f0}{read\+Object}} (java.\+sql.\+Result\+Set result\+Set, int index)  throws Exception 
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a15c89a6b2416bd75ff5691016907fc79}{scramble}} (String message, String password)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a1354e3d746b6b93b38b8d535acd977a4}{stack\+Trace\+To\+String}} (Throwable ex)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a07124391a1f1f1650a3256699238e3c7}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a07124391a1f1f1650a3256699238e3c7}} 
+static Object {\bfseries get\+Instance} (String class\+Name, Class$<$?$>$\mbox{[}$\,$\mbox{]} arg\+Types, Object\mbox{[}$\,$\mbox{]} args, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static final Object \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_ae60ce70ba2e8e536e773f4abab83c4c1}{handle\+New\+Instance}} (Constructor$<$?$>$ ctor, Object\mbox{[}$\,$\mbox{]} args, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a41c9a999e60af4e782a5c0eb055c7b22}{interface\+Exists}} (String hostname)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a4537f774b47079e39a7c91c935ee0ca8}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a4537f774b47079e39a7c91c935ee0ca8}} 
+static void {\bfseries result\+Set\+To\+Map} (Map mapped\+Values, java.\+sql.\+Result\+Set rs)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_aa6aea161c0d1e35004ff37b7a9054596}\label{classcom_1_1mysql_1_1jdbc_1_1_util_aa6aea161c0d1e35004ff37b7a9054596}} 
+static void {\bfseries result\+Set\+To\+Map} (Map mapped\+Values, java.\+sql.\+Result\+Set rs, int key, int value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a1e96a670494944ce836e5f20e0695f8f}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a1e96a670494944ce836e5f20e0695f8f}} 
+static void {\bfseries result\+Set\+To\+Map} (Map mapped\+Values, java.\+sql.\+Result\+Set rs, String key, String value)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_af113dacf6b0386f53326e24976249385}\label{classcom_1_1mysql_1_1jdbc_1_1_util_af113dacf6b0386f53326e24976249385}} 
+static Map$<$ Object, Object $>$ {\bfseries calculate\+Differences} (Map$<$?, ?$>$ map1, Map$<$?, ?$>$ map2)
+\item 
+static List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} $>$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a7437eb4eaa7c101657b58d764e825f62}{load\+Extensions}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties props, String extension\+Class\+Names, String error\+Message\+Key, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_ad3d011a699b9fccde5f515f9fbd5b5f3}{is\+Jdbc\+Interface}} (Class$<$?$>$ clazz)
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a9cb2ac4a8521a60214e3186ad634b3b3}{is\+Jdbc\+Package}} (String package\+Name)
+\item 
+static Class$<$?$>$ \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a35e35548da42c684a68e73f8ccfc2fdb}{get\+Implemented\+Interfaces}} (Class$<$?$>$ clazz)
+\item 
+static long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a3984ee75dc7002232216fbbcd1771459}{seconds\+Since\+Millis}} (long time\+In\+Millis)
+\item 
+static int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_ab73dd640e4fb69c157001303d7be0164}{truncate\+And\+Convert\+To\+Int}} (long long\+Value)
+\item 
+static int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_aa422ec3d75ddc371d540e31156472513}{truncate\+And\+Convert\+To\+Int}} (long\mbox{[}$\,$\mbox{]} long\+Array)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_util_a30a2020999202ce3bb0871498f6bcc5b}{get\+Package\+Name}} (Class$<$?$>$ clazz)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Various utility methods for the driver. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a35e35548da42c684a68e73f8ccfc2fdb}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a35e35548da42c684a68e73f8ccfc2fdb}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!get\+Implemented\+Interfaces@{get\+Implemented\+Interfaces}}
+\index{get\+Implemented\+Interfaces@{get\+Implemented\+Interfaces}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Implemented\+Interfaces()}{getImplementedInterfaces()}}
+{\footnotesize\ttfamily static Class$<$?$>$ \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Util.\+get\+Implemented\+Interfaces (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{clazz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves a list with all interfaces implemented by the given class. If possible gets this information from a cache instead of navigating through the object hierarchy. Results are stored in a cache for future reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & The class from which the interface list will be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array with all the interfaces for the given class. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a35e35548da42c684a68e73f8ccfc2fdb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a30a2020999202ce3bb0871498f6bcc5b}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a30a2020999202ce3bb0871498f6bcc5b}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!get\+Package\+Name@{get\+Package\+Name}}
+\index{get\+Package\+Name@{get\+Package\+Name}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{get\+Package\+Name()}{getPackageName()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+Util.\+get\+Package\+Name (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{clazz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the package name of the given class. Using clazz.\+get\+Package().get\+Name() is not an alternative because under some class loaders the method get\+Package() just returns null.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & the Class from which to get the package name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the package name 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a30a2020999202ce3bb0871498f6bcc5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_ae60ce70ba2e8e536e773f4abab83c4c1}\label{classcom_1_1mysql_1_1jdbc_1_1_util_ae60ce70ba2e8e536e773f4abab83c4c1}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!handle\+New\+Instance@{handle\+New\+Instance}}
+\index{handle\+New\+Instance@{handle\+New\+Instance}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{handle\+New\+Instance()}{handleNewInstance()}}
+{\footnotesize\ttfamily static final Object com.\+mysql.\+jdbc.\+Util.\+handle\+New\+Instance (\begin{DoxyParamCaption}\item[{Constructor$<$?$>$}]{ctor,  }\item[{Object \mbox{[}$\,$\mbox{]}}]{args,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Handles constructing new instance with the given constructor and wrapping (or not, as required) the exceptions that could possibly be generated Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_ae60ce70ba2e8e536e773f4abab83c4c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a41c9a999e60af4e782a5c0eb055c7b22}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a41c9a999e60af4e782a5c0eb055c7b22}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!interface\+Exists@{interface\+Exists}}
+\index{interface\+Exists@{interface\+Exists}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{interface\+Exists()}{interfaceExists()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+Util.\+interface\+Exists (\begin{DoxyParamCaption}\item[{String}]{hostname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Does a network interface exist locally with the given hostname?
+
+
+\begin{DoxyParams}{Parameters}
+{\em hostname} & the hostname (or IP address in string form) to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it exists, false if no, or unable to determine due to VM version support of java.\+net.\+Network\+Interface 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a41c9a999e60af4e782a5c0eb055c7b22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_ab577aaf14859ab359307da29c26bff32}\label{classcom_1_1mysql_1_1jdbc_1_1_util_ab577aaf14859ab359307da29c26bff32}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!is\+Community\+Edition@{is\+Community\+Edition}}
+\index{is\+Community\+Edition@{is\+Community\+Edition}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{is\+Community\+Edition()}{isCommunityEdition()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+Util.\+is\+Community\+Edition (\begin{DoxyParamCaption}\item[{String}]{server\+Version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether the given server version string is a My\+S\+QL Community edition Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_ab577aaf14859ab359307da29c26bff32_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_ab577aaf14859ab359307da29c26bff32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a0baaeeb5b7526fe807869f6941b77a27}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a0baaeeb5b7526fe807869f6941b77a27}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!is\+Enterprise\+Edition@{is\+Enterprise\+Edition}}
+\index{is\+Enterprise\+Edition@{is\+Enterprise\+Edition}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{is\+Enterprise\+Edition()}{isEnterpriseEdition()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+Util.\+is\+Enterprise\+Edition (\begin{DoxyParamCaption}\item[{String}]{server\+Version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether the given server version string is a My\+S\+QL Enterprise edition Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a0baaeeb5b7526fe807869f6941b77a27_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_ad3d011a699b9fccde5f515f9fbd5b5f3}\label{classcom_1_1mysql_1_1jdbc_1_1_util_ad3d011a699b9fccde5f515f9fbd5b5f3}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!is\+Jdbc\+Interface@{is\+Jdbc\+Interface}}
+\index{is\+Jdbc\+Interface@{is\+Jdbc\+Interface}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{is\+Jdbc\+Interface()}{isJdbcInterface()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+Util.\+is\+Jdbc\+Interface (\begin{DoxyParamCaption}\item[{Class$<$?$>$}]{clazz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Recursively checks for interfaces on the given class to determine if it implements a java.\+sql, javax.\+sql or com.\+mysql.\+jdbc interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clazz} & The class to investigate. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_ad3d011a699b9fccde5f515f9fbd5b5f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_ad3d011a699b9fccde5f515f9fbd5b5f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a9cb2ac4a8521a60214e3186ad634b3b3}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a9cb2ac4a8521a60214e3186ad634b3b3}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!is\+Jdbc\+Package@{is\+Jdbc\+Package}}
+\index{is\+Jdbc\+Package@{is\+Jdbc\+Package}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{is\+Jdbc\+Package()}{isJdbcPackage()}}
+{\footnotesize\ttfamily static boolean com.\+mysql.\+jdbc.\+Util.\+is\+Jdbc\+Package (\begin{DoxyParamCaption}\item[{String}]{package\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if the package name is a known J\+D\+BC package.
+
+
+\begin{DoxyParams}{Parameters}
+{\em package\+Name} & The package name to check. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a9cb2ac4a8521a60214e3186ad634b3b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a7437eb4eaa7c101657b58d764e825f62}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a7437eb4eaa7c101657b58d764e825f62}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!load\+Extensions@{load\+Extensions}}
+\index{load\+Extensions@{load\+Extensions}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{load\+Extensions()}{loadExtensions()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}}$>$ com.\+mysql.\+jdbc.\+Util.\+load\+Extensions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props,  }\item[{String}]{extension\+Class\+Names,  }\item[{String}]{error\+Message\+Key,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns initialized instances of classes listed in extension\+Class\+Names. There is no need to call \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{Extension.\+init()}} method after that if you don\textquotesingle{}t change connection or properties.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & \\
+\hline
+{\em props} & \\
+\hline
+{\em extension\+Class\+Names} & \\
+\hline
+{\em error\+Message\+Key} & \\
+\hline
+{\em exception\+Interceptor} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a7437eb4eaa7c101657b58d764e825f62_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_adb6404cb7c97c6020399a4388652e2f0}\label{classcom_1_1mysql_1_1jdbc_1_1_util_adb6404cb7c97c6020399a4388652e2f0}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!read\+Object@{read\+Object}}
+\index{read\+Object@{read\+Object}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{read\+Object()}{readObject()}}
+{\footnotesize\ttfamily static Object com.\+mysql.\+jdbc.\+Util.\+read\+Object (\begin{DoxyParamCaption}\item[{java.\+sql.\+Result\+Set}]{result\+Set,  }\item[{int}]{index }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Given a Result\+Set and an index into the columns of that Result\+Set, read binary data from the column which represents a serialized object, and re-\/create the object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Set} & the Result\+Set to use. \\
+\hline
+{\em index} & an index into the Result\+Set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object if it can be de-\/serialized 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a15c89a6b2416bd75ff5691016907fc79}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a15c89a6b2416bd75ff5691016907fc79}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!scramble@{scramble}}
+\index{scramble@{scramble}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{scramble()}{scramble()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+Util.\+scramble (\begin{DoxyParamCaption}\item[{String}]{message,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a3984ee75dc7002232216fbbcd1771459}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a3984ee75dc7002232216fbbcd1771459}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!seconds\+Since\+Millis@{seconds\+Since\+Millis}}
+\index{seconds\+Since\+Millis@{seconds\+Since\+Millis}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{seconds\+Since\+Millis()}{secondsSinceMillis()}}
+{\footnotesize\ttfamily static long com.\+mysql.\+jdbc.\+Util.\+seconds\+Since\+Millis (\begin{DoxyParamCaption}\item[{long}]{time\+In\+Millis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes the number of seconds elapsed since the given time in milliseconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+In\+Millis} & The past instant in milliseconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of seconds, truncated, elapsed since time\+In\+Millis. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_a1354e3d746b6b93b38b8d535acd977a4}\label{classcom_1_1mysql_1_1jdbc_1_1_util_a1354e3d746b6b93b38b8d535acd977a4}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!stack\+Trace\+To\+String@{stack\+Trace\+To\+String}}
+\index{stack\+Trace\+To\+String@{stack\+Trace\+To\+String}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{stack\+Trace\+To\+String()}{stackTraceToString()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+Util.\+stack\+Trace\+To\+String (\begin{DoxyParamCaption}\item[{Throwable}]{ex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts a nested exception into a nicer message
+
+
+\begin{DoxyParams}{Parameters}
+{\em ex} & the exception to expand into a message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a message containing the exception, the message (if any), and a stacktrace. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a1354e3d746b6b93b38b8d535acd977a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_a1354e3d746b6b93b38b8d535acd977a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_ab73dd640e4fb69c157001303d7be0164}\label{classcom_1_1mysql_1_1jdbc_1_1_util_ab73dd640e4fb69c157001303d7be0164}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!truncate\+And\+Convert\+To\+Int@{truncate\+And\+Convert\+To\+Int}}
+\index{truncate\+And\+Convert\+To\+Int@{truncate\+And\+Convert\+To\+Int}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{truncate\+And\+Convert\+To\+Int()}{truncateAndConvertToInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int com.\+mysql.\+jdbc.\+Util.\+truncate\+And\+Convert\+To\+Int (\begin{DoxyParamCaption}\item[{long}]{long\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts long to int, truncating to maximum/minimum value if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em long\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_util_ab73dd640e4fb69c157001303d7be0164_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_util_aa422ec3d75ddc371d540e31156472513}\label{classcom_1_1mysql_1_1jdbc_1_1_util_aa422ec3d75ddc371d540e31156472513}} 
+\index{com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}!truncate\+And\+Convert\+To\+Int@{truncate\+And\+Convert\+To\+Int}}
+\index{truncate\+And\+Convert\+To\+Int@{truncate\+And\+Convert\+To\+Int}!com\+::mysql\+::jdbc\+::\+Util@{com\+::mysql\+::jdbc\+::\+Util}}
+\subsubsection{\texorpdfstring{truncate\+And\+Convert\+To\+Int()}{truncateAndConvertToInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} com.\+mysql.\+jdbc.\+Util.\+truncate\+And\+Convert\+To\+Int (\begin{DoxyParamCaption}\item[{long \mbox{[}$\,$\mbox{]}}]{long\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts long\mbox{[}\mbox{]} to int\mbox{[}\mbox{]}, truncating to maximum/minimum value if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em long\+Array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Util.\+java\end{DoxyCompactItemize}

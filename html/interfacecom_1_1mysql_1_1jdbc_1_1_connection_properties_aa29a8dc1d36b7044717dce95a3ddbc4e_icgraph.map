@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setMetadataCacheSize" name="com.mysql.jdbc.ConnectionProperties.setMetadataCacheSize">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aa2b3fbef9bed38d8dd555e8f0f7c3598" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setMetadataCacheSize" alt="" coords="273,5,548,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a2403357756bbbdea09d2773f42ea3501" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setMetadataCacheSize" alt="" coords="275,71,546,112"/>
+</map>

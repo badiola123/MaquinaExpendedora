@@ -1,0 +1,48 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy}{}\section{com.\+mysql.\+jdbc.\+Failover\+Connection\+Proxy Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy}\index{com.\+mysql.\+jdbc.\+Failover\+Connection\+Proxy@{com.\+mysql.\+jdbc.\+Failover\+Connection\+Proxy}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Failover\+Connection\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Failover\+Connection\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Failover\+Jdbc\+Interface\+Proxy}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy_a7a03467d805279c181014efa12d238b0}\label{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy_a7a03467d805279c181014efa12d238b0}} 
+synchronized Object {\bfseries invoke\+More} (Object proxy, Method method, Object\mbox{[}$\,$\mbox{]} args)  throws Throwable 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy_a0c24208218fffcb5ef4204af2cea5728}\label{classcom_1_1mysql_1_1jdbc_1_1_failover_connection_proxy_a0c24208218fffcb5ef4204af2cea5728}} 
+static \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries create\+Proxy\+Instance} (List$<$ String $>$ hosts, Properties props)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A proxy for a dynamic \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{com.\+mysql.\+jdbc.\+Connection}} implementation that provides failover features for list of hosts. \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} switching occurs on communications related exceptions and/or user defined settings, namely when one of the conditions set in \textquotesingle{}seconds\+Before\+Retry\+Master\textquotesingle{} or \textquotesingle{}queries\+Before\+Retry\+Master\textquotesingle{} is met. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Failover\+Connection\+Proxy.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="venta.ListaVentas" name="venta.ListaVentas">
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="493,56,687,83"/>
+<area shape="rect" id="node5" href="$classventa_1_1_modelo_columnas_tabla_venta.html" title="venta.ModeloColumnasTabla\lVenta" alt="" coords="497,167,683,209"/>
+<area shape="rect" id="node7" href="$classventa_1_1_trazador_tabla_venta.html" title="venta.TrazadorTablaVenta" alt="" coords="222,204,393,231"/>
+</map>

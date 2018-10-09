@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.PreparedStatement.executeQuery" name="com.mysql.jdbc.PreparedStatement.executeQuery">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#aad5669e55c0db83ec88a8fd9c34a406c" title="com.mysql.jdbc.DatabaseMeta\lData.getColumnPrivileges" alt="" coords="357,5,560,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a86ec9e7284f797edec7e5ec4880f2006" title="com.mysql.jdbc.MysqlIO.explain\lSlowQuery" alt="" coords="353,71,564,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1simple_1_1_connection_test.html#a018eaff5a1cc1db390b843a77c50d63f" title="testsuite.simple.Connection\lTest.testDontTrackOpenResources" alt="" coords="346,136,571,177"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1simple_1_1_date_test.html#a65e40a7db246ac9e6d412004a72e4bd4" title="testsuite.simple.DateTest.test\lZeroDateBehavior" alt="" coords="361,201,557,243"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1simple_1_1_statements_test.html#a8686a9137f5901a701020342f04dc3a7" title="testsuite.simple.Statements\lTest.testBinaryResultSetNumericTypes" alt="" coords="333,267,584,308"/>
+</map>

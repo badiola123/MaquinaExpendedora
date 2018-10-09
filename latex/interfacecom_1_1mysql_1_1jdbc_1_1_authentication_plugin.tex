@@ -1,0 +1,130 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin}{}\section{com.\+mysql.\+jdbc.\+Authentication\+Plugin Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin}\index{com.\+mysql.\+jdbc.\+Authentication\+Plugin@{com.\+mysql.\+jdbc.\+Authentication\+Plugin}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Authentication\+Plugin\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Authentication\+Plugin\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a90dfb5c717939a248527c5bdf512b510}{get\+Protocol\+Plugin\+Name}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a38b8ca6ee23b3b3e47de1549bb784a7d}{requires\+Confidentiality}} ()
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_abf6de7affb05904b1dba5517a17421d1}{is\+Reusable}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_af47d83abdb04823681f23b027ec19379}{set\+Authentication\+Parameters}} (String user, String password)
+\item 
+boolean \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a1ed9558616b029386dc24bcade409f3d}{next\+Authentication\+Step}} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} from\+Server, List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} $>$ to\+Server)  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementors of this interface can be installed via the \char`\"{}authentication\+Plugins\char`\"{} configuration property.
+
+The driver will create one instance of a given plugin per \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}{Mysql\+IO}} instance if it\textquotesingle{}s reusable (see \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_abf6de7affb05904b1dba5517a17421d1}{is\+Reusable()}}) or a new instance in each \mbox{\hyperlink{}{Mysql\+I\+O\#proceed\+Handshake\+With\+Pluggable\+Authentication(\+String, String, String, Buffer)}} call. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a90dfb5c717939a248527c5bdf512b510}\label{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a90dfb5c717939a248527c5bdf512b510}} 
+\index{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}!get\+Protocol\+Plugin\+Name@{get\+Protocol\+Plugin\+Name}}
+\index{get\+Protocol\+Plugin\+Name@{get\+Protocol\+Plugin\+Name}!com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{get\+Protocol\+Plugin\+Name()}{getProtocolPluginName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+Authentication\+Plugin.\+get\+Protocol\+Plugin\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name that the My\+S\+QL server uses on the wire for this plugin 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin_a038ab59e32db24d7aba880be1bdf3286}{com.\+mysql.\+jdbc.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin_a864fdbd1fc6282bfdf04805cd059d46b}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin_af847af9fb6871a67066bdce231fb024e}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin_a06ca40d8d34e31a0c20b7c22b7ceec78}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Old\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_abf6de7affb05904b1dba5517a17421d1}\label{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_abf6de7affb05904b1dba5517a17421d1}} 
+\index{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}!is\+Reusable@{is\+Reusable}}
+\index{is\+Reusable@{is\+Reusable}!com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{is\+Reusable()}{isReusable()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Authentication\+Plugin.\+is\+Reusable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if plugin instance may be reused, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin_acd2909ff9faf158cd5cd6bf14851dddc}{com.\+mysql.\+jdbc.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin_aa11ae323c22a910cd0cd6a1e904ff458}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin_aa780df1f828468540fcb6f54fac0d5e3}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin_a66202ca57be0da786649bf07b3ea75d2}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Old\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a1ed9558616b029386dc24bcade409f3d}\label{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a1ed9558616b029386dc24bcade409f3d}} 
+\index{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}!next\+Authentication\+Step@{next\+Authentication\+Step}}
+\index{next\+Authentication\+Step@{next\+Authentication\+Step}!com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{next\+Authentication\+Step()}{nextAuthenticationStep()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Authentication\+Plugin.\+next\+Authentication\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}}}]{from\+Server,  }\item[{List$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_buffer}{Buffer}} $>$}]{to\+Server }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Process authentication handshake data from server and optionally produce data to be sent back to the server. The driver will keep calling this method until either a S\+Q\+L\+Exception is thrown (authentication failure, please use appropriate S\+Q\+L\+States) or the method returns false or driver receives an OK packet from the server which indicates that the connection has been already approved.
+
+If, on return from this method, to\+Server is a non-\/empty list of buffers, then these buffers should be sent to the server in order and without any reads in between them. If to\+Server is an empty list, no data should be sent to server.
+
+If method returns true, it means that this plugin does not need any more data from the server to conclude the handshake and this method should not be called again. (Note that server can send an Auth Method Switch request and then another handshake will start, possibly using a different plugin.)
+
+If this method returns false, it means that plugin needs more data from the server to conclude the handshake. In that case next handshake data payload should be read from the server (after possibly writing data from to\+Server as explained above). Then this method should be called again with the new data in from\+Server parameter.
+
+In case of errors the method should throw S\+Q\+L\+Exception with appropriate S\+Q\+L\+States.
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Server} & a buffer containing handshake data payload from server (can be empty). \\
+\hline
+{\em to\+Server} & list of buffers with data to be sent to the server (the list can be empty, but buffers in the list should contain data).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False if more data should be read from the server and next call to this method made, true otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin_aa46e906714a3b8a223f0e3e15e2aaf94}{com.\+mysql.\+jdbc.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin_af91bb791cd53bd81559d8101f962618f}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin_afe852978e8b5462d13f6f60bc8d7d6be}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin_a0a1725f9a449c72b77a493bce2d57bdd}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Old\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a38b8ca6ee23b3b3e47de1549bb784a7d}\label{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_a38b8ca6ee23b3b3e47de1549bb784a7d}} 
+\index{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}!requires\+Confidentiality@{requires\+Confidentiality}}
+\index{requires\+Confidentiality@{requires\+Confidentiality}!com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{requires\+Confidentiality()}{requiresConfidentiality()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+jdbc.\+Authentication\+Plugin.\+requires\+Confidentiality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Does this plugin require the connection itself to be confidential (i.\+e. tls/ssl)...Highly recommended to return \char`\"{}true\char`\"{} for plugins that return the credentials in the clear. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin_a4ac61329eb620bd7e2432c5fcb3a40ef}{com.\+mysql.\+jdbc.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin_a5707e2d872d4896e516660d572301c96}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin_adcc96152e04ea268273ce4153c8e97e4}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin_a463ee44670a3d8d6dc9558e0c027cd99}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Old\+Password\+Plugin}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_af47d83abdb04823681f23b027ec19379}\label{interfacecom_1_1mysql_1_1jdbc_1_1_authentication_plugin_af47d83abdb04823681f23b027ec19379}} 
+\index{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}!set\+Authentication\+Parameters@{set\+Authentication\+Parameters}}
+\index{set\+Authentication\+Parameters@{set\+Authentication\+Parameters}!com\+::mysql\+::jdbc\+::\+Authentication\+Plugin@{com\+::mysql\+::jdbc\+::\+Authentication\+Plugin}}
+\subsubsection{\texorpdfstring{set\+Authentication\+Parameters()}{setAuthenticationParameters()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Authentication\+Plugin.\+set\+Authentication\+Parameters (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+This method called from cJ before first next\+Authentication\+Step call. Values of user and password parameters are passed from those in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o_a2b65fc2cb7cccdb5923da263d37019ad}{Mysql\+I\+O.\+change\+User}}(String user\+Name, String password, String database) or Mysql\+I\+O.\+do\+Handshake(String user, String password, String database).
+
+Plugin should use these values instead of values from connection properties because parent method may be a change\+User call which saves user and password into connection only after successful handshake.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin_a2aa9fda4aa70184de8f7407854ed0000}{com.\+mysql.\+jdbc.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin_a99b07a97f92e7f3cf6e71712eb975613}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin_a1fc50442576ef3ff00a914440398f4b7}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin_a744eb8f01ec58474ea3a0d9ed5007531}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Old\+Password\+Plugin}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Authentication\+Plugin.\+java\end{DoxyCompactItemize}

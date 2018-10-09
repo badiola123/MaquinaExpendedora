@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.StatementInterceptorV2" name="com.mysql.jdbc.StatementInterceptorV2">
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor.html" title="com.mysql.jdbc.LoadBalanced\lAutoCommitInterceptor" alt="" coords="469,246,669,287"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper.html" title="com.mysql.jdbc.NoSubInterceptor\lWrapper" alt="" coords="460,311,679,353"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter.html" title="com.mysql.jdbc.Reflective\lStatementInterceptorAdapter" alt="" coords="475,377,663,418"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter.html" title="com.mysql.jdbc.V1toV2Statement\lInterceptorAdapter" alt="" coords="459,442,680,483"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1_base_statement_interceptor.html" title="testsuite.BaseStatementInterceptor" alt="" coords="456,508,683,535"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html" title="com.mysql.jdbc.Extension" alt="" coords="5,384,181,411"/>
+</map>

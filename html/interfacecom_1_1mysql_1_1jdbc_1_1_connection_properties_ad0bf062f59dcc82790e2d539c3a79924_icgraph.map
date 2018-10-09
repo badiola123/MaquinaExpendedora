@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getPreparedStatementCacheSize" name="com.mysql.jdbc.ConnectionProperties.getPreparedStatementCacheSize">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ad7e993d7bc7cbf1913a836cdcbbdc0dc" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getPreparedStatement\lCacheSize" alt="" coords="268,5,539,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a6308b3767baa0f4cbf8eecdd7991533d" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getPreparedStatement\lCacheSize" alt="" coords="271,85,536,141"/>
+</map>

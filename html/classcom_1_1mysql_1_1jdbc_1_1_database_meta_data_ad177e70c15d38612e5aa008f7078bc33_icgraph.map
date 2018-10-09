@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.DatabaseMetaData.supportsStoredProcedures" name="com.mysql.jdbc.DatabaseMetaData.supportsStoredProcedures">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a677ceef89a15533d6f1aa37bb7074752" title="com.mysql.jdbc.DatabaseMeta\lData.getProceduresAndOrFunctions" alt="" coords="260,71,491,112"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a622efd6d2cc33569fba43123f4622843" title="com.mysql.jdbc.DatabaseMeta\lData.getProcedures" alt="" coords="544,5,747,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a01609207bf0f104ae316e507c1250ec5" title="com.mysql.jdbc.DatabaseMeta\lData.getFunctions" alt="" coords="544,71,747,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_database_meta_data.html#a7a77761d3bbbc91d21f84c243f7cf5d8" title="com.mysql.jdbc.JDBC4Database\lMetaData.getProcedures" alt="" coords="539,136,752,177"/>
+</map>

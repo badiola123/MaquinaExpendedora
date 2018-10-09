@@ -1,0 +1,50 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_index}{}\section{com.\+mysql.\+fabric.\+Shard\+Index Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1_shard_index}\index{com.\+mysql.\+fabric.\+Shard\+Index@{com.\+mysql.\+fabric.\+Shard\+Index}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_index_a8628fa64ce15a11c8cb2a5b3df4580c1}\label{classcom_1_1mysql_1_1fabric_1_1_shard_index_a8628fa64ce15a11c8cb2a5b3df4580c1}} 
+{\bfseries Shard\+Index} (String bound, Integer shard\+Id, String group\+Name)
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index_a12dd3c50d26f9a14139eb61cc3565b27}{get\+Bound}} ()
+\item 
+Integer \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index_a6e58c9b169c3978e86c12060f71680b6}{get\+Shard\+Id}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index_a4ffb7b10c54b394c2a7d17d53e04a83a}{get\+Group\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A shard index represents the physical location of a segment of data. The data segment is identified by it\textquotesingle{}s key\textquotesingle{}s relation to the `bound' value. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_index_a12dd3c50d26f9a14139eb61cc3565b27}\label{classcom_1_1mysql_1_1fabric_1_1_shard_index_a12dd3c50d26f9a14139eb61cc3565b27}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Index@{com\+::mysql\+::fabric\+::\+Shard\+Index}!get\+Bound@{get\+Bound}}
+\index{get\+Bound@{get\+Bound}!com\+::mysql\+::fabric\+::\+Shard\+Index@{com\+::mysql\+::fabric\+::\+Shard\+Index}}
+\subsubsection{\texorpdfstring{get\+Bound()}{getBound()}}
+{\footnotesize\ttfamily String com.\+mysql.\+fabric.\+Shard\+Index.\+get\+Bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The bound that the key will be compared to. This is treated different based on the \mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}}. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_index_a4ffb7b10c54b394c2a7d17d53e04a83a}\label{classcom_1_1mysql_1_1fabric_1_1_shard_index_a4ffb7b10c54b394c2a7d17d53e04a83a}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Index@{com\+::mysql\+::fabric\+::\+Shard\+Index}!get\+Group\+Name@{get\+Group\+Name}}
+\index{get\+Group\+Name@{get\+Group\+Name}!com\+::mysql\+::fabric\+::\+Shard\+Index@{com\+::mysql\+::fabric\+::\+Shard\+Index}}
+\subsubsection{\texorpdfstring{get\+Group\+Name()}{getGroupName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+fabric.\+Shard\+Index.\+get\+Group\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The name of the group in the data for this shard resides. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_shard_index_a4ffb7b10c54b394c2a7d17d53e04a83a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_shard_index_a6e58c9b169c3978e86c12060f71680b6}\label{classcom_1_1mysql_1_1fabric_1_1_shard_index_a6e58c9b169c3978e86c12060f71680b6}} 
+\index{com\+::mysql\+::fabric\+::\+Shard\+Index@{com\+::mysql\+::fabric\+::\+Shard\+Index}!get\+Shard\+Id@{get\+Shard\+Id}}
+\index{get\+Shard\+Id@{get\+Shard\+Id}!com\+::mysql\+::fabric\+::\+Shard\+Index@{com\+::mysql\+::fabric\+::\+Shard\+Index}}
+\subsubsection{\texorpdfstring{get\+Shard\+Id()}{getShardId()}}
+{\footnotesize\ttfamily Integer com.\+mysql.\+fabric.\+Shard\+Index.\+get\+Shard\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A unique identified for this shard. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/Shard\+Index.\+java\end{DoxyCompactItemize}

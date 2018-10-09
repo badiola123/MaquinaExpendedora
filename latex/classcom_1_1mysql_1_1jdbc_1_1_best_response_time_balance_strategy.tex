@@ -1,0 +1,112 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy}{}\section{com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy}\index{com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy@{com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_abca1d34e1d2d4a452109cec3b1d4236f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ac8018473ac870dfb7c67f51092cd0261}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties props)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ad59590e6022784ddedcfb060173aed21}{pick\+Connection}} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}} proxy, List$<$ String $>$ configured\+Hosts, Map$<$ String, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} $>$ live\+Connections, long\mbox{[}$\,$\mbox{]} response\+Times, int num\+Retries)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_abca1d34e1d2d4a452109cec3b1d4236f}\label{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_abca1d34e1d2d4a452109cec3b1d4236f}} 
+\index{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ac8018473ac870dfb7c67f51092cd0261}\label{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ac8018473ac870dfb7c67f51092cd0261}} 
+\index{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy}!init@{init}}
+\index{init@{init}!com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once per connection that wants to use the extension
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver_a834c012e752a01d1ee435b3461bb8218}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this extension is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ad59590e6022784ddedcfb060173aed21}\label{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ad59590e6022784ddedcfb060173aed21}} 
+\index{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy}!pick\+Connection@{pick\+Connection}}
+\index{pick\+Connection@{pick\+Connection}!com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy@{com\+::mysql\+::jdbc\+::\+Best\+Response\+Time\+Balance\+Strategy}}
+\subsubsection{\texorpdfstring{pick\+Connection()}{pickConnection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy.\+pick\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy}{Load\+Balanced\+Connection\+Proxy}}}]{proxy,  }\item[{List$<$ String $>$}]{configured\+Hosts,  }\item[{Map$<$ String, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} $>$}]{live\+Connections,  }\item[{long \mbox{[}$\,$\mbox{]}}]{response\+Times,  }\item[{int}]{num\+Retries }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called by the driver to pick a new connection to route requests over.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy} & the Invocation\+Handler that deals with actual method calls to the J\+D\+BC connection, and serves as a factory for new connections for this strategy via the create\+Connection\+For\+Host() method.\\
+\hline
+\end{DoxyParams}
+This proxy takes care of maintaining the response time list, map of host/ports to live connections, and taking connections out of the live connections map if they receive a network-\/related error while they are in use by the application. 
+\begin{DoxyParams}{Parameters}
+{\em configured\+Hosts} & the list of hosts/ports (in \char`\"{}host\+:port\char`\"{} form) as passed in by the user. \\
+\hline
+{\em live\+Connections} & a map of host/ports to \char`\"{}live\char`\"{} connections to them. \\
+\hline
+{\em response\+Times} & the list of response times for a {\bfseries transaction} for each host in the configured hosts list. \\
+\hline
+{\em num\+Retries} & the number of times the driver expects this strategy to re-\/try connection attempts if creating a new connection fails. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the physical J\+D\+BC connection for the application to use, based upon the strategy employed. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a new connection can not be found or created by this strategy.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy_a8ab535276152fa3a1aa8621cf3fb1c68}{Load\+Balanced\+Connection\+Proxy\+::create\+Connection\+For\+Host(\+String)}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_balance_strategy_a9cebc8dcd86aaf1c7dcb458cc7755540}{com.\+mysql.\+jdbc.\+Balance\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Best\+Response\+Time\+Balance\+Strategy.\+java\end{DoxyCompactItemize}

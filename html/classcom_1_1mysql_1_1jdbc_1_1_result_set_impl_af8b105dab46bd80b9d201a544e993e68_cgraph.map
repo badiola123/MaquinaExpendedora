@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.ResultSetImpl.getRef" name="com.mysql.jdbc.ResultSetImpl.getRef">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a1ac9c4862814fa6b5439c71a4f4cdac8" title="com.mysql.jdbc.ResultSet\lImpl.getRef" alt="" coords="228,68,403,109"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a1ef4220e1860ea8f9ab89180466c2bde" title="com.mysql.jdbc.ResultSet\lImpl.checkColumnBounds" alt="" coords="478,35,653,76"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_s_q_l_error.html#ac3aaaa79ef0f07281c6f5eb0e94d57fc" title="com.mysql.jdbc.SQLError.create\lSQLFeatureNotSupportedException" alt="" coords="451,100,680,141"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_impl.html#a451fa419a4cdd5a02efd996428fcd0c4" title="com.mysql.jdbc.ResultSet\lImpl.checkClosed" alt="" coords="728,5,903,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="951,35,1151,76"/>
+</map>

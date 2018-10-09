@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.StreamingNotifiable" name="com.mysql.jdbc.StreamingNotifiable">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_communications_exception.html" title="com.mysql.jdbc.Communications\lException" alt="" coords="233,5,448,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1exceptions_1_1jdbc4_1_1_communications_exception.html" title="com.mysql.jdbc.exceptions.jdbc4.\lCommunicationsException" alt="" coords="231,71,451,112"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_feature_not_available_exception.html" title="com.mysql.jdbc.Connection\lFeatureNotAvailableException" alt="" coords="499,5,693,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="venta.ListaVentas.ListaVentas" name="venta.ListaVentas.ListaVentas">
+<area shape="rect" id="node2" href="$classventa_1_1_lista_ventas.html#a5addbb3cc5ae30ddd938cc5ae3021a48" title="venta.ListaVentas.cargar\lDatos" alt="" coords="252,49,417,90"/>
+<area shape="rect" id="node3" href="$classventa_1_1_venta.html#a517a4e2b36e633e0adab951596a733ed" title="venta.Venta.getNombreColumnas" alt="" coords="465,5,680,32"/>
+<area shape="rect" id="node4" href="$classconexion_s_q_l_1_1_comandos.html#aa1dc46cfa52b931d7252da826880372d" title="conexionSQL.Comandos.select" alt="" coords="470,56,675,83"/>
+<area shape="rect" id="node6" href="$classvistas_1_1_principal.html#aa81de202b442c060c9db8f564ba288b3" title="vistas.Principal.getTablaventa" alt="" coords="477,107,669,133"/>
+<area shape="rect" id="node5" href="$classconexion_s_q_l_1_1_my_data_access.html#ae8d04039a000d2b3e7dc72c99be7c551" title="conexionSQL.MyDataAccess.get\lQuery" alt="" coords="728,49,943,90"/>
+</map>

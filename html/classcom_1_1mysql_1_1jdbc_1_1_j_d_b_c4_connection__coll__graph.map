@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.JDBC4Connection" name="com.mysql.jdbc.JDBC4Connection">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html" title="com.mysql.jdbc.ConnectionImpl" alt="" coords="1601,358,1807,385"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html" title="com.mysql.jdbc.Connection\lPropertiesImpl" alt="" coords="1143,196,1326,237"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="435,297,618,339"/>
+<area shape="rect" id="node10" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="1121,305,1348,331"/>
+<area shape="rect" id="node11" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="719,355,901,382"/>
+<area shape="rect" id="node18" href="$interfacecom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_my_s_q_l_connection.html" title="com.mysql.jdbc.JDBC4MySQLConnection" alt="" coords="1571,291,1837,318"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1util_1_1_l_r_u_cache.html" title="com.mysql.jdbc.util.LRUCache" alt="" coords="1134,457,1335,483"/>
+</map>

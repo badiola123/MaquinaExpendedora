@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html" title="com.mysql.jdbc.DatabaseMetaData" alt="" coords="187,46,416,73"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema.html" title="com.mysql.jdbc.DatabaseMeta\lDataUsingInfoSchema" alt="" coords="469,5,672,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_database_meta_data.html" title="com.mysql.jdbc.JDBC4Database\lMetaData" alt="" coords="464,71,677,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_database_meta_data_using_info_schema.html" title="com.mysql.jdbc.JDBC4Database\lMetaDataUsingInfoSchema" alt="" coords="725,5,939,47"/>
+</map>

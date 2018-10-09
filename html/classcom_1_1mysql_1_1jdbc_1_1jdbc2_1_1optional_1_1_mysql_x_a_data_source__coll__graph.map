@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource" name="com.mysql.jdbc.jdbc2.optional.MysqlXADataSource">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource" alt="" coords="1453,231,1656,273"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html" title="com.mysql.jdbc.Connection\lPropertiesImpl" alt="" coords="1139,147,1321,189"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="719,237,901,278"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver.html" title="com.mysql.jdbc.NonRegistering\lDriver" alt="" coords="1127,315,1333,357"/>
+</map>

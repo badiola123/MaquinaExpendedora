@@ -1,0 +1,61 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1_server_group}{}\section{com.\+mysql.\+fabric.\+Server\+Group Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1_server_group}\index{com.\+mysql.\+fabric.\+Server\+Group@{com.\+mysql.\+fabric.\+Server\+Group}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_server_group_a7892c5f9e9bccde2648483f472aacb66}\label{classcom_1_1mysql_1_1fabric_1_1_server_group_a7892c5f9e9bccde2648483f472aacb66}} 
+{\bfseries Server\+Group} (String name, Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} $>$ servers)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_server_group_a0cc8d3c7673938cf3deb77f9ab49300f}\label{classcom_1_1mysql_1_1fabric_1_1_server_group_a0cc8d3c7673938cf3deb77f9ab49300f}} 
+String {\bfseries get\+Name} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_server_group_a62643c7fceb03a17630e40562c655a43}\label{classcom_1_1mysql_1_1fabric_1_1_server_group_a62643c7fceb03a17630e40562c655a43}} 
+Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} $>$ {\bfseries get\+Servers} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group_ac2ba8dc80be8118578f35d07727297d8}{get\+Master}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group_aa0c3aa4598de2ca177d4df8bf95dae23}{get\+Server}} (String host\+Port\+String)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_server_group_a73f8ac6b7b3b77c9933d6d66a3f0b2ed}\label{classcom_1_1mysql_1_1fabric_1_1_server_group_a73f8ac6b7b3b77c9933d6d66a3f0b2ed}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} Group -\/ a set of servers responsible for the same set of data 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_server_group_ac2ba8dc80be8118578f35d07727297d8}\label{classcom_1_1mysql_1_1fabric_1_1_server_group_ac2ba8dc80be8118578f35d07727297d8}} 
+\index{com\+::mysql\+::fabric\+::\+Server\+Group@{com\+::mysql\+::fabric\+::\+Server\+Group}!get\+Master@{get\+Master}}
+\index{get\+Master@{get\+Master}!com\+::mysql\+::fabric\+::\+Server\+Group@{com\+::mysql\+::fabric\+::\+Server\+Group}}
+\subsubsection{\texorpdfstring{get\+Master()}{getMaster()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} com.\+mysql.\+fabric.\+Server\+Group.\+get\+Master (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Find the master server for this group.
+
+\begin{DoxyReturn}{Returns}
+the master server, or null if there\textquotesingle{}s no master for the current group state 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_server_group_ac2ba8dc80be8118578f35d07727297d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_server_group_aa0c3aa4598de2ca177d4df8bf95dae23}\label{classcom_1_1mysql_1_1fabric_1_1_server_group_aa0c3aa4598de2ca177d4df8bf95dae23}} 
+\index{com\+::mysql\+::fabric\+::\+Server\+Group@{com\+::mysql\+::fabric\+::\+Server\+Group}!get\+Server@{get\+Server}}
+\index{get\+Server@{get\+Server}!com\+::mysql\+::fabric\+::\+Server\+Group@{com\+::mysql\+::fabric\+::\+Server\+Group}}
+\subsubsection{\texorpdfstring{get\+Server()}{getServer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server}{Server}} com.\+mysql.\+fabric.\+Server\+Group.\+get\+Server (\begin{DoxyParamCaption}\item[{String}]{host\+Port\+String }\end{DoxyParamCaption})}
+
+Lookup a server in this group for the matching host\+:port string.
+
+\begin{DoxyReturn}{Returns}
+the server, if found. null otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/Server\+Group.\+java\end{DoxyCompactItemize}

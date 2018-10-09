@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setPreparedStatementCacheSqlLimit" name="com.mysql.jdbc.ConnectionProperties.setPreparedStatementCacheSqlLimit">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#acdf5cc8f365225e264d7a667a13abcba" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setPreparedStatement\lCacheSqlLimit" alt="" coords="268,5,539,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#aeab0c45eb21ae847d8275f48c9bf045b" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setPreparedStatement\lCacheSqlLimit" alt="" coords="271,85,536,141"/>
+</map>

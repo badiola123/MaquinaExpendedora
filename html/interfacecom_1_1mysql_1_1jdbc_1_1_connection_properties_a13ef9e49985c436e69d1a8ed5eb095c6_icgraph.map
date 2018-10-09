@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setRoundRobinLoadBalance" name="com.mysql.jdbc.ConnectionProperties.setRoundRobinLoadBalance">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a443c2aa5fdc8084aa721378f69257562" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setRoundRobinLoad\lBalance" alt="" coords="301,5,557,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#abda89933ef464c432ec32e019c84d445" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setRoundRobin\lLoadBalance" alt="" coords="318,85,541,141"/>
+</map>

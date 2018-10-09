@@ -1,0 +1,118 @@
+\hypertarget{classtestsuite_1_1simple_1_1_x_a_test}{}\section{testsuite.\+simple.\+X\+A\+Test Class Reference}
+\label{classtestsuite_1_1simple_1_1_x_a_test}\index{testsuite.\+simple.\+X\+A\+Test@{testsuite.\+simple.\+X\+A\+Test}}
+
+
+Inheritance diagram for testsuite.\+simple.\+X\+A\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classtestsuite_1_1simple_1_1_x_a_test__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+simple.\+X\+A\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1simple_1_1_x_a_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_x_a_test_ab9bf087db2550571c63bb6f3d8dc31d9}\label{classtestsuite_1_1simple_1_1_x_a_test_ab9bf087db2550571c63bb6f3d8dc31d9}} 
+{\bfseries X\+A\+Test} (String name)
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1simple_1_1_x_a_test_ac5d7e1565f556c03ca6ba2a11a6de5fa}{test\+Coordination}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1simple_1_1_x_a_test_aa3b48d0aaeb44cc191cba70d70e16234}{test\+Recover}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1simple_1_1_x_a_test_aeb2dc398d807c4028e784f85aba58457}{test\+Local\+Transaction}} ()  throws Exception 
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_x_a_test_a81909386fefd2283e02aa376525f6fd7}\label{classtestsuite_1_1simple_1_1_x_a_test_a81909386fefd2283e02aa376525f6fd7}} 
+void {\bfseries test\+Suspendable\+Tx} ()  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_x_a_test_ad6e5c8d3fc2f2bff1cbb0712db804ca8}\label{classtestsuite_1_1simple_1_1_x_a_test_ad6e5c8d3fc2f2bff1cbb0712db804ca8}} 
+X\+A\+Connection {\bfseries get\+X\+A\+Connection} ()  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Unit tests for our XA implementation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_x_a_test_ac5d7e1565f556c03ca6ba2a11a6de5fa}\label{classtestsuite_1_1simple_1_1_x_a_test_ac5d7e1565f556c03ca6ba2a11a6de5fa}} 
+\index{testsuite\+::simple\+::\+X\+A\+Test@{testsuite\+::simple\+::\+X\+A\+Test}!test\+Coordination@{test\+Coordination}}
+\index{test\+Coordination@{test\+Coordination}!testsuite\+::simple\+::\+X\+A\+Test@{testsuite\+::simple\+::\+X\+A\+Test}}
+\subsubsection{\texorpdfstring{test\+Coordination()}{testCoordination()}}
+{\footnotesize\ttfamily void testsuite.\+simple.\+X\+A\+Test.\+test\+Coordination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Tests that simple distributed transaction processing works as expected.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the test fails. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1simple_1_1_x_a_test_ac5d7e1565f556c03ca6ba2a11a6de5fa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_x_a_test_aeb2dc398d807c4028e784f85aba58457}\label{classtestsuite_1_1simple_1_1_x_a_test_aeb2dc398d807c4028e784f85aba58457}} 
+\index{testsuite\+::simple\+::\+X\+A\+Test@{testsuite\+::simple\+::\+X\+A\+Test}!test\+Local\+Transaction@{test\+Local\+Transaction}}
+\index{test\+Local\+Transaction@{test\+Local\+Transaction}!testsuite\+::simple\+::\+X\+A\+Test@{testsuite\+::simple\+::\+X\+A\+Test}}
+\subsubsection{\texorpdfstring{test\+Local\+Transaction()}{testLocalTransaction()}}
+{\footnotesize\ttfamily void testsuite.\+simple.\+X\+A\+Test.\+test\+Local\+Transaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Tests operation of local transactions on X\+A\+Connections when global transactions are in or not in progress (follows from B\+UG\#17401).
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the testcase fails \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1simple_1_1_x_a_test_aeb2dc398d807c4028e784f85aba58457_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_x_a_test_aa3b48d0aaeb44cc191cba70d70e16234}\label{classtestsuite_1_1simple_1_1_x_a_test_aa3b48d0aaeb44cc191cba70d70e16234}} 
+\index{testsuite\+::simple\+::\+X\+A\+Test@{testsuite\+::simple\+::\+X\+A\+Test}!test\+Recover@{test\+Recover}}
+\index{test\+Recover@{test\+Recover}!testsuite\+::simple\+::\+X\+A\+Test@{testsuite\+::simple\+::\+X\+A\+Test}}
+\subsubsection{\texorpdfstring{test\+Recover()}{testRecover()}}
+{\footnotesize\ttfamily void testsuite.\+simple.\+X\+A\+Test.\+test\+Recover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Tests that XA R\+E\+C\+O\+V\+ER works as expected.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if test fails \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1simple_1_1_x_a_test_aa3b48d0aaeb44cc191cba70d70e16234_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/simple/X\+A\+Test.\+java\end{DoxyCompactItemize}

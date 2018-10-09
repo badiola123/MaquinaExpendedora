@@ -1,0 +1,104 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source}{}\section{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+Connection\+Pool\+Data\+Source Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source}\index{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+Connection\+Pool\+Data\+Source@{com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+Connection\+Pool\+Data\+Source}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+Connection\+Pool\+Data\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+Connection\+Pool\+Data\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+synchronized Pooled\+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a7ad70ccec5dcac093fe965c738ec484c}{get\+Pooled\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+synchronized Pooled\+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a282b26c4bae068ad0d89a550924b3a2c}{get\+Pooled\+Connection}} (String s, String s1)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is used to obtain a physical connection and instantiate and return a \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_pooled_connection}{Mysql\+Pooled\+Connection}}. J2\+EE application servers map client calls to data\+Source.\+get\+Connection to this class based upon mapping set within deployment descriptor. This class extends \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source}{Mysql\+Data\+Source}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a7ad70ccec5dcac093fe965c738ec484c}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a7ad70ccec5dcac093fe965c738ec484c}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source}!get\+Pooled\+Connection@{get\+Pooled\+Connection}}
+\index{get\+Pooled\+Connection@{get\+Pooled\+Connection}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source}}
+\subsubsection{\texorpdfstring{get\+Pooled\+Connection()}{getPooledConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily synchronized Pooled\+Connection com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+Connection\+Pool\+Data\+Source.\+get\+Pooled\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Returns a pooled connection.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a Pooled\+Connection 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a7ad70ccec5dcac093fe965c738ec484c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a7ad70ccec5dcac093fe965c738ec484c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a282b26c4bae068ad0d89a550924b3a2c}\label{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a282b26c4bae068ad0d89a550924b3a2c}} 
+\index{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source}!get\+Pooled\+Connection@{get\+Pooled\+Connection}}
+\index{get\+Pooled\+Connection@{get\+Pooled\+Connection}!com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source@{com\+::mysql\+::jdbc\+::jdbc2\+::optional\+::\+Mysql\+Connection\+Pool\+Data\+Source}}
+\subsubsection{\texorpdfstring{get\+Pooled\+Connection()}{getPooledConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily synchronized Pooled\+Connection com.\+mysql.\+jdbc.\+jdbc2.\+optional.\+Mysql\+Connection\+Pool\+Data\+Source.\+get\+Pooled\+Connection (\begin{DoxyParamCaption}\item[{String}]{s,  }\item[{String}]{s1 }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+This method is invoked by the container. Obtains physical connection using my\+Sql.\+Driver class and returns a mysql\+Pooled\+Connection object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & user name \\
+\hline
+{\em s1} & password \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a Pooled\+Connection 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_connection_pool_data_source_a282b26c4bae068ad0d89a550924b3a2c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/jdbc2/optional/Mysql\+Connection\+Pool\+Data\+Source.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,221 @@
+\hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection}{}\section{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection Interface Reference}
+\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection}\index{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection@{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection}}
+
+
+Inheritance diagram for com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a7e0998ece683fdc723cf3c84c16e53be}{clear\+Server\+Selection\+Criteria}} ()  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_ab3be2f1efeb29e95c43ef316dd8ce0bf}{set\+Shard\+Key}} (String shard\+Key)  throws S\+Q\+L\+Exception
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a109c8c07d5068f51799da6a5f64a3eb7}{get\+Shard\+Key}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e9287d2536bd36fcc2f63d8a27a6b9b}{set\+Shard\+Table}} (String shard\+Table)  throws S\+Q\+L\+Exception
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_ae6b5717b5aac5a32d46b5fce83de74d7}{get\+Shard\+Table}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a934f2eca033d68725f572ceab4585efc}{set\+Server\+Group\+Name}} (String server\+Group\+Name)  throws S\+Q\+L\+Exception
+\item 
+String \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a67f82a83e756232c8d86a9ae8a1a0dce}{get\+Server\+Group\+Name}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group}{Server\+Group}} \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a45d6ee9742db0ea16e51e0db018a41d2}{get\+Current\+Server\+Group}} ()
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a50d57924d9cec195770ff2621425e36e}{clear\+Query\+Tables}} ()  throws S\+Q\+L\+Exception
+\item 
+void \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e830f9ef0fa1d0bae2d5dab997629c3}{add\+Query\+Table}} (String table\+Name)  throws S\+Q\+L\+Exception
+\item 
+Set$<$ String $>$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a9f655bdcae5f7aac562367444ab61d7a}{get\+Query\+Tables}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e830f9ef0fa1d0bae2d5dab997629c3}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e830f9ef0fa1d0bae2d5dab997629c3}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!add\+Query\+Table@{add\+Query\+Table}}
+\index{add\+Query\+Table@{add\+Query\+Table}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{add\+Query\+Table()}{addQueryTable()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+add\+Query\+Table (\begin{DoxyParamCaption}\item[{String}]{table\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Add a table to the set of tables used for the next query on this connection. This is used for\+: 
+\begin{DoxyItemize}
+\item Choosing a shard given the tables used 
+\item Preventing cross-\/shard queries 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_a5d4617f3849c2bad7d52f5e2991e01ab}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e830f9ef0fa1d0bae2d5dab997629c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a50d57924d9cec195770ff2621425e36e}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a50d57924d9cec195770ff2621425e36e}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!clear\+Query\+Tables@{clear\+Query\+Tables}}
+\index{clear\+Query\+Tables@{clear\+Query\+Tables}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{clear\+Query\+Tables()}{clearQueryTables()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+clear\+Query\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Clear the list of tables for the last query. This also clears the shard mapping/table and must be given again for the next query via \mbox{\hyperlink{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e9287d2536bd36fcc2f63d8a27a6b9b}{set\+Shard\+Table}} or \{\}. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_a797863b7d0a0798ce065d21b06a9f76d}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a50d57924d9cec195770ff2621425e36e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a7e0998ece683fdc723cf3c84c16e53be}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a7e0998ece683fdc723cf3c84c16e53be}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!clear\+Server\+Selection\+Criteria@{clear\+Server\+Selection\+Criteria}}
+\index{clear\+Server\+Selection\+Criteria@{clear\+Server\+Selection\+Criteria}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{clear\+Server\+Selection\+Criteria()}{clearServerSelectionCriteria()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+clear\+Server\+Selection\+Criteria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Clear all the state that is used to determine which server to send queries to. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_a386a5ba420d486c6a8778b9d611c265b}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a7e0998ece683fdc723cf3c84c16e53be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a45d6ee9742db0ea16e51e0db018a41d2}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a45d6ee9742db0ea16e51e0db018a41d2}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!get\+Current\+Server\+Group@{get\+Current\+Server\+Group}}
+\index{get\+Current\+Server\+Group@{get\+Current\+Server\+Group}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{get\+Current\+Server\+Group()}{getCurrentServerGroup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_server_group}{Server\+Group}} com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+get\+Current\+Server\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current server group.
+
+\begin{DoxyReturn}{Returns}
+The currently chosen group if sufficient server group selection criteria has been provided. Otherwise null. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_a3daf5c72d89cbbfc7fe2d0fda11e7441}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a45d6ee9742db0ea16e51e0db018a41d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a9f655bdcae5f7aac562367444ab61d7a}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a9f655bdcae5f7aac562367444ab61d7a}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!get\+Query\+Tables@{get\+Query\+Tables}}
+\index{get\+Query\+Tables@{get\+Query\+Tables}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{get\+Query\+Tables()}{getQueryTables()}}
+{\footnotesize\ttfamily Set$<$String$>$ com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+get\+Query\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The set of tables to be used in the next query on this connection. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_ab217c713b9e7e0795e5ad799a72fa0cb}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a67f82a83e756232c8d86a9ae8a1a0dce}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a67f82a83e756232c8d86a9ae8a1a0dce}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!get\+Server\+Group\+Name@{get\+Server\+Group\+Name}}
+\index{get\+Server\+Group\+Name@{get\+Server\+Group\+Name}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{get\+Server\+Group\+Name()}{getServerGroupName()}}
+{\footnotesize\ttfamily String com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+get\+Server\+Group\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the server group name when using direct server group selection. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_ae95ee3dba66db1708e523e8cec989ab5}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a109c8c07d5068f51799da6a5f64a3eb7}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a109c8c07d5068f51799da6a5f64a3eb7}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!get\+Shard\+Key@{get\+Shard\+Key}}
+\index{get\+Shard\+Key@{get\+Shard\+Key}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{get\+Shard\+Key()}{getShardKey()}}
+{\footnotesize\ttfamily String com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+get\+Shard\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the shard key for the data being accessed. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_a10e5d6a447e761dbc2bf2c84485036fe}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_ae6b5717b5aac5a32d46b5fce83de74d7}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_ae6b5717b5aac5a32d46b5fce83de74d7}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!get\+Shard\+Table@{get\+Shard\+Table}}
+\index{get\+Shard\+Table@{get\+Shard\+Table}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{get\+Shard\+Table()}{getShardTable()}}
+{\footnotesize\ttfamily String com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+get\+Shard\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the table being accessed. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_ae176bb68596e935c8484d85611116c81}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a934f2eca033d68725f572ceab4585efc}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a934f2eca033d68725f572ceab4585efc}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!set\+Server\+Group\+Name@{set\+Server\+Group\+Name}}
+\index{set\+Server\+Group\+Name@{set\+Server\+Group\+Name}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{set\+Server\+Group\+Name()}{setServerGroupName()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+set\+Server\+Group\+Name (\begin{DoxyParamCaption}\item[{String}]{server\+Group\+Name }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set the server group name to connect to. Direct server group selection is mutually exclusive of sharded data access. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_a288c67fc74fabc15a7a108d28ff6c52b}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a934f2eca033d68725f572ceab4585efc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_ab3be2f1efeb29e95c43ef316dd8ce0bf}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_ab3be2f1efeb29e95c43ef316dd8ce0bf}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!set\+Shard\+Key@{set\+Shard\+Key}}
+\index{set\+Shard\+Key@{set\+Shard\+Key}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{set\+Shard\+Key()}{setShardKey()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+set\+Shard\+Key (\begin{DoxyParamCaption}\item[{String}]{shard\+Key }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set the shard key for the data being accessed. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_ace89320543442af9fbe6034a4171333b}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_ab3be2f1efeb29e95c43ef316dd8ce0bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e9287d2536bd36fcc2f63d8a27a6b9b}\label{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e9287d2536bd36fcc2f63d8a27a6b9b}} 
+\index{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}!set\+Shard\+Table@{set\+Shard\+Table}}
+\index{set\+Shard\+Table@{set\+Shard\+Table}!com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection@{com\+::mysql\+::fabric\+::jdbc\+::\+Fabric\+My\+S\+Q\+L\+Connection}}
+\subsubsection{\texorpdfstring{set\+Shard\+Table()}{setShardTable()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection.\+set\+Shard\+Table (\begin{DoxyParamCaption}\item[{String}]{shard\+Table }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Set the table being accessed. Can be a table name or a \char`\"{}database.\+table\char`\"{} pair. The table must be known by Fabric as a sharded table. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_proxy_a3dd3f50c8de7678f002bae64114643c3}{com.\+mysql.\+fabric.\+jdbc.\+Fabric\+My\+S\+Q\+L\+Connection\+Proxy}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_fabric_my_s_q_l_connection_a5e9287d2536bd36fcc2f63d8a27a6b9b_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/jdbc/Fabric\+My\+S\+Q\+L\+Connection.\+java\end{DoxyCompactItemize}

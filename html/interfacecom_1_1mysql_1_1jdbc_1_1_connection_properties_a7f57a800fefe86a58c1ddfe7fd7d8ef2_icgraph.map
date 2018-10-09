@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseTimezone" name="com.mysql.jdbc.ConnectionProperties.setUseTimezone">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aceb697ff05de0e9bcd43256ff2a7d47a" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseTimezone" alt="" coords="236,5,473,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a3854f7fb3b5d199edae3890e38bf9b7c" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseTimezone" alt="" coords="239,71,471,112"/>
+</map>

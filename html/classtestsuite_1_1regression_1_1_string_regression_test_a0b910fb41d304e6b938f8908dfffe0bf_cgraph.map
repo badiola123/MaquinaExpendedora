@@ -1,0 +1,4 @@
+<map id="testsuite.regression.StringRegressionTest.testBug23645" name="testsuite.regression.StringRegressionTest.testBug23645">
+<area shape="rect" id="node2" href="$classtestsuite_1_1_base_test_case.html#a4098e9a480c1907875ded976cdbc81a3" title="testsuite.BaseTestCase.version\lMeetsMinimum" alt="" coords="264,5,469,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_charset_mapping.html#a1ed354f292dc235b766f7c5fa8b7cff0" title="com.mysql.jdbc.CharsetMapping.get\lJavaEncodingForMysqlCharset" alt="" coords="249,71,484,112"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.JDBC4CallableStatement.getNClob" name="com.mysql.jdbc.JDBC4CallableStatement.getNClob">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_callable_statement.html#a1182e743ef39610d0aaa8cda05648433" title="com.mysql.jdbc.CallableStatement.get\lOutputParameters" alt="" coords="257,5,504,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_callable_statement.html#a1986bfd17dcbabcad4efff9b897fab15" title="com.mysql.jdbc.CallableStatement.fix\lParameterName" alt="" coords="260,71,501,112"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a88caedee8619aad1351c9edea352c37e" title="com.mysql.jdbc.Statement\lImpl.checkClosed" alt="" coords="552,37,731,79"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="779,37,979,79"/>
+</map>

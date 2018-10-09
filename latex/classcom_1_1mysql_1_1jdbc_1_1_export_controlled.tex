@@ -1,0 +1,66 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_export_controlled}{}\section{com.\+mysql.\+jdbc.\+Export\+Controlled Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_export_controlled}\index{com.\+mysql.\+jdbc.\+Export\+Controlled@{com.\+mysql.\+jdbc.\+Export\+Controlled}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Standard\+S\+S\+L\+Socket\+Factory}
+\item 
+class {\bfseries X509\+Trust\+Manager\+Wrapper}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_a47235bc238aa6d612630a2aa8795ff92}\label{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_a47235bc238aa6d612630a2aa8795ff92}} 
+static boolean {\bfseries is\+S\+S\+L\+Established} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}{Mysql\+IO}} mysql\+IO)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_a8fa24d194b23b152d2d4939d1d3de51f}\label{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_a8fa24d194b23b152d2d4939d1d3de51f}} 
+static R\+S\+A\+Public\+Key {\bfseries decode\+R\+S\+A\+Public\+Key} (String key, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} interceptor)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_ab5f926a3f699126748a5a140cd39928e}\label{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_ab5f926a3f699126748a5a140cd39928e}} 
+static byte \mbox{[}$\,$\mbox{]} {\bfseries encrypt\+With\+R\+S\+A\+Public\+Key} (byte\mbox{[}$\,$\mbox{]} source, R\+S\+A\+Public\+Key key, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} interceptor)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_a9289e83574198220e82df098e2d041c0}\label{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_a9289e83574198220e82df098e2d041c0}} 
+static boolean {\bfseries enabled} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_aa291734145187becb4f1fc5f54c65d04}{transform\+Socket\+To\+S\+S\+L\+Socket}} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}{Mysql\+IO}} mysql\+IO)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds functionality that falls under export-\/control regulations. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_aa291734145187becb4f1fc5f54c65d04}\label{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_aa291734145187becb4f1fc5f54c65d04}} 
+\index{com\+::mysql\+::jdbc\+::\+Export\+Controlled@{com\+::mysql\+::jdbc\+::\+Export\+Controlled}!transform\+Socket\+To\+S\+S\+L\+Socket@{transform\+Socket\+To\+S\+S\+L\+Socket}}
+\index{transform\+Socket\+To\+S\+S\+L\+Socket@{transform\+Socket\+To\+S\+S\+L\+Socket}!com\+::mysql\+::jdbc\+::\+Export\+Controlled@{com\+::mysql\+::jdbc\+::\+Export\+Controlled}}
+\subsubsection{\texorpdfstring{transform\+Socket\+To\+S\+S\+L\+Socket()}{transformSocketToSSLSocket()}}
+{\footnotesize\ttfamily static void com.\+mysql.\+jdbc.\+Export\+Controlled.\+transform\+Socket\+To\+S\+S\+L\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}{Mysql\+IO}}}]{mysql\+IO }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Converts the socket being used in the given \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}{Mysql\+IO}} to an S\+S\+L\+Socket by performing the S\+S\+L/\+T\+LS handshake.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mysql\+IO} & the \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o}{Mysql\+IO}} instance containing the socket to convert to an S\+S\+L\+Socket.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_communications_exception}{Communications\+Exception}}} & if the handshake fails, or if this distribution of Connector/J doesn\textquotesingle{}t contain the S\+SL crypto hooks needed to perform the handshake. \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_export_controlled_aa291734145187becb4f1fc5f54c65d04_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Export\+Controlled.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getUseOldUTF8Behavior" name="com.mysql.jdbc.ConnectionProperties.getUseOldUTF8Behavior">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aab5bc3ee546eb81a0fd5a28b576f6338" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getUseOldUTF8Behavior" alt="" coords="280,5,561,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a36f0772c382523e46208fde9a19ae456" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getUseOldUTF8\lBehavior" alt="" coords="307,71,534,127"/>
+</map>

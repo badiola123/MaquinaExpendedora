@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getIsInteractiveClient" name="com.mysql.jdbc.ConnectionProperties.getIsInteractiveClient">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ae1fd8eb0bb01d247ca9db06d0fb3377f" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getIsInteractive\lClient" alt="" coords="257,5,484,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a49aeeb12ed118d916aaba4f6144ce24d" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getIsInteractive\lClient" alt="" coords="260,85,481,141"/>
+</map>

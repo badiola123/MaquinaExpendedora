@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setSecondsBeforeRetryMaster" name="com.mysql.jdbc.ConnectionProperties.setSecondsBeforeRetryMaster">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#af7f390ffe3cd2dea5f5192e52147be89" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setSecondsBefore\lRetryMaster" alt="" coords="276,5,523,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a7604c2e4bfbbb42ec5ce170e86970ef3" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setSecondsBefore\lRetryMaster" alt="" coords="279,85,520,141"/>
+</map>

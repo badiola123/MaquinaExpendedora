@@ -1,0 +1,207 @@
+\hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test}{}\section{testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test Class Reference}
+\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test}\index{testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test@{testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test}}
+
+
+Inheritance diagram for testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classtestsuite_1_1regression_1_1_pooled_connection_regression_test__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1regression_1_1_pooled_connection_regression_test__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_1_1_connection_listener}{Connection\+Listener}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a1be54941bd00006c4127b4eac74ea7e5}{Pooled\+Connection\+Regression\+Test}} (String testname)
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a0c76c551e31c7968aa02015599380523}{set\+Up}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a7df03569e1b544c6d99eda49fe0fadc5}{tear\+Down}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a9eb614f168e80e2ea20ad3f5491eea9f}{test\+Bug7136}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a1f5f8fe8cb25dbed85e0f3861c971e2f}{test\+Connection\+Reclaim}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_af108f826c529b646621b476cad0672d8}{test\+Packet\+Too\+Large\+Exception}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a271d5adc3f09f3483472dc3c7bb7f24b}{test\+Close\+Event}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ae448a81e77d17829c9e922b7859ef609}{test\+Bug35489}} ()  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a5c9f916248ffe26706b18f99e4f1246a}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\item 
+static Test \mbox{\hyperlink{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ab5bce0e84e27d7745cb282860fe3297f}{suite}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ad10232005bb57d1bd35f4f73a363c51a}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ad10232005bb57d1bd35f4f73a363c51a}} 
+int {\bfseries close\+Event\+Count}
+\item 
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a84de35b9e122bb662e4c5947849b7383}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a84de35b9e122bb662e4c5947849b7383}} 
+int {\bfseries connection\+Error\+Event\+Count}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Tests a Pooled\+Connection implementation provided by a J\+D\+BC driver. Test case provided by Johnny Macchione from bug database record B\+UG\#884. According to the J\+D\+BC 2.\+0 specification\+:
+
+"Each call to Pooled\+Connection.\+get\+Connection() must return a newly constructed Connection object that exhibits the default Connection behavior. Only the most recent Connection object produced from a particular Pooled\+Connection is open. An existing Connection object is automatically closed, if the get\+Connection() method of its associated Pooled-\/\+Connection is called again, before it has been explicitly closed by the application. This gives the application server a way to �take away� a Connection from the application if it wishes, and give it out to someone else. This capability will not likely be used frequently in practice." 
+
+"When the application calls Connection.\+close(), an event is triggered that tells the connection pool it can recycle the physical database connection. In other words, the event signals the connection pool that the Pooled\+Connection object which originally produced the Connection object generating the event can be put back in the connection pool." 
+
+"A Connection-\/\+Event\+Listener will also be notified when a fatal error occurs, so that it can make a note not to put a bad Pooled\+Connection object back in the cache when the application finishes using it. When an error occurs, the Connection\+Event\+Listener is notified by the J\+D\+BC driver, just before the driver throws an S\+Q\+L\+Exception to the application to notify it of the same error. Note that automatic closing of a Connection object as discussed in the previous section does not generate a connection close event." 
+
+The J\+D\+BC 3.\+0 specification states the same in other words\+:
+
+"The Connection.\+close method closes the logical handle, but the physical connection is maintained. The connection pool manager is notified that the underlying Pooled\+Connection object is now available for reuse. If the application attempts to reuse the logical handle, the Connection implementation throws an S\+Q\+L\+Exception." 
+
+"For a given Pooled\+Connection object, only the most recently produced logical Connection object will be valid. Any previously existing Connection object is automatically closed when the associated Pooled\+Connection.\+get\+Connection method is called. Listeners (connection pool managers) are not notified in this case. This gives the application server a way to take a connection away from a client. This is an unlikely scenario but may be useful if the application server is trying to force an orderly shutdown." 
+
+"A connection pool manager shuts down a physical connection by calling the method Pooled\+Connection.\+close. This method is typically called only in certain circumstances\+: when the application server is undergoing an orderly shutdown, when the connection cache is being reinitialized, or when the application server receives an event indicating that an unrecoverable error has occurred on the connection." 
+
+Even though the specification isn\textquotesingle{}t clear about it, I think it is no use generating a close event when calling the method Pooled\+Connection.\+close(), even if a logical Connection is open for this Pooled\+Connection, bc the Pooled\+Connection will obviously not be returned to the pool. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a1be54941bd00006c4127b4eac74ea7e5}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a1be54941bd00006c4127b4eac74ea7e5}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!Pooled\+Connection\+Regression\+Test@{Pooled\+Connection\+Regression\+Test}}
+\index{Pooled\+Connection\+Regression\+Test@{Pooled\+Connection\+Regression\+Test}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{Pooled\+Connection\+Regression\+Test()}{PooledConnectionRegressionTest()}}
+{\footnotesize\ttfamily testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+Pooled\+Connection\+Regression\+Test (\begin{DoxyParamCaption}\item[{String}]{testname }\end{DoxyParamCaption})}
+
+Creates a new instance of Progress\+Pooled\+Connection\+Test
+
+
+\begin{DoxyParams}{Parameters}
+{\em testname} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a5c9f916248ffe26706b18f99e4f1246a}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a5c9f916248ffe26706b18f99e4f1246a}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!main@{main}}
+\index{main@{main}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Runs all test cases in this test suite
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a0c76c551e31c7968aa02015599380523}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a0c76c551e31c7968aa02015599380523}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!set\+Up@{set\+Up}}
+\index{set\+Up@{set\+Up}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{set\+Up()}{setUp()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Set up test case before a test is run.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a0c76c551e31c7968aa02015599380523_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ab5bce0e84e27d7745cb282860fe3297f}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ab5bce0e84e27d7745cb282860fe3297f}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!suite@{suite}}
+\index{suite@{suite}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{suite()}{suite()}}
+{\footnotesize\ttfamily static Test testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+suite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+a test suite composed of this test case. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a7df03569e1b544c6d99eda49fe0fadc5}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a7df03569e1b544c6d99eda49fe0fadc5}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!tear\+Down@{tear\+Down}}
+\index{tear\+Down@{tear\+Down}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{tear\+Down()}{tearDown()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+tear\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+After the test is run. \mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ae448a81e77d17829c9e922b7859ef609}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ae448a81e77d17829c9e922b7859ef609}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!test\+Bug35489@{test\+Bug35489}}
+\index{test\+Bug35489@{test\+Bug35489}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{test\+Bug35489()}{testBug35489()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+test\+Bug35489 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Tests fix for B\+UG\#35489 -\/ Prepared statements from pooled connections cause N\+PE when closed() under J\+D\+B\+C4
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the test fails \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_ae448a81e77d17829c9e922b7859ef609_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a9eb614f168e80e2ea20ad3f5491eea9f}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a9eb614f168e80e2ea20ad3f5491eea9f}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!test\+Bug7136@{test\+Bug7136}}
+\index{test\+Bug7136@{test\+Bug7136}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{test\+Bug7136()}{testBug7136()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+test\+Bug7136 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tests fix for B\+UG\#7136 ... Statement.\+get\+Connection() returning physical connection instead of logical connection. \mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a271d5adc3f09f3483472dc3c7bb7f24b}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a271d5adc3f09f3483472dc3c7bb7f24b}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!test\+Close\+Event@{test\+Close\+Event}}
+\index{test\+Close\+Event@{test\+Close\+Event}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{test\+Close\+Event()}{testCloseEvent()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+test\+Close\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Test the nb of close\+Events generated by a Pooled\+Connection. A J\+D\+B\+C-\/compliant driver should only generate 1 close\+Event each time connection.\+close() is called. \mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a1f5f8fe8cb25dbed85e0f3861c971e2f}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_a1f5f8fe8cb25dbed85e0f3861c971e2f}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!test\+Connection\+Reclaim@{test\+Connection\+Reclaim}}
+\index{test\+Connection\+Reclaim@{test\+Connection\+Reclaim}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{test\+Connection\+Reclaim()}{testConnectionReclaim()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+test\+Connection\+Reclaim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Test the nb of close\+Events generated when a Connection is reclaimed. No event should be generated in that case. \mbox{\Hypertarget{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_af108f826c529b646621b476cad0672d8}\label{classtestsuite_1_1regression_1_1_pooled_connection_regression_test_af108f826c529b646621b476cad0672d8}} 
+\index{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}!test\+Packet\+Too\+Large\+Exception@{test\+Packet\+Too\+Large\+Exception}}
+\index{test\+Packet\+Too\+Large\+Exception@{test\+Packet\+Too\+Large\+Exception}!testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test@{testsuite\+::regression\+::\+Pooled\+Connection\+Regression\+Test}}
+\subsubsection{\texorpdfstring{test\+Packet\+Too\+Large\+Exception()}{testPacketTooLargeException()}}
+{\footnotesize\ttfamily void testsuite.\+regression.\+Pooled\+Connection\+Regression\+Test.\+test\+Packet\+Too\+Large\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+Tests that Packet\+Too\+Large\+Exception doesn\textquotesingle{}t clober the connection.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the test fails. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/regression/Pooled\+Connection\+Regression\+Test.\+java\end{DoxyCompactItemize}

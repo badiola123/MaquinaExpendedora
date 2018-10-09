@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.jdbc2.optional.ConnectionWrapper.getServerCharacterEncoding" name="com.mysql.jdbc.jdbc2.optional.ConnectionWrapper.getServerCharacterEncoding">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a1ef2f18c2e33a44c97b764a50fda2da4" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getServerCharset" alt="" coords="304,13,543,54"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#a1831e47e0daa7d5a4b362219105a85ec" title="com.mysql.jdbc.Connection.get\lServerCharset" alt="" coords="591,13,796,54"/>
+</map>

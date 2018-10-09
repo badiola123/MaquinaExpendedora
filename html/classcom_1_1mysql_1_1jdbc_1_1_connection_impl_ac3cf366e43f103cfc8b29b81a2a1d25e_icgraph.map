@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.ConnectionImpl.versionMeetsMinimum" name="com.mysql.jdbc.ConnectionImpl.versionMeetsMinimum">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a60c2e281bd048fd455dcd75f2c968c27" title="com.mysql.jdbc.Connection\lImpl.changeUser" alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a1335fc09ccb7954de9bffc4b59a489aa" title="com.mysql.jdbc.Connection\lImpl.resetServerState" alt="" coords="467,35,649,76"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#aa2c8c829d30458f22f7785396eb18af1" title="com.mysql.jdbc.Connection\lImpl.commit" alt="" coords="236,123,419,164"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a81ce78e20924c6a752125f2357caa2f3" title="com.mysql.jdbc.Connection\lImpl.getTransactionIsolation" alt="" coords="236,188,419,229"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a3f699d7389893a020730690607aae67c" title="com.mysql.jdbc.Connection\lImpl.isReadOnly" alt="" coords="236,253,419,295"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#ab44319ffdc136817efca3040507a1cdf" title="com.mysql.jdbc.Connection\lImpl.prepareCall" alt="" coords="236,319,419,360"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a2e3bce3038d1c58eedcfdfe49c82f904" title="com.mysql.jdbc.Connection\lImpl.rollback" alt="" coords="236,384,419,425"/>
+</map>

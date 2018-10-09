@@ -1,0 +1,45 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_communications_exception}{}\section{com.\+mysql.\+jdbc.\+Communications\+Exception Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_communications_exception}\index{com.\+mysql.\+jdbc.\+Communications\+Exception@{com.\+mysql.\+jdbc.\+Communications\+Exception}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Communications\+Exception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classcom_1_1mysql_1_1jdbc_1_1_communications_exception__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Communications\+Exception\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classcom_1_1mysql_1_1jdbc_1_1_communications_exception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_a319f62e9eef2b77aa26040325345872a}\label{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_a319f62e9eef2b77aa26040325345872a}} 
+{\bfseries Communications\+Exception} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, long last\+Packet\+Sent\+Time\+Ms, long last\+Packet\+Received\+Time\+Ms, Exception underlying\+Exception)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_a8f6bb2b23bc3d77ab7a7e8215101ccc0}\label{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_a8f6bb2b23bc3d77ab7a7e8215101ccc0}} 
+String {\bfseries get\+Message} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_a9ac577006f6321086d4d8238fd5eca48}\label{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_a9ac577006f6321086d4d8238fd5eca48}} 
+String {\bfseries get\+S\+Q\+L\+State} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_af4d14af816b455f70f0878e1c1273197}\label{classcom_1_1mysql_1_1jdbc_1_1_communications_exception_af4d14af816b455f70f0878e1c1273197}} 
+void {\bfseries set\+Was\+Streaming\+Results} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An exception to represent communications errors with the database.
+
+Attempts to provide \textquotesingle{}friendler\textquotesingle{} error messages to end-\/users, including last time a packet was sent to the database, what the client-\/timeout is set to, and whether the idle time has been exceeded. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Communications\+Exception.\+java\end{DoxyCompactItemize}

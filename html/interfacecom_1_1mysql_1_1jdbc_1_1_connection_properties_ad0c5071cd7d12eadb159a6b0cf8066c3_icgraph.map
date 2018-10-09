@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getElideSetAutoCommits" name="com.mysql.jdbc.ConnectionProperties.getElideSetAutoCommits">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a764dc2884e41a1c01956ef80e7ed578a" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getElideSetAuto\lCommits" alt="" coords="284,5,519,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a78b0a4ac4834370a985b18fd5f0d35a2" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getElideSetAuto\lCommits" alt="" coords="287,85,516,141"/>
+</map>

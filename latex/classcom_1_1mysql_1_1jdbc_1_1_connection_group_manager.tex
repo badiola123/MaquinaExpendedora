@@ -1,0 +1,55 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager}{}\section{com.\+mysql.\+jdbc.\+Connection\+Group\+Manager Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager}\index{com.\+mysql.\+jdbc.\+Connection\+Group\+Manager@{com.\+mysql.\+jdbc.\+Connection\+Group\+Manager}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_ac376a8746c3dd1ef4b680cdf4d45c027}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_ac376a8746c3dd1ef4b680cdf4d45c027}} 
+static synchronized \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_group}{Connection\+Group}} {\bfseries get\+Connection\+Group\+Instance} (String group\+Name)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a274107c7e240797776be56ce32507727}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a274107c7e240797776be56ce32507727}} 
+static void {\bfseries register\+Jmx} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a42c2a7e2dc966a4ddf81315a7480f87b}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a42c2a7e2dc966a4ddf81315a7480f87b}} 
+static \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_group}{Connection\+Group}} {\bfseries get\+Connection\+Group} (String group\+Name)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a68e241ef3df3ab756df627e591b93d28}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a68e241ef3df3ab756df627e591b93d28}} 
+static void {\bfseries add\+Host} (String group, String host\+Port\+Pair, boolean for\+Existing)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a48e2dddbdd6419019ea66a148e75a9b9}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a48e2dddbdd6419019ea66a148e75a9b9}} 
+static int {\bfseries get\+Active\+Host\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_ab801351fde9a14d492f3d4f20e9304f4}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_ab801351fde9a14d492f3d4f20e9304f4}} 
+static long {\bfseries get\+Active\+Logical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a11d0378b1174cdfadaf9ffa78823d8ee}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a11d0378b1174cdfadaf9ffa78823d8ee}} 
+static long {\bfseries get\+Active\+Physical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a59a854d3dfce3967a4b8ed2497545631}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a59a854d3dfce3967a4b8ed2497545631}} 
+static int {\bfseries get\+Total\+Host\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a5fdbb71ff4383d2c0b2b5e9e91143342}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a5fdbb71ff4383d2c0b2b5e9e91143342}} 
+static long {\bfseries get\+Total\+Logical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_ab6b5577b9e89fd0c0182f238cebb7fdc}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_ab6b5577b9e89fd0c0182f238cebb7fdc}} 
+static long {\bfseries get\+Total\+Physical\+Connection\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a856652b185f61c4895364c9a53c147ce}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a856652b185f61c4895364c9a53c147ce}} 
+static long {\bfseries get\+Total\+Transaction\+Count} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a52c456a17c92e7a134253eded52dc5bd}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a52c456a17c92e7a134253eded52dc5bd}} 
+static void {\bfseries remove\+Host} (String group, String host\+Port\+Pair)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a018d1f177f2d102988b653d0c186bafd}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a018d1f177f2d102988b653d0c186bafd}} 
+static void {\bfseries remove\+Host} (String group, String host, boolean remove\+Existing)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a161858971d3854a6a5bfbdf3e3efb006}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a161858971d3854a6a5bfbdf3e3efb006}} 
+static String {\bfseries get\+Active\+Host\+Lists} (String group)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a310427e264425eb74f2946fca297dcae}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_group_manager_a310427e264425eb74f2946fca297dcae}} 
+static String {\bfseries get\+Registered\+Connection\+Groups} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Connection\+Group\+Manager.\+java\end{DoxyCompactItemize}

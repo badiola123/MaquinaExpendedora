@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.Util.isEnterpriseEdition" name="com.mysql.jdbc.Util.isEnterpriseEdition">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_export_controlled.html#aa291734145187becb4f1fc5f54c65d04" title="com.mysql.jdbc.ExportControlled.transform\lSocketToSSLSocket" alt="" coords="264,5,536,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_util.html#ab577aaf14859ab359307da29c26bff32" title="com.mysql.jdbc.Util.isCommunity\lEdition" alt="" coords="291,71,509,112"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1_base_test_case.html#ae29a3a848b87638921a7078f572b3f83" title="testsuite.BaseTestCase.is\lEnterpriseEdition" alt="" coords="313,136,487,177"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a8a5b38389d6365d90769f30887196749" title="testsuite.regression.Connection\lRegressionTest.testTLSVersion" alt="" coords="297,201,503,243"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1_base_test_case.html#a30a8a94757291826321a07c5b10a6233" title="testsuite.BaseTestCase.is\lCommunityEdition" alt="" coords="584,71,759,112"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1jdbc4_1_1_connection_regression_test.html#a22495738619bc4a10ae5064345a6cf67" title="testsuite.regression.jdbc4.\lConnectionRegressionTest.testBug20685022" alt="" coords="807,71,1089,112"/>
+</map>

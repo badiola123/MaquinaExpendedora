@@ -1,0 +1,6 @@
+<map id="testsuite.simple.SplitDBdotNameTest.testSplit" name="testsuite.simple.SplitDBdotNameTest.testSplit">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a5a12075fbc5dc15fb882600f8d424f39" title="com.mysql.jdbc.StringUtils.sanitize\lProcOrFuncName" alt="" coords="233,5,460,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a7fe39164a1f79c6421f46509e672693a" title="com.mysql.jdbc.StringUtils.split\lDBdotName" alt="" coords="243,71,450,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a6d53939d6e9719bdac7d843213d387c8" title="com.mysql.jdbc.StringUtils.index\lOfIgnoreCase" alt="" coords="508,37,721,79"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a2b5fec0251d326e70298ce197422e5cc" title="com.mysql.jdbc.StringUtils.un\lQuoteIdentifier" alt="" coords="517,103,713,144"/>
+</map>

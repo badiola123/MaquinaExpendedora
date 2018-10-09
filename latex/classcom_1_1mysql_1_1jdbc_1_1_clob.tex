@@ -1,0 +1,264 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob}{}\section{com.\+mysql.\+jdbc.\+Clob Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_clob}\index{com.\+mysql.\+jdbc.\+Clob@{com.\+mysql.\+jdbc.\+Clob}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Clob\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Clob\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Input\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a26b535e118f453c6524ef55fa26a2218}{get\+Ascii\+Stream}} ()  throws S\+Q\+L\+Exception 
+\item 
+Reader \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_abad22d4373aa8e404953be02f63db1fa}{get\+Character\+Stream}} ()  throws S\+Q\+L\+Exception 
+\item 
+String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a307a0f6842fe4db4f8753a61f5ae612c}{get\+Sub\+String}} (long start\+Pos, int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_ac337421e5371c5ecafcffbfd75103a5d}{length}})  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_ac337421e5371c5ecafcffbfd75103a5d}{length}} ()  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a53c58ed415a8c742e66343d762219b80}{position}} (java.\+sql.\+Clob arg0, long arg1)  throws S\+Q\+L\+Exception 
+\item 
+long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a7268e3140533003e4a4688da0abfe9e3}{position}} (String string\+To\+Find, long start\+Pos)  throws S\+Q\+L\+Exception 
+\item 
+Output\+Stream \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a9c7635d9d09a1693f072576a818fca24}{set\+Ascii\+Stream}} (long index\+To\+Write\+At)  throws S\+Q\+L\+Exception 
+\item 
+Writer \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a22d27bf737bec9eae054c624955c767f}{set\+Character\+Stream}} (long index\+To\+Write\+At)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a6f6ca788351e6699886a355b49c0a583}{set\+String}} (long pos, String str)  throws S\+Q\+L\+Exception 
+\item 
+int \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a6cee59292b60d8e788a9218940284154}{set\+String}} (long pos, String str, int offset, int len)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a70ec18cf9f17467e40d95a64db72866e}{stream\+Closed}} (Watchable\+Output\+Stream out)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a7d245e2b037ea85293c17e6403696f6f}{truncate}} (long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_ac337421e5371c5ecafcffbfd75103a5d}{length}})  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a1805514024772c139eb896eca9a73b1c}{writer\+Closed}} (char\mbox{[}$\,$\mbox{]} char\+Data\+Being\+Written)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_a526c6cf89df8662be452f2358117a20a}{writer\+Closed}} (Watchable\+Writer out)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_aad969190533a88e73d0101da9bba8f24}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_aad969190533a88e73d0101da9bba8f24}} 
+void {\bfseries free} ()  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a00b45a711ef9468a1af24383996d1cb9}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a00b45a711ef9468a1af24383996d1cb9}} 
+Reader {\bfseries get\+Character\+Stream} (long pos, long \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_clob_ac337421e5371c5ecafcffbfd75103a5d}{length}})  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simplistic implementation of java.\+sql.\+Clob for My\+S\+QL Connector/J 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a26b535e118f453c6524ef55fa26a2218}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a26b535e118f453c6524ef55fa26a2218}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!get\+Ascii\+Stream@{get\+Ascii\+Stream}}
+\index{get\+Ascii\+Stream@{get\+Ascii\+Stream}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{get\+Ascii\+Stream()}{getAsciiStream()}}
+{\footnotesize\ttfamily Input\+Stream com.\+mysql.\+jdbc.\+Clob.\+get\+Ascii\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::get\+Ascii\+Stream() 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a26b535e118f453c6524ef55fa26a2218_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_abad22d4373aa8e404953be02f63db1fa}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_abad22d4373aa8e404953be02f63db1fa}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!get\+Character\+Stream@{get\+Character\+Stream}}
+\index{get\+Character\+Stream@{get\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{get\+Character\+Stream()}{getCharacterStream()}}
+{\footnotesize\ttfamily Reader com.\+mysql.\+jdbc.\+Clob.\+get\+Character\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::get\+Character\+Stream() 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a307a0f6842fe4db4f8753a61f5ae612c}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a307a0f6842fe4db4f8753a61f5ae612c}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!get\+Sub\+String@{get\+Sub\+String}}
+\index{get\+Sub\+String@{get\+Sub\+String}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{get\+Sub\+String()}{getSubString()}}
+{\footnotesize\ttfamily String com.\+mysql.\+jdbc.\+Clob.\+get\+Sub\+String (\begin{DoxyParamCaption}\item[{long}]{start\+Pos,  }\item[{int}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::get\+Sub\+String(long, int) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a307a0f6842fe4db4f8753a61f5ae612c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_ac337421e5371c5ecafcffbfd75103a5d}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_ac337421e5371c5ecafcffbfd75103a5d}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!length@{length}}
+\index{length@{length}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+Clob.\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::length() 
+\end{DoxySeeAlso}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_ac337421e5371c5ecafcffbfd75103a5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a53c58ed415a8c742e66343d762219b80}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a53c58ed415a8c742e66343d762219b80}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!position@{position}}
+\index{position@{position}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+Clob.\+position (\begin{DoxyParamCaption}\item[{java.\+sql.\+Clob}]{arg0,  }\item[{long}]{arg1 }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::position(\+Clob, long) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a7268e3140533003e4a4688da0abfe9e3}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a7268e3140533003e4a4688da0abfe9e3}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!position@{position}}
+\index{position@{position}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{position()}{position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily long com.\+mysql.\+jdbc.\+Clob.\+position (\begin{DoxyParamCaption}\item[{String}]{string\+To\+Find,  }\item[{long}]{start\+Pos }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::position(\+String, long) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a7268e3140533003e4a4688da0abfe9e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a9c7635d9d09a1693f072576a818fca24}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a9c7635d9d09a1693f072576a818fca24}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!set\+Ascii\+Stream@{set\+Ascii\+Stream}}
+\index{set\+Ascii\+Stream@{set\+Ascii\+Stream}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+Ascii\+Stream()}{setAsciiStream()}}
+{\footnotesize\ttfamily Output\+Stream com.\+mysql.\+jdbc.\+Clob.\+set\+Ascii\+Stream (\begin{DoxyParamCaption}\item[{long}]{index\+To\+Write\+At }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+Ascii\+Stream(long) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a9c7635d9d09a1693f072576a818fca24_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a22d27bf737bec9eae054c624955c767f}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a22d27bf737bec9eae054c624955c767f}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!set\+Character\+Stream@{set\+Character\+Stream}}
+\index{set\+Character\+Stream@{set\+Character\+Stream}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+Character\+Stream()}{setCharacterStream()}}
+{\footnotesize\ttfamily Writer com.\+mysql.\+jdbc.\+Clob.\+set\+Character\+Stream (\begin{DoxyParamCaption}\item[{long}]{index\+To\+Write\+At }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+Character\+Stream(long) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a22d27bf737bec9eae054c624955c767f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a6f6ca788351e6699886a355b49c0a583}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a6f6ca788351e6699886a355b49c0a583}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!set\+String@{set\+String}}
+\index{set\+String@{set\+String}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+String()}{setString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Clob.\+set\+String (\begin{DoxyParamCaption}\item[{long}]{pos,  }\item[{String}]{str }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+String(long, String) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a6f6ca788351e6699886a355b49c0a583_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a6cee59292b60d8e788a9218940284154}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a6cee59292b60d8e788a9218940284154}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!set\+String@{set\+String}}
+\index{set\+String@{set\+String}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{set\+String()}{setString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int com.\+mysql.\+jdbc.\+Clob.\+set\+String (\begin{DoxyParamCaption}\item[{long}]{pos,  }\item[{String}]{str,  }\item[{int}]{offset,  }\item[{int}]{len }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::set\+String(long, String, int, int) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a6cee59292b60d8e788a9218940284154_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a70ec18cf9f17467e40d95a64db72866e}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a70ec18cf9f17467e40d95a64db72866e}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!stream\+Closed@{stream\+Closed}}
+\index{stream\+Closed@{stream\+Closed}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{stream\+Closed()}{streamClosed()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Clob.\+stream\+Closed (\begin{DoxyParamCaption}\item[{Watchable\+Output\+Stream}]{out }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+com.\+mysql.\+jdbc.\+Output\+Stream\+Watcher\+::stream\+Closed(byte\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a70ec18cf9f17467e40d95a64db72866e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a7d245e2b037ea85293c17e6403696f6f}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a7d245e2b037ea85293c17e6403696f6f}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!truncate@{truncate}}
+\index{truncate@{truncate}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Clob.\+truncate (\begin{DoxyParamCaption}\item[{long}]{length }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+java.\+sql.\+Clob\+::truncate(long) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_clob_a7d245e2b037ea85293c17e6403696f6f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a1805514024772c139eb896eca9a73b1c}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a1805514024772c139eb896eca9a73b1c}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!writer\+Closed@{writer\+Closed}}
+\index{writer\+Closed@{writer\+Closed}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{writer\+Closed()}{writerClosed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Clob.\+writer\+Closed (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{char\+Data\+Being\+Written }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+com.\+mysql.\+jdbc.\+Writer\+Watcher\+::writer\+Closed(char\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_clob_a526c6cf89df8662be452f2358117a20a}\label{classcom_1_1mysql_1_1jdbc_1_1_clob_a526c6cf89df8662be452f2358117a20a}} 
+\index{com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}!writer\+Closed@{writer\+Closed}}
+\index{writer\+Closed@{writer\+Closed}!com\+::mysql\+::jdbc\+::\+Clob@{com\+::mysql\+::jdbc\+::\+Clob}}
+\subsubsection{\texorpdfstring{writer\+Closed()}{writerClosed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Clob.\+writer\+Closed (\begin{DoxyParamCaption}\item[{Watchable\+Writer}]{out }\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+com.\+mysql.\+jdbc.\+Writer\+Watcher\+::writer\+Closed(char\mbox{[}$\,$\mbox{]}) 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Clob.\+java\end{DoxyCompactItemize}

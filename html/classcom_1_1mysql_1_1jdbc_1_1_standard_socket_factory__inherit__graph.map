@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.StandardSocketFactory" name="com.mysql.jdbc.StandardSocketFactory">
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_socks_proxy_socket_factory.html" title="com.mysql.jdbc.SocksProxy\lSocketFactory" alt="" coords="573,5,762,47"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1_unreliable_socket_factory.html" title="testsuite.UnreliableSocket\lFactory" alt="" coords="580,201,755,243"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory.html" title="com.mysql.jdbc.SocketFactory" alt="" coords="11,86,213,113"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_socket_metadata.html" title="com.mysql.jdbc.SocketMetadata" alt="" coords="5,137,219,163"/>
+</map>

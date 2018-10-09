@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Connection.ping" name="com.mysql.jdbc.Connection.ping">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a2c2365e7096fe3cc215832ba1f7e3594" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.ping" alt="" coords="264,5,467,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a636155352e7bad08773dd608f858676c" title="com.mysql.jdbc.MultiHost\lMySQLConnection.ping" alt="" coords="279,71,452,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_my_s_q_l_connection.html#a2cf454e00e9fe6dcb74bb37405562e6d" title="com.mysql.jdbc.Replication\lMySQLConnection.ping" alt="" coords="274,136,457,177"/>
+</map>

@@ -1,0 +1,52 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties_transform}{}\section{com.\+mysql.\+jdbc.\+Connection\+Properties\+Transform Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties_transform}\index{com.\+mysql.\+jdbc.\+Connection\+Properties\+Transform@{com.\+mysql.\+jdbc.\+Connection\+Properties\+Transform}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Connection\+Properties\+Transform\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties_transform__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Properties \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties_transform_a044765ce0ad5bcba0276eac61fe8e04d}{transform\+Properties}} (Properties props)  throws S\+Q\+L\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implement this interface, and pass the class name as the \textquotesingle{}properties\+Transform\textquotesingle{} property in your J\+D\+BC U\+RL, and the driver will pass the properties it has parsed to your transform implementation so that you can modify/substitute/add any that you desire. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties_transform_a044765ce0ad5bcba0276eac61fe8e04d}\label{interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties_transform_a044765ce0ad5bcba0276eac61fe8e04d}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Properties\+Transform@{com\+::mysql\+::jdbc\+::\+Connection\+Properties\+Transform}!transform\+Properties@{transform\+Properties}}
+\index{transform\+Properties@{transform\+Properties}!com\+::mysql\+::jdbc\+::\+Connection\+Properties\+Transform@{com\+::mysql\+::jdbc\+::\+Connection\+Properties\+Transform}}
+\subsubsection{\texorpdfstring{transform\+Properties()}{transformProperties()}}
+{\footnotesize\ttfamily Properties com.\+mysql.\+jdbc.\+Connection\+Properties\+Transform.\+transform\+Properties (\begin{DoxyParamCaption}\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+The J\+D\+BC driver will call this method if the user has loaded your implementation of this interface by specifying the \textquotesingle{}properties\+Transform\textquotesingle{} property in their J\+D\+BC U\+RL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em props} & the properties as passed by the driver (never null)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the same properties with any transformations that your implementation has made
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if a transform can not be made for any reason. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classtestsuite_1_1simple_1_1_simple_transformer_aadfc91d352f3a7b94257f30b319cb258}{testsuite.\+simple.\+Simple\+Transformer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Connection\+Properties\+Transform.\+java\end{DoxyCompactItemize}

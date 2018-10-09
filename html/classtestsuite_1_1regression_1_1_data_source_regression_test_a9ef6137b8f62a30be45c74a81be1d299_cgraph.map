@@ -1,0 +1,6 @@
+<map id="testsuite.regression.DataSourceRegressionTest.testBug19169" name="testsuite.regression.DataSourceRegressionTest.testBug19169">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#a33ad0a39d9fcf2e41a074d50cfe7c226" title="com.mysql.jdbc.Connection\lPropertiesImpl.setZeroDateTime\lBehavior" alt="" coords="311,5,517,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#a5ca22a669571156661ef7710ceb5ecd3" title="com.mysql.jdbc.Connection\lPropertiesImpl.getBlobSendChunkSize" alt="" coords="291,86,537,127"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#a7bf8ddcb8103feee679175048c14a6fc" title="com.mysql.jdbc.Connection\lPropertiesImpl.setBlobSendChunkSize" alt="" coords="291,151,537,193"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#afdf94172a5573fd5993f1253bf82ac20" title="com.mysql.jdbc.Connection\lPropertiesImpl.getZeroDateTime\lBehavior" alt="" coords="311,217,517,273"/>
+</map>

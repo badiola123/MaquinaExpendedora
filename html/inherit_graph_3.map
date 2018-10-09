@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classclientes_1_1_clientela.html" title="clientes.Clientela" alt="" coords="213,5,334,32"/>
+<area shape="rect" id="node3" href="$classmaquinas_1_1_maquinaria.html" title="maquinas.Maquinaria" alt="" coords="201,56,346,83"/>
+<area shape="rect" id="node4" href="$classoferta_1_1_lista_ofertas.html" title="oferta.ListaOfertas" alt="" coords="209,107,337,133"/>
+<area shape="rect" id="node5" href="$class_productos_1_1_inventario.html" title="Productos.Inventario" alt="" coords="204,157,343,184"/>
+<area shape="rect" id="node6" href="$class_stock_1_1_lista_stock.html" title="Stock.ListaStock" alt="" coords="212,208,335,235"/>
+<area shape="rect" id="node7" href="$classtipo_productos_1_1_tipos_lista.html" title="tipoProductos.TiposLista" alt="" coords="191,259,356,285"/>
+<area shape="rect" id="node8" href="$classventa_1_1_lista_ventas.html" title="venta.ListaVentas" alt="" coords="211,309,336,336"/>
+</map>

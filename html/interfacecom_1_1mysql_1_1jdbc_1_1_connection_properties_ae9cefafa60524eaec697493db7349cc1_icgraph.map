@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.ConnectionProperties.useUnbufferedInput" name="com.mysql.jdbc.ConnectionProperties.useUnbufferedInput">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#ae90cf2a8ef9234c774cf9567b48f755f" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.useUnbufferedInput" alt="" coords="248,5,499,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a5a985fc8b9a0777d6d19e566e8053832" title="com.mysql.jdbc.MultiHost\lMySQLConnection.useUnbufferedInput" alt="" coords="251,71,496,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_mysql_i_o.html#a9b4e102e11948b0b76701c1c3ce3a4a9" title="com.mysql.jdbc.MysqlIO.MysqlIO" alt="" coords="264,137,483,163"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="testsuite.regression.DataSourceRegressionTest.testBug3848" name="testsuite.regression.DataSourceRegressionTest.testBug3848">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#a3edec7449e5a731ccc6e72270e8baa66" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.setDatabaseName" alt="" coords="284,5,520,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#ac80d398633ea31db75d7fbbba6f14c20" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.setUser" alt="" coords="301,71,503,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#ade391cdd38bff8de57b9ef65d62200d1" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.setPassword" alt="" coords="300,136,504,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#a18cf8b4b24e11ab5df45f4f9dc82d3aa" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.setPortNumber" alt="" coords="294,201,510,243"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#aa25877765807da50745af91b24e38da0" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.setPort" alt="" coords="568,201,771,243"/>
+</map>

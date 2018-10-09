@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setEmulateLocators" name="com.mysql.jdbc.ConnectionProperties.setEmulateLocators">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#aa54e4168297c0975cb337fd18c989eac" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setEmulateLocators" alt="" coords="255,5,511,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#acf59bfc5610337b83b617986cfb1b2a5" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setEmulateLocators" alt="" coords="257,71,508,112"/>
+</map>

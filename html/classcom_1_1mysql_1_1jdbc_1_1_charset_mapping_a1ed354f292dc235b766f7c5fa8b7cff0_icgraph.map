@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.CharsetMapping.getJavaEncodingForMysqlCharset" name="com.mysql.jdbc.CharsetMapping.getJavaEncodingForMysqlCharset">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a66f46efa858fb96251057b1dd48ad028" title="com.mysql.jdbc.Connection\lImpl.getEncodingForIndex" alt="" coords="324,5,507,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_result_set_meta_data.html#a92e9d337ceb0d64f40d1d4045f8e580c" title="com.mysql.jdbc.ResultSet\lMetaData.getColumnCharacterEncoding" alt="" coords="288,71,543,112"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1_charset_regression_test.html#a576343bc13a21ec028c8341e914f7e84" title="testsuite.regression.Charset\lRegressionTest.testBug25504578" alt="" coords="307,136,524,177"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1regression_1_1_string_regression_test.html#a0b910fb41d304e6b938f8908dfffe0bf" title="testsuite.regression.String\lRegressionTest.testBug23645" alt="" coords="317,201,513,243"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1simple_1_1_charset_test.html#ace6046bed9bc3e29734e98003258fd58" title="testsuite.simple.Charset\lTest.testCharsetMapping" alt="" coords="332,267,499,308"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a2585f67a62bdf6127174e9f7dbc8a0b6" title="com.mysql.jdbc.Connection\lImpl.getCharsetNameForIndex" alt="" coords="591,5,788,47"/>
+</map>

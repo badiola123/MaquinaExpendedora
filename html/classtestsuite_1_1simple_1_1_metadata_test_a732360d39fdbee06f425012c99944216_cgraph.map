@@ -1,0 +1,5 @@
+<map id="testsuite.simple.MetadataTest.testGetColumnPrivilegesUsingInfoSchema" name="testsuite.simple.MetadataTest.testGetColumnPrivilegesUsingInfoSchema">
+<area shape="rect" id="node2" href="$classtestsuite_1_1_base_test_case.html#a3578b222700fc502212ce9834194ebaa" title="testsuite.BaseTestCase.run\lTestIfSysPropDefined" alt="" coords="292,5,475,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1_base_test_case.html#a4098e9a480c1907875ded976cdbc81a3" title="testsuite.BaseTestCase.version\lMeetsMinimum" alt="" coords="281,71,486,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a9585acb209b381778e2d9ffde265e2f9" title="com.mysql.jdbc.StringUtils.split" alt="" coords="280,137,487,163"/>
+</map>

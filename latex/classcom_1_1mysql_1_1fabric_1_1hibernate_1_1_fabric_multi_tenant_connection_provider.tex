@@ -1,0 +1,108 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider}{}\section{com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider}\index{com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider}}
+
+
+Inheritance diagram for com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a7e87e509e559ebb0547290d2fbfa8b4e}\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a7e87e509e559ebb0547290d2fbfa8b4e}} 
+{\bfseries Fabric\+Multi\+Tenant\+Connection\+Provider} (String fabric\+Url, String database, String table, String user, String password, String fabric\+User, String fabric\+Password)
+\item 
+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a332592a3fea82e9f1b48b26ee2189566}{get\+Any\+Connection}} ()  throws S\+Q\+L\+Exception 
+\item 
+Connection \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a5e2f7fa211f847bce86d4c89b1665ff6}{get\+Connection}} (String tenant\+Identifier)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a40292c72bd0ebf6f73e17f57fcc2ca38}{release\+Any\+Connection}} (Connection connection)  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a7d6f77f42ea4f2e0c4569fbf4d58689d}{release\+Connection}} (String tenant\+Identifier, Connection connection)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a29afe74bb8f6de43ece2e3ee66924d1c}{supports\+Aggressive\+Release}} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_af1bb4e826311ce7e4dac7c50f59e666e}\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_af1bb4e826311ce7e4dac7c50f59e666e}} 
+boolean {\bfseries is\+Unwrappable\+As} (Class unwrap\+Type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Multi-\/tenancy connection provider for Hibernate 4.
+
+\href{http://docs.jboss.org/hibernate/orm/4.1/javadocs/org/hibernate/service/jdbc/connections/spi/MultiTenantConnectionProvider.html}{\tt http\+://docs.\+jboss.\+org/hibernate/orm/4.\+1/javadocs/org/hibernate/service/jdbc/connections/spi/\+Multi\+Tenant\+Connection\+Provider.\+html} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a332592a3fea82e9f1b48b26ee2189566}\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a332592a3fea82e9f1b48b26ee2189566}} 
+\index{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}!get\+Any\+Connection@{get\+Any\+Connection}}
+\index{get\+Any\+Connection@{get\+Any\+Connection}!com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}}
+\subsubsection{\texorpdfstring{get\+Any\+Connection()}{getAnyConnection()}}
+{\footnotesize\ttfamily Connection com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider.\+get\+Any\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a connection that be used to access data or metadata not specific to any shard/tenant. The returned connection is a R\+E\+A\+D\+\_\+\+W\+R\+I\+TE connection to the global group of the shard mapping for the database and table association with this connection provider. \mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a5e2f7fa211f847bce86d4c89b1665ff6}\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a5e2f7fa211f847bce86d4c89b1665ff6}} 
+\index{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}}
+{\footnotesize\ttfamily Connection com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider.\+get\+Connection (\begin{DoxyParamCaption}\item[{String}]{tenant\+Identifier }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Get a connection to access data association with the provided `tenant\+Identifier' (or shard key in Fabric-\/speak). The returned connection is a R\+E\+A\+D\+\_\+\+W\+R\+I\+TE connection. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a5e2f7fa211f847bce86d4c89b1665ff6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a40292c72bd0ebf6f73e17f57fcc2ca38}\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a40292c72bd0ebf6f73e17f57fcc2ca38}} 
+\index{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}!release\+Any\+Connection@{release\+Any\+Connection}}
+\index{release\+Any\+Connection@{release\+Any\+Connection}!com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}}
+\subsubsection{\texorpdfstring{release\+Any\+Connection()}{releaseAnyConnection()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider.\+release\+Any\+Connection (\begin{DoxyParamCaption}\item[{Connection}]{connection }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Release a non-\/shard-\/specific connection. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a40292c72bd0ebf6f73e17f57fcc2ca38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a7d6f77f42ea4f2e0c4569fbf4d58689d}\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a7d6f77f42ea4f2e0c4569fbf4d58689d}} 
+\index{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}!release\+Connection@{release\+Connection}}
+\index{release\+Connection@{release\+Connection}!com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}}
+\subsubsection{\texorpdfstring{release\+Connection()}{releaseConnection()}}
+{\footnotesize\ttfamily void com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider.\+release\+Connection (\begin{DoxyParamCaption}\item[{String}]{tenant\+Identifier,  }\item[{Connection}]{connection }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Release a connection specific to `tenant\+Identifier'. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a7d6f77f42ea4f2e0c4569fbf4d58689d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a29afe74bb8f6de43ece2e3ee66924d1c}\label{classcom_1_1mysql_1_1fabric_1_1hibernate_1_1_fabric_multi_tenant_connection_provider_a29afe74bb8f6de43ece2e3ee66924d1c}} 
+\index{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}!supports\+Aggressive\+Release@{supports\+Aggressive\+Release}}
+\index{supports\+Aggressive\+Release@{supports\+Aggressive\+Release}!com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider@{com\+::mysql\+::fabric\+::hibernate\+::\+Fabric\+Multi\+Tenant\+Connection\+Provider}}
+\subsubsection{\texorpdfstring{supports\+Aggressive\+Release()}{supportsAggressiveRelease()}}
+{\footnotesize\ttfamily boolean com.\+mysql.\+fabric.\+hibernate.\+Fabric\+Multi\+Tenant\+Connection\+Provider.\+supports\+Aggressive\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+We don\textquotesingle{}t track connections.
+
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/hibernate/Fabric\+Multi\+Tenant\+Connection\+Provider.\+java\end{DoxyCompactItemize}

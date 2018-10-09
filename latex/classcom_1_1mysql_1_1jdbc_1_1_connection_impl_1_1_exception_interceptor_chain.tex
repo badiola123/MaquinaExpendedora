@@ -1,0 +1,77 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain}{}\section{com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain}\index{com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain@{com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a46b62b1c55416f96eeaa381c33b08d62}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a46b62b1c55416f96eeaa381c33b08d62}} 
+S\+Q\+L\+Exception {\bfseries intercept\+Exception} (S\+Q\+L\+Exception sql\+Ex, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn)
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_ae24e090ddfddf714fc561f7b0e8f1ab8}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a0b1980a96fabc8955a709b3b25492dd1}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties properties)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a061a745f83206b554f1f133df5246489}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a061a745f83206b554f1f133df5246489}} 
+List$<$ \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} $>$ {\bfseries get\+Interceptors} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_ae24e090ddfddf714fc561f7b0e8f1ab8}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_ae24e090ddfddf714fc561f7b0e8f1ab8}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain@{com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain@{com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a0b1980a96fabc8955a709b3b25492dd1}\label{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a0b1980a96fabc8955a709b3b25492dd1}} 
+\index{com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain@{com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain}!init@{init}}
+\index{init@{init}!com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain@{com\+::mysql\+::jdbc\+::\+Connection\+Impl\+::\+Exception\+Interceptor\+Chain}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once per connection that wants to use the extension
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver_a834c012e752a01d1ee435b3461bb8218}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this extension is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{com.\+mysql.\+jdbc.\+Extension}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Connection\+Impl.\+java\end{DoxyCompactItemize}

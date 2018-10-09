@@ -1,0 +1,79 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{}\section{com.\+mysql.\+jdbc.\+Extension Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1_extension}\index{com.\+mysql.\+jdbc.\+Extension@{com.\+mysql.\+jdbc.\+Extension}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Extension\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{interfacecom_1_1mysql_1_1jdbc_1_1_extension__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} conn, Properties props)  throws S\+Q\+L\+Exception
+\item 
+abstract void \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}{destroy}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}\label{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}} 
+\index{com\+::mysql\+::jdbc\+::\+Extension@{com\+::mysql\+::jdbc\+::\+Extension}!destroy@{destroy}}
+\index{destroy@{destroy}!com\+::mysql\+::jdbc\+::\+Extension@{com\+::mysql\+::jdbc\+::\+Extension}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+jdbc.\+Extension.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_ae24e090ddfddf714fc561f7b0e8f1ab8}{com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_a5da9bea29735c87ac10a67c34dcee9ef}{com.\+mysql.\+jdbc.\+Statement\+Interceptor}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_a00bfb3d3f7b81e16a9cdf4784150c3f7}{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_af097ba3f65b6aa1713d425a06e02d14b}{com.\+mysql.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1interceptors_1_1_server_status_diff_interceptor_a54edef982686f41b6d328571956a5fca}{com.\+mysql.\+jdbc.\+interceptors.\+Server\+Status\+Diff\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a4ec0e8dc4e3cac14db72e76f82ddae56}{com.\+mysql.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_a4e65985d73071a946e9b3f825de794ca}{com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker}}, \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_error_reporting_exception_interceptor_a82f6c205f93e57741f419403ed4f0981}{com.\+mysql.\+fabric.\+jdbc.\+Error\+Reporting\+Exception\+Interceptor}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a2a1a99507005bb6d901d3782880aac09}{testsuite.\+simple.\+Test\+Lifecycle\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin_a14bf49c27aa9a84172fb866016a9fdf3}{com.\+mysql.\+jdbc.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin_aaa2f2af253ec6d2ef6139600c0f1d969}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin_aaa5b467a158bc2410bc23c3f5283abe3}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a9f1d02071f12bd8d00621a7a371a0e2e}{com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin_a7c2e5445a60764bfa522fb3f99d9d85b}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_ad60c14de4fc7503095f6dd609f34a95a}{testsuite.\+Base\+Statement\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper_ae579d5fb41efef1fff171752d736d4f5}{com.\+mysql.\+jdbc.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter_aa04ad6c4f60c2b7339f5dcb07ba9407a}{com.\+mysql.\+jdbc.\+Reflective\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_sequential_balance_strategy_abccd73f5079046d6f7a183576b49fc2a}{com.\+mysql.\+jdbc.\+Sequential\+Balance\+Strategy}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter_adca046793aea90f93e607ca0c8e7f34b}{com.\+mysql.\+jdbc.\+V1to\+V2\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_random_balance_strategy_a74066c5f309233cd328a1724263d10e4}{com.\+mysql.\+jdbc.\+Random\+Balance\+Strategy}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_abca1d34e1d2d4a452109cec3b1d4236f}{com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy}}, and \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor_aca69669db95231d8c2fff5800b62c7f7}{com.\+mysql.\+jdbc.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}\label{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}} 
+\index{com\+::mysql\+::jdbc\+::\+Extension@{com\+::mysql\+::jdbc\+::\+Extension}!init@{init}}
+\index{init@{init}!com\+::mysql\+::jdbc\+::\+Extension@{com\+::mysql\+::jdbc\+::\+Extension}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily abstract void com.\+mysql.\+jdbc.\+Extension.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Called once per connection that wants to use the extension
+
+The properties are the same ones passed in in the U\+RL or arguments to \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_non_registering_driver_a834c012e752a01d1ee435b3461bb8218}{Driver.\+connect()}} or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this extension is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension}{Extension}} can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl_1_1_exception_interceptor_chain_a0b1980a96fabc8955a709b3b25492dd1}{com.\+mysql.\+jdbc.\+Connection\+Impl.\+Exception\+Interceptor\+Chain}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker_ac8bb8f4e7d1e80c79687b68336eeae15}{com.\+mysql.\+jdbc.\+Standard\+Load\+Balance\+Exception\+Checker}}, \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_ad1b9b390383950835ad6b7550c27589e}{testsuite.\+simple.\+Test\+Lifecycle\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_error_reporting_exception_interceptor_a8c67e1a183a6c155dd67287d43c623fb}{com.\+mysql.\+fabric.\+jdbc.\+Error\+Reporting\+Exception\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_sha256_password_plugin_afabf8d68fc723bebb401147b2f1a5421}{com.\+mysql.\+jdbc.\+authentication.\+Sha256\+Password\+Plugin}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_a985c3d5d0c9b9694cfb73ba92273409e}{com.\+mysql.\+jdbc.\+Statement\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1interceptors_1_1_session_association_interceptor_a525a3bac6a24ac0af33c1c1f1961f669}{com.\+mysql.\+jdbc.\+interceptors.\+Session\+Association\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1profiler_1_1_logging_profiler_event_handler_a2754871ca8890f78c4997b33ae32d925}{com.\+mysql.\+jdbc.\+profiler.\+Logging\+Profiler\+Event\+Handler}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_no_sub_interceptor_wrapper_a7272676b9081fbf866a494f4d35b3a6d}{com.\+mysql.\+jdbc.\+No\+Sub\+Interceptor\+Wrapper}}, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_statement_interceptor_v2_ae2d3d924826dcf4a4e025433af0b4d8f}{com.\+mysql.\+jdbc.\+Statement\+Interceptor\+V2}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_load_balanced_auto_commit_interceptor_a7ac3a68deb0ddbc6ede5ece0824d3189}{com.\+mysql.\+jdbc.\+Load\+Balanced\+Auto\+Commit\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_reflective_statement_interceptor_adapter_ae2a1db7cc624f326d2a0bf7d1b5b6e3d}{com.\+mysql.\+jdbc.\+Reflective\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_v1to_v2_statement_interceptor_adapter_acf5784b9b687c7d58d92492e2bd6a800}{com.\+mysql.\+jdbc.\+V1to\+V2\+Statement\+Interceptor\+Adapter}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_native_password_plugin_a83b8e09be039f698b142aa365daf1de6}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Native\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_clear_password_plugin_a95aa0f048c17c5acf28095eed0bd726a}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Clear\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_sequential_balance_strategy_af65fb561c63eee645ba22169ed2eaabb}{com.\+mysql.\+jdbc.\+Sequential\+Balance\+Strategy}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1authentication_1_1_mysql_old_password_plugin_a4549e60d640445edacfe7187c2e619ef}{com.\+mysql.\+jdbc.\+authentication.\+Mysql\+Old\+Password\+Plugin}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1interceptors_1_1_result_set_scanner_interceptor_a05bd31d17303e90f2933891426772f11}{com.\+mysql.\+jdbc.\+interceptors.\+Result\+Set\+Scanner\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1interceptors_1_1_server_status_diff_interceptor_a3d503667dd4d8f6dcaf6fbf4535bd5bf}{com.\+mysql.\+jdbc.\+interceptors.\+Server\+Status\+Diff\+Interceptor}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_random_balance_strategy_a748e276bd760d5671b7d6ee30c9c987f}{com.\+mysql.\+jdbc.\+Random\+Balance\+Strategy}}, \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_best_response_time_balance_strategy_ac8018473ac870dfb7c67f51092cd0261}{com.\+mysql.\+jdbc.\+Best\+Response\+Time\+Balance\+Strategy}}, and \mbox{\hyperlink{classtestsuite_1_1_base_statement_interceptor_a9f780bb34bc2101037455ca81d1c2a16}{testsuite.\+Base\+Statement\+Interceptor}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Extension.\+java\end{DoxyCompactItemize}

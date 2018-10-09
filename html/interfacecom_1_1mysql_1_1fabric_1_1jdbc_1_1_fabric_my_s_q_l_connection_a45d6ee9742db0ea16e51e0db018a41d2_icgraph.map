@@ -1,0 +1,6 @@
+<map id="com.mysql.fabric.jdbc.FabricMySQLConnection.getCurrentServerGroup" name="com.mysql.fabric.jdbc.FabricMySQLConnection.getCurrentServerGroup">
+<area shape="rect" id="node2" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_fabric_my_s_q_l_connection_sharding.html#aad69b31b22180ecde905f79c6819070a" title="testsuite.fabric.jdbc.Test\lFabricMySQLConnectionSharding.test\lGlobalTableCreation" alt="" coords="320,5,564,61"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_fabric_my_s_q_l_connection_sharding.html#a98edb15acffc84d83916971697b7a3b2" title="testsuite.fabric.jdbc.Test\lFabricMySQLConnectionSharding.test\lShardSelection" alt="" coords="320,85,564,141"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#aae506b3baba9edbc0b43d3f4d5f6e308" title="testsuite.fabric.jdbc.Test\lHashSharding.testBasicInsertByKey" alt="" coords="325,166,559,207"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a832cdff2250e770858c18a1143e689ad" title="testsuite.fabric.jdbc.Test\lRegressions.manualTestBug22750465" alt="" coords="320,231,564,273"/>
+</map>

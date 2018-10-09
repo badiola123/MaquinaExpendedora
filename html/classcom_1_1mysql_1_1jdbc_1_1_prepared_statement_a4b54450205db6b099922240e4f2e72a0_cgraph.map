@@ -1,0 +1,21 @@
+<map id="com.mysql.jdbc.PreparedStatement.executeBatchedInserts" name="com.mysql.jdbc.PreparedStatement.executeBatchedInserts">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a88caedee8619aad1351c9edea352c37e" title="com.mysql.jdbc.Statement\lImpl.checkClosed" alt="" coords="1035,377,1214,419"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a0a87e79e103adae56e63a967e64c167c" title="com.mysql.jdbc.PreparedStatement.execute\lBatchSerially" alt="" coords="335,144,615,185"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#af05f0b2545de1a6a1ca7d41f467516d3" title="com.mysql.jdbc.Connection.version\lMeetsMinimum" alt="" coords="694,71,921,112"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_s_q_l_error.html#a679aee33cf253b786dfc70bbd1631e88" title="com.mysql.jdbc.SQLError.create\lBatchUpdateException" alt="" coords="701,5,913,47"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a2de0ab2631bf812f061ea336302f2b62" title="com.mysql.jdbc.PreparedStatement.compute\lBatchSize" alt="" coords="333,344,617,385"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ad039caba8bbe065bb7b6a26a0f7a1f30" title="com.mysql.jdbc.PreparedStatement.prepare\lBatchedInsertSQL" alt="" coords="337,417,614,459"/>
+<area shape="rect" id="node13" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a9db54f06b57ab9446798d306d59aeefc" title="com.mysql.jdbc.PreparedStatement.execute\lLargeUpdate" alt="" coords="335,483,615,524"/>
+<area shape="rect" id="node14" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ac1bd628fd165487d93822d0198ead08a" title="com.mysql.jdbc.PreparedStatement.clear\lParameters" alt="" coords="344,264,607,305"/>
+<area shape="rect" id="node15" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a740a220f82b06eace44154a089fbdf18" title="com.mysql.jdbc.Statement\lImpl.close" alt="" coords="386,604,565,645"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="1827,512,2027,553"/>
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods.html#ad7091c487cd2a0ad8550ed98e489e535" title="com.mysql.jdbc.ResultSet\lInternalMethods.getFirstChar\lOfQuery" alt="" coords="713,137,902,193"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_util.html#ab73dd640e4fb69c157001303d7be0164" title="com.mysql.jdbc.Util.truncate\lAndConvertToInt" alt="" coords="1031,5,1219,47"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#a0bd3fe8e5e85dd522b3d84fb68b142ff" title="com.mysql.jdbc.PreparedStatement.compute\lMaxParameterSetSizeAndBatchSize" alt="" coords="665,319,949,360"/>
+<area shape="rect" id="node12" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#af1784431accedc207e4dc40ff2f7f9e5" title="com.mysql.jdbc.PreparedStatement.\lPreparedStatement" alt="" coords="690,487,925,528"/>
+<area shape="rect" id="node16" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a1e0670e4c9378bf2790c688208dc8913" title="com.mysql.jdbc.Statement\lImpl.realClose" alt="" coords="718,604,897,645"/>
+<area shape="rect" id="node17" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html#aec0f6158d9bacdc45d430fbddcc93120" title="com.mysql.jdbc.Connection\lProperties.getDontTrackOpenResources" alt="" coords="997,571,1252,612"/>
+<area shape="rect" id="node18" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a62c86a98fa9bd9792873a0d160e7ef59" title="com.mysql.jdbc.Statement\lImpl.closeAllOpenResults" alt="" coords="1035,636,1214,677"/>
+<area shape="rect" id="node19" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a2477a2df55a2af9c8e127fc9a8a0fc34" title="com.mysql.jdbc.Assertion\lFailedException.shouldNotHappen" alt="" coords="1300,621,1521,663"/>
+<area shape="rect" id="node20" href="$classcom_1_1mysql_1_1jdbc_1_1_assertion_failed_exception.html#a4e3aad4529bc6d57c1c58d52defe4cb8" title="com.mysql.jdbc.Assertion\lFailedException.AssertionFailed\lException" alt="" coords="1569,585,1779,641"/>
+</map>

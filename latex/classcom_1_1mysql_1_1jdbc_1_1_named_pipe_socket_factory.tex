@@ -1,0 +1,118 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory}{}\section{com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory}\index{com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory@{com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Named\+Pipe\+Socket}
+\item 
+class {\bfseries Random\+Access\+File\+Input\+Stream}
+\item 
+class {\bfseries Random\+Access\+File\+Output\+Stream}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ae89b1753f4d5fb7c7f174e35a36df90a}{Named\+Pipe\+Socket\+Factory}} ()
+\item 
+Socket \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_abcc02b328b87ff64d3f7e6556af8a6ce}{after\+Handshake}} ()  throws Socket\+Exception, I\+O\+Exception 
+\item 
+Socket \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ad9b744457afb6727e696dc11e69c4b15}{before\+Handshake}} ()  throws Socket\+Exception, I\+O\+Exception 
+\item 
+Socket \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_a11fcef05ddc58b721b102fc810d12d5f}{connect}} (String host, int port\+Number, Properties props)  throws Socket\+Exception, I\+O\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ac29d4f1fb4cde00221f38af2771e0a4b}\label{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ac29d4f1fb4cde00221f38af2771e0a4b}} 
+boolean {\bfseries is\+Locally\+Connected} (\mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_connection_impl}{Connection\+Impl}} conn)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_afb974096619727058a04292b3eed712f}\label{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_afb974096619727058a04292b3eed712f}} 
+static final String {\bfseries N\+A\+M\+E\+D\+\_\+\+P\+I\+P\+E\+\_\+\+P\+R\+O\+P\+\_\+\+N\+A\+ME} = \char`\"{}named\+Pipe\+Path\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A socket factory for named pipes (on Windows) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ae89b1753f4d5fb7c7f174e35a36df90a}\label{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ae89b1753f4d5fb7c7f174e35a36df90a}} 
+\index{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}!Named\+Pipe\+Socket\+Factory@{Named\+Pipe\+Socket\+Factory}}
+\index{Named\+Pipe\+Socket\+Factory@{Named\+Pipe\+Socket\+Factory}!com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{Named\+Pipe\+Socket\+Factory()}{NamedPipeSocketFactory()}}
+{\footnotesize\ttfamily com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory.\+Named\+Pipe\+Socket\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory}{Named\+Pipe\+Socket\+Factory}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_abcc02b328b87ff64d3f7e6556af8a6ce}\label{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_abcc02b328b87ff64d3f7e6556af8a6ce}} 
+\index{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}!after\+Handshake@{after\+Handshake}}
+\index{after\+Handshake@{after\+Handshake}!com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{after\+Handshake()}{afterHandshake()}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory.\+after\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Socket\+Exception, I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_adc5277dd008da61b24261a983202f5bf}{com.\+mysql.\+jdbc.\+Socket\+Factory\+::after\+Handshake()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_adc5277dd008da61b24261a983202f5bf}{com.\+mysql.\+jdbc.\+Socket\+Factory}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ad9b744457afb6727e696dc11e69c4b15}\label{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_ad9b744457afb6727e696dc11e69c4b15}} 
+\index{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}!before\+Handshake@{before\+Handshake}}
+\index{before\+Handshake@{before\+Handshake}!com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{before\+Handshake()}{beforeHandshake()}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory.\+before\+Handshake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Socket\+Exception, I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_aa9a78553a76681f49c734aaa3f8f126b}{com.\+mysql.\+jdbc.\+Socket\+Factory\+::before\+Handshake()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_aa9a78553a76681f49c734aaa3f8f126b}{com.\+mysql.\+jdbc.\+Socket\+Factory}}.
+
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_a11fcef05ddc58b721b102fc810d12d5f}\label{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_a11fcef05ddc58b721b102fc810d12d5f}} 
+\index{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}!connect@{connect}}
+\index{connect@{connect}!com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory@{com\+::mysql\+::jdbc\+::\+Named\+Pipe\+Socket\+Factory}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily Socket com.\+mysql.\+jdbc.\+Named\+Pipe\+Socket\+Factory.\+connect (\begin{DoxyParamCaption}\item[{String}]{host,  }\item[{int}]{port\+Number,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws Socket\+Exception, I\+O\+Exception}
+
+\begin{DoxySeeAlso}{See also}
+com.\+mysql.\+jdbc.\+Socket\+Factory\+::connect(\+String, Properties) 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_socket_factory_a2e5061cef1109ab4689437fe177c4ffe}{com.\+mysql.\+jdbc.\+Socket\+Factory}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_named_pipe_socket_factory_a11fcef05ddc58b721b102fc810d12d5f_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Named\+Pipe\+Socket\+Factory.\+java\end{DoxyCompactItemize}

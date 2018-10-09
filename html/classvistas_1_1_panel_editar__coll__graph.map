@@ -1,0 +1,30 @@
+<map id="vistas.PanelEditar" name="vistas.PanelEditar">
+<area shape="rect" id="node33" href="$classvistas_1_1_panel_trabajador.html" title="vistas.PanelTrabajador" alt="" coords="1341,430,1493,457"/>
+<area shape="rect" id="node34" href="$classvistas_1_1_principal.html" title="vistas.Principal" alt="" coords="1021,430,1131,457"/>
+<area shape="rect" id="node22" href="$classcomunicacion_1_1_recepcion.html" title="comunicacion.Recepcion" alt="" coords="304,429,471,455"/>
+<area shape="rect" id="node6" href="$class_stock_1_1_modelo_columnas_tabla_stock.html" title="Stock.ModeloColumnasTabla\lStock" alt="" coords="981,1692,1171,1733"/>
+<area shape="rect" id="node25" href="$class_stock_1_1_lista_stock.html" title="Stock.ListaStock" alt="" coords="1356,1358,1479,1385"/>
+<area shape="rect" id="node13" href="$class_productos_1_1_modelo_columnas_tabla_producto.html" title="Productos.ModeloColumnas\lTablaProducto" alt="" coords="983,1140,1169,1181"/>
+<area shape="rect" id="node17" href="$classclientes_1_1_modelo_columnas_tabla.html" title="clientes.ModeloColumnasTabla" alt="" coords="975,2051,1177,2078"/>
+<area shape="rect" id="node36" href="$classtipo_productos_1_1_modelo_columnas_tabla_tipo_productos.html" title="tipoProductos.ModeloColumnas\lTablaTipoProductos" alt="" coords="973,1496,1179,1537"/>
+<area shape="rect" id="node41" href="$classventa_1_1_modelo_columnas_tabla_venta.html" title="venta.ModeloColumnasTabla\lVenta" alt="" coords="983,1861,1169,1903"/>
+<area shape="rect" id="node44" href="$classmaquinas_1_1_modelo_columnas_tabla_maquina.html" title="maquinas.ModeloColumnasTabla\lMaquina" alt="" coords="969,1627,1183,1668"/>
+<area shape="rect" id="node47" href="$classoferta_1_1_modelo_columnas_tabla_oferta.html" title="oferta.ModeloColumnasTabla\lOferta" alt="" coords="981,1561,1171,1603"/>
+<area shape="rect" id="node8" href="$class_stock_1_1_trazador_tabla_stock.html" title="Stock.TrazadorTablaStock" alt="" coords="621,2133,795,2159"/>
+<area shape="rect" id="node14" href="$class_productos_1_1_trazador_tabla_producto.html" title="Productos.TrazadorTablaProducto" alt="" coords="599,1901,817,1927"/>
+<area shape="rect" id="node18" href="$classclientes_1_1_trazador_tabla.html" title="clientes.TrazadorTabla" alt="" coords="632,2254,784,2281"/>
+<area shape="rect" id="node24" href="$classtipo_productos_1_1_trazador_tabla_tipo_productos.html" title="tipoProductos.TrazadorTabla\lTipoProductos" alt="" coords="615,2016,801,2057"/>
+<area shape="rect" id="node30" href="$classmaquinas_1_1_trazador_tabla_maquina.html" title="maquinas.TrazadorTablaMaquina" alt="" coords="602,1965,814,1991"/>
+<area shape="rect" id="node42" href="$classventa_1_1_trazador_tabla_venta.html" title="venta.TrazadorTablaVenta" alt="" coords="623,2183,793,2210"/>
+<area shape="rect" id="node48" href="$classoferta_1_1_trazador_tabla_oferta.html" title="oferta.TrazadorTablaOferta" alt="" coords="621,2082,795,2109"/>
+<area shape="rect" id="node10" href="$class_productos_1_1_inventario.html" title="Productos.Inventario" alt="" coords="1348,915,1487,942"/>
+<area shape="rect" id="node27" href="$classclientes_1_1_clientela.html" title="clientes.Clientela" alt="" coords="1357,2127,1478,2154"/>
+<area shape="rect" id="node37" href="$classtipo_productos_1_1_tipos_lista.html" title="tipoProductos.TiposLista" alt="" coords="1335,1086,1500,1113"/>
+<area shape="rect" id="node39" href="$classventa_1_1_lista_ventas.html" title="venta.ListaVentas" alt="" coords="1355,1758,1480,1785"/>
+<area shape="rect" id="node49" href="$classoferta_1_1_lista_ofertas.html" title="oferta.ListaOfertas" alt="" coords="1353,1286,1481,1313"/>
+<area shape="rect" id="node50" href="$classmaquinas_1_1_maquinaria.html" title="maquinas.Maquinaria" alt="" coords="1345,1451,1490,1478"/>
+<area shape="rect" id="node12" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="5,935,199,962"/>
+<area shape="rect" id="node16" href="$classconexion_s_q_l_1_1_comandos.html" title="conexionSQL.Comandos" alt="" coords="304,698,471,725"/>
+<area shape="rect" id="node19" href="$classcomunicacion_1_1_modulo_x_bee.html" title="comunicacion.ModuloXBee" alt="" coords="619,537,797,563"/>
+<area shape="rect" id="node23" href="$classcomunicacion_1_1_emision.html" title="comunicacion.Emision" alt="" coords="311,534,464,561"/>
+</map>

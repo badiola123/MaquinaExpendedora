@@ -1,0 +1,66 @@
+\hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}{}\section{com.\+mysql.\+jdbc.\+Replication\+Connection Interface Reference}
+\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection}\index{com.\+mysql.\+jdbc.\+Replication\+Connection@{com.\+mysql.\+jdbc.\+Replication\+Connection}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Replication\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Replication\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a508f5d609758a0a94aa4e10271895e68}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a508f5d609758a0a94aa4e10271895e68}} 
+long {\bfseries get\+Connection\+Group\+Id} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_adc6406809efc56bf9eca1ebf1958421f}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_adc6406809efc56bf9eca1ebf1958421f}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Current\+Connection} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a4a5d6e9a33cf0919a8b281b7868759a2}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a4a5d6e9a33cf0919a8b281b7868759a2}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Master\+Connection} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a3dfae156c3661a0a824056d487c6cf7a}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a3dfae156c3661a0a824056d487c6cf7a}} 
+void {\bfseries promote\+Slave\+To\+Master} (String host)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a3d0027a688075baccf72200f76009b57}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a3d0027a688075baccf72200f76009b57}} 
+void {\bfseries remove\+Master\+Host} (String host)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_ad4a423b3e22aa727bc6c9dd31e8a1b9f}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_ad4a423b3e22aa727bc6c9dd31e8a1b9f}} 
+void {\bfseries remove\+Master\+Host} (String host, boolean wait\+Until\+Not\+In\+Use)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a326268fa603d70ac20b3c3095962ff01}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a326268fa603d70ac20b3c3095962ff01}} 
+boolean {\bfseries is\+Host\+Master} (String host)
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a3d5eca9f4948913c195df0b6844b4ea9}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a3d5eca9f4948913c195df0b6844b4ea9}} 
+\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{Connection}} {\bfseries get\+Slaves\+Connection} ()
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a5e45a697f5acd01434d3bba0f25cb592}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a5e45a697f5acd01434d3bba0f25cb592}} 
+void {\bfseries add\+Slave\+Host} (String host)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_ab3d561fff1066ab5f6fc84bacb4db5df}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_ab3d561fff1066ab5f6fc84bacb4db5df}} 
+void {\bfseries remove\+Slave} (String host)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_aab4f0231968decf178bab248e9b84ecb}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_aab4f0231968decf178bab248e9b84ecb}} 
+void {\bfseries remove\+Slave} (String host, boolean close\+Gently)  throws S\+Q\+L\+Exception
+\item 
+\mbox{\Hypertarget{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a6a0c77450b090ec070b22b00b7e8759e}\label{interfacecom_1_1mysql_1_1jdbc_1_1_replication_connection_a6a0c77450b090ec070b22b00b7e8759e}} 
+boolean {\bfseries is\+Host\+Slave} (String host)
+\end{DoxyCompactItemize}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Replication\+Connection.\+java\end{DoxyCompactItemize}

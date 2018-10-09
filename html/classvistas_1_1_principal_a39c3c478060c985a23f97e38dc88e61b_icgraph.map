@@ -1,0 +1,5 @@
+<map id="vistas.Principal.getTablaproducto" name="vistas.Principal.getTablaproducto">
+<area shape="rect" id="node2" href="$class_productos_1_1_inventario.html#a89ddb54b03480d0e837f56be549b755c" title="Productos.Inventario.cargar\lDatos" alt="" coords="265,5,444,47"/>
+<area shape="rect" id="node4" href="$classvistas_1_1_panel_editar.html#abfa1e278ba63d7cf2a14c02804dcadf1" title="vistas.PanelEditar.action\lPerformed" alt="" coords="272,71,437,112"/>
+<area shape="rect" id="node3" href="$class_productos_1_1_inventario.html#a679f0131ec8bfb9a78d5071ee72f6811" title="Productos.Inventario.Inventario" alt="" coords="492,13,689,39"/>
+</map>

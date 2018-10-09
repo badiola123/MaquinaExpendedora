@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseSSL" name="com.mysql.jdbc.ConnectionProperties.setUseSSL">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#afe754fe2674d4bbab1ba44cb09a81db6" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseSSL" alt="" coords="236,5,443,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#ae199aca42e23e5ce684e148fb051da71" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseSSL" alt="" coords="239,71,440,112"/>
+</map>

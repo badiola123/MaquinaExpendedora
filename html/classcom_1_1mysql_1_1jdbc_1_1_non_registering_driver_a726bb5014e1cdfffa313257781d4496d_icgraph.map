@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.NonRegisteringDriver.getPropertyInfo" name="com.mysql.jdbc.NonRegisteringDriver.getPropertyInfo">
+<area shape="rect" id="node2" href="$classtestsuite_1_1regression_1_1_connection_regression_test.html#a0fda786f7ab6f9338c7dd469a8e617fa" title="testsuite.regression.Connection\lRegressionTest.testBug23626" alt="" coords="285,5,490,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_meta_data_regression_test.html#a19b374def5386df4eb8d89ef0c85375f" title="testsuite.regression.Meta\lDataRegressionTest.testGetPropertyInfo" alt="" coords="260,71,515,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1regression_1_1_meta_data_regression_test.html#a1a86a1e268439afcb06e201e8c7bd486" title="testsuite.regression.Meta\lDataRegressionTest.testBug22628" alt="" coords="276,136,499,177"/>
+</map>

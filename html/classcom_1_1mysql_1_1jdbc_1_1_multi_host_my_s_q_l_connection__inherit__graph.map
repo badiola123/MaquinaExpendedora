@@ -1,0 +1,10 @@
+<map id="com.mysql.jdbc.MultiHostMySQLConnection" name="com.mysql.jdbc.MultiHostMySQLConnection">
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_multi_host_my_s_q_l_connection.html" title="com.mysql.jdbc.JDBC4Multi\lHostMySQLConnection" alt="" coords="969,5,1156,47"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_my_s_q_l_connection.html" title="com.mysql.jdbc.LoadBalanced\lMySQLConnection" alt="" coords="963,71,1163,112"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_my_s_q_l_connection.html" title="com.mysql.jdbc.Replication\lMySQLConnection" alt="" coords="971,136,1154,177"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="467,78,693,105"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="236,53,419,79"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="5,96,188,137"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_load_balanced_my_s_q_l_connection.html" title="com.mysql.jdbc.JDBC4Load\lBalancedMySQLConnection" alt="" coords="1229,71,1415,112"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_replication_my_s_q_l_connection.html" title="com.mysql.jdbc.JDBC4Replication\lMySQLConnection" alt="" coords="1211,136,1433,177"/>
+</map>

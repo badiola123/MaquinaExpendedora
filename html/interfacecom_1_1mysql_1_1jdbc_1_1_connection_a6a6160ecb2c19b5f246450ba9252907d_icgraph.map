@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Connection.changeUser" name="com.mysql.jdbc.Connection.changeUser">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a4c5b794f1bdf800b863c46fdcbf2ce97" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.changeUser" alt="" coords="309,5,519,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#aae20768c54f41ae55ba08171a06b4a11" title="com.mysql.jdbc.MultiHost\lMySQLConnection.changeUser" alt="" coords="312,71,516,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_my_s_q_l_connection.html#adf68b57206ecf667f69b8d6243ac50d7" title="com.mysql.jdbc.Replication\lMySQLConnection.changeUser" alt="" coords="312,136,516,177"/>
+</map>

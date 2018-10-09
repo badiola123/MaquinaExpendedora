@@ -1,0 +1,9 @@
+<map id="com.mysql.jdbc.jdbc2.optional.JDBC4StatementWrapper" name="com.mysql.jdbc.jdbc2.optional.JDBC4StatementWrapper">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_statement_wrapper.html" title="com.mysql.jdbc.jdbc2.optional.\lStatementWrapper" alt="" coords="1211,186,1413,227"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper" alt="" coords="877,101,1080,142"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor.html" title="com.mysql.jdbc.Exception\lInterceptor" alt="" coords="244,122,420,163"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html" title="com.mysql.jdbc.Extension" alt="" coords="5,129,181,156"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_pooled_connection.html" title="com.mysql.jdbc.jdbc2.optional.\lMysqlPooledConnection" alt="" coords="231,239,433,281"/>
+<area shape="rect" id="node11" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="614,64,797,91"/>
+<area shape="rect" id="node13" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="241,57,423,98"/>
+</map>

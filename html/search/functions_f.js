@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update',['update',['../classconexion_s_q_l_1_1_comandos.html#af07c35c78a263c1a1ffb4661f1829e20',1,'conexionSQL.Comandos.update()'],['../class_dialogos_1_1_dialogo_edicion.html#afcbec7817a74ba686ef1a00a33b48484',1,'Dialogos.DialogoEdicion.update()'],['../classvistas_1_1_panel_crear.html#acf3b138f0c0c67c48a405b469eb37606',1,'vistas.PanelCrear.update()'],['../classvistas_1_1_panel_editar.html#ae0fe6b22793a1dddd5b8003e1c245788',1,'vistas.PanelEditar.update()']]]
+  ['quoteidentifier',['quoteIdentifier',['../classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#ad75792b3351810790b35be02d6481bec',1,'com.mysql.jdbc.StringUtils.quoteIdentifier(String identifier, String quoteChar, boolean isPedantic)'],['../classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a7ecf14188b41e974d586d79f3295d4f1',1,'com.mysql.jdbc.StringUtils.quoteIdentifier(String identifier, boolean isPedantic)']]]
 ];

@@ -1,0 +1,16 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcomunicacion_1_1_recepcion.html" title="comunicacion.Recepcion" alt="" coords="209,31,376,57"/>
+<area shape="rect" id="node3" href="$class_dialogos_1_1_dialogo_contrasena.html" title="Dialogos.DialogoContrasena" alt="" coords="200,183,385,209"/>
+<area shape="rect" id="node4" href="$class_dialogos_1_1_dialogo_edicion.html" title="Dialogos.DialogoEdicion\&lt; T \&gt;" alt="" coords="196,132,389,159"/>
+<area shape="rect" id="node5" href="$classvistas_1_1_panel_crear.html" title="vistas.PanelCrear" alt="" coords="231,233,354,260"/>
+<area shape="rect" id="node6" href="$classvistas_1_1_panel_editar.html" title="vistas.PanelEditar" alt="" coords="229,284,356,311"/>
+<area shape="rect" id="node7" href="$classvistas_1_1_panel_recargas.html" title="vistas.PanelRecargas" alt="" coords="219,487,366,513"/>
+<area shape="rect" id="node8" href="$classvistas_1_1_panel_stock.html" title="vistas.PanelStock" alt="" coords="229,335,356,361"/>
+<area shape="rect" id="node9" href="$classvistas_1_1_panel_trabajador.html" title="vistas.PanelTrabajador" alt="" coords="217,385,369,412"/>
+<area shape="rect" id="node10" href="$classvistas_1_1_panel_ventas.html" title="vistas.PanelVentas" alt="" coords="226,436,359,463"/>
+<area shape="rect" id="node11" href="$classvistas_1_1_principal.html" title="vistas.Principal" alt="" coords="238,689,347,716"/>
+<area shape="rect" id="node15" href="$class_dialogos_1_1_dialogo_info_usuario.html" title="Dialogos.DialogoInfoUsuario" alt="" coords="201,81,384,108"/>
+<area shape="rect" id="node18" href="$classvistas_1_1_imagen_fondo.html" title="vistas.ImagenFondo" alt="" coords="224,537,361,564"/>
+<area shape="rect" id="node19" href="$classvistas_1_1_panel_estadisticas.html" title="vistas.PanelEstadisticas" alt="" coords="211,588,375,615"/>
+<area shape="rect" id="node20" href="$classvistas_1_1_panel_usuario.html" title="vistas.PanelUsuario" alt="" coords="225,639,361,665"/>
+</map>

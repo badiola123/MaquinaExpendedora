@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.jdbc2.optional.MysqlDataSource.setPropertiesViaRef" name="com.mysql.jdbc.jdbc2.optional.MysqlDataSource.setPropertiesViaRef">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source_factory.html#a0cfa2574e8030765a671f4591628ce10" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSourceFactory.getObject\lInstance" alt="" coords="297,5,527,61"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_data_source_regression_test.html#af69d51f59966174507009b456bcc4ef3" title="testsuite.regression.Data\lSourceRegressionTest.testBug16791" alt="" coords="575,13,812,54"/>
+</map>

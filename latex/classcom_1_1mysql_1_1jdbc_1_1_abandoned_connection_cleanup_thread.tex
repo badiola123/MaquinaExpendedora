@@ -1,0 +1,103 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread}{}\section{com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread}\index{com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread@{com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread}}
+
+
+Inheritance diagram for com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_aa5088e60ae287742e86745369f560eea}\label{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_aa5088e60ae287742e86745369f560eea}} 
+void {\bfseries run} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_a1f3b87e39a583628bdae7b298b3882c3}{checked\+Shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_abf43aba7ad8fa551a194474046c02235}{unchecked\+Shutdown}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_aadfff88a87e766a3c6ad7cc6ced32b89}{shutdown}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements a thread that is responsible for closing abandoned My\+S\+QL connections, i.\+e., connections that are not explicitly closed. There is only one instance of this class and there is a single thread to do this task. This thread\textquotesingle{}s executor is statically referenced in this same class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_a1f3b87e39a583628bdae7b298b3882c3}\label{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_a1f3b87e39a583628bdae7b298b3882c3}} 
+\index{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread@{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread}!checked\+Shutdown@{checked\+Shutdown}}
+\index{checked\+Shutdown@{checked\+Shutdown}!com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread@{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread}}
+\subsubsection{\texorpdfstring{checked\+Shutdown()}{checkedShutdown()}}
+{\footnotesize\ttfamily static void com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread.\+checked\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Performs a checked shutdown, i.\+e., the context Class\+Loaders from this and the caller thread are checked for consistency prior to performing the shutdown operation. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_a1f3b87e39a583628bdae7b298b3882c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_a1f3b87e39a583628bdae7b298b3882c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_aadfff88a87e766a3c6ad7cc6ced32b89}\label{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_aadfff88a87e766a3c6ad7cc6ced32b89}} 
+\index{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread@{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread@{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread}}
+\subsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily static void com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread.\+shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Shuts down this thread.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000004}{Deprecated}}]use \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_a1f3b87e39a583628bdae7b298b3882c3}{checked\+Shutdown()}} instead. \end{DoxyRefDesc}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_aadfff88a87e766a3c6ad7cc6ced32b89_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_aadfff88a87e766a3c6ad7cc6ced32b89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_abf43aba7ad8fa551a194474046c02235}\label{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_abf43aba7ad8fa551a194474046c02235}} 
+\index{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread@{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread}!unchecked\+Shutdown@{unchecked\+Shutdown}}
+\index{unchecked\+Shutdown@{unchecked\+Shutdown}!com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread@{com\+::mysql\+::jdbc\+::\+Abandoned\+Connection\+Cleanup\+Thread}}
+\subsubsection{\texorpdfstring{unchecked\+Shutdown()}{uncheckedShutdown()}}
+{\footnotesize\ttfamily static void com.\+mysql.\+jdbc.\+Abandoned\+Connection\+Cleanup\+Thread.\+unchecked\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Performs an unchecked shutdown, i.\+e., the shutdown is performed independently of the context Class\+Loaders from the involved threads. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_abandoned_connection_cleanup_thread_abf43aba7ad8fa551a194474046c02235_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Abandoned\+Connection\+Cleanup\+Thread.\+java\end{DoxyCompactItemize}

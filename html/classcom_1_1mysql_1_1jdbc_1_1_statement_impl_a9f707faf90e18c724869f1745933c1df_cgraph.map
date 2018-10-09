@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.StatementImpl.checkForDml" name="com.mysql.jdbc.StatementImpl.checkForDml">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#ad636754b7611d6235efff200a958779c" title="com.mysql.jdbc.StringUtils.strip\lComments" alt="" coords="236,5,443,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a6b08be3e1e6f1b48cd88d94373acd13b" title="com.mysql.jdbc.StringUtils.starts\lWithIgnoreCaseAndWs" alt="" coords="232,71,447,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="239,136,439,177"/>
+</map>

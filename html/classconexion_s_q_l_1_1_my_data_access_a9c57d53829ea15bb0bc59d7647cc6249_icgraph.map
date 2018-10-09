@@ -1,0 +1,10 @@
+<map id="conexionSQL.MyDataAccess.setQuery" name="conexionSQL.MyDataAccess.setQuery">
+<area shape="rect" id="node2" href="$classconexion_s_q_l_1_1_comandos.html#a1a53c5650458c357ecd43cfc2734ad83" title="conexionSQL.Comandos.borrar" alt="" coords="273,5,476,32"/>
+<area shape="rect" id="node3" href="$classconexion_s_q_l_1_1_comandos.html#a2fb20845cbfb01a03b1aba60031608cb" title="conexionSQL.Comandos.insertar" alt="" coords="268,56,481,83"/>
+<area shape="rect" id="node6" href="$classconexion_s_q_l_1_1_comandos.html#af07c35c78a263c1a1ffb4661f1829e20" title="conexionSQL.Comandos.update" alt="" coords="270,107,479,133"/>
+<area shape="rect" id="node7" href="$classvistas_1_1_panel_recargas.html#ad3607075fb4de36ea502e651729b390c" title="vistas.PanelRecargas.action\lPerformed" alt="" coords="281,158,468,199"/>
+<area shape="rect" id="node8" href="$classvistas_1_1_panel_stock.html#a43487e4ae1276f0a5a855790bcd5c900" title="vistas.PanelStock.action\lPerformed" alt="" coords="292,223,457,265"/>
+<area shape="rect" id="node9" href="$classvistas_1_1_panel_ventas.html#a4265266a054c7b38d50b30e754a548b6" title="vistas.PanelVentas.action\lPerformed" alt="" coords="289,289,461,330"/>
+<area shape="rect" id="node4" href="$classcomunicacion_1_1_modulo_x_bee.html#a34debd695cc102e385156983a52a658c" title="comunicacion.ModuloXBee.confirmar\lVenta" alt="" coords="529,49,764,90"/>
+<area shape="rect" id="node5" href="$classcomunicacion_1_1_recepcion.html#a83305dfbd31ca36b129c0cfb4e86a486" title="comunicacion.Recepcion.data\lReceived" alt="" coords="812,49,1008,90"/>
+</map>

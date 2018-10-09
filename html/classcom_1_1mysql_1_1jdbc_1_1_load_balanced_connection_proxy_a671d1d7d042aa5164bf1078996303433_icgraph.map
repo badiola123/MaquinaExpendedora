@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.LoadBalancedConnectionProxy.removeHost" name="com.mysql.jdbc.LoadBalancedConnectionProxy.removeHost">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_group.html#a27586faf64da09b716633d8af113a9ba" title="com.mysql.jdbc.Connection\lGroup.removeHost" alt="" coords="581,5,764,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_load_balanced_connection_proxy.html#af3322f74308fe5ca51f73f36f99aa12f" title="com.mysql.jdbc.LoadBalanced\lConnectionProxy.removeHostWhenNotInUse" alt="" coords="253,35,533,76"/>
+</map>

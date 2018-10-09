@@ -1,0 +1,14 @@
+<map id="com.mysql.jdbc.StringUtils.unQuoteIdentifier" name="com.mysql.jdbc.StringUtils.unQuoteIdentifier">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a0dfb6635800405515c2e66a71a50f235" title="com.mysql.jdbc.DatabaseMeta\lData.getCrossReference" alt="" coords="1069,5,1272,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_string_utils.html#a7fe39164a1f79c6421f46509e672693a" title="com.mysql.jdbc.StringUtils.split\lDBdotName" alt="" coords="249,103,456,144"/>
+<area shape="rect" id="node12" href="$classtestsuite_1_1simple_1_1_string_utils_test.html#a674e096dd56440c0872b382f87edd909" title="testsuite.simple.StringUtils\lTest.testQuoteUnQuoteIdentifier\lWithBackQuote" alt="" coords="249,169,456,225"/>
+<area shape="rect" id="node13" href="$classtestsuite_1_1simple_1_1_string_utils_test.html#adb8f4c412143b740afd9fe6c70018660" title="testsuite.simple.StringUtils\lTest.testQuoteUnQuoteIdentifier\lWithDoubleQuote" alt="" coords="249,249,456,305"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a09e2c74e6c817b349d43feea682eed58" title="com.mysql.jdbc.DatabaseMeta\lData.getTables" alt="" coords="508,71,711,112"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data_using_info_schema.html#a77e696e0c2b875ddbf17513a1be3f6a3" title="com.mysql.jdbc.DatabaseMeta\lDataUsingInfoSchema.getTables" alt="" coords="504,136,715,177"/>
+<area shape="rect" id="node11" href="$classtestsuite_1_1simple_1_1_split_d_bdot_name_test.html#a079789e05d1272485f650f92c91777fa" title="testsuite.simple.SplitDBdot\lNameTest.testSplit" alt="" coords="519,201,699,243"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a674d55ea080a7c9051cbb85224526184" title="com.mysql.jdbc.DatabaseMeta\lData.extractForeignKeyFromCreateTable" alt="" coords="763,71,1021,112"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#aa499f30e9c9222a702a504ad205d1802" title="com.mysql.jdbc.DatabaseMeta\lData.getColumns" alt="" coords="791,168,993,209"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a17c160fdaac4749922b8ec683b4ab138" title="com.mysql.jdbc.DatabaseMeta\lData.getExportedKeys" alt="" coords="1069,71,1272,112"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a0161436eb7ad9574d25bd90730891e25" title="com.mysql.jdbc.DatabaseMeta\lData.getImportedKeys" alt="" coords="1069,136,1272,177"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_database_meta_data.html#a3c5930c79653f91ef2ce808d3cd37b45" title="com.mysql.jdbc.DatabaseMeta\lData.getTablePrivileges" alt="" coords="1069,201,1272,243"/>
+</map>

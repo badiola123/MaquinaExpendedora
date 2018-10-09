@@ -1,0 +1,5 @@
+<map id="com.mysql.fabric.proto.xmlrpc.XmlRpcClient.getShardMappings" name="com.mysql.fabric.proto.xmlrpc.XmlRpcClient.getShardMappings">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1fabric_1_1_fabric_connection.html#aa008c3c21505a6a3cd81dbe20c8ca9f0" title="com.mysql.fabric.FabricConnection.refresh\lState" alt="" coords="264,5,533,47"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1_test_dump_commands.html#a4badae860db743cca162a2b34ea98675" title="testsuite.fabric.TestDump\lCommands.testDumpShardMapsAll" alt="" coords="284,71,513,112"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_regressions.html#a7b46187e3a7d4a9951d8cd51344b090e" title="testsuite.fabric.jdbc.Test\lRegressions.testBug82094" alt="" coords="581,5,760,47"/>
+</map>

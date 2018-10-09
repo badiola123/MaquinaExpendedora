@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setClobberStreamingResults" name="com.mysql.jdbc.ConnectionProperties.setClobberStreamingResults">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a89ce1b22b67b5682dd976a11ccae9a3d" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setClobberStreaming\lResults" alt="" coords="260,5,521,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#aaa5a94dd2c2c57150920af50503b9764" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setClobberStreaming\lResults" alt="" coords="263,85,519,141"/>
+</map>

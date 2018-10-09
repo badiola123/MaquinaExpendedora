@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ServerPreparedStatement.close" name="com.mysql.jdbc.ServerPreparedStatement.close">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#a7c1e2ab709b4d6734375679c471a2c9d" title="com.mysql.jdbc.ServerPrepared\lStatement.clearParameters" alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_server_prepared_statement.html#af12056e4aca4279abd972fbbba2f320f" title="com.mysql.jdbc.ServerPrepared\lStatement.realClose" alt="" coords="260,71,467,112"/>
+</map>

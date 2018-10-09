@@ -1,0 +1,144 @@
+\hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util}{}\section{com.\+mysql.\+jdbc.\+Time\+Util Class Reference}
+\label{classcom_1_1mysql_1_1jdbc_1_1_time_util}\index{com.\+mysql.\+jdbc.\+Time\+Util@{com.\+mysql.\+jdbc.\+Time\+Util}}
+
+
+Collaboration diagram for com.\+mysql.\+jdbc.\+Time\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classcom_1_1mysql_1_1jdbc_1_1_time_util__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_afcbab5475dce3d528c5a4c986a6ed1e7}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_afcbab5475dce3d528c5a4c986a6ed1e7}} 
+static boolean {\bfseries nano\+Time\+Available} ()
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad010f6e840b838715ca9d45b68c39372}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad010f6e840b838715ca9d45b68c39372}} 
+static final Time\+Zone {\bfseries get\+Default\+Time\+Zone} (boolean use\+Cache)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_ae2e0d6466619c4ae0a3151d4d7f2e05f}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_ae2e0d6466619c4ae0a3151d4d7f2e05f}} 
+static long {\bfseries get\+Current\+Time\+Nanos\+Or\+Millis} ()
+\item 
+static Time \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad72309c404fe0fd1396ae37305bab486}{change\+Timezone}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, Calendar session\+Calendar, Calendar target\+Calendar, Time t, Time\+Zone from\+Tz, Time\+Zone to\+Tz, boolean roll\+Forward)
+\item 
+static Timestamp \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_time_util_a65e39dc7a1a236b17c20ce533ac5ae76}{change\+Timezone}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}} conn, Calendar session\+Calendar, Calendar target\+Calendar, Timestamp tstamp, Time\+Zone from\+Tz, Time\+Zone to\+Tz, boolean roll\+Forward)
+\item 
+static String \mbox{\hyperlink{classcom_1_1mysql_1_1jdbc_1_1_time_util_a0b298be0053e240dace4c16d7c1bea14}{get\+Canonical\+Timezone}} (String timezone\+Str, \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}} exception\+Interceptor)  throws S\+Q\+L\+Exception 
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_acf65a561b129f5ef51f66b3e21e19bdc}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_acf65a561b129f5ef51f66b3e21e19bdc}} 
+static String {\bfseries format\+Nanos} (int nanos, boolean server\+Supports\+Frac\+Secs, boolean using\+Micros)
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_a41495e5a5b86ab90190d48d20c98e736}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_a41495e5a5b86ab90190d48d20c98e736}} 
+static Timestamp {\bfseries truncate\+Fractional\+Seconds} (Timestamp timestamp)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad810d8237d744fb54aa3881b82fef311}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad810d8237d744fb54aa3881b82fef311}} 
+static final Method {\bfseries system\+Nano\+Time\+Method}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Timezone conversion routines and other time related methods 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad72309c404fe0fd1396ae37305bab486}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad72309c404fe0fd1396ae37305bab486}} 
+\index{com\+::mysql\+::jdbc\+::\+Time\+Util@{com\+::mysql\+::jdbc\+::\+Time\+Util}!change\+Timezone@{change\+Timezone}}
+\index{change\+Timezone@{change\+Timezone}!com\+::mysql\+::jdbc\+::\+Time\+Util@{com\+::mysql\+::jdbc\+::\+Time\+Util}}
+\subsubsection{\texorpdfstring{change\+Timezone()}{changeTimezone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Time com.\+mysql.\+jdbc.\+Time\+Util.\+change\+Timezone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{Calendar}]{session\+Calendar,  }\item[{Calendar}]{target\+Calendar,  }\item[{Time}]{t,  }\item[{Time\+Zone}]{from\+Tz,  }\item[{Time\+Zone}]{to\+Tz,  }\item[{boolean}]{roll\+Forward }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Change the given times from one timezone to another
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the current connection to the My\+S\+QL server \\
+\hline
+{\em t} & the times to change \\
+\hline
+{\em from\+Tz} & the timezone to change from \\
+\hline
+{\em to\+Tz} & the timezone to change to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the times changed to the timezone \textquotesingle{}to\+Tz\textquotesingle{} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_time_util_ad72309c404fe0fd1396ae37305bab486_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_a65e39dc7a1a236b17c20ce533ac5ae76}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_a65e39dc7a1a236b17c20ce533ac5ae76}} 
+\index{com\+::mysql\+::jdbc\+::\+Time\+Util@{com\+::mysql\+::jdbc\+::\+Time\+Util}!change\+Timezone@{change\+Timezone}}
+\index{change\+Timezone@{change\+Timezone}!com\+::mysql\+::jdbc\+::\+Time\+Util@{com\+::mysql\+::jdbc\+::\+Time\+Util}}
+\subsubsection{\texorpdfstring{change\+Timezone()}{changeTimezone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Timestamp com.\+mysql.\+jdbc.\+Time\+Util.\+change\+Timezone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection}{My\+S\+Q\+L\+Connection}}}]{conn,  }\item[{Calendar}]{session\+Calendar,  }\item[{Calendar}]{target\+Calendar,  }\item[{Timestamp}]{tstamp,  }\item[{Time\+Zone}]{from\+Tz,  }\item[{Time\+Zone}]{to\+Tz,  }\item[{boolean}]{roll\+Forward }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Change the given timestamp from one timezone to another
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the current connection to the My\+S\+QL server \\
+\hline
+{\em tstamp} & the timestamp to change \\
+\hline
+{\em from\+Tz} & the timezone to change from \\
+\hline
+{\em to\+Tz} & the timezone to change to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the timestamp changed to the timezone \textquotesingle{}to\+Tz\textquotesingle{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1mysql_1_1jdbc_1_1_time_util_a0b298be0053e240dace4c16d7c1bea14}\label{classcom_1_1mysql_1_1jdbc_1_1_time_util_a0b298be0053e240dace4c16d7c1bea14}} 
+\index{com\+::mysql\+::jdbc\+::\+Time\+Util@{com\+::mysql\+::jdbc\+::\+Time\+Util}!get\+Canonical\+Timezone@{get\+Canonical\+Timezone}}
+\index{get\+Canonical\+Timezone@{get\+Canonical\+Timezone}!com\+::mysql\+::jdbc\+::\+Time\+Util@{com\+::mysql\+::jdbc\+::\+Time\+Util}}
+\subsubsection{\texorpdfstring{get\+Canonical\+Timezone()}{getCanonicalTimezone()}}
+{\footnotesize\ttfamily static String com.\+mysql.\+jdbc.\+Time\+Util.\+get\+Canonical\+Timezone (\begin{DoxyParamCaption}\item[{String}]{timezone\+Str,  }\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_exception_interceptor}{Exception\+Interceptor}}}]{exception\+Interceptor }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the \textquotesingle{}official\textquotesingle{} Java timezone name for the given timezone
+
+
+\begin{DoxyParams}{Parameters}
+{\em timezone\+Str} & the \textquotesingle{}common\textquotesingle{} timezone name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Java timezone name for the given timezone 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+{\em Illegal\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_time_util_a0b298be0053e240dace4c16d7c1bea14_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1jdbc_1_1_time_util_a0b298be0053e240dace4c16d7c1bea14_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/jdbc/Time\+Util.\+java\end{DoxyCompactItemize}

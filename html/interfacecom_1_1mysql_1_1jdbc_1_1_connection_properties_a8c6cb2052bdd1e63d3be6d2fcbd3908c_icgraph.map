@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseUsageAdvisor" name="com.mysql.jdbc.ConnectionProperties.setUseUsageAdvisor">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a1d58ba31c123593e3f79773f45777674" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseUsageAdvisor" alt="" coords="259,5,519,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a7a7245490c0727f69175b55bb9d7c39b" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseUsageAdvisor" alt="" coords="261,71,516,112"/>
+</map>

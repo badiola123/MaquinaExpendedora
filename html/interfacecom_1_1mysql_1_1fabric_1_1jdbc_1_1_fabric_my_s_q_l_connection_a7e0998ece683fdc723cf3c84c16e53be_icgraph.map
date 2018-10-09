@@ -1,0 +1,8 @@
+<map id="com.mysql.fabric.jdbc.FabricMySQLConnection.clearServerSelectionCriteria" name="com.mysql.fabric.jdbc.FabricMySQLConnection.clearServerSelectionCriteria">
+<area shape="rect" id="node2" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_fabric_my_s_q_l_connection_sharding.html#a98edb15acffc84d83916971697b7a3b2" title="testsuite.fabric.jdbc.Test\lFabricMySQLConnectionSharding.test\lShardSelection" alt="" coords="327,5,571,61"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a9d7cbb774663dec35a3f486d09f5d124" title="testsuite.fabric.jdbc.Test\lHashSharding.checkRowExistsInServerGroup" alt="" coords="307,86,592,127"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a54c7662d69f56fc657d35bd049d87f1b" title="testsuite.fabric.jdbc.Test\lHashSharding.assertBasicDataIs\lInProperPlaces" alt="" coords="640,155,853,211"/>
+<area shape="rect" id="node6" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#aae506b3baba9edbc0b43d3f4d5f6e308" title="testsuite.fabric.jdbc.Test\lHashSharding.testBasicInsertByKey" alt="" coords="907,259,1141,301"/>
+<area shape="rect" id="node7" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#afe45f293836ac4ee4e67255e208fb36b" title="testsuite.fabric.jdbc.Test\lHashSharding.checkRowDoesntExist\lInServerGroup" alt="" coords="330,203,569,259"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1fabric_1_1jdbc_1_1_test_hash_sharding.html#a4d63bb47eb2f1bc8fcbc57257a21def1" title="testsuite.fabric.jdbc.Test\lHashSharding.testBasicInsertByGroup" alt="" coords="901,162,1147,203"/>
+</map>

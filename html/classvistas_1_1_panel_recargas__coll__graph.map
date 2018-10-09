@@ -1,0 +1,8 @@
+<map id="vistas.PanelRecargas" name="vistas.PanelRecargas">
+<area shape="rect" id="node14" href="$classvistas_1_1_principal.html" title="vistas.Principal" alt="" coords="987,518,1097,544"/>
+<area shape="rect" id="node20" href="$classcomunicacion_1_1_recepcion.html" title="comunicacion.Recepcion" alt="" coords="304,392,471,419"/>
+<area shape="rect" id="node5" href="$classconexion_s_q_l_1_1_comandos.html" title="conexionSQL.Comandos" alt="" coords="304,624,471,651"/>
+<area shape="rect" id="node17" href="$classcomunicacion_1_1_modulo_x_bee.html" title="comunicacion.ModuloXBee" alt="" coords="599,467,777,494"/>
+<area shape="rect" id="node6" href="$classconexion_s_q_l_1_1_my_data_access.html" title="conexionSQL.MyDataAccess" alt="" coords="5,651,199,678"/>
+<area shape="rect" id="node24" href="$classcomunicacion_1_1_emision.html" title="comunicacion.Emision" alt="" coords="311,342,464,368"/>
+</map>

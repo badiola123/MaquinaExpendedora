@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Connection.getProperties" name="com.mysql.jdbc.Connection.getProperties">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#aa1d8937ef315e396f9acfbeea1ff8c8f" title="com.mysql.jdbc.Connection\lImpl.hasSameProperties" alt="" coords="276,5,459,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a5f9c13aa2ff933d03836b6217c781fd7" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getProperties" alt="" coords="259,71,476,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_my_s_q_l_connection.html#a93f7c5bbec567b742e4f9f94b81f1493" title="com.mysql.jdbc.Replication\lMySQLConnection.getProperties" alt="" coords="261,136,473,177"/>
+</map>

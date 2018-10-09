@@ -1,0 +1,236 @@
+\hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor}{}\section{testsuite.\+simple.\+Test\+Lifecycle\+Interceptor Class Reference}
+\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor}\index{testsuite.\+simple.\+Test\+Lifecycle\+Interceptor@{testsuite.\+simple.\+Test\+Lifecycle\+Interceptor}}
+
+
+Inheritance diagram for testsuite.\+simple.\+Test\+Lifecycle\+Interceptor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testsuite.\+simple.\+Test\+Lifecycle\+Interceptor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_ace03032cbe6f9aae94a05ae442466d2d}{close}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a1c51358948a855403a8953f3d4ba5590}{commit}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}{rollback}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a75e431938104c0c3b8e1913b81ced992}{rollback}} (Savepoint s)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a98376ea207527feed3bc76d491c98cc2}{set\+Auto\+Commit}} (boolean flag)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_accae42bd1b1d7a51fa35a6f375bf4ce4}{set\+Catalog}} (String catalog)  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a5ca18da030f4569891254990898f9c1b}{transaction\+Begun}} ()  throws S\+Q\+L\+Exception 
+\item 
+boolean \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a00973c1a52ebc81176be2b9a46f5aa66}{transaction\+Completed}} ()  throws S\+Q\+L\+Exception 
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a2a1a99507005bb6d901d3782880aac09}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_ad1b9b390383950835ad6b7550c27589e}{init}} (\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{com.\+mysql.\+jdbc.\+Connection}} conn, Properties props)  throws S\+Q\+L\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_ace03032cbe6f9aae94a05ae442466d2d}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_ace03032cbe6f9aae94a05ae442466d2d}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!close@{close}}
+\index{close@{close}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when an application calls Connection.\+close(), before the driver processes its own internal logic for close.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_a73675852c009a064292c1ae98d7caeb7}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a1c51358948a855403a8953f3d4ba5590}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a1c51358948a855403a8953f3d4ba5590}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!commit@{commit}}
+\index{commit@{commit}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily boolean testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when an application calls Connection.\+commit(), before the driver processes its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a1c51358948a855403a8953f3d4ba5590}{commit()}}.
+
+Interceptors should return \char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a1c51358948a855403a8953f3d4ba5590}{commit()}}, or \char`\"{}false\char`\"{} if not.
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a1c51358948a855403a8953f3d4ba5590}{commit()}}, or \char`\"{}false\char`\"{} if not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_ac8f559b2bf353ede24b6845d5edeeeb0}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a2a1a99507005bb6d901d3782880aac09}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a2a1a99507005bb6d901d3782880aac09}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!destroy@{destroy}}
+\index{destroy@{destroy}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Called by the driver when this extension should release any resources it is holding and cleanup internally before the connection is closed. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a7d9644de305efed5df71f3fcc7cc1772}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_ad1b9b390383950835ad6b7550c27589e}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_ad1b9b390383950835ad6b7550c27589e}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!init@{init}}
+\index{init@{init}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection}{com.\+mysql.\+jdbc.\+Connection}}}]{conn,  }\item[{Properties}]{props }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called once per connection that wants to use the extension
+
+The properties are the same ones passed in in the U\+RL or arguments to Driver.\+connect() or Driver\+Manager.\+get\+Connection().
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & the connection for which this extension is being created \\
+\hline
+{\em props} & configuration values as passed to the connection. Note that in order to support javax.\+sql.\+Data\+Sources, configuration properties specific to an interceptor {\bfseries must} be passed via set\+U\+R\+L() on the Data\+Source. Extension properties are not exposed via accessor/mutator methods on Data\+Sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & should be thrown if the the Extension can not initialize itself. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_extension_a79427811058193260bd4df0c38414e88}{com.\+mysql.\+jdbc.\+Extension}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!rollback@{rollback}}
+\index{rollback@{rollback}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{rollback()}{rollback()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when an application calls Connection.\+rollback(), before the driver processes its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}{rollback()}}.
+
+Interceptors should return \char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}{rollback()}}, or \char`\"{}false\char`\"{} if not.
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}{rollback()}}, or \char`\"{}false\char`\"{} if not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_a1e23e5b6724c8362009e5d87938507de}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a75e431938104c0c3b8e1913b81ced992}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a75e431938104c0c3b8e1913b81ced992}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!rollback@{rollback}}
+\index{rollback@{rollback}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{rollback()}{rollback()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+rollback (\begin{DoxyParamCaption}\item[{Savepoint}]{s }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when an application calls Connection.\+rollback(), before the driver processes its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}{rollback()}}.
+
+Interceptors should return \char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}{rollback()}}, or \char`\"{}false\char`\"{} if not.
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a7cdeb42f7891e22dadce89627befbcdf}{rollback()}}, or \char`\"{}false\char`\"{} if not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_ad7d4ade6867189eceeaad2c062aff0ee}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a98376ea207527feed3bc76d491c98cc2}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a98376ea207527feed3bc76d491c98cc2}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!set\+Auto\+Commit@{set\+Auto\+Commit}}
+\index{set\+Auto\+Commit@{set\+Auto\+Commit}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{set\+Auto\+Commit()}{setAutoCommit()}}
+{\footnotesize\ttfamily boolean testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+set\+Auto\+Commit (\begin{DoxyParamCaption}\item[{boolean}]{flag }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when an application calls Connection.\+set\+Auto\+Commit(), before the driver processes its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a98376ea207527feed3bc76d491c98cc2}{set\+Auto\+Commit()}}.
+
+Interceptors should return \char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a98376ea207527feed3bc76d491c98cc2}{set\+Auto\+Commit()}}, or \char`\"{}false\char`\"{} if not.
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a98376ea207527feed3bc76d491c98cc2}{set\+Auto\+Commit()}}, or \char`\"{}false\char`\"{} if not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_af86c9f877791fe2dded81722568863b7}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_accae42bd1b1d7a51fa35a6f375bf4ce4}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_accae42bd1b1d7a51fa35a6f375bf4ce4}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!set\+Catalog@{set\+Catalog}}
+\index{set\+Catalog@{set\+Catalog}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{set\+Catalog()}{setCatalog()}}
+{\footnotesize\ttfamily boolean testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+set\+Catalog (\begin{DoxyParamCaption}\item[{String}]{catalog }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when an application calls Connection.\+set\+Catalog(), before the driver processes its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_accae42bd1b1d7a51fa35a6f375bf4ce4}{set\+Catalog()}}.
+
+Interceptors should return \char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_accae42bd1b1d7a51fa35a6f375bf4ce4}{set\+Catalog()}}, or \char`\"{}false\char`\"{} if not.
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true\char`\"{} if the driver should perform its own internal logic for \mbox{\hyperlink{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_accae42bd1b1d7a51fa35a6f375bf4ce4}{set\+Catalog()}}, or \char`\"{}false\char`\"{} if not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & if an error occurs \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_a1b4e6d4cd345e6ac103df4cc0d6807a1}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a5ca18da030f4569891254990898f9c1b}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a5ca18da030f4569891254990898f9c1b}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!transaction\+Begun@{transaction\+Begun}}
+\index{transaction\+Begun@{transaction\+Begun}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{transaction\+Begun()}{transactionBegun()}}
+{\footnotesize\ttfamily boolean testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+transaction\+Begun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when the driver has been told by the server that a transaction is now in progress (when one has not been currently in progress). 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_accfde1498fb7224e65b1557ff9efe873}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+\mbox{\Hypertarget{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a00973c1a52ebc81176be2b9a46f5aa66}\label{classtestsuite_1_1simple_1_1_test_lifecycle_interceptor_a00973c1a52ebc81176be2b9a46f5aa66}} 
+\index{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}!transaction\+Completed@{transaction\+Completed}}
+\index{transaction\+Completed@{transaction\+Completed}!testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor@{testsuite\+::simple\+::\+Test\+Lifecycle\+Interceptor}}
+\subsubsection{\texorpdfstring{transaction\+Completed()}{transactionCompleted()}}
+{\footnotesize\ttfamily boolean testsuite.\+simple.\+Test\+Lifecycle\+Interceptor.\+transaction\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws S\+Q\+L\+Exception}
+
+Called when the driver has been told by the server that a transaction has completed, and no transaction is currently in progress. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1mysql_1_1jdbc_1_1_connection_lifecycle_interceptor_a439077fdf5cb12487a9689838a1983e6}{com.\+mysql.\+jdbc.\+Connection\+Lifecycle\+Interceptor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/testsuite/simple/Test\+Lifecycle\+Interceptor.\+java\end{DoxyCompactItemize}

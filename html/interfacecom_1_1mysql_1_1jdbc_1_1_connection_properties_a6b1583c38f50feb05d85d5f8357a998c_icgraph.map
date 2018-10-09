@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setStrictUpdates" name="com.mysql.jdbc.ConnectionProperties.setStrictUpdates">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#afcbd497f79720ae946cda438dad6ec65" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setStrictUpdates" alt="" coords="236,5,473,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#ae687926e547ee7430e22ed60f970b1dc" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setStrictUpdates" alt="" coords="239,71,471,112"/>
+</map>

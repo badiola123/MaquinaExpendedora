@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.LoadBalanceExceptionChecker" name="com.mysql.jdbc.LoadBalanceExceptionChecker">
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_standard_load_balance_exception_checker.html" title="com.mysql.jdbc.StandardLoad\lBalanceExceptionChecker" alt="" coords="496,5,695,47"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_extension.html" title="com.mysql.jdbc.Extension" alt="" coords="5,50,181,77"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_ndb_load_balance_exception_checker.html" title="com.mysql.jdbc.NdbLoadBalance\lExceptionChecker" alt="" coords="768,5,984,47"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Productos.Inventario.Inventario" name="Productos.Inventario.Inventario">
+<area shape="rect" id="node2" href="$class_productos_1_1_inventario.html#a89ddb54b03480d0e837f56be549b755c" title="Productos.Inventario.cargar\lDatos" alt="" coords="251,140,429,181"/>
+<area shape="rect" id="node3" href="$class_productos_1_1_producto.html#a2aa076fdb51668e1d75dd216a00ec909" title="Productos.Producto.getNombre\lColumnas" alt="" coords="481,5,685,47"/>
+<area shape="rect" id="node4" href="$classconexion_s_q_l_1_1_comandos.html#aa1dc46cfa52b931d7252da826880372d" title="conexionSQL.Comandos.select" alt="" coords="481,71,686,98"/>
+<area shape="rect" id="node6" href="$classvistas_1_1_principal.html#a39c3c478060c985a23f97e38dc88e61b" title="vistas.Principal.getTablaproducto" alt="" coords="477,122,689,149"/>
+<area shape="rect" id="node7" href="$classvistas_1_1_principal.html#a004b49e26858496e0f5097a079b3aba5" title="vistas.Principal.getTablastock" alt="" coords="486,173,681,199"/>
+<area shape="rect" id="node8" href="$classvistas_1_1_principal.html#ac784d0415cbb5e3932f088d68876c91a" title="vistas.Principal.getTablamaquina" alt="" coords="478,223,689,250"/>
+<area shape="rect" id="node9" href="$classmaquinas_1_1_maquina.html#a47e430c44c10450125499adaeb26531c" title="maquinas.Maquina.getNombre\lColumnas" alt="" coords="484,275,683,316"/>
+<area shape="rect" id="node5" href="$classconexion_s_q_l_1_1_my_data_access.html#ae8d04039a000d2b3e7dc72c99be7c551" title="conexionSQL.MyDataAccess.get\lQuery" alt="" coords="737,64,952,105"/>
+</map>

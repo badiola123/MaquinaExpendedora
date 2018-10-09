@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.jdbc2.optional.MysqlDataSource.getServerName" name="com.mysql.jdbc.jdbc2.optional.MysqlDataSource.getServerName">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#a75a3ebb597b5c7d7ab881e9253470ef8" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.getReference" alt="" coords="521,5,727,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#a5e66ffff5f2e60b902e05cbb12f32a6c" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.getUrl" alt="" coords="271,64,473,105"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_data_source_regression_test.html#af69d51f59966174507009b456bcc4ef3" title="testsuite.regression.Data\lSourceRegressionTest.testBug16791" alt="" coords="775,5,1012,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#a53c7e30b2c6b71edcd194fd8ecd5ebba" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.getURL" alt="" coords="523,71,725,112"/>
+</map>

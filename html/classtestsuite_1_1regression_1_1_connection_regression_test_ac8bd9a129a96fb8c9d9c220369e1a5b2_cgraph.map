@@ -1,0 +1,5 @@
+<map id="testsuite.regression.ConnectionRegressionTest.testBug69506" name="testsuite.regression.ConnectionRegressionTest.testBug69506">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#abdeb3391c72e2633372294991d9291fb" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.setUrl" alt="" coords="279,5,482,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_x_a_data_source.html#a767e7d22d5ab6144aac907e6f0a1114b" title="com.mysql.jdbc.jdbc2.optional.\lMysqlXADataSource.getXAConnection" alt="" coords="259,71,503,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_mysql_data_source.html#aa19c209327ac343921cb8b4f2e2b30ab" title="com.mysql.jdbc.jdbc2.optional.\lMysqlDataSource.getConnection" alt="" coords="551,71,763,112"/>
+</map>

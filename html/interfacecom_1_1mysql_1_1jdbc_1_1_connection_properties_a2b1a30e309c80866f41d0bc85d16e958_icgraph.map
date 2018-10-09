@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setRelaxAutoCommit" name="com.mysql.jdbc.ConnectionProperties.setRelaxAutoCommit">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#af338a10a5b9e993703c9e21810e74b21" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setRelaxAutoCommit" alt="" coords="261,5,524,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#adb974ee9a13de24aeadca3f29dc01549" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setRelaxAuto\lCommit" alt="" coords="286,71,499,127"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setMaxRows" name="com.mysql.jdbc.ConnectionProperties.setMaxRows">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a21b7e7ac26548d9266485dce22f5af21" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setMaxRows" alt="" coords="237,5,451,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a15920ec9b291f698817ea82c8ecabfbe" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setMaxRows" alt="" coords="239,71,449,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1regression_1_1_statement_regression_test.html#a81fe072b5269fee8c61a3391538282c2" title="testsuite.regression.Statement\lRegressionTest.testSetMaxRows" alt="" coords="237,136,451,177"/>
+<area shape="rect" id="node5" href="$classtestsuite_1_1regression_1_1_result_set_regression_test.html#a70caaccac8b8006475747f9481a529af" title="testsuite.regression.Result\lSetRegressionTest.testBug25517" alt="" coords="236,201,452,243"/>
+</map>

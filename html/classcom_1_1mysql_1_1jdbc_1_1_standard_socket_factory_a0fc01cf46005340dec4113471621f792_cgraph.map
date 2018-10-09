@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.StandardSocketFactory.beforeHandshake" name="com.mysql.jdbc.StandardSocketFactory.beforeHandshake">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory.html#ad78f473677314a3dc66e326b8dd3ba2a" title="com.mysql.jdbc.StandardSocket\lFactory.resetLoginTimeCountdown" alt="" coords="264,5,487,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_standard_socket_factory.html#ae455f41cfd47611b1f979ce4c2f7cbec" title="com.mysql.jdbc.StandardSocket\lFactory.getRealTimeout" alt="" coords="270,71,481,112"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="535,5,735,47"/>
+</map>

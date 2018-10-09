@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setAllowNanAndInf" name="com.mysql.jdbc.ConnectionProperties.setAllowNanAndInf">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a3c630aa077ada90cbaf48a4653043fe5" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setAllowNanAndInf" alt="" coords="247,5,495,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a301b4bf7a1c4e8bdbf15cc7a977cd0b8" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setAllowNanAndInf" alt="" coords="249,71,492,112"/>
+</map>

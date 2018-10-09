@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.PreparedStatement.executeBatchSerially" name="com.mysql.jdbc.PreparedStatement.executeBatchSerially">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a88caedee8619aad1351c9edea352c37e" title="com.mysql.jdbc.Statement\lImpl.checkClosed" alt="" coords="357,5,536,47"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html#af05f0b2545de1a6a1ca7d41f467516d3" title="com.mysql.jdbc.Connection.version\lMeetsMinimum" alt="" coords="333,71,560,112"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_result_set_internal_methods.html#ad7091c487cd2a0ad8550ed98e489e535" title="com.mysql.jdbc.ResultSet\lInternalMethods.getFirstChar\lOfQuery" alt="" coords="352,137,541,193"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_s_q_l_error.html#a679aee33cf253b786dfc70bbd1631e88" title="com.mysql.jdbc.SQLError.create\lBatchUpdateException" alt="" coords="341,217,553,259"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_messages.html#ad6d3160126b07ad0d56d97250bed8412" title="com.mysql.jdbc.Messages.get\lString" alt="" coords="608,5,808,47"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_util.html#ab73dd640e4fb69c157001303d7be0164" title="com.mysql.jdbc.Util.truncate\lAndConvertToInt" alt="" coords="614,217,802,259"/>
+</map>

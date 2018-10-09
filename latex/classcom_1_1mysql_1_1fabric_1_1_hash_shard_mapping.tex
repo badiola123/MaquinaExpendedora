@@ -1,0 +1,41 @@
+\hypertarget{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping}{}\section{com.\+mysql.\+fabric.\+Hash\+Shard\+Mapping Class Reference}
+\label{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping}\index{com.\+mysql.\+fabric.\+Hash\+Shard\+Mapping@{com.\+mysql.\+fabric.\+Hash\+Shard\+Mapping}}
+
+
+Inheritance diagram for com.\+mysql.\+fabric.\+Hash\+Shard\+Mapping\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+mysql.\+fabric.\+Hash\+Shard\+Mapping\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping_a73d9a7ab9427e6580ab98334cb68b24d}\label{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping_a73d9a7ab9427e6580ab98334cb68b24d}} 
+{\bfseries Hash\+Shard\+Mapping} (int mapping\+Id, \mbox{\hyperlink{enumcom_1_1mysql_1_1fabric_1_1_sharding_type}{Sharding\+Type}} sharding\+Type, String global\+Group\+Name, Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_table}{Shard\+Table}} $>$ shard\+Tables, Set$<$ \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} $>$ shard\+Indices)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping_a69affdd31f5856f9301be9df7c8d8933}\label{classcom_1_1mysql_1_1fabric_1_1_hash_shard_mapping_a69affdd31f5856f9301be9df7c8d8933}} 
+\mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_shard_index}{Shard\+Index}} {\bfseries get\+Shard\+Index\+For\+Key} (String string\+Key)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A shard mapping with ranges defined by hashing key values. Lookups work essentially the same as in \mbox{\hyperlink{classcom_1_1mysql_1_1fabric_1_1_range_shard_mapping}{Range\+Shard\+Mapping}} but strings are compared as opposed to ints. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Imanol/eclipse-\/workspace/\+Maquina Expendedora/lib/mysql-\/connector-\/java-\/5.\+1.\+42/src/com/mysql/fabric/Hash\+Shard\+Mapping.\+java\end{DoxyCompactItemize}

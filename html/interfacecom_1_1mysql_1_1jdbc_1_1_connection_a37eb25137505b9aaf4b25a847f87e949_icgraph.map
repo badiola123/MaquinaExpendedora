@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.Connection.isServerLocal" name="com.mysql.jdbc.Connection.isServerLocal">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a7361ebd235ec5eb1608231e3b9d4eb36" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.isServerLocal" alt="" coords="251,5,468,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a044d7bf7d1701e6102dfd2d0c88be318" title="com.mysql.jdbc.MultiHost\lMySQLConnection.isServerLocal" alt="" coords="253,71,465,112"/>
+</map>

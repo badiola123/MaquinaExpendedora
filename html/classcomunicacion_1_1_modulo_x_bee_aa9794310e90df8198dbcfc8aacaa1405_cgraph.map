@@ -1,0 +1,10 @@
+<map id="comunicacion.ModuloXBee.comprobarDatos" name="comunicacion.ModuloXBee.comprobarDatos">
+<area shape="rect" id="node2" href="$classmaquinas_1_1_maquina.html#a47e430c44c10450125499adaeb26531c" title="maquinas.Maquina.getNombre\lColumnas" alt="" coords="309,5,508,47"/>
+<area shape="rect" id="node3" href="$classvistas_1_1_principal.html#a004b49e26858496e0f5097a079b3aba5" title="vistas.Principal.getTablastock" alt="" coords="311,71,506,98"/>
+<area shape="rect" id="node4" href="$classclientes_1_1_cliente.html#aaedfb1a4a28af84fb0e22c75d0d9dfdd" title="clientes.Cliente.getNombre\lColumnas" alt="" coords="319,123,498,164"/>
+<area shape="rect" id="node5" href="$classvistas_1_1_principal.html#a2330cd451138f9f602cee0c5c0cd5c08" title="vistas.Principal.getTablacliente" alt="" coords="309,189,509,215"/>
+<area shape="rect" id="node6" href="$classcomunicacion_1_1_modulo_x_bee.html#a60d0556ad61da3b8f66d192779c70bd7" title="comunicacion.ModuloXBee.mandar\lTramaDatosAceptados" alt="" coords="296,240,521,281"/>
+<area shape="rect" id="node8" href="$classcomunicacion_1_1_modulo_x_bee.html#ac996e20c06c0e1c33f868e33d13f083b" title="comunicacion.ModuloXBee.mandar\lTramaDatosRechazados" alt="" coords="296,305,521,347"/>
+<area shape="rect" id="node7" href="$classcomunicacion_1_1_emision.html#ac62ccb2290755183f662f8fa06ecdd52" title="comunicacion.Emision.crear\lTramaDatosAceptados" alt="" coords="569,240,756,281"/>
+<area shape="rect" id="node9" href="$classcomunicacion_1_1_emision.html#aafa487246461f3d94bb9939a0f345b50" title="comunicacion.Emision.crear\lTramaDatosRechazados" alt="" coords="569,305,756,347"/>
+</map>

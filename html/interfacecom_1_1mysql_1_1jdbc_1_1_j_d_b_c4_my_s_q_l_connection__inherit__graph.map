@@ -1,0 +1,11 @@
+<map id="com.mysql.jdbc.JDBC4MySQLConnection" name="com.mysql.jdbc.JDBC4MySQLConnection">
+<area shape="rect" id="node6" href="$interfacecom_1_1mysql_1_1fabric_1_1jdbc_1_1_j_d_b_c4_fabric_my_s_q_l_connection.html" title="com.mysql.fabric.jdbc.JDBC4\lFabricMySQLConnection" alt="" coords="1071,5,1264,47"/>
+<area shape="rect" id="node8" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_connection.html" title="com.mysql.jdbc.JDBC4Connection" alt="" coords="1056,71,1279,98"/>
+<area shape="rect" id="node9" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_load_balanced_my_s_q_l_connection.html" title="com.mysql.jdbc.JDBC4Load\lBalancedMySQLConnection" alt="" coords="1074,123,1261,164"/>
+<area shape="rect" id="node10" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_multi_host_my_s_q_l_connection.html" title="com.mysql.jdbc.JDBC4Multi\lHostMySQLConnection" alt="" coords="1074,188,1261,229"/>
+<area shape="rect" id="node11" href="$classcom_1_1mysql_1_1jdbc_1_1_j_d_b_c4_replication_my_s_q_l_connection.html" title="com.mysql.jdbc.JDBC4Replication\lMySQLConnection" alt="" coords="1056,253,1279,295"/>
+<area shape="rect" id="node2" href="$interfacecom_1_1mysql_1_1jdbc_1_1_my_s_q_l_connection.html" title="com.mysql.jdbc.MySQLConnection" alt="" coords="467,130,693,157"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection.html" title="com.mysql.jdbc.Connection" alt="" coords="236,105,419,131"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1mysql_1_1jdbc_1_1_connection_properties.html" title="com.mysql.jdbc.Connection\lProperties" alt="" coords="5,148,188,189"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1fabric_1_1jdbc_1_1_j_d_b_c4_fabric_my_s_q_l_connection_proxy.html" title="com.mysql.fabric.jdbc.JDBC4\lFabricMySQLConnectionProxy" alt="" coords="1327,5,1528,47"/>
+</map>

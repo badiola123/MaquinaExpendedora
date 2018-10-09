@@ -1,0 +1,4 @@
+<map id="com.mysql.jdbc.ConnectionProperties.setUseStreamLengthsInPrepStmts" name="com.mysql.jdbc.ConnectionProperties.setUseStreamLengthsInPrepStmts">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a9eadd4adb9ecde242f0656084f31f8c7" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setUseStreamLengths\lInPrepStmts" alt="" coords="268,5,537,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a29c813718362120ef1f0b6e6f0b7bb0a" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setUseStream\lLengthsInPrepStmts" alt="" coords="293,85,512,141"/>
+</map>

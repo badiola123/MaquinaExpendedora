@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.TimeUtil.getCanonicalTimezone" name="com.mysql.jdbc.TimeUtil.getCanonicalTimezone">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1util_1_1_timezone_dump.html#a621749317f16279559fa29fd9bb55fd7" title="com.mysql.jdbc.util.Timezone\lDump.main" alt="" coords="243,5,438,47"/>
+<area shape="rect" id="node3" href="$classtestsuite_1_1regression_1_1_utils_regression_test.html#a23afa0e1c5288ab757fb3e4c09676f79" title="testsuite.regression.Utils\lRegressionTest.testTimeZones" alt="" coords="240,71,441,112"/>
+<area shape="rect" id="node4" href="$classtestsuite_1_1regression_1_1_utils_regression_test.html#a29ccb38cafacb3d15f1610080cdc2d8a" title="testsuite.regression.Utils\lRegressionTest.testBug70436" alt="" coords="243,136,439,177"/>
+</map>

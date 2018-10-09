@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.ConnectionImpl.setAutoCommit" name="com.mysql.jdbc.ConnectionImpl.setAutoCommit">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_properties_impl.html#aeb5f62adfbde0b6fcd7b43565abb6ed5" title="com.mysql.jdbc.Connection\lPropertiesImpl.getUseLocalSessionState" alt="" coords="236,5,495,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#a4d22c7c85c9da8bc9ee56bd4e0ede41d" title="com.mysql.jdbc.Connection\lImpl.getIO" alt="" coords="274,71,457,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_connection_impl.html#ad757f25d671446b4bf4eec638de7ddce" title="com.mysql.jdbc.Connection\lImpl.execSQL" alt="" coords="274,136,457,177"/>
+</map>

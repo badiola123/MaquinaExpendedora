@@ -1,0 +1,5 @@
+<map id="com.mysql.jdbc.Connection.setStatementComment" name="com.mysql.jdbc.Connection.setStatementComment">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a31c5d98ba9578549f71ddae31c27fc7b" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.setStatementComment" alt="" coords="259,5,533,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#ae16daacee48aa9a98fa24374bf6e7681" title="com.mysql.jdbc.MultiHost\lMySQLConnection.setStatement\lComment" alt="" coords="289,71,503,127"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_replication_my_s_q_l_connection.html#aa7fc0fd1686f31130f8737f89087b8bd" title="com.mysql.jdbc.Replication\lMySQLConnection.setStatementComment" alt="" coords="261,152,531,193"/>
+</map>

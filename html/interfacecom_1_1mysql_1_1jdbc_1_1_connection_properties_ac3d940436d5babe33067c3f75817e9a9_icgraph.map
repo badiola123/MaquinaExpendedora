@@ -1,0 +1,7 @@
+<map id="com.mysql.jdbc.ConnectionProperties.getUseUsageAdvisor" name="com.mysql.jdbc.ConnectionProperties.getUseUsageAdvisor">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1jdbc2_1_1optional_1_1_connection_wrapper.html#a7d80daca8afe93680ae9cff38bd9e287" title="com.mysql.jdbc.jdbc2.optional.\lConnectionWrapper.getUseUsageAdvisor" alt="" coords="259,5,519,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_multi_host_my_s_q_l_connection.html#a713344936008f7ef2eefecaec2aa5754" title="com.mysql.jdbc.MultiHost\lMySQLConnection.getUseUsageAdvisor" alt="" coords="261,71,516,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_row_data_dynamic.html#a284d8e7db5b779d4c20de17f1f5b8c5c" title="com.mysql.jdbc.RowDataDynamic.close" alt="" coords="261,137,517,163"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a2d3783c9f776e2eb863b449b21825b4d" title="com.mysql.jdbc.Statement\lImpl.StatementImpl" alt="" coords="299,188,478,229"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ad3cdc3e336070c453b5878ce9ba8a0cc" title="com.mysql.jdbc.PreparedStatement.execute\lPreparedBatchAsMultiStatement" alt="" coords="567,188,847,229"/>
+</map>

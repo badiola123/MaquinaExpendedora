@@ -1,0 +1,8 @@
+<map id="com.mysql.jdbc.StatementImpl.getMaxRows" name="com.mysql.jdbc.StatementImpl.getMaxRows">
+<area shape="rect" id="node2" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a5e92dd77e4ff9bf65cff4f50e63a1045" title="com.mysql.jdbc.Statement\lImpl.setFetchSize" alt="" coords="232,71,411,112"/>
+<area shape="rect" id="node7" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a389a39b21dfb359636a9124ae91d6b86" title="com.mysql.jdbc.Statement\lImpl.getLargeMaxRows" alt="" coords="232,136,411,177"/>
+<area shape="rect" id="node3" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a2d3783c9f776e2eb863b449b21825b4d" title="com.mysql.jdbc.Statement\lImpl.StatementImpl" alt="" coords="467,5,645,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#aebd63b45b20e164efe403d4c1d5bebc9" title="com.mysql.jdbc.Statement\lImpl.enableStreamingResults" alt="" coords="461,71,651,112"/>
+<area shape="rect" id="node6" href="$classcom_1_1mysql_1_1jdbc_1_1_statement_impl.html#a1189cc8b7b69c3abdcee0cedb03298f5" title="com.mysql.jdbc.Statement\lImpl.disableStreamingResults" alt="" coords="459,136,653,177"/>
+<area shape="rect" id="node4" href="$classcom_1_1mysql_1_1jdbc_1_1_prepared_statement.html#ad3cdc3e336070c453b5878ce9ba8a0cc" title="com.mysql.jdbc.PreparedStatement.execute\lPreparedBatchAsMultiStatement" alt="" coords="701,5,981,47"/>
+</map>
