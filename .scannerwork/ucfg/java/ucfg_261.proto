@@ -1,43 +1,0 @@
-
-7vistas.PanelStock#comprobarPosLibre(ILjava/util/List;)Z
-__unknown_file (""listaPos"5*≤
-1è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java£	 £("ö
-è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java£ £(
-""*≤
-3è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java°6 °(;"ö
-è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java°/ °(<
-""*˘
-4è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java° °(⁄
-◊
-è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java° °(%
-%1"'java.util.List#get(I)Ljava/lang/Object;*
-
-
-listaPos*
-""¸
-˘
-è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java° °(&
-%2"@java.lang.Integer#valueOf(Ljava/lang/String;)Ljava/lang/Integer;*"
-java.lang.Integer*
-
-%1*
-3
-5*·
-5è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java† †(¡
-æ
-è
-ÇC:\Users\Edgar\Desktop\MU\1\SoftwareEngineering\Second exam\DocumentingTheSourceCode\MaquinaExpendedora\src\vistas\PanelStock.java† †($
-%0"java.util.List#size()I*
-
-
-listaPos*
-4
-1
