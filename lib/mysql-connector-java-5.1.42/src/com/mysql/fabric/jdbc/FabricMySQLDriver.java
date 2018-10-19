@@ -103,7 +103,9 @@ public class FabricMySQLDriver extends NonRegisteringDriver implements Driver {
         return super.parseURL(url.replaceAll("fabric:", ""), defaults);
     }
 
-    public Logger getParentLogger() throws SQLException {
-        throw new SQLException("no logging");
+    public Logger getParentLogger() {
+        try {
+			throw new SQLException("no logging");
+		} catch (SQLException e) {}
     }
 }

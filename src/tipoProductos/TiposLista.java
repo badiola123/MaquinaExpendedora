@@ -9,18 +9,14 @@ package tipoProductos;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
-import Productos.Producto;
-import clientes.Cliente;
-import clientes.Mapeador;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
 import vistas.Principal;
@@ -31,7 +27,7 @@ public class TiposLista extends AbstractTableModel{
 	List<TipoProducto> lista;
 	ModeloColumnasTablaTipoProductos columnas;
 	MyDataAccess conexion;
-	
+	private final static Logger LOGGER = Logger.getLogger(TiposLista.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	
   /**
@@ -84,7 +80,7 @@ public class TiposLista extends AbstractTableModel{
 		       
 	        }
 	      }catch (SQLException e) {
-	        e.printStackTrace();
+	    	  LOGGER.log(Level.ALL, e.getMessage());
 	     } 
 	    return lista;
 	}

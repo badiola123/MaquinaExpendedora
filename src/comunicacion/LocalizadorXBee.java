@@ -7,6 +7,8 @@
 package comunicacion;
 
 import java.util.Enumeration;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import com.digi.xbee.api.XBeeDevice;
 import com.digi.xbee.api.exceptions.XBeeException;
@@ -15,6 +17,7 @@ import gnu.io.CommPortIdentifier;
 
 public class LocalizadorXBee {
 	
+	private final static Logger LOGGER = Logger.getLogger(LocalizadorXBee.class.getName());
 	final static int BAUD_RATE = 9600;
 	Enumeration<?> puertos;
 	String puertoConectado;
@@ -53,11 +56,11 @@ public class LocalizadorXBee {
 		        		xBee.close();
 		        		puertoConectado = puerto;
 					} catch (XBeeException e) {
-							e.printStackTrace(); 
+						LOGGER.log(Level.ALL, e.getMessage()); 
 					}
 				
 		        } catch (NullPointerException e) {
-		    			e.printStackTrace();
+		        	LOGGER.log(Level.ALL, e.getMessage());
 		    	}
 		}      
 	}  

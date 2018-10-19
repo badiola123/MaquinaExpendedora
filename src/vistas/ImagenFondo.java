@@ -12,12 +12,15 @@ import java.awt.LayoutManager;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 public class ImagenFondo extends JPanel{
 
+	private final static Logger LOGGER = Logger.getLogger(ImagenFondo.class.getName());
 	private static final long serialVersionUID = 1L;
 	private BufferedImage imagen;
 
@@ -31,8 +34,7 @@ public class ImagenFondo extends JPanel{
 		try {
 			imagen = ImageIO.read(new File(n));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.log(Level.ALL, e.getMessage());
 		}
 		if (imagen != null) {
 			this.imagen = imagen;

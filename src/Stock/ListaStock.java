@@ -9,6 +9,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -25,6 +27,7 @@ public class ListaStock extends AbstractTableModel{
 	ModeloColumnasTablaStock columnas;
 	MyDataAccess conexion;
 	
+	private final static Logger LOGGER = Logger.getLogger(ListaStock.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of ListaStock, which establishes the connection to the database
@@ -77,7 +80,7 @@ public class ListaStock extends AbstractTableModel{
 		       
 	        }
 	      }catch (SQLException e) {
-	        e.printStackTrace();
+	    	  LOGGER.log(Level.ALL, e.getMessage());
 	     } 
 	    return lista;
 	}

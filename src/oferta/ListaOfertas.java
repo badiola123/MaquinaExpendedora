@@ -10,18 +10,14 @@ package oferta;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
-import clientes.Cliente;
-import clientes.Mapeador;
-import clientes.ModeloColumnasTabla;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
 import vistas.Principal;
@@ -32,7 +28,7 @@ public class ListaOfertas extends AbstractTableModel{
 	List<Oferta> lista;
 	ModeloColumnasTablaOferta columnas;
 	MyDataAccess conexion;
-	
+	private final static Logger LOGGER = Logger.getLogger(ListaOfertas.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	
 	/**
@@ -85,7 +81,7 @@ public class ListaOfertas extends AbstractTableModel{
 		       
 	        }
 	      }catch (SQLException e) {
-	        e.printStackTrace();
+	    	  LOGGER.log(Level.ALL, e.getMessage());
 	     } 
 	    return lista;
 	}

@@ -14,6 +14,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -30,7 +32,7 @@ public class Clientela extends AbstractTableModel{
 	ModeloColumnasTabla columnas;
 	MyDataAccess conexion;
 	Map<String, List<Cliente>> agrupacion;
-	
+	private final static Logger LOGGER = Logger.getLogger(Clientela.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of Clientela, which establishes the connection to the database
@@ -91,7 +93,7 @@ public class Clientela extends AbstractTableModel{
 		       
 	        }
 	      }catch (SQLException e) {
-	        e.printStackTrace();
+	    	  LOGGER.log(Level.ALL, e.getMessage());
 	     } 
 	    return lista;
 	}

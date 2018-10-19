@@ -18,6 +18,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultListModel;
@@ -31,7 +33,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
-import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
 
 import Adaptadores.ComboRenderer;
@@ -73,6 +74,7 @@ public class PanelVentas extends JPanel implements ActionListener{
 	static final String IMAGEN_ATRAS = "img/atras.png";
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
+	private final static Logger LOGGER = Logger.getLogger(PanelVentas.class.getName());
 	
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
@@ -308,7 +310,7 @@ public class PanelVentas extends JPanel implements ActionListener{
 					try {
 						conexion.setQuery("rollback");
 					} catch (SQLException e2) {
-						e2.printStackTrace();
+						LOGGER.log(Level.ALL, e2.getMessage());
 					}
 					nombreError = String.valueOf(e1);
 				}catch(ArrayIndexOutOfBoundsException e1){

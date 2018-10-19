@@ -11,6 +11,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class MyDataAccess {
 
@@ -19,6 +21,7 @@ public class MyDataAccess {
  private static String _bd="maquina";
  static String _url = "jdbc:mysql://localhost/"+_bd;
  private Connection conn = null;
+ private final static Logger LOGGER = Logger.getLogger(MyDataAccess.class.getName());
  
  /**
  * Constructor that initalizes the connection with the database
@@ -57,7 +60,7 @@ public class MyDataAccess {
       resultado = state.executeQuery(_query);
     }
     catch(SQLException e) {
-      e.printStackTrace();
+    	LOGGER.log(Level.ALL, e.getMessage());
     }
     return resultado;
  }
