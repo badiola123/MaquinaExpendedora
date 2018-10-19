@@ -90,7 +90,7 @@ public class Inventario extends AbstractTableModel{
 		        }
 		       
 	        }
-	      }catch (SQLException e) {
+	      }catch (Exception e) {
 	    	  LOGGER.log(Level.ALL, e.getMessage());
 	     }
 	    

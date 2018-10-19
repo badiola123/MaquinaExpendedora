@@ -92,7 +92,7 @@ public class Clientela extends AbstractTableModel{
 		        }
 		       
 	        }
-	      }catch (SQLException e) {
+	      }catch (Exception e) {
 	    	  LOGGER.log(Level.ALL, e.getMessage());
 	     } 
 	    return lista;
