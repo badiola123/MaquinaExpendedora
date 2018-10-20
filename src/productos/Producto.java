@@ -15,19 +15,19 @@ public class Producto {
 	int id;
 	String descripcion;
 	double precio;
-	int tipo_id;
+	int tipoId;
 		/**
 	 * Constructor of the class Producto, which creates the object of the product with all the needed information
 	 * @param id ID of product
 	 * @param descripcion description of the product
 	 * @param precio price of the product 
-	 * @param tipo_id id of the product type
+	 * @param tipoId id of the product type
 	 */
-	public Producto(int id, String descripcion, Double precio, int tipo_id){
+	public Producto(int id, String descripcion, Double precio, int tipoId){
 		this.id = id;
 		this.descripcion = descripcion;
 		this.precio = precio;
-		this.tipo_id = tipo_id;
+		this.tipoId = tipoId;
 	}
 	
 	/**
@@ -52,10 +52,10 @@ public class Producto {
 	 */
 	public Object getFieldAt(int columna) {
 		switch (columna){
-		case 0: return new Integer(id);
+		case 0: return Integer.valueOf(id);
 		case 1: return descripcion;
-		case 2: return new Double(precio);
-		case 3: return new Integer(tipo_id);
+		case 2: return Double.valueOf(precio);
+		case 3: return Integer.valueOf(tipoId);
 		default: return null; 
 		}	
 	}
@@ -66,9 +66,7 @@ public class Producto {
 	 * @return Array of strings with all the information
 	 */
 	public String[] getDatos(){
-		String[] datos = {String.valueOf(this.id), this.descripcion, String.valueOf(this.precio), String.valueOf(this.tipo_id)};
-		
-		return datos;
+		return new String[] {String.valueOf(this.id), this.descripcion, String.valueOf(this.precio), String.valueOf(this.tipoId)};
 	}
 	/**
 	 * Getter of the constant of all the product information fields for database queries
@@ -126,6 +124,6 @@ public class Producto {
 	 */
 	@Override
 	public String toString() {
-		return "ID: " + this.id + ", descripción: " + this.descripcion + ", precio: " + this.precio + ", ID tipo producto: " + this.tipo_id;
+		return "ID: " + this.id + ", descripción: " + this.descripcion + ", precio: " + this.precio + ", ID tipo producto: " + this.tipoId;
 	}
 }

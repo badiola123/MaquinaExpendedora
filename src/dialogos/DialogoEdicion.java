@@ -38,7 +38,7 @@ import maquinas.Maquina;
 import oferta.Oferta;
 import productos.Producto;
 import stock.Stock;
-import tipoProductos.TipoProducto;
+import tipo_productos.TipoProducto;
 import venta.Venta;
 import vistas.Principal;
 

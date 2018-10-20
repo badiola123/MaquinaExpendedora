@@ -11,22 +11,22 @@ public class Stock {
 	private static final String[] opcionesStock = {"ID maquina", "ID producto", "fecha cambio", "total", "posicion"};
 	private static final boolean[] formatoColumnas = {false, false, true, false, false}; //true = comillas ; false = sin comillas
 	
-	int id_maquina;
-	int id_producto;
+	int idMaquina;
+	int idProducto;
 	String fecha;
 	int total;
 	int posicion;
 	/**
 	 * Constructor of the class Producto, which creates the object of the product with all the needed information
-	 * @param id_maquina ID of machine
-	 * @param id_producto ID of prodcut
+	 * @param idMaquina ID of machine
+	 * @param idProducto ID of prodcut
 	 * @param fecha date
 	 * @param total number of elements in stock
 	 * @param posicion position of the stock in a machine
 	 */
-	public Stock(int id_maquina, int id_producto, String fecha, int total, int posicion){
-		this.id_maquina = id_maquina;
-		this.id_producto = id_producto;
+	public Stock(int idMaquina, int idProducto, String fecha, int total, int posicion){
+		this.idMaquina = idMaquina;
+		this.idProducto = idProducto;
 		this.fecha = fecha;
 		this.total = total;
 		this.posicion = posicion;
@@ -38,11 +38,8 @@ public class Stock {
 	 * @return Class of the variable
 	 */
 	public Class<?> getFieldClass(int indice){
-		switch (indice){
-		case 2: return String.class;
-		default: return Integer.class; 
-		}
-		
+		if(indice == 2) return String.class;
+		return Integer.class;
 	}
 	/**
 	 * Method to get object of the variable of a stock in reference to an index
@@ -52,11 +49,11 @@ public class Stock {
 	 */
 	public Object getFieldAt(int columna) {
 		switch (columna){
-		case 0: return new Integer(id_maquina);
-		case 1: return new Integer(id_producto);
+		case 0: return Integer.valueOf(idMaquina);
+		case 1: return Integer.valueOf(idProducto);
 		case 2: return fecha;
-		case 3: return new Integer(total);
-		case 4: return new Integer(posicion);
+		case 3: return Integer.valueOf(total);
+		case 4: return Integer.valueOf(posicion);
 		default: return null; 
 		}	
 	}
@@ -65,16 +62,16 @@ public class Stock {
 	 *
 	 * @return ID as a string
 	 */
-	public int getId_maquina() {
-		return id_maquina;
+	public int getIdMaquina() {
+		return idMaquina;
 	}
 	/**
 	 * Getter of the ID of the product
 	 *
 	 * @return ID as a string
 	 */
-	public int getId_producto() {
-		return id_producto;
+	public int getIdProducto() {
+		return idProducto;
 	}
 	/**
 	 * Getter of the date
@@ -106,9 +103,7 @@ public class Stock {
 	 * @return Array of strings with all the information
 	 */
 	public String[] getDatos(){
-		String[] datos = {String.valueOf(this.id_maquina), String.valueOf(this.id_producto), fecha, String.valueOf(this.total), String.valueOf(this.posicion)};
-		
-		return datos;
+		return new String[] {String.valueOf(this.idMaquina), String.valueOf(this.idProducto), fecha, String.valueOf(this.total), String.valueOf(this.posicion)};
 	}
 	/**
 	 * Getter of the constant of all the stock information fields for database queries
@@ -140,7 +135,7 @@ public class Stock {
 	 * @return String of primary key
 	 */
 	public String getPrimaryKey(){
-		return nombreColumnas[0] + " = " + (formatoColumnas[0] ? "'" + this.id_maquina + "'" : this.id_maquina) + " and " + nombreColumnas[1] + " = " + (formatoColumnas[1] ? "'" + this.id_producto + "'" : this.id_producto);
+		return nombreColumnas[0] + " = " + (formatoColumnas[0] ? "'" + this.idMaquina + "'" : this.idMaquina) + " and " + nombreColumnas[1] + " = " + (formatoColumnas[1] ? "'" + this.idProducto + "'" : this.idProducto);
 	}
 	/**
 	 * Override of the "toString" method
@@ -148,6 +143,6 @@ public class Stock {
 	 */
 	@Override
 	public String toString() {
-		return "ID maquina: " + this.id_maquina + ", ID producto: " + this.id_producto + ", fecha cambio: " + this.fecha + ", total: " + this.total + ", posicion: " + this.posicion;
+		return "ID maquina: " + this.idMaquina + ", ID producto: " + this.idProducto + ", fecha cambio: " + this.fecha + ", total: " + this.total + ", posicion: " + this.posicion;
 	}
 }

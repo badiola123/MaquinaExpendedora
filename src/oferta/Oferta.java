@@ -11,8 +11,8 @@ public class Oferta {
 	private static final String[] opcionesOferta = {"ID maquina", "ID producto", "fecha reposición", "cantidad"};
 	private static final boolean[] formatoColumnas = {false, false, true, false}; //true = comillas ; false = sin comillas
 	
-	int id_maquina;
-	int id_producto;
+	int idMaquina;
+	int idProducto;
 	String fecha;
 	int cantidad;
 	
@@ -23,10 +23,10 @@ public class Oferta {
 	 * @param fecha Date of offer
 	 * @param cantidad Quantity  
 	 */
-	public Oferta(int id_maquina, int id_producto, String fecha, int cantidad){
+	public Oferta(int idMaquina, int idProducto, String fecha, int cantidad){
 		
-		this.id_maquina = id_maquina;
-		this.id_producto = id_producto;
+		this.idMaquina = idMaquina;
+		this.idProducto = idProducto;
 		this.fecha = fecha;
 		this.cantidad = cantidad;
 	}
@@ -38,11 +38,8 @@ public class Oferta {
 	 * @return Class of the variable
 	 */
 	public Class<?> getFieldClass(int indice){
-		switch (indice){
-		case 2: return String.class;
-		default: return Integer.class; 
-		}
-		
+		if(indice == 2) return String.class;
+		return Integer.class;
 	}
 
 	/**
@@ -53,10 +50,10 @@ public class Oferta {
 	 */
 	public Object getFieldAt(int columna) {
 		switch (columna){
-		case 0: return new Integer(id_maquina);
-		case 1: return new Integer(id_producto);
+		case 0: return Integer.valueOf(idMaquina);
+		case 1: return Integer.valueOf(idProducto);
 		case 2: return fecha;
-		case 3: return new Integer(cantidad);
+		case 3: return Integer.valueOf(cantidad);
 		default: return null; 
 		}	
 	}
@@ -66,8 +63,8 @@ public class Oferta {
 	 *
 	 * @return ID as a string
 	 */
-	public int getId_maquina() {
-		return id_maquina;
+	public int getIdMaquina() {
+		return idMaquina;
 	}
 
 	/**
@@ -75,8 +72,8 @@ public class Oferta {
 	 *
 	 * @return ID as a string
 	 */
-	public int getId_producto() {
-		return id_producto;
+	public int getIdProducto() {
+		return idProducto;
 	}
 
 	/**
@@ -103,9 +100,7 @@ public class Oferta {
 	 * @return Array of strings with all the information
 	 */
 	public String[] getDatos(){
-		String[] datos = {String.valueOf(this.id_maquina), String.valueOf(this.id_producto), fecha, String.valueOf(this.cantidad)};
-		
-		return datos;
+		return new String[] {String.valueOf(this.idMaquina), String.valueOf(this.idProducto), fecha, String.valueOf(this.cantidad)};
 	}
 
 	/**
@@ -141,8 +136,8 @@ public class Oferta {
 	 * @return String of primary key
 	 */
 	public String getPrimaryKey(){
-		return nombreColumnas[0] + " = " + (formatoColumnas[0] ? "'" + this.id_maquina + "'" : this.id_maquina) + " and " 
-				+ nombreColumnas[1] + " = " + (formatoColumnas[1] ? "'" + this.id_producto + "'" : this.id_producto) + " and " 
+		return nombreColumnas[0] + " = " + (formatoColumnas[0] ? "'" + this.idMaquina + "'" : this.idMaquina) + " and " 
+				+ nombreColumnas[1] + " = " + (formatoColumnas[1] ? "'" + this.idProducto + "'" : this.idProducto) + " and " 
 				+ nombreColumnas[2] + " = " + (formatoColumnas[2] ? "'" + this.fecha + "'" : this.fecha);
 	}
 
@@ -152,6 +147,6 @@ public class Oferta {
 	 */
 	@Override
 	public String toString() {
-		return "ID maquina: " + this.id_maquina + ", ID producto: " + this.id_producto + ", fecha reposición: " + this.fecha + ", cantidad: " + this.cantidad;
+		return "ID maquina: " + this.idMaquina + ", ID producto: " + this.idProducto + ", fecha reposición: " + this.fecha + ", cantidad: " + this.cantidad;
 	}
 }

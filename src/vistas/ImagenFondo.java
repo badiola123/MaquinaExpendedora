@@ -20,9 +20,9 @@ import javax.swing.JPanel;
 
 public class ImagenFondo extends JPanel{
 
-	private final static Logger LOGGER = Logger.getLogger(ImagenFondo.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(ImagenFondo.class.getName());
 	private static final long serialVersionUID = 1L;
-	private BufferedImage imagen;
+	private transient BufferedImage imagen;
 
   /**
 	* Constructor of the class which loads the image from a file and sets a layout
@@ -35,9 +35,6 @@ public class ImagenFondo extends JPanel{
 			imagen = ImageIO.read(new File(n));
 		} catch (IOException e) {
 			LOGGER.log(Level.ALL, e.getMessage());
-		}
-		if (imagen != null) {
-			this.imagen = imagen;
 		}
 	}
   

@@ -40,30 +40,28 @@ import comunicacion.ModuloXBee;
 import comunicacion.Recepcion;
 import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
-<<<<<<< HEAD
-
-=======
-import dialogos.DialogoEdicion;
->>>>>>> dcc9a683450c51f781d521176520ac3a6c225382
 import maquinas.Maquina;
 import productos.Producto;
-import tipoProductos.TipoProducto;
+import tipo_productos.TipoProducto;
 
 
 public class PanelCrear extends JPanel implements ItemListener, ActionListener, Observer{
 	JTable vTabla;
 	JScrollPane panelScrollCampos;
-	Toolkit toolkit;
+	transient Toolkit toolkit;
 
 	
 	PanelTrabajador panelTrabajador;
 	JFrame principal;
-	MyDataAccess conexion;
-	ModuloXBee xBee;
+	transient MyDataAccess conexion;
+	transient ModuloXBee xBee;
 	
 	JPanel panelOpciones;
 	ButtonGroup opciones;
-	JRadioButton rbCliente, rbMaquina, rbProducto, rbTipoP;
+	JRadioButton rbCliente;
+	JRadioButton rbMaquina;
+	JRadioButton rbProducto;
+	JRadioButton rbTipoP;
 	boolean selected = false;
 	
 	JTextField[] datosTextField;
@@ -74,6 +72,7 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 	static final String IMAGEN_ATRAS = "img/atras.png";
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
+	private static final String USEDFONT = "Arial";
 	
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
@@ -228,25 +227,25 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 		
 		rbCliente = new JRadioButton("Clientes");
 		rbCliente.setHorizontalAlignment(JLabel.RIGHT);
-		rbCliente.setFont(new Font("Arial", Font.PLAIN, 30));
+		rbCliente.setFont(new Font(USEDFONT, Font.PLAIN, 30));
 		rbCliente.setBackground(Color.CYAN);
 		rbCliente.addItemListener(this);
 		
 		rbMaquina = new JRadioButton("Máquinas");
 		rbMaquina.setHorizontalAlignment(JLabel.CENTER);
-		rbMaquina.setFont(new Font("Arial", Font.PLAIN, 30));
+		rbMaquina.setFont(new Font(USEDFONT, Font.PLAIN, 30));
 		rbMaquina.setBackground(Color.CYAN);
 		rbMaquina.addItemListener(this);
 		
 		rbProducto = new JRadioButton("Productos");
 		rbProducto.setHorizontalAlignment(JLabel.LEFT);
-		rbProducto.setFont(new Font("Arial", Font.PLAIN, 30));
+		rbProducto.setFont(new Font(USEDFONT, Font.PLAIN, 30));
 		rbProducto.setBackground(Color.CYAN);
 		rbProducto.addItemListener(this);
 		
 		rbTipoP = new JRadioButton("Tipo productos");
 		rbTipoP.setHorizontalAlignment(JLabel.LEFT);
-		rbTipoP.setFont(new Font("Arial", Font.PLAIN, 30));
+		rbTipoP.setFont(new Font(USEDFONT, Font.PLAIN, 30));
 		rbTipoP.setBackground(Color.CYAN);
 		rbTipoP.addItemListener(this);
 		
@@ -277,31 +276,32 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 			if ((JRadioButton)e.getSource()==rbCliente){
 				this.add(crearCamposClientes(),BorderLayout.CENTER);
 				if(xBee != null) xBee.mandarTramaDatosNuevoUsuario();
-				System.out.println("mandando nuevo usuario");
 				selected = true;
 			}
 			else{
 				if(selected){
 					if(xBee != null) xBee.mandarTramaDatosNuevoUsuarioCancelado();
-					System.out.println("mandando nuuevo usuario cancelado");
 					selected = false;
 				}
-				
-				if ((JRadioButton)e.getSource()==rbMaquina){
-					this.add(crearCamposMaquinas(),BorderLayout.CENTER);
-				}
-				else if ((JRadioButton)e.getSource()==rbProducto){
-					this.add(crearCamposProductos(),BorderLayout.CENTER);
-				}
-				else if ((JRadioButton)e.getSource()==rbTipoP){
-					this.add(crearCamposTipoProductos(),BorderLayout.CENTER);
-				}
+				checkRadioButton(e);
 			}
 		}
 		
 	}
+	
+	private void checkRadioButton(ItemEvent e) {
+		if ((JRadioButton)e.getSource()==rbMaquina){
+			this.add(crearCamposMaquinas(),BorderLayout.CENTER);
+		}
+		else if ((JRadioButton)e.getSource()==rbProducto){
+			this.add(crearCamposProductos(),BorderLayout.CENTER);
+		}
+		else if ((JRadioButton)e.getSource()==rbTipoP){
+			this.add(crearCamposTipoProductos(),BorderLayout.CENTER);
+		}
+	}
 
-  /**
+/**
 	 * Overridden method to specify the action when the buttons with an action listener are pressed 
 	 * @param e The event which contains information about the action
 	 */
@@ -309,7 +309,6 @@ public class PanelCrear extends JPanel implements ItemListener, ActionListener, 
 	public void actionPerformed(ActionEvent e) {
 		if(e.getActionCommand().equals("cancel")){
 			if(rbCliente.isSelected() && xBee != null) xBee.mandarTramaDatosNuevoUsuarioCancelado();
-			System.out.println("mandando nuuevo usuario cancelado");
 			panelTrabajador.volver();
 		}
 		else if(e.getActionCommand().equals("ok")){

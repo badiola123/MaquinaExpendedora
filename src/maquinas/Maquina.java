@@ -11,7 +11,7 @@ public class Maquina {
 	private static final String[] nombreColumnas = {"maquina_id", "m_provincia", "m_pueblo", "m_cp", "m_calle"};
 	private static final String[] opcionesMaquina = {"ID", "Provincia", "Pueblo", "Código postal", "Calle"};
 	private static final boolean[] formatoColumnas = {false, true, true, false, true}; //true = comillas ; false = sin comillas
-	private static final int numHusillosMaquina = 3;
+	private static final int NUMHUSILLOSMAQUINA = 3;
 	
 	int id;
 	String provincia;
@@ -58,10 +58,10 @@ public class Maquina {
 	 */
 	public Object getFieldAt(int columna) {
 		switch (columna){
-		case 0: return new Integer(id);
+		case 0: return Integer.valueOf(id);
 		case 1: return provincia;
 		case 2: return pueblo;
-		case 3: return new Integer(cp);
+		case 3: return Integer.valueOf(cp);
 		case 4: return calle;
 		default: return null; 
 		}	
@@ -73,9 +73,7 @@ public class Maquina {
 	 * @return Array of strings with all the information
 	 */
 	public String[] getDatos(){
-		String[] datos = {String.valueOf(this.id), this.provincia, this.pueblo, String.valueOf(this.cp), this.calle};
-		
-		return datos;
+		return new String[] {String.valueOf(this.id), this.provincia, this.pueblo, String.valueOf(this.cp), this.calle};
 	}
 	
 	/**
@@ -129,7 +127,7 @@ public class Maquina {
 	 * @return Number of spindles as integer
 	 */
 	public static int getNumhusillosmaquina() {
-		return numHusillosMaquina;
+		return NUMHUSILLOSMAQUINA;
 	}
 
 	/**

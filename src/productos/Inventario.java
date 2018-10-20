@@ -13,8 +13,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
 import conexion_sql.Comandos;
@@ -24,13 +22,12 @@ import vistas.Principal;
 
 public class Inventario extends AbstractTableModel{
 	
-	List<Producto> listaEntera;
-	List<Producto> lista;
+	transient List<Producto> listaEntera;
+	transient List<Producto> lista;
 	ModeloColumnasTablaProducto columnas;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	private static final Logger LOGGER = Logger.getLogger(Inventario.class.getName());
 	
-	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of Inventario, which establishes the connection to the database
      * @param columnas Columns of table
@@ -57,9 +54,8 @@ public class Inventario extends AbstractTableModel{
 		ResultSet resultado = null;
 		Comandos comandos = new Comandos(conexion);	
 		
-		if(maquinaID == -1) resultado = comandos.select(null, Principal.getTablaproducto(), null, null, null, false, 0); // Seleccionar todos los productos
-		else{ // Seleccionar productos de una maquina
-			//String join = "producto p JOIN stock s ON p.producto_id = s.producto_id JOIN maquina m ON s.maquina_id = m.maquina_id";
+		if(maquinaID == -1) resultado = comandos.select(null, Principal.getTablaproducto(), null, null, null, false, 0);
+		else{
 			String join = Principal.getTablaproducto() + " join " + Principal.getTablastock() + " on " + Principal.getTablaproducto() 
 			+ "." + Producto.getNombreColumnas()[0] + " = " + Principal.getTablastock() + "." + Producto.getNombreColumnas()[0] + " join "
 			+ Principal.getTablamaquina() + " on " + Principal.getTablastock() + "." + Maquina.getNombreColumnas()[0] + " = "
@@ -75,15 +71,11 @@ public class Inventario extends AbstractTableModel{
 		        	
 		        	for(int i = 1; i < (Producto.getNombreColumnas().length + 1); i++){
 		        		datos[i-1] = resultado.getString(i);
-		        		System.out.println(datos[i-1]);
 		        	}
-			        System.out.println("\n");
 			        
 			        producto = new Producto(Integer.valueOf(datos[0]), datos[1], Double.valueOf(datos[2]), Integer.valueOf(datos[3]));
-			        
-			        if(producto != null){
-			        	lista.add(producto);
-			        }
+			       
+		        	lista.add(producto);
 			       
 		        }
 		      }catch (SQLException e) {

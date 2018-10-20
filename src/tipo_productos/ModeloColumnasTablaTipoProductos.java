@@ -4,7 +4,7 @@
  * @brief This file contains the table column model for product types
  */
 
-package tipoProductos;
+package tipo_productos;
 
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.TableColumn;

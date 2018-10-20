@@ -4,7 +4,7 @@
  * @brief This file contains the table model for product type visualization
  */
 
-package tipoProductos;
+package tipo_productos;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,12 +21,11 @@ import vistas.Principal;
 
 public class TiposLista extends AbstractTableModel{
 	
-	List<TipoProducto> listaEntera;
-	List<TipoProducto> lista;
+	transient List<TipoProducto> listaEntera;
+	transient List<TipoProducto> lista;
 	ModeloColumnasTablaTipoProductos columnas;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	private static final Logger LOGGER = Logger.getLogger(TiposLista.class.getName());
-	private static final String IM_ERROR = "img/error.png";
 	
   /**
 	 * Constructor of TiposLista, which establishes the connection to the database
@@ -62,15 +61,11 @@ public class TiposLista extends AbstractTableModel{
 		        	
 		        	for(int i = 1; i < (TipoProducto.getNombreColumnas().length + 1); i++){
 		        		datos[i-1] = resultado.getString(i);
-		        		System.out.println(datos[i-1]);
 		        	}
-			        System.out.println("\n");
 			        
 		        	tipoProducto = new TipoProducto(Integer.valueOf(datos[0]), datos[1]);
-			        
-			        if(tipoProducto != null){
-			        	lista.add(tipoProducto);
-			        }
+			       
+		        	lista.add(tipoProducto);
 			       
 		        }
 		      }catch (SQLException e) {

@@ -4,7 +4,7 @@
  * @brief This file contains the adapter for product type table styling
  */
 
-package tipoProductos;
+package tipo_productos;
 
 import java.awt.Component;
 import java.awt.Font;
@@ -30,15 +30,13 @@ public class TrazadorTablaTipoProductos extends DefaultTableCellRenderer {
 		
 		super.getTableCellRendererComponent(table, valor, isSelected, hasFocus, fila, columna);
 		table.setRowHeight(50);
-		this.setFont(new Font("Arial", Font.PLAIN, 22));		
-		switch (columna ){
-		case 0: {
-			this.setHorizontalAlignment(CENTER);
-			this.setFont(new Font("Arial", Font.BOLD, 22));
-			break;
-		}
-		case 1: this.setHorizontalAlignment(CENTER);break;
-		}
+		switchColumna(columna);
 		return this;
+	}
+
+	private void switchColumna(int columna) {
+		this.setHorizontalAlignment(CENTER);
+		if(columna == 0) this.setFont(new Font("Arial", Font.BOLD, 22));
+		else this.setFont(new Font("Arial", Font.PLAIN, 22));
 	}
 }

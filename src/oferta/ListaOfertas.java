@@ -23,12 +23,11 @@ import vistas.Principal;
 
 public class ListaOfertas extends AbstractTableModel{
 
-	List<Oferta> listaEntera;
-	List<Oferta> lista;
+	transient List<Oferta> listaEntera;
+	transient List<Oferta> lista;
 	ModeloColumnasTablaOferta columnas;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	private static final  Logger LOGGER = Logger.getLogger(ListaOfertas.class.getName());
-	private static final String IM_ERROR = "img/error.png";
 	
 	/**
 	 * Constructor of ListaOfertas, which establishes the connection to the database
@@ -64,15 +63,11 @@ public class ListaOfertas extends AbstractTableModel{
 		        	
 		        	for(int i = 1; i < (Oferta.getNombreColumnas().length + 1); i++){
 		        		datos[i-1] = resultado.getString(i);
-		        		System.out.println(datos[i-1]);
 		        	}
-			        System.out.println("\n");
 		        	
 			        oferta = new Oferta(Integer.valueOf(datos[0]), Integer.valueOf(datos[1]), datos[2], Integer.valueOf(datos[3]));
 			        
-			        if(oferta != null){
-			        	lista.add(oferta);
-			        }
+		        	lista.add(oferta);
 			       
 		        }
 		      }catch (SQLException e) {

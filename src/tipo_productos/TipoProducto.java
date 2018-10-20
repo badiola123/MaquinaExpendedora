@@ -4,7 +4,7 @@
  * @brief This file contains product type's variables and methods to have access to them
  */
 
-package tipoProductos;
+package tipo_productos;
 
 public class TipoProducto {
 	private static final String[] nombreColumnas = {"tipo_producto_id", "t_descripcion"};
@@ -30,11 +30,8 @@ public class TipoProducto {
 	 * @return Class of the variable
 	 */
 	public Class<?> getFieldClass(int indice){
-		switch (indice){
-		case 1: return String.class;
-		default: return Integer.class; 
-		}
-		
+		if(indice == 1) return String.class;
+		else return Integer.class;
 	}
 
   /**
@@ -45,7 +42,7 @@ public class TipoProducto {
 	 */
 	public Object getFieldAt(int columna) {
 		switch (columna){
-		case 0: return new Integer(id);
+		case 0: return Integer.valueOf(id);
 		case 1: return descripcion;
 		default: return null; 
 		}	
@@ -57,9 +54,7 @@ public class TipoProducto {
 	 * @return Array of strings with all the information
 	 */
 	public String[] getDatos(){
-		String[] datos = {String.valueOf(this.id), this.descripcion};
-		
-		return datos;
+		return new String[] {String.valueOf(this.id), this.descripcion};
 	}
 	
   /**

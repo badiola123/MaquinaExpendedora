@@ -21,12 +21,11 @@ import vistas.Principal;
 
 public class Maquinaria extends AbstractTableModel{
 	
-	List<Maquina> listaEntera;
-	List<Maquina> lista;
+	transient List<Maquina> listaEntera;
+	transient List<Maquina> lista;
 	ModeloColumnasTablaMaquina columnas;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	private static final Logger LOGGER = Logger.getLogger(Maquinaria.class.getName());
-	private static final String IM_ERROR = "img/error.png";
 	
 	/**
 	 * Constructor of Maquinaria, which establishes the connection to the database
@@ -62,15 +61,11 @@ public class Maquinaria extends AbstractTableModel{
 		        	
 		        	for(int i = 1; i < (Maquina.getNombreColumnas().length + 1); i++){
 		        		datos[i-1] = resultado.getString(i);
-		        		System.out.println(datos[i-1]);
 		        	}
-			        System.out.println("\n");
 			        
 			        maquina = new Maquina(Integer.valueOf(datos[0]), datos[1], datos[2], Integer.valueOf(datos[3]), datos[4]);
 			        
-			        if(maquina != null){
-			        	lista.add(maquina);
-			        }
+		        	lista.add(maquina);
 			       
 		        }
 		      }catch (SQLException e) {

@@ -32,17 +32,17 @@ import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 
 import productos.Producto;
-import tipoProductos.TipoProducto;
-
+import tipo_productos.TipoProducto;
 import vistas.Principal;
 
 public class DialogoInfoUsuario extends JDialog {
 
-	Toolkit toolkit;
-	MyDataAccess conexion;
-	Cliente cliente;
-	Comandos comandos;
-	
+	transient Toolkit toolkit;
+	transient MyDataAccess conexion;
+	transient Cliente cliente;
+	transient Comandos comandos;
+	private static final String DB_ORDER = "count(*)";
+	private static final String DB_JOIN = " JOIN ";
 	JLabel labelMaquina;
 	JLabel labelTipo;
 	JLabel labelProducto;	
@@ -99,14 +99,12 @@ public class DialogoInfoUsuario extends JDialog {
 		}
 		
 		columnasConPrefijo[0] = Principal.getTablamaquina() + "." + columnasConPrefijo[0];
-		//String seleccion = "maquina m JOIN venta v ON m.maquina_id = v.maquina_id";
-		String seleccion = Principal.getTablamaquina() + " join " + Principal.getTablaventa() 
+		String seleccion = Principal.getTablamaquina() + DB_JOIN + Principal.getTablaventa() 
 		+ " on " + Principal.getTablamaquina() + "." + Maquina.getNombreColumnas()[0] + " = " 
 				+ Principal.getTablaventa() + "." + Maquina.getNombreColumnas()[0];
 		
-		//String agrupacion = "v.maquina_id";
 		String agrupacion = Principal.getTablaventa() + "." + Maquina.getNombreColumnas()[0];
-		String orden = "count(*)";
+		String orden = DB_ORDER;
 		boolean sentidoOrden = false;
 		int limitar = 1;
 		
@@ -115,7 +113,6 @@ public class DialogoInfoUsuario extends JDialog {
         	if(resultado.next()){
     			for(int i = 1; i < (Maquina.getNombreColumnas().length + 1); i++){
             		datos[i-1] = resultado.getString(i);
-            		System.out.println(datos[i-1]);
             	}
     			
     			 maquina = new Maquina(Integer.valueOf(datos[0]), datos[1], datos[2], Integer.valueOf(datos[3]), datos[4]);
@@ -143,17 +140,15 @@ public class DialogoInfoUsuario extends JDialog {
 			columnasConPrefijo[i] = columnas[i];
 		}
 		
-		columnasConPrefijo[0] = Principal.getTablatipop() + "." + columnasConPrefijo[0];		
-		//String seleccion = "venta v JOIN producto p ON v.producto_id = p.producto_id JOIN tipo_producto tp ON p.p_tipo_id = tp.tipo_producto_id";
-		String seleccion = Principal.getTablaventa() + " JOIN " + Principal.getTablaproducto() + " ON " + Principal.getTablaventa() + "." 
-						  + Producto.getNombreColumnas()[0] + " = " + Principal.getTablaproducto() + "." + Producto.getNombreColumnas()[0] + " JOIN " 
+		columnasConPrefijo[0] = Principal.getTablatipop() + "." + columnasConPrefijo[0];
+		String seleccion = Principal.getTablaventa() + DB_JOIN + Principal.getTablaproducto() + " ON " + Principal.getTablaventa() + "." 
+						  + Producto.getNombreColumnas()[0] + " = " + Principal.getTablaproducto() + "." + Producto.getNombreColumnas()[0] + DB_JOIN 
 						  + Principal.getTablatipop() + " ON " + Principal.getTablaproducto() + "." + Producto.getNombreColumnas()[3] + " = " 
 						  + Principal.getTablatipop() + "." + TipoProducto.getNombreColumnas()[0];
 		
-		//String agrupacion = "tp.tipo_producto_id";
 		String agrupacion = Principal.getTablatipop() + "." + TipoProducto.getNombreColumnas()[0];
 				
-		String orden = "count(*)";
+		String orden = DB_ORDER;
 		boolean sentidoOrden = false;
 		int limitar = 1;
 		
@@ -162,7 +157,6 @@ public class DialogoInfoUsuario extends JDialog {
         	if(resultado.next()){
     			for(int i = 1; i < (TipoProducto.getNombreColumnas().length + 1); i++){
             		datos[i-1] = resultado.getString(i);
-            		System.out.println(datos[i-1]);
             	}
     			
     			tipoP = new TipoProducto(Integer.valueOf(datos[0]), datos[1]);
@@ -191,16 +185,13 @@ public class DialogoInfoUsuario extends JDialog {
 		}
 		
 		columnasConPrefijo[0] = Principal.getTablaproducto() + "." + columnasConPrefijo[0];
-		
-		//String seleccion = "venta v JOIN producto p ON v.producto_id = p.producto_id";
-		String seleccion = Principal.getTablaventa() + " JOIN " + Principal.getTablaproducto() 
+		String seleccion = Principal.getTablaventa() + DB_JOIN + Principal.getTablaproducto() 
 						   + " ON " + Principal.getTablaventa() + "." + Producto.getNombreColumnas()[0]
 						   + " = " + Principal.getTablaproducto() + "." + Producto.getNombreColumnas()[0];
 		
-		//String agrupacion = "p.producto_id";
 		String agrupacion = Principal.getTablaproducto() + "." + Producto.getNombreColumnas()[0];
 		
-		String orden = "count(*)";
+		String orden = DB_ORDER;
 		boolean sentidoOrden = false;
 		int limitar = 1;
 		
@@ -209,7 +200,6 @@ public class DialogoInfoUsuario extends JDialog {
         	if(resultado.next()){
     			for(int i = 1; i < (Producto.getNombreColumnas().length + 1); i++){
             		datos[i-1] = resultado.getString(i);
-            		System.out.println(datos[i-1]);
             	}
     			
     			producto = new Producto(Integer.valueOf(datos[0]), datos[1], Double.valueOf(datos[2]), Integer.valueOf(datos[3]));

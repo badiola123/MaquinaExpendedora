@@ -8,8 +8,6 @@ package venta;
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.TableColumn;
 
-import tipoProductos.TrazadorTablaTipoProductos;
-
 public class ModeloColumnasTablaVenta extends DefaultTableColumnModel {
 
 	TrazadorTablaVenta trazador;

@@ -22,32 +22,22 @@ public class TrazadorTablaVenta extends DefaultTableCellRenderer {
 	 * @param columna Column of the table
 	 * @return The table cell renderer component
 	 */
+	
+	private static final String USEDFONT = "Arial";
+	
 	@Override
 	public Component getTableCellRendererComponent(JTable table, Object valor,
 			boolean isSelected, boolean hasFocus, int fila, int columna) {
 		
 		super.getTableCellRendererComponent(table, valor, isSelected, hasFocus, fila, columna);
 		table.setRowHeight(50);
-		this.setFont(new Font("Arial", Font.PLAIN, 22));		
-		switch (columna ){
-		case 0: {
-			this.setHorizontalAlignment(CENTER);
-			this.setFont(new Font("Arial", Font.BOLD, 22));
-			break;
-		}
-		case 1: {
-			this.setHorizontalAlignment(CENTER);
-			this.setFont(new Font("Arial", Font.BOLD, 22));
-			break;
-		}
-		case 2: {
-			this.setHorizontalAlignment(CENTER);
-			this.setFont(new Font("Arial", Font.BOLD, 22));
-			break;
-		}
-		case 3: this.setHorizontalAlignment(CENTER);break;
-		case 4: this.setHorizontalAlignment(CENTER);break;
-		}
+		switchColumna(columna);
 		return this;
+	}
+
+	private void switchColumna(int columna) {
+		this.setHorizontalAlignment(CENTER);
+		if(columna == 0 || columna == 1 || columna == 2) this.setFont(new Font(USEDFONT, Font.BOLD, 22));
+		else this.setFont(new Font(USEDFONT, Font.PLAIN, 22));
 	}
 }

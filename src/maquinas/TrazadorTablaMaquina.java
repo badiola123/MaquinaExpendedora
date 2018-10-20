@@ -31,17 +31,21 @@ public class TrazadorTablaMaquina extends DefaultTableCellRenderer {
 		super.getTableCellRendererComponent(table, valor, isSelected, hasFocus, fila, columna);
 		table.setRowHeight(50);
 		this.setFont(new Font("Arial", Font.PLAIN, 22));		
-		switch (columna ){
-		case 0: {
-			this.setHorizontalAlignment(CENTER);
-			this.setFont(new Font("Arial", Font.BOLD, 22));
-			break;
-		}
-		case 1:
-		case 2:
-		case 3:
-		case 4: this.setHorizontalAlignment(CENTER);break;
-		}
+		columnaSwitch(columna);
 		return this;
+	}
+	
+	private void columnaSwitch(int columna) {
+		if(columna == 0) {
+			evaluateCase();
+		}
+		else {
+			this.setHorizontalAlignment(CENTER);
+		}
+	}
+
+	private void evaluateCase() {
+		this.setHorizontalAlignment(CENTER);
+		this.setFont(new Font("Arial", Font.BOLD, 22));
 	}
 }

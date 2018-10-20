@@ -20,12 +20,12 @@ import vistas.Principal;
 
 public class ListaVentas extends AbstractTableModel{
 
-	List<Venta> listaEntera;
-	List<Venta> lista;
+	transient List<Venta> listaEntera;
+	transient List<Venta> lista;
 	ModeloColumnasTablaVenta columnas;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	private static final Logger LOGGER = Logger.getLogger(ListaVentas.class.getName());
-	private static final String IM_ERROR = "img/error.png";
+	
 	/**
 	 * Constructor of ListaVenta, which establishes the connection to the database
      * @param columnas Columns of table
@@ -59,15 +59,11 @@ public class ListaVentas extends AbstractTableModel{
 		        	
 		        	for(int i = 1; i < (Venta.getNombreColumnas().length + 1); i++){
 		        		datos[i-1] = resultado.getString(i);
-		        		System.out.println(datos[i-1]);
 		        	}
-			        System.out.println("\n");
 		        	
 			        venta = new Venta(datos[0], Integer.valueOf(datos[1]), Integer.valueOf(datos[2]), Double.valueOf(datos[3]), datos[4]);
 			        
-			        if(venta != null){
-			        	lista.add(venta);
-			        }
+		        	lista.add(venta);
 			       
 		        }
 		      }catch (SQLException e) {

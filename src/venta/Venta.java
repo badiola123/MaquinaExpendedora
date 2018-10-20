@@ -9,25 +9,26 @@ public class Venta {
 	private static final String[] nombreColumnas = {"usuario_id", "maquina_id", "producto_id", "precio_venta", "fecha_venta"};
 	private static final String[] opcionesVenta = {"ID usuario", "ID maquina", "ID producto", "precio", "fecha venta"};
 	private static final boolean[] formatoColumnas = {true, false, false, false, true}; //true = comillas ; false = sin comillas
+	private static final String DB_AND = " and ";
 	
-	String id_usuario;
-	int id_maquina;
-	int id_producto;
+	String idUsuario;
+	int idMaquina;
+	int idProducto;
 	double precio;
 	String fecha;
 	/**
 	 * Constructor of the class Venta, which creates the object of the sale with all the needed information
-	 * @param id_usuario ID of user
-	 * @param id_maquina ID of machine
-	 * @param id_producto ID of prodcut
+	 * @param idUsuario ID of user
+	 * @param idMaquina ID of machine
+	 * @param idProducto ID of prodcut
 	 * @param precio price of the product
 	 * @param fecha date
 	 */
-	 public Venta(String id_usuario, int id_maquina, int id_producto, double precio, String fecha){
+	 public Venta(String idUsuario, int idMaquina, int idProducto, double precio, String fecha){
 		
-		this.id_usuario = id_usuario;
-		this.id_maquina = id_maquina;
-		this.id_producto = id_producto;
+		this.idUsuario = idUsuario;
+		this.idMaquina = idMaquina;
+		this.idProducto = idProducto;
 		this.precio = precio;
 		this.fecha = fecha;
 		
@@ -55,10 +56,10 @@ public class Venta {
 	 */
 	public Object getFieldAt(int columna) {
 		switch (columna){
-		case 0: return id_usuario;
-		case 1: return new Integer(id_maquina);
-		case 2: return new Integer(id_producto);
-		case 4: return new Double(precio);
+		case 0: return idUsuario;
+		case 1: return Integer.valueOf(idMaquina);
+		case 2: return Integer.valueOf(idProducto);
+		case 4: return Double.valueOf(precio);
 		case 3: return fecha;
 		default: return null; 
 		}	
@@ -68,24 +69,24 @@ public class Venta {
 	 *
 	 * @return ID as a string
 	 */
-	public String getId_usuario() {
-		return id_usuario;
+	public String getIdUsuario() {
+		return idUsuario;
 	}
 	/**
 	 * Getter of the ID of the machine
 	 *
 	 * @return ID as a string
 	 */
-	public int getId_maquina() {
-		return id_maquina;
+	public int getIdMaquina() {
+		return idMaquina;
 	}
 	/**
 	 * Getter of the ID of the product
 	 *
 	 * @return ID as a string
 	 */
-	public int getId_producto() {
-		return id_producto;
+	public int getIdProducto() {
+		return idProducto;
 	}
 	/**
 	 * Getter of the price of the product
@@ -102,9 +103,7 @@ public class Venta {
 	 */
 
 	public String[] getDatos(){
-		String[] datos = {this.id_usuario, String.valueOf(this.id_maquina), String.valueOf(this.id_producto), String.valueOf(this.precio), fecha};
-		
-		return datos;
+		return new String[] {this.idUsuario, String.valueOf(this.idMaquina), String.valueOf(this.idProducto), String.valueOf(this.precio), fecha};
 	}
 	/**
 	 * Getter of the constant of all the sale information fields for database queries
@@ -136,9 +135,9 @@ public class Venta {
 	 * @return String of primary key
 	 */
 	public String getPrimaryKey(){
-		return nombreColumnas[0] + " = " + (formatoColumnas[0] ? "'" + this.id_usuario + "'" : this.id_usuario) + " and " 
-				+ nombreColumnas[1] + " = " + (formatoColumnas[1] ? "'" + this.id_maquina + "'" : this.id_maquina) + " and " 
-				+ nombreColumnas[2] + " = " + (formatoColumnas[2] ? "'" + this.id_producto + "'" : this.id_producto) + " and " 
+		return nombreColumnas[0] + " = " + (formatoColumnas[0] ? "'" + this.idUsuario + "'" : this.idUsuario) + DB_AND 
+				+ nombreColumnas[1] + " = " + (formatoColumnas[1] ? "'" + this.idMaquina + "'" : this.idMaquina) + DB_AND 
+				+ nombreColumnas[2] + " = " + (formatoColumnas[2] ? "'" + this.idProducto + "'" : this.idProducto) + DB_AND 
 				+ nombreColumnas[4] + " = " + (formatoColumnas[4] ? "'" + this.fecha + "'" : this.fecha);
 	}
 	/**
@@ -147,7 +146,7 @@ public class Venta {
 	 */
 	@Override
 	public String toString() {
-		return "ID usuario: " + this.id_usuario + ", ID maquina: " + this.id_maquina + ", ID producto: " + this.id_producto + ", precio: " + this.precio + ", fecha reposición: " + this.fecha;
+		return "ID usuario: " + this.idUsuario + ", ID maquina: " + this.idMaquina + ", ID producto: " + this.idProducto + ", precio: " + this.precio + ", fecha reposición: " + this.fecha;
 	}
 	
 	

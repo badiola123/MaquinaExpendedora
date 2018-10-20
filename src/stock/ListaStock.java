@@ -14,19 +14,17 @@ import java.util.logging.Logger;
 
 import javax.swing.table.AbstractTableModel;
 
-import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
 import vistas.Principal;
 
 public class ListaStock extends AbstractTableModel{
 
-	List<Stock> listaEntera;
-	List<Stock> lista;
+	transient List<Stock> listaEntera;
+	transient List<Stock> lista;
 	ModeloColumnasTablaStock columnas;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	
 	private static final Logger LOGGER = Logger.getLogger(ListaStock.class.getName());
-	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of ListaStock, which establishes the connection to the database
      * @param columnas Columns of table
@@ -50,9 +48,6 @@ public class ListaStock extends AbstractTableModel{
 		List<Stock> lista = new ArrayList<>();
 		String[] datos = new String[Stock.getNombreColumnas().length];
 		ResultSet resultado = null;
-		Comandos comandos = new Comandos(conexion);	
-		
-		resultado = comandos.select(null, Principal.getTablastock(), null, null, null, false, 0);
 		
 		resultado = conexion.getQuery("select * from " + Principal.getTablastock());
 		
@@ -62,15 +57,11 @@ public class ListaStock extends AbstractTableModel{
 		        	
 		        	for(int i = 1; i < (Stock.getNombreColumnas().length + 1); i++){
 		        		datos[i-1] = resultado.getString(i);
-		        		System.out.println(datos[i-1]);
 		        	}
-			        System.out.println("\n");
 		        	
 			        stock = new Stock(Integer.valueOf(datos[0]), Integer.valueOf(datos[1]), datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]));
 			        
-			        if(stock != null){
-			        	lista.add(stock);
-			        }
+		        	lista.add(stock);
 			       
 		        }
 		      }catch (SQLException e) {
