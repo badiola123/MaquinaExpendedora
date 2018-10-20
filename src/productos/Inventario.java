@@ -28,7 +28,7 @@ public class Inventario extends AbstractTableModel{
 	List<Producto> lista;
 	ModeloColumnasTablaProducto columnas;
 	MyDataAccess conexion;
-	private final static Logger LOGGER = Logger.getLogger(Inventario.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(Inventario.class.getName());
 	
 	private static final String IM_ERROR = "img/error.png";
 	/**
@@ -50,7 +50,7 @@ public class Inventario extends AbstractTableModel{
    * @param maquinaID Machine from which data has to be loaded
 	 * @return List of products
 	 */
-	static public List<Producto> cargarDatos(MyDataAccess conexion, int maquinaID) {
+	public static List<Producto> cargarDatos(MyDataAccess conexion, int maquinaID) {
 		Producto producto;
 		List<Producto> lista = new ArrayList<>();
 		String[] datos = new String[Producto.getNombreColumnas().length];

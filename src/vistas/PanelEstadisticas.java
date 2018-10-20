@@ -13,18 +13,13 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.AbstractAction;
-import javax.swing.Action;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.DefaultListModel;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -44,7 +39,6 @@ import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
-import productos.Inventario;
 import productos.Producto;
 
 public class PanelEstadisticas extends JPanel implements ListSelectionListener{

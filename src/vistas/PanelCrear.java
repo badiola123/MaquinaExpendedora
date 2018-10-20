@@ -32,30 +32,19 @@ import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.table.TableColumnModel;
-import javax.swing.table.TableModel;
+
 
 import clientes.Cliente;
-import clientes.Clientela;
-import clientes.ModeloColumnasTabla;
-import clientes.TrazadorTabla;
+
 import comunicacion.ModuloXBee;
 import comunicacion.Recepcion;
 import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
-import dialogos.DialogoEdicion;
+
 import maquinas.Maquina;
-import maquinas.Maquinaria;
-import maquinas.ModeloColumnasTablaMaquina;
-import maquinas.TrazadorTablaMaquina;
-import productos.Inventario;
-import productos.ModeloColumnasTablaProducto;
 import productos.Producto;
-import productos.TrazadorTablaProducto;
-import tipoProductos.ModeloColumnasTablaTipoProductos;
 import tipoProductos.TipoProducto;
-import tipoProductos.TiposLista;
-import tipoProductos.TrazadorTablaTipoProductos;
+
 
 public class PanelCrear extends JPanel implements ItemListener, ActionListener, Observer{
 	JTable vTabla;

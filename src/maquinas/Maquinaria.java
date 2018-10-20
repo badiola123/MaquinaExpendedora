@@ -13,8 +13,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
 import conexion_sql.Comandos;
@@ -27,7 +25,7 @@ public class Maquinaria extends AbstractTableModel{
 	List<Maquina> lista;
 	ModeloColumnasTablaMaquina columnas;
 	MyDataAccess conexion;
-	private final static Logger LOGGER = Logger.getLogger(Maquinaria.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(Maquinaria.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	
 	/**
@@ -49,7 +47,7 @@ public class Maquinaria extends AbstractTableModel{
 	 * @param conexion The instance of connection to the database
 	 * @return List of machines
 	 */
-	static public List<Maquina> cargarDatos(MyDataAccess conexion) {
+	 public static List<Maquina> cargarDatos(MyDataAccess conexion) {
 		Maquina maquina;
 		List<Maquina> lista = new ArrayList<>();
 		String[] datos = new String[Maquina.getNombreColumnas().length];

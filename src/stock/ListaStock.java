@@ -12,8 +12,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
 import conexion_sql.Comandos;
@@ -27,7 +25,7 @@ public class ListaStock extends AbstractTableModel{
 	ModeloColumnasTablaStock columnas;
 	MyDataAccess conexion;
 	
-	private final static Logger LOGGER = Logger.getLogger(ListaStock.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(ListaStock.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of ListaStock, which establishes the connection to the database
@@ -47,7 +45,7 @@ public class ListaStock extends AbstractTableModel{
 	 * @param conexion The instance of connection to the database
 	 * @return List of stock
 	 */
-	static public List<Stock> cargarDatos(MyDataAccess conexion) {
+	public static List<Stock> cargarDatos(MyDataAccess conexion) {
 		Stock stock;
 		List<Stock> lista = new ArrayList<>();
 		String[] datos = new String[Stock.getNombreColumnas().length];

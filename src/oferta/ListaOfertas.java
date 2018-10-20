@@ -14,8 +14,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
+
 import javax.swing.table.AbstractTableModel;
 
 import conexion_sql.Comandos;
@@ -28,7 +27,7 @@ public class ListaOfertas extends AbstractTableModel{
 	List<Oferta> lista;
 	ModeloColumnasTablaOferta columnas;
 	MyDataAccess conexion;
-	private final static Logger LOGGER = Logger.getLogger(ListaOfertas.class.getName());
+	private static final  Logger LOGGER = Logger.getLogger(ListaOfertas.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	
 	/**
@@ -50,7 +49,7 @@ public class ListaOfertas extends AbstractTableModel{
 	 * @param conexion The instance of connection to the database
 	 * @return List of offers
 	 */
-	static public List<Oferta> cargarDatos(MyDataAccess conexion) {
+	 public static List<Oferta> cargarDatos(MyDataAccess conexion) {
 		Oferta oferta;
 		List<Oferta> lista = new ArrayList<>();
 		String[] datos = new String[Oferta.getNombreColumnas().length];

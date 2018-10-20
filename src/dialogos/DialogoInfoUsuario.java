@@ -7,35 +7,33 @@
 
 package dialogos;
 
-import java.awt.BorderLayout;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
+
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
+
 import javax.swing.JPanel;
-import javax.swing.JTextField;
+
 
 import clientes.Cliente;
 import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
-import oferta.Oferta;
+
 import productos.Producto;
 import tipoProductos.TipoProducto;
-import venta.Venta;
+
 import vistas.Principal;
 
 public class DialogoInfoUsuario extends JDialog {
@@ -45,7 +43,9 @@ public class DialogoInfoUsuario extends JDialog {
 	Cliente cliente;
 	Comandos comandos;
 	
-	JLabel labelMaquina, labelTipo, labelProducto;	
+	JLabel labelMaquina;
+	JLabel labelTipo;
+	JLabel labelProducto;	
 	
 	/**
 	  * Constructor of the class, sets size, closing operation, specifies the panel 
@@ -92,8 +92,8 @@ public class DialogoInfoUsuario extends JDialog {
 		JPanel panel = crearLabel(labelMaquina, "Máquina mas frecuentada");
 		String[] datos = new String[Maquina.getNombreColumnas().length];
 		Maquina maquina;
-		String columnas[] = Maquina.getNombreColumnas();
-		String columnasConPrefijo[] = new String[columnas.length];
+		String[] columnas = Maquina.getNombreColumnas();
+		String[] columnasConPrefijo = new String[columnas.length];
 		for(int i = 0; i < columnas.length; i++){
 			columnasConPrefijo[i] = columnas[i];
 		}
@@ -137,8 +137,8 @@ public class DialogoInfoUsuario extends JDialog {
 		JPanel panel = crearLabel(labelTipo, "Tipo de producto más comprado");
 		String[] datos = new String[TipoProducto.getNombreColumnas().length];
 		TipoProducto tipoP;
-		String columnas[] = TipoProducto.getNombreColumnas();
-		String columnasConPrefijo[] = new String[columnas.length];
+		String[] columnas = TipoProducto.getNombreColumnas();
+		String[] columnasConPrefijo = new String[columnas.length];
 		for(int i = 0; i < columnas.length; i++){
 			columnasConPrefijo[i] = columnas[i];
 		}
@@ -184,8 +184,8 @@ public class DialogoInfoUsuario extends JDialog {
 		JPanel panel = crearLabel(labelProducto, "Producto favorito");
 		String[] datos = new String[Producto.getNombreColumnas().length];
 		Producto producto;
-		String columnas[] = Producto.getNombreColumnas();
-		String columnasConPrefijo[] = new String[columnas.length];
+		String[] columnas = Producto.getNombreColumnas();
+		String[] columnasConPrefijo = new String[columnas.length];
 		for(int i = 0; i < columnas.length; i++){
 			columnasConPrefijo[i] = columnas[i];
 		}

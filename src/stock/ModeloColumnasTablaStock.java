@@ -9,7 +9,6 @@ package stock;
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.TableColumn;
 
-import oferta.TrazadorTablaOferta;
 
 public class ModeloColumnasTablaStock extends DefaultTableColumnModel {
 
