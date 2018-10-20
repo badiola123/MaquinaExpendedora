@@ -17,8 +17,6 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
 import conexion_sql.Comandos;
@@ -34,7 +32,6 @@ public class Clientela extends AbstractTableModel{
 	private transient MyDataAccess conexion;
 	private transient Map<String, List<Cliente>> agrupacion;
 	private static final Logger LOGGER = Logger.getLogger(Clientela.class.getName());
-	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of Clientela, which establishes the connection to the database
 	 * @param columnas Columns of table
