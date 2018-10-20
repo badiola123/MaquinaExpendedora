@@ -41,7 +41,7 @@ import clientes.Clientela;
 import clientes.Mapeador;
 import clientes.ModeloColumnasTabla;
 import clientes.TrazadorTabla;
-import conexionSQL.MyDataAccess;
+import conexion_sql.MyDataAccess;
 import dialogos.DialogoInfoUsuario;
 
 public class PanelUsuario extends JPanel implements ListSelectionListener{

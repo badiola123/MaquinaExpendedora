@@ -36,24 +36,11 @@ public class TrazadorTabla extends DefaultTableCellRenderer {
 	}
 
 	private void columnaSwitch(int columna) {
-		switch (columna ){
-		case 0: {
+		if(columna == 0) {
 			evaluateCase();
-			break;
 		}
-		case 1:
-		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-		case 10:
-		case 11:
-		case 12: this.setHorizontalAlignment(CENTER);break;
-		default: this.setHorizontalAlignment(CENTER);break;
+		else {
+			this.setHorizontalAlignment(CENTER);
 		}
 	}
 

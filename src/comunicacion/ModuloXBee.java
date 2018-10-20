@@ -20,8 +20,8 @@ import com.digi.xbee.api.exceptions.XBeeException;
 import com.digi.xbee.api.models.XBee64BitAddress;
 
 import clientes.Cliente;
-import conexionSQL.Comandos;
-import conexionSQL.MyDataAccess;
+import conexion_sql.Comandos;
+import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import productos.Producto;
 import stock.Stock;

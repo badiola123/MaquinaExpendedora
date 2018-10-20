@@ -19,7 +19,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import comunicacion.ModuloXBee;
-import conexionSQL.MyDataAccess;
+import conexion_sql.MyDataAccess;
 
 public class PanelTrabajador extends JPanel implements ActionListener {
 

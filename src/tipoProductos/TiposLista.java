@@ -17,8 +17,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
-import conexionSQL.Comandos;
-import conexionSQL.MyDataAccess;
+import conexion_sql.Comandos;
+import conexion_sql.MyDataAccess;
 import vistas.Principal;
 
 public class TiposLista extends AbstractTableModel{
@@ -56,12 +56,7 @@ public class TiposLista extends AbstractTableModel{
 		ResultSet resultado = null;
 		Comandos comandos = new Comandos(conexion);
 		
-		try {
-			resultado = comandos.select(null, Principal.getTablatipop(), null, null, null, false, 0);
-		} catch (SQLException e1) {
-			JOptionPane.showMessageDialog(null, "Error al cargar tipos de producto",
-					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
-		}
+		resultado = comandos.select(null, Principal.getTablatipop(), null, null, null, false, 0);
 		
 		if(resultado!=null) {
 		    try {

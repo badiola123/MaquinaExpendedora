@@ -51,7 +51,6 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 	 */
 	@Override
 	public void dataReceived(XBeeMessage data) {
-		String tipoDato;
 		int dato = (int) data.getData()[0];
 		
 		if (dato < 0) {
@@ -60,18 +59,15 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 		
 		switch (dato) {
 		case PAQUETE_HELLO:
-			tipoDato = "PAQUETE_HELLO";
 			hello = 1;
 			break;
 		case ERROR_PRODUCTO:
-			tipoDato = "ERROR_PRODUCTO";
 			moduloXBee.mandarTramaVentaAceptada();
 			hello = 2;
 			JOptionPane.showMessageDialog(null, "El producto no ha sido entregado correctamente",
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 			break;
 		case PRODUCTO_DETECTADO:
-			tipoDato = "PRODUCTO DETECTADO";
 			moduloXBee.mandarTramaVentaAceptada();
 			numActualizacion = 2;
 			moduloXBee.confirmarVenta(maquinaID, husilloID, usuarioID);
@@ -79,15 +75,12 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 			this.notifyObservers(this);
 			break;
 		case MAQUINA_ID:
-			tipoDato = "MAQUINA ID";
 			leerDatos(data);
 			break;
 		case USUARIO_ID:
-			tipoDato = "USUARIO ID";
 			leerNuevoUsuario(data);
 			break;
 		default:
-			tipoDato = "ningun dato";
 			break;
 			}
 		}
