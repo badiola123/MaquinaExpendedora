@@ -22,10 +22,10 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import Dialogos.DialogoContrasena;
 import comunicacion.LocalizadorXBee;
 import comunicacion.ModuloXBee;
 import conexionSQL.MyDataAccess;
+import dialogos.DialogoContrasena;
 
 public class Principal extends JFrame implements ActionListener, WindowListener{
 	

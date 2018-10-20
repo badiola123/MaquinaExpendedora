@@ -6,7 +6,7 @@
  */
 
 
-package Dialogos;
+package dialogos;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -33,8 +33,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import Productos.Producto;
-import Stock.Stock;
 import clientes.Cliente;
 import comunicacion.ModuloXBee;
 import comunicacion.Recepcion;
@@ -42,6 +40,8 @@ import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
 import maquinas.Maquina;
 import oferta.Oferta;
+import productos.Producto;
+import stock.Stock;
 import tipoProductos.TipoProducto;
 import venta.Venta;
 import vistas.Principal;

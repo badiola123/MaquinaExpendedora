@@ -18,13 +18,13 @@ import com.digi.xbee.api.XBeeDevice;
 import com.digi.xbee.api.exceptions.XBeeException;
 import com.digi.xbee.api.models.XBee64BitAddress;
 
-import Excepciones.OutOfStockException;
-import Productos.Producto;
-import Stock.Stock;
 import clientes.Cliente;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
+import excepciones.OutOfStockException;
 import maquinas.Maquina;
+import productos.Producto;
+import stock.Stock;
 import venta.Venta;
 import vistas.Principal;
 

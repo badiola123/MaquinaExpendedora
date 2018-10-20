@@ -36,13 +36,13 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import Dialogos.DialogoInfoUsuario;
 import clientes.Cliente;
 import clientes.Clientela;
 import clientes.Mapeador;
 import clientes.ModeloColumnasTabla;
 import clientes.TrazadorTabla;
 import conexionSQL.MyDataAccess;
+import dialogos.DialogoInfoUsuario;
 
 public class PanelUsuario extends JPanel implements ListSelectionListener{
 	

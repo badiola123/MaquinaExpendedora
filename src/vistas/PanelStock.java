@@ -37,16 +37,16 @@ import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
 
-import Adaptadores.AdaptadorListaProductos;
-import Adaptadores.ComboRenderer;
-import Excepciones.OutOfStockException;
-import Productos.Inventario;
-import Productos.Producto;
-import Stock.Stock;
+import adaptadores.AdaptadorListaProductos;
+import adaptadores.ComboRenderer;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
+import excepciones.OutOfStockException;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
+import productos.Inventario;
+import productos.Producto;
+import stock.Stock;
 
 public class PanelStock extends JPanel implements ActionListener{
 	

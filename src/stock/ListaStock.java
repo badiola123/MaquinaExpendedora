@@ -3,7 +3,7 @@
  * @author Ainhoa Arruabarrena
  * @brief This file contains the table model for stock visualization
  */
-package Stock;
+package stock;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

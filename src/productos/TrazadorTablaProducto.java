@@ -1,9 +1,10 @@
 /**
- * @file TrazadorTablaStock.java
+ * @file TrazadorTablaProducto.java
  * @author Ainhoa Arruabarrena
- * @brief This file contains the adapter for stock table styling
+ * @brief This file contains the adapter for producto table styling
  */
-package Stock;
+
+package productos;
 
 import java.awt.Component;
 import java.awt.Font;
@@ -11,7 +12,7 @@ import java.awt.Font;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
-public class TrazadorTablaStock extends DefaultTableCellRenderer {
+public class TrazadorTablaProducto extends DefaultTableCellRenderer {
 	/**
 	 * Overridden method to get table cell renderer with changed style
 	 * @param table Table to render
@@ -35,15 +36,9 @@ public class TrazadorTablaStock extends DefaultTableCellRenderer {
 			this.setFont(new Font("Arial", Font.BOLD, 22));
 			break;
 		}
-		case 1: {
-			this.setHorizontalAlignment(CENTER);
-			this.setFont(new Font("Arial", Font.BOLD, 22));
-			break;
-		}
+		case 1: this.setHorizontalAlignment(CENTER);break;
 		case 2: this.setHorizontalAlignment(CENTER);break;
 		case 3: this.setHorizontalAlignment(CENTER);break;
-		case 4: this.setHorizontalAlignment(CENTER);break;
-		default: this.setHorizontalAlignment(CENTER);break;
 		}
 		return this;
 	}

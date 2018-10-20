@@ -4,7 +4,7 @@
  * @brief This file contains the table model for product visualization
  */
 
-package Productos;
+package productos;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

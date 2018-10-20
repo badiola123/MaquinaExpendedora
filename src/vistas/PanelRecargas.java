@@ -38,17 +38,17 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import Adaptadores.AdaptadorListaProductos;
-import Adaptadores.ComboRenderer;
-import Excepciones.OutOfStockException;
-import Productos.Inventario;
-import Productos.Producto;
-import Stock.Stock;
+import adaptadores.AdaptadorListaProductos;
+import adaptadores.ComboRenderer;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
+import excepciones.OutOfStockException;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
 import oferta.Oferta;
+import productos.Inventario;
+import productos.Producto;
+import stock.Stock;
 
 public class PanelRecargas extends JPanel implements ActionListener, ListSelectionListener{
 	

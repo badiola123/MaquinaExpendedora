@@ -40,12 +40,12 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import Productos.Inventario;
-import Productos.Producto;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
+import productos.Inventario;
+import productos.Producto;
 
 public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 	

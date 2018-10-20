@@ -3,7 +3,7 @@
  * @author Imanol Badiola
  * @brief This file contains the style of the product list
  */
-package Adaptadores;
+package adaptadores;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
 
-import Productos.Producto;
+import productos.Producto;
 
 public class AdaptadorListaProductos  implements ListCellRenderer<Producto> {
 /**

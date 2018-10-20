@@ -4,7 +4,7 @@
  * @brief This file contains the style of the Combo boxes
  */
 
-package Adaptadores;
+package adaptadores;
 
 import java.awt.Component;
 import java.awt.Font;

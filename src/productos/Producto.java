@@ -5,7 +5,7 @@
  */
 
 
-package Productos;
+package productos;
 
 public class Producto {
 	private static final String[] nombreColumnas = {"producto_id", "p_descripcion", "p_precio", "p_tipo_id"};

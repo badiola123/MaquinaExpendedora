@@ -35,18 +35,18 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import Adaptadores.ComboRenderer;
-import Excepciones.FechaIncorrecta;
-import Excepciones.OutOfStockException;
-import Productos.Inventario;
-import Productos.Producto;
-import Stock.Stock;
+import adaptadores.ComboRenderer;
 import clientes.Cliente;
 import clientes.Clientela;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
+import excepciones.FechaIncorrecta;
+import excepciones.OutOfStockException;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
+import productos.Inventario;
+import productos.Producto;
+import stock.Stock;
 import venta.Venta;
 
 public class PanelVentas extends JPanel implements ActionListener{

@@ -4,7 +4,7 @@
  * @brief This file contains stock's variables and methods to have access to them
  */
 
-package Stock;
+package stock;
 
 public class Stock {
 	private static final String[] nombreColumnas = {"maquina_id", "producto_id", "fecha_cambio", "total", "posicion"};
