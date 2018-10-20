@@ -10,18 +10,14 @@ package oferta;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
-import clientes.Cliente;
-import clientes.Mapeador;
-import clientes.ModeloColumnasTabla;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
 import vistas.Principal;
@@ -32,7 +28,7 @@ public class ListaOfertas extends AbstractTableModel{
 	List<Oferta> lista;
 	ModeloColumnasTablaOferta columnas;
 	MyDataAccess conexion;
-	
+	private final static Logger LOGGER = Logger.getLogger(ListaOfertas.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	
 	/**
@@ -68,25 +64,28 @@ public class ListaOfertas extends AbstractTableModel{
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Oferta.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-	        	
-		        oferta = new Oferta(Integer.valueOf(datos[0]), Integer.valueOf(datos[1]), datos[2], Integer.valueOf(datos[3]));
-		        
-		        if(oferta != null){
-		        	lista.add(oferta);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Oferta.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+		        	
+			        oferta = new Oferta(Integer.valueOf(datos[0]), Integer.valueOf(datos[1]), datos[2], Integer.valueOf(datos[3]));
+			        
+			        if(oferta != null){
+			        	lista.add(oferta);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (SQLException e) {
-	        e.printStackTrace();
-	     } 
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     }
+		}
+	    
 	    return lista;
 	}
 

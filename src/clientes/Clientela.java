@@ -14,6 +14,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -30,7 +32,7 @@ public class Clientela extends AbstractTableModel{
 	ModeloColumnasTabla columnas;
 	MyDataAccess conexion;
 	Map<String, List<Cliente>> agrupacion;
-	
+	private final static Logger LOGGER = Logger.getLogger(Clientela.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of Clientela, which establishes the connection to the database
@@ -73,26 +75,28 @@ public class Clientela extends AbstractTableModel{
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Cliente.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-	        	
-		        cliente = new Cliente(datos[0], datos[1], datos[2], datos[3], datos[4],
-		        		Integer.valueOf(datos[5]), datos[6], datos[7], datos[8], datos[9], Integer.valueOf(datos[10]), datos[11], Integer.valueOf(datos[12]));
-		        
-		        if(cliente != null){
-		        	lista.add(cliente);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Cliente.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+		        	
+			        cliente = new Cliente(datos[0], datos[1], datos[2], datos[3], datos[4],
+			        		Integer.valueOf(datos[5]), datos[6], datos[7], datos[8], datos[9], Integer.valueOf(datos[10]), datos[11], Integer.valueOf(datos[12]));
+			        
+			        if(cliente != null){
+			        	lista.add(cliente);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (SQLException e) {
-	        e.printStackTrace();
-	     } 
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     } 
+		}
 	    return lista;
 	}
 	

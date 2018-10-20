@@ -9,17 +9,14 @@ package maquinas;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
-import clientes.Cliente;
-import clientes.Mapeador;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
 import vistas.Principal;
@@ -30,7 +27,7 @@ public class Maquinaria extends AbstractTableModel{
 	List<Maquina> lista;
 	ModeloColumnasTablaMaquina columnas;
 	MyDataAccess conexion;
-	
+	private final static Logger LOGGER = Logger.getLogger(Maquinaria.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	
 	/**
@@ -66,25 +63,27 @@ public class Maquinaria extends AbstractTableModel{
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Maquina.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-		        
-		        maquina = new Maquina(Integer.valueOf(datos[0]), datos[1], datos[2], Integer.valueOf(datos[3]), datos[4]);
-		        
-		        if(maquina != null){
-		        	lista.add(maquina);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Maquina.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+			        
+			        maquina = new Maquina(Integer.valueOf(datos[0]), datos[1], datos[2], Integer.valueOf(datos[3]), datos[4]);
+			        
+			        if(maquina != null){
+			        	lista.add(maquina);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (SQLException e) {
-	        e.printStackTrace();
-	     } 
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     } 
+		}
 	    
 	    return lista;
 	}

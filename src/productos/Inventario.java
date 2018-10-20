@@ -4,22 +4,19 @@
  * @brief This file contains the table model for product visualization
  */
 
-package Productos;
+package productos;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.AbstractTableModel;
 
-import clientes.Cliente;
-import clientes.Mapeador;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
 import maquinas.Maquina;
@@ -31,6 +28,7 @@ public class Inventario extends AbstractTableModel{
 	List<Producto> lista;
 	ModeloColumnasTablaProducto columnas;
 	MyDataAccess conexion;
+	private final static Logger LOGGER = Logger.getLogger(Inventario.class.getName());
 	
 	private static final String IM_ERROR = "img/error.png";
 	/**
@@ -76,25 +74,27 @@ public class Inventario extends AbstractTableModel{
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Producto.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-		        
-		        producto = new Producto(Integer.valueOf(datos[0]), datos[1], Double.valueOf(datos[2]), Integer.valueOf(datos[3]));
-		        
-		        if(producto != null){
-		        	lista.add(producto);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Producto.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+			        
+			        producto = new Producto(Integer.valueOf(datos[0]), datos[1], Double.valueOf(datos[2]), Integer.valueOf(datos[3]));
+			        
+			        if(producto != null){
+			        	lista.add(producto);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (SQLException e) {
-	        e.printStackTrace();
-	     }
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     }
+		}
 	    
 	    return lista;
 	}

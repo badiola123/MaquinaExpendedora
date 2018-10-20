@@ -7,7 +7,6 @@
 package vistas;
 
 import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
@@ -20,6 +19,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultListModel;
@@ -35,20 +36,17 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.SwingConstants;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 
-import Adaptadores.AdaptadorListaProductos;
-import Adaptadores.ComboRenderer;
-import Excepciones.OutOfStockException;
-import Productos.Inventario;
-import Productos.Producto;
-import Stock.Stock;
+import adaptadores.AdaptadorListaProductos;
+import adaptadores.ComboRenderer;
 import conexionSQL.Comandos;
 import conexionSQL.MyDataAccess;
+import excepciones.OutOfStockException;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
-import oferta.Oferta;
+import productos.Inventario;
+import productos.Producto;
+import stock.Stock;
 
 public class PanelStock extends JPanel implements ActionListener{
 	
@@ -75,7 +73,8 @@ public class PanelStock extends JPanel implements ActionListener{
 	static final String IMAGEN_ATRAS = "img/atras.png";
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
-  
+	private final static Logger LOGGER = Logger.getLogger(PanelStock.class.getName());
+	
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
 	 * @param v The JPanel from where this panel is accessible
@@ -317,7 +316,7 @@ public class PanelStock extends JPanel implements ActionListener{
 						try {
 							conexion.setQuery("rollback");
 						} catch (SQLException e2) {
-							e2.printStackTrace();
+							LOGGER.log(Level.ALL, e2.getMessage());
 						}
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, e1,
@@ -397,7 +396,7 @@ public class PanelStock extends JPanel implements ActionListener{
                         }
                     }
                 }catch (NumberFormatException e){
-                    e.printStackTrace();
+                	LOGGER.log(Level.ALL, e.getMessage());
                 }
             }
         }

@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
 import javax.swing.SwingConstants;
 
-import Productos.Producto;
+import productos.Producto;
 
 public class AdaptadorListaProductos  implements ListCellRenderer<Producto> {
 

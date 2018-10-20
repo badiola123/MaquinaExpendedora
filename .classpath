@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="lib/mysql-connector-java-5.1.42/src"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.42/mysql-connector-java-5.1.42-bin.jar"/>
+	<classpathentry kind="lib" path="lib/rxtx-2.2pre2.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.12.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-jdk14-1.7.12.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-nop-1.7.12.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-simple-1.7.12.jar"/>
+	<classpathentry kind="lib" path="lib/xbjlib-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
