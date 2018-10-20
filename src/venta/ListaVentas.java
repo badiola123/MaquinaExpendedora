@@ -60,25 +60,27 @@ public class ListaVentas extends AbstractTableModel{
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Venta.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-	        	
-		        venta = new Venta(datos[0], Integer.valueOf(datos[1]), Integer.valueOf(datos[2]), Double.valueOf(datos[3]), datos[4]);
-		        
-		        if(venta != null){
-		        	lista.add(venta);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Venta.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+		        	
+			        venta = new Venta(datos[0], Integer.valueOf(datos[1]), Integer.valueOf(datos[2]), Double.valueOf(datos[3]), datos[4]);
+			        
+			        if(venta != null){
+			        	lista.add(venta);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (Exception e) {
-	    	  LOGGER.log(Level.ALL, e.getMessage());
-	     }
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     }
+		}
 	    
 	    return lista;
 	}

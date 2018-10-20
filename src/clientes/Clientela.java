@@ -75,26 +75,28 @@ public class Clientela extends AbstractTableModel{
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Cliente.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-	        	
-		        cliente = new Cliente(datos[0], datos[1], datos[2], datos[3], datos[4],
-		        		Integer.valueOf(datos[5]), datos[6], datos[7], datos[8], datos[9], Integer.valueOf(datos[10]), datos[11], Integer.valueOf(datos[12]));
-		        
-		        if(cliente != null){
-		        	lista.add(cliente);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Cliente.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+		        	
+			        cliente = new Cliente(datos[0], datos[1], datos[2], datos[3], datos[4],
+			        		Integer.valueOf(datos[5]), datos[6], datos[7], datos[8], datos[9], Integer.valueOf(datos[10]), datos[11], Integer.valueOf(datos[12]));
+			        
+			        if(cliente != null){
+			        	lista.add(cliente);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (Exception e) {
-	    	  LOGGER.log(Level.ALL, e.getMessage());
-	     } 
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     } 
+		}
 	    return lista;
 	}
 	

@@ -63,25 +63,27 @@ public class ListaStock extends AbstractTableModel{
 		
 		resultado = conexion.getQuery("select * from " + Principal.getTablastock());
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Stock.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-	        	
-		        stock = new Stock(Integer.valueOf(datos[0]), Integer.valueOf(datos[1]), datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]));
-		        
-		        if(stock != null){
-		        	lista.add(stock);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Stock.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+		        	
+			        stock = new Stock(Integer.valueOf(datos[0]), Integer.valueOf(datos[1]), datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]));
+			        
+			        if(stock != null){
+			        	lista.add(stock);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (SQLException e) {
-	    	  LOGGER.log(Level.ALL, e.getMessage());
-	     } 
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     } 
+		}
 	    return lista;
 	}
 	/**

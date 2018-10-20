@@ -63,25 +63,27 @@ public class Maquinaria extends AbstractTableModel{
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
-	    try {
-	        while(resultado.next()){
-	        	
-	        	for(int i = 1; i < (Maquina.getNombreColumnas().length + 1); i++){
-	        		datos[i-1] = resultado.getString(i);
-	        		System.out.println(datos[i-1]);
-	        	}
-		        System.out.println("\n");
-		        
-		        maquina = new Maquina(Integer.valueOf(datos[0]), datos[1], datos[2], Integer.valueOf(datos[3]), datos[4]);
-		        
-		        if(maquina != null){
-		        	lista.add(maquina);
+		if(resultado!=null) {
+		    try {
+		        while(resultado.next()){
+		        	
+		        	for(int i = 1; i < (Maquina.getNombreColumnas().length + 1); i++){
+		        		datos[i-1] = resultado.getString(i);
+		        		System.out.println(datos[i-1]);
+		        	}
+			        System.out.println("\n");
+			        
+			        maquina = new Maquina(Integer.valueOf(datos[0]), datos[1], datos[2], Integer.valueOf(datos[3]), datos[4]);
+			        
+			        if(maquina != null){
+			        	lista.add(maquina);
+			        }
+			       
 		        }
-		       
-	        }
-	      }catch (Exception e) {
-	    	  LOGGER.log(Level.ALL, e.getMessage());
-	     } 
+		      }catch (SQLException e) {
+		    	  LOGGER.log(Level.ALL, e.getMessage());
+		     } 
+		}
 	    
 	    return lista;
 	}
