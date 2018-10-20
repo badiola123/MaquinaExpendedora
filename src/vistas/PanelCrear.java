@@ -40,7 +40,11 @@ import comunicacion.ModuloXBee;
 import comunicacion.Recepcion;
 import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
+<<<<<<< HEAD
 
+=======
+import dialogos.DialogoEdicion;
+>>>>>>> dcc9a683450c51f781d521176520ac3a6c225382
 import maquinas.Maquina;
 import productos.Producto;
 import tipoProductos.TipoProducto;
