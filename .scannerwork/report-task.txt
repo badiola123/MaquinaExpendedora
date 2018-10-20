@@ -2,5 +2,5 @@ projectKey=Maquina_Expendedora
 serverUrl=http://localhost:9000
 serverVersion=7.3.0.15553
 dashboardUrl=http://localhost:9000/dashboard?id=Maquina_Expendedora
-ceTaskId=AWZSnveOnY0S3v0iMZdu
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWZSnveOnY0S3v0iMZdu
+ceTaskId=AWaRjQZksHt5zge-0OhH
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWaRjQZksHt5zge-0OhH
