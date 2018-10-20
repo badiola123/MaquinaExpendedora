@@ -27,12 +27,13 @@ import vistas.Principal;
 
 public class Clientela extends AbstractTableModel{
 
-	List<Cliente> listaEntera;
-	List<Cliente> lista;
+	private static final long serialVersionUID = 1L;
+	private transient List<Cliente> listaEntera;
+	private transient List<Cliente> lista;
 	ModeloColumnasTabla columnas;
-	MyDataAccess conexion;
-	Map<String, List<Cliente>> agrupacion;
-	private final static Logger LOGGER = Logger.getLogger(Clientela.class.getName());
+	private transient MyDataAccess conexion;
+	private transient Map<String, List<Cliente>> agrupacion;
+	private static final Logger LOGGER = Logger.getLogger(Clientela.class.getName());
 	private static final String IM_ERROR = "img/error.png";
 	/**
 	 * Constructor of Clientela, which establishes the connection to the database
@@ -61,7 +62,7 @@ public class Clientela extends AbstractTableModel{
 	 * @param conexion The instance of connection to the database
 	 * @return List of client
 	 */
-	static public List<Cliente> cargarDatos(MyDataAccess conexion) {
+	public static List<Cliente> cargarDatos(MyDataAccess conexion) {
 		Cliente cliente;
 		List<Cliente> lista = new ArrayList<>();
 		String[] datos = new String[Cliente.getNombreColumnas().length];
@@ -81,17 +82,9 @@ public class Clientela extends AbstractTableModel{
 		        	
 		        	for(int i = 1; i < (Cliente.getNombreColumnas().length + 1); i++){
 		        		datos[i-1] = resultado.getString(i);
-		        		System.out.println(datos[i-1]);
 		        	}
-			        System.out.println("\n");
-		        	
-			        cliente = new Cliente(datos[0], datos[1], datos[2], datos[3], datos[4],
-			        		Integer.valueOf(datos[5]), datos[6], datos[7], datos[8], datos[9], Integer.valueOf(datos[10]), datos[11], Integer.valueOf(datos[12]));
-			        
-			        if(cliente != null){
-			        	lista.add(cliente);
-			        }
-			       
+			        cliente = new Cliente(datos);
+		        	lista.add(cliente);
 		        }
 		      }catch (SQLException e) {
 		    	  LOGGER.log(Level.ALL, e.getMessage());

@@ -44,23 +44,21 @@ public class Cliente {
 	 * @param calle Street
 	 * @param numVivienda House number
 	 */
-	public Cliente(String id, String nombre, String apellido, String dni, String fechaNacimiento,
-			int telefono, String correo, String numCuenta, String provincia, 
-			String pueblo,	int codigoPostal, String calle, int numVivienda){
+	public Cliente(String[] datos){
 		
-		this.id = id;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.dni = dni;
-		this.fechaNacimiento = fechaNacimiento;
-		this.telefono = telefono;
-		this.correo = correo;
-		this.numCuenta = numCuenta;
-		this.provincia = provincia;
-		this.pueblo = pueblo;
-		this.codigoPostal = codigoPostal;
-		this.calle = calle;
-		this.numVivienda = numVivienda;
+		this.id = datos[0];
+		this.nombre = datos[1];
+		this.apellido = datos[2];
+		this.dni = datos[3];
+		this.fechaNacimiento = datos[4];
+		this.telefono = Integer.valueOf(datos[5]);
+		this.correo = datos[6];
+		this.numCuenta = datos[7];
+		this.provincia = datos[8];
+		this.pueblo = datos[9];
+		this.codigoPostal = Integer.valueOf(datos[10]);
+		this.calle = datos[11];
+		this.numVivienda = Integer.valueOf(datos[12]);
 	}
 	
 	/**
@@ -92,14 +90,14 @@ public class Cliente {
 		case 2: return apellido;
 		case 3: return dni;
 		case 4: return fechaNacimiento;
-		case 5: return new Integer(telefono);
+		case 5: return Integer.valueOf(telefono);
 		case 6: return correo;
 		case 7: return numCuenta;
 		case 8: return provincia;
 		case 9: return pueblo;
-		case 10: return new Integer(codigoPostal);
+		case 10: return Integer.valueOf(codigoPostal);
 		case 11: return calle;
-		case 12: return new Integer(numVivienda);
+		case 12: return Integer.valueOf(numVivienda);
 		default: return null; 
 		}	
 	}
@@ -155,11 +153,9 @@ public class Cliente {
 	 * @return Array of strings with all the information
 	 */
 	public String[] getDatos(){
-		String[] datos = {this.id, this.nombre, this.apellido, this.dni,
+		return new String[] {this.id, this.nombre, this.apellido, this.dni,
 				this.fechaNacimiento, String.valueOf(this.telefono), this.correo, this.numCuenta,
 				this.provincia, this.pueblo, String.valueOf(this.codigoPostal), this.calle, String.valueOf(this.numVivienda)};
-		
-		return datos;
 	}
 	
 	/**

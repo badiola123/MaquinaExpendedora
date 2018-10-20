@@ -37,9 +37,9 @@ public class TrazadorTablaMaquina extends DefaultTableCellRenderer {
 			this.setFont(new Font("Arial", Font.BOLD, 22));
 			break;
 		}
-		case 1: this.setHorizontalAlignment(CENTER);break;
-		case 2: this.setHorizontalAlignment(CENTER);break;
-		case 3: this.setHorizontalAlignment(CENTER);break;
+		case 1:
+		case 2:
+		case 3:
 		case 4: this.setHorizontalAlignment(CENTER);break;
 		}
 		return this;
