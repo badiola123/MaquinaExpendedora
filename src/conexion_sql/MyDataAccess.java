@@ -44,7 +44,7 @@ public class MyDataAccess {
       LOGGER.info(ex.getMessage());
    }finally {
 	   if(conn != null) {
-		   LOGGER.info("Conexión a base de datos "+url+" . . . Ok");
+		   LOGGER.info("Conexión a base de datos Ok");
 	   }
    }
  }
