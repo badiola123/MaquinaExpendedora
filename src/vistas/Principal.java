@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 
 import comunicacion.LocalizadorXBee;
 import comunicacion.ModuloXBee;
-import conexionSQL.MyDataAccess;
+import conexion_sql.MyDataAccess;
 import dialogos.DialogoContrasena;
 
 public class Principal extends JFrame implements ActionListener, WindowListener{

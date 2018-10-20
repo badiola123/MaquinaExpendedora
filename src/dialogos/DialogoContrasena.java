@@ -12,12 +12,9 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -29,7 +26,7 @@ import javax.swing.JPasswordField;
 
 public class DialogoContrasena extends JDialog implements ActionListener {
 
-	Toolkit toolkit;
+	transient Toolkit toolkit;
 	
 	JLabel labelPass;
 	JPasswordField password;

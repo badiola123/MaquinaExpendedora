@@ -17,8 +17,8 @@ import gnu.io.CommPortIdentifier;
 
 public class LocalizadorXBee {
 	
-	private final static Logger LOGGER = Logger.getLogger(LocalizadorXBee.class.getName());
-	final static int BAUD_RATE = 9600;
+	private static final Logger LOGGER = Logger.getLogger(LocalizadorXBee.class.getName());
+	static final int BAUD_RATE = 9600;
 	Enumeration<?> puertos;
 	String puertoConectado;
 	
@@ -50,18 +50,20 @@ public class LocalizadorXBee {
 		        
 		        try {
 		        	xBee = new XBeeDevice(puerto, BAUD_RATE);
-		            	
-		        	try {
-		        		xBee.open();
-		        		xBee.close();
-		        		puertoConectado = puerto;
-					} catch (XBeeException e) {
-						LOGGER.log(Level.ALL, e.getMessage()); 
-					}
-				
+		        	tryXBee(xBee, puerto);
 		        } catch (NullPointerException e) {
 		        	LOGGER.log(Level.ALL, e.getMessage());
 		    	}
 		}      
+	}
+
+	private void tryXBee(XBeeDevice xBee, String puerto) {
+    	try {
+    		xBee.open();
+    		xBee.close();
+    		puertoConectado = puerto;
+		} catch (XBeeException e) {
+			LOGGER.log(Level.ALL, e.getMessage()); 
+		}
 	}  
 }

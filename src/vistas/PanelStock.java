@@ -39,8 +39,8 @@ import javax.swing.SwingConstants;
 
 import adaptadores.AdaptadorListaProductos;
 import adaptadores.ComboRenderer;
-import conexionSQL.Comandos;
-import conexionSQL.MyDataAccess;
+import conexion_sql.Comandos;
+import conexion_sql.MyDataAccess;
 import excepciones.OutOfStockException;
 import maquinas.Maquina;
 import maquinas.Maquinaria;

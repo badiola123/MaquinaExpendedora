@@ -29,8 +29,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import clientes.Cliente;
-import conexionSQL.Comandos;
-import conexionSQL.MyDataAccess;
+import conexion_sql.Comandos;
+import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import oferta.Oferta;
 import productos.Producto;

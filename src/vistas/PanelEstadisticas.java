@@ -40,8 +40,8 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import conexionSQL.Comandos;
-import conexionSQL.MyDataAccess;
+import conexion_sql.Comandos;
+import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
 import productos.Inventario;

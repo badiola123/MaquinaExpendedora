@@ -7,18 +7,11 @@
 package comunicacion;
 
 public class Emision {
-	final static int DATOS_ACEPTADOS = 97; // 1 trama
-	final static int DATOS_RECHAZADOS = 98; // 1 trama
-	final static int NUEVO_USUARIO = 99; // 1 tramas
-	final static int NUEVO_USUARIO_CANCELADO = 100; // 1 tramas
-	final static int VENTA_ACEPTADA = 103; // 1 trama
-	
-	/**
-	 * Contructor of the class
-	 */
-	public Emision() {
-		
-	}
+	static final int DATOS_ACEPTADOS = 97; // 1 trama
+	static final int DATOS_RECHAZADOS = 98; // 1 trama
+	static final int NUEVO_USUARIO = 99; // 1 tramas
+	static final int NUEVO_USUARIO_CANCELADO = 100; // 1 tramas
+	static final int VENTA_ACEPTADA = 103; // 1 trama
 	
 	/**
 	 * Create the data accepted frame

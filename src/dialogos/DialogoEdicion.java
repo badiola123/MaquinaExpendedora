@@ -12,9 +12,6 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Frame;
-import java.awt.GraphicsEnvironment;
 import java.awt.GridLayout;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -26,7 +23,6 @@ import java.util.Observer;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -36,8 +32,8 @@ import javax.swing.JTextField;
 import clientes.Cliente;
 import comunicacion.ModuloXBee;
 import comunicacion.Recepcion;
-import conexionSQL.Comandos;
-import conexionSQL.MyDataAccess;
+import conexion_sql.Comandos;
+import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import oferta.Oferta;
 import productos.Producto;
@@ -49,20 +45,20 @@ import vistas.Principal;
 public class DialogoEdicion<T> extends JDialog implements ActionListener, Observer{
 
 	private static final String IM_ERROR = "img/error.png";
-	Toolkit toolkit;
-	MyDataAccess conexion;
-	ModuloXBee xBee;
+	transient Toolkit toolkit;
+	transient MyDataAccess conexion;
+	transient ModuloXBee xBee;
 	
 	String[] opcion;
 	
 	JPanel panelDatos;
-	Cliente cliente;
-	Maquina maquina;
-	Producto producto;
-	TipoProducto tipoP;
-	Oferta oferta;
-	Venta venta;
-	Stock stock;
+	transient Cliente cliente;
+	transient Maquina maquina;
+	transient Producto producto;
+	transient TipoProducto tipoP;
+	transient Oferta oferta;
+	transient Venta venta;
+	transient Stock stock;
 	
 	JTextField[] datos;
 	String[] datosItem;
@@ -106,7 +102,6 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 			clase = 0;
 			this.setSize((int)toolkit.getScreenSize().getWidth()/3, (int)toolkit.getScreenSize().getHeight()*9/10);
 			if(xBee != null) xBee.mandarTramaDatosNuevoUsuario();
-			System.out.println("mandando nuuevo usuario");
 		}
 		else if(dato.getClass().equals(Maquina.class)){
 			opcion = Maquina.getOpcionesmaquina();
@@ -232,7 +227,6 @@ public class DialogoEdicion<T> extends JDialog implements ActionListener, Observ
 		else if(e.getActionCommand().equals("cancel")){
 			this.dispose();
 			if(clase == 0 && xBee != null) xBee.mandarTramaDatosNuevoUsuarioCancelado();
-			System.out.println("mandando nuevo usuario cancelado");
 		}
 	}
 

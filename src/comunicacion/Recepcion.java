@@ -18,16 +18,18 @@ import com.digi.xbee.api.listeners.IDataReceiveListener;
 import com.digi.xbee.api.models.XBeeMessage;
 
 public class Recepcion extends Observable implements IDataReceiveListener, ActionListener {
-	final static int PAQUETE_HELLO = 64;
-	final static int ERROR_PRODUCTO = 101;
-	final static int PRODUCTO_DETECTADO = 102;
-	final static int MAQUINA_ID = 104;
-	final static int PRODUCTO_ID = 105;
-	final static int USUARIO_ID = 106;
-	final static int BYTES_USUARIO = 10;
+	static final int PAQUETE_HELLO = 64;
+	static final int ERROR_PRODUCTO = 101;
+	static final int PRODUCTO_DETECTADO = 102;
+	static final int MAQUINA_ID = 104;
+	static final int PRODUCTO_ID = 105;
+	static final int USUARIO_ID = 106;
+	static final int BYTES_USUARIO = 10;
 	private static final String IM_ERROR = "img/error.png";
 	ModuloXBee moduloXBee;
-	String maquinaID, husilloID, usuarioID;
+	String maquinaID;
+	String husilloID;
+	String usuarioID;
 	int numActualizacion = 0;
 	int hello = 0;
 	Timer timer= null;
@@ -49,28 +51,23 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 	 */
 	@Override
 	public void dataReceived(XBeeMessage data) {
-		String tipoDato;
 		int dato = (int) data.getData()[0];
 		
 		if (dato < 0) {
 			dato += 256;
 		}
-		System.out.println(dato);
 		
 		switch (dato) {
 		case PAQUETE_HELLO:
-			tipoDato = "PAQUETE_HELLO";
 			hello = 1;
 			break;
 		case ERROR_PRODUCTO:
-			tipoDato = "ERROR_PRODUCTO";
 			moduloXBee.mandarTramaVentaAceptada();
 			hello = 2;
 			JOptionPane.showMessageDialog(null, "El producto no ha sido entregado correctamente",
 					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 			break;
 		case PRODUCTO_DETECTADO:
-			tipoDato = "PRODUCTO DETECTADO";
 			moduloXBee.mandarTramaVentaAceptada();
 			numActualizacion = 2;
 			moduloXBee.confirmarVenta(maquinaID, husilloID, usuarioID);
@@ -78,18 +75,14 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 			this.notifyObservers(this);
 			break;
 		case MAQUINA_ID:
-			tipoDato = "MAQUINA ID";
 			leerDatos(data);
 			break;
 		case USUARIO_ID:
-			tipoDato = "USUARIO ID";
 			leerNuevoUsuario(data);
 			break;
 		default:
-			tipoDato = "ningun dato";
 			break;
 			}
-		System.out.println(tipoDato);
 		}
 
 	/**
@@ -124,11 +117,14 @@ public class Recepcion extends Observable implements IDataReceiveListener, Actio
 	 * @param data The received message
 	 */
 	private void leerUsuario(int offset, XBeeMessage data) {
+		StringBuilder bld = new StringBuilder();
 		usuarioID = "";
 		
 		for(int numDato = offset; numDato < BYTES_USUARIO + offset; numDato++){
-			usuarioID += Character.toString((char) data.getData()[numDato]);
+			bld.append(Character.toString((char) data.getData()[numDato]));
 		}
+		
+		usuarioID = bld.toString();
 	}
 
 	/**
