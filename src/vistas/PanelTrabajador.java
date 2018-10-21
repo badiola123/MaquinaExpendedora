@@ -24,9 +24,10 @@ import conexion_sql.MyDataAccess;
 public class PanelTrabajador extends JPanel implements ActionListener {
 
 	Principal principal;
-	MyDataAccess conexion;
-	ModuloXBee xBee;
-	JPanel panelCrear, panelEditar;
+	transient MyDataAccess conexion;
+	transient ModuloXBee xBee;
+	JPanel panelCrear;
+	JPanel panelEditar;
 	
 	private static final String PANEL_OPCIONES = "panel opciones";
 	private static final String PANEL_EDITAR = "panel clientes";

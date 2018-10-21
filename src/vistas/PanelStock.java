@@ -41,7 +41,6 @@ import adaptadores.AdaptadorListaProductos;
 import adaptadores.ComboRenderer;
 import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
-import excepciones.OutOfStockException;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
 import productos.Inventario;
@@ -51,29 +50,38 @@ import stock.Stock;
 public class PanelStock extends JPanel implements ActionListener{
 	
 	Principal principal;
-	MyDataAccess conexion;
+    transient MyDataAccess conexion;
 	JScrollPane panelScroll;
 	JPanel panelOpciones;
-	Toolkit toolkit;
-	Comandos comandos;
+	transient Toolkit toolkit;
+	transient Comandos comandos;
 	
 	JList<Producto> inventario;
 	DefaultListModel<Producto> modelo;
 	
-	JLabel labelFecha, labelHora, labelPos;
-	JTextField textFecha, textHora;
+	JLabel labelFecha;
+	JLabel labelHora;
+	JLabel labelPos;
+	JTextField textFecha;
+	JTextField textHora;
 	
 	JPanel pCombo;
 	JComboBox<Maquina> cMaquinas;
 	JComboBox<String> cPos;
 	
-	int ano, mes, dia, horas, mins, segs;
-	
+	int ano;
+	int mes;
+	int dia;
+	int horas;
+	int mins;
+	int segs;
+	static final String ERROR = "Error";
+	static final String ARIAL = "Arial";
 	static final String IMAGEN_OK = "img/ok.png";
 	static final String IMAGEN_ATRAS = "img/atras.png";
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
-	private final static Logger LOGGER = Logger.getLogger(PanelStock.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(PanelStock.class.getName());
 	
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
@@ -144,9 +152,9 @@ public class PanelStock extends JPanel implements ActionListener{
 		JPanel pComboPos = new JPanel(new GridLayout(1,2,20,25));
 		pComboPos.setBackground(Color.WHITE);
 		cPos = new JComboBox<>(cargarPos());
-		cPos.setFont(new Font("Arial", Font.BOLD, 15));
+		cPos.setFont(new Font(ARIAL, Font.BOLD, 15));
 		cPos.setRenderer(new ComboRenderer());
-		label.setFont(new Font("Arial", Font.BOLD, 20));
+		label.setFont(new Font(ARIAL, Font.BOLD, 20));
 		pComboPos.add(label);
 		pComboPos.add(cPos);
 		cPos.setBackground(Color.WHITE);
@@ -170,7 +178,7 @@ public class PanelStock extends JPanel implements ActionListener{
 		} catch (SQLException e) {
 			toolkit.beep();
 			JOptionPane.showMessageDialog(null, "Error al cargar datos",
-					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+					ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 		}
 		
 		String[] posLibre = new String[3-listaPos.size()];
@@ -208,7 +216,7 @@ public class PanelStock extends JPanel implements ActionListener{
 		JPanel panel = new JPanel(new GridLayout(1,2,20,25));
 		panel.setBackground(Color.WHITE);
 		text.setBorder(BorderFactory.createLoweredBevelBorder());
-		label.setFont(new Font("Arial", Font.BOLD, 22));
+		label.setFont(new Font(ARIAL, Font.BOLD, 22));
 		panel.add(label);
 		panel.add(text);
 		return panel;
@@ -269,7 +277,7 @@ public class PanelStock extends JPanel implements ActionListener{
 	 */
 	private Component crearPanelMaquinas() {		
 		cMaquinas = new JComboBox<>(cargarMaquinas());
-		cMaquinas.setFont(new Font("Arial", Font.BOLD, 25));
+		cMaquinas.setFont(new Font(ARIAL, Font.BOLD, 25));
 		cMaquinas.setRenderer(new ComboRenderer());
 		cMaquinas.setActionCommand("cambio");
 		cMaquinas.addActionListener(this);
@@ -320,19 +328,15 @@ public class PanelStock extends JPanel implements ActionListener{
 						}
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, e1,
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+								ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 					}catch(ArrayIndexOutOfBoundsException e1){
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, "Selecciona todos los campos",
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+								ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 					}catch(NumberFormatException e1){
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, "Datos incorrectos",
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
-					} catch (OutOfStockException e1) {
-						toolkit.beep();
-						JOptionPane.showMessageDialog(null, "No hay stock de este producto",
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+								ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 					}
 				}
 			}
@@ -355,7 +359,7 @@ public class PanelStock extends JPanel implements ActionListener{
   /**
 	 * Effects the creation of a new empty stock in a machine introducing a new input in the database
 	 */
-	private void crearStock() throws ArrayIndexOutOfBoundsException, NumberFormatException, SQLException, OutOfStockException{
+	private void crearStock() throws SQLException{
 		String[] datos = new String[Stock.getNombreColumnas().length];
     	Maquina maquina =(Maquina) cMaquinas.getSelectedItem();
     	datos[0] = String.valueOf(maquina.getId());
@@ -374,11 +378,11 @@ public class PanelStock extends JPanel implements ActionListener{
 	 * @return true if the date is correct and false if it is incorrect
 	 */
 	private boolean comprobarFecha() {
-        if(!textFecha.getText().toString().equals("") && !textHora.getText().toString().equals("")){
+        if(!textFecha.getText().equals("") && !textHora.getText().equals("")){
 
-            String fecha = textFecha.getText().toString();
+            String fecha = textFecha.getText();
             String [] anoMesDia = fecha.split("[-]");
-            String hora = textHora.getText().toString();
+            String hora = textHora.getText();
             String [] horaMin = hora.split("[:]");
 
             if(anoMesDia.length == 3) {
@@ -420,13 +424,14 @@ public class PanelStock extends JPanel implements ActionListener{
 	   * @return true if it is correct and false if it is incorrect
 	   */
     private boolean comprobarDiaMeses(int dia, int mes, int ano) {
-        int numdias = 31;
+        int numdias;
         switch (mes){
             case	4:
             case	6:
             case	9:
             case   11: numdias = 30; break;
-            case	2: numdias= (ano%4==0) ? 29:28;
+            case	2: numdias= (ano%4==0) ? 29:28; break;
+            default: numdias = 31;
         }
         if (dia > numdias || dia<1){
             return false;

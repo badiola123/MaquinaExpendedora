@@ -14,8 +14,6 @@ import java.awt.GridLayout;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -39,7 +37,6 @@ import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
-import productos.Inventario;
 import productos.Producto;
 
 public class PanelEstadisticas extends JPanel implements ListSelectionListener{
@@ -58,9 +55,7 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 	JLabel[] labelProducto;	
 
 	static final String IMAGEN_ATRAS = "img/back.png";
-	private static final String IM_ERROR = "img/error.png";
-	private static final Logger LOGGER = Logger.getLogger(Inventario.class.getName());
-	
+	private static final String IM_ERROR = "img/error.png";	
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
 	 * @param v The JPanel from where this panel is accessible
@@ -192,7 +187,7 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
         	while(resultado.next()){
     			for(int i = 1; i < (Producto.getNombreColumnas().length + 1) + 1; i++){ // .lenght + 1 porque se empieza a contar desde 1 y el otro + 1 para que lea la cantidad vendida
             		datos[i-1] = resultado.getString(i);
-					LOGGER.log(Level.ALL, datos[i-1]);            	}
+	         	}
     			cantidades[numProducto] = datos[datos.length-1];
     			
     			producto = new Producto(Integer.valueOf(datos[0]), datos[1], Double.valueOf(datos[2]), Integer.valueOf(datos[3]));

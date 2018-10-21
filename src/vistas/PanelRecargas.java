@@ -53,16 +53,21 @@ import stock.Stock;
 public class PanelRecargas extends JPanel implements ActionListener, ListSelectionListener{
 	
 	Principal principal;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	JScrollPane panelScroll;
-	Toolkit toolkit;
-	Comandos comandos;
+	transient Toolkit toolkit;
+	transient Comandos comandos;
 	
 	JList<Producto> inventario;
 	DefaultListModel<Producto> modelo;
 	
-	JLabel labelFecha, labelCantidad, labelHora, labelTotalActual;
-	JTextField textFecha, textCantidad, textHora;
+	JLabel labelFecha;
+	JLabel labelCantidad;
+	JLabel labelHora;
+	JLabel labelTotalActual;
+	JTextField textFecha;
+	JTextField textCantidad;
+	JTextField textHora;
 	
 	JPanel pCombo;
 	JComboBox<Maquina> cMaquinas;
@@ -76,6 +81,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	int total;
 	static final String ARIAL = "Arial";
 	static final String CANTIDADACTUAL = "Cantidad actual: ";
+	static final String ERROR = "Error";
 	static final String AND = " and ";
 	static final String IMAGEN_OK = "img/ok.png";
 	static final String IMAGEN_ATRAS = "img/atras.png";
@@ -100,7 +106,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		textCantidad = new JTextField (20);
 		labelHora = new JLabel("Hora(hh:mm):", SwingConstants.RIGHT);
 		textHora = new JTextField (20);
-		labelTotalActual = new JLabel("Cantidad actual: ", SwingConstants.RIGHT);
+		labelTotalActual = new JLabel(CANTIDADACTUAL, SwingConstants.RIGHT);
 		panelScroll = new JScrollPane(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		pCombo = new JPanel();
 		this.add(crearPanelMaquinas(),BorderLayout.NORTH);
@@ -283,19 +289,19 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 						}
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, e1,
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+								ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 					}catch(ArrayIndexOutOfBoundsException e1){
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, "Selecciona todos los campos",
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+								ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 					}catch(NumberFormatException e1){
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, "Datos incorrectos",
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+								ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 					} catch (OutOfStockException e1) {
 						toolkit.beep();
 						JOptionPane.showMessageDialog(null, "No hay stock de este producto",
-								"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+								ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 					}
 				}
 			}
@@ -360,9 +366,9 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	private boolean comprobarFecha() {
         if(!textFecha.getText().equals("") && !textHora.getText().equals("")){
 
-            String fecha = textFecha.toString();
+            String fecha = textFecha.getText();
             String [] anoMesDia = fecha.split("[-]");
-            String hora = textHora.toString();
+            String hora = textHora.getText();
             String [] horaMin = hora.split("[:]");
 
             if(anoMesDia.length == 3) {
@@ -404,13 +410,14 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	   * @return true if it is correct and false if it is incorrect
 	   */
     private boolean comprobarDiaMeses(int dia, int mes, int ano) {
-        int numdias = 31;
+        int numdias;
         switch (mes){
             case	4:
             case	6:
             case	9:
             case   11: numdias = 30; break;
-            case	2: numdias= (ano%4==0) ? 29:28;
+            case	2: numdias= (ano%4==0) ? 29:28; break;
+            default: numdias = 31;
         }
         if (dia > numdias || dia<1){
             return false;
@@ -442,11 +449,11 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		} catch (SQLException e) {
 			toolkit.beep();
 			JOptionPane.showMessageDialog(null, "Error al cargar datos",
-					"Error",JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
+					ERROR,JOptionPane.ERROR_MESSAGE, new ImageIcon(IM_ERROR));
 			LOGGER.log(Level.ALL, e.getMessage());
 		}
     	
-    	labelTotalActual.setText("Cantidad actual: " + total);
+    	labelTotalActual.setText(CANTIDADACTUAL + total);
 	}
     
   /**

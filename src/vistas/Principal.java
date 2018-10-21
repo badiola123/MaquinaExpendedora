@@ -14,6 +14,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -29,9 +31,15 @@ import dialogos.DialogoContrasena;
 
 public class Principal extends JFrame implements ActionListener, WindowListener{
 	
-	JPanel panelCentro, panelUsuario, panelTrabajador, panelRecargas, panelVentas, panelEstadisticas, panelStock;
-	MyDataAccess conexion;
-	ModuloXBee xBee;
+	JPanel panelCentro;
+	JPanel panelUsuario;
+	JPanel panelTrabajador;
+	JPanel panelRecargas;
+	JPanel panelVentas;
+	JPanel panelEstadisticas;
+	JPanel panelStock;
+	transient MyDataAccess conexion;
+	transient ModuloXBee xBee;
 			
 	static final String FONDO_PRINCIPAL = "img/fondo_principal.jpg";
 	static final String IMAGEN_USUARIOS = "img/usuario.png";
@@ -52,14 +60,15 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	private static final String PANEL_SEIS = "panel estadisticas";
 	private static final String PANEL_SIETE = "panel stock";
 	
-	private static final String tablaCliente = "usuario";
-	private static final String tablaMaquina = "maquina";
-	private static final String tablaProducto = "producto";
-	private static final String tablaTipoP = "tipo_producto";
-	private static final String tablaOferta = "reposicion";
-	private static final String tablaVenta = "venta";
-	private static final String tablaStock = "stock";
+	private static final String TABLACLIENTE = "usuario";
+	private static final String TABLAMAQUINA = "maquina";
+	private static final String TABLAPRODUCTO = "producto";
+	private static final String TABLATIPOP = "tipo_producto";
+	private static final String TABLAOFERTA = "reposicion";
+	private static final String TABLAVENTA = "venta";
+	private static final String TABLASTOCK = "stock";
 	
+	private static final Logger LOGGER = Logger.getLogger(PanelRecargas.class.getName());
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
 	 */
@@ -217,7 +226,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 * @return A String containing tha name of the client table in the database
 	 */
 	public static String getTablacliente() {
-		return tablaCliente;
+		return TABLACLIENTE;
 	}
 
   /**
@@ -225,7 +234,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 * @return A String containing tha name of the machine table in the database
 	 */
 	public static String getTablamaquina() {
-		return tablaMaquina;
+		return TABLAMAQUINA;
 	}
 
   /**
@@ -233,7 +242,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 * @return A String containing tha name of the product table in the database
 	 */
 	public static String getTablaproducto() {
-		return tablaProducto;
+		return TABLAPRODUCTO;
 	}
 
   /**
@@ -241,7 +250,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 * @return A String containing tha name of the product type table in the database
 	 */
 	public static String getTablatipop() {
-		return tablaTipoP;
+		return TABLATIPOP;
 	}
 	
   /**
@@ -249,7 +258,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 * @return A String containing tha name of the offer table in the database
 	 */
 	public static String getTablaoferta() {
-		return tablaOferta;
+		return TABLAOFERTA;
 	}
 	
   /**
@@ -257,7 +266,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 * @return A String containing tha name of the sale table in the database
 	 */
 	public static String getTablaventa() {
-		return tablaVenta;
+		return TABLAVENTA;
 	}
 	
   /**
@@ -265,7 +274,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 * @return A String containing tha name of the stock table in the database
 	 */
 	public static String getTablastock() {
-		return tablaStock;
+		return TABLASTOCK;
 	}
 
   /**
@@ -274,8 +283,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 */
 	@Override
 	public void windowActivated(WindowEvent e) {
-		// TODO Auto-generated method stub
-		
+		LOGGER.log(Level.ALL, "Window Activated");
 	}
 
   /**
@@ -302,7 +310,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 */
 	@Override
 	public void windowDeactivated(WindowEvent e) {
-		// TODO Auto-generated method stub
+		LOGGER.log(Level.ALL, "Window Deactivated");
 		
 	}
 
@@ -312,7 +320,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 */
 	@Override
 	public void windowDeiconified(WindowEvent e) {
-		// TODO Auto-generated method stub
+		LOGGER.log(Level.ALL, "Window Deiconified");
 		
 	}
 
@@ -322,7 +330,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 */
 	@Override
 	public void windowIconified(WindowEvent e) {
-		// TODO Auto-generated method stub
+		LOGGER.log(Level.ALL, "Window Iconified");
 		
 	}
 
@@ -332,7 +340,7 @@ public class Principal extends JFrame implements ActionListener, WindowListener{
 	 */
 	@Override
 	public void windowOpened(WindowEvent e) {
-		// TODO Auto-generated method stub
+		LOGGER.log(Level.ALL, "Window Opened");
 		
 	}
 }

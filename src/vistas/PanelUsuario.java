@@ -41,7 +41,10 @@ import dialogos.DialogoInfoUsuario;
 
 public class PanelUsuario extends JPanel implements ListSelectionListener{
 	
-	AbstractAction accAgregarID, accAgregarApellido,accAgregarEdad,accAgregarCP;
+	AbstractAction accAgregarID;
+	AbstractAction accAgregarApellido;
+	AbstractAction accAgregarEdad;
+	AbstractAction accAgregarCP;
 	
 	JList<String> listaAgregados;
 	
@@ -53,7 +56,7 @@ public class PanelUsuario extends JPanel implements ListSelectionListener{
 	JScrollPane panelOpciones;
 	JScrollPane panelCentral;
 	Principal principal;
-	MyDataAccess conexion;
+	transient MyDataAccess conexion;
 	
 	static final String IMAGEN_ID = "img/ID.png";
 	static final String IMAGEN_APELLIDO = "img/Apellido.png";
