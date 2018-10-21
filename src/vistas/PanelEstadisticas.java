@@ -11,8 +11,6 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -54,8 +52,8 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 	JScrollPane panelOpciones;
 	JScrollPane panelCentral;
 	Principal principal;
-	MyDataAccess conexion;
-	Comandos comandos;
+	transient MyDataAccess conexion;
+	transient Comandos comandos;
 	
 	JLabel[] labelProducto;	
 
@@ -111,12 +109,8 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		toolBar.add(Box.createHorizontalGlue());
 		
 		boton =(JButton) toolBar.add(new JButton (new ImageIcon(IMAGEN_ATRAS)));
-		boton.addActionListener(new ActionListener() {
-			public void actionPerformed (ActionEvent e){
-				principal.volver();
-			}
-		});
-		return toolBar;
+		boton.addActionListener(e -> principal.volver());
+		return toolBar;	
 	}
 	
   /**
@@ -198,14 +192,11 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
         	while(resultado.next()){
     			for(int i = 1; i < (Producto.getNombreColumnas().length + 1) + 1; i++){ // .lenght + 1 porque se empieza a contar desde 1 y el otro + 1 para que lea la cantidad vendida
             		datos[i-1] = resultado.getString(i);
-            		LOGGER.log(Level.ALL, datos[i-1]);
-            	}
+					LOGGER.log(Level.ALL, datos[i-1]);            	}
     			cantidades[numProducto] = datos[datos.length-1];
     			
     			producto = new Producto(Integer.valueOf(datos[0]), datos[1], Double.valueOf(datos[2]), Integer.valueOf(datos[3]));
-		        if(producto != null){
-		        	labelProducto[numProducto].setText("<html>" + producto.toString() + "<br>Cantidad vendida: " + cantidades[numProducto] + "</html>");
-		        }
+	        	labelProducto[numProducto].setText("<html>" + producto.toString() + "<br>Cantidad vendida: " + cantidades[numProducto] + "</html>");
 		        numProducto++;
         	}
 		} catch (SQLException e) {

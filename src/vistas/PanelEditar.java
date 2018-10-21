@@ -72,7 +72,7 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 	
 	JTable vTabla;
 	JScrollPane panelScrollTabla;
-	Toolkit toolkit;
+	transient Toolkit toolkit;
 	
 	Clientela clientela;
 	TrazadorTabla trazador;
@@ -104,9 +104,9 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 	
 	PanelTrabajador panelTrabajador;
 	JFrame principal;
-	MyDataAccess conexion;
-	Comandos comandos;
-	ModuloXBee xBee;
+	transient MyDataAccess conexion;
+	transient Comandos comandos;
+	transient ModuloXBee xBee;
 	
 	JPanel panelOpciones;
 	ButtonGroup opciones;
@@ -383,89 +383,96 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 			panelTrabajador.volver();
 		}
 		else if(e.getActionCommand().equals("ok")){
-			int pos = vTabla.getSelectedRow();
-			DialogoEdicion dialogo;
-			if(rbCliente.isSelected()){
-				Cliente cliente = clientela.getCliente(pos);
-				dialogo = new DialogoEdicion(principal, "Editar usuario", true, cliente, conexion, xBee);
-			}
-			else if(rbMaquina.isSelected()){
-				Maquina maquina = maquinaria.getMaquina(pos);
-				dialogo = new DialogoEdicion(principal, "Editar maquina", true, maquina, conexion, xBee);
-			}
-			else if(rbProducto.isSelected()){
-				Producto producto = inventario.getProducto(pos);
-				dialogo = new DialogoEdicion(principal, "Editar producto", true, producto, conexion, xBee);
-			}
-			else if(rbTipoP.isSelected()){
-				TipoProducto tipoP = listaTipoP.getTipoP(pos);
-				dialogo = new DialogoEdicion(principal, "Editar tipo de producto", true, tipoP, conexion, xBee);
-			}
-			else if(rbOferta.isSelected()){
-				Oferta oferta = listaOfertas.getOferta(pos);
-				dialogo = new DialogoEdicion(principal, "Editar reposición", true, oferta, conexion, xBee);
-			}
-			else if(rbVenta.isSelected()){
-				Venta venta = listaVentas.getVenta(pos);
-				dialogo = new DialogoEdicion(principal, "Editar venta", true, venta, conexion, xBee);
-			}
-			else if(rbStock.isSelected()){
-				Stock stock = listaStock.getStock(pos);
-				dialogo = new DialogoEdicion(principal, "Editar stock", true, stock, conexion, xBee);
-			}
+			checkSelectedRbOk();
 		}
 		else if(e.getActionCommand().equals("delete")){
-			String nombreTabla = null, primaryKey = null;
-			int pos = vTabla.getSelectedRow();
-			
-			if(rbCliente.isSelected()){
-				Cliente cliente = clientela.getCliente(pos);
-				primaryKey = cliente.getPrimaryKey();
-				nombreTabla = Principal.getTablacliente();
-			}
-			else if(rbMaquina.isSelected()){
-				Maquina maquina = maquinaria.getMaquina(pos);
-				primaryKey = maquina.getPrimaryKey();
-				nombreTabla = Principal.getTablamaquina();
-			}
-			else if(rbProducto.isSelected()){
-				Producto producto = inventario.getProducto(pos);
-				primaryKey = producto.getPrimaryKey();
-				nombreTabla = Principal.getTablaproducto();
-			}
-			else if(rbTipoP.isSelected()){
-				TipoProducto tipoP = listaTipoP.getTipoP(pos);
-				primaryKey = tipoP.getPrimaryKey();
-				nombreTabla = Principal.getTablatipop();
-			}
-			else if(rbOferta.isSelected()){
-				Oferta oferta = listaOfertas.getOferta(pos);
-				primaryKey = oferta.getPrimaryKey();
-				nombreTabla = Principal.getTablaoferta();
-			}
-			else if(rbVenta.isSelected()){
-				Venta venta = listaVentas.getVenta(pos);
-				primaryKey = venta.getPrimaryKey();
-				nombreTabla = Principal.getTablaventa();
-			}
-			else if(rbStock.isSelected()){
-				Stock stock = listaStock.getStock(pos);
-				primaryKey = stock.getPrimaryKey();
-				nombreTabla = Principal.getTablastock();
-			}
-			
-			borrar(nombreTabla, primaryKey);
+			checkSelectedRbDelete();
 		}
 		actualizar();
 	}
 	
-  /**
+  private void checkSelectedRbDelete() {
+		String nombreTabla = null;
+		String primaryKey = null;
+		int pos = vTabla.getSelectedRow();
+		
+		if(rbCliente.isSelected()){
+			Cliente cliente = clientela.getCliente(pos);
+			primaryKey = cliente.getPrimaryKey();
+			nombreTabla = Principal.getTablacliente();
+		}
+		else if(rbMaquina.isSelected()){
+			Maquina maquina = maquinaria.getMaquina(pos);
+			primaryKey = maquina.getPrimaryKey();
+			nombreTabla = Principal.getTablamaquina();
+		}
+		else if(rbProducto.isSelected()){
+			Producto producto = inventario.getProducto(pos);
+			primaryKey = producto.getPrimaryKey();
+			nombreTabla = Principal.getTablaproducto();
+		}
+		else if(rbTipoP.isSelected()){
+			TipoProducto tipoP = listaTipoP.getTipoP(pos);
+			primaryKey = tipoP.getPrimaryKey();
+			nombreTabla = Principal.getTablatipop();
+		}
+		else if(rbOferta.isSelected()){
+			Oferta oferta = listaOfertas.getOferta(pos);
+			primaryKey = oferta.getPrimaryKey();
+			nombreTabla = Principal.getTablaoferta();
+		}
+		else if(rbVenta.isSelected()){
+			Venta venta = listaVentas.getVenta(pos);
+			primaryKey = venta.getPrimaryKey();
+			nombreTabla = Principal.getTablaventa();
+		}
+		else if(rbStock.isSelected()){
+			Stock stock = listaStock.getStock(pos);
+			primaryKey = stock.getPrimaryKey();
+			nombreTabla = Principal.getTablastock();
+		}
+		
+		borrar(nombreTabla, primaryKey);
+  }
+
+private void checkSelectedRbOk() {
+	    int pos = vTabla.getSelectedRow();
+		if(rbCliente.isSelected()){
+			Cliente cliente = clientela.getCliente(pos);
+			new DialogoEdicion(principal, "Editar usuario", true, cliente, conexion, xBee);
+		}
+		else if(rbMaquina.isSelected()){
+			Maquina maquina = maquinaria.getMaquina(pos);
+			new DialogoEdicion(principal, "Editar maquina", true, maquina, conexion, xBee);
+		}
+		else if(rbProducto.isSelected()){
+			Producto producto = inventario.getProducto(pos);
+			new DialogoEdicion(principal, "Editar producto", true, producto, conexion, xBee);
+		}
+		else if(rbTipoP.isSelected()){
+			TipoProducto tipoP = listaTipoP.getTipoP(pos);
+			new DialogoEdicion(principal, "Editar tipo de producto", true, tipoP, conexion, xBee);
+		}
+		else if(rbOferta.isSelected()){
+			Oferta oferta = listaOfertas.getOferta(pos);
+			new DialogoEdicion(principal, "Editar reposición", true, oferta, conexion, xBee);
+		}
+		else if(rbVenta.isSelected()){
+			Venta venta = listaVentas.getVenta(pos);
+			new DialogoEdicion(principal, "Editar venta", true, venta, conexion, xBee);
+		}
+		else if(rbStock.isSelected()){
+			Stock stock = listaStock.getStock(pos);
+			new DialogoEdicion(principal, "Editar stock", true, stock, conexion, xBee);
+		}
+  }
+
+/**
 	 * Removes the entry with the specified primary key from the given table name
 	 * @param nombreTabla Table name to search for
    * @param primaryKey Primary key to search for
 	 */
 	private void borrar(String nombreTabla, String primaryKey) {
-		String comandoSQL;
 		try {
 			
 			comandos.borrar(nombreTabla, primaryKey);
@@ -516,8 +523,8 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 	public void update(Observable o, Object obj) {
 		if (obj instanceof Recepcion) {
 			Recepcion recepcion = (Recepcion) obj;
-			if(rbVenta.isSelected()){
-				if(recepcion.getNumActualizacion() == 2) this.add(crearPanelVenta(),BorderLayout.CENTER);
+			if(rbVenta.isSelected() && recepcion.getNumActualizacion() == 2){
+				this.add(crearPanelVenta(),BorderLayout.CENTER);
 			}
 		}
 	}
