@@ -67,13 +67,21 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	JPanel pCombo;
 	JComboBox<Maquina> cMaquinas;
 	
-	int ano, mes, dia, horas, mins, segs, total;
-	
+	int ano;
+	int mes;
+	int dia;
+	int horas;
+	int mins;
+	int segs;
+	int total;
+	static final String ARIAL = "Arial";
+	static final String CANTIDADACTUAL = "Cantidad actual: ";
+	static final String AND = " and ";
 	static final String IMAGEN_OK = "img/ok.png";
 	static final String IMAGEN_ATRAS = "img/atras.png";
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
-	private final static Logger LOGGER = Logger.getLogger(PanelRecargas.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(PanelRecargas.class.getName());
   
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
@@ -109,7 +117,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		textFecha.setText("");
 		textCantidad.setText("");
 		textHora.setText("");
-		labelTotalActual.setText("Cantidad actual: ");
+		labelTotalActual.setText(CANTIDADACTUAL);
 	}
 	
   /**
@@ -148,7 +156,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	private Component crearLabel(JLabel label) {
 		JPanel panel = new JPanel(new GridLayout(1,1,20,25));
 		panel.setBackground(Color.WHITE);
-		label.setFont(new Font("Arial", Font.BOLD, 22));
+		label.setFont(new Font(ARIAL, Font.BOLD, 22));
 		panel.add(label);
 		return panel;
 	}
@@ -163,7 +171,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		JPanel panel = new JPanel(new GridLayout(1,2,20,25));
 		panel.setBackground(Color.WHITE);
 		text.setBorder(BorderFactory.createLoweredBevelBorder());
-		label.setFont(new Font("Arial", Font.BOLD, 22));
+		label.setFont(new Font(ARIAL, Font.BOLD, 22));
 		panel.add(label);
 		panel.add(text);
 		return panel;
@@ -225,7 +233,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	 */
 	private Component crearPanelMaquinas() {		
 		cMaquinas = new JComboBox<>(cargarMaquinas());
-		cMaquinas.setFont(new Font("Arial", Font.BOLD, 25));
+		cMaquinas.setFont(new Font(ARIAL, Font.BOLD, 25));
 		cMaquinas.setRenderer(new ComboRenderer());
 		cMaquinas.setActionCommand("cambio");
 		cMaquinas.addActionListener(this);
@@ -299,7 +307,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
   /**
 	 * Effects the recharge of a product into a machine introducing a new input in the database
 	 */
-    private void crearOferta() throws ArrayIndexOutOfBoundsException, NumberFormatException, SQLException, OutOfStockException{
+    private void crearOferta() throws SQLException, OutOfStockException{
 		ResultSet numRecargas;
 		String[] nombreColumnas = new String[1];
 		String primaryKey;
@@ -313,8 +321,8 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
     	datos[3] = textCantidad.getText();
 
     	nombreColumnas[0] = "count(*)";
-    	//primaryKey = "maquina_ID = " + datos[0] + " and producto_ID = " + datos[1];
-    	primaryKey = Maquina.getNombreColumnas()[0] + " = " + datos[0] + " and " + Producto.getNombreColumnas()[0] + " = " + datos[1];
+ 
+    	primaryKey = Maquina.getNombreColumnas()[0] + " = " + datos[0] + AND + Producto.getNombreColumnas()[0] + " = " + datos[1];
     	
     	numRecargas = comandos.select(nombreColumnas, Principal.getTablastock(), primaryKey, null, null, false, 0);
     	
@@ -334,11 +342,10 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	 * @param datos The data to use to update the stock
    */
 	private void actualizarStock(String[] datos) throws SQLException {
-		ResultSet cantidadActual;
 		String[] nombreColumnas = new String[1];
 		String primaryKey;
 		nombreColumnas[0] = Stock.getNombreColumnas()[3];
-		primaryKey = Maquina.getNombreColumnas()[0] + " = " + datos[0] + " and " + Producto.getNombreColumnas()[0] + " = " + datos[1];
+		primaryKey = Maquina.getNombreColumnas()[0] + " = " + datos[0] + AND + Producto.getNombreColumnas()[0] + " = " + datos[1];
 		
 		int cantidadNueva = Integer.valueOf(datos[3]) + total;
 		datos[3] = String.valueOf(cantidadNueva);
@@ -351,11 +358,11 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	 * @return true if the date is correct and false if it is incorrect
 	 */
 	private boolean comprobarFecha() {
-        if(!textFecha.getText().toString().equals("") && !textHora.getText().toString().equals("")){
+        if(!textFecha.getText().equals("") && !textHora.getText().equals("")){
 
-            String fecha = textFecha.getText().toString();
+            String fecha = textFecha.toString();
             String [] anoMesDia = fecha.split("[-]");
-            String hora = textHora.getText().toString();
+            String hora = textHora.toString();
             String [] horaMin = hora.split("[:]");
 
             if(anoMesDia.length == 3) {
@@ -415,7 +422,8 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 	 * Calculates the current amount of a given product in a machine
 	 */
 	private void calcularCantidadActual() {
-		int maquinaID, productoID;
+		int maquinaID;
+		int productoID;
     	Maquina maquina =(Maquina) cMaquinas.getSelectedItem();
     	maquinaID = maquina.getId();
     	Producto producto = inventario.getSelectedValue();
@@ -424,7 +432,7 @@ public class PanelRecargas extends JPanel implements ActionListener, ListSelecti
 		String[] nombreColumnas = new String[1];
 		String primaryKey;
 		nombreColumnas[0] = Stock.getNombreColumnas()[3];
-		primaryKey = Maquina.getNombreColumnas()[0] + " = " + maquinaID + " and " + Producto.getNombreColumnas()[0] + " = " + productoID;
+		primaryKey = Maquina.getNombreColumnas()[0] + " = " + maquinaID + AND + Producto.getNombreColumnas()[0] + " = " + productoID;
     	
     	ResultSet cantidad;
 		try {

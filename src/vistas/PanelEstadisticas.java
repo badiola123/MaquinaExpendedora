@@ -16,6 +16,8 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -39,6 +41,7 @@ import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import maquinas.Maquinaria;
+import productos.Inventario;
 import productos.Producto;
 
 public class PanelEstadisticas extends JPanel implements ListSelectionListener{
@@ -54,11 +57,12 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 	MyDataAccess conexion;
 	Comandos comandos;
 	
-	JLabel labelProducto[];	
+	JLabel[] labelProducto;	
 
 	static final String IMAGEN_ATRAS = "img/back.png";
 	private static final String IM_ERROR = "img/error.png";
-
+	private static final Logger LOGGER = Logger.getLogger(Inventario.class.getName());
+	
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
 	 * @param v The JPanel from where this panel is accessible
@@ -168,20 +172,18 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
 		String[] datos = new String[Producto.getNombreColumnas().length + 1]; // Para seleccionar productos + cantidad vendida
 		String[] cantidades = new String[Maquina.getNumhusillosmaquina()];
 		Producto producto;
-		String columnas[] = Producto.getNombreColumnas();
-		String columnasConPrefijo[] = new String[columnas.length+1];
+		String[] columnas = Producto.getNombreColumnas();
+		String[] columnasConPrefijo = new String[columnas.length+1];
 		for(int i = 0; i < columnas.length; i++){
 			columnasConPrefijo[i] = columnas[i];
 		}
 		columnasConPrefijo[columnas.length] = "count(*)";
 		columnasConPrefijo[0] = Principal.getTablaproducto() + "." + columnasConPrefijo[0];
 		
-		//String seleccion = "venta v JOIN producto p ON v.producto_id = p.producto_id";
 		String seleccion = Principal.getTablaventa() + " JOIN " + Principal.getTablaproducto() 
 						   + " ON " + Principal.getTablaventa() + "." + Producto.getNombreColumnas()[0] 
 						   + " = " + Principal.getTablaproducto() + "." + Producto.getNombreColumnas()[0];
 				
-		//String agrupacion = "p.producto_id";
 		String agrupacion = Principal.getTablaproducto() + "." + Producto.getNombreColumnas()[0];
 		
 		String orden = "count(*)";
@@ -196,7 +198,7 @@ public class PanelEstadisticas extends JPanel implements ListSelectionListener{
         	while(resultado.next()){
     			for(int i = 1; i < (Producto.getNombreColumnas().length + 1) + 1; i++){ // .lenght + 1 porque se empieza a contar desde 1 y el otro + 1 para que lea la cantidad vendida
             		datos[i-1] = resultado.getString(i);
-            		System.out.println(datos[i-1]);
+            		LOGGER.log(Level.ALL, datos[i-1]);
             	}
     			cantidades[numProducto] = datos[datos.length-1];
     			

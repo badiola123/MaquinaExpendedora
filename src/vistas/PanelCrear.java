@@ -42,7 +42,7 @@ import conexion_sql.Comandos;
 import conexion_sql.MyDataAccess;
 import maquinas.Maquina;
 import productos.Producto;
-import tipo_productos.TipoProducto;
+import tipoProductos.TipoProducto;
 
 
 public class PanelCrear extends JPanel implements ItemListener, ActionListener, Observer{

@@ -59,10 +59,10 @@ import stock.ListaStock;
 import stock.ModeloColumnasTablaStock;
 import stock.Stock;
 import stock.TrazadorTablaStock;
-import tipo_productos.ModeloColumnasTablaTipoProductos;
-import tipo_productos.TipoProducto;
-import tipo_productos.TiposLista;
-import tipo_productos.TrazadorTablaTipoProductos;
+import tipoProductos.ModeloColumnasTablaTipoProductos;
+import tipoProductos.TipoProducto;
+import tipoProductos.TiposLista;
+import tipoProductos.TrazadorTablaTipoProductos;
 import venta.ListaVentas;
 import venta.ModeloColumnasTablaVenta;
 import venta.TrazadorTablaVenta;
@@ -110,13 +110,20 @@ public class PanelEditar extends JPanel implements ItemListener, ActionListener,
 	
 	JPanel panelOpciones;
 	ButtonGroup opciones;
-	JRadioButton rbCliente, rbMaquina, rbProducto, rbTipoP, rbOferta, rbVenta, rbStock;
+	JRadioButton rbCliente;
+	JRadioButton rbMaquina;
+	JRadioButton rbProducto;
+	JRadioButton rbTipoP;
+	JRadioButton rbOferta;
+	JRadioButton rbVenta;
+	JRadioButton rbStock;
 	
 	static final String IMAGEN_OK = "img/ok.png";
 	static final String IMAGEN_ATRAS = "img/atras.png";
 	static final String IMAGEN_BORRAR = "img/delete.png";
 	private static final String IM_ERROR = "img/error.png";
 	private static final String IM_COMPLETADO = "img/completado.png";
+	
 	
   /**
 	 * Constructor of the class which initializes the needed parameters to display it
